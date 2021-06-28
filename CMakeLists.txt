@@ -5,7 +5,32 @@ if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
   set(CMAKE_INSTALL_PREFIX "install" CACHE PATH "..." FORCE)
 endif()
 
-add_subdirectory(lib/godot-cpp)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR})
+list(APPEND CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR})
+
+add_definitions("-std=c++11")
+
+if(NOT EXISTS "${CMAKE_BINARY_DIR}/conan.cmake")
+  message(STATUS "Downloading conan.cmake from https://github.com/conan-io/cmake-conan")
+  file(DOWNLOAD "https://raw.githubusercontent.com/conan-io/cmake-conan/v0.16.1/conan.cmake"
+                "${CMAKE_BINARY_DIR}/conan.cmake"
+                EXPECTED_HASH SHA256=396e16d0f5eabdc6a14afddbcfff62a54a7ee75c6da23f32f7a31bc85db23484
+                TLS_VERIFY ON)
+endif()
+
+include(${CMAKE_BINARY_DIR}/conan.cmake)
+
+conan_cmake_configure(REQUIRES godot-cpp/cci.3.2-20200130
+                      GENERATORS cmake_find_package)
+
+conan_cmake_autodetect(settings)
+
+conan_cmake_install(PATH_OR_REFERENCE .
+                    BUILD missing
+                    REMOTE conan-center
+                    SETTINGS ${settings})
+
+find_package(godot-cpp)
 
 set(CMAKE_INSTALL_RPATH ".")
 
@@ -20,7 +45,12 @@ set_target_properties(
 
 target_include_directories(steamsdk-godot PUBLIC lib/steam-sdk/public)
 
-find_library(STEAM_API NAMES steam_api libsteam_api REQUIRED PATHS lib/steam-sdk/redistributable_bin)
+find_library(
+  STEAM_API 
+  NAMES steam_api libsteam_api steam_api64
+  REQUIRED 
+  PATHS lib/steam-sdk/redistributable_bin/win64 lib/steam-sdk/redistributable_bin/linux64 lib/steam-sdk/redistributable_bin/osx
+)
 
 target_link_libraries(
   steamsdk-godot
@@ -29,5 +59,9 @@ target_link_libraries(
     ${STEAM_API}
 )
 
-install(FILES ${STEAM_API} DESTINATION lib)
+if(WIN32)
+  install(FILES lib/steam-sdk/redistributable_bin/win64/steam_api64.dll DESTINATION lib)
+else()
+  install(FILES ${STEAM_API} DESTINATION lib)
+endif()
 install(TARGETS steamsdk-godot DESTINATION lib)

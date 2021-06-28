@@ -1,4 +1,7 @@
 .vscode
-bin
 app/.import
 work
+**.dll
+**.lib
+**.pdb
+**.so

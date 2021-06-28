@@ -7,17 +7,20 @@ on:
     branches: [ master ]
 
 jobs:
-  build-godot-steamp-api:
-    strategy:
-      matrix:
-        os: [windows, ubuntu, macos]
+  build:
+  strategy:
+    matrix:
+      os: ['ubuntu']
     runs-on: ${{ matrix.os }}-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: build
-        run:  ./ci/build.bash
-        shell: bash
+        with:
+          submodules: recursive
+      - name: get python
+        uses: actions/setup-python@v2
+      - name: get conan
+        uses: turtlebrowser/get-conan@main
       - name: build
         run: ./ci/ci.bash
         shell: bash
@@ -25,13 +28,23 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: godot-steamp-api-${{ matrix.os }}
-          path: install
+          path: work/install
+  
+    package:
+      needs: [build]
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout
+          uses: actions/checkout@v2
+        - name: download all build artifacts
+          uses: actions/download-artifact@v2
+
   remove-old-artifacts:
-    needs: [build-godot-steamp-api]
+    needs: [package]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
     - name: remove-old-artifacts
       uses: c-hive/gha-remove-artifacts@v1
       with:
-        age: '5 minutes'
+        age: '10 minutes'

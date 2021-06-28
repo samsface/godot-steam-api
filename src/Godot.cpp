@@ -92,16 +92,8 @@ public:
             {
                 return unlocked;
             }
-            else
-            {
-                std::cout << "bad" << std::endl;
-            }
         }
-        else
-        {
-            std::cout << "null" << std::endl;
-        }
-
+ 
         return false;
     }
 

@@ -30,6 +30,10 @@ config/name="App"
 run/main_scene="res://Node2D.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Steam="*res://bin/steam.tscn"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
