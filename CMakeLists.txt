@@ -7,7 +7,7 @@ endif()
 
 add_subdirectory(lib/godot-cpp)
 
-set(CMAKE_INSTALL_RPATH "$ORIGIN")
+set(CMAKE_INSTALL_RPATH ".")
 
 add_library(steamsdk-godot SHARED src/Godot.cpp)
 
@@ -20,7 +20,7 @@ set_target_properties(
 
 target_include_directories(steamsdk-godot PUBLIC lib/steam-sdk/public)
 
-find_library(STEAM_API NAMES steam_api libsteam_api REQUIRED PATHS lib/steam-sdk/redistributable_bin/linux64)
+find_library(STEAM_API NAMES steam_api libsteam_api REQUIRED PATHS lib/steam-sdk/redistributable_bin)
 
 target_link_libraries(
   steamsdk-godot

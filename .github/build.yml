@@ -1,0 +1,37 @@
+name: build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-godot-steamp-api:
+    strategy:
+      matrix:
+        os: [windows, ubuntu, macos]
+    runs-on: ${{ matrix.os }}-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: build
+        run:  ./ci/build.bash
+        shell: bash
+      - name: build
+        run: ./ci/ci.bash
+        shell: bash
+      - name: upload-artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: godot-steamp-api-${{ matrix.os }}
+          path: install
+  remove-old-artifacts:
+    needs: [build-game]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - name: remove-old-artifacts
+      uses: c-hive/gha-remove-artifacts@v1
+      with:
+        age: '5 minutes'
