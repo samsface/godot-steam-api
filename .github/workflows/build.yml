@@ -27,7 +27,7 @@ jobs:
           name: godot-steamp-api-${{ matrix.os }}
           path: install
   remove-old-artifacts:
-    needs: [build-game]
+    needs: [build-godot-steamp-api]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
