@@ -55,7 +55,7 @@ find_library(
 target_link_libraries(
   steamsdk-godot
   PRIVATE
-    godot-cpp
+    godot-cpp::godot-cpp
     ${STEAM_API}
 )
 
