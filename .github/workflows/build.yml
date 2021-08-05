@@ -30,14 +30,14 @@ jobs:
           name: godot-steamp-api-${{ matrix.os }}
           path: work/install
   
-    package:
-      needs: [build]
-      runs-on: ubuntu-latest
-      steps:
-        - name: checkout
-          uses: actions/checkout@v2
-        - name: download all build artifacts
-          uses: actions/download-artifact@v2
+  package:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: download all build artifacts
+        uses: actions/download-artifact@v2
 
   remove-old-artifacts:
     needs: [package]
