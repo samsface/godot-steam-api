@@ -39,7 +39,10 @@ jobs:
       - name: download all build artifacts
         uses: actions/download-artifact@v2
         with:
-          path: app/bin
+          path: work/artifacts
+      - name: build
+        run: ./ci/package.bash work/artifacts
+        shell: bash
       - name: upload-artifacts
         uses: actions/upload-artifact@v2
         with:
