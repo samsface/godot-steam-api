@@ -17,5 +17,5 @@ esac
 echo ${machine}
 
 if [ "${machine}" = "linux" ]; then
-  strip install/*
+  strip install/lib/*
 fi
