@@ -11,24 +11,24 @@ jobs:
     strategy:
       matrix:
         os: ['ubuntu']
-      runs-on: ${{ matrix.os }}-latest
-      steps:
-        - name: checkout
-          uses: actions/checkout@v2
-          with:
-            submodules: recursive
-        - name: get python
-          uses: actions/setup-python@v2
-        - name: get conan
-          uses: turtlebrowser/get-conan@main
-        - name: build
-          run: ./ci/ci.bash
-          shell: bash
-        - name: upload-artifacts
-          uses: actions/upload-artifact@v2
-          with:
-            name: godot-steamp-api-${{ matrix.os }}
-            path: work/install
+    runs-on: ${{ matrix.os }}-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: get python
+        uses: actions/setup-python@v2
+      - name: get conan
+        uses: turtlebrowser/get-conan@main
+      - name: build
+        run: ./ci/ci.bash
+        shell: bash
+      - name: upload-artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: godot-steamp-api-${{ matrix.os }}
+          path: work/install
   
     package:
       needs: [build]
