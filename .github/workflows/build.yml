@@ -41,7 +41,7 @@ jobs:
         with:
           path: work/artifacts
       - name: build
-        run: ./ci/package.bash work/artifacts
+        run: sh ci/package.bash work/artifacts
         shell: bash
       - name: upload-artifacts
         uses: actions/upload-artifact@v2
