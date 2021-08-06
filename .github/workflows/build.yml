@@ -49,8 +49,23 @@ jobs:
           name: project
           path: app
 
-  remove-old-artifacts:
+  publish:
     needs: [package]
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: download all build artifacts
+        uses: actions/download-artifact@v2
+        name: project
+      - name: build
+        run: ls project
+        shell: bash
+
+  remove-old-artifacts:
+    needs: [publish]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
