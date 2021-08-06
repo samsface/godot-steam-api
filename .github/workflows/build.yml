@@ -62,7 +62,7 @@ jobs:
         with:
           name: project
       - name: build
-        run: ls project
+        run: ls
         shell: bash
       - name: commit
         run: |
