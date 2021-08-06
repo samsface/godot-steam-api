@@ -2,15 +2,15 @@ name: build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ work ]
   pull_request:
-    branches: [ master ]
+    branches: [ work ]
 
 jobs:
   build:
     strategy:
       matrix:
-        os: ['ubuntu', 'windows']
+        os: ['ubuntu']
     runs-on: ${{ matrix.os }}-latest
     steps:
       - name: checkout
@@ -63,6 +63,12 @@ jobs:
       - name: build
         run: ls project
         shell: bash
+      - name: commit
+        run: |
+          git config --global user.name 'samsface'
+          git config --global user.email 'samsface@users.noreply.github.com'
+          git commit -am "automated commit"
+          git push
 
   remove-old-artifacts:
     needs: [publish]
