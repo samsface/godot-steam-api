@@ -9,12 +9,12 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "",
+"base": "Reference",
 "class": "SteamAPI",
 "language": "NativeScript",
 "path": "res://bin/steam_api.gdns"
 }, {
-"base": "",
+"base": "Reference",
 "class": "SteamUserStats",
 "language": "NativeScript",
 "path": "res://bin/steam_user_stats.gdns"

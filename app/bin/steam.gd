@@ -36,6 +36,7 @@ func _ready():
 	user_stats_ = SteamUserStats.new()
 	user_stats_.request_current_stats();
 
+#warning-ignore:unused_argument
 func _process(delta:float) -> void:
 	api_.run_callbacks()
 
