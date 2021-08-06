@@ -59,7 +59,8 @@ jobs:
           ref: master
       - name: download all build artifacts
         uses: actions/download-artifact@v2
-        name: project
+        with:
+          name: project
       - name: build
         run: ls project
         shell: bash
