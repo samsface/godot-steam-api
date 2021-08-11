@@ -15,9 +15,14 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: clone submodule
+        uses: actions/checkout@v2
         with:
+          repository: samsface/steam-sdk
+          path: lib/steam-sdk
+          ref: v2
           ssh-key: ${{ secrets.STEAM_SDK_KEY }}
-          submodules: recursive
+          persist-credentials: false
       - name: get python
         uses: actions/setup-python@v2
       - name: get conan
