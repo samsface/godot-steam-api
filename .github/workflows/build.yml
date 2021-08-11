@@ -16,6 +16,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
         with:
+          token: '${{ secrets.GITHUB_PAT }}'
           submodules: recursive
       - name: get python
         uses: actions/setup-python@v2
