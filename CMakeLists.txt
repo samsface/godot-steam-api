@@ -45,7 +45,7 @@ set_target_properties(
 
 target_include_directories(steamsdk-godot PUBLIC lib/steam-sdk/public)
 
-if(APPLE)
+if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
   find_library(
     STEAM_API 
     NAMES libsteam_api
