@@ -13,4 +13,4 @@
 
 5. Open the toolscript `res://steam/run_me_once.gd` and run it with: `File > Run`.
 
-6. That's it 🥳! Open `res://example.gd`, edit the acheivment name and run the project.
+6. That's it 🥳! Open `res://example.gd`, edit the achievement name and run the project.
