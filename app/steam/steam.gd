@@ -1,13 +1,11 @@
 extends Node
 
-export(int) var steam_app_id := 1435470
-
 var api_
 var user_stats_
 
 func _ready():
 	api_ = SteamAPI.new()
-	if not api_.init(steam_app_id):
+	if not api_.init(SteamOptions.app_id):
 		push_error("Failed to init steam api. Is Steam running? Did you run the 'run_me_once.gd' tool script?")
 		return
 	
