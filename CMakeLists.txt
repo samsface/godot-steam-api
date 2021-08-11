@@ -45,12 +45,21 @@ set_target_properties(
 
 target_include_directories(steamsdk-godot PUBLIC lib/steam-sdk/public)
 
-find_library(
-  STEAM_API 
-  NAMES steam_api libsteam_api steam_api64
-  REQUIRED 
-  PATHS lib/steam-sdk/redistributable_bin/win64 lib/steam-sdk/redistributable_bin/linux64 lib/steam-sdk/redistributable_bin/osx
-)
+if(APPLE)
+  find_library(
+    STEAM_API 
+    NAMES libsteam_api
+    REQUIRED 
+    PATHS lib/steam-sdk/redistributable_bin/osx
+  )
+else()
+  find_library(
+    STEAM_API 
+    NAMES libsteam_api steam_api64 steam_api
+    REQUIRED 
+    PATHS lib/steam-sdk/redistributable_bin/win64 lib/steam-sdk/redistributable_bin/linux64
+  )
+endif()
 
 target_link_libraries(
   steamsdk-godot
