@@ -20,7 +20,6 @@ jobs:
         with:
           repository: samsface/steam-sdk
           path: lib/steam-sdk
-          ref: v2
           ssh-key: ${{ secrets.STEAM_SDK_KEY }}
       - name: get python
         uses: actions/setup-python@v2
