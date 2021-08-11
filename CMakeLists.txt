@@ -32,7 +32,7 @@ conan_cmake_install(PATH_OR_REFERENCE .
 
 find_package(godot-cpp)
 
-set(CMAKE_INSTALL_RPATH ".")
+set(CMAKE_INSTALL_RPATH "$ORIGIN")
 
 add_library(steamsdk-godot SHARED src/Godot.cpp)
 
