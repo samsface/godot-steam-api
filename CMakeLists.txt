@@ -47,7 +47,7 @@ target_include_directories(steamsdk-godot PUBLIC lib/steam-sdk/public)
 
 message(STATUS ${CMAKE_SYSTEM_NAME})
 
-if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+if(APPLE)
   message(FATAL_ERROR "APPPPLE")
   find_library(
     STEAM_API 
