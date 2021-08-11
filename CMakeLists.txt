@@ -45,14 +45,18 @@ set_target_properties(
 
 target_include_directories(steamsdk-godot PUBLIC lib/steam-sdk/public)
 
+message(STATUS ${CMAKE_SYSTEM_NAME})
+
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+  message(FATAL_ERROR "APPPPLE")
   find_library(
     STEAM_API 
-    NAMES libsteam_api
+    NAMES libsteam_api steam_api
     REQUIRED 
     PATHS lib/steam-sdk/redistributable_bin/osx
   )
 else()
+  message(FATAL_ERROR "NOT APPPPLEE")
   find_library(
     STEAM_API 
     NAMES libsteam_api steam_api64 steam_api
