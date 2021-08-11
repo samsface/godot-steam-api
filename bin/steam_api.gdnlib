@@ -8,7 +8,9 @@ reloadable=true
 [entry]
 
 Windows.64="res://bin/steamsdk-godot.dll"
+X11.64="res://bin/libsteamsdk-godot.so"
 
 [dependencies]
 
 Windows.64=[  ]
+X11.64=[ "res://bin/libsteam_api.so" ]
