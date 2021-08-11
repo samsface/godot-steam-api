@@ -1,7 +1,7 @@
-# Godot-Steam-API
+# Godot-Steam-API 💨
 **Godot Steam integration using GDNative.**
 
-## Getting Started
+## Getting Started 🏁
 
 1. Download and unzip the Steam SDK: https://partner.steamgames.com/downloads/steamworks_sdk.zip to anywhere on your machine. You must already be a Steam partner (Valve's rules, not mine sorry 🥺).
 
