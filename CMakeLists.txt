@@ -59,9 +59,5 @@ target_link_libraries(
     ${STEAM_API}
 )
 
-if(WIN32)
-  install(FILES lib/steam-sdk/redistributable_bin/win64/steam_api64.dll DESTINATION lib)
-else()
-  install(FILES ${STEAM_API} DESTINATION lib)
-endif()
 install(TARGETS steamsdk-godot DESTINATION lib)
+
