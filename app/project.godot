@@ -9,15 +9,15 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
+"base": "",
 "class": "SteamAPI",
 "language": "NativeScript",
-"path": "res://bin/steam_api.gdns"
+"path": "res://steam/steam_api.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamUserStats",
 "language": "NativeScript",
-"path": "res://bin/steam_user_stats.gdns"
+"path": "res://steam/steam_user_stats.gdns"
 } ]
 _global_script_class_icons={
 "SteamAPI": "",
@@ -27,12 +27,12 @@ _global_script_class_icons={
 [application]
 
 config/name="App"
-run/main_scene="res://Node2D.tscn"
+run/main_scene="res://example.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Steam="*res://bin/steam.tscn"
+Steam="*res://steam/steam.tscn"
 
 [rendering]
 
