@@ -14,6 +14,11 @@ _global_script_classes=[ {
 "language": "NativeScript",
 "path": "res://steam/steam_api.gdns"
 }, {
+"base": "Reference",
+"class": "SteamOptions",
+"language": "GDScript",
+"path": "res://steam/steam_options.gd"
+}, {
 "base": "",
 "class": "SteamUserStats",
 "language": "NativeScript",
@@ -21,6 +26,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "SteamAPI": "",
+"SteamOptions": "",
 "SteamUserStats": ""
 }
 
