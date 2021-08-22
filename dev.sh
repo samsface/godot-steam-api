@@ -6,7 +6,6 @@ mkdir -p work
 cd work
 cmake .. -DCMAKE_BUILD_TYPE=Debug
 cmake --build . --target install
-mkdir -p ../app/bin/
-cd ../app/bin
+cd ../app/addons/steam_api
 pwd
-cp -fr ../../work/install/lib/* .
+cp -fr ../../../work/install/lib/* .

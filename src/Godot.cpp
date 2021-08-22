@@ -11,28 +11,24 @@ class SteamAPI : public Reference
 public:
     static void _register_methods()
     {
-        register_method("init",          &SteamAPI::init);
-        register_method("run_callbacks", &SteamAPI::run_callbacks);
+        register_method("restart_app_if_necessary",  &SteamAPI::restart_app_if_necessary);
+        register_method("init",                      &SteamAPI::init);
+        register_method("run_callbacks",             &SteamAPI::run_callbacks);
     }
 
     void _init()
     {
     }
 
-    bool init(int app_id)
+    bool restart_app_if_necessary(int app_id)
     {
 
-        //if(SteamAPI_RestartAppIfNecessary(1435470))
-        //{
-        //    return false;
-        //}
-
-        if (!SteamAPI_Init())
-        {
-            return false;
-        }
-
-        return true;
+       return SteamAPI_RestartAppIfNecessary(app_id);
+    }
+    
+    bool init()
+    {
+       return SteamAPI_Init();
     }
 
     void run_callbacks()
