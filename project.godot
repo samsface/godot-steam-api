@@ -12,34 +12,28 @@ _global_script_classes=[ {
 "base": "",
 "class": "SteamAPI",
 "language": "NativeScript",
-"path": "res://steam/steam_api.gdns"
-}, {
-"base": "Reference",
-"class": "SteamOptions",
-"language": "GDScript",
-"path": "res://steam/steam_options.gd"
+"path": "res://addons/steam_api/steam_api.gdns"
 }, {
 "base": "",
 "class": "SteamUserStats",
 "language": "NativeScript",
-"path": "res://steam/steam_user_stats.gdns"
+"path": "res://addons/steam_api/steam_user_stats.gdns"
 } ]
 _global_script_class_icons={
 "SteamAPI": "",
-"SteamOptions": "",
 "SteamUserStats": ""
 }
 
 [application]
 
-config/name="App"
-run/main_scene="res://example.tscn"
+config/name="GodotSteamAPI"
+run/main_scene="res://addons/steam_api/examples/example.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Steam="*res://steam/steam.tscn"
+Steam="*res://addons/steam_api/steam.tscn"
 
-[rendering]
+[editor_plugins]
 
-environment/default_environment="res://default_env.tres"
+enabled=PoolStringArray( "res://addons/steam_api/plugin.cfg" )

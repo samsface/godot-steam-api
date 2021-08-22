@@ -1,16 +1,14 @@
 # Godot-Steam-API 💨
 **Godot Steam integration using GDNative.**
 
-## Getting Started 🏁
+# Getting Started
+1. Enable the plugin in the Project Settings
+2. There will now be a SteamAPI tab in the Project Settings, follow the instructions to import the Steam SDK files
+3. Make sure Steam is running
 
-1. Download and unzip the Steam SDK: https://partner.steamgames.com/downloads/steamworks_sdk.zip to anywhere on your machine. You must already be a Steam partner (Valve's rules, not mine sorry 🥺).
-
-2. Open the script `res://steam/steam_options.gd`.
-
-3. Edit the variable `app_id` to your steam app id.
-
-4. Edit the variable `sdk_dir` to were you unziped the steam sdk (that you downloaded in step 1).
-
-5. Open the toolscript `res://steam/run_me_once.gd` and run it with: `File > Run`.
-
-6. That's it 🥳! Open `res://example.gd`, edit the achievement name and run the project.
+Now you can use the following functions to manage Steam Achievements:
+``` python
+Steam.set_achievement(name:String)
+Steam.get_achievement(name:String)
+Steam.clear_achievement(name:String)
+```
