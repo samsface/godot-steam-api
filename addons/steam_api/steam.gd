@@ -26,7 +26,7 @@ func set_achievement(name:String) -> void:
 	
 func get_achievement(name:String) -> bool:
 	if user_stats_:
-		return user_stats_.get(name)
+		return user_stats_.get_achievement(name)
 
 	return false
 
