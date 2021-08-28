@@ -22,7 +22,6 @@ public:
 
     bool restart_app_if_necessary(int app_id)
     {
-
        return SteamAPI_RestartAppIfNecessary(app_id);
     }
     
