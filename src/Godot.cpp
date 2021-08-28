@@ -94,7 +94,7 @@ public:
 
     bool request_current_stats()
     {
-        return m_steam_user_stats_->RequestCurrentStats();
+        return m_steam_user_stats_->RequestCurrentStats()s;
     }
 
     bool store_stats()
