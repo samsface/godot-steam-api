@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(steamsdk-godot)
 
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-  set(CMAKE_INSTALL_PREFIX "install" CACHE PATH "..." FORCE)
+  set(CMAKE_INSTALL_PREFIX "../app/addons/steam_api" CACHE PATH "..." FORCE)
 endif()
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR})
@@ -68,5 +68,5 @@ target_link_libraries(
     ${STEAM_API}
 )
 
-install(TARGETS steamsdk-godot DESTINATION lib)
+install(TARGETS steamsdk-godot DESTINATION .)
 
