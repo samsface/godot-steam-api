@@ -119,5 +119,4 @@ extern "C" void GDN_EXPORT godot_nativescript_init(void *handle)
     godot::register_class<godot::SteamAPI>();
     godot::register_class<godot::SteamUserStats>();
 }
-    
 }
