@@ -46,6 +46,8 @@ set_target_properties(
 target_include_directories(steamsdk-godot PUBLIC lib/steam-sdk/public)
 
 if(APPLE)
+  set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
+  
   find_library(
     STEAM_API 
     NAMES libsteam_api steam_api
