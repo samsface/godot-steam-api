@@ -25,6 +25,7 @@ public:
        return SteamAPI_RestartAppIfNecessary(app_id);
     }
     
+
     bool init()
     {
        return SteamAPI_Init();
