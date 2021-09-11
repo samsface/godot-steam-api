@@ -47,6 +47,7 @@ target_include_directories(steamsdk-godot PUBLIC lib/steam-sdk/public)
 
 if(APPLE)
   set(OSX_ARCHITECTURES arm64;x86_64)
+
   
   find_library(
     STEAM_API 
