@@ -5,6 +5,7 @@ on:
     branches: [ work ]
     paths:
       - 'src/*'
+      - 'CMakeLists.txt'
 
 jobs:
   build:
