@@ -11,7 +11,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: ['ubuntu', 'windows', 'macos']
+        os: ['macos']
     runs-on: ${{ matrix.os }}-latest
     steps:
       - name: checkout
