@@ -26,7 +26,7 @@ conan_cmake_configure(REQUIRES godot-cpp/cci.3.2-20200130
 conan_cmake_autodetect(settings)
 
 conan_cmake_install(PATH_OR_REFERENCE .
-                    BUILD missing
+                    BUILD all
                     REMOTE conancenter
                     SETTINGS ${settings})
 
