@@ -5,6 +5,12 @@ if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
   set(CMAKE_INSTALL_PREFIX "../app/addons/steam_api" CACHE PATH "..." FORCE)
 endif()
 
+###############################################################################
+# conan
+###############################################################################
+execute_process(COMMAND conan export ${CMAKE_CURRENT_SOURCE_DIR}/lib/godot-cpp local/stable)
+  
+
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR})
 list(APPEND CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR})
 
@@ -20,7 +26,7 @@ endif()
 
 include(${CMAKE_BINARY_DIR}/conan.cmake)
 
-conan_cmake_configure(REQUIRES godot-cpp/cci.3.2-20200130
+conan_cmake_configure(REQUIRES godot-cpp/3.3@local/stable
                       GENERATORS cmake_find_package)
 
 conan_cmake_autodetect(settings)
@@ -31,6 +37,7 @@ conan_cmake_install(PATH_OR_REFERENCE .
                     SETTINGS ${settings})
 
 find_package(godot-cpp)
+###############################################################################
 
 set(CMAKE_INSTALL_RPATH "$ORIGIN")
 
@@ -40,8 +47,7 @@ set_target_properties(
   steamsdk-godot
   PROPERTIES
   CXX_STANDARD 17
-  CXX_STANDARD_REQUIRED ON
-)
+  CXX_STANDARD_REQUIRED ON)
 
 target_include_directories(steamsdk-godot PUBLIC lib/steam-sdk/public)
 
@@ -50,23 +56,19 @@ if(APPLE)
     STEAM_API 
     NAMES libsteam_api steam_api
     REQUIRED 
-    PATHS lib/steam-sdk/redistributable_bin/osx
-  )
+    PATHS lib/steam-sdk/redistributable_bin/osx)
 else()
   find_library(
     STEAM_API 
     NAMES libsteam_api steam_api64 steam_api
     REQUIRED 
-    PATHS lib/steam-sdk/redistributable_bin/win64 lib/steam-sdk/redistributable_bin/linux64
-  )
+    PATHS lib/steam-sdk/redistributable_bin/win64 lib/steam-sdk/redistributable_bin/linux64)
 endif()
 
 target_link_libraries(
   steamsdk-godot
   PRIVATE
     godot-cpp::godot-cpp
-    ${STEAM_API}
-)
+    ${STEAM_API})
 
 install(TARGETS steamsdk-godot DESTINATION .)
-
