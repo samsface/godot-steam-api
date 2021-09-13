@@ -8,20 +8,28 @@
 
 ## Project Roadmap
 
-The Steam API is pretty huge. The plan is to start with most commonly requested 
-parts of the API and work through.
-
-[] Achievements
-[] Leaderboards
-[] ??
-
+The Steam API is pretty huge. The plan is to start with easy common used stuff and work through to bigger stuff.
 
 ## Buildling localy on Windows
 
 1. Download and install:
     - https://cmake.org/download
-    - https://visualstudio.microsoft.com/downloads
-    - https://www.python.org/downloads
-2. In a cmd.exe window run `pip3 install conan`
-3. In a cmd.exe window run `mkdir work && cd work && cmake .. && start .`
-4. Open `steamsdk-godot.sln` and write some bugs.
+    - https://visualstudio.microsoft.com/downloads (community edition is fine)
+    - https://www.python.org/downloads (download Python3 if you just have 2.7)
+
+2. Install Conan, a C++ package manager.
+    ``` sh
+    # in root directory of this project
+    pip3 install conan
+    ```
+
+4. Download the steam sdk and extract it into the lib directory of this project.
+    > If your files are now laid out like this: `godot-steam-api/lib/steam-sdk/redistributable_bin/win64/steam_api64.dll`; you've done it correctly. 
+
+5. Generate the Visual Studio project.
+    ```sh
+    # in root directory of this project
+    mkdir work && cd work && cmake .. && start .
+    ```
+
+7. Open `steamsdk-godot.sln` and build. CMake will install the built dlls into the example project for you every time you build. Just open the example project and your good. The library is also reloadable so no need to restart Godot every build.

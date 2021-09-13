@@ -32,8 +32,8 @@ conan_cmake_configure(REQUIRES godot-cpp/3.3@local/stable
 conan_cmake_autodetect(settings)
 
 conan_cmake_install(PATH_OR_REFERENCE .
-                    BUILD missing
-                    REMOTE conan-center
+                    BUILD all
+                    REMOTE conancenter
                     SETTINGS ${settings})
 
 find_package(godot-cpp)
@@ -52,6 +52,8 @@ set_target_properties(
 target_include_directories(steamsdk-godot PUBLIC lib/steam-sdk/public)
 
 if(APPLE)
+  set_target_properties(steamsdk-godot PROPERTIES OSX_ARCHITECTURES "arm64;x86_64")
+
   find_library(
     STEAM_API 
     NAMES libsteam_api steam_api
