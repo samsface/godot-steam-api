@@ -6,6 +6,7 @@ on:
     paths:
       - 'src/*'
       - 'CMakeLists.txt'
+      - 'lib/godot-cpp/*'
 
 jobs:
   build:
