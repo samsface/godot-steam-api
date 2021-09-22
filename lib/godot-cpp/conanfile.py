@@ -51,7 +51,6 @@ class GodotCppConan(ConanFile):
 
     def _configure_cmake(self):
         cmake = CMake(self)
-
         cmake.configure()
         return cmake
 
