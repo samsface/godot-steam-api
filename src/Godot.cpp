@@ -266,7 +266,7 @@ struct SteamCallback : public Reference
 public:
     static void _register_methods()
     {
-        register_signal<SteamCallback>((const char*)"done");
+        register_signal<SteamCallback>(String{"done"});
     }
 
     template<typename T>
