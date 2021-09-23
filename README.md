@@ -1,9 +1,6 @@
 # Godot-Steam-API 💨
-**Godot Steam integration using GDNative. Supports 💰Windows, 🐧Linux & 🍏MacOS(x86_x64/arm64).**
 
-- This project plans to expose the Steam API in GDScript as a small few mb GDNative project.
-- The API will be exposed verbatim to the C++ interface with no opinions.
-- A simple easy Godot interface will also be developed to support the most common cases.
+> **Godot Steam integration using GDNative.** Supports 💰Windows, 🐧Linux & 🍏MacOS (x86_x64/arm64).
 
 # Getting Started
 1. Enable the plugin in the Project Settings
