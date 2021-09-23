@@ -1,14 +1,10 @@
 # Godot-Steam-API 💨
-**Godot Steam integration using GDNative. Supports 💰Windows, 🐧Linux & 🍏MacOS(x86_x64/arm64).**
 
-- This project plans to expose the Steam API in GDScript as a small few mb GDNative project.
-- The API will be exposed verbatim to the C++ interface with no opinions.
-- A simple easy Godot interface will also be developed to support the most common cases.
+> **Godot Steam integration using GDNative.** Supports 💰Windows, 🐧Linux & 🍏MacOS (x86_x64/arm64).
 
 # Getting Started
-1. Enable the plugin in the Project Settings
-2. There will now be a SteamAPI tab in the Project Settings, follow the instructions to import the Steam SDK files
-3. Make sure Steam is running
+1. Download and open the [example project](https://github.com/samsface/godot-steam-api/archive/refs/heads/master.zip).
+2. There will be a SteamAPI tab in the Project Settings, follow the instructions to configure the SteamAPI for your game.
 
 Now you can use the following functions:
 ```gdscript
@@ -33,16 +29,15 @@ var scores = yield(Steam.get_leaderboard_scores("High Scores", 0, 10), "done")
 
 3. Install Conan, a C++ package manager.
     ``` sh
-    # in root directory of this project
     pip3 install conan
     ```
 
-4. Download the steam sdk and extract it into the lib directory of this project.
+4. Download the [Steam SDK](https://partner.steamgames.com/downloads/steamworks_sdk_152.zip) and extract it into the lib directory were you cloned this project.
     > If your files are now laid out like this: `godot-steam-api/lib/steam-sdk/redistributable_bin/win64/steam_api64.dll`; you've done it correctly. 
 
 5. Generate the Visual Studio project.
     ```sh
-    # in root directory of this project
+    # in root directory were you cloned this project to, e.g. C:/work/godot-steam-api
     mkdir work && cd work && cmake .. && start .
     ```
 
