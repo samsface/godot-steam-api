@@ -3,7 +3,7 @@
 > **Godot Steam integration using GDNative.** Supports 💰Windows, 🐧Linux & 🍏MacOS (x86_x64/arm64).
 
 # Getting Started
-1. Download and open the example project: https://github.com/samsface/godot-steam-api/archive/refs/heads/master.zip
+1. Download and open the [example project](https://github.com/samsface/godot-steam-api/archive/refs/heads/master.zip).
 2. There will be a SteamAPI tab in the Project Settings, follow the instructions to configure the SteamAPI for your game.
 
 Now you can use the following functions:
