@@ -32,7 +32,7 @@ jobs:
         uses: actions/cache@v2
         with:
            path: ~/.conan
-           key: ${{ runner.os }}-conan-1
+           key: ${{ runner.os }}-conan-2
       - name: build
         run: ./ci/ci.bash
         shell: bash
