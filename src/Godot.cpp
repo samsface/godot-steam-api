@@ -465,11 +465,33 @@ class SteamFriends : public Reference
         return steam_friends_->GetFriendPersonaName(steam_id_user->get());
     }
 
+    void active_game_overlay_to_web_page(String url)
+    {
+        if(!steam_friends_)
+        {
+            return;
+        }
+
+        steam_friends_->ActivateGameOverlayToWebPage(url.utf8().get_data());
+    }
+
+    void activate_game_overlay_to_store(int app_id, int where)
+    {
+        if(!steam_friends_)
+        {
+            return;
+        }
+
+        steam_friends_->ActivateGameOverlayToStore(app_id, static_cast<EOverlayToStoreFlag>(where));
+    }
+
 public:
     static void _register_methods()
     {
-        register_method("request_user_information", &SteamFriends::request_user_information);
-        register_method("get_friend_persona_name",  &SteamFriends::get_friend_persona_name);
+        register_method("request_user_information",        &SteamFriends::request_user_information);
+        register_method("get_friend_persona_name",         &SteamFriends::get_friend_persona_name);
+        register_method("active_game_overlay_to_web_page", &SteamFriends::active_game_overlay_to_web_page);
+        register_method("activate_game_overlay_to_store",  &SteamFriends::activate_game_overlay_to_store);
     }
 
     void _init()
