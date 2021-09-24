@@ -15,6 +15,12 @@ enum LeaderboardDataRequest {
 	Users = 3
 }
 
+enum OverlayToStoreFlag {
+	None = 0,
+	AddToCart = 1,
+	AddToCartAndShow = 2,
+};
+
 class Callback:
 	signal done
 
@@ -29,7 +35,7 @@ func _ready():
 		api_ = null
 		push_error("Failed to init steam api. Is Steam running? Is the plugin activated? Did you do the setup in ProjectSettings > SteamAPI")
 		return
-	
+
 	user_stats_ = SteamUserStats.new()
 	friends_    = SteamFriends.new()
 	user_stats_.request_current_stats()
@@ -119,3 +125,15 @@ func get_leaderboard_scores_(leaderboard_name:String, begin:int, end:int, method
 		res.push_back(score)
 	
 	return callback.emit_signal("done", res)
+
+func active_game_overlay_to_web_page(url:String) -> void:
+	if not friends_:
+		return
+		
+	friends_.active_game_overlay_to_web_page(url)
+	
+func activate_game_overlay_to_store(app_id:int, where:int = 0) -> void:
+	if not friends_:
+		return
+		
+	friends_.activate_game_overlay_to_store(app_id, where)

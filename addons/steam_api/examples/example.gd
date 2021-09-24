@@ -8,3 +8,6 @@ func _ready():
 
 	var scores = yield(Steam.get_leaderboard_scores("High Score", 0, 10), "done")
 	print(scores)
+	
+	Steam.active_game_overlay_to_web_page("https://steamcommunity.com/")
+	Steam.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.AddToCart)
