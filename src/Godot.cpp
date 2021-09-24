@@ -65,14 +65,11 @@ public:
     {
         return steam_id_;
     }
-
 };
 
 template<typename T, typename TT>
-struct SteamBase : public Reference
+class SteamBase : public Reference
 {
-    GODOT_CLASS(SteamBase, Reference)
-
 protected:
     T data{};
 
@@ -95,9 +92,9 @@ public:
     }
 };
 
-struct SteamLeaderboard : public SteamBase<SteamLeaderboard_t, SteamLeaderboard>
+class SteamLeaderboard : public SteamBase<SteamLeaderboard_t, SteamLeaderboard>
 {
-    GODOT_CLASS(SteamLeaderboard, SteamBase)
+    GODOT_CLASS(SteamLeaderboard, Reference)
 
 public:
     static void _register_methods()
@@ -109,7 +106,7 @@ public:
     }
 };
 
-struct SteamLeaderboardFindResult : public SteamBase<LeaderboardFindResult_t, SteamLeaderboardFindResult>
+class SteamLeaderboardFindResult : public SteamBase<LeaderboardFindResult_t, SteamLeaderboardFindResult>
 {
     GODOT_CLASS(SteamLeaderboardFindResult, Reference)
 
@@ -135,7 +132,7 @@ public:
     }
 };
 
-struct SteamLeaderboardScoreUploaded : public SteamBase<LeaderboardScoreUploaded_t, SteamLeaderboardScoreUploaded>
+class SteamLeaderboardScoreUploaded : public SteamBase<LeaderboardScoreUploaded_t, SteamLeaderboardScoreUploaded>
 {
     GODOT_CLASS(SteamLeaderboardScoreUploaded, Reference)
 
@@ -155,7 +152,7 @@ public:
     }
 };
 
-struct SteamLeaderboardEntry : public SteamBase<LeaderboardEntry_t, SteamLeaderboardEntry>
+class SteamLeaderboardEntry : public SteamBase<LeaderboardEntry_t, SteamLeaderboardEntry>
 {
     GODOT_CLASS(SteamLeaderboardEntry, Reference)
 
@@ -187,7 +184,7 @@ public:
     }
 };
 
-struct SteamLeaderboardEntries : public SteamBase<SteamLeaderboardEntries_t, SteamLeaderboardEntries>
+class SteamLeaderboardEntries : public SteamBase<SteamLeaderboardEntries_t, SteamLeaderboardEntries>
 {
     GODOT_CLASS(SteamLeaderboardEntries, Reference)
 
@@ -201,7 +198,7 @@ public:
     }
 };
 
-struct SteamLeaderboardScoresDownloaded : public SteamBase<LeaderboardScoresDownloaded_t, SteamLeaderboardScoresDownloaded>
+class SteamLeaderboardScoresDownloaded : public SteamBase<LeaderboardScoresDownloaded_t, SteamLeaderboardScoresDownloaded>
 {
     GODOT_CLASS(SteamLeaderboardScoresDownloaded, Reference)
 
@@ -227,40 +224,49 @@ public:
     }
 };
 
-struct SteamCallback : public Reference
+class SteamCallback : public Reference
 {
     GODOT_CLASS(SteamCallback, Reference)
 
-    std::unique_ptr<CCallbackBase> callback_;
+    // Valve was nice enough to not make CCallResult base class private.
+    // Wrapping CCallResult so can properly call it's dtor.
+    struct steam_callback_base
+    {
+        virtual ~steam_callback_base()
+        {}
+    };
 
-    // we pass callbacks to steam by raw pointer so we need to ensure we keep this memory alive
+    template<typename steam_type, typename emit_type>
+    struct steam_callback : public steam_callback_base
+    {
+        CCallResult<steam_callback, steam_type> callback;
+        SteamCallback* parent{};
+
+        steam_callback(SteamCallback* parent_) : parent{parent_}
+        {}
+
+        void operator()(steam_type* t, bool)
+        {
+            parent->operator()(std::move(emit_type::make(t)));
+        }
+    };
+
+    std::unique_ptr<steam_callback_base> callback_;
+
+    // We pass callbacks to steam by raw pointer so we need to ensure we keep this memory alive
+    // until steam calls us back.
     static auto& keep_alive()
     {
         static std::set<Ref<SteamCallback>> set;
         return set;
     }
 
-    void erase_self_from_keep_alive()
+public:
+    template<typename T>
+    void operator()(T t)
     {
-        keep_alive().erase(Ref<SteamCallback>{this});
-    }
-
-    void operator()(LeaderboardFindResult_t* t, bool)
-    {
-        emit_signal("done", SteamLeaderboardFindResult::make(t));
-        erase_self_from_keep_alive();
-    }
-
-    void operator()(LeaderboardScoreUploaded_t* t, bool)
-    {
-        emit_signal("done", SteamLeaderboardScoreUploaded::make(t));
-        erase_self_from_keep_alive();
-    }
-
-    void operator()(LeaderboardScoresDownloaded_t* t, bool)
-    {
-        emit_signal("done", SteamLeaderboardScoresDownloaded::make(t));
-        erase_self_from_keep_alive();
+        emit_signal("done", t);
+        keep_alive().erase(Ref{this});
     }
 
 public:
@@ -269,23 +275,21 @@ public:
         register_signal<SteamCallback>("done", {});
     }
 
-    template<typename T>
-    static Ref<SteamCallback> make(SteamAPICall_t steam_api_call)
+    void _init()
+    {
+    }
+
+    template<typename steam_type, typename emit_type>
+    static auto make(SteamAPICall_t steam_api_call)
     {
         auto res = Ref{SteamCallback::_new()};
-        res->callback_.reset(reinterpret_cast<CCallbackBase*>(new CCallResult<SteamCallback, T>));
-
-        auto lol = reinterpret_cast<CCallResult<SteamCallback, T>*>(res->callback_.get());
-
-        lol->Set(steam_api_call, *res, &SteamCallback::operator());
+        auto ptr = new steam_callback<steam_type, emit_type>{*res};
+        res->callback_.reset(ptr);
+        ptr->callback.Set(steam_api_call, ptr, &steam_callback<steam_type, emit_type>::operator());
 
         keep_alive().insert(res);
 
         return res;
-    }
-
-    void _init()
-    {
     }
 };
 
@@ -293,7 +297,7 @@ class SteamUserStats : public Reference
 {
     GODOT_CLASS(SteamUserStats, Reference)
 
-    ISteamUserStats* m_steam_user_stats_{};
+    ISteamUserStats* steam_user_stats_{};
 
 public:
     static void _register_methods()
@@ -311,15 +315,15 @@ public:
 
     void _init()
     {
-        m_steam_user_stats_ = ::SteamUserStats();
+        steam_user_stats_ = ::SteamUserStats();
     }
     
     
     bool set_achievement(String achievement_api_name)
     {
-        if(m_steam_user_stats_)
+        if(steam_user_stats_)
         {
-            return m_steam_user_stats_->SetAchievement(achievement_api_name.utf8().get_data());
+            return steam_user_stats_->SetAchievement(achievement_api_name.utf8().get_data());
         }
         
         return false;
@@ -327,9 +331,9 @@ public:
 
     bool clear_achievement(String achievement_api_name)
     {
-        if(m_steam_user_stats_)
+        if(steam_user_stats_)
         {
-            return m_steam_user_stats_->ClearAchievement(achievement_api_name.utf8().get_data());
+            return steam_user_stats_->ClearAchievement(achievement_api_name.utf8().get_data());
         }
 
         return false;
@@ -337,10 +341,10 @@ public:
 
     bool get_achievement(String achievement_api_name)
     {
-        if(m_steam_user_stats_)
+        if(steam_user_stats_)
         {
             bool unlocked{};
-            if(m_steam_user_stats_->GetAchievement(achievement_api_name.utf8().get_data(), &unlocked))
+            if(steam_user_stats_->GetAchievement(achievement_api_name.utf8().get_data(), &unlocked))
             {
                 return unlocked;
             }
@@ -351,28 +355,29 @@ public:
 
     bool request_current_stats()
     {
-        return m_steam_user_stats_->RequestCurrentStats();
+        return steam_user_stats_->RequestCurrentStats();
     }
 
     bool store_stats()
     {
-        return m_steam_user_stats_->StoreStats();
+        return steam_user_stats_->StoreStats();
     }
 
     Ref<SteamCallback> find_leaderboard(String leaderboard_name)
     {
-        if(!m_steam_user_stats_)
+        if(!steam_user_stats_)
         {
             return {};
         }
         
-        auto call = m_steam_user_stats_->FindLeaderboard(leaderboard_name.utf8().get_data());
-        return SteamCallback::make<LeaderboardFindResult_t>(call);
+        auto call = steam_user_stats_->FindLeaderboard(leaderboard_name.utf8().get_data());
+        return SteamCallback::make<LeaderboardFindResult_t, SteamLeaderboardFindResult>(call);
     }
+
 
     Ref<SteamCallback> upload_leaderboard_score(Ref<SteamLeaderboard> leaderboard, int method, int score)
     {
-        if(!m_steam_user_stats_)
+        if(!steam_user_stats_)
         {
             return {};
         }
@@ -382,13 +387,13 @@ public:
             return {};
         }
 
-        auto call = m_steam_user_stats_->UploadLeaderboardScore(leaderboard->get(), static_cast<ELeaderboardUploadScoreMethod>(method), score, nullptr, 0);
-        return SteamCallback::make<LeaderboardScoreUploaded_t>(call);
+        auto call = steam_user_stats_->UploadLeaderboardScore(leaderboard->get(), static_cast<ELeaderboardUploadScoreMethod>(method), score, nullptr, 0);
+        return SteamCallback::make<LeaderboardScoreUploaded_t, SteamLeaderboardScoreUploaded>(call);
     }
-
+    
     Ref<SteamCallback> download_leaderboard_entries(Ref<SteamLeaderboard> leaderboard, int data_request, int begin, int end)
     {
-        if(!m_steam_user_stats_)
+        if(!steam_user_stats_)
         {
             return {};
         }
@@ -398,13 +403,13 @@ public:
             return {};
         }
 
-        auto call = m_steam_user_stats_->DownloadLeaderboardEntries(leaderboard->get(), static_cast<ELeaderboardDataRequest>(data_request), begin, end);
-        return SteamCallback::make<LeaderboardScoresDownloaded_t>(call);
+        auto call = steam_user_stats_->DownloadLeaderboardEntries(leaderboard->get(), static_cast<ELeaderboardDataRequest>(data_request), begin, end);
+        return SteamCallback::make<LeaderboardScoresDownloaded_t, SteamLeaderboardScoresDownloaded>(call);
     }
 
     Ref<SteamLeaderboardEntry> get_downloaded_leaderboard_entry(Ref<SteamLeaderboardEntries> leaderboard, int index)
     {
-        if(!m_steam_user_stats_)
+        if(!steam_user_stats_)
         {
             return {};
         }
@@ -415,7 +420,7 @@ public:
         }
 
         auto res = Ref{SteamLeaderboardEntry::_new()};
-        if(!m_steam_user_stats_->GetDownloadedLeaderboardEntry(leaderboard->get(), index, &res->get(), nullptr, 0))
+        if(!steam_user_stats_->GetDownloadedLeaderboardEntry(leaderboard->get(), index, &res->get(), nullptr, 0))
         {
             return {};
         }
@@ -473,7 +478,6 @@ public:
     }
     
 };
-
 
 extern "C" void GDN_EXPORT godot_gdnative_init(godot_gdnative_init_options *o) 
 {
