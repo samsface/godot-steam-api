@@ -2,20 +2,31 @@
 
 > **Godot Steam integration using GDNative.** Supports 💰Windows, 🐧Linux & 🍏MacOS (x86_x64/arm64).
 
-# Getting Started
+## Getting Started
 1. Download and open the [example project](https://github.com/samsface/godot-steam-api/archive/refs/heads/master.zip).
-2. There will be a SteamAPI tab in the Project Settings, follow the instructions to configure the SteamAPI for your game.
+2. There will be a SteamAPI tab in the Project Settings, follow the instructions to configure the SteamAPI for your game. *Takes a few seconds.*
 
 Now you can use the following functions:
 ```gdscript
+# acheivements
 Steam.set_achievement("gator_god")
 Steam.get_achievement("gator_god")
 Steam.clear_achievement("gator_god")
+
+# leaderboards
 Steam.set_leaderboard_score("High Scores", 1000)
 var scores = yield(Steam.get_leaderboard_scores("High Scores", 0, 10), "done")
+
+# overlay
+Steam.activate_game_overlay_to_web_page("https://steamcommunity.com/")
+Steam.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.AddToCart)
 ```
 
-## Buildling localy on Windows
+## Building yourself
+
+You don't need to compile/build anything for this addon. These instructions are only for people that wish to contribute.
+
+### Buildling Windows
 
 1. Clone this repo.
   ``` sh
