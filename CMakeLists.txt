@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
 project(steamsdk-godot)
 
+option(BUILD_SHARED_LIBS "Build shared libs" ON)
+
+set(STEAM_SDK_PATH "lib/steam-sdk" CACHE STRING "Steam SDK path")
+
 ###############################################################################
 # conan stuff
 ###############################################################################
@@ -42,7 +46,7 @@ endif()
 # let's us link relative to process on linux
 set(CMAKE_INSTALL_RPATH "$ORIGIN")
 
-add_library(steamsdk-godot SHARED src/Godot.cpp)
+add_library(steamsdk-godot src/Godot.cpp)
 
 set_target_properties(
   steamsdk-godot
@@ -53,7 +57,7 @@ set_target_properties(
 target_include_directories(
   steamsdk-godot 
   PUBLIC 
-  lib/steam-sdk/public)
+  ${STEAM_SDK_PATH}/public)
 
 if(APPLE)
   set_target_properties(
@@ -65,13 +69,13 @@ if(APPLE)
     STEAM_API 
     NAMES libsteam_api steam_api
     REQUIRED 
-    PATHS lib/steam-sdk/redistributable_bin/osx)
+    PATHS ${STEAM_SDK_PATH}/redistributable_bin/osx)
 else()
   find_library(
     STEAM_API 
     NAMES libsteam_api steam_api64 steam_api
     REQUIRED 
-    PATHS lib/steam-sdk/redistributable_bin/win64 lib/steam-sdk/redistributable_bin/linux64)
+    PATHS ${STEAM_SDK_PATH}/redistributable_bin/win64 ${STEAM_SDK_PATH}/redistributable_bin/linux64)
 endif()
 
 target_link_libraries(

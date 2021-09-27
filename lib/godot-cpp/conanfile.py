@@ -26,20 +26,6 @@ class GodotCppConan(ConanFile):
         tools.get(**self.conan_data["sources"]["headers"])
         tools.rename(glob.glob("godot-headers-*")[0], "godot-headers")
 
-        scrub = [
-            'set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${BUILD_PATH}")',
-            'set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${BUILD_PATH}")',
-            'set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${BUILD_PATH}")',
-            'SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "${BUILD_PATH}")',
-            'SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "${BUILD_PATH}")',
-            'SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG "${BUILD_PATH}")',
-            'SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE "${BUILD_PATH}")',
-            'SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG "${BUILD_PATH}")',
-            'SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE "${BUILD_PATH}")'
-            ]
-
-        for line in scrub:
-            tools.replace_in_file("CMakeLists.txt", line, "")
 
         with open("CMakeLists.txt", "a") as myfile:
             myfile.write("install(DIRECTORY godot-headers/ DESTINATION include)\n")
