@@ -6,6 +6,8 @@
 1. Download and open this [example project](https://github.com/samsface/godot-steam-api/archive/refs/heads/master.zip). Or download through Godot using the [Asset Library](https://godotengine.org/asset-library/asset/1020).
 3. There will be a SteamAPI tab in the Project Settings, follow the instructions to configure the SteamAPI for your game.
 
+The path for the SDK needs to be the root directory of the Steam SDK (the folder containing the README file).
+
 Now you can use the following functions:
 ```gdscript
 Steam.set_achievement("gator_god")
