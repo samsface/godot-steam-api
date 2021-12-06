@@ -1,13 +1,6 @@
 name: build
 
-on:
-  push:
-    branches: [ work ]
-    paths:
-      - .github/workflows/build.yml
-      - 'src/*'
-      - 'CMakeLists.txt'
-      - 'lib/godot-cpp/*'
+on: push
 
 jobs:
   build:
