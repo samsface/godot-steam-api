@@ -22,6 +22,12 @@ Steam.activate_game_overlay_to_web_page("https://steamcommunity.com/")
 Steam.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.AddToCart)
 ```
 
+## Testing an exported build
+
+Steam integration doesn't work with exported builds straight away. You'll have to either:
+- Upload your build to Steam or
+- Create a file in the same directory as your exported build named `steamapp_id.txt` with just your steam app id in it. Though do not upload this file as part of your build.
+
 ## Building yourself
 
 You don't need to compile/build anything for this addon. These instructions are only for people that wish to contribute.
