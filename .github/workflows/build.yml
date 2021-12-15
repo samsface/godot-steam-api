@@ -67,6 +67,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: project
+          path: addons
       - name: commit
         run: |
           git config --global user.name 'samsface'
