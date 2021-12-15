@@ -1,0 +1,3 @@
+[submodule "lib/steam-sdk"]
+	path = lib/steam-sdk
+	url = git@github.com:samsface/steam-sdk.git
