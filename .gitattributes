@@ -7,7 +7,7 @@
 /.gitmodules        export-ignore
 /.github            export-ignore
 /LICENSE            export-ignore
-/README.md          export-ignore
+/readme.md          export-ignore
 /project.godot      export-ignore
 /app                export-ignore
 /dev.sh             export-ignore
