@@ -1,0 +1,10 @@
+[gd_resource type="NativeScript" load_steps=2 format=2]
+
+[ext_resource path="res://addons/steam_api/steam_api.gdnlib" type="GDNativeLibrary" id=1]
+
+[resource]
+resource_name = "steam_leaderboard_entries"
+class_name = "SteamLeaderboardEntries"
+library = ExtResource( 1 )
+script_class_name = "SteamLeaderboardEntries"
+
