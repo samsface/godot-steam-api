@@ -63,9 +63,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: master
-      - name: clear
-        run: rm -rf *
-        shell: bash
       - name: download all build artifacts
         uses: actions/download-artifact@v2
         with:
