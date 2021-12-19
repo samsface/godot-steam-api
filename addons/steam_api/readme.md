@@ -27,3 +27,9 @@ Steam.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.AddToCart
 Steam integration doesn't work with exported builds straight away. You'll have to either:
 - Upload your build to Steam or
 - Create a file in the same directory as your exported build named `steamapp_id.txt` with just your steam app id in it. Though do not upload this file as part of your build.
+
+## Troubleshooting
+
+- Did you follow the instruction in the project settings Steam tab?
+- Is Steam running?
+- Have you published your acheivments in the SteamWorks console? *Publishing isn't releasing the game, I mean the button that publishes your Store page.*
