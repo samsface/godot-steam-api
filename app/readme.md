@@ -9,6 +9,7 @@
 Now you can use the following functions:
 ```gdscript
 # acheivements
+# all achievments must be setup and published through steamworks prior
 # set an achievement (does nothing if achievement already set)
 Steam.set_achievement("gator_god")
 # tests if acheivment is unlocked
