@@ -15,7 +15,12 @@ Steam.clear_achievement("gator_god")
 
 # leaderboards
 Steam.set_leaderboard_score("High Scores", 1000)
+# Get the first 10 high scores
 var scores = yield(Steam.get_leaderboard_scores("High Scores", 0, 10), "done")
+# Get just the current user's high score
+var scores = yield(Steam.get_leaderboard_scores("High Scores", 0, 0, Steam.LeaderboardDataRequest.GlobalAroundUser), "done")
+# Get the current user's high score and the two scores infron and behind
+var scores = yield(Steam.get_leaderboard_scores("High Scores", -1, 1, Steam.LeaderboardDataRequest.GlobalAroundUser), "done")
 
 # overlay
 Steam.activate_game_overlay_to_web_page("https://steamcommunity.com/")
