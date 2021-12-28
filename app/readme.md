@@ -9,8 +9,11 @@
 Now you can use the following functions:
 ```gdscript
 # acheivements
+# set an achievement (does nothing if achievement already set)
 Steam.set_achievement("gator_god")
-Steam.get_achievement("gator_god")
+# tests if acheivment is unlocked
+var is_gator_god_acheieved:bool = Steam.get_achievement("gator_god")
+# resets the acheivment
 Steam.clear_achievement("gator_god")
 
 # leaderboards
