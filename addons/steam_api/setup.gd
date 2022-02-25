@@ -1,6 +1,8 @@
 tool
 extends Control
 
+signal disable
+
 var settings
 var settings_path = "res://addons/steam_api/settings.tres"
 
@@ -87,3 +89,7 @@ func save_settings():
 	settings.sdk_dir = $panel/container/sdk_dir/input.text
 	ResourceSaver.save(settings_path, settings)
 
+func _on_disable_pressed():
+	settings.disable = $panel/container/disable/input.pressed
+	save_settings()
+	emit_signal("disable", settings.disable)

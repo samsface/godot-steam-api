@@ -9,12 +9,12 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
+"base": "",
 "class": "SteamAPI",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_api.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamCallback",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_callback.gdns"
@@ -24,12 +24,17 @@ _global_script_classes=[ {
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_friends.gdns"
 }, {
+"base": "Node",
+"class": "SteamI",
+"language": "GDScript",
+"path": "res://addons/steam_api/steam_i.gd"
+}, {
 "base": "",
 "class": "SteamId",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_id.gdns"
 }, {
-"base": "SteamBase",
+"base": "",
 "class": "SteamLeaderboard",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_leaderboard.gdns"
@@ -44,7 +49,7 @@ _global_script_classes=[ {
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_leaderboard_entry.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamLeaderboardFindResult",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_find_leaderboard_result.gdns"
@@ -59,7 +64,7 @@ _global_script_classes=[ {
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_leaderboard_scores_downloaded.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamUserStats",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_user_stats.gdns"
@@ -68,6 +73,7 @@ _global_script_class_icons={
 "SteamAPI": "",
 "SteamCallback": "",
 "SteamFriends": "",
+"SteamI": "",
 "SteamId": "",
 "SteamLeaderboard": "",
 "SteamLeaderboardEntries": "",
@@ -86,7 +92,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Steam="*res://addons/steam_api/steam.tscn"
+Steam="*res://addons/steam_api/steam.gd"
 
 [editor_plugins]
 

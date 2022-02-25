@@ -26,7 +26,6 @@ public:
     {
        return SteamAPI_RestartAppIfNecessary(app_id);
     }
-    
 
     bool init()
     {
@@ -435,6 +434,8 @@ class SteamFriends : public Reference
 
     ISteamFriends* steam_friends_{};
 
+    STEAM_CALLBACK(SteamFriends, OnGameOverlayActivated, GameOverlayActivated_t);
+
     bool request_user_information(Ref<SteamID> steam_id_user, bool require_name_only)
     {
         if(!steam_friends_)
@@ -492,6 +493,8 @@ public:
         register_method("get_friend_persona_name",         &SteamFriends::get_friend_persona_name);
         register_method("active_game_overlay_to_web_page", &SteamFriends::active_game_overlay_to_web_page);
         register_method("activate_game_overlay_to_store",  &SteamFriends::activate_game_overlay_to_store);
+
+        register_signal<SteamFriends>("game_overlay_activated", "active", GODOT_VARIANT_TYPE_BOOL);
     }
 
     void _init()
@@ -500,6 +503,16 @@ public:
     }
     
 };
+
+inline void SteamFriends::OnGameOverlayActivated(GameOverlayActivated_t* callback)
+{
+	if (!callback)
+    {
+        return;
+    }
+
+    emit_signal("game_overlay_activated", static_cast<bool>(callback->m_bActive));
+}
 
 extern "C" void GDN_EXPORT godot_gdnative_init(godot_gdnative_init_options *o) 
 {
