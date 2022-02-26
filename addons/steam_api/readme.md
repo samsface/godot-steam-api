@@ -37,6 +37,11 @@ Steam integration doesn't work with exported builds straight away. You'll have t
 - Upload your build to Steam or
 - Create a file in the same directory as your exported build named `steamapp_id.txt` with just your steam app id in it. Though do not upload this file as part of your build.
 
+## Can I publish to Itch.io still?
+
+Yes. There's a switch in `Project Settings > Steam API` that disables the integration, i.e. all calls on the API just do nothing and return/yield null. However it is up to the caller to then safely deal with the null values returned by the API in disabled mode.
+
+
 ## Troubleshooting
 
 - Did you follow the instruction in the project settings Steam tab?
