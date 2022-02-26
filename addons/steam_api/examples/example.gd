@@ -1,6 +1,8 @@
 extends Node2D
 
 func _ready():
+	print(Steam.is_init())
+
 	Steam.clear_achievement("gator_god")
 	Steam.set_achievement("gator_god")
 

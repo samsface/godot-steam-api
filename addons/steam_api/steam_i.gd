@@ -105,6 +105,11 @@ var api_
 var user_stats:UserStats = UserStats.new(null)
 var friends:Friends = Friends.new(null)
 
+func is_init() -> bool:
+	if api_:
+		return api_.is_init()
+	return false
+
 func set_achievement(name:String) -> void:
 	user_stats.set_achievement(name)
 	user_stats.store_stats()

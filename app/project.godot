@@ -92,7 +92,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Steam="*res://addons/steam_api/steam_i.gd"
+Steam="*res://addons/steam_api/steam.gd"
 
 [editor_plugins]
 

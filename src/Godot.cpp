@@ -10,11 +10,14 @@ class SteamAPI : public Reference
 {
     GODOT_CLASS(SteamAPI, Reference)
 
+    bool is_init_{};
+
 public:
     static void _register_methods()
     {
         register_method("restart_app_if_necessary",  &SteamAPI::restart_app_if_necessary);
         register_method("init",                      &SteamAPI::init);
+        register_method("is_init",                   &SteamAPI::is_init);
         register_method("run_callbacks",             &SteamAPI::run_callbacks);
     }
 
@@ -29,12 +32,26 @@ public:
 
     bool init()
     {
-       return SteamAPI_Init();
+       is_init_ = SteamAPI_Init();
+       return is_init();
+    }
+
+    bool is_init()
+    {
+       return is_init_;
     }
 
     void run_callbacks()
     {
         SteamAPI_RunCallbacks();
+    }
+
+    ~SteamAPI()
+    {
+        if(is_init_) 
+        {
+            SteamAPI_Shutdown();
+        }
     }
 };
 
