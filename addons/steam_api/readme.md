@@ -8,6 +8,9 @@
 
 Now you can use the following functions:
 ```gdscript
+# check is steam integration is working and enabled, useful if you publish to multiple stores
+Steam.is_init()
+
 # acheivements
 Steam.set_achievement("gator_god")
 Steam.get_achievement("gator_god")
@@ -23,8 +26,9 @@ var players_score = yield(Steam.get_leaderboard_scores("High Scores", 0, 0, Stea
 var player_rivals_score = yield(Steam.get_leaderboard_scores("High Scores", -1, 1, Steam.LeaderboardDataRequest.GlobalAroundUser), "done")
 
 # overlay
-Steam.activate_game_overlay_to_web_page("https://steamcommunity.com/")
-Steam.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.AddToCart)
+Steam.friends.connect("game_overlay_activated", self, "_on_game_overlay_activated")
+Steam.friends.activate_game_overlay_to_web_page("https://steamcommunity.com/")
+Steam.friends.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.AddToCart)
 ```
 
 ## Testing an exported build
