@@ -14,7 +14,7 @@ Steam.is_init()
 # achievements
 # check if player already unlocked this achievement
 var has_alredy_unlocked_achievement:bool = Steam.get_achievement("gator_god")
-# give the player this achievement, benine if they already have it
+# give the player this achievement, benign if they already have it
 Steam.set_achievement("gator_god")
 # clear this achievement (only for debugging)
 Steam.clear_achievement("gator_god")
