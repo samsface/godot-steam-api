@@ -497,7 +497,7 @@ class SteamFriends : public Reference
         return steam_friends_->GetFriendPersonaName(steam_id_user->get());
     }
 
-    void active_game_overlay_to_web_page(String url)
+    void activate_game_overlay_to_web_page(String url)
     {
         if(!steam_friends_)
         {
@@ -520,10 +520,10 @@ class SteamFriends : public Reference
 public:
     static void _register_methods()
     {
-        register_method("request_user_information",        &SteamFriends::request_user_information);
-        register_method("get_friend_persona_name",         &SteamFriends::get_friend_persona_name);
-        register_method("active_game_overlay_to_web_page", &SteamFriends::active_game_overlay_to_web_page);
-        register_method("activate_game_overlay_to_store",  &SteamFriends::activate_game_overlay_to_store);
+        register_method("request_user_information",          &SteamFriends::request_user_information);
+        register_method("get_friend_persona_name",           &SteamFriends::get_friend_persona_name);
+        register_method("activate_game_overlay_to_web_page", &SteamFriends::activate_game_overlay_to_web_page);
+        register_method("activate_game_overlay_to_store",    &SteamFriends::activate_game_overlay_to_store);
 
         register_signal<SteamFriends>("game_overlay_activated", "active", GODOT_VARIANT_TYPE_BOOL);
     }

@@ -101,8 +101,8 @@ class Friends extends Proxy_:
 	func get_friend_persona_name(steam_user_id) -> String:
 		return call_("get_friend_persona_name", [steam_user_id])
 
-	func active_game_overlay_to_web_page(url:String) -> String:
-		return call_("active_game_overlay_to_web_page", [url])
+	func activate_game_overlay_to_web_page(url:String) -> void:
+		call_("activate_game_overlay_to_web_page", [url])
 		
 	func activate_game_overlay_to_store(app_id:int, where:int) -> void:
 		call_("activate_game_overlay_to_store", [app_id, where])
@@ -192,8 +192,8 @@ func get_leaderboard_scores_(leaderboard_name:String, begin:int, end:int, method
 	
 	return callback.emit_signal("done", res)
 
-func active_game_overlay_to_web_page(url:String) -> void:
-	friends.active_game_overlay_to_web_page(url)
+func activate_game_overlay_to_web_page(url:String) -> void:
+	friends.activate_game_overlay_to_web_page(url)
 
 func activate_game_overlay_to_store(app_id:int, where:int = 0) -> void:
 	friends.activate_game_overlay_to_store(app_id, where)
