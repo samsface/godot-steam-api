@@ -7,6 +7,9 @@ func _ready():
 	Steam.set_achievement("gator_god")
 
 	Steam.set_leaderboard_score("High Score", 1000)
+	
+	for i in Steam.get_num_achievement():
+		print(Steam.get_achievement_name(i))
 
 	var scores = yield(Steam.get_leaderboard_scores("High Score", 0, 10), "done")
 	print(scores)

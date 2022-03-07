@@ -60,7 +60,13 @@ class UserStats extends Proxy_:
 
 	func get_achievement(achievement_api_name:String) -> bool:
 		return call_("get_achievement", [achievement_api_name])
-
+	
+	func get_num_achievements() -> int:
+		return call_("get_num_achievements")
+	
+	func get_achievement_name(idx:int) -> String:
+		return call_("get_achievement_name", [idx])
+	
 	func request_current_stats() -> bool:
 		return call_("request_current_stats")
 
@@ -120,6 +126,12 @@ func get_achievement(name:String) -> bool:
 func clear_achievement(name:String) -> void:
 	user_stats.clear_achievement(name)
 	user_stats.store_stats()
+
+func get_num_achievement() -> int:
+	return user_stats.get_num_achievements()
+
+func get_achievement_name(idx:int) -> String:
+	return user_stats.get_achievement_name(idx)
 
 func set_leaderboard_score(leaderboard_name:String, score:int, method:int = LeaderboardUploadScoreMethod.KeepBest) -> void:
 	var find_leaderboard_result = yield(user_stats.find_leaderboard(leaderboard_name), "done")
