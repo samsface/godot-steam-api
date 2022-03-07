@@ -10,7 +10,6 @@ func _ready():
 	
 	for i in Steam.user_stats.get_num_achievement():
 	   print(Steam.user_stats.get_achievement_name(i))
-		print(Steam.get_achievement_name(i))
 
 	var scores = yield(Steam.get_leaderboard_scores("High Score", 0, 10), "done")
 	print(scores)
