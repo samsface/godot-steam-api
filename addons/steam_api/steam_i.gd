@@ -127,12 +127,6 @@ func clear_achievement(name:String) -> void:
 	user_stats.clear_achievement(name)
 	user_stats.store_stats()
 
-func get_num_achievement() -> int:
-	return user_stats.get_num_achievements()
-
-func get_achievement_name(idx:int) -> String:
-	return user_stats.get_achievement_name(idx)
-
 func set_leaderboard_score(leaderboard_name:String, score:int, method:int = LeaderboardUploadScoreMethod.KeepBest) -> void:
 	var find_leaderboard_result = yield(user_stats.find_leaderboard(leaderboard_name), "done")
 	if not find_leaderboard_result:
