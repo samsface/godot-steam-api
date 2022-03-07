@@ -60,7 +60,13 @@ class UserStats extends Proxy_:
 
 	func get_achievement(achievement_api_name:String) -> bool:
 		return call_("get_achievement", [achievement_api_name])
-
+	
+	func get_num_achievements() -> int:
+		return call_("get_num_achievements")
+	
+	func get_achievement_name(idx:int) -> String:
+		return call_("get_achievement_name", [idx])
+	
 	func request_current_stats() -> bool:
 		return call_("request_current_stats")
 

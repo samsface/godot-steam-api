@@ -319,6 +319,8 @@ public:
     static void _register_methods()
     {
         register_method("set_achievement",                  &SteamUserStats::set_achievement);
+        register_method("get_num_achievements",             &SteamUserStats::get_num_achievements);
+        register_method("get_achievement_name",             &SteamUserStats::get_achievement_name);
         register_method("clear_achievement",                &SteamUserStats::clear_achievement);
         register_method("get_achievement",                  &SteamUserStats::get_achievement);
         register_method("request_current_stats",            &SteamUserStats::request_current_stats);
@@ -345,6 +347,16 @@ public:
         return false;
     }
 
+    int get_num_achievements()
+    {
+        return steam_user_stats_->GetNumAchievements();
+    }
+
+    String get_achievement_name(int idx)
+    {
+        return steam_user_stats_->GetAchievementName(idx);
+    }
+
     bool clear_achievement(String achievement_api_name)
     {
         if(steam_user_stats_)
@@ -368,6 +380,8 @@ public:
  
         return false;
     }
+
+
 
     bool request_current_stats()
     {
