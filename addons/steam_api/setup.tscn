@@ -62,7 +62,7 @@ margin_right = 510.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 0, 24 )
 size_flags_horizontal = 3
-text = "Disable Steam Integration"
+text = "Disable Steam Integration (all Steam calls will return or yield null)"
 valign = 1
 
 [node name="input" type="CheckBox" parent="panel/container/disable"]
@@ -82,7 +82,7 @@ margin_right = 510.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 0, 24 )
 size_flags_horizontal = 3
-text = "Steam App ID"
+text = "Steam App ID (must be a valid id in your steam library)"
 valign = 1
 
 [node name="input" type="LineEdit" parent="panel/container/app_id"]
@@ -114,7 +114,7 @@ margin_left = 514.0
 margin_right = 1024.0
 margin_bottom = 24.0
 size_flags_horizontal = 3
-text = "/media/sam/adffc9be-fe94-4c6b-87db-cca9cb566739/work/spacebandit/steam/steamworks_sdk/sdk/"
+text = "/home/sam/work/godot-steam-api/lib/steam-sdk"
 placeholder_text = "C:\\Users\\gaben\\Downloads\\sdk"
 caret_blink = true
 caret_blink_speed = 0.5
@@ -158,8 +158,8 @@ margin_bottom = 24.0
 rect_min_size = Vector2( 0, 24 )
 size_flags_horizontal = 3
 bbcode_enabled = true
-bbcode_text = "[center][color=green]Done![/color][/center]"
-text = "Done!"
+bbcode_text = "[center][color=red]No files imported[/color][/center]"
+text = "No files imported"
 fit_content_height = true
 scroll_active = false
 
