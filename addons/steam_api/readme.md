@@ -38,7 +38,7 @@ Steam.friends.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.A
 
 Steam integration doesn't work with exported builds straight away. You'll have to either:
 - Upload your build to Steam or
-- Create a file in the same directory as your exported build named `steamapp_id.txt` with just your steam app id in it. Though do not upload this file as part of your build.
+- Create a file in the same directory as your exported build named `steam_appid.txt` with just your steam app id in it. Though do not upload this file as part of your build.
 
 ## Can I publish to Itch.io still?
 
