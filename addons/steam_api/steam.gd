@@ -11,6 +11,7 @@ func _ready() -> void:
 
 		return
 
+	user = User.new(SteamUser.new())
 	user_stats = UserStats.new(SteamUserStats.new())
 	user_stats.request_current_stats()
 	friends = Friends.new(SteamFriends.new())

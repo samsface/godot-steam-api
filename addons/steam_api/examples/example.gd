@@ -3,6 +3,8 @@ extends Node2D
 func _ready():
 	print(Steam.is_init())
 
+	print(Steam.user.get_steam_id().get_account_id())
+
 	Steam.clear_achievement("gator_god")
 	Steam.set_achievement("gator_god")
 

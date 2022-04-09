@@ -48,6 +48,13 @@ class Proxy_:
 
 		return object_to_proxy_.callv(func_name, args)
 
+class User extends Proxy_:
+	func _init(o).(o) -> void:
+		pass
+		
+	func get_steam_id() -> SteamId:
+		return call_("get_steam_id")
+
 class UserStats extends Proxy_:
 	func _init(o).(o) -> void:
 		pass
@@ -108,6 +115,7 @@ class Friends extends Proxy_:
 		call_("activate_game_overlay_to_store", [app_id, where])
 
 var api_
+var user:User = User.new(null)
 var user_stats:UserStats = UserStats.new(null)
 var friends:Friends = Friends.new(null)
 

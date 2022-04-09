@@ -71,6 +71,7 @@ public:
 
     static void _register_methods()
     {
+        register_method("get_account_id", &SteamID::get_account_id);
     }
 
     void _init()
@@ -80,6 +81,11 @@ public:
     auto const& get() const
     {
         return steam_id_;
+    }
+
+    int get_account_id() const
+    {
+        return steam_id_.GetAccountID();
     }
 };
 
@@ -309,6 +315,29 @@ public:
     }
 };
 
+class SteamUser : public Reference
+{
+    GODOT_CLASS(SteamUser, Reference)
+
+    ISteamUser* steam_user_{};
+
+public:
+    static void _register_methods()
+    {
+        register_method("get_steam_id", &SteamUser::get_steam_id);
+    }
+
+    void _init()
+    {
+        steam_user_ = ::SteamUser();
+    }
+
+    Ref<SteamID> get_steam_id() const
+    {
+        return SteamID::make(steam_user_->GetSteamID());
+    }
+};
+
 class SteamUserStats : public Reference
 {
     GODOT_CLASS(SteamUserStats, Reference)
@@ -335,8 +364,7 @@ public:
     {
         steam_user_stats_ = ::SteamUserStats();
     }
-    
-    
+
     bool set_achievement(String achievement_api_name)
     {
         if(steam_user_stats_)
@@ -567,6 +595,7 @@ extern "C" void GDN_EXPORT godot_nativescript_init(void *handle)
     godot::register_class<godot::SteamLeaderboardEntries>();
     godot::register_class<godot::SteamID>();
     godot::register_class<godot::SteamCallback>();
+    godot::register_class<godot::SteamUser>();
     godot::register_class<godot::SteamUserStats>();
     godot::register_class<godot::SteamFriends>();
 }
