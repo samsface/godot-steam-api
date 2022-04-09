@@ -50,3 +50,4 @@ Yes. There's a switch in `Project Settings > Steam API` that disables the integr
 - Did you follow the instruction in the project settings Steam tab?
 - Is Steam running?
 - Have you published your acheivments in the SteamWorks console? *Publishing isn't releasing the game, I mean the button that publishes your Store page.*
+- Tried uninstalling and reinstalling the plugin 😅?
