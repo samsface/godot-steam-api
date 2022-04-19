@@ -42,7 +42,7 @@ Steam.friends.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.A
 ## 📄 Documentation
 
 This plugin follows the structure and naming of the offical C++ SteamSDK almost verbatim.
-The only major difference is I use snake-case to better integrate with Godot.
+The only major difference is I use snake_case to better integrate with Godot.
 That is to say, you can just rely on the offical docs: https://partner.steamgames.com/doc/api.
 
 ## 🧪 Testing an exported build
