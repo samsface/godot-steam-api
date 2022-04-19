@@ -39,6 +39,12 @@ Steam.friends.activate_game_overlay_to_web_page("https://steamcommunity.com/")
 Steam.friends.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.AddToCart)
 ```
 
+## 📄 Documentation
+
+This plugin follows the structure and naming of the offical C++ SteamSDK almost verbatim.
+The only major difference is I use snake-case to better integrate with Godot.
+That is to say, you can just rely on the offical docs: https://partner.steamgames.com/doc/api.
+
 ## 🧪 Testing an exported build
 
 Steam integration doesn't work with exported builds straight away. You'll have to either:
