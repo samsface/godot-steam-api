@@ -28,6 +28,11 @@ var players_score = yield(Steam.get_leaderboard_scores("High Scores", 0, 0, Stea
 # Get the current user's high score and the two scores infront and behind
 var player_rivals_score = yield(Steam.get_leaderboard_scores("High Scores", -1, 1, Steam.LeaderboardDataRequest.GlobalAroundUser), "done")
 
+# rich presence
+# Read the docs: https://partner.steamgames.com/doc/features/enhancedrichpresence as this call has lots of hidden magic
+Steam.friends.set_rich_presence("status", "cactus")
+Steam.friends.clear_rich_presence("")
+
 # overlay
 Steam.friends.connect("game_overlay_activated", self, "_on_game_overlay_activated")
 Steam.friends.activate_game_overlay_to_web_page("https://steamcommunity.com/")

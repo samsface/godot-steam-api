@@ -20,5 +20,7 @@ func _ready():
 	Steam.friends.activate_game_overlay_to_web_page("https://steamcommunity.com/")
 	Steam.friends.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.AddToCart)
 
+	Steam.friends.set_rich_presence("status", "cactus")
+
 func _on_game_overlay_activated(active:bool) -> void:
 	$game_overlay_activated.text = str(active)

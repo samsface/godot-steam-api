@@ -557,6 +557,26 @@ class SteamFriends : public Reference
         steam_friends_->ActivateGameOverlayToStore(app_id, static_cast<EOverlayToStoreFlag>(where));
     }
 
+    bool set_rich_presence(String key, String value)
+    {
+        if(!steam_friends_)
+        {
+            return false;
+        }
+
+        return steam_friends_->SetRichPresence(key.utf8().get_data(), value.utf8().get_data());
+    }
+
+    void clear_rich_presence()
+    {
+        if(!steam_friends_)
+        {
+            return;
+        }
+
+        steam_friends_->ClearRichPresence();
+    }
+
 public:
     static void _register_methods()
     {
@@ -564,6 +584,8 @@ public:
         register_method("get_friend_persona_name",           &SteamFriends::get_friend_persona_name);
         register_method("activate_game_overlay_to_web_page", &SteamFriends::activate_game_overlay_to_web_page);
         register_method("activate_game_overlay_to_store",    &SteamFriends::activate_game_overlay_to_store);
+        register_method("set_rich_presence",                 &SteamFriends::set_rich_presence);
+        register_method("clear_rich_presence",               &SteamFriends::clear_rich_presence);
 
         register_signal<SteamFriends>("game_overlay_activated", "active", GODOT_VARIANT_TYPE_BOOL);
     }

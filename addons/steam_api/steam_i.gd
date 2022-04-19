@@ -126,9 +126,15 @@ class Friends extends Proxy_:
 
 	func activate_game_overlay_to_web_page(url:String) -> void:
 		call_("activate_game_overlay_to_web_page", [url])
-		
+
 	func activate_game_overlay_to_store(app_id:int, where:int) -> void:
 		call_("activate_game_overlay_to_store", [app_id, where])
+
+	func set_rich_presence(key:String, value:String) -> bool:
+		return call_("set_rich_presence", [key, value])
+
+	func clear_rich_presence() -> void:
+		call_("clear_rich_presence")
 
 var api_
 var user:User = User.new(null)
