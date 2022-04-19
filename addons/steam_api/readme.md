@@ -1,8 +1,8 @@
-# Godot-Steam-API
+# 🚂 Godot-Steam-API
 
 > **Godot Steam integration without rebuilding Godot.** Supports 💰Windows, 🐧Linux & 🍏MacOS (x86_x64/arm64).
 
-## Getting Started
+## 🏁 Getting Started
 1. Download this plugin through Godot's asset library https://godotengine.org/asset-library/asset/1020
 2. There should now be a SteamAPI tab in your Project Settings, follow the instructions to configure the SteamAPI for your game *(Takes a few seconds)*.
 
@@ -39,18 +39,18 @@ Steam.friends.activate_game_overlay_to_web_page("https://steamcommunity.com/")
 Steam.friends.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.AddToCart)
 ```
 
-## Testing an exported build
+## 🧪 Testing an exported build
 
 Steam integration doesn't work with exported builds straight away. You'll have to either:
 - Upload your build to Steam or
 - Create a file in the same directory as your exported build named `steam_appid.txt` with just your steam app id in it. Though do not upload this file as part of your build.
 
-## Can I publish to Itch.io still?
+## 😶‍🌫️ Can I publish to Itch.io still?
 
 Yes. There's a switch in `Project Settings > Steam API` that disables the integration, i.e. all calls on the API just do nothing and return/yield null. However it is up to the caller to then safely deal with the null values returned by the API in disabled mode.
 
 
-## Troubleshooting
+## 🤔 Troubleshooting
 
 - Did you follow the instruction in the project settings Steam tab?
 - Is Steam running?
