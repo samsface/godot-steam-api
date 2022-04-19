@@ -8,7 +8,7 @@
 
 Now you can use the following functions:
 ```gdscript
-# check is steam integration is working and enabled, useful if you publish to multiple stores
+# check steam integration is working and enabled, useful if you publish to multiple stores
 Steam.is_init()
 
 # achievements
