@@ -355,6 +355,7 @@ public:
         register_method("request_current_stats",            &SteamUserStats::request_current_stats);
         register_method("store_stats",                      &SteamUserStats::store_stats);
         register_method("find_leaderboard",                 &SteamUserStats::find_leaderboard);
+        register_method("find_or_create_leaderboard",       &SteamUserStats::find_or_create_leaderboard);
         register_method("upload_leaderboard_score",         &SteamUserStats::upload_leaderboard_score);
         register_method("download_leaderboard_entries",     &SteamUserStats::download_leaderboard_entries);
         register_method("get_downloaded_leaderboard_entry", &SteamUserStats::get_downloaded_leaderboard_entry);
@@ -429,6 +430,17 @@ public:
         }
         
         auto call = steam_user_stats_->FindLeaderboard(leaderboard_name.utf8().get_data());
+        return SteamCallback::make<LeaderboardFindResult_t, SteamLeaderboardFindResult>(call);
+    }
+
+    Ref<SteamCallback> find_or_create_leaderboard(String leaderboard_name, int sort_method, int display_type)
+    {
+        if(!steam_user_stats_)
+        {
+            return {};
+        }
+        
+        auto call = steam_user_stats_->FindOrCreateLeaderboard(leaderboard_name.utf8().get_data(), static_cast<ELeaderboardSortMethod>(sort_method), static_cast<ELeaderboardDisplayType>(display_type));
         return SteamCallback::make<LeaderboardFindResult_t, SteamLeaderboardFindResult>(call);
     }
 

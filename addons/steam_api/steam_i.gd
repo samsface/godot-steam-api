@@ -19,8 +19,21 @@ enum LeaderboardDataRequest {
 enum OverlayToStoreFlag {
 	None = 0,
 	AddToCart = 1,
-	AddToCartAndShow = 2,
-};
+	AddToCartAndShow = 2
+}
+
+enum LeaderboardSortMethod {
+	None = 0,
+	Ascending = 1,
+	Descending = 2
+}
+
+enum LeaderboardDisplayType {
+	None = 0, 
+	Numeric = 1,
+	TimeSeconds = 2,
+	TimeMilliSeconds = 3
+}
 
 class Callback:
 	signal done
@@ -82,6 +95,9 @@ class UserStats extends Proxy_:
 		
 	func find_leaderboard(leaderboard_name:String):
 		return callback_("find_leaderboard", [leaderboard_name])
+
+	func find_or_create_leaderboard(leaderboard_name:String, sort_method:int, display_type:int):
+		return callback_("find_or_create_leaderboard", [leaderboard_name, sort_method, display_type])
 
 	func upload_leaderboard_score(leaderboard, method:int, score:int):
 		return callback_("upload_leaderboard_score", [leaderboard, method, score])
