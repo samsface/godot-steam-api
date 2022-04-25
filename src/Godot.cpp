@@ -2,6 +2,7 @@
 #include <Node.hpp>
 #include <steam/steam_api.h>
 #include <memory>
+#include <vector>
 #include <set>
 
 namespace godot 
@@ -193,12 +194,26 @@ class SteamLeaderboardEntry : public SteamBase<LeaderboardEntry_t, SteamLeaderbo
         return data.m_nScore;
     }
 
+    PoolIntArray get_details() const
+    {
+        PoolIntArray res;
+        for(auto i : details)
+        {
+            res.append(i);
+        }
+
+        return res;
+    }
+
 public:
+    std::vector<std::int32_t> details;
+
     static void _register_methods()
     {
         register_method("get_steam_id_user", &SteamLeaderboardEntry::get_steam_id_user);
         register_method("get_global_rank",   &SteamLeaderboardEntry::get_global_rank);
         register_method("get_score",         &SteamLeaderboardEntry::get_score);
+        register_method("get_details",       &SteamLeaderboardEntry::get_details);
     }
 
     void _init()
@@ -444,8 +459,7 @@ public:
         return SteamCallback::make<LeaderboardFindResult_t, SteamLeaderboardFindResult>(call);
     }
 
-
-    Ref<SteamCallback> upload_leaderboard_score(Ref<SteamLeaderboard> leaderboard, int method, int score)
+    Ref<SteamCallback> upload_leaderboard_score(Ref<SteamLeaderboard> leaderboard, int method, int score, PoolIntArray score_details)
     {
         if(!steam_user_stats_)
         {
@@ -457,7 +471,14 @@ public:
             return {};
         }
 
-        auto call = steam_user_stats_->UploadLeaderboardScore(leaderboard->get(), static_cast<ELeaderboardUploadScoreMethod>(method), score, nullptr, 0);
+        // score_details_as_int32 is copied during UploadLeaderboardScore so doesn't need to live past fucntion scope
+        std::vector<std::int32_t> score_details_as_int32;
+        for(std::size_t i{}; i < score_details.size(); i++)
+        {
+            score_details_as_int32.push_back(static_cast<std::int32_t>(score_details[i]));
+        }
+
+        auto call = steam_user_stats_->UploadLeaderboardScore(leaderboard->get(), static_cast<ELeaderboardUploadScoreMethod>(method), score, score_details_as_int32.data(), score_details_as_int32.size());        
         return SteamCallback::make<LeaderboardScoreUploaded_t, SteamLeaderboardScoreUploaded>(call);
     }
     
@@ -477,7 +498,7 @@ public:
         return SteamCallback::make<LeaderboardScoresDownloaded_t, SteamLeaderboardScoresDownloaded>(call);
     }
 
-    Ref<SteamLeaderboardEntry> get_downloaded_leaderboard_entry(Ref<SteamLeaderboardEntries> leaderboard, int index)
+    Ref<SteamLeaderboardEntry> get_downloaded_leaderboard_entry(Ref<SteamLeaderboardEntries> leaderboard, int index, int detail_max)
     {
         if(!steam_user_stats_)
         {
@@ -490,7 +511,8 @@ public:
         }
 
         auto res = Ref{SteamLeaderboardEntry::_new()};
-        if(!steam_user_stats_->GetDownloadedLeaderboardEntry(leaderboard->get(), index, &res->get(), nullptr, 0))
+        res->details.resize(detail_max);
+        if(!steam_user_stats_->GetDownloadedLeaderboardEntry(leaderboard->get(), index, &res->get(), res->details.data(), detail_max))
         {
             return {};
         }
