@@ -30,6 +30,7 @@ var player_rivals_score = yield(Steam.get_leaderboard_scores("High Scores", -1, 
 
 # rich presence
 # Read the docs: https://partner.steamgames.com/doc/features/enhancedrichpresence as this call has lots of hidden magic
+# and use this tool to test: https://steamcommunity.com/dev/testrichpresence
 Steam.friends.set_rich_presence("status", "cactus")
 Steam.friends.clear_rich_presence()
 
