@@ -60,17 +60,17 @@ Yes. There's a switch in `Project Settings > Steam API` that disables the integr
 
 A ton of projects on Steam use this plugin. Here's just a few of my favourite:
 
-[Beat Invaders](https://store.steampowered.com/app/1863080/Beat_Invaders/),
-[Space Bandit](https://store.steampowered.com/app/1435470/Space_Bandit),
-[Franz Fury](https://store.steampowered.com/app/1513960/FRANZ_FURY),
-[The Ballad of Bonky](https://store.steampowered.com/app/1619870/The_Ballad_of_Bonky),
-[Hack Grid](https://store.steampowered.com/app/1543290/Hack_Grid),
-[Dark Crypt](https://store.steampowered.com/app/1706170/Dark_Crypt),
-[Red Nivis](https://store.steampowered.com/app/1928130/Red_Nivis),
-[Sokobos](https://store.steampowered.com/app/1655890/Sokobos),
-[Dark Sheep](https://store.steampowered.com/app/1576490/Dark_Sheep),
-[Mirrorama](https://store.steampowered.com/app/1845050/Mirrorama),
-[Letters from the Moon](https://store.steampowered.com/app/1805720/Letters_From_the_Moon/).
+[👾 Beat Invaders](https://store.steampowered.com/app/1863080/Beat_Invaders/),
+[🚀 Space Bandit](https://store.steampowered.com/app/1435470/Space_Bandit),
+[🚗 Franz Fury](https://store.steampowered.com/app/1513960/FRANZ_FURY),
+[🏌️ The Ballad of Bonky](https://store.steampowered.com/app/1619870/The_Ballad_of_Bonky),
+[🔲 Hack Grid](https://store.steampowered.com/app/1543290/Hack_Grid),
+[💀 Dark Crypt](https://store.steampowered.com/app/1706170/Dark_Crypt),
+[🏔️ Red Nivis](https://store.steampowered.com/app/1928130/Red_Nivis),
+[🏰 Sokobos](https://store.steampowered.com/app/1655890/Sokobos),
+[🐑 Dark Sheep](https://store.steampowered.com/app/1576490/Dark_Sheep),
+[🪞 Mirrorama](https://store.steampowered.com/app/1845050/Mirrorama),
+[🌑 Letters from the Moon](https://store.steampowered.com/app/1805720/Letters_From_the_Moon/).
 
 ## ⁉️ Troubleshooting
 
