@@ -15,8 +15,11 @@ func _ready() -> void:
 	user_stats = UserStats.new(SteamUserStats.new())
 	user_stats.request_current_stats()
 	friends = Friends.new(SteamFriends.new())
+	
+	pause_mode = PAUSE_MODE_PROCESS
 
 #warning-ignore:unused_argument
 func _process(delta:float) -> void:
 	if api_:
 		api_.run_callbacks()
+
