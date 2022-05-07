@@ -1,4 +1,4 @@
-name: build
+name: smoke
 
 on:
   workflow_dispatch:
