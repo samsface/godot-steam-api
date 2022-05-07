@@ -25,6 +25,6 @@ jobs:
         run: |
           curl -o godot.zip https://downloads.tuxfamily.org/godotengine/3.4.4/Godot_v3.4.4-stable_x11.64.zip 
           unzip godot.zip
-          sleep 5
+          mv Godot_v3.4.4-stable_x11.64 godot
           ls
-          ./Godot_v3.4.4-stable_x11.64 godot --version 
+          ./godot --help
