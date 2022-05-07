@@ -22,4 +22,6 @@ jobs:
         run: cp steam-sdk/redistributable_bin/linux64/libsteam_api.so addons/steam_api/.
         shell: bash
       - name: get godot
-        run: curl 
+        run: |
+          curl -o godot.zip https://downloads.tuxfamily.org/godotengine/3.4.4/Godot_v3.4.4-stable_x11.64.zip 
+          unzip godot.zip 
