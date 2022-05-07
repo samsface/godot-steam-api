@@ -1,1 +1,27 @@
+name: build
 
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: ['ubuntu']
+    runs-on: ${{ matrix.os }}-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: clone submodule
+        uses: actions/checkout@v2
+        with:
+          repository: samsface/steam-sdk
+          path: steam-sdk
+          ssh-key: ${{ secrets.STEAM_SDK_KEY }}
+      - name: copy sdk 
+        run: cp steam-sdk/redistributable_bin/linux64/libsteam_api.so addons/steam_api/.
+        shell: bash
+      - name: get godot
+        run: |
+          curl -o godot.zip https://downloads.tuxfamily.org/godotengine/3.4.4/Godot_v3.4.4-stable_x11.64.zip 
+          unzip godot.zip 
