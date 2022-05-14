@@ -1,10 +1,12 @@
 extends SteamI
 
 func _ready() -> void:
-        if not OS.has_feature("standalone"):
-                var file := File.new()
-                if not file.file_exists("res://addons/steam_api/steam_api64.dll"):
-                        push_error("You are missing the steamsdk libraries. You must download the steamsdk from steamworks and copy steam_api64.dll, libsteam_api.so and libsteam_api.dylib into 'res://addons/steam_api'. See the Steam API tab in project settings for full instructions.")
+	if not OS.has_feature("standalone"):
+		var file := File.new()
+		for f in ["steam_api64.dll", "libsteam_api.so", "libsteam_api.dylib"]:
+			if not file.file_exists("res://addons/steam_api/%s" % f):
+				push_error("You are missing the steamsdk libraries. You must download the steamsdk from steamworks and copy 'steam_api64.dll', 'libsteam_api.so' and 'libsteam_api.dylib' into 'res://addons/steam_api'. See the Steam API tab in project settings for full instructions.")
+				return
 
 	var settings = load("res://addons/steam_api/settings.tres")
 	api_ = SteamAPI.new()
