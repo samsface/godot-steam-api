@@ -124,6 +124,9 @@ class Friends extends Proxy_:
 	func get_friend_persona_name(steam_user_id) -> String:
 		return call_("get_friend_persona_name", [steam_user_id])
 
+	func get_persona_name() -> String:
+		return call_("get_persona_name")
+
 	func activate_game_overlay_to_web_page(url:String) -> void:
 		call_("activate_game_overlay_to_web_page", [url])
 

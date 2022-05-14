@@ -23,5 +23,7 @@ func _ready():
 
 	Steam.friends.set_rich_presence("steam_display", "cactus")
 
+	print(Steam.friends.get_persona_name())
+
 func _on_game_overlay_activated(active:bool) -> void:
 	$game_overlay_activated.text = str(active)

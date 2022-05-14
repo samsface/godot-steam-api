@@ -599,6 +599,16 @@ class SteamFriends : public Reference
         steam_friends_->ClearRichPresence();
     }
 
+    String get_persona_name() const
+    {
+        if(!steam_friends_)
+        {
+            return {};
+        }
+
+        return steam_friends_->GetPersonaName();
+    }
+
 public:
     static void _register_methods()
     {
@@ -608,6 +618,7 @@ public:
         register_method("activate_game_overlay_to_store",    &SteamFriends::activate_game_overlay_to_store);
         register_method("set_rich_presence",                 &SteamFriends::set_rich_presence);
         register_method("clear_rich_presence",               &SteamFriends::clear_rich_presence);
+        register_method("get_persona_name",                  &SteamFriends::get_persona_name);
 
         register_signal<SteamFriends>("game_overlay_activated", "active", GODOT_VARIANT_TYPE_BOOL);
     }
