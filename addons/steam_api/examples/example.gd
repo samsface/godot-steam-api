@@ -3,11 +3,12 @@ extends Node2D
 func _ready():
 	print(Steam.is_init())
 
+	print(Steam.utils.get_app_id())
+
 	print(Steam.user.get_steam_id().get_account_id())
 
-	Steam.clear_achievement("gator_god")
-	Steam.set_achievement("gator_god")
-
+	Steam.clear_achievement("test")
+	Steam.set_achievement("test")
 
 	Steam.set_leaderboard_score("High Score", 982, Steam.LeaderboardUploadScoreMethod.KeepBest, PoolIntArray([5, 5, 3]))
 

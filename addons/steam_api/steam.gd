@@ -22,7 +22,8 @@ func _ready() -> void:
 	user_stats = UserStats.new(SteamUserStats.new())
 	user_stats.request_current_stats()
 	friends = Friends.new(SteamFriends.new())
-	
+	utils = Utils.new(SteamUtils.new())
+
 	pause_mode = PAUSE_MODE_PROCESS
 
 #warning-ignore:unused_argument

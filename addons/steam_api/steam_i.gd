@@ -139,10 +139,18 @@ class Friends extends Proxy_:
 	func clear_rich_presence() -> void:
 		call_("clear_rich_presence")
 
+class Utils extends Proxy_:
+	func _init(o).(o) -> void:
+		pass
+
+	func get_app_id() -> int:
+		return call_("get_app_id")
+
 var api_
 var user:User = User.new(null)
 var user_stats:UserStats = UserStats.new(null)
 var friends:Friends = Friends.new(null)
+var utils:Utils = Utils.new(null)
 
 func is_init() -> bool:
 	if api_:

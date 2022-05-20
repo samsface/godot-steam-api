@@ -640,6 +640,34 @@ inline void SteamFriends::OnGameOverlayActivated(GameOverlayActivated_t* callbac
     emit_signal("game_overlay_activated", static_cast<bool>(callback->m_bActive));
 }
 
+class SteamUtils : public Reference
+{
+    GODOT_CLASS(SteamUtils, Reference)
+
+    ISteamUtils* steam_utils_{};
+
+    int get_app_id() const
+    {
+        if(!steam_utils_)
+        {
+            return {};
+        }
+
+        return steam_utils_->GetAppID();
+    }
+
+public:
+    static void _register_methods()
+    {
+        register_method("get_app_id", &SteamUtils::get_app_id);
+    }
+
+    void _init()
+    {
+        steam_utils_ = ::SteamUtils();
+    }
+};
+
 extern "C" void GDN_EXPORT godot_gdnative_init(godot_gdnative_init_options *o) 
 {
     godot::Godot::gdnative_init(o);
@@ -665,5 +693,6 @@ extern "C" void GDN_EXPORT godot_nativescript_init(void *handle)
     godot::register_class<godot::SteamUser>();
     godot::register_class<godot::SteamUserStats>();
     godot::register_class<godot::SteamFriends>();
+    godot::register_class<godot::SteamUtils>();
 }
 }
