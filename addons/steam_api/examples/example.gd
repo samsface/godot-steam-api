@@ -5,8 +5,6 @@ func _ready():
 
 	print(Steam.utils.get_app_id())
 
-	print(Steam.user.get_steam_id().get_account_id())
-
 	Steam.clear_achievement("test")
 	Steam.set_achievement("test")
 
