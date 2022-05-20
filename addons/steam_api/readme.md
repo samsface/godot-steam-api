@@ -71,7 +71,8 @@ A ton of projects on Steam use this plugin. Here's just a few of my favourite:
 [🐑 Dark Sheep](https://store.steampowered.com/app/1576490/Dark_Sheep),
 [🪞 Mirrorama](https://store.steampowered.com/app/1845050/Mirrorama),
 [🌑 Letters from the Moon](https://store.steampowered.com/app/1805720/Letters_From_the_Moon/),
-[👩🏾‍🦰 ROTA](https://store.steampowered.com/app/1993830/ROTA/).
+[👩🏾‍🦰 ROTA](https://store.steampowered.com/app/1993830/ROTA/),
+[🍩 Donut Dodo](https://store.steampowered.com/app/1779560/Donut_Dodo/).
 
 ## ⁉️ Troubleshooting
 
