@@ -61,14 +61,14 @@ class Proxy_:
 
 		return object_to_proxy_.callv(func_name, args)
 
-class User extends Proxy_:
+class SteamUserProxy_ extends Proxy_:
 	func _init(o).(o) -> void:
 		pass
 		
 	func get_steam_id() -> SteamId:
 		return call_("get_steam_id")
 
-class UserStats extends Proxy_:
+class SteamUserStatsProxy_ extends Proxy_:
 	func _init(o).(o) -> void:
 		pass
 
@@ -108,7 +108,7 @@ class UserStats extends Proxy_:
 	func get_downloaded_leaderboard_entry(leaderboard, index:int, max_details:int):
 		return callback_("get_downloaded_leaderboard_entry", [leaderboard, index, max_details])
 
-class Friends extends Proxy_:
+class SteamFriendsProxy_ extends Proxy_:
 	signal game_overlay_activated
 
 	func _init(o).(o) -> void:
@@ -142,7 +142,7 @@ class Friends extends Proxy_:
 	func clear_rich_presence() -> void:
 		call_("clear_rich_presence")
 
-class Utils extends Proxy_:
+class SteamUtilsProxy_ extends Proxy_:
 	func _init(o).(o) -> void:
 		pass
 
@@ -150,10 +150,10 @@ class Utils extends Proxy_:
 		return call_("get_app_id")
 
 var api_
-var user:User = User.new(null)
-var user_stats:UserStats = UserStats.new(null)
-var friends:Friends = Friends.new(null)
-var utils:Utils = Utils.new(null)
+var user:SteamUserProxy_ = SteamUserProxy_.new(null)
+var user_stats:SteamUserStatsProxy_ = SteamUserStatsProxy_.new(null)
+var friends:SteamFriendsProxy_ = SteamFriendsProxy_.new(null)
+var utils:SteamUtilsProxy_ = SteamUtilsProxy_.new(null)
 
 func is_init() -> bool:
 	if api_:
@@ -171,19 +171,32 @@ func clear_achievement(name:String) -> void:
 	user_stats.clear_achievement(name)
 	user_stats.store_stats()
 
-func set_leaderboard_score(leaderboard_name:String, score:int, method:int = LeaderboardUploadScoreMethod.KeepBest, details:PoolIntArray = PoolIntArray()) -> void:
-	var find_leaderboard_result = yield(user_stats.find_leaderboard(leaderboard_name), "done")
+func set_leaderboard_score(leaderboard_name:String, score:int, method:int = LeaderboardUploadScoreMethod.KeepBest, details:PoolIntArray = PoolIntArray(), sort_method:int = -1, display_type:int = LeaderboardDisplayType.Numeric):
+	var callback := Callback.new()
+	set_leaderboard_score_(leaderboard_name, score, method, details, sort_method, display_type, callback)
+	return callback
+
+func set_leaderboard_score_(leaderboard_name:String, score:int, method:int, details:PoolIntArray, sort_method:int, display_type:int, callback) -> void:
+	var find_leaderboard_result
+	
+	if sort_method > 0:
+		find_leaderboard_result = yield(user_stats.find_or_create_leaderboard(leaderboard_name, sort_method, display_type), "done")
+	else:
+		find_leaderboard_result = yield(user_stats.find_leaderboard(leaderboard_name), "done")
+	
 	if not find_leaderboard_result:
-		return
+		return callback.emit_signal("done", null)
 
 	if not find_leaderboard_result.get_leaderboard_found():
-		return
+		return callback.emit_signal("done", null)
 		
 	var leaderboard = find_leaderboard_result.get_leaderboard()
 	if not leaderboard:
-		return
+		return callback.emit_signal("done", null)
 
 	yield(user_stats.upload_leaderboard_score(leaderboard, method, score, details), "done")
+
+	return callback.emit_signal("done", null)
 
 func get_leaderboard_scores(leaderboard_name:String, begin:int, end:int, method:int = LeaderboardDataRequest.Global, max_details:int = 0):
 	var callback := Callback.new()
@@ -192,17 +205,11 @@ func get_leaderboard_scores(leaderboard_name:String, begin:int, end:int, method:
 
 func get_leaderboard_scores_(leaderboard_name:String, begin:int, end:int, method:int, max_details, callback:Callback) -> Callback:
 	var res := []
+
+	var find_leaderboard_result = yield(user_stats.find_leaderboard(leaderboard_name), "done")
+	if not find_leaderboard_result:
+		return callback.emit_signal("done", res)
 	
-	var user_stats_ = user_stats.object_to_proxy_
-	var friends_ = friends.object_to_proxy_
-
-	if not user_stats_:
-		return callback.emit_signal("done", res)
-
-	if not friends_:
-		return callback.emit_signal("done", res)
-
-	var find_leaderboard_result = yield(user_stats_.find_leaderboard(leaderboard_name), "done")
 	if not find_leaderboard_result.get_leaderboard_found():
 		return callback.emit_signal("done", res)
 	
@@ -210,7 +217,7 @@ func get_leaderboard_scores_(leaderboard_name:String, begin:int, end:int, method
 	if not leaderboard:
 		return callback.emit_signal("done", res)
 
-	var download = yield(user_stats_.download_leaderboard_entries(leaderboard, method, begin, end), "done")
+	var download = yield(user_stats.download_leaderboard_entries(leaderboard, method, begin, end), "done")
 	if not download:
 		return callback.emit_signal("done", res)
 
@@ -219,7 +226,7 @@ func get_leaderboard_scores_(leaderboard_name:String, begin:int, end:int, method
 		return callback.emit_signal("done", res)
 	
 	for i in download.get_entry_count():
-		var entry = user_stats_.get_downloaded_leaderboard_entry(entries, i, max_details)
+		var entry = user_stats.get_downloaded_leaderboard_entry(entries, i, max_details)
 		if not entry:
 			continue
 
@@ -228,8 +235,8 @@ func get_leaderboard_scores_(leaderboard_name:String, begin:int, end:int, method
 		score["score"] = entry.get_score()
 		score["details"] = entry.get_details()
 
-		if not friends_.request_user_information(entry.get_steam_id_user(), true):
-			score["persona_name"] = friends_.get_friend_persona_name(entry.get_steam_id_user())
+		if not friends.request_user_information(entry.get_steam_id_user(), true):
+			score["persona_name"] = friends.get_friend_persona_name(entry.get_steam_id_user())
 		else:
 			score["persona_name"] = "Frank"
 			

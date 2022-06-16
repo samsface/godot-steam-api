@@ -30,11 +30,11 @@ func _ready() -> void:
 
 		return
 
-	user = User.new(SteamUser.new())
-	user_stats = UserStats.new(SteamUserStats.new())
+	user = SteamUserProxy_.new(SteamUser.new())
+	user_stats = SteamUserStatsProxy_.new(SteamUserStats.new())
 	user_stats.request_current_stats()
-	friends = Friends.new(SteamFriends.new())
-	utils = Utils.new(SteamUtils.new())
+	friends = SteamFriendsProxy_.new(SteamFriends.new())
+	utils = SteamUtilsProxy_.new(SteamUtils.new())
 
 	pause_mode = PAUSE_MODE_PROCESS
 	

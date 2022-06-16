@@ -9,17 +9,17 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
+"base": "",
 "class": "SteamAPI",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_api.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamCallback",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_callback.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamFriends",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_friends.gdns"
@@ -34,42 +34,42 @@ _global_script_classes=[ {
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_id.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamLeaderboard",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_leaderboard.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamLeaderboardEntries",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_leaderboard_entries.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamLeaderboardEntry",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_leaderboard_entry.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamLeaderboardFindResult",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_find_leaderboard_result.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamLeaderboardScoreUploaded",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_leaderboard_uploaded.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamLeaderboardScoresDownloaded",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_leaderboard_scores_downloaded.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamUser",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_user.gdns"
 }, {
-"base": "Reference",
+"base": "",
 "class": "SteamUserStats",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_user_stats.gdns"
@@ -78,6 +78,11 @@ _global_script_classes=[ {
 "class": "SteamUtils",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_utils.gdns"
+}, {
+"base": "Node",
+"class": "Utils",
+"language": "GDScript",
+"path": "res://sam.gd"
 } ]
 _global_script_class_icons={
 "SteamAPI": "",
@@ -93,7 +98,8 @@ _global_script_class_icons={
 "SteamLeaderboardScoresDownloaded": "",
 "SteamUser": "",
 "SteamUserStats": "",
-"SteamUtils": ""
+"SteamUtils": "",
+"Utils": ""
 }
 
 [application]

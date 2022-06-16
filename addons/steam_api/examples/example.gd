@@ -7,11 +7,13 @@ func _ready():
 
 	Steam.clear_achievement("test")
 	Steam.set_achievement("test")
+	
+	var num_achievements = Steam.user_stats.get_num_achievements()
+	if num_achievements:
+		for i in Steam.user_stats.get_num_achievements():
+			print(Steam.user_stats.get_achievement_name(i))
 
-	Steam.set_leaderboard_score("High Score", 982, Steam.LeaderboardUploadScoreMethod.KeepBest, PoolIntArray([5, 5, 3]))
-
-	for i in Steam.user_stats.get_num_achievements():
-	   print(Steam.user_stats.get_achievement_name(i))
+	yield(Steam.set_leaderboard_score("High Score", 1001, Steam.LeaderboardUploadScoreMethod.KeepBest, PoolIntArray([1, 2, 3]), Steam.LeaderboardSortMethod.Descending), "done")
 
 	var scores = yield(Steam.get_leaderboard_scores("High Score", 0, 10, Steam.LeaderboardDataRequest.Global, 3), "done")
 	print(scores)
@@ -23,6 +25,8 @@ func _ready():
 	Steam.friends.set_rich_presence("steam_display", "cactus")
 
 	print(Steam.friends.get_persona_name())
+	
+	prints("appid", Steam.utils.get_app_id())
 
 func _on_game_overlay_activated(active:bool) -> void:
 	$game_overlay_activated.text = str(active)
