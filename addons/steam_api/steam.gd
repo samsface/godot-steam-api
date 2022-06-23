@@ -2,7 +2,7 @@ extends SteamI
 
 func test_running_godot_from_steam() -> bool:
 	var godot_steam_app_id := 404790
-	if Steam.utils.get_app_id() == godot_steam_app_id:
+	if utils.get_app_id() == godot_steam_app_id:
 		push_error("You are running the Godot editor from Steam. You must launch the Godot editor outside of Steam for Steam integration to work properly. Steam can only run one application at a time.")
 		return true
 	return false

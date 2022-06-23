@@ -78,11 +78,6 @@ _global_script_classes=[ {
 "class": "SteamUtils",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_utils.gdns"
-}, {
-"base": "Node",
-"class": "Utils",
-"language": "GDScript",
-"path": "res://sam.gd"
 } ]
 _global_script_class_icons={
 "SteamAPI": "",
@@ -98,8 +93,7 @@ _global_script_class_icons={
 "SteamLeaderboardScoresDownloaded": "",
 "SteamUser": "",
 "SteamUserStats": "",
-"SteamUtils": "",
-"Utils": ""
+"SteamUtils": ""
 }
 
 [application]
