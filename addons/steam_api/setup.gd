@@ -10,6 +10,7 @@ func _ready():
 	settings = load(settings_path)
 	$panel/container/app_id/input.text = settings.app_id
 	$panel/container/sdk_dir/input.text = settings.sdk_dir
+	$panel/container/disable/input.pressed = settings.disable
 
 func copy_file_from_steam_sdk_(base_path:String, file_name:String) -> void:
 	print(settings.sdk_dir + base_path + file_name)
