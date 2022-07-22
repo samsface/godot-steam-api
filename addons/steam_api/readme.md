@@ -19,6 +19,12 @@ Steam.set_achievement("gator_god")
 # clear this achievement (only for debugging)
 Steam.clear_achievement("gator_god")
 
+# stats
+Steam.set_stat("kills", 5)
+var kills_stat:int = Steam.get_stat("kills")
+Steam.set_stat("time", 10.3)
+var time_stat:float = Steam.get_stat("time")
+
 # leaderboards
 Steam.set_leaderboard_score("High Scores", 1000)
 # Get the first 10 global high scores
