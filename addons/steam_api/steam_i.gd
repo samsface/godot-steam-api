@@ -72,6 +72,18 @@ class SteamUserStatsProxy_ extends Proxy_:
 	func _init(o).(o) -> void:
 		pass
 
+	func set_statf(name:String, value:float) -> bool:
+		return call_("set_statf", [name, value])
+
+	func get_statf(name:String) -> Array:
+		return call_("get_statf", [name])
+
+	func set_stati(name:String, value:int) -> bool:
+		return call_("set_stati", [name, value])
+
+	func get_stati(name:String) -> Array:
+		return call_("get_stati", [name])
+
 	func set_achievement(achievement_api_name:String) -> bool:
 		return call_("set_achievement", [achievement_api_name])
 		
@@ -159,6 +171,37 @@ func is_init() -> bool:
 	if api_:
 		return api_.is_init()
 	return false
+
+func set_stat(name:String, value) -> bool:
+	var res := false
+
+	if value is float:
+		res = user_stats.set_statf(name, value)
+		if not res:
+			res = user_stats.set_stati(name, value)
+		
+	elif value is int:
+		res = user_stats.set_stati(name, value)
+		if not res:
+			res = user_stats.set_statf(name, value)
+
+	if not res:
+		push_error("set stat failed")
+	else:
+		user_stats.store_stats()
+		
+	return res
+
+func get_stat(name:String):
+	var try = user_stats.get_statf(name)
+	if try[0]:
+		return try[1]
+	
+	try = user_stats.get_stati(name)
+	if try[0]:
+		return try[1]
+	
+	push_error("get stat failed")
 
 func set_achievement(name:String) -> void:
 	user_stats.set_achievement(name)

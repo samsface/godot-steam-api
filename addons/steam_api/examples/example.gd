@@ -27,6 +27,9 @@ func _ready():
 	print(Steam.friends.get_persona_name())
 	
 	prints("appid", Steam.utils.get_app_id())
+	
+	Steam.set_stat("kills", 123)
+	print(Steam.get_stat("kills"))
 
 func _on_game_overlay_activated(active:bool) -> void:
 	$game_overlay_activated.text = str(active)

@@ -362,6 +362,10 @@ class SteamUserStats : public Reference
 public:
     static void _register_methods()
     {
+        register_method("set_stati",                        &SteamUserStats::set_stati);
+        register_method("get_stati",                        &SteamUserStats::get_stati);
+        register_method("set_statf",                        &SteamUserStats::set_statf);
+        register_method("get_statf",                        &SteamUserStats::get_statf);
         register_method("set_achievement",                  &SteamUserStats::set_achievement);
         register_method("get_num_achievements",             &SteamUserStats::get_num_achievements);
         register_method("get_achievement_name",             &SteamUserStats::get_achievement_name);
@@ -379,6 +383,68 @@ public:
     void _init()
     {
         steam_user_stats_ = ::SteamUserStats();
+    }
+
+    bool set_statf(String name, float data)
+    {
+        if(steam_user_stats_)
+        {
+            return steam_user_stats_->SetStat(name.utf8().get_data(), data);
+        }
+        
+        return false;
+    }
+
+    bool set_stati(String name, int data)
+    {
+        if(steam_user_stats_)
+        {
+            return steam_user_stats_->SetStat(name.utf8().get_data(), data);
+        }
+        
+        return false;
+    }
+    
+    Array get_statf(String name) const
+    {
+        Array res;
+
+        if(steam_user_stats_)
+        {
+            float stat{};
+            if(steam_user_stats_->GetStat(name.utf8().get_data(), &stat))
+            {
+                res.push_back(true);
+                res.push_back(stat);
+            }
+            else
+            {
+                res.push_back(false);
+            }
+        }
+        
+        return res;
+    }
+
+    Array get_stati(String name) const
+    {
+        Array res;
+    
+        if(steam_user_stats_)
+        {
+            int stat{};
+            if(steam_user_stats_->GetStat(name.utf8().get_data(), &stat))
+            {
+                res.push_back(true);
+                res.push_back(stat);
+            }
+            else
+            {
+                res.push_back(false);
+            }
+        }
+        
+        return res;
     }
 
     bool set_achievement(String achievement_api_name)
