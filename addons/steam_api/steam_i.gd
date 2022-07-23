@@ -96,6 +96,9 @@ class SteamUserStatsProxy_ extends Proxy_:
 	func get_num_achievements() -> int:
 		return call_("get_num_achievements")
 	
+	func indicate_achievement_progress(achievement_api_name:String, current_progress:int, max_progress:int) -> bool:
+		return call_("indicate_achievement_progress", [achievement_api_name, current_progress, max_progress])
+	
 	func get_achievement_name(idx:int) -> String:
 		return call_("get_achievement_name", [idx])
 	
@@ -185,23 +188,23 @@ func set_stat(name:String, value) -> bool:
 		if not res:
 			res = user_stats.set_statf(name, value)
 
-	if not res:
-		push_error("set stat failed")
-	else:
+	if res:
+
 		user_stats.store_stats()
 		
 	return res
 
 func get_stat(name:String):
 	var try = user_stats.get_statf(name)
+	if not try:
+		return
+	
 	if try[0]:
 		return try[1]
 	
 	try = user_stats.get_stati(name)
 	if try[0]:
 		return try[1]
-	
-	push_error("get stat failed")
 
 func set_achievement(name:String) -> void:
 	user_stats.set_achievement(name)

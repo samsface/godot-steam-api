@@ -13,6 +13,10 @@ func _ready():
 		for i in Steam.user_stats.get_num_achievements():
 			print(Steam.user_stats.get_achievement_name(i))
 
+	Steam.clear_achievement("gator_god")
+
+	var res = Steam.user_stats.indicate_achievement_progress("gator_god", 1, 4)
+
 	yield(Steam.set_leaderboard_score("High Score", 1001, Steam.LeaderboardUploadScoreMethod.KeepBest, PoolIntArray([1, 2, 3]), Steam.LeaderboardSortMethod.Descending), "done")
 
 	var scores = yield(Steam.get_leaderboard_scores("High Score", 0, 10, Steam.LeaderboardDataRequest.Global, 3), "done")

@@ -370,6 +370,7 @@ public:
         register_method("get_num_achievements",             &SteamUserStats::get_num_achievements);
         register_method("get_achievement_name",             &SteamUserStats::get_achievement_name);
         register_method("clear_achievement",                &SteamUserStats::clear_achievement);
+        register_method("indicate_achievement_progress",    &SteamUserStats::indicate_achievement_progress);
         register_method("get_achievement",                  &SteamUserStats::get_achievement);
         register_method("request_current_stats",            &SteamUserStats::request_current_stats);
         register_method("store_stats",                      &SteamUserStats::store_stats);
@@ -445,6 +446,16 @@ public:
         }
         
         return res;
+    }
+
+    bool indicate_achievement_progress(String name, int current_progress, int max_progress) const
+    {
+        if(steam_user_stats_)
+        {
+            return steam_user_stats_->IndicateAchievementProgress(name.utf8().get_data(), current_progress, max_progress);
+        }
+
+        return false;
     }
 
     bool set_achievement(String achievement_api_name)
