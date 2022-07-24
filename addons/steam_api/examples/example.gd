@@ -32,8 +32,8 @@ func _ready():
 	
 	prints("appid", Steam.utils.get_app_id())
 	
-	Steam.set_stat("kills", 123)
-	print(Steam.get_stat("kills"))
+	Steam.user_stats.set_stat("total_kills", 556)
+	print(Steam.user_stats.get_stat("total_kills"))
 
 func _on_game_overlay_activated(active:bool) -> void:
 	$game_overlay_activated.text = str(active)
