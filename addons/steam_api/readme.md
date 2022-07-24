@@ -26,7 +26,7 @@ var kills_stat:int = Steam.get_stat("kills")
 # set a float stat
 Steam.set_stat("time", 10.3)
 var time_stat:float = Steam.get_stat("time")
-# show the progress of a stat towrads some achievement
+# show the progress of a stat towards some achievement
 Steam.user_stats.indicate_achievement_progress("gator_god", 1, 4)
 
 # leaderboards
