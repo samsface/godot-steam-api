@@ -73,6 +73,8 @@ public:
     static void _register_methods()
     {
         register_method("get_account_id", &SteamID::get_account_id);
+        register_method("get_static_account_key", &SteamID::get_static_account_key);
+        register_method("convert_to_uint64", &SteamID::convert_to_uint64);
     }
 
     void _init()
@@ -84,9 +86,19 @@ public:
         return steam_id_;
     }
 
-    int get_account_id() const
+    std::int64_t get_account_id() const
     {
         return steam_id_.GetAccountID();
+    }
+
+    std::int64_t get_static_account_key() const
+    {
+        return steam_id_.GetStaticAccountKey();
+    }
+
+    std::int64_t convert_to_uint64() const
+    {
+        return steam_id_.ConvertToUint64();
     }
 };
 

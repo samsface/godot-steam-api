@@ -4,6 +4,8 @@ func _ready():
 	print(Steam.is_init())
 
 	print(Steam.utils.get_app_id())
+	
+	print(Steam.user.get_steam_id().convert_to_uint64())
 
 	Steam.clear_achievement("test")
 	Steam.set_achievement("test")
