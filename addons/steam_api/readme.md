@@ -21,11 +21,11 @@ Steam.clear_achievement("gator_god")
 
 # stats
 # set an integer stat
-Steam.set_stat("kills", 5)
-var kills_stat:int = Steam.get_stat("kills")
+Steam.user_stats.set_stat("kills", 5)
+var kills_stat:int = Steam.user_stats.get_stat("kills")
 # set a float stat
-Steam.set_stat("time", 10.3)
-var time_stat:float = Steam.get_stat("time")
+Steam.user_stats.set_stat("time", 10.3)
+var time_stat:float = Steam.user_stats.get_stat("time")
 # show the progress of a stat towards some achievement
 Steam.user_stats.indicate_achievement_progress("gator_god", 1, 4)
 
