@@ -1,5 +1,3 @@
-- OS: [e.g. Windows]
-
 **Describe what you are trying to acheive**  
 Please read: https://xyproblem.info (30 second read time).
 

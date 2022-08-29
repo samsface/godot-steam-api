@@ -66,6 +66,10 @@ Steam integration doesn't work with exported builds straight away. You'll have t
 
 Yes. There's a switch in `Project Settings > Steam API` that disables the integration, i.e. all calls on the API just do nothing and return/yield null. However it is up to the caller to then safely deal with the null values returned by the API in disabled mode.
 
+## ☁️ Does this support cloud saves?
+
+No and intentionally. You can configure automatic cloud saves in the SteamWorks settings. Just give it a filesystem path and it magically syncs it. We've found this automatic support is, for most use cases, safer than rolling your own.
+
 ## 🤔 Who uses this?
 
 A ton of projects on Steam use this plugin. Here's just a few of my favourite:
