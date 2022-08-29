@@ -1,6 +1,6 @@
 # 🚂 Godot-Steam-API
 
-> **Godot Steam integration without rebuilding Godot.** Supports 💰Windows, 🐧Linux & 🍏MacOS (x86_x64/arm64).
+> **Godot Steam integration without rebuilding Godot.** Supports 💰Windows(x86_x64), 🐧Linux(x86_x64) & 🍏MacOS (x86_x64/arm64).
 
 ## 🏁 Getting Started
 1. Download this plugin through Godot's asset library https://godotengine.org/asset-library/asset/1020
