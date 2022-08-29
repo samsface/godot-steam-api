@@ -194,11 +194,23 @@ class SteamUtilsProxy_ extends Proxy_:
 	func get_app_id() -> int:
 		return call_("get_app_id")
 
+class SteamAppsProxy_ extends Proxy_:
+	func _init(o).(o) -> void:
+		pass
+
+	func get_current_game_language() -> String:
+		return call_("get_current_game_language")
+		
+	# Returns a comma separated list of languages.
+	func get_available_game_languages() -> String:
+		return call_("get_available_game_languages")
+
 var api_
 var user:SteamUserProxy_ = SteamUserProxy_.new(null)
 var user_stats:SteamUserStatsProxy_ = SteamUserStatsProxy_.new(null)
 var friends:SteamFriendsProxy_ = SteamFriendsProxy_.new(null)
 var utils:SteamUtilsProxy_ = SteamUtilsProxy_.new(null)
+var apps:SteamAppsProxy_ = SteamAppsProxy_.new(null)
 
 func is_init() -> bool:
 	if api_:

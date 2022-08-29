@@ -15,6 +15,11 @@ _global_script_classes=[ {
 "path": "res://addons/steam_api/steam_api.gdns"
 }, {
 "base": "",
+"class": "SteamApps",
+"language": "NativeScript",
+"path": "res://addons/steam_api/steam_apps.gdns"
+}, {
+"base": "",
 "class": "SteamCallback",
 "language": "NativeScript",
 "path": "res://addons/steam_api/steam_callback.gdns"
@@ -81,6 +86,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "SteamAPI": "",
+"SteamApps": "",
 "SteamCallback": "",
 "SteamFriends": "",
 "SteamI": "",

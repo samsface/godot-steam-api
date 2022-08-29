@@ -768,6 +768,45 @@ public:
     }
 };
 
+class SteamApps : public Reference
+{
+    GODOT_CLASS(SteamApps, Reference)
+
+    ISteamApps* steam_apps_{};
+
+    String get_current_game_language() const
+    {
+        if(!steam_apps_)
+        {
+            return {};
+        }
+
+        return steam_apps_->GetCurrentGameLanguage();
+    }
+
+    String get_available_game_languages() const
+    {
+        if(!steam_apps_)
+        {
+            return {};
+        }
+
+        return steam_apps_->GetAvailableGameLanguages();
+    }
+
+public:
+    static void _register_methods()
+    {
+        register_method("get_current_game_language", &SteamApps::get_current_game_language);
+        register_method("get_available_game_languages", &SteamApps::get_available_game_languages);
+    }
+
+    void _init()
+    {
+        steam_apps_ = ::SteamApps();
+    }
+};
+
 extern "C" void GDN_EXPORT godot_gdnative_init(godot_gdnative_init_options *o) 
 {
     godot::Godot::gdnative_init(o);
@@ -794,5 +833,6 @@ extern "C" void GDN_EXPORT godot_nativescript_init(void *handle)
     godot::register_class<godot::SteamUserStats>();
     godot::register_class<godot::SteamFriends>();
     godot::register_class<godot::SteamUtils>();
+    godot::register_class<godot::SteamApps>();
 }
 }

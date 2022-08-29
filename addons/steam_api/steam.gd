@@ -35,6 +35,7 @@ func _ready() -> void:
 	user_stats.request_current_stats()
 	friends = SteamFriendsProxy_.new(SteamFriends.new())
 	utils = SteamUtilsProxy_.new(SteamUtils.new())
+	apps = SteamAppsProxy_.new(SteamApps.new())
 
 	pause_mode = PAUSE_MODE_PROCESS
 	

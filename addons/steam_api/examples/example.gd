@@ -23,6 +23,9 @@ func _ready():
 
 	var scores = yield(Steam.get_leaderboard_scores("High Score", 0, 10, Steam.LeaderboardDataRequest.Global, 3), "done")
 	print(scores)
+	
+	print(Steam.apps.get_current_game_language())
+	print(Steam.apps.get_available_game_languages())
 
 	Steam.friends.connect("game_overlay_activated", self, "_on_game_overlay_activated")
 	Steam.friends.activate_game_overlay_to_web_page("https://steamcommunity.com/")
