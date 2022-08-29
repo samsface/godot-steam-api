@@ -8,8 +8,11 @@ func _enter_tree():
 	add_control_to_container(CONTAINER_PROJECT_SETTING_TAB_RIGHT, setup)
 	
 	setup.connect("disable", self, "_on_disabled")
-	_on_disabled(setup.settings.disable)
-	
+
+	var existing_steam_autoload = ProjectSettings.get("autoload/Steam")
+	if not existing_steam_autoload:
+		_on_disabled(setup.settings.disable)
+
 func _on_disabled(value:bool) -> void:
 	remove_autoload_singleton("Steam")
 

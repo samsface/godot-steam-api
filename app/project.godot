@@ -111,6 +111,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Steam="*res://addons/steam_api/steam.gd"
+TestAutoload="*res://test_autoload.tscn"
 
 [editor_plugins]
 
