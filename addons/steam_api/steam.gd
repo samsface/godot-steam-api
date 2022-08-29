@@ -13,12 +13,24 @@ func test_steam_api_missing() -> bool:
 		if not file.file_exists("res://addons/steam_api/%s" % f):
 			push_error("You are missing the steamsdk libraries. You must download the steamsdk from steamworks and copy 'steam_api64.dll', 'libsteam_api.so' and 'libsteam_api.dylib' into 'res://addons/steam_api'. See the Steam API tab in project settings for full instructions.")
 			return true
-	
+
 	return false
+	
+	
+func test_steam_appid_file_is_missing_() -> bool:
+	var file := File.new()
+	var res := file.open(OS.get_executable_path().get_base_dir() + "/steam_appid.txt", File.READ)
+	if res == OK:
+		return false
+	else:
+		push_error("You are missing the 'steam_appid.txt' file needed for debug builds. Did you just upgrade Godot? Try rerun the setup in ProjectSettings > SteamAPI.")
+		return true
 
 func _ready() -> void:
 	if not OS.has_feature("standalone"):
 		if test_steam_api_missing():
+			return
+		if test_steam_appid_file_is_missing_():
 			return
 
 	api_ = SteamAPI.new()
