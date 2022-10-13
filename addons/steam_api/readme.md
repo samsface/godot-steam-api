@@ -64,7 +64,10 @@ Steam integration doesn't work with exported builds straight away. You'll have t
 
 ## 😶‍🌫️ Can I publish to Itch.io still?
 
-Yes. There's a switch in `Project Settings > Steam API` that disables the integration, i.e. all calls on the API just do nothing and return/yield null. However it is up to the caller to then safely deal with the null values returned by the API in disabled mode.
+Yes. There's a flag that disables the integration, i.e. all calls on the API just do nothing and return/yield null. However it is up to the caller to then safely deal with the null values returned by the API in disabled mode. You can set the flag in two ways:
+
+A. Set `Project Settings > Steam API > Disable Steam Integration [x]`.  
+B. Or add `disable_steam_integration` to your export's feature flags.
 
 ## ☁️ Does this support cloud saves?
 
