@@ -15,8 +15,7 @@ func test_steam_api_missing() -> bool:
 			return true
 
 	return false
-	
-	
+
 func test_steam_appid_file_is_missing_() -> bool:
 	var file := File.new()
 	var res := file.open(OS.get_executable_path().get_base_dir() + "/steam_appid.txt", File.READ)
@@ -27,6 +26,12 @@ func test_steam_appid_file_is_missing_() -> bool:
 		return true
 
 func _ready() -> void:
+	pause_mode = PAUSE_MODE_PROCESS
+	
+	if OS.has_feature("disable_steam_integration"):
+		print("steam integration disabled")
+		return
+
 	if not OS.has_feature("standalone"):
 		if test_steam_api_missing():
 			return
@@ -48,8 +53,6 @@ func _ready() -> void:
 	friends = SteamFriendsProxy_.new(SteamFriends.new())
 	utils = SteamUtilsProxy_.new(SteamUtils.new())
 	apps = SteamAppsProxy_.new(SteamApps.new())
-
-	pause_mode = PAUSE_MODE_PROCESS
 	
 	if not OS.has_feature("standalone"):
 		test_running_godot_from_steam()
