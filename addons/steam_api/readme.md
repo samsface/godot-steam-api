@@ -91,9 +91,13 @@ A ton of projects on Steam use this plugin. Here's just a few of my favourite:
 [👩🏾‍🦰 ROTA](https://store.steampowered.com/app/1993830/ROTA/),
 [🍩 Donut Dodo](https://store.steampowered.com/app/1779560/Donut_Dodo/).
 
+## 👻 Missing feature?
+
+This plugin doesn't implement the entirety of the Steam API. But if there's a Steam API feature you need, leave a github issue stating why you need the feature and I'll try add support when I can.
+
 ## ⁉️ Troubleshooting
 
 - Did you follow the instruction in the project settings Steam tab?
 - Is Steam running?
-- Have you published your acheivments in the SteamWorks console? *Publishing isn't releasing the game, I mean the button that publishes your Store page.*
+- Have you published your acheivments in the SteamWorks console? *Publishing isn't releasing the game, I mean the button that publishes your Store page chnages.*
 - Tried uninstalling and reinstalling the plugin 😅?
