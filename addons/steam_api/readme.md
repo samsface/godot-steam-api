@@ -3,7 +3,7 @@
 > **Godot Steam integration without rebuilding Godot.** Supports 💰Windows(x86_x64), 🐧Linux(x86_x64) & 🍏MacOS (x86_x64/arm64).
 
 ## 🏁 Getting Started
-1. Upload at least one build of your game to Steam.
+1. Ensure your game is in your Steam library.
 2. Download this plugin through Godot's asset library https://godotengine.org/asset-library/asset/1020
 3. There should now be a SteamAPI tab in your Project Settings, follow the instructions to configure the SteamAPI for your game *(Takes a few seconds)*.
 
