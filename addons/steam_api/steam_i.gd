@@ -207,6 +207,9 @@ class SteamAppsProxy_ extends Proxy_:
 	# Returns a comma separated list of languages.
 	func get_available_game_languages() -> String:
 		return call_("get_available_game_languages")
+	
+	func is_subscribed_app(app_id:int) -> bool:
+		return call_("is_subscribed_app", [app_id])
 
 var api_
 var user:SteamUserProxy_ = SteamUserProxy_.new(null)

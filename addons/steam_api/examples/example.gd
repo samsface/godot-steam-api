@@ -7,6 +7,8 @@ func _ready():
 	
 	print(Steam.user.get_steam_id().convert_to_uint64())
 
+	prints("owns", Steam.apps.is_subscribed_app(80))
+
 	Steam.clear_achievement("test")
 	Steam.set_achievement("test")
 	

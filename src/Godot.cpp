@@ -805,11 +805,22 @@ class SteamApps : public Reference
         return steam_apps_->GetAvailableGameLanguages();
     }
 
+    bool is_subscribed_app(int app_id) const
+    {
+        if(!steam_apps_)
+        {
+            return {};
+        }
+
+        return steam_apps_->BIsSubscribedApp(app_id);
+    }
+
 public:
     static void _register_methods()
     {
         register_method("get_current_game_language", &SteamApps::get_current_game_language);
         register_method("get_available_game_languages", &SteamApps::get_available_game_languages);
+        register_method("is_subscribed_app", &SteamApps::is_subscribed_app);
     }
 
     void _init()
