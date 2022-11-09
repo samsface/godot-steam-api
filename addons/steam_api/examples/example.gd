@@ -35,6 +35,7 @@ func _ready():
 
 	print(Steam.friends.get_persona_name())
 	
+	print(Steam.utils.is_running_on_steam_deck())
 	prints("appid", Steam.utils.get_app_id())
 	
 	Steam.user_stats.set_stat("total_kills", 556)

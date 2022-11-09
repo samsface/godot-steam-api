@@ -194,6 +194,9 @@ class SteamUtilsProxy_ extends Proxy_:
 	func get_app_id() -> int:
 		return call_("get_app_id")
 
+	func is_running_on_steam_deck() -> bool:
+		return call_("is_running_on_steam_deck")
+
 class SteamAppsProxy_ extends Proxy_:
 	func _init(o).(o) -> void:
 		pass
