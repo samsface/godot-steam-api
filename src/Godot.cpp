@@ -756,10 +756,21 @@ class SteamUtils : public Reference
         return steam_utils_->GetAppID();
     }
 
+    bool is_running_on_steam_deck() const
+    {
+        if (!steam_utils_)
+        {
+            return {};
+        }
+
+        return steam_utils_->IsSteamRunningOnSteamDeck();
+    }
+
 public:
     static void _register_methods()
     {
         register_method("get_app_id", &SteamUtils::get_app_id);
+        register_method("is_running_on_steam_deck", &SteamUtils::is_running_on_steam_deck);
     }
 
     void _init()

@@ -49,6 +49,9 @@ Steam.friends.clear_rich_presence()
 Steam.friends.connect("game_overlay_activated", self, "_on_game_overlay_activated")
 Steam.friends.activate_game_overlay_to_web_page("https://steamcommunity.com/")
 Steam.friends.activate_game_overlay_to_store(1435470, Steam.OverlayToStoreFlag.AddToCart)
+
+# Check if the game runs on the Steam Deck
+Steam.utils.is_running_on_steam_deck()
 ```
 
 ## 📄 Documentation
