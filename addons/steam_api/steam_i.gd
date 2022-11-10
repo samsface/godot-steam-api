@@ -296,6 +296,7 @@ func get_leaderboard_scores_(leaderboard_name:String, begin:int, end:int, method
 		var score := {}
 		score["global_rank"] = entry.get_global_rank()
 		score["score"] = entry.get_score()
+		score["id"] = entry.get_steam_id_user().get_account_id()
 		score["details"] = entry.get_details()
 
 		if not friends.request_user_information(entry.get_steam_id_user(), true):
