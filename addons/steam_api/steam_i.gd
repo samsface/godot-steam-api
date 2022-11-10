@@ -120,6 +120,9 @@ class SteamUserStatsProxy_ extends Proxy_:
 	func clear_achievement(achievement_api_name:String) -> bool:
 		return call_("clear_achievement", [achievement_api_name])
 
+	func reset_all_stats(achievements_too:bool) -> bool:
+		return call_("reset_all_stats", [achievements_too])
+
 	func get_achievement(achievement_api_name:String) -> bool:
 		return call_("get_achievement", [achievement_api_name])
 	

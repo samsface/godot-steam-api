@@ -385,6 +385,7 @@ public:
         register_method("indicate_achievement_progress",    &SteamUserStats::indicate_achievement_progress);
         register_method("get_achievement",                  &SteamUserStats::get_achievement);
         register_method("request_current_stats",            &SteamUserStats::request_current_stats);
+        register_method("reset_all_stats",                  &SteamUserStats::reset_all_stats);
         register_method("store_stats",                      &SteamUserStats::store_stats);
         register_method("find_leaderboard",                 &SteamUserStats::find_leaderboard);
         register_method("find_or_create_leaderboard",       &SteamUserStats::find_or_create_leaderboard);
@@ -514,11 +515,19 @@ public:
         return false;
     }
 
-
-
     bool request_current_stats()
     {
         return steam_user_stats_->RequestCurrentStats();
+    }
+
+    bool reset_all_stats(bool achievements_too)
+    {
+        if(!steam_user_stats_)
+        {
+            return {};
+        }
+
+        return steam_user_stats_->ResetAllStats(achievements_too);
     }
 
     bool store_stats()

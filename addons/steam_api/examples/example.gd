@@ -9,8 +9,12 @@ func _ready():
 
 	prints("owns", Steam.apps.is_subscribed_app(80))
 
-	Steam.clear_achievement("test")
-	Steam.set_achievement("test")
+	Steam.set_achievement("gator_god")
+	Steam.user_stats.reset_all_stats(true)
+	print(Steam.get_achievement("gator_god"))
+
+	Steam.clear_achievement("gator_god")
+	Steam.set_achievement("gator_god")
 	
 	var num_achievements = Steam.user_stats.get_num_achievements()
 	if num_achievements:
