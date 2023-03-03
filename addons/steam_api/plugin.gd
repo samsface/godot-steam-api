@@ -28,4 +28,6 @@ func _on_disabled(value: bool) -> void:
 func disable_plugin():
 	remove_autoload_singleton("Steam")
 	remove_control_from_container(CONTAINER_PROJECT_SETTING_TAB_RIGHT, setup)
+	setup.settings.disable = false
+	setup.save_settings()
 	setup.queue_free()
