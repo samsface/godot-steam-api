@@ -21,13 +21,17 @@ func _on_disabled(value: bool) -> void:
 	if value:
 		print("disable steam integration")
 		add_autoload_singleton("Steam", "res://addons/steam_api/steam_i.gd")
+		SteamDependencyLibraries.disable()
 	else:
 		print("enable steam integration")
 		add_autoload_singleton("Steam", "res://addons/steam_api/steam.gd")
+		SteamDependencyLibraries.enable()
+
 
 func disable_plugin():
 	remove_autoload_singleton("Steam")
 	remove_control_from_container(CONTAINER_PROJECT_SETTING_TAB_RIGHT, setup)
+	SteamDependencyLibraries.enable()
 	setup.settings.disable = false
 	setup.save_settings()
 	setup.queue_free()
