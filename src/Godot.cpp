@@ -15,12 +15,7 @@ class SteamAPI : public Reference
 
 public:
     static void _register_methods()
-    {
-        register_method("restart_app_if_necessary",  &SteamAPI::restart_app_if_necessary);
-        register_method("init",                      &SteamAPI::init);
-        register_method("is_init",                   &SteamAPI::is_init);
-        register_method("run_callbacks",             &SteamAPI::run_callbacks);
-    }
+zzz
 
     void _init()
     {
@@ -838,6 +833,193 @@ public:
     }
 };
 
+class SteamAddAppDependencyResult : public SteamBase<AddAppDependencyResult_t, SteamAddAppDependencyResult>
+{
+    GODOT_CLASS(SteamAddAppDependencyResult, Reference)
+
+    int get_e_result() const
+    {
+        return data.m_eResult;
+    }
+
+    int get_published_file_id() const
+    {
+        return data.m_nPublishedFileId;
+    }
+
+    int get_app_id() const
+    {
+        return data.m_nAppID;
+    }
+
+public:
+    static void _register_methods()
+    {
+        register_method("get_e_result", &SteamAddAppDependencyResult::get_e_result);
+        register_method("get_published_file_id", &SteamAddAppDependencyResult::get_published_file_id);
+        register_method("get_app_id", &SteamAddAppDependencyResult::get_app_id);
+    }
+
+    void _init()
+    {
+    }
+};
+
+class SteamAddUGCDependencyResult : public SteamBase<AddUGCDependencyResult_t, SteamAddUGCDependencyResult>
+{
+    GODOT_CLASS(SteamAddUGCDependencyResult, Reference)
+
+    int get_e_result() const
+    {
+        return data.m_eResult;
+    }
+
+    int get_published_file_id() const
+    {
+        return data.m_nPublishedFileId;
+    }
+
+    int get_child_published_file_id() const
+    {
+        return data.m_nChildPublishedFileId;
+    }
+
+public:
+    static void _register_methods()
+    {
+        register_method("get_e_result", &SteamAddUGCDependencyResult::get_e_result);
+        register_method("get_published_file_id", &SteamAddUGCDependencyResult::get_published_file_id);
+        register_method("get_child_published_file_id", &SteamAddUGCDependencyResult::get_child_published_file_id);
+    }
+
+    void _init()
+    {
+    }
+};
+
+class SteamUserFavoriteItemsListChanged : public SteamBase<UserFavoriteItemsListChanged_t, SteamUserFavoriteItemsListChanged>
+{
+    GODOT_CLASS(SteamUserFavoriteItemsListChanged, Reference)
+
+    int get_published_file_id() const
+    {
+        return data.m_nPublishedFileId;
+    }
+
+    int get_e_result() const
+    {
+        return data.m_eResult;
+    }
+
+    int get_was_add_request() const
+    {
+        return data.m_bWasAddRequest;
+    }
+
+public:
+    static void _register_methods()
+    {
+        register_method("get_published_file_id", &SteamUserFavoriteItemsListChanged::get_published_file_id);
+        register_method("get_e_result", &SteamUserFavoriteItemsListChanged::get_e_result);
+        register_method("get_was_add_request", &SteamUserFavoriteItemsListChanged::get_was_add_request);
+    }
+
+    void _init()
+    {
+    }
+};
+
+class SteamUGC : public Reference
+{
+    GODOT_CLASS(SteamUGC, Reference)
+
+    ISteamUGC* steam_ugc_{};
+
+    Ref<SteamCallback> add_app_dependency(int published_file_id, int app_id)
+    {
+        if(!steam_ugc_)
+        {
+            return {};
+        }
+
+        auto call = steam_ugc_->AddAppDependency(published_file_id, app_id);
+        return SteamCallback::make<AddAppDependencyResult_t, SteamAddAppDependencyResult>(call);
+    }
+
+    Ref<SteamCallback> add_dependency(int parent_published_file_id, int child_published_file_id)
+    {
+        if(!steam_ugc_)
+        {
+            return {};
+        }
+
+        auto call = steam_ugc_->AddDependency(parent_published_file_id, child_published_file_id);
+        return SteamCallback::make<AddUGCDependencyResult_t, SteamAddUGCDependencyResult>(call);
+    }
+
+    bool add_excluded_tag(int handle, String tag_name)
+    {
+        if(!steam_ugc_)
+        {
+            return {};
+        }
+
+        return steam_ugc_->AddExcludedTag(handle, tag_name.utf8().get_data());
+    }
+
+    bool add_item_key_value_tag(int handle, String key, String value)
+    {
+        if(!steam_ugc_)
+        {
+            return {};
+        }
+
+        return steam_ugc_->AddItemKeyValueTag(handle, key.utf8().get_data(), value.utf8().get_data());
+    }
+
+    bool add_item_preview_file(int handle, String preview_file, int type)
+    {
+        if(!steam_ugc_)
+        {
+            return {};
+        }
+
+        return steam_ugc_->AddItemPreviewFile(handle, preview_file.utf8().get_data(), static_cast<EItemPreviewType>(type));
+    }
+
+    bool add_item_preview_video(int handle, String video_id)
+    {
+        if(!steam_ugc_)
+        {
+            return {};
+        }
+
+        return steam_ugc_->AddItemPreviewVideo(handle, video_id.utf8().get_data());
+    }
+
+    Ref<SteamCallback> add_item_to_favorites(int app_id, int published_file_id)
+    {
+        if(!steam_ugc_)
+        {
+            return {};
+        }
+
+        auto call = steam_ugc_->AddItemToFavorites(app_id, published_file_id);
+        return SteamCallback::make<UserFavoriteItemsListChanged_t, SteamUserFavoriteItemsListChanged>(call);
+    }
+
+public:
+    static void _register_methods()
+    {
+
+    }
+
+    void _init()
+    {
+        steam_ugc_ = ::SteamUGC();
+    }
+};
+
 extern "C" void GDN_EXPORT godot_gdnative_init(godot_gdnative_init_options *o) 
 {
     godot::Godot::gdnative_init(o);
@@ -853,6 +1035,8 @@ extern "C" void GDN_EXPORT godot_nativescript_init(void *handle)
     godot::Godot::nativescript_init(handle);
     godot::register_class<godot::SteamAPI>();
     godot::register_class<godot::SteamLeaderboardFindResult>();
+    godot::register_class<godot::SteamAddAppDependencyResult>();
+    godot::register_class<godot::SteamAddUGCDependencyResult>();
     godot::register_class<godot::SteamLeaderboard>();
     godot::register_class<godot::SteamLeaderboardScoreUploaded>();
     godot::register_class<godot::SteamLeaderboardScoresDownloaded>();
@@ -865,5 +1049,6 @@ extern "C" void GDN_EXPORT godot_nativescript_init(void *handle)
     godot::register_class<godot::SteamFriends>();
     godot::register_class<godot::SteamUtils>();
     godot::register_class<godot::SteamApps>();
+    godot::register_class<godot::SteamUGC>();
 }
 }

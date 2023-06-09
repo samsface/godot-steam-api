@@ -1,0 +1,24237 @@
+#include "SteamGodot.cpp"
+namespace godot {
+/* ignoring method MatchMakingKeyValuePair_t::Construct */
+/* ignoring method servernetadr_t::Construct */
+/* ignoring method servernetadr_t::operator< */
+/* ignoring method servernetadr_t::operator= */
+/* ignoring method gameserveritem_t::Construct */
+/* ignoring property SteamParamStringArray_t::m_ppStrings */
+/* ignoring property SteamInputActionEvent_t::analogAction_actionHandle */
+/* ignoring property SteamInputActionEvent_t::analogAction_analogActionData */
+/* ignoring method SteamNetworkingIPAddr::operator== */
+/* ignoring method SteamNetworkingIdentity::SetXboxPairwiseID */
+/* ignoring method SteamNetworkingIdentity::GetXboxPairwiseID */
+/* ignoring method SteamNetworkingIdentity::SetPSNID */
+/* ignoring method SteamNetworkingIdentity::GetPSNID */
+/* ignoring method SteamNetworkingIdentity::SetStadiaID */
+/* ignoring method SteamNetworkingIdentity::GetStadiaID */
+/* ignoring method SteamNetworkingIdentity::SetIPv4Addr */
+/* ignoring method SteamNetworkingIdentity::GetIPv4 */
+/* ignoring method SteamNetworkingIdentity::operator== */
+/* ignoring property SteamNetConnectionInfo_t::m_nFlags */
+/* ignoring property SteamNetworkingMessage_t::m_pfnFreeData */
+/* ignoring property SteamNetworkingMessage_t::m_pfnRelease */
+/* ignoring property SteamNetworkingConfigValue_t::m_int64 */
+/* ignoring property SteamDatagramHostedAddress::m_cbSize */
+/* ignoring property SteamDatagramHostedAddress::m_data */
+/* ignoring method SteamDatagramHostedAddress::Clear */
+/* ignoring method SteamDatagramHostedAddress::GetPopID */
+/* ignoring method SteamDatagramHostedAddress::SetDevAddress */
+/* ignoring property SteamDatagramGameCoordinatorServerLogin::m_identity */
+/* ignoring property SteamDatagramGameCoordinatorServerLogin::m_routing */
+/* ignoring property SteamDatagramGameCoordinatorServerLogin::m_nAppID */
+/* ignoring property SteamDatagramGameCoordinatorServerLogin::m_rtime */
+/* ignoring property SteamDatagramGameCoordinatorServerLogin::m_cbAppData */
+/* ignoring property SteamDatagramGameCoordinatorServerLogin::m_appData */
+/* ignoring property RequestPlayersForGameResultCallback_t::m_ePlayerAcceptState
+ */
+#define int64_t_box_IS_DEFINED 1
+class int64_t_box;
+#define SteamAPIWarningMessageHook_t_box_IS_DEFINED 1
+class SteamAPIWarningMessageHook_t_box;
+#define intptr_t_box_IS_DEFINED 1
+class intptr_t_box;
+#define int32_t_box_IS_DEFINED 1
+class int32_t_box;
+#define bool_box_IS_DEFINED 1
+class bool_box;
+#define SteamDatagramRelayAuthTicket_box_IS_DEFINED 1
+class SteamDatagramRelayAuthTicket_box;
+#define unsigned_short_box_IS_DEFINED 1
+class unsigned_short_box;
+#define char_box_IS_DEFINED 1
+class char_box;
+#define float_box_IS_DEFINED 1
+class float_box;
+#define double_box_IS_DEFINED 1
+class double_box;
+#define ISteamNetworkingConnectionSignaling_box_IS_DEFINED 1
+class ISteamNetworkingConnectionSignaling_box;
+#define ISteamNetworkingSignalingRecvContext_box_IS_DEFINED 1
+class ISteamNetworkingSignalingRecvContext_box;
+#define CGameID_box_IS_DEFINED 1
+class CGameID_box;
+#define int_box_IS_DEFINED 1
+class int_box;
+#define ISteamHTMLSurface_EHTMLKeyModifiers_box_IS_DEFINED 1
+class ISteamHTMLSurface_EHTMLKeyModifiers_box;
+#define size_t_box_IS_DEFINED 1
+class size_t_box;
+#define unsigned_int_box_IS_DEFINED 1
+class unsigned_int_box;
+#define CSteamID_box_IS_DEFINED 1
+class CSteamID_box;
+#define ISteamHTMLSurface_EHTMLMouseButton_box_IS_DEFINED 1
+class ISteamHTMLSurface_EHTMLMouseButton_box;
+#define ESteamIPType_box_IS_DEFINED 1
+class ESteamIPType_box;
+#define EUniverse_box_IS_DEFINED 1
+class EUniverse_box;
+#define EResult_box_IS_DEFINED 1
+class EResult_box;
+#define EVoiceResult_box_IS_DEFINED 1
+class EVoiceResult_box;
+#define EDenyReason_box_IS_DEFINED 1
+class EDenyReason_box;
+#define EBeginAuthSessionResult_box_IS_DEFINED 1
+class EBeginAuthSessionResult_box;
+#define EAuthSessionResponse_box_IS_DEFINED 1
+class EAuthSessionResponse_box;
+#define EUserHasLicenseForAppResult_box_IS_DEFINED 1
+class EUserHasLicenseForAppResult_box;
+#define EAccountType_box_IS_DEFINED 1
+class EAccountType_box;
+#define EChatEntryType_box_IS_DEFINED 1
+class EChatEntryType_box;
+#define EChatRoomEnterResponse_box_IS_DEFINED 1
+class EChatRoomEnterResponse_box;
+#define EChatSteamIDInstanceFlags_box_IS_DEFINED 1
+class EChatSteamIDInstanceFlags_box;
+#define ENotificationPosition_box_IS_DEFINED 1
+class ENotificationPosition_box;
+#define EBroadcastUploadResult_box_IS_DEFINED 1
+class EBroadcastUploadResult_box;
+#define EMarketNotAllowedReasonFlags_box_IS_DEFINED 1
+class EMarketNotAllowedReasonFlags_box;
+#define EDurationControlProgress_box_IS_DEFINED 1
+class EDurationControlProgress_box;
+#define EDurationControlNotification_box_IS_DEFINED 1
+class EDurationControlNotification_box;
+#define EDurationControlOnlineState_box_IS_DEFINED 1
+class EDurationControlOnlineState_box;
+#define EGameSearchErrorCode_t_box_IS_DEFINED 1
+class EGameSearchErrorCode_t_box;
+#define EPlayerResult_t_box_IS_DEFINED 1
+class EPlayerResult_t_box;
+#define ESteamIPv6ConnectivityProtocol_box_IS_DEFINED 1
+class ESteamIPv6ConnectivityProtocol_box;
+#define ESteamIPv6ConnectivityState_box_IS_DEFINED 1
+class ESteamIPv6ConnectivityState_box;
+#define EFriendRelationship_box_IS_DEFINED 1
+class EFriendRelationship_box;
+#define EPersonaState_box_IS_DEFINED 1
+class EPersonaState_box;
+#define EFriendFlags_box_IS_DEFINED 1
+class EFriendFlags_box;
+#define EUserRestriction_box_IS_DEFINED 1
+class EUserRestriction_box;
+#define EOverlayToStoreFlag_box_IS_DEFINED 1
+class EOverlayToStoreFlag_box;
+#define EActivateGameOverlayToWebPageMode_box_IS_DEFINED 1
+class EActivateGameOverlayToWebPageMode_box;
+#define EPersonaChange_box_IS_DEFINED 1
+class EPersonaChange_box;
+#define ESteamAPICallFailure_box_IS_DEFINED 1
+class ESteamAPICallFailure_box;
+#define EGamepadTextInputMode_box_IS_DEFINED 1
+class EGamepadTextInputMode_box;
+#define EGamepadTextInputLineMode_box_IS_DEFINED 1
+class EGamepadTextInputLineMode_box;
+#define ETextFilteringContext_box_IS_DEFINED 1
+class ETextFilteringContext_box;
+#define ECheckFileSignature_box_IS_DEFINED 1
+class ECheckFileSignature_box;
+#define EMatchMakingServerResponse_box_IS_DEFINED 1
+class EMatchMakingServerResponse_box;
+#define ELobbyType_box_IS_DEFINED 1
+class ELobbyType_box;
+#define ELobbyComparison_box_IS_DEFINED 1
+class ELobbyComparison_box;
+#define ELobbyDistanceFilter_box_IS_DEFINED 1
+class ELobbyDistanceFilter_box;
+#define EChatMemberStateChange_box_IS_DEFINED 1
+class EChatMemberStateChange_box;
+#define ESteamPartyBeaconLocationType_box_IS_DEFINED 1
+class ESteamPartyBeaconLocationType_box;
+#define ESteamPartyBeaconLocationData_box_IS_DEFINED 1
+class ESteamPartyBeaconLocationData_box;
+#define ERemoteStoragePlatform_box_IS_DEFINED 1
+class ERemoteStoragePlatform_box;
+#define ERemoteStoragePublishedFileVisibility_box_IS_DEFINED 1
+class ERemoteStoragePublishedFileVisibility_box;
+#define EWorkshopFileType_box_IS_DEFINED 1
+class EWorkshopFileType_box;
+#define EWorkshopVote_box_IS_DEFINED 1
+class EWorkshopVote_box;
+#define EWorkshopFileAction_box_IS_DEFINED 1
+class EWorkshopFileAction_box;
+#define EWorkshopEnumerationType_box_IS_DEFINED 1
+class EWorkshopEnumerationType_box;
+#define EWorkshopVideoProvider_box_IS_DEFINED 1
+class EWorkshopVideoProvider_box;
+#define EUGCReadAction_box_IS_DEFINED 1
+class EUGCReadAction_box;
+#define ERemoteStorageLocalFileChange_box_IS_DEFINED 1
+class ERemoteStorageLocalFileChange_box;
+#define ERemoteStorageFilePathType_box_IS_DEFINED 1
+class ERemoteStorageFilePathType_box;
+#define ELeaderboardDataRequest_box_IS_DEFINED 1
+class ELeaderboardDataRequest_box;
+#define ELeaderboardSortMethod_box_IS_DEFINED 1
+class ELeaderboardSortMethod_box;
+#define ELeaderboardDisplayType_box_IS_DEFINED 1
+class ELeaderboardDisplayType_box;
+#define ELeaderboardUploadScoreMethod_box_IS_DEFINED 1
+class ELeaderboardUploadScoreMethod_box;
+#define ERegisterActivationCodeResult_box_IS_DEFINED 1
+class ERegisterActivationCodeResult_box;
+#define EP2PSessionError_box_IS_DEFINED 1
+class EP2PSessionError_box;
+#define EP2PSend_box_IS_DEFINED 1
+class EP2PSend_box;
+#define ESNetSocketState_box_IS_DEFINED 1
+class ESNetSocketState_box;
+#define ESNetSocketConnectionType_box_IS_DEFINED 1
+class ESNetSocketConnectionType_box;
+#define EVRScreenshotType_box_IS_DEFINED 1
+class EVRScreenshotType_box;
+#define AudioPlayback_Status_box_IS_DEFINED 1
+class AudioPlayback_Status_box;
+#define EHTTPMethod_box_IS_DEFINED 1
+class EHTTPMethod_box;
+#define EHTTPStatusCode_box_IS_DEFINED 1
+class EHTTPStatusCode_box;
+#define EInputSourceMode_box_IS_DEFINED 1
+class EInputSourceMode_box;
+#define EInputActionOrigin_box_IS_DEFINED 1
+class EInputActionOrigin_box;
+#define EXboxOrigin_box_IS_DEFINED 1
+class EXboxOrigin_box;
+#define ESteamControllerPad_box_IS_DEFINED 1
+class ESteamControllerPad_box;
+#define EControllerHapticLocation_box_IS_DEFINED 1
+class EControllerHapticLocation_box;
+#define EControllerHapticType_box_IS_DEFINED 1
+class EControllerHapticType_box;
+#define ESteamInputType_box_IS_DEFINED 1
+class ESteamInputType_box;
+#define ESteamInputConfigurationEnableType_box_IS_DEFINED 1
+class ESteamInputConfigurationEnableType_box;
+#define ESteamInputLEDFlag_box_IS_DEFINED 1
+class ESteamInputLEDFlag_box;
+#define ESteamInputGlyphSize_box_IS_DEFINED 1
+class ESteamInputGlyphSize_box;
+#define ESteamInputActionEventType_box_IS_DEFINED 1
+class ESteamInputActionEventType_box;
+#define EControllerActionOrigin_box_IS_DEFINED 1
+class EControllerActionOrigin_box;
+#define ESteamControllerLEDFlag_box_IS_DEFINED 1
+class ESteamControllerLEDFlag_box;
+#define EUGCMatchingUGCType_box_IS_DEFINED 1
+class EUGCMatchingUGCType_box;
+#define EUserUGCList_box_IS_DEFINED 1
+class EUserUGCList_box;
+#define EUserUGCListSortOrder_box_IS_DEFINED 1
+class EUserUGCListSortOrder_box;
+#define EUGCQuery_box_IS_DEFINED 1
+class EUGCQuery_box;
+#define EItemUpdateStatus_box_IS_DEFINED 1
+class EItemUpdateStatus_box;
+#define EItemState_box_IS_DEFINED 1
+class EItemState_box;
+#define EItemStatistic_box_IS_DEFINED 1
+class EItemStatistic_box;
+#define EItemPreviewType_box_IS_DEFINED 1
+class EItemPreviewType_box;
+#define ESteamItemFlags_box_IS_DEFINED 1
+class ESteamItemFlags_box;
+#define EParentalFeature_box_IS_DEFINED 1
+class EParentalFeature_box;
+#define ESteamDeviceFormFactor_box_IS_DEFINED 1
+class ESteamDeviceFormFactor_box;
+#define ESteamNetworkingAvailability_box_IS_DEFINED 1
+class ESteamNetworkingAvailability_box;
+#define ESteamNetworkingIdentityType_box_IS_DEFINED 1
+class ESteamNetworkingIdentityType_box;
+#define ESteamNetworkingConnectionState_box_IS_DEFINED 1
+class ESteamNetworkingConnectionState_box;
+#define ESteamNetConnectionEnd_box_IS_DEFINED 1
+class ESteamNetConnectionEnd_box;
+#define ESteamNetworkingConfigScope_box_IS_DEFINED 1
+class ESteamNetworkingConfigScope_box;
+#define ESteamNetworkingConfigDataType_box_IS_DEFINED 1
+class ESteamNetworkingConfigDataType_box;
+#define ESteamNetworkingConfigValue_box_IS_DEFINED 1
+class ESteamNetworkingConfigValue_box;
+#define ESteamNetworkingGetConfigValueResult_box_IS_DEFINED 1
+class ESteamNetworkingGetConfigValueResult_box;
+#define ESteamNetworkingSocketsDebugOutputType_box_IS_DEFINED 1
+class ESteamNetworkingSocketsDebugOutputType_box;
+#define EServerMode_box_IS_DEFINED 1
+class EServerMode_box;
+#define uint8_box_IS_DEFINED 1
+class uint8_box;
+#define int8_box_IS_DEFINED 1
+class int8_box;
+#define int16_box_IS_DEFINED 1
+class int16_box;
+#define uint16_box_IS_DEFINED 1
+class uint16_box;
+#define int32_box_IS_DEFINED 1
+class int32_box;
+#define uint32_box_IS_DEFINED 1
+class uint32_box;
+#define int64_box_IS_DEFINED 1
+class int64_box;
+#define uint64_box_IS_DEFINED 1
+class uint64_box;
+#define lint64_box_IS_DEFINED 1
+class lint64_box;
+#define ulint64_box_IS_DEFINED 1
+class ulint64_box;
+#define intp_box_IS_DEFINED 1
+class intp_box;
+#define uintp_box_IS_DEFINED 1
+class uintp_box;
+#define AppId_t_box_IS_DEFINED 1
+class AppId_t_box;
+#define DepotId_t_box_IS_DEFINED 1
+class DepotId_t_box;
+#define RTime32_box_IS_DEFINED 1
+class RTime32_box;
+#define SteamAPICall_t_box_IS_DEFINED 1
+class SteamAPICall_t_box;
+#define AccountID_t_box_IS_DEFINED 1
+class AccountID_t_box;
+#define PartyBeaconID_t_box_IS_DEFINED 1
+class PartyBeaconID_t_box;
+#define HAuthTicket_box_IS_DEFINED 1
+class HAuthTicket_box;
+#define PFNPreMinidumpCallback_box_IS_DEFINED 1
+class PFNPreMinidumpCallback_box;
+#define HSteamPipe_box_IS_DEFINED 1
+class HSteamPipe_box;
+#define HSteamUser_box_IS_DEFINED 1
+class HSteamUser_box;
+#define FriendsGroupID_t_box_IS_DEFINED 1
+class FriendsGroupID_t_box;
+#define HServerListRequest_box_IS_DEFINED 1
+class HServerListRequest_box;
+#define HServerQuery_box_IS_DEFINED 1
+class HServerQuery_box;
+#define UGCHandle_t_box_IS_DEFINED 1
+class UGCHandle_t_box;
+#define PublishedFileUpdateHandle_t_box_IS_DEFINED 1
+class PublishedFileUpdateHandle_t_box;
+#define PublishedFileId_t_box_IS_DEFINED 1
+class PublishedFileId_t_box;
+#define UGCFileWriteStreamHandle_t_box_IS_DEFINED 1
+class UGCFileWriteStreamHandle_t_box;
+#define SteamLeaderboard_t_box_IS_DEFINED 1
+class SteamLeaderboard_t_box;
+#define SteamLeaderboardEntries_t_box_IS_DEFINED 1
+class SteamLeaderboardEntries_t_box;
+#define SNetSocket_t_box_IS_DEFINED 1
+class SNetSocket_t_box;
+#define SNetListenSocket_t_box_IS_DEFINED 1
+class SNetListenSocket_t_box;
+#define ScreenshotHandle_box_IS_DEFINED 1
+class ScreenshotHandle_box;
+#define HTTPRequestHandle_box_IS_DEFINED 1
+class HTTPRequestHandle_box;
+#define HTTPCookieContainerHandle_box_IS_DEFINED 1
+class HTTPCookieContainerHandle_box;
+#define InputHandle_t_box_IS_DEFINED 1
+class InputHandle_t_box;
+#define InputActionSetHandle_t_box_IS_DEFINED 1
+class InputActionSetHandle_t_box;
+#define InputDigitalActionHandle_t_box_IS_DEFINED 1
+class InputDigitalActionHandle_t_box;
+#define InputAnalogActionHandle_t_box_IS_DEFINED 1
+class InputAnalogActionHandle_t_box;
+#define SteamInputActionEventCallbackPointer_box_IS_DEFINED 1
+class SteamInputActionEventCallbackPointer_box;
+#define ControllerHandle_t_box_IS_DEFINED 1
+class ControllerHandle_t_box;
+#define ControllerActionSetHandle_t_box_IS_DEFINED 1
+class ControllerActionSetHandle_t_box;
+#define ControllerDigitalActionHandle_t_box_IS_DEFINED 1
+class ControllerDigitalActionHandle_t_box;
+#define ControllerAnalogActionHandle_t_box_IS_DEFINED 1
+class ControllerAnalogActionHandle_t_box;
+#define UGCQueryHandle_t_box_IS_DEFINED 1
+class UGCQueryHandle_t_box;
+#define UGCUpdateHandle_t_box_IS_DEFINED 1
+class UGCUpdateHandle_t_box;
+#define HHTMLBrowser_box_IS_DEFINED 1
+class HHTMLBrowser_box;
+#define SteamItemInstanceID_t_box_IS_DEFINED 1
+class SteamItemInstanceID_t_box;
+#define SteamItemDef_t_box_IS_DEFINED 1
+class SteamItemDef_t_box;
+#define SteamInventoryResult_t_box_IS_DEFINED 1
+class SteamInventoryResult_t_box;
+#define SteamInventoryUpdateHandle_t_box_IS_DEFINED 1
+class SteamInventoryUpdateHandle_t_box;
+#define RemotePlaySessionID_t_box_IS_DEFINED 1
+class RemotePlaySessionID_t_box;
+#define FnSteamNetConnectionStatusChanged_box_IS_DEFINED 1
+class FnSteamNetConnectionStatusChanged_box;
+#define FnSteamNetAuthenticationStatusChanged_box_IS_DEFINED 1
+class FnSteamNetAuthenticationStatusChanged_box;
+#define FnSteamRelayNetworkStatusChanged_box_IS_DEFINED 1
+class FnSteamRelayNetworkStatusChanged_box;
+#define FnSteamNetworkingMessagesSessionRequest_box_IS_DEFINED 1
+class FnSteamNetworkingMessagesSessionRequest_box;
+#define FnSteamNetworkingMessagesSessionFailed_box_IS_DEFINED 1
+class FnSteamNetworkingMessagesSessionFailed_box;
+#define HSteamNetConnection_box_IS_DEFINED 1
+class HSteamNetConnection_box;
+#define HSteamListenSocket_box_IS_DEFINED 1
+class HSteamListenSocket_box;
+#define HSteamNetPollGroup_box_IS_DEFINED 1
+class HSteamNetPollGroup_box;
+#define SteamNetworkingErrMsg_box_IS_DEFINED 1
+class SteamNetworkingErrMsg_box;
+#define SteamNetworkingPOPID_box_IS_DEFINED 1
+class SteamNetworkingPOPID_box;
+#define SteamNetworkingMicroseconds_box_IS_DEFINED 1
+class SteamNetworkingMicroseconds_box;
+#define FSteamNetworkingSocketsDebugOutput_box_IS_DEFINED 1
+class FSteamNetworkingSocketsDebugOutput_box;
+#define SteamIPAddress_t_box_IS_DEFINED 1
+class SteamIPAddress_t_box;
+#define FriendGameInfo_t_box_IS_DEFINED 1
+class FriendGameInfo_t_box;
+#define MatchMakingKeyValuePair_t_box_IS_DEFINED 1
+class MatchMakingKeyValuePair_t_box;
+#define servernetadr_t_box_IS_DEFINED 1
+class servernetadr_t_box;
+#define gameserveritem_t_box_IS_DEFINED 1
+class gameserveritem_t_box;
+#define SteamPartyBeaconLocation_t_box_IS_DEFINED 1
+class SteamPartyBeaconLocation_t_box;
+#define SteamParamStringArray_t_box_IS_DEFINED 1
+class SteamParamStringArray_t_box;
+#define LeaderboardEntry_t_box_IS_DEFINED 1
+class LeaderboardEntry_t_box;
+#define P2PSessionState_t_box_IS_DEFINED 1
+class P2PSessionState_t_box;
+#define InputAnalogActionData_t_box_IS_DEFINED 1
+class InputAnalogActionData_t_box;
+#define InputDigitalActionData_t_box_IS_DEFINED 1
+class InputDigitalActionData_t_box;
+#define InputMotionData_t_box_IS_DEFINED 1
+class InputMotionData_t_box;
+#define SteamInputActionEvent_t_box_IS_DEFINED 1
+class SteamInputActionEvent_t_box;
+#define SteamUGCDetails_t_box_IS_DEFINED 1
+class SteamUGCDetails_t_box;
+#define SteamItemDetails_t_box_IS_DEFINED 1
+class SteamItemDetails_t_box;
+#define SteamNetworkingIPAddr_box_IS_DEFINED 1
+class SteamNetworkingIPAddr_box;
+#define SteamNetworkingIdentity_box_IS_DEFINED 1
+class SteamNetworkingIdentity_box;
+#define SteamNetConnectionInfo_t_box_IS_DEFINED 1
+class SteamNetConnectionInfo_t_box;
+#define SteamNetworkingQuickConnectionStatus_box_IS_DEFINED 1
+class SteamNetworkingQuickConnectionStatus_box;
+#define SteamNetworkingMessage_t_box_IS_DEFINED 1
+class SteamNetworkingMessage_t_box;
+#define SteamNetworkPingLocation_t_box_IS_DEFINED 1
+class SteamNetworkPingLocation_t_box;
+#define SteamNetworkingConfigValue_t_box_IS_DEFINED 1
+class SteamNetworkingConfigValue_t_box;
+#define SteamNetworkingPOPIDRender_box_IS_DEFINED 1
+class SteamNetworkingPOPIDRender_box;
+#define SteamNetworkingIdentityRender_box_IS_DEFINED 1
+class SteamNetworkingIdentityRender_box;
+#define SteamNetworkingIPAddrRender_box_IS_DEFINED 1
+class SteamNetworkingIPAddrRender_box;
+#define SteamDatagramHostedAddress_box_IS_DEFINED 1
+class SteamDatagramHostedAddress_box;
+#define SteamDatagramGameCoordinatorServerLogin_box_IS_DEFINED 1
+class SteamDatagramGameCoordinatorServerLogin_box;
+#define SteamServersConnected_t_box_IS_DEFINED 1
+class SteamServersConnected_t_box;
+#define SteamServerConnectFailure_t_box_IS_DEFINED 1
+class SteamServerConnectFailure_t_box;
+#define SteamServersDisconnected_t_box_IS_DEFINED 1
+class SteamServersDisconnected_t_box;
+#define ClientGameServerDeny_t_box_IS_DEFINED 1
+class ClientGameServerDeny_t_box;
+#define IPCFailure_t_box_IS_DEFINED 1
+class IPCFailure_t_box;
+#define LicensesUpdated_t_box_IS_DEFINED 1
+class LicensesUpdated_t_box;
+#define ValidateAuthTicketResponse_t_box_IS_DEFINED 1
+class ValidateAuthTicketResponse_t_box;
+#define MicroTxnAuthorizationResponse_t_box_IS_DEFINED 1
+class MicroTxnAuthorizationResponse_t_box;
+#define EncryptedAppTicketResponse_t_box_IS_DEFINED 1
+class EncryptedAppTicketResponse_t_box;
+#define GetAuthSessionTicketResponse_t_box_IS_DEFINED 1
+class GetAuthSessionTicketResponse_t_box;
+#define GameWebCallback_t_box_IS_DEFINED 1
+class GameWebCallback_t_box;
+#define StoreAuthURLResponse_t_box_IS_DEFINED 1
+class StoreAuthURLResponse_t_box;
+#define MarketEligibilityResponse_t_box_IS_DEFINED 1
+class MarketEligibilityResponse_t_box;
+#define DurationControl_t_box_IS_DEFINED 1
+class DurationControl_t_box;
+#define PersonaStateChange_t_box_IS_DEFINED 1
+class PersonaStateChange_t_box;
+#define GameOverlayActivated_t_box_IS_DEFINED 1
+class GameOverlayActivated_t_box;
+#define GameServerChangeRequested_t_box_IS_DEFINED 1
+class GameServerChangeRequested_t_box;
+#define GameLobbyJoinRequested_t_box_IS_DEFINED 1
+class GameLobbyJoinRequested_t_box;
+#define AvatarImageLoaded_t_box_IS_DEFINED 1
+class AvatarImageLoaded_t_box;
+#define ClanOfficerListResponse_t_box_IS_DEFINED 1
+class ClanOfficerListResponse_t_box;
+#define FriendRichPresenceUpdate_t_box_IS_DEFINED 1
+class FriendRichPresenceUpdate_t_box;
+#define GameRichPresenceJoinRequested_t_box_IS_DEFINED 1
+class GameRichPresenceJoinRequested_t_box;
+#define GameConnectedClanChatMsg_t_box_IS_DEFINED 1
+class GameConnectedClanChatMsg_t_box;
+#define GameConnectedChatJoin_t_box_IS_DEFINED 1
+class GameConnectedChatJoin_t_box;
+#define GameConnectedChatLeave_t_box_IS_DEFINED 1
+class GameConnectedChatLeave_t_box;
+#define DownloadClanActivityCountsResult_t_box_IS_DEFINED 1
+class DownloadClanActivityCountsResult_t_box;
+#define JoinClanChatRoomCompletionResult_t_box_IS_DEFINED 1
+class JoinClanChatRoomCompletionResult_t_box;
+#define GameConnectedFriendChatMsg_t_box_IS_DEFINED 1
+class GameConnectedFriendChatMsg_t_box;
+#define FriendsGetFollowerCount_t_box_IS_DEFINED 1
+class FriendsGetFollowerCount_t_box;
+#define FriendsIsFollowing_t_box_IS_DEFINED 1
+class FriendsIsFollowing_t_box;
+#define FriendsEnumerateFollowingList_t_box_IS_DEFINED 1
+class FriendsEnumerateFollowingList_t_box;
+#define SetPersonaNameResponse_t_box_IS_DEFINED 1
+class SetPersonaNameResponse_t_box;
+#define UnreadChatMessagesChanged_t_box_IS_DEFINED 1
+class UnreadChatMessagesChanged_t_box;
+#define OverlayBrowserProtocolNavigation_t_box_IS_DEFINED 1
+class OverlayBrowserProtocolNavigation_t_box;
+#define IPCountry_t_box_IS_DEFINED 1
+class IPCountry_t_box;
+#define LowBatteryPower_t_box_IS_DEFINED 1
+class LowBatteryPower_t_box;
+#define SteamAPICallCompleted_t_box_IS_DEFINED 1
+class SteamAPICallCompleted_t_box;
+#define SteamShutdown_t_box_IS_DEFINED 1
+class SteamShutdown_t_box;
+#define CheckFileSignature_t_box_IS_DEFINED 1
+class CheckFileSignature_t_box;
+#define GamepadTextInputDismissed_t_box_IS_DEFINED 1
+class GamepadTextInputDismissed_t_box;
+#define AppResumingFromSuspend_t_box_IS_DEFINED 1
+class AppResumingFromSuspend_t_box;
+#define ModalGamepadTextInputDismissed_t_box_IS_DEFINED 1
+class ModalGamepadTextInputDismissed_t_box;
+#define FavoritesListChanged_t_box_IS_DEFINED 1
+class FavoritesListChanged_t_box;
+#define LobbyInvite_t_box_IS_DEFINED 1
+class LobbyInvite_t_box;
+#define LobbyEnter_t_box_IS_DEFINED 1
+class LobbyEnter_t_box;
+#define LobbyDataUpdate_t_box_IS_DEFINED 1
+class LobbyDataUpdate_t_box;
+#define LobbyChatUpdate_t_box_IS_DEFINED 1
+class LobbyChatUpdate_t_box;
+#define LobbyChatMsg_t_box_IS_DEFINED 1
+class LobbyChatMsg_t_box;
+#define LobbyGameCreated_t_box_IS_DEFINED 1
+class LobbyGameCreated_t_box;
+#define LobbyMatchList_t_box_IS_DEFINED 1
+class LobbyMatchList_t_box;
+#define LobbyKicked_t_box_IS_DEFINED 1
+class LobbyKicked_t_box;
+#define LobbyCreated_t_box_IS_DEFINED 1
+class LobbyCreated_t_box;
+#define PSNGameBootInviteResult_t_box_IS_DEFINED 1
+class PSNGameBootInviteResult_t_box;
+#define FavoritesListAccountsUpdated_t_box_IS_DEFINED 1
+class FavoritesListAccountsUpdated_t_box;
+#define SearchForGameProgressCallback_t_box_IS_DEFINED 1
+class SearchForGameProgressCallback_t_box;
+#define SearchForGameResultCallback_t_box_IS_DEFINED 1
+class SearchForGameResultCallback_t_box;
+#define RequestPlayersForGameProgressCallback_t_box_IS_DEFINED 1
+class RequestPlayersForGameProgressCallback_t_box;
+#define RequestPlayersForGameResultCallback_t_box_IS_DEFINED 1
+class RequestPlayersForGameResultCallback_t_box;
+#define RequestPlayersForGameFinalResultCallback_t_box_IS_DEFINED 1
+class RequestPlayersForGameFinalResultCallback_t_box;
+#define SubmitPlayerResultResultCallback_t_box_IS_DEFINED 1
+class SubmitPlayerResultResultCallback_t_box;
+#define EndGameResultCallback_t_box_IS_DEFINED 1
+class EndGameResultCallback_t_box;
+#define JoinPartyCallback_t_box_IS_DEFINED 1
+class JoinPartyCallback_t_box;
+#define CreateBeaconCallback_t_box_IS_DEFINED 1
+class CreateBeaconCallback_t_box;
+#define ReservationNotificationCallback_t_box_IS_DEFINED 1
+class ReservationNotificationCallback_t_box;
+#define ChangeNumOpenSlotsCallback_t_box_IS_DEFINED 1
+class ChangeNumOpenSlotsCallback_t_box;
+#define AvailableBeaconLocationsUpdated_t_box_IS_DEFINED 1
+class AvailableBeaconLocationsUpdated_t_box;
+#define ActiveBeaconsUpdated_t_box_IS_DEFINED 1
+class ActiveBeaconsUpdated_t_box;
+#define RemoteStorageFileShareResult_t_box_IS_DEFINED 1
+class RemoteStorageFileShareResult_t_box;
+#define RemoteStoragePublishFileResult_t_box_IS_DEFINED 1
+class RemoteStoragePublishFileResult_t_box;
+#define RemoteStorageDeletePublishedFileResult_t_box_IS_DEFINED 1
+class RemoteStorageDeletePublishedFileResult_t_box;
+#define RemoteStorageEnumerateUserPublishedFilesResult_t_box_IS_DEFINED 1
+class RemoteStorageEnumerateUserPublishedFilesResult_t_box;
+#define RemoteStorageSubscribePublishedFileResult_t_box_IS_DEFINED 1
+class RemoteStorageSubscribePublishedFileResult_t_box;
+#define RemoteStorageEnumerateUserSubscribedFilesResult_t_box_IS_DEFINED 1
+class RemoteStorageEnumerateUserSubscribedFilesResult_t_box;
+#define RemoteStorageUnsubscribePublishedFileResult_t_box_IS_DEFINED 1
+class RemoteStorageUnsubscribePublishedFileResult_t_box;
+#define RemoteStorageUpdatePublishedFileResult_t_box_IS_DEFINED 1
+class RemoteStorageUpdatePublishedFileResult_t_box;
+#define RemoteStorageDownloadUGCResult_t_box_IS_DEFINED 1
+class RemoteStorageDownloadUGCResult_t_box;
+#define RemoteStorageGetPublishedFileDetailsResult_t_box_IS_DEFINED 1
+class RemoteStorageGetPublishedFileDetailsResult_t_box;
+#define RemoteStorageEnumerateWorkshopFilesResult_t_box_IS_DEFINED 1
+class RemoteStorageEnumerateWorkshopFilesResult_t_box;
+#define RemoteStorageGetPublishedItemVoteDetailsResult_t_box_IS_DEFINED 1
+class RemoteStorageGetPublishedItemVoteDetailsResult_t_box;
+#define RemoteStoragePublishedFileSubscribed_t_box_IS_DEFINED 1
+class RemoteStoragePublishedFileSubscribed_t_box;
+#define RemoteStoragePublishedFileUnsubscribed_t_box_IS_DEFINED 1
+class RemoteStoragePublishedFileUnsubscribed_t_box;
+#define RemoteStoragePublishedFileDeleted_t_box_IS_DEFINED 1
+class RemoteStoragePublishedFileDeleted_t_box;
+#define RemoteStorageUpdateUserPublishedItemVoteResult_t_box_IS_DEFINED 1
+class RemoteStorageUpdateUserPublishedItemVoteResult_t_box;
+#define RemoteStorageUserVoteDetails_t_box_IS_DEFINED 1
+class RemoteStorageUserVoteDetails_t_box;
+#define RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box_IS_DEFINED 1
+class RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box;
+#define RemoteStorageSetUserPublishedFileActionResult_t_box_IS_DEFINED 1
+class RemoteStorageSetUserPublishedFileActionResult_t_box;
+#define RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box_IS_DEFINED \
+  1
+class RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box;
+#define RemoteStoragePublishFileProgress_t_box_IS_DEFINED 1
+class RemoteStoragePublishFileProgress_t_box;
+#define RemoteStoragePublishedFileUpdated_t_box_IS_DEFINED 1
+class RemoteStoragePublishedFileUpdated_t_box;
+#define RemoteStorageFileWriteAsyncComplete_t_box_IS_DEFINED 1
+class RemoteStorageFileWriteAsyncComplete_t_box;
+#define RemoteStorageFileReadAsyncComplete_t_box_IS_DEFINED 1
+class RemoteStorageFileReadAsyncComplete_t_box;
+#define RemoteStorageLocalFileChange_t_box_IS_DEFINED 1
+class RemoteStorageLocalFileChange_t_box;
+#define UserStatsReceived_t_box_IS_DEFINED 1
+class UserStatsReceived_t_box;
+#define UserStatsStored_t_box_IS_DEFINED 1
+class UserStatsStored_t_box;
+#define UserAchievementStored_t_box_IS_DEFINED 1
+class UserAchievementStored_t_box;
+#define LeaderboardFindResult_t_box_IS_DEFINED 1
+class LeaderboardFindResult_t_box;
+#define LeaderboardScoresDownloaded_t_box_IS_DEFINED 1
+class LeaderboardScoresDownloaded_t_box;
+#define LeaderboardScoreUploaded_t_box_IS_DEFINED 1
+class LeaderboardScoreUploaded_t_box;
+#define NumberOfCurrentPlayers_t_box_IS_DEFINED 1
+class NumberOfCurrentPlayers_t_box;
+#define UserStatsUnloaded_t_box_IS_DEFINED 1
+class UserStatsUnloaded_t_box;
+#define UserAchievementIconFetched_t_box_IS_DEFINED 1
+class UserAchievementIconFetched_t_box;
+#define GlobalAchievementPercentagesReady_t_box_IS_DEFINED 1
+class GlobalAchievementPercentagesReady_t_box;
+#define LeaderboardUGCSet_t_box_IS_DEFINED 1
+class LeaderboardUGCSet_t_box;
+#define PS3TrophiesInstalled_t_box_IS_DEFINED 1
+class PS3TrophiesInstalled_t_box;
+#define GlobalStatsReceived_t_box_IS_DEFINED 1
+class GlobalStatsReceived_t_box;
+#define DlcInstalled_t_box_IS_DEFINED 1
+class DlcInstalled_t_box;
+#define RegisterActivationCodeResponse_t_box_IS_DEFINED 1
+class RegisterActivationCodeResponse_t_box;
+#define NewUrlLaunchParameters_t_box_IS_DEFINED 1
+class NewUrlLaunchParameters_t_box;
+#define AppProofOfPurchaseKeyResponse_t_box_IS_DEFINED 1
+class AppProofOfPurchaseKeyResponse_t_box;
+#define FileDetailsResult_t_box_IS_DEFINED 1
+class FileDetailsResult_t_box;
+#define TimedTrialStatus_t_box_IS_DEFINED 1
+class TimedTrialStatus_t_box;
+#define P2PSessionRequest_t_box_IS_DEFINED 1
+class P2PSessionRequest_t_box;
+#define P2PSessionConnectFail_t_box_IS_DEFINED 1
+class P2PSessionConnectFail_t_box;
+#define SocketStatusCallback_t_box_IS_DEFINED 1
+class SocketStatusCallback_t_box;
+#define ScreenshotReady_t_box_IS_DEFINED 1
+class ScreenshotReady_t_box;
+#define ScreenshotRequested_t_box_IS_DEFINED 1
+class ScreenshotRequested_t_box;
+#define PlaybackStatusHasChanged_t_box_IS_DEFINED 1
+class PlaybackStatusHasChanged_t_box;
+#define VolumeHasChanged_t_box_IS_DEFINED 1
+class VolumeHasChanged_t_box;
+#define MusicPlayerRemoteWillActivate_t_box_IS_DEFINED 1
+class MusicPlayerRemoteWillActivate_t_box;
+#define MusicPlayerRemoteWillDeactivate_t_box_IS_DEFINED 1
+class MusicPlayerRemoteWillDeactivate_t_box;
+#define MusicPlayerRemoteToFront_t_box_IS_DEFINED 1
+class MusicPlayerRemoteToFront_t_box;
+#define MusicPlayerWillQuit_t_box_IS_DEFINED 1
+class MusicPlayerWillQuit_t_box;
+#define MusicPlayerWantsPlay_t_box_IS_DEFINED 1
+class MusicPlayerWantsPlay_t_box;
+#define MusicPlayerWantsPause_t_box_IS_DEFINED 1
+class MusicPlayerWantsPause_t_box;
+#define MusicPlayerWantsPlayPrevious_t_box_IS_DEFINED 1
+class MusicPlayerWantsPlayPrevious_t_box;
+#define MusicPlayerWantsPlayNext_t_box_IS_DEFINED 1
+class MusicPlayerWantsPlayNext_t_box;
+#define MusicPlayerWantsShuffled_t_box_IS_DEFINED 1
+class MusicPlayerWantsShuffled_t_box;
+#define MusicPlayerWantsLooped_t_box_IS_DEFINED 1
+class MusicPlayerWantsLooped_t_box;
+#define MusicPlayerWantsVolume_t_box_IS_DEFINED 1
+class MusicPlayerWantsVolume_t_box;
+#define MusicPlayerSelectsQueueEntry_t_box_IS_DEFINED 1
+class MusicPlayerSelectsQueueEntry_t_box;
+#define MusicPlayerSelectsPlaylistEntry_t_box_IS_DEFINED 1
+class MusicPlayerSelectsPlaylistEntry_t_box;
+#define MusicPlayerWantsPlayingRepeatStatus_t_box_IS_DEFINED 1
+class MusicPlayerWantsPlayingRepeatStatus_t_box;
+#define HTTPRequestCompleted_t_box_IS_DEFINED 1
+class HTTPRequestCompleted_t_box;
+#define HTTPRequestHeadersReceived_t_box_IS_DEFINED 1
+class HTTPRequestHeadersReceived_t_box;
+#define HTTPRequestDataReceived_t_box_IS_DEFINED 1
+class HTTPRequestDataReceived_t_box;
+#define SteamInputDeviceConnected_t_box_IS_DEFINED 1
+class SteamInputDeviceConnected_t_box;
+#define SteamInputDeviceDisconnected_t_box_IS_DEFINED 1
+class SteamInputDeviceDisconnected_t_box;
+#define SteamInputConfigurationLoaded_t_box_IS_DEFINED 1
+class SteamInputConfigurationLoaded_t_box;
+#define SteamUGCQueryCompleted_t_box_IS_DEFINED 1
+class SteamUGCQueryCompleted_t_box;
+#define SteamUGCRequestUGCDetailsResult_t_box_IS_DEFINED 1
+class SteamUGCRequestUGCDetailsResult_t_box;
+#define CreateItemResult_t_box_IS_DEFINED 1
+class CreateItemResult_t_box;
+#define SubmitItemUpdateResult_t_box_IS_DEFINED 1
+class SubmitItemUpdateResult_t_box;
+#define ItemInstalled_t_box_IS_DEFINED 1
+class ItemInstalled_t_box;
+#define DownloadItemResult_t_box_IS_DEFINED 1
+class DownloadItemResult_t_box;
+#define UserFavoriteItemsListChanged_t_box_IS_DEFINED 1
+class UserFavoriteItemsListChanged_t_box;
+#define SetUserItemVoteResult_t_box_IS_DEFINED 1
+class SetUserItemVoteResult_t_box;
+#define GetUserItemVoteResult_t_box_IS_DEFINED 1
+class GetUserItemVoteResult_t_box;
+#define StartPlaytimeTrackingResult_t_box_IS_DEFINED 1
+class StartPlaytimeTrackingResult_t_box;
+#define StopPlaytimeTrackingResult_t_box_IS_DEFINED 1
+class StopPlaytimeTrackingResult_t_box;
+#define AddUGCDependencyResult_t_box_IS_DEFINED 1
+class AddUGCDependencyResult_t_box;
+#define RemoveUGCDependencyResult_t_box_IS_DEFINED 1
+class RemoveUGCDependencyResult_t_box;
+#define AddAppDependencyResult_t_box_IS_DEFINED 1
+class AddAppDependencyResult_t_box;
+#define RemoveAppDependencyResult_t_box_IS_DEFINED 1
+class RemoveAppDependencyResult_t_box;
+#define GetAppDependenciesResult_t_box_IS_DEFINED 1
+class GetAppDependenciesResult_t_box;
+#define DeleteItemResult_t_box_IS_DEFINED 1
+class DeleteItemResult_t_box;
+#define UserSubscribedItemsListChanged_t_box_IS_DEFINED 1
+class UserSubscribedItemsListChanged_t_box;
+#define WorkshopEULAStatus_t_box_IS_DEFINED 1
+class WorkshopEULAStatus_t_box;
+#define SteamAppInstalled_t_box_IS_DEFINED 1
+class SteamAppInstalled_t_box;
+#define SteamAppUninstalled_t_box_IS_DEFINED 1
+class SteamAppUninstalled_t_box;
+#define HTML_BrowserReady_t_box_IS_DEFINED 1
+class HTML_BrowserReady_t_box;
+#define HTML_NeedsPaint_t_box_IS_DEFINED 1
+class HTML_NeedsPaint_t_box;
+#define HTML_StartRequest_t_box_IS_DEFINED 1
+class HTML_StartRequest_t_box;
+#define HTML_CloseBrowser_t_box_IS_DEFINED 1
+class HTML_CloseBrowser_t_box;
+#define HTML_URLChanged_t_box_IS_DEFINED 1
+class HTML_URLChanged_t_box;
+#define HTML_FinishedRequest_t_box_IS_DEFINED 1
+class HTML_FinishedRequest_t_box;
+#define HTML_OpenLinkInNewTab_t_box_IS_DEFINED 1
+class HTML_OpenLinkInNewTab_t_box;
+#define HTML_ChangedTitle_t_box_IS_DEFINED 1
+class HTML_ChangedTitle_t_box;
+#define HTML_SearchResults_t_box_IS_DEFINED 1
+class HTML_SearchResults_t_box;
+#define HTML_CanGoBackAndForward_t_box_IS_DEFINED 1
+class HTML_CanGoBackAndForward_t_box;
+#define HTML_HorizontalScroll_t_box_IS_DEFINED 1
+class HTML_HorizontalScroll_t_box;
+#define HTML_VerticalScroll_t_box_IS_DEFINED 1
+class HTML_VerticalScroll_t_box;
+#define HTML_LinkAtPosition_t_box_IS_DEFINED 1
+class HTML_LinkAtPosition_t_box;
+#define HTML_JSAlert_t_box_IS_DEFINED 1
+class HTML_JSAlert_t_box;
+#define HTML_JSConfirm_t_box_IS_DEFINED 1
+class HTML_JSConfirm_t_box;
+#define HTML_FileOpenDialog_t_box_IS_DEFINED 1
+class HTML_FileOpenDialog_t_box;
+#define HTML_NewWindow_t_box_IS_DEFINED 1
+class HTML_NewWindow_t_box;
+#define HTML_SetCursor_t_box_IS_DEFINED 1
+class HTML_SetCursor_t_box;
+#define HTML_StatusText_t_box_IS_DEFINED 1
+class HTML_StatusText_t_box;
+#define HTML_ShowToolTip_t_box_IS_DEFINED 1
+class HTML_ShowToolTip_t_box;
+#define HTML_UpdateToolTip_t_box_IS_DEFINED 1
+class HTML_UpdateToolTip_t_box;
+#define HTML_HideToolTip_t_box_IS_DEFINED 1
+class HTML_HideToolTip_t_box;
+#define HTML_BrowserRestarted_t_box_IS_DEFINED 1
+class HTML_BrowserRestarted_t_box;
+#define SteamInventoryResultReady_t_box_IS_DEFINED 1
+class SteamInventoryResultReady_t_box;
+#define SteamInventoryFullUpdate_t_box_IS_DEFINED 1
+class SteamInventoryFullUpdate_t_box;
+#define SteamInventoryDefinitionUpdate_t_box_IS_DEFINED 1
+class SteamInventoryDefinitionUpdate_t_box;
+#define SteamInventoryEligiblePromoItemDefIDs_t_box_IS_DEFINED 1
+class SteamInventoryEligiblePromoItemDefIDs_t_box;
+#define SteamInventoryStartPurchaseResult_t_box_IS_DEFINED 1
+class SteamInventoryStartPurchaseResult_t_box;
+#define SteamInventoryRequestPricesResult_t_box_IS_DEFINED 1
+class SteamInventoryRequestPricesResult_t_box;
+#define GetVideoURLResult_t_box_IS_DEFINED 1
+class GetVideoURLResult_t_box;
+#define GetOPFSettingsResult_t_box_IS_DEFINED 1
+class GetOPFSettingsResult_t_box;
+#define SteamParentalSettingsChanged_t_box_IS_DEFINED 1
+class SteamParentalSettingsChanged_t_box;
+#define SteamRemotePlaySessionConnected_t_box_IS_DEFINED 1
+class SteamRemotePlaySessionConnected_t_box;
+#define SteamRemotePlaySessionDisconnected_t_box_IS_DEFINED 1
+class SteamRemotePlaySessionDisconnected_t_box;
+#define SteamNetworkingMessagesSessionRequest_t_box_IS_DEFINED 1
+class SteamNetworkingMessagesSessionRequest_t_box;
+#define SteamNetworkingMessagesSessionFailed_t_box_IS_DEFINED 1
+class SteamNetworkingMessagesSessionFailed_t_box;
+#define SteamNetConnectionStatusChangedCallback_t_box_IS_DEFINED 1
+class SteamNetConnectionStatusChangedCallback_t_box;
+#define SteamNetAuthenticationStatus_t_box_IS_DEFINED 1
+class SteamNetAuthenticationStatus_t_box;
+#define SteamRelayNetworkStatus_t_box_IS_DEFINED 1
+class SteamRelayNetworkStatus_t_box;
+#define GSClientApprove_t_box_IS_DEFINED 1
+class GSClientApprove_t_box;
+#define GSClientDeny_t_box_IS_DEFINED 1
+class GSClientDeny_t_box;
+#define GSClientKick_t_box_IS_DEFINED 1
+class GSClientKick_t_box;
+#define GSClientAchievementStatus_t_box_IS_DEFINED 1
+class GSClientAchievementStatus_t_box;
+#define GSPolicyResponse_t_box_IS_DEFINED 1
+class GSPolicyResponse_t_box;
+#define GSGameplayStats_t_box_IS_DEFINED 1
+class GSGameplayStats_t_box;
+#define GSClientGroupStatus_t_box_IS_DEFINED 1
+class GSClientGroupStatus_t_box;
+#define GSReputation_t_box_IS_DEFINED 1
+class GSReputation_t_box;
+#define AssociateWithClanResult_t_box_IS_DEFINED 1
+class AssociateWithClanResult_t_box;
+#define ComputeNewPlayerCompatibilityResult_t_box_IS_DEFINED 1
+class ComputeNewPlayerCompatibilityResult_t_box;
+#define GSStatsReceived_t_box_IS_DEFINED 1
+class GSStatsReceived_t_box;
+#define GSStatsStored_t_box_IS_DEFINED 1
+class GSStatsStored_t_box;
+#define GSStatsUnloaded_t_box_IS_DEFINED 1
+class GSStatsUnloaded_t_box;
+#define ISteamClient_box_IS_DEFINED 1
+class ISteamClient_box;
+#define int64_t_const_pointer_box_IS_DEFINED 1
+class int64_t_const_pointer_box;
+#define SteamAPIWarningMessageHook_t_const_pointer_box_IS_DEFINED 1
+class SteamAPIWarningMessageHook_t_const_pointer_box;
+#define intptr_t_const_pointer_box_IS_DEFINED 1
+class intptr_t_const_pointer_box;
+#define int32_t_const_pointer_box_IS_DEFINED 1
+class int32_t_const_pointer_box;
+#define bool_const_pointer_box_IS_DEFINED 1
+class bool_const_pointer_box;
+#define SteamDatagramRelayAuthTicket_const_pointer_box_IS_DEFINED 1
+class SteamDatagramRelayAuthTicket_const_pointer_box;
+#define unsigned_short_const_pointer_box_IS_DEFINED 1
+class unsigned_short_const_pointer_box;
+#define char_const_pointer_box_IS_DEFINED 1
+class char_const_pointer_box;
+#define void_const_pointer_box_IS_DEFINED 1
+class void_const_pointer_box;
+#define float_const_pointer_box_IS_DEFINED 1
+class float_const_pointer_box;
+#define double_const_pointer_box_IS_DEFINED 1
+class double_const_pointer_box;
+#define ISteamNetworkingConnectionSignaling_const_pointer_box_IS_DEFINED 1
+class ISteamNetworkingConnectionSignaling_const_pointer_box;
+#define ISteamNetworkingSignalingRecvContext_const_pointer_box_IS_DEFINED 1
+class ISteamNetworkingSignalingRecvContext_const_pointer_box;
+#define CGameID_const_pointer_box_IS_DEFINED 1
+class CGameID_const_pointer_box;
+#define int_const_pointer_box_IS_DEFINED 1
+class int_const_pointer_box;
+#define ISteamHTMLSurface_EHTMLKeyModifiers_const_pointer_box_IS_DEFINED 1
+class ISteamHTMLSurface_EHTMLKeyModifiers_const_pointer_box;
+#define size_t_const_pointer_box_IS_DEFINED 1
+class size_t_const_pointer_box;
+#define unsigned_int_const_pointer_box_IS_DEFINED 1
+class unsigned_int_const_pointer_box;
+#define CSteamID_const_pointer_box_IS_DEFINED 1
+class CSteamID_const_pointer_box;
+#define ISteamHTMLSurface_EHTMLMouseButton_const_pointer_box_IS_DEFINED 1
+class ISteamHTMLSurface_EHTMLMouseButton_const_pointer_box;
+#define ESteamIPType_const_pointer_box_IS_DEFINED 1
+class ESteamIPType_const_pointer_box;
+#define EUniverse_const_pointer_box_IS_DEFINED 1
+class EUniverse_const_pointer_box;
+#define EResult_const_pointer_box_IS_DEFINED 1
+class EResult_const_pointer_box;
+#define EVoiceResult_const_pointer_box_IS_DEFINED 1
+class EVoiceResult_const_pointer_box;
+#define EDenyReason_const_pointer_box_IS_DEFINED 1
+class EDenyReason_const_pointer_box;
+#define EBeginAuthSessionResult_const_pointer_box_IS_DEFINED 1
+class EBeginAuthSessionResult_const_pointer_box;
+#define EAuthSessionResponse_const_pointer_box_IS_DEFINED 1
+class EAuthSessionResponse_const_pointer_box;
+#define EUserHasLicenseForAppResult_const_pointer_box_IS_DEFINED 1
+class EUserHasLicenseForAppResult_const_pointer_box;
+#define EAccountType_const_pointer_box_IS_DEFINED 1
+class EAccountType_const_pointer_box;
+#define EChatEntryType_const_pointer_box_IS_DEFINED 1
+class EChatEntryType_const_pointer_box;
+#define EChatRoomEnterResponse_const_pointer_box_IS_DEFINED 1
+class EChatRoomEnterResponse_const_pointer_box;
+#define EChatSteamIDInstanceFlags_const_pointer_box_IS_DEFINED 1
+class EChatSteamIDInstanceFlags_const_pointer_box;
+#define ENotificationPosition_const_pointer_box_IS_DEFINED 1
+class ENotificationPosition_const_pointer_box;
+#define EBroadcastUploadResult_const_pointer_box_IS_DEFINED 1
+class EBroadcastUploadResult_const_pointer_box;
+#define EMarketNotAllowedReasonFlags_const_pointer_box_IS_DEFINED 1
+class EMarketNotAllowedReasonFlags_const_pointer_box;
+#define EDurationControlProgress_const_pointer_box_IS_DEFINED 1
+class EDurationControlProgress_const_pointer_box;
+#define EDurationControlNotification_const_pointer_box_IS_DEFINED 1
+class EDurationControlNotification_const_pointer_box;
+#define EDurationControlOnlineState_const_pointer_box_IS_DEFINED 1
+class EDurationControlOnlineState_const_pointer_box;
+#define EGameSearchErrorCode_t_const_pointer_box_IS_DEFINED 1
+class EGameSearchErrorCode_t_const_pointer_box;
+#define EPlayerResult_t_const_pointer_box_IS_DEFINED 1
+class EPlayerResult_t_const_pointer_box;
+#define ESteamIPv6ConnectivityProtocol_const_pointer_box_IS_DEFINED 1
+class ESteamIPv6ConnectivityProtocol_const_pointer_box;
+#define ESteamIPv6ConnectivityState_const_pointer_box_IS_DEFINED 1
+class ESteamIPv6ConnectivityState_const_pointer_box;
+#define EFriendRelationship_const_pointer_box_IS_DEFINED 1
+class EFriendRelationship_const_pointer_box;
+#define EPersonaState_const_pointer_box_IS_DEFINED 1
+class EPersonaState_const_pointer_box;
+#define EFriendFlags_const_pointer_box_IS_DEFINED 1
+class EFriendFlags_const_pointer_box;
+#define EUserRestriction_const_pointer_box_IS_DEFINED 1
+class EUserRestriction_const_pointer_box;
+#define EOverlayToStoreFlag_const_pointer_box_IS_DEFINED 1
+class EOverlayToStoreFlag_const_pointer_box;
+#define EActivateGameOverlayToWebPageMode_const_pointer_box_IS_DEFINED 1
+class EActivateGameOverlayToWebPageMode_const_pointer_box;
+#define EPersonaChange_const_pointer_box_IS_DEFINED 1
+class EPersonaChange_const_pointer_box;
+#define ESteamAPICallFailure_const_pointer_box_IS_DEFINED 1
+class ESteamAPICallFailure_const_pointer_box;
+#define EGamepadTextInputMode_const_pointer_box_IS_DEFINED 1
+class EGamepadTextInputMode_const_pointer_box;
+#define EGamepadTextInputLineMode_const_pointer_box_IS_DEFINED 1
+class EGamepadTextInputLineMode_const_pointer_box;
+#define ETextFilteringContext_const_pointer_box_IS_DEFINED 1
+class ETextFilteringContext_const_pointer_box;
+#define ECheckFileSignature_const_pointer_box_IS_DEFINED 1
+class ECheckFileSignature_const_pointer_box;
+#define EMatchMakingServerResponse_const_pointer_box_IS_DEFINED 1
+class EMatchMakingServerResponse_const_pointer_box;
+#define ELobbyType_const_pointer_box_IS_DEFINED 1
+class ELobbyType_const_pointer_box;
+#define ELobbyComparison_const_pointer_box_IS_DEFINED 1
+class ELobbyComparison_const_pointer_box;
+#define ELobbyDistanceFilter_const_pointer_box_IS_DEFINED 1
+class ELobbyDistanceFilter_const_pointer_box;
+#define EChatMemberStateChange_const_pointer_box_IS_DEFINED 1
+class EChatMemberStateChange_const_pointer_box;
+#define ESteamPartyBeaconLocationType_const_pointer_box_IS_DEFINED 1
+class ESteamPartyBeaconLocationType_const_pointer_box;
+#define ESteamPartyBeaconLocationData_const_pointer_box_IS_DEFINED 1
+class ESteamPartyBeaconLocationData_const_pointer_box;
+#define ERemoteStoragePlatform_const_pointer_box_IS_DEFINED 1
+class ERemoteStoragePlatform_const_pointer_box;
+#define ERemoteStoragePublishedFileVisibility_const_pointer_box_IS_DEFINED 1
+class ERemoteStoragePublishedFileVisibility_const_pointer_box;
+#define EWorkshopFileType_const_pointer_box_IS_DEFINED 1
+class EWorkshopFileType_const_pointer_box;
+#define EWorkshopVote_const_pointer_box_IS_DEFINED 1
+class EWorkshopVote_const_pointer_box;
+#define EWorkshopFileAction_const_pointer_box_IS_DEFINED 1
+class EWorkshopFileAction_const_pointer_box;
+#define EWorkshopEnumerationType_const_pointer_box_IS_DEFINED 1
+class EWorkshopEnumerationType_const_pointer_box;
+#define EWorkshopVideoProvider_const_pointer_box_IS_DEFINED 1
+class EWorkshopVideoProvider_const_pointer_box;
+#define EUGCReadAction_const_pointer_box_IS_DEFINED 1
+class EUGCReadAction_const_pointer_box;
+#define ERemoteStorageLocalFileChange_const_pointer_box_IS_DEFINED 1
+class ERemoteStorageLocalFileChange_const_pointer_box;
+#define ERemoteStorageFilePathType_const_pointer_box_IS_DEFINED 1
+class ERemoteStorageFilePathType_const_pointer_box;
+#define ELeaderboardDataRequest_const_pointer_box_IS_DEFINED 1
+class ELeaderboardDataRequest_const_pointer_box;
+#define ELeaderboardSortMethod_const_pointer_box_IS_DEFINED 1
+class ELeaderboardSortMethod_const_pointer_box;
+#define ELeaderboardDisplayType_const_pointer_box_IS_DEFINED 1
+class ELeaderboardDisplayType_const_pointer_box;
+#define ELeaderboardUploadScoreMethod_const_pointer_box_IS_DEFINED 1
+class ELeaderboardUploadScoreMethod_const_pointer_box;
+#define ERegisterActivationCodeResult_const_pointer_box_IS_DEFINED 1
+class ERegisterActivationCodeResult_const_pointer_box;
+#define EP2PSessionError_const_pointer_box_IS_DEFINED 1
+class EP2PSessionError_const_pointer_box;
+#define EP2PSend_const_pointer_box_IS_DEFINED 1
+class EP2PSend_const_pointer_box;
+#define ESNetSocketState_const_pointer_box_IS_DEFINED 1
+class ESNetSocketState_const_pointer_box;
+#define ESNetSocketConnectionType_const_pointer_box_IS_DEFINED 1
+class ESNetSocketConnectionType_const_pointer_box;
+#define EVRScreenshotType_const_pointer_box_IS_DEFINED 1
+class EVRScreenshotType_const_pointer_box;
+#define AudioPlayback_Status_const_pointer_box_IS_DEFINED 1
+class AudioPlayback_Status_const_pointer_box;
+#define EHTTPMethod_const_pointer_box_IS_DEFINED 1
+class EHTTPMethod_const_pointer_box;
+#define EHTTPStatusCode_const_pointer_box_IS_DEFINED 1
+class EHTTPStatusCode_const_pointer_box;
+#define EInputSourceMode_const_pointer_box_IS_DEFINED 1
+class EInputSourceMode_const_pointer_box;
+#define EInputActionOrigin_const_pointer_box_IS_DEFINED 1
+class EInputActionOrigin_const_pointer_box;
+#define EXboxOrigin_const_pointer_box_IS_DEFINED 1
+class EXboxOrigin_const_pointer_box;
+#define ESteamControllerPad_const_pointer_box_IS_DEFINED 1
+class ESteamControllerPad_const_pointer_box;
+#define EControllerHapticLocation_const_pointer_box_IS_DEFINED 1
+class EControllerHapticLocation_const_pointer_box;
+#define EControllerHapticType_const_pointer_box_IS_DEFINED 1
+class EControllerHapticType_const_pointer_box;
+#define ESteamInputType_const_pointer_box_IS_DEFINED 1
+class ESteamInputType_const_pointer_box;
+#define ESteamInputConfigurationEnableType_const_pointer_box_IS_DEFINED 1
+class ESteamInputConfigurationEnableType_const_pointer_box;
+#define ESteamInputLEDFlag_const_pointer_box_IS_DEFINED 1
+class ESteamInputLEDFlag_const_pointer_box;
+#define ESteamInputGlyphSize_const_pointer_box_IS_DEFINED 1
+class ESteamInputGlyphSize_const_pointer_box;
+#define ESteamInputActionEventType_const_pointer_box_IS_DEFINED 1
+class ESteamInputActionEventType_const_pointer_box;
+#define EControllerActionOrigin_const_pointer_box_IS_DEFINED 1
+class EControllerActionOrigin_const_pointer_box;
+#define ESteamControllerLEDFlag_const_pointer_box_IS_DEFINED 1
+class ESteamControllerLEDFlag_const_pointer_box;
+#define EUGCMatchingUGCType_const_pointer_box_IS_DEFINED 1
+class EUGCMatchingUGCType_const_pointer_box;
+#define EUserUGCList_const_pointer_box_IS_DEFINED 1
+class EUserUGCList_const_pointer_box;
+#define EUserUGCListSortOrder_const_pointer_box_IS_DEFINED 1
+class EUserUGCListSortOrder_const_pointer_box;
+#define EUGCQuery_const_pointer_box_IS_DEFINED 1
+class EUGCQuery_const_pointer_box;
+#define EItemUpdateStatus_const_pointer_box_IS_DEFINED 1
+class EItemUpdateStatus_const_pointer_box;
+#define EItemState_const_pointer_box_IS_DEFINED 1
+class EItemState_const_pointer_box;
+#define EItemStatistic_const_pointer_box_IS_DEFINED 1
+class EItemStatistic_const_pointer_box;
+#define EItemPreviewType_const_pointer_box_IS_DEFINED 1
+class EItemPreviewType_const_pointer_box;
+#define ESteamItemFlags_const_pointer_box_IS_DEFINED 1
+class ESteamItemFlags_const_pointer_box;
+#define EParentalFeature_const_pointer_box_IS_DEFINED 1
+class EParentalFeature_const_pointer_box;
+#define ESteamDeviceFormFactor_const_pointer_box_IS_DEFINED 1
+class ESteamDeviceFormFactor_const_pointer_box;
+#define ESteamNetworkingAvailability_const_pointer_box_IS_DEFINED 1
+class ESteamNetworkingAvailability_const_pointer_box;
+#define ESteamNetworkingIdentityType_const_pointer_box_IS_DEFINED 1
+class ESteamNetworkingIdentityType_const_pointer_box;
+#define ESteamNetworkingConnectionState_const_pointer_box_IS_DEFINED 1
+class ESteamNetworkingConnectionState_const_pointer_box;
+#define ESteamNetConnectionEnd_const_pointer_box_IS_DEFINED 1
+class ESteamNetConnectionEnd_const_pointer_box;
+#define ESteamNetworkingConfigScope_const_pointer_box_IS_DEFINED 1
+class ESteamNetworkingConfigScope_const_pointer_box;
+#define ESteamNetworkingConfigDataType_const_pointer_box_IS_DEFINED 1
+class ESteamNetworkingConfigDataType_const_pointer_box;
+#define ESteamNetworkingConfigValue_const_pointer_box_IS_DEFINED 1
+class ESteamNetworkingConfigValue_const_pointer_box;
+#define ESteamNetworkingGetConfigValueResult_const_pointer_box_IS_DEFINED 1
+class ESteamNetworkingGetConfigValueResult_const_pointer_box;
+#define ESteamNetworkingSocketsDebugOutputType_const_pointer_box_IS_DEFINED 1
+class ESteamNetworkingSocketsDebugOutputType_const_pointer_box;
+#define EServerMode_const_pointer_box_IS_DEFINED 1
+class EServerMode_const_pointer_box;
+#define uint8_const_pointer_box_IS_DEFINED 1
+class uint8_const_pointer_box;
+#define int8_const_pointer_box_IS_DEFINED 1
+class int8_const_pointer_box;
+#define int16_const_pointer_box_IS_DEFINED 1
+class int16_const_pointer_box;
+#define uint16_const_pointer_box_IS_DEFINED 1
+class uint16_const_pointer_box;
+#define int32_const_pointer_box_IS_DEFINED 1
+class int32_const_pointer_box;
+#define uint32_const_pointer_box_IS_DEFINED 1
+class uint32_const_pointer_box;
+#define int64_const_pointer_box_IS_DEFINED 1
+class int64_const_pointer_box;
+#define uint64_const_pointer_box_IS_DEFINED 1
+class uint64_const_pointer_box;
+#define lint64_const_pointer_box_IS_DEFINED 1
+class lint64_const_pointer_box;
+#define ulint64_const_pointer_box_IS_DEFINED 1
+class ulint64_const_pointer_box;
+#define intp_const_pointer_box_IS_DEFINED 1
+class intp_const_pointer_box;
+#define uintp_const_pointer_box_IS_DEFINED 1
+class uintp_const_pointer_box;
+#define AppId_t_const_pointer_box_IS_DEFINED 1
+class AppId_t_const_pointer_box;
+#define DepotId_t_const_pointer_box_IS_DEFINED 1
+class DepotId_t_const_pointer_box;
+#define RTime32_const_pointer_box_IS_DEFINED 1
+class RTime32_const_pointer_box;
+#define SteamAPICall_t_const_pointer_box_IS_DEFINED 1
+class SteamAPICall_t_const_pointer_box;
+#define AccountID_t_const_pointer_box_IS_DEFINED 1
+class AccountID_t_const_pointer_box;
+#define PartyBeaconID_t_const_pointer_box_IS_DEFINED 1
+class PartyBeaconID_t_const_pointer_box;
+#define HAuthTicket_const_pointer_box_IS_DEFINED 1
+class HAuthTicket_const_pointer_box;
+#define PFNPreMinidumpCallback_const_pointer_box_IS_DEFINED 1
+class PFNPreMinidumpCallback_const_pointer_box;
+#define HSteamPipe_const_pointer_box_IS_DEFINED 1
+class HSteamPipe_const_pointer_box;
+#define HSteamUser_const_pointer_box_IS_DEFINED 1
+class HSteamUser_const_pointer_box;
+#define FriendsGroupID_t_const_pointer_box_IS_DEFINED 1
+class FriendsGroupID_t_const_pointer_box;
+#define HServerListRequest_const_pointer_box_IS_DEFINED 1
+class HServerListRequest_const_pointer_box;
+#define HServerQuery_const_pointer_box_IS_DEFINED 1
+class HServerQuery_const_pointer_box;
+#define UGCHandle_t_const_pointer_box_IS_DEFINED 1
+class UGCHandle_t_const_pointer_box;
+#define PublishedFileUpdateHandle_t_const_pointer_box_IS_DEFINED 1
+class PublishedFileUpdateHandle_t_const_pointer_box;
+#define PublishedFileId_t_const_pointer_box_IS_DEFINED 1
+class PublishedFileId_t_const_pointer_box;
+#define UGCFileWriteStreamHandle_t_const_pointer_box_IS_DEFINED 1
+class UGCFileWriteStreamHandle_t_const_pointer_box;
+#define SteamLeaderboard_t_const_pointer_box_IS_DEFINED 1
+class SteamLeaderboard_t_const_pointer_box;
+#define SteamLeaderboardEntries_t_const_pointer_box_IS_DEFINED 1
+class SteamLeaderboardEntries_t_const_pointer_box;
+#define SNetSocket_t_const_pointer_box_IS_DEFINED 1
+class SNetSocket_t_const_pointer_box;
+#define SNetListenSocket_t_const_pointer_box_IS_DEFINED 1
+class SNetListenSocket_t_const_pointer_box;
+#define ScreenshotHandle_const_pointer_box_IS_DEFINED 1
+class ScreenshotHandle_const_pointer_box;
+#define HTTPRequestHandle_const_pointer_box_IS_DEFINED 1
+class HTTPRequestHandle_const_pointer_box;
+#define HTTPCookieContainerHandle_const_pointer_box_IS_DEFINED 1
+class HTTPCookieContainerHandle_const_pointer_box;
+#define InputHandle_t_const_pointer_box_IS_DEFINED 1
+class InputHandle_t_const_pointer_box;
+#define InputActionSetHandle_t_const_pointer_box_IS_DEFINED 1
+class InputActionSetHandle_t_const_pointer_box;
+#define InputDigitalActionHandle_t_const_pointer_box_IS_DEFINED 1
+class InputDigitalActionHandle_t_const_pointer_box;
+#define InputAnalogActionHandle_t_const_pointer_box_IS_DEFINED 1
+class InputAnalogActionHandle_t_const_pointer_box;
+#define SteamInputActionEventCallbackPointer_const_pointer_box_IS_DEFINED 1
+class SteamInputActionEventCallbackPointer_const_pointer_box;
+#define ControllerHandle_t_const_pointer_box_IS_DEFINED 1
+class ControllerHandle_t_const_pointer_box;
+#define ControllerActionSetHandle_t_const_pointer_box_IS_DEFINED 1
+class ControllerActionSetHandle_t_const_pointer_box;
+#define ControllerDigitalActionHandle_t_const_pointer_box_IS_DEFINED 1
+class ControllerDigitalActionHandle_t_const_pointer_box;
+#define ControllerAnalogActionHandle_t_const_pointer_box_IS_DEFINED 1
+class ControllerAnalogActionHandle_t_const_pointer_box;
+#define UGCQueryHandle_t_const_pointer_box_IS_DEFINED 1
+class UGCQueryHandle_t_const_pointer_box;
+#define UGCUpdateHandle_t_const_pointer_box_IS_DEFINED 1
+class UGCUpdateHandle_t_const_pointer_box;
+#define HHTMLBrowser_const_pointer_box_IS_DEFINED 1
+class HHTMLBrowser_const_pointer_box;
+#define SteamItemInstanceID_t_const_pointer_box_IS_DEFINED 1
+class SteamItemInstanceID_t_const_pointer_box;
+#define SteamItemDef_t_const_pointer_box_IS_DEFINED 1
+class SteamItemDef_t_const_pointer_box;
+#define SteamInventoryResult_t_const_pointer_box_IS_DEFINED 1
+class SteamInventoryResult_t_const_pointer_box;
+#define SteamInventoryUpdateHandle_t_const_pointer_box_IS_DEFINED 1
+class SteamInventoryUpdateHandle_t_const_pointer_box;
+#define RemotePlaySessionID_t_const_pointer_box_IS_DEFINED 1
+class RemotePlaySessionID_t_const_pointer_box;
+#define FnSteamNetConnectionStatusChanged_const_pointer_box_IS_DEFINED 1
+class FnSteamNetConnectionStatusChanged_const_pointer_box;
+#define FnSteamNetAuthenticationStatusChanged_const_pointer_box_IS_DEFINED 1
+class FnSteamNetAuthenticationStatusChanged_const_pointer_box;
+#define FnSteamRelayNetworkStatusChanged_const_pointer_box_IS_DEFINED 1
+class FnSteamRelayNetworkStatusChanged_const_pointer_box;
+#define FnSteamNetworkingMessagesSessionRequest_const_pointer_box_IS_DEFINED 1
+class FnSteamNetworkingMessagesSessionRequest_const_pointer_box;
+#define FnSteamNetworkingMessagesSessionFailed_const_pointer_box_IS_DEFINED 1
+class FnSteamNetworkingMessagesSessionFailed_const_pointer_box;
+#define HSteamNetConnection_const_pointer_box_IS_DEFINED 1
+class HSteamNetConnection_const_pointer_box;
+#define HSteamListenSocket_const_pointer_box_IS_DEFINED 1
+class HSteamListenSocket_const_pointer_box;
+#define HSteamNetPollGroup_const_pointer_box_IS_DEFINED 1
+class HSteamNetPollGroup_const_pointer_box;
+#define SteamNetworkingErrMsg_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingErrMsg_const_pointer_box;
+#define SteamNetworkingPOPID_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingPOPID_const_pointer_box;
+#define SteamNetworkingMicroseconds_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingMicroseconds_const_pointer_box;
+#define FSteamNetworkingSocketsDebugOutput_const_pointer_box_IS_DEFINED 1
+class FSteamNetworkingSocketsDebugOutput_const_pointer_box;
+#define SteamIPAddress_t_const_pointer_box_IS_DEFINED 1
+class SteamIPAddress_t_const_pointer_box;
+#define FriendGameInfo_t_const_pointer_box_IS_DEFINED 1
+class FriendGameInfo_t_const_pointer_box;
+#define MatchMakingKeyValuePair_t_const_pointer_box_IS_DEFINED 1
+class MatchMakingKeyValuePair_t_const_pointer_box;
+#define servernetadr_t_const_pointer_box_IS_DEFINED 1
+class servernetadr_t_const_pointer_box;
+#define gameserveritem_t_const_pointer_box_IS_DEFINED 1
+class gameserveritem_t_const_pointer_box;
+#define SteamPartyBeaconLocation_t_const_pointer_box_IS_DEFINED 1
+class SteamPartyBeaconLocation_t_const_pointer_box;
+#define SteamParamStringArray_t_const_pointer_box_IS_DEFINED 1
+class SteamParamStringArray_t_const_pointer_box;
+#define LeaderboardEntry_t_const_pointer_box_IS_DEFINED 1
+class LeaderboardEntry_t_const_pointer_box;
+#define P2PSessionState_t_const_pointer_box_IS_DEFINED 1
+class P2PSessionState_t_const_pointer_box;
+#define InputAnalogActionData_t_const_pointer_box_IS_DEFINED 1
+class InputAnalogActionData_t_const_pointer_box;
+#define InputDigitalActionData_t_const_pointer_box_IS_DEFINED 1
+class InputDigitalActionData_t_const_pointer_box;
+#define InputMotionData_t_const_pointer_box_IS_DEFINED 1
+class InputMotionData_t_const_pointer_box;
+#define SteamInputActionEvent_t_const_pointer_box_IS_DEFINED 1
+class SteamInputActionEvent_t_const_pointer_box;
+#define SteamUGCDetails_t_const_pointer_box_IS_DEFINED 1
+class SteamUGCDetails_t_const_pointer_box;
+#define SteamItemDetails_t_const_pointer_box_IS_DEFINED 1
+class SteamItemDetails_t_const_pointer_box;
+#define SteamNetworkingIPAddr_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingIPAddr_const_pointer_box;
+#define SteamNetworkingIdentity_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingIdentity_const_pointer_box;
+#define SteamNetConnectionInfo_t_const_pointer_box_IS_DEFINED 1
+class SteamNetConnectionInfo_t_const_pointer_box;
+#define SteamNetworkingQuickConnectionStatus_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingQuickConnectionStatus_const_pointer_box;
+#define SteamNetworkingMessage_t_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingMessage_t_const_pointer_box;
+#define SteamNetworkPingLocation_t_const_pointer_box_IS_DEFINED 1
+class SteamNetworkPingLocation_t_const_pointer_box;
+#define SteamNetworkingConfigValue_t_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingConfigValue_t_const_pointer_box;
+#define SteamNetworkingPOPIDRender_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingPOPIDRender_const_pointer_box;
+#define SteamNetworkingIdentityRender_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingIdentityRender_const_pointer_box;
+#define SteamNetworkingIPAddrRender_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingIPAddrRender_const_pointer_box;
+#define SteamDatagramHostedAddress_const_pointer_box_IS_DEFINED 1
+class SteamDatagramHostedAddress_const_pointer_box;
+#define SteamDatagramGameCoordinatorServerLogin_const_pointer_box_IS_DEFINED 1
+class SteamDatagramGameCoordinatorServerLogin_const_pointer_box;
+#define SteamServersConnected_t_const_pointer_box_IS_DEFINED 1
+class SteamServersConnected_t_const_pointer_box;
+#define SteamServerConnectFailure_t_const_pointer_box_IS_DEFINED 1
+class SteamServerConnectFailure_t_const_pointer_box;
+#define SteamServersDisconnected_t_const_pointer_box_IS_DEFINED 1
+class SteamServersDisconnected_t_const_pointer_box;
+#define ClientGameServerDeny_t_const_pointer_box_IS_DEFINED 1
+class ClientGameServerDeny_t_const_pointer_box;
+#define IPCFailure_t_const_pointer_box_IS_DEFINED 1
+class IPCFailure_t_const_pointer_box;
+#define LicensesUpdated_t_const_pointer_box_IS_DEFINED 1
+class LicensesUpdated_t_const_pointer_box;
+#define ValidateAuthTicketResponse_t_const_pointer_box_IS_DEFINED 1
+class ValidateAuthTicketResponse_t_const_pointer_box;
+#define MicroTxnAuthorizationResponse_t_const_pointer_box_IS_DEFINED 1
+class MicroTxnAuthorizationResponse_t_const_pointer_box;
+#define EncryptedAppTicketResponse_t_const_pointer_box_IS_DEFINED 1
+class EncryptedAppTicketResponse_t_const_pointer_box;
+#define GetAuthSessionTicketResponse_t_const_pointer_box_IS_DEFINED 1
+class GetAuthSessionTicketResponse_t_const_pointer_box;
+#define GameWebCallback_t_const_pointer_box_IS_DEFINED 1
+class GameWebCallback_t_const_pointer_box;
+#define StoreAuthURLResponse_t_const_pointer_box_IS_DEFINED 1
+class StoreAuthURLResponse_t_const_pointer_box;
+#define MarketEligibilityResponse_t_const_pointer_box_IS_DEFINED 1
+class MarketEligibilityResponse_t_const_pointer_box;
+#define DurationControl_t_const_pointer_box_IS_DEFINED 1
+class DurationControl_t_const_pointer_box;
+#define PersonaStateChange_t_const_pointer_box_IS_DEFINED 1
+class PersonaStateChange_t_const_pointer_box;
+#define GameOverlayActivated_t_const_pointer_box_IS_DEFINED 1
+class GameOverlayActivated_t_const_pointer_box;
+#define GameServerChangeRequested_t_const_pointer_box_IS_DEFINED 1
+class GameServerChangeRequested_t_const_pointer_box;
+#define GameLobbyJoinRequested_t_const_pointer_box_IS_DEFINED 1
+class GameLobbyJoinRequested_t_const_pointer_box;
+#define AvatarImageLoaded_t_const_pointer_box_IS_DEFINED 1
+class AvatarImageLoaded_t_const_pointer_box;
+#define ClanOfficerListResponse_t_const_pointer_box_IS_DEFINED 1
+class ClanOfficerListResponse_t_const_pointer_box;
+#define FriendRichPresenceUpdate_t_const_pointer_box_IS_DEFINED 1
+class FriendRichPresenceUpdate_t_const_pointer_box;
+#define GameRichPresenceJoinRequested_t_const_pointer_box_IS_DEFINED 1
+class GameRichPresenceJoinRequested_t_const_pointer_box;
+#define GameConnectedClanChatMsg_t_const_pointer_box_IS_DEFINED 1
+class GameConnectedClanChatMsg_t_const_pointer_box;
+#define GameConnectedChatJoin_t_const_pointer_box_IS_DEFINED 1
+class GameConnectedChatJoin_t_const_pointer_box;
+#define GameConnectedChatLeave_t_const_pointer_box_IS_DEFINED 1
+class GameConnectedChatLeave_t_const_pointer_box;
+#define DownloadClanActivityCountsResult_t_const_pointer_box_IS_DEFINED 1
+class DownloadClanActivityCountsResult_t_const_pointer_box;
+#define JoinClanChatRoomCompletionResult_t_const_pointer_box_IS_DEFINED 1
+class JoinClanChatRoomCompletionResult_t_const_pointer_box;
+#define GameConnectedFriendChatMsg_t_const_pointer_box_IS_DEFINED 1
+class GameConnectedFriendChatMsg_t_const_pointer_box;
+#define FriendsGetFollowerCount_t_const_pointer_box_IS_DEFINED 1
+class FriendsGetFollowerCount_t_const_pointer_box;
+#define FriendsIsFollowing_t_const_pointer_box_IS_DEFINED 1
+class FriendsIsFollowing_t_const_pointer_box;
+#define FriendsEnumerateFollowingList_t_const_pointer_box_IS_DEFINED 1
+class FriendsEnumerateFollowingList_t_const_pointer_box;
+#define SetPersonaNameResponse_t_const_pointer_box_IS_DEFINED 1
+class SetPersonaNameResponse_t_const_pointer_box;
+#define UnreadChatMessagesChanged_t_const_pointer_box_IS_DEFINED 1
+class UnreadChatMessagesChanged_t_const_pointer_box;
+#define OverlayBrowserProtocolNavigation_t_const_pointer_box_IS_DEFINED 1
+class OverlayBrowserProtocolNavigation_t_const_pointer_box;
+#define IPCountry_t_const_pointer_box_IS_DEFINED 1
+class IPCountry_t_const_pointer_box;
+#define LowBatteryPower_t_const_pointer_box_IS_DEFINED 1
+class LowBatteryPower_t_const_pointer_box;
+#define SteamAPICallCompleted_t_const_pointer_box_IS_DEFINED 1
+class SteamAPICallCompleted_t_const_pointer_box;
+#define SteamShutdown_t_const_pointer_box_IS_DEFINED 1
+class SteamShutdown_t_const_pointer_box;
+#define CheckFileSignature_t_const_pointer_box_IS_DEFINED 1
+class CheckFileSignature_t_const_pointer_box;
+#define GamepadTextInputDismissed_t_const_pointer_box_IS_DEFINED 1
+class GamepadTextInputDismissed_t_const_pointer_box;
+#define AppResumingFromSuspend_t_const_pointer_box_IS_DEFINED 1
+class AppResumingFromSuspend_t_const_pointer_box;
+#define ModalGamepadTextInputDismissed_t_const_pointer_box_IS_DEFINED 1
+class ModalGamepadTextInputDismissed_t_const_pointer_box;
+#define FavoritesListChanged_t_const_pointer_box_IS_DEFINED 1
+class FavoritesListChanged_t_const_pointer_box;
+#define LobbyInvite_t_const_pointer_box_IS_DEFINED 1
+class LobbyInvite_t_const_pointer_box;
+#define LobbyEnter_t_const_pointer_box_IS_DEFINED 1
+class LobbyEnter_t_const_pointer_box;
+#define LobbyDataUpdate_t_const_pointer_box_IS_DEFINED 1
+class LobbyDataUpdate_t_const_pointer_box;
+#define LobbyChatUpdate_t_const_pointer_box_IS_DEFINED 1
+class LobbyChatUpdate_t_const_pointer_box;
+#define LobbyChatMsg_t_const_pointer_box_IS_DEFINED 1
+class LobbyChatMsg_t_const_pointer_box;
+#define LobbyGameCreated_t_const_pointer_box_IS_DEFINED 1
+class LobbyGameCreated_t_const_pointer_box;
+#define LobbyMatchList_t_const_pointer_box_IS_DEFINED 1
+class LobbyMatchList_t_const_pointer_box;
+#define LobbyKicked_t_const_pointer_box_IS_DEFINED 1
+class LobbyKicked_t_const_pointer_box;
+#define LobbyCreated_t_const_pointer_box_IS_DEFINED 1
+class LobbyCreated_t_const_pointer_box;
+#define PSNGameBootInviteResult_t_const_pointer_box_IS_DEFINED 1
+class PSNGameBootInviteResult_t_const_pointer_box;
+#define FavoritesListAccountsUpdated_t_const_pointer_box_IS_DEFINED 1
+class FavoritesListAccountsUpdated_t_const_pointer_box;
+#define SearchForGameProgressCallback_t_const_pointer_box_IS_DEFINED 1
+class SearchForGameProgressCallback_t_const_pointer_box;
+#define SearchForGameResultCallback_t_const_pointer_box_IS_DEFINED 1
+class SearchForGameResultCallback_t_const_pointer_box;
+#define RequestPlayersForGameProgressCallback_t_const_pointer_box_IS_DEFINED 1
+class RequestPlayersForGameProgressCallback_t_const_pointer_box;
+#define RequestPlayersForGameResultCallback_t_const_pointer_box_IS_DEFINED 1
+class RequestPlayersForGameResultCallback_t_const_pointer_box;
+#define RequestPlayersForGameFinalResultCallback_t_const_pointer_box_IS_DEFINED \
+  1
+class RequestPlayersForGameFinalResultCallback_t_const_pointer_box;
+#define SubmitPlayerResultResultCallback_t_const_pointer_box_IS_DEFINED 1
+class SubmitPlayerResultResultCallback_t_const_pointer_box;
+#define EndGameResultCallback_t_const_pointer_box_IS_DEFINED 1
+class EndGameResultCallback_t_const_pointer_box;
+#define JoinPartyCallback_t_const_pointer_box_IS_DEFINED 1
+class JoinPartyCallback_t_const_pointer_box;
+#define CreateBeaconCallback_t_const_pointer_box_IS_DEFINED 1
+class CreateBeaconCallback_t_const_pointer_box;
+#define ReservationNotificationCallback_t_const_pointer_box_IS_DEFINED 1
+class ReservationNotificationCallback_t_const_pointer_box;
+#define ChangeNumOpenSlotsCallback_t_const_pointer_box_IS_DEFINED 1
+class ChangeNumOpenSlotsCallback_t_const_pointer_box;
+#define AvailableBeaconLocationsUpdated_t_const_pointer_box_IS_DEFINED 1
+class AvailableBeaconLocationsUpdated_t_const_pointer_box;
+#define ActiveBeaconsUpdated_t_const_pointer_box_IS_DEFINED 1
+class ActiveBeaconsUpdated_t_const_pointer_box;
+#define RemoteStorageFileShareResult_t_const_pointer_box_IS_DEFINED 1
+class RemoteStorageFileShareResult_t_const_pointer_box;
+#define RemoteStoragePublishFileResult_t_const_pointer_box_IS_DEFINED 1
+class RemoteStoragePublishFileResult_t_const_pointer_box;
+#define RemoteStorageDeletePublishedFileResult_t_const_pointer_box_IS_DEFINED 1
+class RemoteStorageDeletePublishedFileResult_t_const_pointer_box;
+#define RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box_IS_DEFINED \
+  1
+class RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box;
+#define RemoteStorageSubscribePublishedFileResult_t_const_pointer_box_IS_DEFINED \
+  1
+class RemoteStorageSubscribePublishedFileResult_t_const_pointer_box;
+#define RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box_IS_DEFINED \
+  1
+class RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box;
+#define RemoteStorageUnsubscribePublishedFileResult_t_const_pointer_box_IS_DEFINED \
+  1
+class RemoteStorageUnsubscribePublishedFileResult_t_const_pointer_box;
+#define RemoteStorageUpdatePublishedFileResult_t_const_pointer_box_IS_DEFINED 1
+class RemoteStorageUpdatePublishedFileResult_t_const_pointer_box;
+#define RemoteStorageDownloadUGCResult_t_const_pointer_box_IS_DEFINED 1
+class RemoteStorageDownloadUGCResult_t_const_pointer_box;
+#define RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box_IS_DEFINED \
+  1
+class RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box;
+#define RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box_IS_DEFINED \
+  1
+class RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box;
+#define RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box_IS_DEFINED \
+  1
+class RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box;
+#define RemoteStoragePublishedFileSubscribed_t_const_pointer_box_IS_DEFINED 1
+class RemoteStoragePublishedFileSubscribed_t_const_pointer_box;
+#define RemoteStoragePublishedFileUnsubscribed_t_const_pointer_box_IS_DEFINED 1
+class RemoteStoragePublishedFileUnsubscribed_t_const_pointer_box;
+#define RemoteStoragePublishedFileDeleted_t_const_pointer_box_IS_DEFINED 1
+class RemoteStoragePublishedFileDeleted_t_const_pointer_box;
+#define RemoteStorageUpdateUserPublishedItemVoteResult_t_const_pointer_box_IS_DEFINED \
+  1
+class RemoteStorageUpdateUserPublishedItemVoteResult_t_const_pointer_box;
+#define RemoteStorageUserVoteDetails_t_const_pointer_box_IS_DEFINED 1
+class RemoteStorageUserVoteDetails_t_const_pointer_box;
+#define RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box_IS_DEFINED \
+  1
+class RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box;
+#define RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box_IS_DEFINED \
+  1
+class RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box;
+#define RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box_IS_DEFINED \
+  1
+class
+    RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box;
+#define RemoteStoragePublishFileProgress_t_const_pointer_box_IS_DEFINED 1
+class RemoteStoragePublishFileProgress_t_const_pointer_box;
+#define RemoteStoragePublishedFileUpdated_t_const_pointer_box_IS_DEFINED 1
+class RemoteStoragePublishedFileUpdated_t_const_pointer_box;
+#define RemoteStorageFileWriteAsyncComplete_t_const_pointer_box_IS_DEFINED 1
+class RemoteStorageFileWriteAsyncComplete_t_const_pointer_box;
+#define RemoteStorageFileReadAsyncComplete_t_const_pointer_box_IS_DEFINED 1
+class RemoteStorageFileReadAsyncComplete_t_const_pointer_box;
+#define RemoteStorageLocalFileChange_t_const_pointer_box_IS_DEFINED 1
+class RemoteStorageLocalFileChange_t_const_pointer_box;
+#define UserStatsReceived_t_const_pointer_box_IS_DEFINED 1
+class UserStatsReceived_t_const_pointer_box;
+#define UserStatsStored_t_const_pointer_box_IS_DEFINED 1
+class UserStatsStored_t_const_pointer_box;
+#define UserAchievementStored_t_const_pointer_box_IS_DEFINED 1
+class UserAchievementStored_t_const_pointer_box;
+#define LeaderboardFindResult_t_const_pointer_box_IS_DEFINED 1
+class LeaderboardFindResult_t_const_pointer_box;
+#define LeaderboardScoresDownloaded_t_const_pointer_box_IS_DEFINED 1
+class LeaderboardScoresDownloaded_t_const_pointer_box;
+#define LeaderboardScoreUploaded_t_const_pointer_box_IS_DEFINED 1
+class LeaderboardScoreUploaded_t_const_pointer_box;
+#define NumberOfCurrentPlayers_t_const_pointer_box_IS_DEFINED 1
+class NumberOfCurrentPlayers_t_const_pointer_box;
+#define UserStatsUnloaded_t_const_pointer_box_IS_DEFINED 1
+class UserStatsUnloaded_t_const_pointer_box;
+#define UserAchievementIconFetched_t_const_pointer_box_IS_DEFINED 1
+class UserAchievementIconFetched_t_const_pointer_box;
+#define GlobalAchievementPercentagesReady_t_const_pointer_box_IS_DEFINED 1
+class GlobalAchievementPercentagesReady_t_const_pointer_box;
+#define LeaderboardUGCSet_t_const_pointer_box_IS_DEFINED 1
+class LeaderboardUGCSet_t_const_pointer_box;
+#define PS3TrophiesInstalled_t_const_pointer_box_IS_DEFINED 1
+class PS3TrophiesInstalled_t_const_pointer_box;
+#define GlobalStatsReceived_t_const_pointer_box_IS_DEFINED 1
+class GlobalStatsReceived_t_const_pointer_box;
+#define DlcInstalled_t_const_pointer_box_IS_DEFINED 1
+class DlcInstalled_t_const_pointer_box;
+#define RegisterActivationCodeResponse_t_const_pointer_box_IS_DEFINED 1
+class RegisterActivationCodeResponse_t_const_pointer_box;
+#define NewUrlLaunchParameters_t_const_pointer_box_IS_DEFINED 1
+class NewUrlLaunchParameters_t_const_pointer_box;
+#define AppProofOfPurchaseKeyResponse_t_const_pointer_box_IS_DEFINED 1
+class AppProofOfPurchaseKeyResponse_t_const_pointer_box;
+#define FileDetailsResult_t_const_pointer_box_IS_DEFINED 1
+class FileDetailsResult_t_const_pointer_box;
+#define TimedTrialStatus_t_const_pointer_box_IS_DEFINED 1
+class TimedTrialStatus_t_const_pointer_box;
+#define P2PSessionRequest_t_const_pointer_box_IS_DEFINED 1
+class P2PSessionRequest_t_const_pointer_box;
+#define P2PSessionConnectFail_t_const_pointer_box_IS_DEFINED 1
+class P2PSessionConnectFail_t_const_pointer_box;
+#define SocketStatusCallback_t_const_pointer_box_IS_DEFINED 1
+class SocketStatusCallback_t_const_pointer_box;
+#define ScreenshotReady_t_const_pointer_box_IS_DEFINED 1
+class ScreenshotReady_t_const_pointer_box;
+#define ScreenshotRequested_t_const_pointer_box_IS_DEFINED 1
+class ScreenshotRequested_t_const_pointer_box;
+#define PlaybackStatusHasChanged_t_const_pointer_box_IS_DEFINED 1
+class PlaybackStatusHasChanged_t_const_pointer_box;
+#define VolumeHasChanged_t_const_pointer_box_IS_DEFINED 1
+class VolumeHasChanged_t_const_pointer_box;
+#define MusicPlayerRemoteWillActivate_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerRemoteWillActivate_t_const_pointer_box;
+#define MusicPlayerRemoteWillDeactivate_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerRemoteWillDeactivate_t_const_pointer_box;
+#define MusicPlayerRemoteToFront_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerRemoteToFront_t_const_pointer_box;
+#define MusicPlayerWillQuit_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerWillQuit_t_const_pointer_box;
+#define MusicPlayerWantsPlay_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerWantsPlay_t_const_pointer_box;
+#define MusicPlayerWantsPause_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerWantsPause_t_const_pointer_box;
+#define MusicPlayerWantsPlayPrevious_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerWantsPlayPrevious_t_const_pointer_box;
+#define MusicPlayerWantsPlayNext_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerWantsPlayNext_t_const_pointer_box;
+#define MusicPlayerWantsShuffled_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerWantsShuffled_t_const_pointer_box;
+#define MusicPlayerWantsLooped_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerWantsLooped_t_const_pointer_box;
+#define MusicPlayerWantsVolume_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerWantsVolume_t_const_pointer_box;
+#define MusicPlayerSelectsQueueEntry_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerSelectsQueueEntry_t_const_pointer_box;
+#define MusicPlayerSelectsPlaylistEntry_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerSelectsPlaylistEntry_t_const_pointer_box;
+#define MusicPlayerWantsPlayingRepeatStatus_t_const_pointer_box_IS_DEFINED 1
+class MusicPlayerWantsPlayingRepeatStatus_t_const_pointer_box;
+#define HTTPRequestCompleted_t_const_pointer_box_IS_DEFINED 1
+class HTTPRequestCompleted_t_const_pointer_box;
+#define HTTPRequestHeadersReceived_t_const_pointer_box_IS_DEFINED 1
+class HTTPRequestHeadersReceived_t_const_pointer_box;
+#define HTTPRequestDataReceived_t_const_pointer_box_IS_DEFINED 1
+class HTTPRequestDataReceived_t_const_pointer_box;
+#define SteamInputDeviceConnected_t_const_pointer_box_IS_DEFINED 1
+class SteamInputDeviceConnected_t_const_pointer_box;
+#define SteamInputDeviceDisconnected_t_const_pointer_box_IS_DEFINED 1
+class SteamInputDeviceDisconnected_t_const_pointer_box;
+#define SteamInputConfigurationLoaded_t_const_pointer_box_IS_DEFINED 1
+class SteamInputConfigurationLoaded_t_const_pointer_box;
+#define SteamUGCQueryCompleted_t_const_pointer_box_IS_DEFINED 1
+class SteamUGCQueryCompleted_t_const_pointer_box;
+#define SteamUGCRequestUGCDetailsResult_t_const_pointer_box_IS_DEFINED 1
+class SteamUGCRequestUGCDetailsResult_t_const_pointer_box;
+#define CreateItemResult_t_const_pointer_box_IS_DEFINED 1
+class CreateItemResult_t_const_pointer_box;
+#define SubmitItemUpdateResult_t_const_pointer_box_IS_DEFINED 1
+class SubmitItemUpdateResult_t_const_pointer_box;
+#define ItemInstalled_t_const_pointer_box_IS_DEFINED 1
+class ItemInstalled_t_const_pointer_box;
+#define DownloadItemResult_t_const_pointer_box_IS_DEFINED 1
+class DownloadItemResult_t_const_pointer_box;
+#define UserFavoriteItemsListChanged_t_const_pointer_box_IS_DEFINED 1
+class UserFavoriteItemsListChanged_t_const_pointer_box;
+#define SetUserItemVoteResult_t_const_pointer_box_IS_DEFINED 1
+class SetUserItemVoteResult_t_const_pointer_box;
+#define GetUserItemVoteResult_t_const_pointer_box_IS_DEFINED 1
+class GetUserItemVoteResult_t_const_pointer_box;
+#define StartPlaytimeTrackingResult_t_const_pointer_box_IS_DEFINED 1
+class StartPlaytimeTrackingResult_t_const_pointer_box;
+#define StopPlaytimeTrackingResult_t_const_pointer_box_IS_DEFINED 1
+class StopPlaytimeTrackingResult_t_const_pointer_box;
+#define AddUGCDependencyResult_t_const_pointer_box_IS_DEFINED 1
+class AddUGCDependencyResult_t_const_pointer_box;
+#define RemoveUGCDependencyResult_t_const_pointer_box_IS_DEFINED 1
+class RemoveUGCDependencyResult_t_const_pointer_box;
+#define AddAppDependencyResult_t_const_pointer_box_IS_DEFINED 1
+class AddAppDependencyResult_t_const_pointer_box;
+#define RemoveAppDependencyResult_t_const_pointer_box_IS_DEFINED 1
+class RemoveAppDependencyResult_t_const_pointer_box;
+#define GetAppDependenciesResult_t_const_pointer_box_IS_DEFINED 1
+class GetAppDependenciesResult_t_const_pointer_box;
+#define DeleteItemResult_t_const_pointer_box_IS_DEFINED 1
+class DeleteItemResult_t_const_pointer_box;
+#define UserSubscribedItemsListChanged_t_const_pointer_box_IS_DEFINED 1
+class UserSubscribedItemsListChanged_t_const_pointer_box;
+#define WorkshopEULAStatus_t_const_pointer_box_IS_DEFINED 1
+class WorkshopEULAStatus_t_const_pointer_box;
+#define SteamAppInstalled_t_const_pointer_box_IS_DEFINED 1
+class SteamAppInstalled_t_const_pointer_box;
+#define SteamAppUninstalled_t_const_pointer_box_IS_DEFINED 1
+class SteamAppUninstalled_t_const_pointer_box;
+#define HTML_BrowserReady_t_const_pointer_box_IS_DEFINED 1
+class HTML_BrowserReady_t_const_pointer_box;
+#define HTML_NeedsPaint_t_const_pointer_box_IS_DEFINED 1
+class HTML_NeedsPaint_t_const_pointer_box;
+#define HTML_StartRequest_t_const_pointer_box_IS_DEFINED 1
+class HTML_StartRequest_t_const_pointer_box;
+#define HTML_CloseBrowser_t_const_pointer_box_IS_DEFINED 1
+class HTML_CloseBrowser_t_const_pointer_box;
+#define HTML_URLChanged_t_const_pointer_box_IS_DEFINED 1
+class HTML_URLChanged_t_const_pointer_box;
+#define HTML_FinishedRequest_t_const_pointer_box_IS_DEFINED 1
+class HTML_FinishedRequest_t_const_pointer_box;
+#define HTML_OpenLinkInNewTab_t_const_pointer_box_IS_DEFINED 1
+class HTML_OpenLinkInNewTab_t_const_pointer_box;
+#define HTML_ChangedTitle_t_const_pointer_box_IS_DEFINED 1
+class HTML_ChangedTitle_t_const_pointer_box;
+#define HTML_SearchResults_t_const_pointer_box_IS_DEFINED 1
+class HTML_SearchResults_t_const_pointer_box;
+#define HTML_CanGoBackAndForward_t_const_pointer_box_IS_DEFINED 1
+class HTML_CanGoBackAndForward_t_const_pointer_box;
+#define HTML_HorizontalScroll_t_const_pointer_box_IS_DEFINED 1
+class HTML_HorizontalScroll_t_const_pointer_box;
+#define HTML_VerticalScroll_t_const_pointer_box_IS_DEFINED 1
+class HTML_VerticalScroll_t_const_pointer_box;
+#define HTML_LinkAtPosition_t_const_pointer_box_IS_DEFINED 1
+class HTML_LinkAtPosition_t_const_pointer_box;
+#define HTML_JSAlert_t_const_pointer_box_IS_DEFINED 1
+class HTML_JSAlert_t_const_pointer_box;
+#define HTML_JSConfirm_t_const_pointer_box_IS_DEFINED 1
+class HTML_JSConfirm_t_const_pointer_box;
+#define HTML_FileOpenDialog_t_const_pointer_box_IS_DEFINED 1
+class HTML_FileOpenDialog_t_const_pointer_box;
+#define HTML_NewWindow_t_const_pointer_box_IS_DEFINED 1
+class HTML_NewWindow_t_const_pointer_box;
+#define HTML_SetCursor_t_const_pointer_box_IS_DEFINED 1
+class HTML_SetCursor_t_const_pointer_box;
+#define HTML_StatusText_t_const_pointer_box_IS_DEFINED 1
+class HTML_StatusText_t_const_pointer_box;
+#define HTML_ShowToolTip_t_const_pointer_box_IS_DEFINED 1
+class HTML_ShowToolTip_t_const_pointer_box;
+#define HTML_UpdateToolTip_t_const_pointer_box_IS_DEFINED 1
+class HTML_UpdateToolTip_t_const_pointer_box;
+#define HTML_HideToolTip_t_const_pointer_box_IS_DEFINED 1
+class HTML_HideToolTip_t_const_pointer_box;
+#define HTML_BrowserRestarted_t_const_pointer_box_IS_DEFINED 1
+class HTML_BrowserRestarted_t_const_pointer_box;
+#define SteamInventoryResultReady_t_const_pointer_box_IS_DEFINED 1
+class SteamInventoryResultReady_t_const_pointer_box;
+#define SteamInventoryFullUpdate_t_const_pointer_box_IS_DEFINED 1
+class SteamInventoryFullUpdate_t_const_pointer_box;
+#define SteamInventoryDefinitionUpdate_t_const_pointer_box_IS_DEFINED 1
+class SteamInventoryDefinitionUpdate_t_const_pointer_box;
+#define SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box_IS_DEFINED 1
+class SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box;
+#define SteamInventoryStartPurchaseResult_t_const_pointer_box_IS_DEFINED 1
+class SteamInventoryStartPurchaseResult_t_const_pointer_box;
+#define SteamInventoryRequestPricesResult_t_const_pointer_box_IS_DEFINED 1
+class SteamInventoryRequestPricesResult_t_const_pointer_box;
+#define GetVideoURLResult_t_const_pointer_box_IS_DEFINED 1
+class GetVideoURLResult_t_const_pointer_box;
+#define GetOPFSettingsResult_t_const_pointer_box_IS_DEFINED 1
+class GetOPFSettingsResult_t_const_pointer_box;
+#define SteamParentalSettingsChanged_t_const_pointer_box_IS_DEFINED 1
+class SteamParentalSettingsChanged_t_const_pointer_box;
+#define SteamRemotePlaySessionConnected_t_const_pointer_box_IS_DEFINED 1
+class SteamRemotePlaySessionConnected_t_const_pointer_box;
+#define SteamRemotePlaySessionDisconnected_t_const_pointer_box_IS_DEFINED 1
+class SteamRemotePlaySessionDisconnected_t_const_pointer_box;
+#define SteamNetworkingMessagesSessionRequest_t_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingMessagesSessionRequest_t_const_pointer_box;
+#define SteamNetworkingMessagesSessionFailed_t_const_pointer_box_IS_DEFINED 1
+class SteamNetworkingMessagesSessionFailed_t_const_pointer_box;
+#define SteamNetConnectionStatusChangedCallback_t_const_pointer_box_IS_DEFINED 1
+class SteamNetConnectionStatusChangedCallback_t_const_pointer_box;
+#define SteamNetAuthenticationStatus_t_const_pointer_box_IS_DEFINED 1
+class SteamNetAuthenticationStatus_t_const_pointer_box;
+#define SteamRelayNetworkStatus_t_const_pointer_box_IS_DEFINED 1
+class SteamRelayNetworkStatus_t_const_pointer_box;
+#define GSClientApprove_t_const_pointer_box_IS_DEFINED 1
+class GSClientApprove_t_const_pointer_box;
+#define GSClientDeny_t_const_pointer_box_IS_DEFINED 1
+class GSClientDeny_t_const_pointer_box;
+#define GSClientKick_t_const_pointer_box_IS_DEFINED 1
+class GSClientKick_t_const_pointer_box;
+#define GSClientAchievementStatus_t_const_pointer_box_IS_DEFINED 1
+class GSClientAchievementStatus_t_const_pointer_box;
+#define GSPolicyResponse_t_const_pointer_box_IS_DEFINED 1
+class GSPolicyResponse_t_const_pointer_box;
+#define GSGameplayStats_t_const_pointer_box_IS_DEFINED 1
+class GSGameplayStats_t_const_pointer_box;
+#define GSClientGroupStatus_t_const_pointer_box_IS_DEFINED 1
+class GSClientGroupStatus_t_const_pointer_box;
+#define GSReputation_t_const_pointer_box_IS_DEFINED 1
+class GSReputation_t_const_pointer_box;
+#define AssociateWithClanResult_t_const_pointer_box_IS_DEFINED 1
+class AssociateWithClanResult_t_const_pointer_box;
+#define ComputeNewPlayerCompatibilityResult_t_const_pointer_box_IS_DEFINED 1
+class ComputeNewPlayerCompatibilityResult_t_const_pointer_box;
+#define GSStatsReceived_t_const_pointer_box_IS_DEFINED 1
+class GSStatsReceived_t_const_pointer_box;
+#define GSStatsStored_t_const_pointer_box_IS_DEFINED 1
+class GSStatsStored_t_const_pointer_box;
+#define GSStatsUnloaded_t_const_pointer_box_IS_DEFINED 1
+class GSStatsUnloaded_t_const_pointer_box;
+#define ISteamClient_const_pointer_box_IS_DEFINED 1
+class ISteamClient_const_pointer_box;
+
+class int64_t_box : public SteamBase<int64_t, int64_t_box> {
+  GODOT_CLASS(int64_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamAPIWarningMessageHook_t_box
+    : public SteamBase<SteamAPIWarningMessageHook_t,
+                       SteamAPIWarningMessageHook_t_box> {
+  GODOT_CLASS(SteamAPIWarningMessageHook_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class intptr_t_box : public SteamBase<intptr_t, intptr_t_box> {
+  GODOT_CLASS(intptr_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int32_t_box : public SteamBase<int32_t, int32_t_box> {
+  GODOT_CLASS(int32_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class bool_box : public SteamBase<bool, bool_box> {
+  GODOT_CLASS(bool_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamDatagramRelayAuthTicket_box
+    : public SteamBase<SteamDatagramRelayAuthTicket,
+                       SteamDatagramRelayAuthTicket_box> {
+  GODOT_CLASS(SteamDatagramRelayAuthTicket_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class unsigned_short_box
+    : public SteamBase<unsigned short, unsigned_short_box> {
+  GODOT_CLASS(unsigned_short_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class char_box : public SteamBase<char, char_box> {
+  GODOT_CLASS(char_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class float_box : public SteamBase<float, float_box> {
+  GODOT_CLASS(float_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class double_box : public SteamBase<double, double_box> {
+  GODOT_CLASS(double_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ISteamNetworkingConnectionSignaling_box
+    : public SteamBase<ISteamNetworkingConnectionSignaling,
+                       ISteamNetworkingConnectionSignaling_box> {
+  GODOT_CLASS(ISteamNetworkingConnectionSignaling_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ISteamNetworkingSignalingRecvContext_box
+    : public SteamBase<ISteamNetworkingSignalingRecvContext,
+                       ISteamNetworkingSignalingRecvContext_box> {
+  GODOT_CLASS(ISteamNetworkingSignalingRecvContext_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class CGameID_box : public SteamBase<CGameID, CGameID_box> {
+  GODOT_CLASS(CGameID_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int_box : public SteamBase<int, int_box> {
+  GODOT_CLASS(int_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ISteamHTMLSurface_EHTMLKeyModifiers_box
+    : public SteamBase<ISteamHTMLSurface::EHTMLKeyModifiers,
+                       ISteamHTMLSurface_EHTMLKeyModifiers_box> {
+  GODOT_CLASS(ISteamHTMLSurface_EHTMLKeyModifiers_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class size_t_box : public SteamBase<size_t, size_t_box> {
+  GODOT_CLASS(size_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class unsigned_int_box : public SteamBase<unsigned int, unsigned_int_box> {
+  GODOT_CLASS(unsigned_int_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class CSteamID_box : public SteamBase<CSteamID, CSteamID_box> {
+  GODOT_CLASS(CSteamID_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ISteamHTMLSurface_EHTMLMouseButton_box
+    : public SteamBase<ISteamHTMLSurface::EHTMLMouseButton,
+                       ISteamHTMLSurface_EHTMLMouseButton_box> {
+  GODOT_CLASS(ISteamHTMLSurface_EHTMLMouseButton_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamIPType_box : public SteamBase<ESteamIPType, ESteamIPType_box> {
+  GODOT_CLASS(ESteamIPType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUniverse_box : public SteamBase<EUniverse, EUniverse_box> {
+  GODOT_CLASS(EUniverse_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EResult_box : public SteamBase<EResult, EResult_box> {
+  GODOT_CLASS(EResult_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EVoiceResult_box : public SteamBase<EVoiceResult, EVoiceResult_box> {
+  GODOT_CLASS(EVoiceResult_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EDenyReason_box : public SteamBase<EDenyReason, EDenyReason_box> {
+  GODOT_CLASS(EDenyReason_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EBeginAuthSessionResult_box
+    : public SteamBase<EBeginAuthSessionResult, EBeginAuthSessionResult_box> {
+  GODOT_CLASS(EBeginAuthSessionResult_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EAuthSessionResponse_box
+    : public SteamBase<EAuthSessionResponse, EAuthSessionResponse_box> {
+  GODOT_CLASS(EAuthSessionResponse_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUserHasLicenseForAppResult_box
+    : public SteamBase<EUserHasLicenseForAppResult,
+                       EUserHasLicenseForAppResult_box> {
+  GODOT_CLASS(EUserHasLicenseForAppResult_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EAccountType_box : public SteamBase<EAccountType, EAccountType_box> {
+  GODOT_CLASS(EAccountType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EChatEntryType_box
+    : public SteamBase<EChatEntryType, EChatEntryType_box> {
+  GODOT_CLASS(EChatEntryType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EChatRoomEnterResponse_box
+    : public SteamBase<EChatRoomEnterResponse, EChatRoomEnterResponse_box> {
+  GODOT_CLASS(EChatRoomEnterResponse_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EChatSteamIDInstanceFlags_box
+    : public SteamBase<EChatSteamIDInstanceFlags,
+                       EChatSteamIDInstanceFlags_box> {
+  GODOT_CLASS(EChatSteamIDInstanceFlags_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ENotificationPosition_box
+    : public SteamBase<ENotificationPosition, ENotificationPosition_box> {
+  GODOT_CLASS(ENotificationPosition_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EBroadcastUploadResult_box
+    : public SteamBase<EBroadcastUploadResult, EBroadcastUploadResult_box> {
+  GODOT_CLASS(EBroadcastUploadResult_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EMarketNotAllowedReasonFlags_box
+    : public SteamBase<EMarketNotAllowedReasonFlags,
+                       EMarketNotAllowedReasonFlags_box> {
+  GODOT_CLASS(EMarketNotAllowedReasonFlags_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EDurationControlProgress_box
+    : public SteamBase<EDurationControlProgress, EDurationControlProgress_box> {
+  GODOT_CLASS(EDurationControlProgress_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EDurationControlNotification_box
+    : public SteamBase<EDurationControlNotification,
+                       EDurationControlNotification_box> {
+  GODOT_CLASS(EDurationControlNotification_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EDurationControlOnlineState_box
+    : public SteamBase<EDurationControlOnlineState,
+                       EDurationControlOnlineState_box> {
+  GODOT_CLASS(EDurationControlOnlineState_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EGameSearchErrorCode_t_box
+    : public SteamBase<EGameSearchErrorCode_t, EGameSearchErrorCode_t_box> {
+  GODOT_CLASS(EGameSearchErrorCode_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EPlayerResult_t_box
+    : public SteamBase<EPlayerResult_t, EPlayerResult_t_box> {
+  GODOT_CLASS(EPlayerResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamIPv6ConnectivityProtocol_box
+    : public SteamBase<ESteamIPv6ConnectivityProtocol,
+                       ESteamIPv6ConnectivityProtocol_box> {
+  GODOT_CLASS(ESteamIPv6ConnectivityProtocol_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamIPv6ConnectivityState_box
+    : public SteamBase<ESteamIPv6ConnectivityState,
+                       ESteamIPv6ConnectivityState_box> {
+  GODOT_CLASS(ESteamIPv6ConnectivityState_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EFriendRelationship_box
+    : public SteamBase<EFriendRelationship, EFriendRelationship_box> {
+  GODOT_CLASS(EFriendRelationship_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EPersonaState_box : public SteamBase<EPersonaState, EPersonaState_box> {
+  GODOT_CLASS(EPersonaState_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EFriendFlags_box : public SteamBase<EFriendFlags, EFriendFlags_box> {
+  GODOT_CLASS(EFriendFlags_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUserRestriction_box
+    : public SteamBase<EUserRestriction, EUserRestriction_box> {
+  GODOT_CLASS(EUserRestriction_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EOverlayToStoreFlag_box
+    : public SteamBase<EOverlayToStoreFlag, EOverlayToStoreFlag_box> {
+  GODOT_CLASS(EOverlayToStoreFlag_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EActivateGameOverlayToWebPageMode_box
+    : public SteamBase<EActivateGameOverlayToWebPageMode,
+                       EActivateGameOverlayToWebPageMode_box> {
+  GODOT_CLASS(EActivateGameOverlayToWebPageMode_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EPersonaChange_box
+    : public SteamBase<EPersonaChange, EPersonaChange_box> {
+  GODOT_CLASS(EPersonaChange_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamAPICallFailure_box
+    : public SteamBase<ESteamAPICallFailure, ESteamAPICallFailure_box> {
+  GODOT_CLASS(ESteamAPICallFailure_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EGamepadTextInputMode_box
+    : public SteamBase<EGamepadTextInputMode, EGamepadTextInputMode_box> {
+  GODOT_CLASS(EGamepadTextInputMode_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EGamepadTextInputLineMode_box
+    : public SteamBase<EGamepadTextInputLineMode,
+                       EGamepadTextInputLineMode_box> {
+  GODOT_CLASS(EGamepadTextInputLineMode_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ETextFilteringContext_box
+    : public SteamBase<ETextFilteringContext, ETextFilteringContext_box> {
+  GODOT_CLASS(ETextFilteringContext_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ECheckFileSignature_box
+    : public SteamBase<ECheckFileSignature, ECheckFileSignature_box> {
+  GODOT_CLASS(ECheckFileSignature_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EMatchMakingServerResponse_box
+    : public SteamBase<EMatchMakingServerResponse,
+                       EMatchMakingServerResponse_box> {
+  GODOT_CLASS(EMatchMakingServerResponse_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELobbyType_box : public SteamBase<ELobbyType, ELobbyType_box> {
+  GODOT_CLASS(ELobbyType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELobbyComparison_box
+    : public SteamBase<ELobbyComparison, ELobbyComparison_box> {
+  GODOT_CLASS(ELobbyComparison_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELobbyDistanceFilter_box
+    : public SteamBase<ELobbyDistanceFilter, ELobbyDistanceFilter_box> {
+  GODOT_CLASS(ELobbyDistanceFilter_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EChatMemberStateChange_box
+    : public SteamBase<EChatMemberStateChange, EChatMemberStateChange_box> {
+  GODOT_CLASS(EChatMemberStateChange_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamPartyBeaconLocationType_box
+    : public SteamBase<ESteamPartyBeaconLocationType,
+                       ESteamPartyBeaconLocationType_box> {
+  GODOT_CLASS(ESteamPartyBeaconLocationType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamPartyBeaconLocationData_box
+    : public SteamBase<ESteamPartyBeaconLocationData,
+                       ESteamPartyBeaconLocationData_box> {
+  GODOT_CLASS(ESteamPartyBeaconLocationData_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ERemoteStoragePlatform_box
+    : public SteamBase<ERemoteStoragePlatform, ERemoteStoragePlatform_box> {
+  GODOT_CLASS(ERemoteStoragePlatform_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ERemoteStoragePublishedFileVisibility_box
+    : public SteamBase<ERemoteStoragePublishedFileVisibility,
+                       ERemoteStoragePublishedFileVisibility_box> {
+  GODOT_CLASS(ERemoteStoragePublishedFileVisibility_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EWorkshopFileType_box
+    : public SteamBase<EWorkshopFileType, EWorkshopFileType_box> {
+  GODOT_CLASS(EWorkshopFileType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EWorkshopVote_box : public SteamBase<EWorkshopVote, EWorkshopVote_box> {
+  GODOT_CLASS(EWorkshopVote_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EWorkshopFileAction_box
+    : public SteamBase<EWorkshopFileAction, EWorkshopFileAction_box> {
+  GODOT_CLASS(EWorkshopFileAction_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EWorkshopEnumerationType_box
+    : public SteamBase<EWorkshopEnumerationType, EWorkshopEnumerationType_box> {
+  GODOT_CLASS(EWorkshopEnumerationType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EWorkshopVideoProvider_box
+    : public SteamBase<EWorkshopVideoProvider, EWorkshopVideoProvider_box> {
+  GODOT_CLASS(EWorkshopVideoProvider_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUGCReadAction_box
+    : public SteamBase<EUGCReadAction, EUGCReadAction_box> {
+  GODOT_CLASS(EUGCReadAction_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ERemoteStorageLocalFileChange_box
+    : public SteamBase<ERemoteStorageLocalFileChange,
+                       ERemoteStorageLocalFileChange_box> {
+  GODOT_CLASS(ERemoteStorageLocalFileChange_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ERemoteStorageFilePathType_box
+    : public SteamBase<ERemoteStorageFilePathType,
+                       ERemoteStorageFilePathType_box> {
+  GODOT_CLASS(ERemoteStorageFilePathType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELeaderboardDataRequest_box
+    : public SteamBase<ELeaderboardDataRequest, ELeaderboardDataRequest_box> {
+  GODOT_CLASS(ELeaderboardDataRequest_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELeaderboardSortMethod_box
+    : public SteamBase<ELeaderboardSortMethod, ELeaderboardSortMethod_box> {
+  GODOT_CLASS(ELeaderboardSortMethod_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELeaderboardDisplayType_box
+    : public SteamBase<ELeaderboardDisplayType, ELeaderboardDisplayType_box> {
+  GODOT_CLASS(ELeaderboardDisplayType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELeaderboardUploadScoreMethod_box
+    : public SteamBase<ELeaderboardUploadScoreMethod,
+                       ELeaderboardUploadScoreMethod_box> {
+  GODOT_CLASS(ELeaderboardUploadScoreMethod_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ERegisterActivationCodeResult_box
+    : public SteamBase<ERegisterActivationCodeResult,
+                       ERegisterActivationCodeResult_box> {
+  GODOT_CLASS(ERegisterActivationCodeResult_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EP2PSessionError_box
+    : public SteamBase<EP2PSessionError, EP2PSessionError_box> {
+  GODOT_CLASS(EP2PSessionError_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EP2PSend_box : public SteamBase<EP2PSend, EP2PSend_box> {
+  GODOT_CLASS(EP2PSend_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESNetSocketState_box
+    : public SteamBase<ESNetSocketState, ESNetSocketState_box> {
+  GODOT_CLASS(ESNetSocketState_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESNetSocketConnectionType_box
+    : public SteamBase<ESNetSocketConnectionType,
+                       ESNetSocketConnectionType_box> {
+  GODOT_CLASS(ESNetSocketConnectionType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EVRScreenshotType_box
+    : public SteamBase<EVRScreenshotType, EVRScreenshotType_box> {
+  GODOT_CLASS(EVRScreenshotType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class AudioPlayback_Status_box
+    : public SteamBase<AudioPlayback_Status, AudioPlayback_Status_box> {
+  GODOT_CLASS(AudioPlayback_Status_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EHTTPMethod_box : public SteamBase<EHTTPMethod, EHTTPMethod_box> {
+  GODOT_CLASS(EHTTPMethod_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EHTTPStatusCode_box
+    : public SteamBase<EHTTPStatusCode, EHTTPStatusCode_box> {
+  GODOT_CLASS(EHTTPStatusCode_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EInputSourceMode_box
+    : public SteamBase<EInputSourceMode, EInputSourceMode_box> {
+  GODOT_CLASS(EInputSourceMode_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EInputActionOrigin_box
+    : public SteamBase<EInputActionOrigin, EInputActionOrigin_box> {
+  GODOT_CLASS(EInputActionOrigin_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EXboxOrigin_box : public SteamBase<EXboxOrigin, EXboxOrigin_box> {
+  GODOT_CLASS(EXboxOrigin_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamControllerPad_box
+    : public SteamBase<ESteamControllerPad, ESteamControllerPad_box> {
+  GODOT_CLASS(ESteamControllerPad_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EControllerHapticLocation_box
+    : public SteamBase<EControllerHapticLocation,
+                       EControllerHapticLocation_box> {
+  GODOT_CLASS(EControllerHapticLocation_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EControllerHapticType_box
+    : public SteamBase<EControllerHapticType, EControllerHapticType_box> {
+  GODOT_CLASS(EControllerHapticType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamInputType_box
+    : public SteamBase<ESteamInputType, ESteamInputType_box> {
+  GODOT_CLASS(ESteamInputType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamInputConfigurationEnableType_box
+    : public SteamBase<ESteamInputConfigurationEnableType,
+                       ESteamInputConfigurationEnableType_box> {
+  GODOT_CLASS(ESteamInputConfigurationEnableType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamInputLEDFlag_box
+    : public SteamBase<ESteamInputLEDFlag, ESteamInputLEDFlag_box> {
+  GODOT_CLASS(ESteamInputLEDFlag_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamInputGlyphSize_box
+    : public SteamBase<ESteamInputGlyphSize, ESteamInputGlyphSize_box> {
+  GODOT_CLASS(ESteamInputGlyphSize_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamInputActionEventType_box
+    : public SteamBase<ESteamInputActionEventType,
+                       ESteamInputActionEventType_box> {
+  GODOT_CLASS(ESteamInputActionEventType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EControllerActionOrigin_box
+    : public SteamBase<EControllerActionOrigin, EControllerActionOrigin_box> {
+  GODOT_CLASS(EControllerActionOrigin_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamControllerLEDFlag_box
+    : public SteamBase<ESteamControllerLEDFlag, ESteamControllerLEDFlag_box> {
+  GODOT_CLASS(ESteamControllerLEDFlag_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUGCMatchingUGCType_box
+    : public SteamBase<EUGCMatchingUGCType, EUGCMatchingUGCType_box> {
+  GODOT_CLASS(EUGCMatchingUGCType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUserUGCList_box : public SteamBase<EUserUGCList, EUserUGCList_box> {
+  GODOT_CLASS(EUserUGCList_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUserUGCListSortOrder_box
+    : public SteamBase<EUserUGCListSortOrder, EUserUGCListSortOrder_box> {
+  GODOT_CLASS(EUserUGCListSortOrder_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUGCQuery_box : public SteamBase<EUGCQuery, EUGCQuery_box> {
+  GODOT_CLASS(EUGCQuery_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EItemUpdateStatus_box
+    : public SteamBase<EItemUpdateStatus, EItemUpdateStatus_box> {
+  GODOT_CLASS(EItemUpdateStatus_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EItemState_box : public SteamBase<EItemState, EItemState_box> {
+  GODOT_CLASS(EItemState_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EItemStatistic_box
+    : public SteamBase<EItemStatistic, EItemStatistic_box> {
+  GODOT_CLASS(EItemStatistic_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EItemPreviewType_box
+    : public SteamBase<EItemPreviewType, EItemPreviewType_box> {
+  GODOT_CLASS(EItemPreviewType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamItemFlags_box
+    : public SteamBase<ESteamItemFlags, ESteamItemFlags_box> {
+  GODOT_CLASS(ESteamItemFlags_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EParentalFeature_box
+    : public SteamBase<EParentalFeature, EParentalFeature_box> {
+  GODOT_CLASS(EParentalFeature_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamDeviceFormFactor_box
+    : public SteamBase<ESteamDeviceFormFactor, ESteamDeviceFormFactor_box> {
+  GODOT_CLASS(ESteamDeviceFormFactor_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingAvailability_box
+    : public SteamBase<ESteamNetworkingAvailability,
+                       ESteamNetworkingAvailability_box> {
+  GODOT_CLASS(ESteamNetworkingAvailability_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingIdentityType_box
+    : public SteamBase<ESteamNetworkingIdentityType,
+                       ESteamNetworkingIdentityType_box> {
+  GODOT_CLASS(ESteamNetworkingIdentityType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingConnectionState_box
+    : public SteamBase<ESteamNetworkingConnectionState,
+                       ESteamNetworkingConnectionState_box> {
+  GODOT_CLASS(ESteamNetworkingConnectionState_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetConnectionEnd_box
+    : public SteamBase<ESteamNetConnectionEnd, ESteamNetConnectionEnd_box> {
+  GODOT_CLASS(ESteamNetConnectionEnd_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingConfigScope_box
+    : public SteamBase<ESteamNetworkingConfigScope,
+                       ESteamNetworkingConfigScope_box> {
+  GODOT_CLASS(ESteamNetworkingConfigScope_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingConfigDataType_box
+    : public SteamBase<ESteamNetworkingConfigDataType,
+                       ESteamNetworkingConfigDataType_box> {
+  GODOT_CLASS(ESteamNetworkingConfigDataType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingConfigValue_box
+    : public SteamBase<ESteamNetworkingConfigValue,
+                       ESteamNetworkingConfigValue_box> {
+  GODOT_CLASS(ESteamNetworkingConfigValue_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingGetConfigValueResult_box
+    : public SteamBase<ESteamNetworkingGetConfigValueResult,
+                       ESteamNetworkingGetConfigValueResult_box> {
+  GODOT_CLASS(ESteamNetworkingGetConfigValueResult_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingSocketsDebugOutputType_box
+    : public SteamBase<ESteamNetworkingSocketsDebugOutputType,
+                       ESteamNetworkingSocketsDebugOutputType_box> {
+  GODOT_CLASS(ESteamNetworkingSocketsDebugOutputType_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EServerMode_box : public SteamBase<EServerMode, EServerMode_box> {
+  GODOT_CLASS(EServerMode_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class uint8_box : public SteamBase<uint8, uint8_box> {
+  GODOT_CLASS(uint8_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int8_box : public SteamBase<int8, int8_box> {
+  GODOT_CLASS(int8_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int16_box : public SteamBase<int16, int16_box> {
+  GODOT_CLASS(int16_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class uint16_box : public SteamBase<uint16, uint16_box> {
+  GODOT_CLASS(uint16_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int32_box : public SteamBase<int32, int32_box> {
+  GODOT_CLASS(int32_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class uint32_box : public SteamBase<uint32, uint32_box> {
+  GODOT_CLASS(uint32_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int64_box : public SteamBase<int64, int64_box> {
+  GODOT_CLASS(int64_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class uint64_box : public SteamBase<uint64, uint64_box> {
+  GODOT_CLASS(uint64_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class lint64_box : public SteamBase<lint64, lint64_box> {
+  GODOT_CLASS(lint64_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ulint64_box : public SteamBase<ulint64, ulint64_box> {
+  GODOT_CLASS(ulint64_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class intp_box : public SteamBase<intp, intp_box> {
+  GODOT_CLASS(intp_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class uintp_box : public SteamBase<uintp, uintp_box> {
+  GODOT_CLASS(uintp_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class AppId_t_box : public SteamBase<AppId_t, AppId_t_box> {
+  GODOT_CLASS(AppId_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class DepotId_t_box : public SteamBase<DepotId_t, DepotId_t_box> {
+  GODOT_CLASS(DepotId_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class RTime32_box : public SteamBase<RTime32, RTime32_box> {
+  GODOT_CLASS(RTime32_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamAPICall_t_box
+    : public SteamBase<SteamAPICall_t, SteamAPICall_t_box> {
+  GODOT_CLASS(SteamAPICall_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class AccountID_t_box : public SteamBase<AccountID_t, AccountID_t_box> {
+  GODOT_CLASS(AccountID_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class PartyBeaconID_t_box
+    : public SteamBase<PartyBeaconID_t, PartyBeaconID_t_box> {
+  GODOT_CLASS(PartyBeaconID_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HAuthTicket_box : public SteamBase<HAuthTicket, HAuthTicket_box> {
+  GODOT_CLASS(HAuthTicket_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class PFNPreMinidumpCallback_box
+    : public SteamBase<PFNPreMinidumpCallback, PFNPreMinidumpCallback_box> {
+  GODOT_CLASS(PFNPreMinidumpCallback_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HSteamPipe_box : public SteamBase<HSteamPipe, HSteamPipe_box> {
+  GODOT_CLASS(HSteamPipe_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HSteamUser_box : public SteamBase<HSteamUser, HSteamUser_box> {
+  GODOT_CLASS(HSteamUser_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FriendsGroupID_t_box
+    : public SteamBase<FriendsGroupID_t, FriendsGroupID_t_box> {
+  GODOT_CLASS(FriendsGroupID_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HServerListRequest_box
+    : public SteamBase<HServerListRequest, HServerListRequest_box> {
+  GODOT_CLASS(HServerListRequest_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HServerQuery_box : public SteamBase<HServerQuery, HServerQuery_box> {
+  GODOT_CLASS(HServerQuery_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class UGCHandle_t_box : public SteamBase<UGCHandle_t, UGCHandle_t_box> {
+  GODOT_CLASS(UGCHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class PublishedFileUpdateHandle_t_box
+    : public SteamBase<PublishedFileUpdateHandle_t,
+                       PublishedFileUpdateHandle_t_box> {
+  GODOT_CLASS(PublishedFileUpdateHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class PublishedFileId_t_box
+    : public SteamBase<PublishedFileId_t, PublishedFileId_t_box> {
+  GODOT_CLASS(PublishedFileId_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class UGCFileWriteStreamHandle_t_box
+    : public SteamBase<UGCFileWriteStreamHandle_t,
+                       UGCFileWriteStreamHandle_t_box> {
+  GODOT_CLASS(UGCFileWriteStreamHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamLeaderboard_t_box
+    : public SteamBase<SteamLeaderboard_t, SteamLeaderboard_t_box> {
+  GODOT_CLASS(SteamLeaderboard_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamLeaderboardEntries_t_box
+    : public SteamBase<SteamLeaderboardEntries_t,
+                       SteamLeaderboardEntries_t_box> {
+  GODOT_CLASS(SteamLeaderboardEntries_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SNetSocket_t_box : public SteamBase<SNetSocket_t, SNetSocket_t_box> {
+  GODOT_CLASS(SNetSocket_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SNetListenSocket_t_box
+    : public SteamBase<SNetListenSocket_t, SNetListenSocket_t_box> {
+  GODOT_CLASS(SNetListenSocket_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ScreenshotHandle_box
+    : public SteamBase<ScreenshotHandle, ScreenshotHandle_box> {
+  GODOT_CLASS(ScreenshotHandle_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HTTPRequestHandle_box
+    : public SteamBase<HTTPRequestHandle, HTTPRequestHandle_box> {
+  GODOT_CLASS(HTTPRequestHandle_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HTTPCookieContainerHandle_box
+    : public SteamBase<HTTPCookieContainerHandle,
+                       HTTPCookieContainerHandle_box> {
+  GODOT_CLASS(HTTPCookieContainerHandle_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class InputHandle_t_box : public SteamBase<InputHandle_t, InputHandle_t_box> {
+  GODOT_CLASS(InputHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class InputActionSetHandle_t_box
+    : public SteamBase<InputActionSetHandle_t, InputActionSetHandle_t_box> {
+  GODOT_CLASS(InputActionSetHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class InputDigitalActionHandle_t_box
+    : public SteamBase<InputDigitalActionHandle_t,
+                       InputDigitalActionHandle_t_box> {
+  GODOT_CLASS(InputDigitalActionHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class InputAnalogActionHandle_t_box
+    : public SteamBase<InputAnalogActionHandle_t,
+                       InputAnalogActionHandle_t_box> {
+  GODOT_CLASS(InputAnalogActionHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamInputActionEventCallbackPointer_box
+    : public SteamBase<SteamInputActionEventCallbackPointer,
+                       SteamInputActionEventCallbackPointer_box> {
+  GODOT_CLASS(SteamInputActionEventCallbackPointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ControllerHandle_t_box
+    : public SteamBase<ControllerHandle_t, ControllerHandle_t_box> {
+  GODOT_CLASS(ControllerHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ControllerActionSetHandle_t_box
+    : public SteamBase<ControllerActionSetHandle_t,
+                       ControllerActionSetHandle_t_box> {
+  GODOT_CLASS(ControllerActionSetHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ControllerDigitalActionHandle_t_box
+    : public SteamBase<ControllerDigitalActionHandle_t,
+                       ControllerDigitalActionHandle_t_box> {
+  GODOT_CLASS(ControllerDigitalActionHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ControllerAnalogActionHandle_t_box
+    : public SteamBase<ControllerAnalogActionHandle_t,
+                       ControllerAnalogActionHandle_t_box> {
+  GODOT_CLASS(ControllerAnalogActionHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class UGCQueryHandle_t_box
+    : public SteamBase<UGCQueryHandle_t, UGCQueryHandle_t_box> {
+  GODOT_CLASS(UGCQueryHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class UGCUpdateHandle_t_box
+    : public SteamBase<UGCUpdateHandle_t, UGCUpdateHandle_t_box> {
+  GODOT_CLASS(UGCUpdateHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HHTMLBrowser_box : public SteamBase<HHTMLBrowser, HHTMLBrowser_box> {
+  GODOT_CLASS(HHTMLBrowser_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamItemInstanceID_t_box
+    : public SteamBase<SteamItemInstanceID_t, SteamItemInstanceID_t_box> {
+  GODOT_CLASS(SteamItemInstanceID_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamItemDef_t_box
+    : public SteamBase<SteamItemDef_t, SteamItemDef_t_box> {
+  GODOT_CLASS(SteamItemDef_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamInventoryResult_t_box
+    : public SteamBase<SteamInventoryResult_t, SteamInventoryResult_t_box> {
+  GODOT_CLASS(SteamInventoryResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamInventoryUpdateHandle_t_box
+    : public SteamBase<SteamInventoryUpdateHandle_t,
+                       SteamInventoryUpdateHandle_t_box> {
+  GODOT_CLASS(SteamInventoryUpdateHandle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class RemotePlaySessionID_t_box
+    : public SteamBase<RemotePlaySessionID_t, RemotePlaySessionID_t_box> {
+  GODOT_CLASS(RemotePlaySessionID_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FnSteamNetConnectionStatusChanged_box
+    : public SteamBase<FnSteamNetConnectionStatusChanged,
+                       FnSteamNetConnectionStatusChanged_box> {
+  GODOT_CLASS(FnSteamNetConnectionStatusChanged_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FnSteamNetAuthenticationStatusChanged_box
+    : public SteamBase<FnSteamNetAuthenticationStatusChanged,
+                       FnSteamNetAuthenticationStatusChanged_box> {
+  GODOT_CLASS(FnSteamNetAuthenticationStatusChanged_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FnSteamRelayNetworkStatusChanged_box
+    : public SteamBase<FnSteamRelayNetworkStatusChanged,
+                       FnSteamRelayNetworkStatusChanged_box> {
+  GODOT_CLASS(FnSteamRelayNetworkStatusChanged_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FnSteamNetworkingMessagesSessionRequest_box
+    : public SteamBase<FnSteamNetworkingMessagesSessionRequest,
+                       FnSteamNetworkingMessagesSessionRequest_box> {
+  GODOT_CLASS(FnSteamNetworkingMessagesSessionRequest_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FnSteamNetworkingMessagesSessionFailed_box
+    : public SteamBase<FnSteamNetworkingMessagesSessionFailed,
+                       FnSteamNetworkingMessagesSessionFailed_box> {
+  GODOT_CLASS(FnSteamNetworkingMessagesSessionFailed_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HSteamNetConnection_box
+    : public SteamBase<HSteamNetConnection, HSteamNetConnection_box> {
+  GODOT_CLASS(HSteamNetConnection_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HSteamListenSocket_box
+    : public SteamBase<HSteamListenSocket, HSteamListenSocket_box> {
+  GODOT_CLASS(HSteamListenSocket_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HSteamNetPollGroup_box
+    : public SteamBase<HSteamNetPollGroup, HSteamNetPollGroup_box> {
+  GODOT_CLASS(HSteamNetPollGroup_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamNetworkingErrMsg_box
+    : public SteamBase<SteamNetworkingErrMsg, SteamNetworkingErrMsg_box> {
+  GODOT_CLASS(SteamNetworkingErrMsg_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamNetworkingPOPID_box
+    : public SteamBase<SteamNetworkingPOPID, SteamNetworkingPOPID_box> {
+  GODOT_CLASS(SteamNetworkingPOPID_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamNetworkingMicroseconds_box
+    : public SteamBase<SteamNetworkingMicroseconds,
+                       SteamNetworkingMicroseconds_box> {
+  GODOT_CLASS(SteamNetworkingMicroseconds_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FSteamNetworkingSocketsDebugOutput_box
+    : public SteamBase<FSteamNetworkingSocketsDebugOutput,
+                       FSteamNetworkingSocketsDebugOutput_box> {
+  GODOT_CLASS(FSteamNetworkingSocketsDebugOutput_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamIPAddress_t_box
+    : public SteamBase<SteamIPAddress_t, SteamIPAddress_t_box> {
+  GODOT_CLASS(SteamIPAddress_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_rgubIPv6();
+  auto get_m_eType();
+
+  template <typename C = SteamIPAddress_t_box>
+  auto IsSet() -> typename std::enable_if<true>::type;
+};
+
+class FriendGameInfo_t_box
+    : public SteamBase<FriendGameInfo_t, FriendGameInfo_t_box> {
+  GODOT_CLASS(FriendGameInfo_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_gameID();
+  auto get_m_unGameIP();
+  auto get_m_usGamePort();
+  auto get_m_usQueryPort();
+  auto get_m_steamIDLobby();
+};
+
+class MatchMakingKeyValuePair_t_box
+    : public SteamBase<MatchMakingKeyValuePair_t,
+                       MatchMakingKeyValuePair_t_box> {
+  GODOT_CLASS(MatchMakingKeyValuePair_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_szKey();
+  auto get_m_szValue();
+};
+
+class servernetadr_t_box
+    : public SteamBase<servernetadr_t, servernetadr_t_box> {
+  GODOT_CLASS(servernetadr_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  template <typename C = servernetadr_t_box>
+  auto Init(Ref<unsigned_int_box> ip, Ref<uint16_box> usQueryPort,
+            Ref<uint16_box> usConnectionPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_box>
+  auto GetQueryPort() -> typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_box>
+  auto SetQueryPort(Ref<uint16_box> usPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_box>
+  auto GetConnectionPort() -> typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_box>
+  auto SetConnectionPort(Ref<uint16_box> usPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_box>
+  auto GetIP() -> typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_box>
+  auto SetIP(Ref<uint32_box> unIP) -> typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_box>
+  auto GetConnectionAddressString() -> typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_box>
+  auto GetQueryAddressString() -> typename std::enable_if<true>::type;
+};
+
+class gameserveritem_t_box
+    : public SteamBase<gameserveritem_t, gameserveritem_t_box> {
+  GODOT_CLASS(gameserveritem_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_NetAdr();
+  auto get_m_nPing();
+  auto get_m_bHadSuccessfulResponse();
+  auto get_m_bDoNotRefresh();
+  auto get_m_szGameDir();
+  auto get_m_szMap();
+  auto get_m_szGameDescription();
+  auto get_m_nAppID();
+  auto get_m_nPlayers();
+  auto get_m_nMaxPlayers();
+  auto get_m_nBotPlayers();
+  auto get_m_bPassword();
+  auto get_m_bSecure();
+  auto get_m_ulTimeLastPlayed();
+  auto get_m_nServerVersion();
+  auto get_m_szGameTags();
+  auto get_m_steamID();
+
+  template <typename C = gameserveritem_t_box>
+  auto GetName() -> typename std::enable_if<true>::type;
+
+  template <typename C = gameserveritem_t_box>
+  auto SetName(Ref<char_const_pointer_box> pName) ->
+      typename std::enable_if<true>::type;
+};
+
+class SteamPartyBeaconLocation_t_box
+    : public SteamBase<SteamPartyBeaconLocation_t,
+                       SteamPartyBeaconLocation_t_box> {
+  GODOT_CLASS(SteamPartyBeaconLocation_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eType();
+  auto get_m_ulLocationID();
+};
+
+class SteamParamStringArray_t_box
+    : public SteamBase<SteamParamStringArray_t, SteamParamStringArray_t_box> {
+  GODOT_CLASS(SteamParamStringArray_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nNumStrings();
+};
+
+class LeaderboardEntry_t_box
+    : public SteamBase<LeaderboardEntry_t, LeaderboardEntry_t_box> {
+  GODOT_CLASS(LeaderboardEntry_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDUser();
+  auto get_m_nGlobalRank();
+  auto get_m_nScore();
+  auto get_m_cDetails();
+  auto get_m_hUGC();
+};
+
+class P2PSessionState_t_box
+    : public SteamBase<P2PSessionState_t, P2PSessionState_t_box> {
+  GODOT_CLASS(P2PSessionState_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bConnectionActive();
+  auto get_m_bConnecting();
+  auto get_m_eP2PSessionError();
+  auto get_m_bUsingRelay();
+  auto get_m_nBytesQueuedForSend();
+  auto get_m_nPacketsQueuedForSend();
+  auto get_m_nRemoteIP();
+  auto get_m_nRemotePort();
+};
+
+class InputAnalogActionData_t_box
+    : public SteamBase<InputAnalogActionData_t, InputAnalogActionData_t_box> {
+  GODOT_CLASS(InputAnalogActionData_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_eMode();
+  auto get_x();
+  auto get_y();
+  auto get_bActive();
+};
+
+class InputDigitalActionData_t_box
+    : public SteamBase<InputDigitalActionData_t, InputDigitalActionData_t_box> {
+  GODOT_CLASS(InputDigitalActionData_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_bState();
+  auto get_bActive();
+};
+
+class InputMotionData_t_box
+    : public SteamBase<InputMotionData_t, InputMotionData_t_box> {
+  GODOT_CLASS(InputMotionData_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_rotQuatX();
+  auto get_rotQuatY();
+  auto get_rotQuatZ();
+  auto get_rotQuatW();
+  auto get_posAccelX();
+  auto get_posAccelY();
+  auto get_posAccelZ();
+  auto get_rotVelX();
+  auto get_rotVelY();
+  auto get_rotVelZ();
+};
+
+class SteamInputActionEvent_t_box
+    : public SteamBase<SteamInputActionEvent_t, SteamInputActionEvent_t_box> {
+  GODOT_CLASS(SteamInputActionEvent_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_controllerHandle();
+  auto get_eEventType();
+};
+
+class SteamUGCDetails_t_box
+    : public SteamBase<SteamUGCDetails_t, SteamUGCDetails_t_box> {
+  GODOT_CLASS(SteamUGCDetails_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_eResult();
+  auto get_m_eFileType();
+  auto get_m_nCreatorAppID();
+  auto get_m_nConsumerAppID();
+  auto get_m_rgchTitle();
+  auto get_m_rgchDescription();
+  auto get_m_ulSteamIDOwner();
+  auto get_m_rtimeCreated();
+  auto get_m_rtimeUpdated();
+  auto get_m_rtimeAddedToUserList();
+  auto get_m_eVisibility();
+  auto get_m_bBanned();
+  auto get_m_bAcceptedForUse();
+  auto get_m_bTagsTruncated();
+  auto get_m_rgchTags();
+  auto get_m_hFile();
+  auto get_m_hPreviewFile();
+  auto get_m_pchFileName();
+  auto get_m_nFileSize();
+  auto get_m_nPreviewFileSize();
+  auto get_m_rgchURL();
+  auto get_m_unVotesUp();
+  auto get_m_unVotesDown();
+  auto get_m_flScore();
+  auto get_m_unNumChildren();
+};
+
+class SteamItemDetails_t_box
+    : public SteamBase<SteamItemDetails_t, SteamItemDetails_t_box> {
+  GODOT_CLASS(SteamItemDetails_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_itemId();
+  auto get_m_iDefinition();
+  auto get_m_unQuantity();
+  auto get_m_unFlags();
+};
+
+class SteamNetworkingIPAddr_box
+    : public SteamBase<SteamNetworkingIPAddr, SteamNetworkingIPAddr_box> {
+  GODOT_CLASS(SteamNetworkingIPAddr_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ipv6();
+  auto get_m_port();
+
+  template <typename C = SteamNetworkingIPAddr_box>
+  auto Clear() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_box>
+  auto IsIPv6AllZeros() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_box>
+  auto SetIPv6(Ref<uint8_const_pointer_box> ipv6, Ref<uint16_box> nPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_box>
+  auto SetIPv4(Ref<uint32_box> nIP, Ref<uint16_box> nPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_box>
+  auto IsIPv4() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_box>
+  auto GetIPv4() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_box>
+  auto SetIPv6LocalHost(Ref<uint16_box> nPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_box>
+  auto IsLocalHost() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_box>
+  auto ToString(Ref<char_box> buf, Ref<uint32_box> cbBuf,
+                Ref<bool_box> bWithPort) -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_box>
+  auto ParseString(Ref<char_const_pointer_box> pszStr) ->
+      typename std::enable_if<true>::type;
+};
+
+class SteamNetworkingIdentity_box
+    : public SteamBase<SteamNetworkingIdentity, SteamNetworkingIdentity_box> {
+  GODOT_CLASS(SteamNetworkingIdentity_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eType();
+  auto get_m_cbSize();
+  auto get_m_szUnknownRawString();
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto Clear() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto IsInvalid() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto SetSteamID(Ref<CSteamID_box> steamID) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto GetSteamID() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto SetSteamID64(Ref<uint64_box> steamID) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto GetSteamID64() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto SetIPAddr(Ref<SteamNetworkingIPAddr_box> addr) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto GetIPAddr() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto SetLocalHost() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto IsLocalHost() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto SetGenericString(Ref<char_const_pointer_box> pszString) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto GetGenericString() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto SetGenericBytes(Ref<void_const_pointer_box> data, Ref<uint32_box> cbLen)
+      -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto GetGenericBytes(Ref<int_box> cbLen) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto ToString(Ref<char_box> buf, Ref<uint32_box> cbBuf) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_box>
+  auto ParseString(Ref<char_const_pointer_box> pszStr) ->
+      typename std::enable_if<true>::type;
+};
+
+class SteamNetConnectionInfo_t_box
+    : public SteamBase<SteamNetConnectionInfo_t, SteamNetConnectionInfo_t_box> {
+  GODOT_CLASS(SteamNetConnectionInfo_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_identityRemote();
+  auto get_m_nUserData();
+  auto get_m_hListenSocket();
+  auto get_m_addrRemote();
+  auto get_m__pad1();
+  auto get_m_idPOPRemote();
+  auto get_m_idPOPRelay();
+  auto get_m_eState();
+  auto get_m_eEndReason();
+  auto get_m_szEndDebug();
+  auto get_m_szConnectionDescription();
+  auto get_reserved();
+};
+
+class SteamNetworkingQuickConnectionStatus_box
+    : public SteamBase<SteamNetworkingQuickConnectionStatus,
+                       SteamNetworkingQuickConnectionStatus_box> {
+  GODOT_CLASS(SteamNetworkingQuickConnectionStatus_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eState();
+  auto get_m_nPing();
+  auto get_m_flConnectionQualityLocal();
+  auto get_m_flConnectionQualityRemote();
+  auto get_m_flOutPacketsPerSec();
+  auto get_m_flOutBytesPerSec();
+  auto get_m_flInPacketsPerSec();
+  auto get_m_flInBytesPerSec();
+  auto get_m_nSendRateBytesPerSecond();
+  auto get_m_cbPendingUnreliable();
+  auto get_m_cbPendingReliable();
+  auto get_m_cbSentUnackedReliable();
+  auto get_m_usecQueueTime();
+  auto get_reserved();
+};
+
+class SteamNetworkingMessage_t_box
+    : public SteamBase<SteamNetworkingMessage_t, SteamNetworkingMessage_t_box> {
+  GODOT_CLASS(SteamNetworkingMessage_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_pData();
+  auto get_m_cbSize();
+  auto get_m_conn();
+  auto get_m_identityPeer();
+  auto get_m_nConnUserData();
+  auto get_m_usecTimeReceived();
+  auto get_m_nMessageNumber();
+  auto get_m_nChannel();
+  auto get_m_nFlags();
+  auto get_m_nUserData();
+
+  template <typename C = SteamNetworkingMessage_t_box>
+  auto Release() -> typename std::enable_if<true>::type;
+};
+
+class SteamNetworkPingLocation_t_box
+    : public SteamBase<SteamNetworkPingLocation_t,
+                       SteamNetworkPingLocation_t_box> {
+  GODOT_CLASS(SteamNetworkPingLocation_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_data();
+};
+
+class SteamNetworkingConfigValue_t_box
+    : public SteamBase<SteamNetworkingConfigValue_t,
+                       SteamNetworkingConfigValue_t_box> {
+  GODOT_CLASS(SteamNetworkingConfigValue_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eValue();
+  auto get_m_eDataType();
+
+  template <typename C = SteamNetworkingConfigValue_t_box>
+  auto SetInt32(Ref<ESteamNetworkingConfigValue_box> eVal,
+                Ref<int32_t_box> data) -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingConfigValue_t_box>
+  auto SetInt64(Ref<ESteamNetworkingConfigValue_box> eVal,
+                Ref<int64_t_box> data) -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingConfigValue_t_box>
+  auto SetFloat(Ref<ESteamNetworkingConfigValue_box> eVal, Ref<float_box> data)
+      -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingConfigValue_t_box>
+  auto SetPtr(Ref<ESteamNetworkingConfigValue_box> eVal, Ref<void_box> data) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingConfigValue_t_box>
+  auto SetString(Ref<ESteamNetworkingConfigValue_box> eVal,
+                 Ref<char_const_pointer_box> data) ->
+      typename std::enable_if<true>::type;
+};
+
+class SteamNetworkingPOPIDRender_box
+    : public SteamBase<SteamNetworkingPOPIDRender,
+                       SteamNetworkingPOPIDRender_box> {
+  GODOT_CLASS(SteamNetworkingPOPIDRender_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  template <typename C = SteamNetworkingPOPIDRender_box>
+  auto c_str() -> typename std::enable_if<true>::type;
+};
+
+class SteamNetworkingIdentityRender_box
+    : public SteamBase<SteamNetworkingIdentityRender,
+                       SteamNetworkingIdentityRender_box> {
+  GODOT_CLASS(SteamNetworkingIdentityRender_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  template <typename C = SteamNetworkingIdentityRender_box>
+  auto c_str() -> typename std::enable_if<true>::type;
+};
+
+class SteamNetworkingIPAddrRender_box
+    : public SteamBase<SteamNetworkingIPAddrRender,
+                       SteamNetworkingIPAddrRender_box> {
+  GODOT_CLASS(SteamNetworkingIPAddrRender_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  template <typename C = SteamNetworkingIPAddrRender_box>
+  auto c_str() -> typename std::enable_if<true>::type;
+};
+
+class SteamDatagramHostedAddress_box
+    : public SteamBase<SteamDatagramHostedAddress,
+                       SteamDatagramHostedAddress_box> {
+  GODOT_CLASS(SteamDatagramHostedAddress_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamDatagramGameCoordinatorServerLogin_box
+    : public SteamBase<SteamDatagramGameCoordinatorServerLogin,
+                       SteamDatagramGameCoordinatorServerLogin_box> {
+  GODOT_CLASS(SteamDatagramGameCoordinatorServerLogin_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamServersConnected_t_box
+    : public SteamBase<SteamServersConnected_t, SteamServersConnected_t_box> {
+  GODOT_CLASS(SteamServersConnected_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamServerConnectFailure_t_box
+    : public SteamBase<SteamServerConnectFailure_t,
+                       SteamServerConnectFailure_t_box> {
+  GODOT_CLASS(SteamServerConnectFailure_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_bStillRetrying();
+};
+
+class SteamServersDisconnected_t_box
+    : public SteamBase<SteamServersDisconnected_t,
+                       SteamServersDisconnected_t_box> {
+  GODOT_CLASS(SteamServersDisconnected_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class ClientGameServerDeny_t_box
+    : public SteamBase<ClientGameServerDeny_t, ClientGameServerDeny_t_box> {
+  GODOT_CLASS(ClientGameServerDeny_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_uAppID();
+  auto get_m_unGameServerIP();
+  auto get_m_usGameServerPort();
+  auto get_m_bSecure();
+  auto get_m_uReason();
+};
+
+class IPCFailure_t_box : public SteamBase<IPCFailure_t, IPCFailure_t_box> {
+  GODOT_CLASS(IPCFailure_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eFailureType();
+};
+
+class LicensesUpdated_t_box
+    : public SteamBase<LicensesUpdated_t, LicensesUpdated_t_box> {
+  GODOT_CLASS(LicensesUpdated_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ValidateAuthTicketResponse_t_box
+    : public SteamBase<ValidateAuthTicketResponse_t,
+                       ValidateAuthTicketResponse_t_box> {
+  GODOT_CLASS(ValidateAuthTicketResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamID();
+  auto get_m_eAuthSessionResponse();
+  auto get_m_OwnerSteamID();
+};
+
+class MicroTxnAuthorizationResponse_t_box
+    : public SteamBase<MicroTxnAuthorizationResponse_t,
+                       MicroTxnAuthorizationResponse_t_box> {
+  GODOT_CLASS(MicroTxnAuthorizationResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unAppID();
+  auto get_m_ulOrderID();
+  auto get_m_bAuthorized();
+};
+
+class EncryptedAppTicketResponse_t_box
+    : public SteamBase<EncryptedAppTicketResponse_t,
+                       EncryptedAppTicketResponse_t_box> {
+  GODOT_CLASS(EncryptedAppTicketResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class GetAuthSessionTicketResponse_t_box
+    : public SteamBase<GetAuthSessionTicketResponse_t,
+                       GetAuthSessionTicketResponse_t_box> {
+  GODOT_CLASS(GetAuthSessionTicketResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hAuthTicket();
+  auto get_m_eResult();
+};
+
+class GameWebCallback_t_box
+    : public SteamBase<GameWebCallback_t, GameWebCallback_t_box> {
+  GODOT_CLASS(GameWebCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_szURL();
+};
+
+class StoreAuthURLResponse_t_box
+    : public SteamBase<StoreAuthURLResponse_t, StoreAuthURLResponse_t_box> {
+  GODOT_CLASS(StoreAuthURLResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_szURL();
+};
+
+class MarketEligibilityResponse_t_box
+    : public SteamBase<MarketEligibilityResponse_t,
+                       MarketEligibilityResponse_t_box> {
+  GODOT_CLASS(MarketEligibilityResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bAllowed();
+  auto get_m_eNotAllowedReason();
+  auto get_m_rtAllowedAtTime();
+  auto get_m_cdaySteamGuardRequiredDays();
+  auto get_m_cdayNewDeviceCooldown();
+};
+
+class DurationControl_t_box
+    : public SteamBase<DurationControl_t, DurationControl_t_box> {
+  GODOT_CLASS(DurationControl_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_appid();
+  auto get_m_bApplicable();
+  auto get_m_csecsLast5h();
+  auto get_m_progress();
+  auto get_m_notification();
+  auto get_m_csecsToday();
+  auto get_m_csecsRemaining();
+};
+
+class PersonaStateChange_t_box
+    : public SteamBase<PersonaStateChange_t, PersonaStateChange_t_box> {
+  GODOT_CLASS(PersonaStateChange_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamID();
+  auto get_m_nChangeFlags();
+};
+
+class GameOverlayActivated_t_box
+    : public SteamBase<GameOverlayActivated_t, GameOverlayActivated_t_box> {
+  GODOT_CLASS(GameOverlayActivated_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bActive();
+};
+
+class GameServerChangeRequested_t_box
+    : public SteamBase<GameServerChangeRequested_t,
+                       GameServerChangeRequested_t_box> {
+  GODOT_CLASS(GameServerChangeRequested_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_rgchServer();
+  auto get_m_rgchPassword();
+};
+
+class GameLobbyJoinRequested_t_box
+    : public SteamBase<GameLobbyJoinRequested_t, GameLobbyJoinRequested_t_box> {
+  GODOT_CLASS(GameLobbyJoinRequested_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDLobby();
+  auto get_m_steamIDFriend();
+};
+
+class AvatarImageLoaded_t_box
+    : public SteamBase<AvatarImageLoaded_t, AvatarImageLoaded_t_box> {
+  GODOT_CLASS(AvatarImageLoaded_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamID();
+  auto get_m_iImage();
+  auto get_m_iWide();
+  auto get_m_iTall();
+};
+
+class ClanOfficerListResponse_t_box
+    : public SteamBase<ClanOfficerListResponse_t,
+                       ClanOfficerListResponse_t_box> {
+  GODOT_CLASS(ClanOfficerListResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDClan();
+  auto get_m_cOfficers();
+  auto get_m_bSuccess();
+};
+
+class FriendRichPresenceUpdate_t_box
+    : public SteamBase<FriendRichPresenceUpdate_t,
+                       FriendRichPresenceUpdate_t_box> {
+  GODOT_CLASS(FriendRichPresenceUpdate_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDFriend();
+  auto get_m_nAppID();
+};
+
+class GameRichPresenceJoinRequested_t_box
+    : public SteamBase<GameRichPresenceJoinRequested_t,
+                       GameRichPresenceJoinRequested_t_box> {
+  GODOT_CLASS(GameRichPresenceJoinRequested_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDFriend();
+  auto get_m_rgchConnect();
+};
+
+class GameConnectedClanChatMsg_t_box
+    : public SteamBase<GameConnectedClanChatMsg_t,
+                       GameConnectedClanChatMsg_t_box> {
+  GODOT_CLASS(GameConnectedClanChatMsg_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDClanChat();
+  auto get_m_steamIDUser();
+  auto get_m_iMessageID();
+};
+
+class GameConnectedChatJoin_t_box
+    : public SteamBase<GameConnectedChatJoin_t, GameConnectedChatJoin_t_box> {
+  GODOT_CLASS(GameConnectedChatJoin_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDClanChat();
+  auto get_m_steamIDUser();
+};
+
+class GameConnectedChatLeave_t_box
+    : public SteamBase<GameConnectedChatLeave_t, GameConnectedChatLeave_t_box> {
+  GODOT_CLASS(GameConnectedChatLeave_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDClanChat();
+  auto get_m_steamIDUser();
+  auto get_m_bKicked();
+  auto get_m_bDropped();
+};
+
+class DownloadClanActivityCountsResult_t_box
+    : public SteamBase<DownloadClanActivityCountsResult_t,
+                       DownloadClanActivityCountsResult_t_box> {
+  GODOT_CLASS(DownloadClanActivityCountsResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSuccess();
+};
+
+class JoinClanChatRoomCompletionResult_t_box
+    : public SteamBase<JoinClanChatRoomCompletionResult_t,
+                       JoinClanChatRoomCompletionResult_t_box> {
+  GODOT_CLASS(JoinClanChatRoomCompletionResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDClanChat();
+  auto get_m_eChatRoomEnterResponse();
+};
+
+class GameConnectedFriendChatMsg_t_box
+    : public SteamBase<GameConnectedFriendChatMsg_t,
+                       GameConnectedFriendChatMsg_t_box> {
+  GODOT_CLASS(GameConnectedFriendChatMsg_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDUser();
+  auto get_m_iMessageID();
+};
+
+class FriendsGetFollowerCount_t_box
+    : public SteamBase<FriendsGetFollowerCount_t,
+                       FriendsGetFollowerCount_t_box> {
+  GODOT_CLASS(FriendsGetFollowerCount_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_steamID();
+  auto get_m_nCount();
+};
+
+class FriendsIsFollowing_t_box
+    : public SteamBase<FriendsIsFollowing_t, FriendsIsFollowing_t_box> {
+  GODOT_CLASS(FriendsIsFollowing_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_steamID();
+  auto get_m_bIsFollowing();
+};
+
+class FriendsEnumerateFollowingList_t_box
+    : public SteamBase<FriendsEnumerateFollowingList_t,
+                       FriendsEnumerateFollowingList_t_box> {
+  GODOT_CLASS(FriendsEnumerateFollowingList_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_rgSteamID();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+};
+
+class SetPersonaNameResponse_t_box
+    : public SteamBase<SetPersonaNameResponse_t, SetPersonaNameResponse_t_box> {
+  GODOT_CLASS(SetPersonaNameResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSuccess();
+  auto get_m_bLocalSuccess();
+  auto get_m_result();
+};
+
+class UnreadChatMessagesChanged_t_box
+    : public SteamBase<UnreadChatMessagesChanged_t,
+                       UnreadChatMessagesChanged_t_box> {
+  GODOT_CLASS(UnreadChatMessagesChanged_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class OverlayBrowserProtocolNavigation_t_box
+    : public SteamBase<OverlayBrowserProtocolNavigation_t,
+                       OverlayBrowserProtocolNavigation_t_box> {
+  GODOT_CLASS(OverlayBrowserProtocolNavigation_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_rgchURI();
+};
+
+class IPCountry_t_box : public SteamBase<IPCountry_t, IPCountry_t_box> {
+  GODOT_CLASS(IPCountry_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class LowBatteryPower_t_box
+    : public SteamBase<LowBatteryPower_t, LowBatteryPower_t_box> {
+  GODOT_CLASS(LowBatteryPower_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nMinutesBatteryLeft();
+};
+
+class SteamAPICallCompleted_t_box
+    : public SteamBase<SteamAPICallCompleted_t, SteamAPICallCompleted_t_box> {
+  GODOT_CLASS(SteamAPICallCompleted_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hAsyncCall();
+  auto get_m_iCallback();
+  auto get_m_cubParam();
+};
+
+class SteamShutdown_t_box
+    : public SteamBase<SteamShutdown_t, SteamShutdown_t_box> {
+  GODOT_CLASS(SteamShutdown_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class CheckFileSignature_t_box
+    : public SteamBase<CheckFileSignature_t, CheckFileSignature_t_box> {
+  GODOT_CLASS(CheckFileSignature_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eCheckFileSignature();
+};
+
+class GamepadTextInputDismissed_t_box
+    : public SteamBase<GamepadTextInputDismissed_t,
+                       GamepadTextInputDismissed_t_box> {
+  GODOT_CLASS(GamepadTextInputDismissed_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSubmitted();
+  auto get_m_unSubmittedText();
+};
+
+class AppResumingFromSuspend_t_box
+    : public SteamBase<AppResumingFromSuspend_t, AppResumingFromSuspend_t_box> {
+  GODOT_CLASS(AppResumingFromSuspend_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ModalGamepadTextInputDismissed_t_box
+    : public SteamBase<ModalGamepadTextInputDismissed_t,
+                       ModalGamepadTextInputDismissed_t_box> {
+  GODOT_CLASS(ModalGamepadTextInputDismissed_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FavoritesListChanged_t_box
+    : public SteamBase<FavoritesListChanged_t, FavoritesListChanged_t_box> {
+  GODOT_CLASS(FavoritesListChanged_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nIP();
+  auto get_m_nQueryPort();
+  auto get_m_nConnPort();
+  auto get_m_nAppID();
+  auto get_m_nFlags();
+  auto get_m_bAdd();
+  auto get_m_unAccountId();
+};
+
+class LobbyInvite_t_box : public SteamBase<LobbyInvite_t, LobbyInvite_t_box> {
+  GODOT_CLASS(LobbyInvite_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDUser();
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulGameID();
+};
+
+class LobbyEnter_t_box : public SteamBase<LobbyEnter_t, LobbyEnter_t_box> {
+  GODOT_CLASS(LobbyEnter_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_rgfChatPermissions();
+  auto get_m_bLocked();
+  auto get_m_EChatRoomEnterResponse();
+};
+
+class LobbyDataUpdate_t_box
+    : public SteamBase<LobbyDataUpdate_t, LobbyDataUpdate_t_box> {
+  GODOT_CLASS(LobbyDataUpdate_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulSteamIDMember();
+  auto get_m_bSuccess();
+};
+
+class LobbyChatUpdate_t_box
+    : public SteamBase<LobbyChatUpdate_t, LobbyChatUpdate_t_box> {
+  GODOT_CLASS(LobbyChatUpdate_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulSteamIDUserChanged();
+  auto get_m_ulSteamIDMakingChange();
+  auto get_m_rgfChatMemberStateChange();
+};
+
+class LobbyChatMsg_t_box
+    : public SteamBase<LobbyChatMsg_t, LobbyChatMsg_t_box> {
+  GODOT_CLASS(LobbyChatMsg_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulSteamIDUser();
+  auto get_m_eChatEntryType();
+  auto get_m_iChatID();
+};
+
+class LobbyGameCreated_t_box
+    : public SteamBase<LobbyGameCreated_t, LobbyGameCreated_t_box> {
+  GODOT_CLASS(LobbyGameCreated_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulSteamIDGameServer();
+  auto get_m_unIP();
+  auto get_m_usPort();
+};
+
+class LobbyMatchList_t_box
+    : public SteamBase<LobbyMatchList_t, LobbyMatchList_t_box> {
+  GODOT_CLASS(LobbyMatchList_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nLobbiesMatching();
+};
+
+class LobbyKicked_t_box : public SteamBase<LobbyKicked_t, LobbyKicked_t_box> {
+  GODOT_CLASS(LobbyKicked_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulSteamIDAdmin();
+  auto get_m_bKickedDueToDisconnect();
+};
+
+class LobbyCreated_t_box
+    : public SteamBase<LobbyCreated_t, LobbyCreated_t_box> {
+  GODOT_CLASS(LobbyCreated_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ulSteamIDLobby();
+};
+
+class PSNGameBootInviteResult_t_box
+    : public SteamBase<PSNGameBootInviteResult_t,
+                       PSNGameBootInviteResult_t_box> {
+  GODOT_CLASS(PSNGameBootInviteResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bGameBootInviteExists();
+  auto get_m_steamIDLobby();
+};
+
+class FavoritesListAccountsUpdated_t_box
+    : public SteamBase<FavoritesListAccountsUpdated_t,
+                       FavoritesListAccountsUpdated_t_box> {
+  GODOT_CLASS(FavoritesListAccountsUpdated_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class SearchForGameProgressCallback_t_box
+    : public SteamBase<SearchForGameProgressCallback_t,
+                       SearchForGameProgressCallback_t_box> {
+  GODOT_CLASS(SearchForGameProgressCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ullSearchID();
+  auto get_m_eResult();
+  auto get_m_lobbyID();
+  auto get_m_steamIDEndedSearch();
+  auto get_m_nSecondsRemainingEstimate();
+  auto get_m_cPlayersSearching();
+};
+
+class SearchForGameResultCallback_t_box
+    : public SteamBase<SearchForGameResultCallback_t,
+                       SearchForGameResultCallback_t_box> {
+  GODOT_CLASS(SearchForGameResultCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ullSearchID();
+  auto get_m_eResult();
+  auto get_m_nCountPlayersInGame();
+  auto get_m_nCountAcceptedGame();
+  auto get_m_steamIDHost();
+  auto get_m_bFinalCallback();
+};
+
+class RequestPlayersForGameProgressCallback_t_box
+    : public SteamBase<RequestPlayersForGameProgressCallback_t,
+                       RequestPlayersForGameProgressCallback_t_box> {
+  GODOT_CLASS(RequestPlayersForGameProgressCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ullSearchID();
+};
+
+class RequestPlayersForGameResultCallback_t_box
+    : public SteamBase<RequestPlayersForGameResultCallback_t,
+                       RequestPlayersForGameResultCallback_t_box> {
+  GODOT_CLASS(RequestPlayersForGameResultCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ullSearchID();
+  auto get_m_SteamIDPlayerFound();
+  auto get_m_SteamIDLobby();
+  auto get_m_nPlayerIndex();
+  auto get_m_nTotalPlayersFound();
+  auto get_m_nTotalPlayersAcceptedGame();
+  auto get_m_nSuggestedTeamIndex();
+  auto get_m_ullUniqueGameID();
+};
+
+class RequestPlayersForGameFinalResultCallback_t_box
+    : public SteamBase<RequestPlayersForGameFinalResultCallback_t,
+                       RequestPlayersForGameFinalResultCallback_t_box> {
+  GODOT_CLASS(RequestPlayersForGameFinalResultCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ullSearchID();
+  auto get_m_ullUniqueGameID();
+};
+
+class SubmitPlayerResultResultCallback_t_box
+    : public SteamBase<SubmitPlayerResultResultCallback_t,
+                       SubmitPlayerResultResultCallback_t_box> {
+  GODOT_CLASS(SubmitPlayerResultResultCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_ullUniqueGameID();
+  auto get_steamIDPlayer();
+};
+
+class EndGameResultCallback_t_box
+    : public SteamBase<EndGameResultCallback_t, EndGameResultCallback_t_box> {
+  GODOT_CLASS(EndGameResultCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_ullUniqueGameID();
+};
+
+class JoinPartyCallback_t_box
+    : public SteamBase<JoinPartyCallback_t, JoinPartyCallback_t_box> {
+  GODOT_CLASS(JoinPartyCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ulBeaconID();
+  auto get_m_SteamIDBeaconOwner();
+  auto get_m_rgchConnectString();
+};
+
+class CreateBeaconCallback_t_box
+    : public SteamBase<CreateBeaconCallback_t, CreateBeaconCallback_t_box> {
+  GODOT_CLASS(CreateBeaconCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ulBeaconID();
+};
+
+class ReservationNotificationCallback_t_box
+    : public SteamBase<ReservationNotificationCallback_t,
+                       ReservationNotificationCallback_t_box> {
+  GODOT_CLASS(ReservationNotificationCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulBeaconID();
+  auto get_m_steamIDJoiner();
+};
+
+class ChangeNumOpenSlotsCallback_t_box
+    : public SteamBase<ChangeNumOpenSlotsCallback_t,
+                       ChangeNumOpenSlotsCallback_t_box> {
+  GODOT_CLASS(ChangeNumOpenSlotsCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class AvailableBeaconLocationsUpdated_t_box
+    : public SteamBase<AvailableBeaconLocationsUpdated_t,
+                       AvailableBeaconLocationsUpdated_t_box> {
+  GODOT_CLASS(AvailableBeaconLocationsUpdated_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ActiveBeaconsUpdated_t_box
+    : public SteamBase<ActiveBeaconsUpdated_t, ActiveBeaconsUpdated_t_box> {
+  GODOT_CLASS(ActiveBeaconsUpdated_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class RemoteStorageFileShareResult_t_box
+    : public SteamBase<RemoteStorageFileShareResult_t,
+                       RemoteStorageFileShareResult_t_box> {
+  GODOT_CLASS(RemoteStorageFileShareResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_hFile();
+  auto get_m_rgchFilename();
+};
+
+class RemoteStoragePublishFileResult_t_box
+    : public SteamBase<RemoteStoragePublishFileResult_t,
+                       RemoteStoragePublishFileResult_t_box> {
+  GODOT_CLASS(RemoteStoragePublishFileResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_bUserNeedsToAcceptWorkshopLegalAgreement();
+};
+
+class RemoteStorageDeletePublishedFileResult_t_box
+    : public SteamBase<RemoteStorageDeletePublishedFileResult_t,
+                       RemoteStorageDeletePublishedFileResult_t_box> {
+  GODOT_CLASS(RemoteStorageDeletePublishedFileResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+};
+
+class RemoteStorageEnumerateUserPublishedFilesResult_t_box
+    : public SteamBase<RemoteStorageEnumerateUserPublishedFilesResult_t,
+                       RemoteStorageEnumerateUserPublishedFilesResult_t_box> {
+  GODOT_CLASS(RemoteStorageEnumerateUserPublishedFilesResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+  auto get_m_rgPublishedFileId();
+};
+
+class RemoteStorageSubscribePublishedFileResult_t_box
+    : public SteamBase<RemoteStorageSubscribePublishedFileResult_t,
+                       RemoteStorageSubscribePublishedFileResult_t_box> {
+  GODOT_CLASS(RemoteStorageSubscribePublishedFileResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+};
+
+class RemoteStorageEnumerateUserSubscribedFilesResult_t_box
+    : public SteamBase<RemoteStorageEnumerateUserSubscribedFilesResult_t,
+                       RemoteStorageEnumerateUserSubscribedFilesResult_t_box> {
+  GODOT_CLASS(RemoteStorageEnumerateUserSubscribedFilesResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+  auto get_m_rgPublishedFileId();
+  auto get_m_rgRTimeSubscribed();
+};
+
+class RemoteStorageUnsubscribePublishedFileResult_t_box
+    : public SteamBase<RemoteStorageUnsubscribePublishedFileResult_t,
+                       RemoteStorageUnsubscribePublishedFileResult_t_box> {
+  GODOT_CLASS(RemoteStorageUnsubscribePublishedFileResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+};
+
+class RemoteStorageUpdatePublishedFileResult_t_box
+    : public SteamBase<RemoteStorageUpdatePublishedFileResult_t,
+                       RemoteStorageUpdatePublishedFileResult_t_box> {
+  GODOT_CLASS(RemoteStorageUpdatePublishedFileResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_bUserNeedsToAcceptWorkshopLegalAgreement();
+};
+
+class RemoteStorageDownloadUGCResult_t_box
+    : public SteamBase<RemoteStorageDownloadUGCResult_t,
+                       RemoteStorageDownloadUGCResult_t_box> {
+  GODOT_CLASS(RemoteStorageDownloadUGCResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_hFile();
+  auto get_m_nAppID();
+  auto get_m_nSizeInBytes();
+  auto get_m_pchFileName();
+  auto get_m_ulSteamIDOwner();
+};
+
+class RemoteStorageGetPublishedFileDetailsResult_t_box
+    : public SteamBase<RemoteStorageGetPublishedFileDetailsResult_t,
+                       RemoteStorageGetPublishedFileDetailsResult_t_box> {
+  GODOT_CLASS(RemoteStorageGetPublishedFileDetailsResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_nCreatorAppID();
+  auto get_m_nConsumerAppID();
+  auto get_m_rgchTitle();
+  auto get_m_rgchDescription();
+  auto get_m_hFile();
+  auto get_m_hPreviewFile();
+  auto get_m_ulSteamIDOwner();
+  auto get_m_rtimeCreated();
+  auto get_m_rtimeUpdated();
+  auto get_m_eVisibility();
+  auto get_m_bBanned();
+  auto get_m_rgchTags();
+  auto get_m_bTagsTruncated();
+  auto get_m_pchFileName();
+  auto get_m_nFileSize();
+  auto get_m_nPreviewFileSize();
+  auto get_m_rgchURL();
+  auto get_m_eFileType();
+  auto get_m_bAcceptedForUse();
+};
+
+class RemoteStorageEnumerateWorkshopFilesResult_t_box
+    : public SteamBase<RemoteStorageEnumerateWorkshopFilesResult_t,
+                       RemoteStorageEnumerateWorkshopFilesResult_t_box> {
+  GODOT_CLASS(RemoteStorageEnumerateWorkshopFilesResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+  auto get_m_rgPublishedFileId();
+  auto get_m_rgScore();
+  auto get_m_nAppId();
+  auto get_m_unStartIndex();
+};
+
+class RemoteStorageGetPublishedItemVoteDetailsResult_t_box
+    : public SteamBase<RemoteStorageGetPublishedItemVoteDetailsResult_t,
+                       RemoteStorageGetPublishedItemVoteDetailsResult_t_box> {
+  GODOT_CLASS(RemoteStorageGetPublishedItemVoteDetailsResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_unPublishedFileId();
+  auto get_m_nVotesFor();
+  auto get_m_nVotesAgainst();
+  auto get_m_nReports();
+  auto get_m_fScore();
+};
+
+class RemoteStoragePublishedFileSubscribed_t_box
+    : public SteamBase<RemoteStoragePublishedFileSubscribed_t,
+                       RemoteStoragePublishedFileSubscribed_t_box> {
+  GODOT_CLASS(RemoteStoragePublishedFileSubscribed_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+};
+
+class RemoteStoragePublishedFileUnsubscribed_t_box
+    : public SteamBase<RemoteStoragePublishedFileUnsubscribed_t,
+                       RemoteStoragePublishedFileUnsubscribed_t_box> {
+  GODOT_CLASS(RemoteStoragePublishedFileUnsubscribed_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+};
+
+class RemoteStoragePublishedFileDeleted_t_box
+    : public SteamBase<RemoteStoragePublishedFileDeleted_t,
+                       RemoteStoragePublishedFileDeleted_t_box> {
+  GODOT_CLASS(RemoteStoragePublishedFileDeleted_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+};
+
+class RemoteStorageUpdateUserPublishedItemVoteResult_t_box
+    : public SteamBase<RemoteStorageUpdateUserPublishedItemVoteResult_t,
+                       RemoteStorageUpdateUserPublishedItemVoteResult_t_box> {
+  GODOT_CLASS(RemoteStorageUpdateUserPublishedItemVoteResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+};
+
+class RemoteStorageUserVoteDetails_t_box
+    : public SteamBase<RemoteStorageUserVoteDetails_t,
+                       RemoteStorageUserVoteDetails_t_box> {
+  GODOT_CLASS(RemoteStorageUserVoteDetails_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_eVote();
+};
+
+class RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box
+    : public SteamBase<
+          RemoteStorageEnumerateUserSharedWorkshopFilesResult_t,
+          RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box> {
+  GODOT_CLASS(RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+  auto get_m_rgPublishedFileId();
+};
+
+class RemoteStorageSetUserPublishedFileActionResult_t_box
+    : public SteamBase<RemoteStorageSetUserPublishedFileActionResult_t,
+                       RemoteStorageSetUserPublishedFileActionResult_t_box> {
+  GODOT_CLASS(RemoteStorageSetUserPublishedFileActionResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_eAction();
+};
+
+class RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box
+    : public SteamBase<
+          RemoteStorageEnumeratePublishedFilesByUserActionResult_t,
+          RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box> {
+  GODOT_CLASS(RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_eAction();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+  auto get_m_rgPublishedFileId();
+  auto get_m_rgRTimeUpdated();
+};
+
+class RemoteStoragePublishFileProgress_t_box
+    : public SteamBase<RemoteStoragePublishFileProgress_t,
+                       RemoteStoragePublishFileProgress_t_box> {
+  GODOT_CLASS(RemoteStoragePublishFileProgress_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_dPercentFile();
+  auto get_m_bPreview();
+};
+
+class RemoteStoragePublishedFileUpdated_t_box
+    : public SteamBase<RemoteStoragePublishedFileUpdated_t,
+                       RemoteStoragePublishedFileUpdated_t_box> {
+  GODOT_CLASS(RemoteStoragePublishedFileUpdated_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+  auto get_m_ulUnused();
+};
+
+class RemoteStorageFileWriteAsyncComplete_t_box
+    : public SteamBase<RemoteStorageFileWriteAsyncComplete_t,
+                       RemoteStorageFileWriteAsyncComplete_t_box> {
+  GODOT_CLASS(RemoteStorageFileWriteAsyncComplete_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class RemoteStorageFileReadAsyncComplete_t_box
+    : public SteamBase<RemoteStorageFileReadAsyncComplete_t,
+                       RemoteStorageFileReadAsyncComplete_t_box> {
+  GODOT_CLASS(RemoteStorageFileReadAsyncComplete_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hFileReadAsync();
+  auto get_m_eResult();
+  auto get_m_nOffset();
+  auto get_m_cubRead();
+};
+
+class RemoteStorageLocalFileChange_t_box
+    : public SteamBase<RemoteStorageLocalFileChange_t,
+                       RemoteStorageLocalFileChange_t_box> {
+  GODOT_CLASS(RemoteStorageLocalFileChange_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class UserStatsReceived_t_box
+    : public SteamBase<UserStatsReceived_t, UserStatsReceived_t_box> {
+  GODOT_CLASS(UserStatsReceived_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_eResult();
+  auto get_m_steamIDUser();
+};
+
+class UserStatsStored_t_box
+    : public SteamBase<UserStatsStored_t, UserStatsStored_t_box> {
+  GODOT_CLASS(UserStatsStored_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_eResult();
+};
+
+class UserAchievementStored_t_box
+    : public SteamBase<UserAchievementStored_t, UserAchievementStored_t_box> {
+  GODOT_CLASS(UserAchievementStored_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_bGroupAchievement();
+  auto get_m_rgchAchievementName();
+  auto get_m_nCurProgress();
+  auto get_m_nMaxProgress();
+};
+
+class LeaderboardFindResult_t_box
+    : public SteamBase<LeaderboardFindResult_t, LeaderboardFindResult_t_box> {
+  GODOT_CLASS(LeaderboardFindResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hSteamLeaderboard();
+  auto get_m_bLeaderboardFound();
+};
+
+class LeaderboardScoresDownloaded_t_box
+    : public SteamBase<LeaderboardScoresDownloaded_t,
+                       LeaderboardScoresDownloaded_t_box> {
+  GODOT_CLASS(LeaderboardScoresDownloaded_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hSteamLeaderboard();
+  auto get_m_hSteamLeaderboardEntries();
+  auto get_m_cEntryCount();
+};
+
+class LeaderboardScoreUploaded_t_box
+    : public SteamBase<LeaderboardScoreUploaded_t,
+                       LeaderboardScoreUploaded_t_box> {
+  GODOT_CLASS(LeaderboardScoreUploaded_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSuccess();
+  auto get_m_hSteamLeaderboard();
+  auto get_m_nScore();
+  auto get_m_bScoreChanged();
+  auto get_m_nGlobalRankNew();
+  auto get_m_nGlobalRankPrevious();
+};
+
+class NumberOfCurrentPlayers_t_box
+    : public SteamBase<NumberOfCurrentPlayers_t, NumberOfCurrentPlayers_t_box> {
+  GODOT_CLASS(NumberOfCurrentPlayers_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSuccess();
+  auto get_m_cPlayers();
+};
+
+class UserStatsUnloaded_t_box
+    : public SteamBase<UserStatsUnloaded_t, UserStatsUnloaded_t_box> {
+  GODOT_CLASS(UserStatsUnloaded_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDUser();
+};
+
+class UserAchievementIconFetched_t_box
+    : public SteamBase<UserAchievementIconFetched_t,
+                       UserAchievementIconFetched_t_box> {
+  GODOT_CLASS(UserAchievementIconFetched_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_rgchAchievementName();
+  auto get_m_bAchieved();
+  auto get_m_nIconHandle();
+};
+
+class GlobalAchievementPercentagesReady_t_box
+    : public SteamBase<GlobalAchievementPercentagesReady_t,
+                       GlobalAchievementPercentagesReady_t_box> {
+  GODOT_CLASS(GlobalAchievementPercentagesReady_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_eResult();
+};
+
+class LeaderboardUGCSet_t_box
+    : public SteamBase<LeaderboardUGCSet_t, LeaderboardUGCSet_t_box> {
+  GODOT_CLASS(LeaderboardUGCSet_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_hSteamLeaderboard();
+};
+
+class PS3TrophiesInstalled_t_box
+    : public SteamBase<PS3TrophiesInstalled_t, PS3TrophiesInstalled_t_box> {
+  GODOT_CLASS(PS3TrophiesInstalled_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_eResult();
+  auto get_m_ulRequiredDiskSpace();
+};
+
+class GlobalStatsReceived_t_box
+    : public SteamBase<GlobalStatsReceived_t, GlobalStatsReceived_t_box> {
+  GODOT_CLASS(GlobalStatsReceived_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_eResult();
+};
+
+class DlcInstalled_t_box
+    : public SteamBase<DlcInstalled_t, DlcInstalled_t_box> {
+  GODOT_CLASS(DlcInstalled_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nAppID();
+};
+
+class RegisterActivationCodeResponse_t_box
+    : public SteamBase<RegisterActivationCodeResponse_t,
+                       RegisterActivationCodeResponse_t_box> {
+  GODOT_CLASS(RegisterActivationCodeResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_unPackageRegistered();
+};
+
+class NewUrlLaunchParameters_t_box
+    : public SteamBase<NewUrlLaunchParameters_t, NewUrlLaunchParameters_t_box> {
+  GODOT_CLASS(NewUrlLaunchParameters_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class AppProofOfPurchaseKeyResponse_t_box
+    : public SteamBase<AppProofOfPurchaseKeyResponse_t,
+                       AppProofOfPurchaseKeyResponse_t_box> {
+  GODOT_CLASS(AppProofOfPurchaseKeyResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nAppID();
+  auto get_m_cchKeyLength();
+  auto get_m_rgchKey();
+};
+
+class FileDetailsResult_t_box
+    : public SteamBase<FileDetailsResult_t, FileDetailsResult_t_box> {
+  GODOT_CLASS(FileDetailsResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ulFileSize();
+  auto get_m_FileSHA();
+  auto get_m_unFlags();
+};
+
+class TimedTrialStatus_t_box
+    : public SteamBase<TimedTrialStatus_t, TimedTrialStatus_t_box> {
+  GODOT_CLASS(TimedTrialStatus_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unAppID();
+  auto get_m_bIsOffline();
+  auto get_m_unSecondsAllowed();
+  auto get_m_unSecondsPlayed();
+};
+
+class P2PSessionRequest_t_box
+    : public SteamBase<P2PSessionRequest_t, P2PSessionRequest_t_box> {
+  GODOT_CLASS(P2PSessionRequest_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDRemote();
+};
+
+class P2PSessionConnectFail_t_box
+    : public SteamBase<P2PSessionConnectFail_t, P2PSessionConnectFail_t_box> {
+  GODOT_CLASS(P2PSessionConnectFail_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDRemote();
+  auto get_m_eP2PSessionError();
+};
+
+class SocketStatusCallback_t_box
+    : public SteamBase<SocketStatusCallback_t, SocketStatusCallback_t_box> {
+  GODOT_CLASS(SocketStatusCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hSocket();
+  auto get_m_hListenSocket();
+  auto get_m_steamIDRemote();
+  auto get_m_eSNetSocketState();
+};
+
+class ScreenshotReady_t_box
+    : public SteamBase<ScreenshotReady_t, ScreenshotReady_t_box> {
+  GODOT_CLASS(ScreenshotReady_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hLocal();
+  auto get_m_eResult();
+};
+
+class ScreenshotRequested_t_box
+    : public SteamBase<ScreenshotRequested_t, ScreenshotRequested_t_box> {
+  GODOT_CLASS(ScreenshotRequested_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class PlaybackStatusHasChanged_t_box
+    : public SteamBase<PlaybackStatusHasChanged_t,
+                       PlaybackStatusHasChanged_t_box> {
+  GODOT_CLASS(PlaybackStatusHasChanged_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class VolumeHasChanged_t_box
+    : public SteamBase<VolumeHasChanged_t, VolumeHasChanged_t_box> {
+  GODOT_CLASS(VolumeHasChanged_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_flNewVolume();
+};
+
+class MusicPlayerRemoteWillActivate_t_box
+    : public SteamBase<MusicPlayerRemoteWillActivate_t,
+                       MusicPlayerRemoteWillActivate_t_box> {
+  GODOT_CLASS(MusicPlayerRemoteWillActivate_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerRemoteWillDeactivate_t_box
+    : public SteamBase<MusicPlayerRemoteWillDeactivate_t,
+                       MusicPlayerRemoteWillDeactivate_t_box> {
+  GODOT_CLASS(MusicPlayerRemoteWillDeactivate_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerRemoteToFront_t_box
+    : public SteamBase<MusicPlayerRemoteToFront_t,
+                       MusicPlayerRemoteToFront_t_box> {
+  GODOT_CLASS(MusicPlayerRemoteToFront_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWillQuit_t_box
+    : public SteamBase<MusicPlayerWillQuit_t, MusicPlayerWillQuit_t_box> {
+  GODOT_CLASS(MusicPlayerWillQuit_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWantsPlay_t_box
+    : public SteamBase<MusicPlayerWantsPlay_t, MusicPlayerWantsPlay_t_box> {
+  GODOT_CLASS(MusicPlayerWantsPlay_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWantsPause_t_box
+    : public SteamBase<MusicPlayerWantsPause_t, MusicPlayerWantsPause_t_box> {
+  GODOT_CLASS(MusicPlayerWantsPause_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWantsPlayPrevious_t_box
+    : public SteamBase<MusicPlayerWantsPlayPrevious_t,
+                       MusicPlayerWantsPlayPrevious_t_box> {
+  GODOT_CLASS(MusicPlayerWantsPlayPrevious_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWantsPlayNext_t_box
+    : public SteamBase<MusicPlayerWantsPlayNext_t,
+                       MusicPlayerWantsPlayNext_t_box> {
+  GODOT_CLASS(MusicPlayerWantsPlayNext_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWantsShuffled_t_box
+    : public SteamBase<MusicPlayerWantsShuffled_t,
+                       MusicPlayerWantsShuffled_t_box> {
+  GODOT_CLASS(MusicPlayerWantsShuffled_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bShuffled();
+};
+
+class MusicPlayerWantsLooped_t_box
+    : public SteamBase<MusicPlayerWantsLooped_t, MusicPlayerWantsLooped_t_box> {
+  GODOT_CLASS(MusicPlayerWantsLooped_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bLooped();
+};
+
+class MusicPlayerWantsVolume_t_box
+    : public SteamBase<MusicPlayerWantsVolume_t, MusicPlayerWantsVolume_t_box> {
+  GODOT_CLASS(MusicPlayerWantsVolume_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_flNewVolume();
+};
+
+class MusicPlayerSelectsQueueEntry_t_box
+    : public SteamBase<MusicPlayerSelectsQueueEntry_t,
+                       MusicPlayerSelectsQueueEntry_t_box> {
+  GODOT_CLASS(MusicPlayerSelectsQueueEntry_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_nID();
+};
+
+class MusicPlayerSelectsPlaylistEntry_t_box
+    : public SteamBase<MusicPlayerSelectsPlaylistEntry_t,
+                       MusicPlayerSelectsPlaylistEntry_t_box> {
+  GODOT_CLASS(MusicPlayerSelectsPlaylistEntry_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_nID();
+};
+
+class MusicPlayerWantsPlayingRepeatStatus_t_box
+    : public SteamBase<MusicPlayerWantsPlayingRepeatStatus_t,
+                       MusicPlayerWantsPlayingRepeatStatus_t_box> {
+  GODOT_CLASS(MusicPlayerWantsPlayingRepeatStatus_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPlayingRepeatStatus();
+};
+
+class HTTPRequestCompleted_t_box
+    : public SteamBase<HTTPRequestCompleted_t, HTTPRequestCompleted_t_box> {
+  GODOT_CLASS(HTTPRequestCompleted_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hRequest();
+  auto get_m_ulContextValue();
+  auto get_m_bRequestSuccessful();
+  auto get_m_eStatusCode();
+  auto get_m_unBodySize();
+};
+
+class HTTPRequestHeadersReceived_t_box
+    : public SteamBase<HTTPRequestHeadersReceived_t,
+                       HTTPRequestHeadersReceived_t_box> {
+  GODOT_CLASS(HTTPRequestHeadersReceived_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hRequest();
+  auto get_m_ulContextValue();
+};
+
+class HTTPRequestDataReceived_t_box
+    : public SteamBase<HTTPRequestDataReceived_t,
+                       HTTPRequestDataReceived_t_box> {
+  GODOT_CLASS(HTTPRequestDataReceived_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hRequest();
+  auto get_m_ulContextValue();
+  auto get_m_cOffset();
+  auto get_m_cBytesReceived();
+};
+
+class SteamInputDeviceConnected_t_box
+    : public SteamBase<SteamInputDeviceConnected_t,
+                       SteamInputDeviceConnected_t_box> {
+  GODOT_CLASS(SteamInputDeviceConnected_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulConnectedDeviceHandle();
+};
+
+class SteamInputDeviceDisconnected_t_box
+    : public SteamBase<SteamInputDeviceDisconnected_t,
+                       SteamInputDeviceDisconnected_t_box> {
+  GODOT_CLASS(SteamInputDeviceDisconnected_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulDisconnectedDeviceHandle();
+};
+
+class SteamInputConfigurationLoaded_t_box
+    : public SteamBase<SteamInputConfigurationLoaded_t,
+                       SteamInputConfigurationLoaded_t_box> {
+  GODOT_CLASS(SteamInputConfigurationLoaded_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unAppID();
+  auto get_m_ulDeviceHandle();
+  auto get_m_ulMappingCreator();
+  auto get_m_unMajorRevision();
+  auto get_m_unMinorRevision();
+  auto get_m_bUsesSteamInputAPI();
+  auto get_m_bUsesGamepadAPI();
+};
+
+class SteamUGCQueryCompleted_t_box
+    : public SteamBase<SteamUGCQueryCompleted_t, SteamUGCQueryCompleted_t_box> {
+  GODOT_CLASS(SteamUGCQueryCompleted_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_handle();
+  auto get_m_eResult();
+  auto get_m_unNumResultsReturned();
+  auto get_m_unTotalMatchingResults();
+  auto get_m_bCachedData();
+  auto get_m_rgchNextCursor();
+};
+
+class SteamUGCRequestUGCDetailsResult_t_box
+    : public SteamBase<SteamUGCRequestUGCDetailsResult_t,
+                       SteamUGCRequestUGCDetailsResult_t_box> {
+  GODOT_CLASS(SteamUGCRequestUGCDetailsResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_details();
+  auto get_m_bCachedData();
+};
+
+class CreateItemResult_t_box
+    : public SteamBase<CreateItemResult_t, CreateItemResult_t_box> {
+  GODOT_CLASS(CreateItemResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_bUserNeedsToAcceptWorkshopLegalAgreement();
+};
+
+class SubmitItemUpdateResult_t_box
+    : public SteamBase<SubmitItemUpdateResult_t, SubmitItemUpdateResult_t_box> {
+  GODOT_CLASS(SubmitItemUpdateResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_bUserNeedsToAcceptWorkshopLegalAgreement();
+  auto get_m_nPublishedFileId();
+};
+
+class ItemInstalled_t_box
+    : public SteamBase<ItemInstalled_t, ItemInstalled_t_box> {
+  GODOT_CLASS(ItemInstalled_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unAppID();
+  auto get_m_nPublishedFileId();
+};
+
+class DownloadItemResult_t_box
+    : public SteamBase<DownloadItemResult_t, DownloadItemResult_t_box> {
+  GODOT_CLASS(DownloadItemResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unAppID();
+  auto get_m_nPublishedFileId();
+  auto get_m_eResult();
+};
+
+class UserFavoriteItemsListChanged_t_box
+    : public SteamBase<UserFavoriteItemsListChanged_t,
+                       UserFavoriteItemsListChanged_t_box> {
+  GODOT_CLASS(UserFavoriteItemsListChanged_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_eResult();
+  auto get_m_bWasAddRequest();
+};
+
+class SetUserItemVoteResult_t_box
+    : public SteamBase<SetUserItemVoteResult_t, SetUserItemVoteResult_t_box> {
+  GODOT_CLASS(SetUserItemVoteResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_eResult();
+  auto get_m_bVoteUp();
+};
+
+class GetUserItemVoteResult_t_box
+    : public SteamBase<GetUserItemVoteResult_t, GetUserItemVoteResult_t_box> {
+  GODOT_CLASS(GetUserItemVoteResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_eResult();
+  auto get_m_bVotedUp();
+  auto get_m_bVotedDown();
+  auto get_m_bVoteSkipped();
+};
+
+class StartPlaytimeTrackingResult_t_box
+    : public SteamBase<StartPlaytimeTrackingResult_t,
+                       StartPlaytimeTrackingResult_t_box> {
+  GODOT_CLASS(StartPlaytimeTrackingResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class StopPlaytimeTrackingResult_t_box
+    : public SteamBase<StopPlaytimeTrackingResult_t,
+                       StopPlaytimeTrackingResult_t_box> {
+  GODOT_CLASS(StopPlaytimeTrackingResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class AddUGCDependencyResult_t_box
+    : public SteamBase<AddUGCDependencyResult_t, AddUGCDependencyResult_t_box> {
+  GODOT_CLASS(AddUGCDependencyResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_nChildPublishedFileId();
+};
+
+class RemoveUGCDependencyResult_t_box
+    : public SteamBase<RemoveUGCDependencyResult_t,
+                       RemoveUGCDependencyResult_t_box> {
+  GODOT_CLASS(RemoveUGCDependencyResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_nChildPublishedFileId();
+};
+
+class AddAppDependencyResult_t_box
+    : public SteamBase<AddAppDependencyResult_t, AddAppDependencyResult_t_box> {
+  GODOT_CLASS(AddAppDependencyResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+};
+
+class RemoveAppDependencyResult_t_box
+    : public SteamBase<RemoveAppDependencyResult_t,
+                       RemoveAppDependencyResult_t_box> {
+  GODOT_CLASS(RemoveAppDependencyResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+};
+
+class GetAppDependenciesResult_t_box
+    : public SteamBase<GetAppDependenciesResult_t,
+                       GetAppDependenciesResult_t_box> {
+  GODOT_CLASS(GetAppDependenciesResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_rgAppIDs();
+  auto get_m_nNumAppDependencies();
+  auto get_m_nTotalNumAppDependencies();
+};
+
+class DeleteItemResult_t_box
+    : public SteamBase<DeleteItemResult_t, DeleteItemResult_t_box> {
+  GODOT_CLASS(DeleteItemResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+};
+
+class UserSubscribedItemsListChanged_t_box
+    : public SteamBase<UserSubscribedItemsListChanged_t,
+                       UserSubscribedItemsListChanged_t_box> {
+  GODOT_CLASS(UserSubscribedItemsListChanged_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nAppID();
+};
+
+class WorkshopEULAStatus_t_box
+    : public SteamBase<WorkshopEULAStatus_t, WorkshopEULAStatus_t_box> {
+  GODOT_CLASS(WorkshopEULAStatus_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nAppID();
+  auto get_m_unVersion();
+  auto get_m_rtAction();
+  auto get_m_bAccepted();
+  auto get_m_bNeedsAction();
+};
+
+class SteamAppInstalled_t_box
+    : public SteamBase<SteamAppInstalled_t, SteamAppInstalled_t_box> {
+  GODOT_CLASS(SteamAppInstalled_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nAppID();
+  auto get_m_iInstallFolderIndex();
+};
+
+class SteamAppUninstalled_t_box
+    : public SteamBase<SteamAppUninstalled_t, SteamAppUninstalled_t_box> {
+  GODOT_CLASS(SteamAppUninstalled_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nAppID();
+  auto get_m_iInstallFolderIndex();
+};
+
+class HTML_BrowserReady_t_box
+    : public SteamBase<HTML_BrowserReady_t, HTML_BrowserReady_t_box> {
+  GODOT_CLASS(HTML_BrowserReady_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+};
+
+class HTML_NeedsPaint_t_box
+    : public SteamBase<HTML_NeedsPaint_t, HTML_NeedsPaint_t_box> {
+  GODOT_CLASS(HTML_NeedsPaint_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pBGRA();
+  auto get_unWide();
+  auto get_unTall();
+  auto get_unUpdateX();
+  auto get_unUpdateY();
+  auto get_unUpdateWide();
+  auto get_unUpdateTall();
+  auto get_unScrollX();
+  auto get_unScrollY();
+  auto get_flPageScale();
+  auto get_unPageSerial();
+};
+
+class HTML_StartRequest_t_box
+    : public SteamBase<HTML_StartRequest_t, HTML_StartRequest_t_box> {
+  GODOT_CLASS(HTML_StartRequest_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchURL();
+  auto get_pchTarget();
+  auto get_pchPostData();
+  auto get_bIsRedirect();
+};
+
+class HTML_CloseBrowser_t_box
+    : public SteamBase<HTML_CloseBrowser_t, HTML_CloseBrowser_t_box> {
+  GODOT_CLASS(HTML_CloseBrowser_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+};
+
+class HTML_URLChanged_t_box
+    : public SteamBase<HTML_URLChanged_t, HTML_URLChanged_t_box> {
+  GODOT_CLASS(HTML_URLChanged_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchURL();
+  auto get_pchPostData();
+  auto get_bIsRedirect();
+  auto get_pchPageTitle();
+  auto get_bNewNavigation();
+};
+
+class HTML_FinishedRequest_t_box
+    : public SteamBase<HTML_FinishedRequest_t, HTML_FinishedRequest_t_box> {
+  GODOT_CLASS(HTML_FinishedRequest_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchURL();
+  auto get_pchPageTitle();
+};
+
+class HTML_OpenLinkInNewTab_t_box
+    : public SteamBase<HTML_OpenLinkInNewTab_t, HTML_OpenLinkInNewTab_t_box> {
+  GODOT_CLASS(HTML_OpenLinkInNewTab_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchURL();
+};
+
+class HTML_ChangedTitle_t_box
+    : public SteamBase<HTML_ChangedTitle_t, HTML_ChangedTitle_t_box> {
+  GODOT_CLASS(HTML_ChangedTitle_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchTitle();
+};
+
+class HTML_SearchResults_t_box
+    : public SteamBase<HTML_SearchResults_t, HTML_SearchResults_t_box> {
+  GODOT_CLASS(HTML_SearchResults_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_unResults();
+  auto get_unCurrentMatch();
+};
+
+class HTML_CanGoBackAndForward_t_box
+    : public SteamBase<HTML_CanGoBackAndForward_t,
+                       HTML_CanGoBackAndForward_t_box> {
+  GODOT_CLASS(HTML_CanGoBackAndForward_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_bCanGoBack();
+  auto get_bCanGoForward();
+};
+
+class HTML_HorizontalScroll_t_box
+    : public SteamBase<HTML_HorizontalScroll_t, HTML_HorizontalScroll_t_box> {
+  GODOT_CLASS(HTML_HorizontalScroll_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_unScrollMax();
+  auto get_unScrollCurrent();
+  auto get_flPageScale();
+  auto get_bVisible();
+  auto get_unPageSize();
+};
+
+class HTML_VerticalScroll_t_box
+    : public SteamBase<HTML_VerticalScroll_t, HTML_VerticalScroll_t_box> {
+  GODOT_CLASS(HTML_VerticalScroll_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_unScrollMax();
+  auto get_unScrollCurrent();
+  auto get_flPageScale();
+  auto get_bVisible();
+  auto get_unPageSize();
+};
+
+class HTML_LinkAtPosition_t_box
+    : public SteamBase<HTML_LinkAtPosition_t, HTML_LinkAtPosition_t_box> {
+  GODOT_CLASS(HTML_LinkAtPosition_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_x();
+  auto get_y();
+  auto get_pchURL();
+  auto get_bInput();
+  auto get_bLiveLink();
+};
+
+class HTML_JSAlert_t_box
+    : public SteamBase<HTML_JSAlert_t, HTML_JSAlert_t_box> {
+  GODOT_CLASS(HTML_JSAlert_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchMessage();
+};
+
+class HTML_JSConfirm_t_box
+    : public SteamBase<HTML_JSConfirm_t, HTML_JSConfirm_t_box> {
+  GODOT_CLASS(HTML_JSConfirm_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchMessage();
+};
+
+class HTML_FileOpenDialog_t_box
+    : public SteamBase<HTML_FileOpenDialog_t, HTML_FileOpenDialog_t_box> {
+  GODOT_CLASS(HTML_FileOpenDialog_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchTitle();
+  auto get_pchInitialFile();
+};
+
+class HTML_NewWindow_t_box
+    : public SteamBase<HTML_NewWindow_t, HTML_NewWindow_t_box> {
+  GODOT_CLASS(HTML_NewWindow_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchURL();
+  auto get_unX();
+  auto get_unY();
+  auto get_unWide();
+  auto get_unTall();
+  auto get_unNewWindow_BrowserHandle_IGNORE();
+};
+
+class HTML_SetCursor_t_box
+    : public SteamBase<HTML_SetCursor_t, HTML_SetCursor_t_box> {
+  GODOT_CLASS(HTML_SetCursor_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_eMouseCursor();
+};
+
+class HTML_StatusText_t_box
+    : public SteamBase<HTML_StatusText_t, HTML_StatusText_t_box> {
+  GODOT_CLASS(HTML_StatusText_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchMsg();
+};
+
+class HTML_ShowToolTip_t_box
+    : public SteamBase<HTML_ShowToolTip_t, HTML_ShowToolTip_t_box> {
+  GODOT_CLASS(HTML_ShowToolTip_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchMsg();
+};
+
+class HTML_UpdateToolTip_t_box
+    : public SteamBase<HTML_UpdateToolTip_t, HTML_UpdateToolTip_t_box> {
+  GODOT_CLASS(HTML_UpdateToolTip_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchMsg();
+};
+
+class HTML_HideToolTip_t_box
+    : public SteamBase<HTML_HideToolTip_t, HTML_HideToolTip_t_box> {
+  GODOT_CLASS(HTML_HideToolTip_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+};
+
+class HTML_BrowserRestarted_t_box
+    : public SteamBase<HTML_BrowserRestarted_t, HTML_BrowserRestarted_t_box> {
+  GODOT_CLASS(HTML_BrowserRestarted_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_unOldBrowserHandle();
+};
+
+class SteamInventoryResultReady_t_box
+    : public SteamBase<SteamInventoryResultReady_t,
+                       SteamInventoryResultReady_t_box> {
+  GODOT_CLASS(SteamInventoryResultReady_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_handle();
+  auto get_m_result();
+};
+
+class SteamInventoryFullUpdate_t_box
+    : public SteamBase<SteamInventoryFullUpdate_t,
+                       SteamInventoryFullUpdate_t_box> {
+  GODOT_CLASS(SteamInventoryFullUpdate_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_handle();
+};
+
+class SteamInventoryDefinitionUpdate_t_box
+    : public SteamBase<SteamInventoryDefinitionUpdate_t,
+                       SteamInventoryDefinitionUpdate_t_box> {
+  GODOT_CLASS(SteamInventoryDefinitionUpdate_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamInventoryEligiblePromoItemDefIDs_t_box
+    : public SteamBase<SteamInventoryEligiblePromoItemDefIDs_t,
+                       SteamInventoryEligiblePromoItemDefIDs_t_box> {
+  GODOT_CLASS(SteamInventoryEligiblePromoItemDefIDs_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_result();
+  auto get_m_steamID();
+  auto get_m_numEligiblePromoItemDefs();
+  auto get_m_bCachedData();
+};
+
+class SteamInventoryStartPurchaseResult_t_box
+    : public SteamBase<SteamInventoryStartPurchaseResult_t,
+                       SteamInventoryStartPurchaseResult_t_box> {
+  GODOT_CLASS(SteamInventoryStartPurchaseResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_result();
+  auto get_m_ulOrderID();
+  auto get_m_ulTransID();
+};
+
+class SteamInventoryRequestPricesResult_t_box
+    : public SteamBase<SteamInventoryRequestPricesResult_t,
+                       SteamInventoryRequestPricesResult_t_box> {
+  GODOT_CLASS(SteamInventoryRequestPricesResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_result();
+  auto get_m_rgchCurrency();
+};
+
+class GetVideoURLResult_t_box
+    : public SteamBase<GetVideoURLResult_t, GetVideoURLResult_t_box> {
+  GODOT_CLASS(GetVideoURLResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_unVideoAppID();
+  auto get_m_rgchURL();
+};
+
+class GetOPFSettingsResult_t_box
+    : public SteamBase<GetOPFSettingsResult_t, GetOPFSettingsResult_t_box> {
+  GODOT_CLASS(GetOPFSettingsResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_unVideoAppID();
+};
+
+class SteamParentalSettingsChanged_t_box
+    : public SteamBase<SteamParentalSettingsChanged_t,
+                       SteamParentalSettingsChanged_t_box> {
+  GODOT_CLASS(SteamParentalSettingsChanged_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamRemotePlaySessionConnected_t_box
+    : public SteamBase<SteamRemotePlaySessionConnected_t,
+                       SteamRemotePlaySessionConnected_t_box> {
+  GODOT_CLASS(SteamRemotePlaySessionConnected_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unSessionID();
+};
+
+class SteamRemotePlaySessionDisconnected_t_box
+    : public SteamBase<SteamRemotePlaySessionDisconnected_t,
+                       SteamRemotePlaySessionDisconnected_t_box> {
+  GODOT_CLASS(SteamRemotePlaySessionDisconnected_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unSessionID();
+};
+
+class SteamNetworkingMessagesSessionRequest_t_box
+    : public SteamBase<SteamNetworkingMessagesSessionRequest_t,
+                       SteamNetworkingMessagesSessionRequest_t_box> {
+  GODOT_CLASS(SteamNetworkingMessagesSessionRequest_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_identityRemote();
+};
+
+class SteamNetworkingMessagesSessionFailed_t_box
+    : public SteamBase<SteamNetworkingMessagesSessionFailed_t,
+                       SteamNetworkingMessagesSessionFailed_t_box> {
+  GODOT_CLASS(SteamNetworkingMessagesSessionFailed_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_info();
+};
+
+class SteamNetConnectionStatusChangedCallback_t_box
+    : public SteamBase<SteamNetConnectionStatusChangedCallback_t,
+                       SteamNetConnectionStatusChangedCallback_t_box> {
+  GODOT_CLASS(SteamNetConnectionStatusChangedCallback_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hConn();
+  auto get_m_info();
+  auto get_m_eOldState();
+};
+
+class SteamNetAuthenticationStatus_t_box
+    : public SteamBase<SteamNetAuthenticationStatus_t,
+                       SteamNetAuthenticationStatus_t_box> {
+  GODOT_CLASS(SteamNetAuthenticationStatus_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eAvail();
+  auto get_m_debugMsg();
+};
+
+class SteamRelayNetworkStatus_t_box
+    : public SteamBase<SteamRelayNetworkStatus_t,
+                       SteamRelayNetworkStatus_t_box> {
+  GODOT_CLASS(SteamRelayNetworkStatus_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eAvail();
+  auto get_m_bPingMeasurementInProgress();
+  auto get_m_eAvailNetworkConfig();
+  auto get_m_eAvailAnyRelay();
+  auto get_m_debugMsg();
+};
+
+class GSClientApprove_t_box
+    : public SteamBase<GSClientApprove_t, GSClientApprove_t_box> {
+  GODOT_CLASS(GSClientApprove_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamID();
+  auto get_m_OwnerSteamID();
+};
+
+class GSClientDeny_t_box
+    : public SteamBase<GSClientDeny_t, GSClientDeny_t_box> {
+  GODOT_CLASS(GSClientDeny_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamID();
+  auto get_m_eDenyReason();
+  auto get_m_rgchOptionalText();
+};
+
+class GSClientKick_t_box
+    : public SteamBase<GSClientKick_t, GSClientKick_t_box> {
+  GODOT_CLASS(GSClientKick_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamID();
+  auto get_m_eDenyReason();
+};
+
+class GSClientAchievementStatus_t_box
+    : public SteamBase<GSClientAchievementStatus_t,
+                       GSClientAchievementStatus_t_box> {
+  GODOT_CLASS(GSClientAchievementStatus_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamID();
+  auto get_m_pchAchievement();
+  auto get_m_bUnlocked();
+};
+
+class GSPolicyResponse_t_box
+    : public SteamBase<GSPolicyResponse_t, GSPolicyResponse_t_box> {
+  GODOT_CLASS(GSPolicyResponse_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSecure();
+};
+
+class GSGameplayStats_t_box
+    : public SteamBase<GSGameplayStats_t, GSGameplayStats_t_box> {
+  GODOT_CLASS(GSGameplayStats_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nRank();
+  auto get_m_unTotalConnects();
+  auto get_m_unTotalMinutesPlayed();
+};
+
+class GSClientGroupStatus_t_box
+    : public SteamBase<GSClientGroupStatus_t, GSClientGroupStatus_t_box> {
+  GODOT_CLASS(GSClientGroupStatus_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamIDUser();
+  auto get_m_SteamIDGroup();
+  auto get_m_bMember();
+  auto get_m_bOfficer();
+};
+
+class GSReputation_t_box
+    : public SteamBase<GSReputation_t, GSReputation_t_box> {
+  GODOT_CLASS(GSReputation_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_unReputationScore();
+  auto get_m_bBanned();
+  auto get_m_unBannedIP();
+  auto get_m_usBannedPort();
+  auto get_m_ulBannedGameID();
+  auto get_m_unBanExpires();
+};
+
+class AssociateWithClanResult_t_box
+    : public SteamBase<AssociateWithClanResult_t,
+                       AssociateWithClanResult_t_box> {
+  GODOT_CLASS(AssociateWithClanResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class ComputeNewPlayerCompatibilityResult_t_box
+    : public SteamBase<ComputeNewPlayerCompatibilityResult_t,
+                       ComputeNewPlayerCompatibilityResult_t_box> {
+  GODOT_CLASS(ComputeNewPlayerCompatibilityResult_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_cPlayersThatDontLikeCandidate();
+  auto get_m_cPlayersThatCandidateDoesntLike();
+  auto get_m_cClanPlayersThatDontLikeCandidate();
+  auto get_m_SteamIDCandidate();
+};
+
+class GSStatsReceived_t_box
+    : public SteamBase<GSStatsReceived_t, GSStatsReceived_t_box> {
+  GODOT_CLASS(GSStatsReceived_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_steamIDUser();
+};
+
+class GSStatsStored_t_box
+    : public SteamBase<GSStatsStored_t, GSStatsStored_t_box> {
+  GODOT_CLASS(GSStatsStored_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_steamIDUser();
+};
+
+class GSStatsUnloaded_t_box
+    : public SteamBase<GSStatsUnloaded_t, GSStatsUnloaded_t_box> {
+  GODOT_CLASS(GSStatsUnloaded_t_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDUser();
+};
+
+class ISteamClient_box : public SteamBase<ISteamClient, ISteamClient_box> {
+  GODOT_CLASS(ISteamClient_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  template <typename C = ISteamClient_box>
+  auto CreateSteamPipe() -> typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto BReleaseSteamPipe(Ref<HSteamPipe_box> hSteamPipe) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto ConnectToGlobalUser(Ref<HSteamPipe_box> hSteamPipe) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto CreateLocalUser(Ref<HSteamPipe_box> phSteamPipe,
+                       Ref<EAccountType_box> eAccountType) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto ReleaseUser(Ref<HSteamPipe_box> hSteamPipe, Ref<HSteamUser_box> hUser) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamUser(Ref<HSteamUser_box> hSteamUser,
+                     Ref<HSteamPipe_box> hSteamPipe,
+                     Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamGameServer(Ref<HSteamUser_box> hSteamUser,
+                           Ref<HSteamPipe_box> hSteamPipe,
+                           Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto SetLocalIPBinding(Ref<SteamIPAddress_t_box> unIP, Ref<uint16_box> usPort)
+      -> typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamFriends(Ref<HSteamUser_box> hSteamUser,
+                        Ref<HSteamPipe_box> hSteamPipe,
+                        Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamUtils(Ref<HSteamPipe_box> hSteamPipe,
+                      Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamMatchmaking(Ref<HSteamUser_box> hSteamUser,
+                            Ref<HSteamPipe_box> hSteamPipe,
+                            Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamMatchmakingServers(Ref<HSteamUser_box> hSteamUser,
+                                   Ref<HSteamPipe_box> hSteamPipe,
+                                   Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamGenericInterface(Ref<HSteamUser_box> hSteamUser,
+                                 Ref<HSteamPipe_box> hSteamPipe,
+                                 Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamUserStats(Ref<HSteamUser_box> hSteamUser,
+                          Ref<HSteamPipe_box> hSteamPipe,
+                          Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamGameServerStats(Ref<HSteamUser_box> hSteamuser,
+                                Ref<HSteamPipe_box> hSteamPipe,
+                                Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamApps(Ref<HSteamUser_box> hSteamUser,
+                     Ref<HSteamPipe_box> hSteamPipe,
+                     Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamNetworking(Ref<HSteamUser_box> hSteamUser,
+                           Ref<HSteamPipe_box> hSteamPipe,
+                           Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamRemoteStorage(Ref<HSteamUser_box> hSteamuser,
+                              Ref<HSteamPipe_box> hSteamPipe,
+                              Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamScreenshots(Ref<HSteamUser_box> hSteamuser,
+                            Ref<HSteamPipe_box> hSteamPipe,
+                            Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamGameSearch(Ref<HSteamUser_box> hSteamuser,
+                           Ref<HSteamPipe_box> hSteamPipe,
+                           Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetIPCCallCount() -> typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto SetWarningMessageHook(Ref<SteamAPIWarningMessageHook_t_box> pFunction) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto BShutdownIfAllPipesClosed() -> typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamHTTP(Ref<HSteamUser_box> hSteamuser,
+                     Ref<HSteamPipe_box> hSteamPipe,
+                     Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamController(Ref<HSteamUser_box> hSteamUser,
+                           Ref<HSteamPipe_box> hSteamPipe,
+                           Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamUGC(Ref<HSteamUser_box> hSteamUser,
+                    Ref<HSteamPipe_box> hSteamPipe,
+                    Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamAppList(Ref<HSteamUser_box> hSteamUser,
+                        Ref<HSteamPipe_box> hSteamPipe,
+                        Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamMusic(Ref<HSteamUser_box> hSteamuser,
+                      Ref<HSteamPipe_box> hSteamPipe,
+                      Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamMusicRemote(Ref<HSteamUser_box> hSteamuser,
+                            Ref<HSteamPipe_box> hSteamPipe,
+                            Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamHTMLSurface(Ref<HSteamUser_box> hSteamuser,
+                            Ref<HSteamPipe_box> hSteamPipe,
+                            Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamInventory(Ref<HSteamUser_box> hSteamuser,
+                          Ref<HSteamPipe_box> hSteamPipe,
+                          Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamVideo(Ref<HSteamUser_box> hSteamuser,
+                      Ref<HSteamPipe_box> hSteamPipe,
+                      Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamParentalSettings(Ref<HSteamUser_box> hSteamuser,
+                                 Ref<HSteamPipe_box> hSteamPipe,
+                                 Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamInput(Ref<HSteamUser_box> hSteamUser,
+                      Ref<HSteamPipe_box> hSteamPipe,
+                      Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamParties(Ref<HSteamUser_box> hSteamUser,
+                        Ref<HSteamPipe_box> hSteamPipe,
+                        Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_box>
+  auto GetISteamRemotePlay(Ref<HSteamUser_box> hSteamUser,
+                           Ref<HSteamPipe_box> hSteamPipe,
+                           Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+};
+
+class int64_t_const_pointer_box
+    : public SteamBase<int64_t const *, int64_t_const_pointer_box> {
+  GODOT_CLASS(int64_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamAPIWarningMessageHook_t_const_pointer_box
+    : public SteamBase<SteamAPIWarningMessageHook_t const *,
+                       SteamAPIWarningMessageHook_t_const_pointer_box> {
+  GODOT_CLASS(SteamAPIWarningMessageHook_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class intptr_t_const_pointer_box
+    : public SteamBase<intptr_t const *, intptr_t_const_pointer_box> {
+  GODOT_CLASS(intptr_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int32_t_const_pointer_box
+    : public SteamBase<int32_t const *, int32_t_const_pointer_box> {
+  GODOT_CLASS(int32_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class bool_const_pointer_box
+    : public SteamBase<bool const *, bool_const_pointer_box> {
+  GODOT_CLASS(bool_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamDatagramRelayAuthTicket_const_pointer_box
+    : public SteamBase<SteamDatagramRelayAuthTicket const *,
+                       SteamDatagramRelayAuthTicket_const_pointer_box> {
+  GODOT_CLASS(SteamDatagramRelayAuthTicket_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class unsigned_short_const_pointer_box
+    : public SteamBase<unsigned short const *,
+                       unsigned_short_const_pointer_box> {
+  GODOT_CLASS(unsigned_short_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class char_const_pointer_box
+    : public SteamBase<char const *, char_const_pointer_box> {
+  GODOT_CLASS(char_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class void_const_pointer_box
+    : public SteamBase<void const *, void_const_pointer_box> {
+  GODOT_CLASS(void_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class float_const_pointer_box
+    : public SteamBase<float const *, float_const_pointer_box> {
+  GODOT_CLASS(float_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class double_const_pointer_box
+    : public SteamBase<double const *, double_const_pointer_box> {
+  GODOT_CLASS(double_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ISteamNetworkingConnectionSignaling_const_pointer_box
+    : public SteamBase<ISteamNetworkingConnectionSignaling const *,
+                       ISteamNetworkingConnectionSignaling_const_pointer_box> {
+  GODOT_CLASS(ISteamNetworkingConnectionSignaling_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ISteamNetworkingSignalingRecvContext_const_pointer_box
+    : public SteamBase<ISteamNetworkingSignalingRecvContext const *,
+                       ISteamNetworkingSignalingRecvContext_const_pointer_box> {
+  GODOT_CLASS(ISteamNetworkingSignalingRecvContext_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class CGameID_const_pointer_box
+    : public SteamBase<CGameID const *, CGameID_const_pointer_box> {
+  GODOT_CLASS(CGameID_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int_const_pointer_box
+    : public SteamBase<int const *, int_const_pointer_box> {
+  GODOT_CLASS(int_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ISteamHTMLSurface_EHTMLKeyModifiers_const_pointer_box
+    : public SteamBase<ISteamHTMLSurface::EHTMLKeyModifiers const *,
+                       ISteamHTMLSurface_EHTMLKeyModifiers_const_pointer_box> {
+  GODOT_CLASS(ISteamHTMLSurface_EHTMLKeyModifiers_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class size_t_const_pointer_box
+    : public SteamBase<size_t const *, size_t_const_pointer_box> {
+  GODOT_CLASS(size_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class unsigned_int_const_pointer_box
+    : public SteamBase<unsigned int const *, unsigned_int_const_pointer_box> {
+  GODOT_CLASS(unsigned_int_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class CSteamID_const_pointer_box
+    : public SteamBase<CSteamID const *, CSteamID_const_pointer_box> {
+  GODOT_CLASS(CSteamID_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ISteamHTMLSurface_EHTMLMouseButton_const_pointer_box
+    : public SteamBase<ISteamHTMLSurface::EHTMLMouseButton const *,
+                       ISteamHTMLSurface_EHTMLMouseButton_const_pointer_box> {
+  GODOT_CLASS(ISteamHTMLSurface_EHTMLMouseButton_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamIPType_const_pointer_box
+    : public SteamBase<ESteamIPType const *, ESteamIPType_const_pointer_box> {
+  GODOT_CLASS(ESteamIPType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUniverse_const_pointer_box
+    : public SteamBase<EUniverse const *, EUniverse_const_pointer_box> {
+  GODOT_CLASS(EUniverse_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EResult_const_pointer_box
+    : public SteamBase<EResult const *, EResult_const_pointer_box> {
+  GODOT_CLASS(EResult_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EVoiceResult_const_pointer_box
+    : public SteamBase<EVoiceResult const *, EVoiceResult_const_pointer_box> {
+  GODOT_CLASS(EVoiceResult_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EDenyReason_const_pointer_box
+    : public SteamBase<EDenyReason const *, EDenyReason_const_pointer_box> {
+  GODOT_CLASS(EDenyReason_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EBeginAuthSessionResult_const_pointer_box
+    : public SteamBase<EBeginAuthSessionResult const *,
+                       EBeginAuthSessionResult_const_pointer_box> {
+  GODOT_CLASS(EBeginAuthSessionResult_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EAuthSessionResponse_const_pointer_box
+    : public SteamBase<EAuthSessionResponse const *,
+                       EAuthSessionResponse_const_pointer_box> {
+  GODOT_CLASS(EAuthSessionResponse_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUserHasLicenseForAppResult_const_pointer_box
+    : public SteamBase<EUserHasLicenseForAppResult const *,
+                       EUserHasLicenseForAppResult_const_pointer_box> {
+  GODOT_CLASS(EUserHasLicenseForAppResult_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EAccountType_const_pointer_box
+    : public SteamBase<EAccountType const *, EAccountType_const_pointer_box> {
+  GODOT_CLASS(EAccountType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EChatEntryType_const_pointer_box
+    : public SteamBase<EChatEntryType const *,
+                       EChatEntryType_const_pointer_box> {
+  GODOT_CLASS(EChatEntryType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EChatRoomEnterResponse_const_pointer_box
+    : public SteamBase<EChatRoomEnterResponse const *,
+                       EChatRoomEnterResponse_const_pointer_box> {
+  GODOT_CLASS(EChatRoomEnterResponse_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EChatSteamIDInstanceFlags_const_pointer_box
+    : public SteamBase<EChatSteamIDInstanceFlags const *,
+                       EChatSteamIDInstanceFlags_const_pointer_box> {
+  GODOT_CLASS(EChatSteamIDInstanceFlags_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ENotificationPosition_const_pointer_box
+    : public SteamBase<ENotificationPosition const *,
+                       ENotificationPosition_const_pointer_box> {
+  GODOT_CLASS(ENotificationPosition_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EBroadcastUploadResult_const_pointer_box
+    : public SteamBase<EBroadcastUploadResult const *,
+                       EBroadcastUploadResult_const_pointer_box> {
+  GODOT_CLASS(EBroadcastUploadResult_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EMarketNotAllowedReasonFlags_const_pointer_box
+    : public SteamBase<EMarketNotAllowedReasonFlags const *,
+                       EMarketNotAllowedReasonFlags_const_pointer_box> {
+  GODOT_CLASS(EMarketNotAllowedReasonFlags_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EDurationControlProgress_const_pointer_box
+    : public SteamBase<EDurationControlProgress const *,
+                       EDurationControlProgress_const_pointer_box> {
+  GODOT_CLASS(EDurationControlProgress_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EDurationControlNotification_const_pointer_box
+    : public SteamBase<EDurationControlNotification const *,
+                       EDurationControlNotification_const_pointer_box> {
+  GODOT_CLASS(EDurationControlNotification_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EDurationControlOnlineState_const_pointer_box
+    : public SteamBase<EDurationControlOnlineState const *,
+                       EDurationControlOnlineState_const_pointer_box> {
+  GODOT_CLASS(EDurationControlOnlineState_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EGameSearchErrorCode_t_const_pointer_box
+    : public SteamBase<EGameSearchErrorCode_t const *,
+                       EGameSearchErrorCode_t_const_pointer_box> {
+  GODOT_CLASS(EGameSearchErrorCode_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EPlayerResult_t_const_pointer_box
+    : public SteamBase<EPlayerResult_t const *,
+                       EPlayerResult_t_const_pointer_box> {
+  GODOT_CLASS(EPlayerResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamIPv6ConnectivityProtocol_const_pointer_box
+    : public SteamBase<ESteamIPv6ConnectivityProtocol const *,
+                       ESteamIPv6ConnectivityProtocol_const_pointer_box> {
+  GODOT_CLASS(ESteamIPv6ConnectivityProtocol_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamIPv6ConnectivityState_const_pointer_box
+    : public SteamBase<ESteamIPv6ConnectivityState const *,
+                       ESteamIPv6ConnectivityState_const_pointer_box> {
+  GODOT_CLASS(ESteamIPv6ConnectivityState_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EFriendRelationship_const_pointer_box
+    : public SteamBase<EFriendRelationship const *,
+                       EFriendRelationship_const_pointer_box> {
+  GODOT_CLASS(EFriendRelationship_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EPersonaState_const_pointer_box
+    : public SteamBase<EPersonaState const *, EPersonaState_const_pointer_box> {
+  GODOT_CLASS(EPersonaState_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EFriendFlags_const_pointer_box
+    : public SteamBase<EFriendFlags const *, EFriendFlags_const_pointer_box> {
+  GODOT_CLASS(EFriendFlags_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUserRestriction_const_pointer_box
+    : public SteamBase<EUserRestriction const *,
+                       EUserRestriction_const_pointer_box> {
+  GODOT_CLASS(EUserRestriction_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EOverlayToStoreFlag_const_pointer_box
+    : public SteamBase<EOverlayToStoreFlag const *,
+                       EOverlayToStoreFlag_const_pointer_box> {
+  GODOT_CLASS(EOverlayToStoreFlag_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EActivateGameOverlayToWebPageMode_const_pointer_box
+    : public SteamBase<EActivateGameOverlayToWebPageMode const *,
+                       EActivateGameOverlayToWebPageMode_const_pointer_box> {
+  GODOT_CLASS(EActivateGameOverlayToWebPageMode_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EPersonaChange_const_pointer_box
+    : public SteamBase<EPersonaChange const *,
+                       EPersonaChange_const_pointer_box> {
+  GODOT_CLASS(EPersonaChange_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamAPICallFailure_const_pointer_box
+    : public SteamBase<ESteamAPICallFailure const *,
+                       ESteamAPICallFailure_const_pointer_box> {
+  GODOT_CLASS(ESteamAPICallFailure_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EGamepadTextInputMode_const_pointer_box
+    : public SteamBase<EGamepadTextInputMode const *,
+                       EGamepadTextInputMode_const_pointer_box> {
+  GODOT_CLASS(EGamepadTextInputMode_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EGamepadTextInputLineMode_const_pointer_box
+    : public SteamBase<EGamepadTextInputLineMode const *,
+                       EGamepadTextInputLineMode_const_pointer_box> {
+  GODOT_CLASS(EGamepadTextInputLineMode_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ETextFilteringContext_const_pointer_box
+    : public SteamBase<ETextFilteringContext const *,
+                       ETextFilteringContext_const_pointer_box> {
+  GODOT_CLASS(ETextFilteringContext_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ECheckFileSignature_const_pointer_box
+    : public SteamBase<ECheckFileSignature const *,
+                       ECheckFileSignature_const_pointer_box> {
+  GODOT_CLASS(ECheckFileSignature_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EMatchMakingServerResponse_const_pointer_box
+    : public SteamBase<EMatchMakingServerResponse const *,
+                       EMatchMakingServerResponse_const_pointer_box> {
+  GODOT_CLASS(EMatchMakingServerResponse_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELobbyType_const_pointer_box
+    : public SteamBase<ELobbyType const *, ELobbyType_const_pointer_box> {
+  GODOT_CLASS(ELobbyType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELobbyComparison_const_pointer_box
+    : public SteamBase<ELobbyComparison const *,
+                       ELobbyComparison_const_pointer_box> {
+  GODOT_CLASS(ELobbyComparison_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELobbyDistanceFilter_const_pointer_box
+    : public SteamBase<ELobbyDistanceFilter const *,
+                       ELobbyDistanceFilter_const_pointer_box> {
+  GODOT_CLASS(ELobbyDistanceFilter_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EChatMemberStateChange_const_pointer_box
+    : public SteamBase<EChatMemberStateChange const *,
+                       EChatMemberStateChange_const_pointer_box> {
+  GODOT_CLASS(EChatMemberStateChange_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamPartyBeaconLocationType_const_pointer_box
+    : public SteamBase<ESteamPartyBeaconLocationType const *,
+                       ESteamPartyBeaconLocationType_const_pointer_box> {
+  GODOT_CLASS(ESteamPartyBeaconLocationType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamPartyBeaconLocationData_const_pointer_box
+    : public SteamBase<ESteamPartyBeaconLocationData const *,
+                       ESteamPartyBeaconLocationData_const_pointer_box> {
+  GODOT_CLASS(ESteamPartyBeaconLocationData_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ERemoteStoragePlatform_const_pointer_box
+    : public SteamBase<ERemoteStoragePlatform const *,
+                       ERemoteStoragePlatform_const_pointer_box> {
+  GODOT_CLASS(ERemoteStoragePlatform_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ERemoteStoragePublishedFileVisibility_const_pointer_box
+    : public SteamBase<
+          ERemoteStoragePublishedFileVisibility const *,
+          ERemoteStoragePublishedFileVisibility_const_pointer_box> {
+  GODOT_CLASS(ERemoteStoragePublishedFileVisibility_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EWorkshopFileType_const_pointer_box
+    : public SteamBase<EWorkshopFileType const *,
+                       EWorkshopFileType_const_pointer_box> {
+  GODOT_CLASS(EWorkshopFileType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EWorkshopVote_const_pointer_box
+    : public SteamBase<EWorkshopVote const *, EWorkshopVote_const_pointer_box> {
+  GODOT_CLASS(EWorkshopVote_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EWorkshopFileAction_const_pointer_box
+    : public SteamBase<EWorkshopFileAction const *,
+                       EWorkshopFileAction_const_pointer_box> {
+  GODOT_CLASS(EWorkshopFileAction_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EWorkshopEnumerationType_const_pointer_box
+    : public SteamBase<EWorkshopEnumerationType const *,
+                       EWorkshopEnumerationType_const_pointer_box> {
+  GODOT_CLASS(EWorkshopEnumerationType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EWorkshopVideoProvider_const_pointer_box
+    : public SteamBase<EWorkshopVideoProvider const *,
+                       EWorkshopVideoProvider_const_pointer_box> {
+  GODOT_CLASS(EWorkshopVideoProvider_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUGCReadAction_const_pointer_box
+    : public SteamBase<EUGCReadAction const *,
+                       EUGCReadAction_const_pointer_box> {
+  GODOT_CLASS(EUGCReadAction_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ERemoteStorageLocalFileChange_const_pointer_box
+    : public SteamBase<ERemoteStorageLocalFileChange const *,
+                       ERemoteStorageLocalFileChange_const_pointer_box> {
+  GODOT_CLASS(ERemoteStorageLocalFileChange_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ERemoteStorageFilePathType_const_pointer_box
+    : public SteamBase<ERemoteStorageFilePathType const *,
+                       ERemoteStorageFilePathType_const_pointer_box> {
+  GODOT_CLASS(ERemoteStorageFilePathType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELeaderboardDataRequest_const_pointer_box
+    : public SteamBase<ELeaderboardDataRequest const *,
+                       ELeaderboardDataRequest_const_pointer_box> {
+  GODOT_CLASS(ELeaderboardDataRequest_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELeaderboardSortMethod_const_pointer_box
+    : public SteamBase<ELeaderboardSortMethod const *,
+                       ELeaderboardSortMethod_const_pointer_box> {
+  GODOT_CLASS(ELeaderboardSortMethod_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELeaderboardDisplayType_const_pointer_box
+    : public SteamBase<ELeaderboardDisplayType const *,
+                       ELeaderboardDisplayType_const_pointer_box> {
+  GODOT_CLASS(ELeaderboardDisplayType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ELeaderboardUploadScoreMethod_const_pointer_box
+    : public SteamBase<ELeaderboardUploadScoreMethod const *,
+                       ELeaderboardUploadScoreMethod_const_pointer_box> {
+  GODOT_CLASS(ELeaderboardUploadScoreMethod_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ERegisterActivationCodeResult_const_pointer_box
+    : public SteamBase<ERegisterActivationCodeResult const *,
+                       ERegisterActivationCodeResult_const_pointer_box> {
+  GODOT_CLASS(ERegisterActivationCodeResult_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EP2PSessionError_const_pointer_box
+    : public SteamBase<EP2PSessionError const *,
+                       EP2PSessionError_const_pointer_box> {
+  GODOT_CLASS(EP2PSessionError_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EP2PSend_const_pointer_box
+    : public SteamBase<EP2PSend const *, EP2PSend_const_pointer_box> {
+  GODOT_CLASS(EP2PSend_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESNetSocketState_const_pointer_box
+    : public SteamBase<ESNetSocketState const *,
+                       ESNetSocketState_const_pointer_box> {
+  GODOT_CLASS(ESNetSocketState_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESNetSocketConnectionType_const_pointer_box
+    : public SteamBase<ESNetSocketConnectionType const *,
+                       ESNetSocketConnectionType_const_pointer_box> {
+  GODOT_CLASS(ESNetSocketConnectionType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EVRScreenshotType_const_pointer_box
+    : public SteamBase<EVRScreenshotType const *,
+                       EVRScreenshotType_const_pointer_box> {
+  GODOT_CLASS(EVRScreenshotType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class AudioPlayback_Status_const_pointer_box
+    : public SteamBase<AudioPlayback_Status const *,
+                       AudioPlayback_Status_const_pointer_box> {
+  GODOT_CLASS(AudioPlayback_Status_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EHTTPMethod_const_pointer_box
+    : public SteamBase<EHTTPMethod const *, EHTTPMethod_const_pointer_box> {
+  GODOT_CLASS(EHTTPMethod_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EHTTPStatusCode_const_pointer_box
+    : public SteamBase<EHTTPStatusCode const *,
+                       EHTTPStatusCode_const_pointer_box> {
+  GODOT_CLASS(EHTTPStatusCode_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EInputSourceMode_const_pointer_box
+    : public SteamBase<EInputSourceMode const *,
+                       EInputSourceMode_const_pointer_box> {
+  GODOT_CLASS(EInputSourceMode_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EInputActionOrigin_const_pointer_box
+    : public SteamBase<EInputActionOrigin const *,
+                       EInputActionOrigin_const_pointer_box> {
+  GODOT_CLASS(EInputActionOrigin_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EXboxOrigin_const_pointer_box
+    : public SteamBase<EXboxOrigin const *, EXboxOrigin_const_pointer_box> {
+  GODOT_CLASS(EXboxOrigin_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamControllerPad_const_pointer_box
+    : public SteamBase<ESteamControllerPad const *,
+                       ESteamControllerPad_const_pointer_box> {
+  GODOT_CLASS(ESteamControllerPad_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EControllerHapticLocation_const_pointer_box
+    : public SteamBase<EControllerHapticLocation const *,
+                       EControllerHapticLocation_const_pointer_box> {
+  GODOT_CLASS(EControllerHapticLocation_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EControllerHapticType_const_pointer_box
+    : public SteamBase<EControllerHapticType const *,
+                       EControllerHapticType_const_pointer_box> {
+  GODOT_CLASS(EControllerHapticType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamInputType_const_pointer_box
+    : public SteamBase<ESteamInputType const *,
+                       ESteamInputType_const_pointer_box> {
+  GODOT_CLASS(ESteamInputType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamInputConfigurationEnableType_const_pointer_box
+    : public SteamBase<ESteamInputConfigurationEnableType const *,
+                       ESteamInputConfigurationEnableType_const_pointer_box> {
+  GODOT_CLASS(ESteamInputConfigurationEnableType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamInputLEDFlag_const_pointer_box
+    : public SteamBase<ESteamInputLEDFlag const *,
+                       ESteamInputLEDFlag_const_pointer_box> {
+  GODOT_CLASS(ESteamInputLEDFlag_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamInputGlyphSize_const_pointer_box
+    : public SteamBase<ESteamInputGlyphSize const *,
+                       ESteamInputGlyphSize_const_pointer_box> {
+  GODOT_CLASS(ESteamInputGlyphSize_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamInputActionEventType_const_pointer_box
+    : public SteamBase<ESteamInputActionEventType const *,
+                       ESteamInputActionEventType_const_pointer_box> {
+  GODOT_CLASS(ESteamInputActionEventType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EControllerActionOrigin_const_pointer_box
+    : public SteamBase<EControllerActionOrigin const *,
+                       EControllerActionOrigin_const_pointer_box> {
+  GODOT_CLASS(EControllerActionOrigin_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamControllerLEDFlag_const_pointer_box
+    : public SteamBase<ESteamControllerLEDFlag const *,
+                       ESteamControllerLEDFlag_const_pointer_box> {
+  GODOT_CLASS(ESteamControllerLEDFlag_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUGCMatchingUGCType_const_pointer_box
+    : public SteamBase<EUGCMatchingUGCType const *,
+                       EUGCMatchingUGCType_const_pointer_box> {
+  GODOT_CLASS(EUGCMatchingUGCType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUserUGCList_const_pointer_box
+    : public SteamBase<EUserUGCList const *, EUserUGCList_const_pointer_box> {
+  GODOT_CLASS(EUserUGCList_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUserUGCListSortOrder_const_pointer_box
+    : public SteamBase<EUserUGCListSortOrder const *,
+                       EUserUGCListSortOrder_const_pointer_box> {
+  GODOT_CLASS(EUserUGCListSortOrder_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EUGCQuery_const_pointer_box
+    : public SteamBase<EUGCQuery const *, EUGCQuery_const_pointer_box> {
+  GODOT_CLASS(EUGCQuery_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EItemUpdateStatus_const_pointer_box
+    : public SteamBase<EItemUpdateStatus const *,
+                       EItemUpdateStatus_const_pointer_box> {
+  GODOT_CLASS(EItemUpdateStatus_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EItemState_const_pointer_box
+    : public SteamBase<EItemState const *, EItemState_const_pointer_box> {
+  GODOT_CLASS(EItemState_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EItemStatistic_const_pointer_box
+    : public SteamBase<EItemStatistic const *,
+                       EItemStatistic_const_pointer_box> {
+  GODOT_CLASS(EItemStatistic_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EItemPreviewType_const_pointer_box
+    : public SteamBase<EItemPreviewType const *,
+                       EItemPreviewType_const_pointer_box> {
+  GODOT_CLASS(EItemPreviewType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamItemFlags_const_pointer_box
+    : public SteamBase<ESteamItemFlags const *,
+                       ESteamItemFlags_const_pointer_box> {
+  GODOT_CLASS(ESteamItemFlags_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EParentalFeature_const_pointer_box
+    : public SteamBase<EParentalFeature const *,
+                       EParentalFeature_const_pointer_box> {
+  GODOT_CLASS(EParentalFeature_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamDeviceFormFactor_const_pointer_box
+    : public SteamBase<ESteamDeviceFormFactor const *,
+                       ESteamDeviceFormFactor_const_pointer_box> {
+  GODOT_CLASS(ESteamDeviceFormFactor_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingAvailability_const_pointer_box
+    : public SteamBase<ESteamNetworkingAvailability const *,
+                       ESteamNetworkingAvailability_const_pointer_box> {
+  GODOT_CLASS(ESteamNetworkingAvailability_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingIdentityType_const_pointer_box
+    : public SteamBase<ESteamNetworkingIdentityType const *,
+                       ESteamNetworkingIdentityType_const_pointer_box> {
+  GODOT_CLASS(ESteamNetworkingIdentityType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingConnectionState_const_pointer_box
+    : public SteamBase<ESteamNetworkingConnectionState const *,
+                       ESteamNetworkingConnectionState_const_pointer_box> {
+  GODOT_CLASS(ESteamNetworkingConnectionState_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetConnectionEnd_const_pointer_box
+    : public SteamBase<ESteamNetConnectionEnd const *,
+                       ESteamNetConnectionEnd_const_pointer_box> {
+  GODOT_CLASS(ESteamNetConnectionEnd_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingConfigScope_const_pointer_box
+    : public SteamBase<ESteamNetworkingConfigScope const *,
+                       ESteamNetworkingConfigScope_const_pointer_box> {
+  GODOT_CLASS(ESteamNetworkingConfigScope_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingConfigDataType_const_pointer_box
+    : public SteamBase<ESteamNetworkingConfigDataType const *,
+                       ESteamNetworkingConfigDataType_const_pointer_box> {
+  GODOT_CLASS(ESteamNetworkingConfigDataType_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingConfigValue_const_pointer_box
+    : public SteamBase<ESteamNetworkingConfigValue const *,
+                       ESteamNetworkingConfigValue_const_pointer_box> {
+  GODOT_CLASS(ESteamNetworkingConfigValue_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingGetConfigValueResult_const_pointer_box
+    : public SteamBase<ESteamNetworkingGetConfigValueResult const *,
+                       ESteamNetworkingGetConfigValueResult_const_pointer_box> {
+  GODOT_CLASS(ESteamNetworkingGetConfigValueResult_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ESteamNetworkingSocketsDebugOutputType_const_pointer_box
+    : public SteamBase<
+          ESteamNetworkingSocketsDebugOutputType const *,
+          ESteamNetworkingSocketsDebugOutputType_const_pointer_box> {
+  GODOT_CLASS(ESteamNetworkingSocketsDebugOutputType_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class EServerMode_const_pointer_box
+    : public SteamBase<EServerMode const *, EServerMode_const_pointer_box> {
+  GODOT_CLASS(EServerMode_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class uint8_const_pointer_box
+    : public SteamBase<uint8 const *, uint8_const_pointer_box> {
+  GODOT_CLASS(uint8_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int8_const_pointer_box
+    : public SteamBase<int8 const *, int8_const_pointer_box> {
+  GODOT_CLASS(int8_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int16_const_pointer_box
+    : public SteamBase<int16 const *, int16_const_pointer_box> {
+  GODOT_CLASS(int16_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class uint16_const_pointer_box
+    : public SteamBase<uint16 const *, uint16_const_pointer_box> {
+  GODOT_CLASS(uint16_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int32_const_pointer_box
+    : public SteamBase<int32 const *, int32_const_pointer_box> {
+  GODOT_CLASS(int32_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class uint32_const_pointer_box
+    : public SteamBase<uint32 const *, uint32_const_pointer_box> {
+  GODOT_CLASS(uint32_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class int64_const_pointer_box
+    : public SteamBase<int64 const *, int64_const_pointer_box> {
+  GODOT_CLASS(int64_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class uint64_const_pointer_box
+    : public SteamBase<uint64 const *, uint64_const_pointer_box> {
+  GODOT_CLASS(uint64_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class lint64_const_pointer_box
+    : public SteamBase<lint64 const *, lint64_const_pointer_box> {
+  GODOT_CLASS(lint64_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ulint64_const_pointer_box
+    : public SteamBase<ulint64 const *, ulint64_const_pointer_box> {
+  GODOT_CLASS(ulint64_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class intp_const_pointer_box
+    : public SteamBase<intp const *, intp_const_pointer_box> {
+  GODOT_CLASS(intp_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class uintp_const_pointer_box
+    : public SteamBase<uintp const *, uintp_const_pointer_box> {
+  GODOT_CLASS(uintp_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class AppId_t_const_pointer_box
+    : public SteamBase<AppId_t const *, AppId_t_const_pointer_box> {
+  GODOT_CLASS(AppId_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class DepotId_t_const_pointer_box
+    : public SteamBase<DepotId_t const *, DepotId_t_const_pointer_box> {
+  GODOT_CLASS(DepotId_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class RTime32_const_pointer_box
+    : public SteamBase<RTime32 const *, RTime32_const_pointer_box> {
+  GODOT_CLASS(RTime32_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamAPICall_t_const_pointer_box
+    : public SteamBase<SteamAPICall_t const *,
+                       SteamAPICall_t_const_pointer_box> {
+  GODOT_CLASS(SteamAPICall_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class AccountID_t_const_pointer_box
+    : public SteamBase<AccountID_t const *, AccountID_t_const_pointer_box> {
+  GODOT_CLASS(AccountID_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class PartyBeaconID_t_const_pointer_box
+    : public SteamBase<PartyBeaconID_t const *,
+                       PartyBeaconID_t_const_pointer_box> {
+  GODOT_CLASS(PartyBeaconID_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HAuthTicket_const_pointer_box
+    : public SteamBase<HAuthTicket const *, HAuthTicket_const_pointer_box> {
+  GODOT_CLASS(HAuthTicket_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class PFNPreMinidumpCallback_const_pointer_box
+    : public SteamBase<PFNPreMinidumpCallback const *,
+                       PFNPreMinidumpCallback_const_pointer_box> {
+  GODOT_CLASS(PFNPreMinidumpCallback_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HSteamPipe_const_pointer_box
+    : public SteamBase<HSteamPipe const *, HSteamPipe_const_pointer_box> {
+  GODOT_CLASS(HSteamPipe_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HSteamUser_const_pointer_box
+    : public SteamBase<HSteamUser const *, HSteamUser_const_pointer_box> {
+  GODOT_CLASS(HSteamUser_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FriendsGroupID_t_const_pointer_box
+    : public SteamBase<FriendsGroupID_t const *,
+                       FriendsGroupID_t_const_pointer_box> {
+  GODOT_CLASS(FriendsGroupID_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HServerListRequest_const_pointer_box
+    : public SteamBase<HServerListRequest const *,
+                       HServerListRequest_const_pointer_box> {
+  GODOT_CLASS(HServerListRequest_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HServerQuery_const_pointer_box
+    : public SteamBase<HServerQuery const *, HServerQuery_const_pointer_box> {
+  GODOT_CLASS(HServerQuery_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class UGCHandle_t_const_pointer_box
+    : public SteamBase<UGCHandle_t const *, UGCHandle_t_const_pointer_box> {
+  GODOT_CLASS(UGCHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class PublishedFileUpdateHandle_t_const_pointer_box
+    : public SteamBase<PublishedFileUpdateHandle_t const *,
+                       PublishedFileUpdateHandle_t_const_pointer_box> {
+  GODOT_CLASS(PublishedFileUpdateHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class PublishedFileId_t_const_pointer_box
+    : public SteamBase<PublishedFileId_t const *,
+                       PublishedFileId_t_const_pointer_box> {
+  GODOT_CLASS(PublishedFileId_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class UGCFileWriteStreamHandle_t_const_pointer_box
+    : public SteamBase<UGCFileWriteStreamHandle_t const *,
+                       UGCFileWriteStreamHandle_t_const_pointer_box> {
+  GODOT_CLASS(UGCFileWriteStreamHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamLeaderboard_t_const_pointer_box
+    : public SteamBase<SteamLeaderboard_t const *,
+                       SteamLeaderboard_t_const_pointer_box> {
+  GODOT_CLASS(SteamLeaderboard_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamLeaderboardEntries_t_const_pointer_box
+    : public SteamBase<SteamLeaderboardEntries_t const *,
+                       SteamLeaderboardEntries_t_const_pointer_box> {
+  GODOT_CLASS(SteamLeaderboardEntries_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SNetSocket_t_const_pointer_box
+    : public SteamBase<SNetSocket_t const *, SNetSocket_t_const_pointer_box> {
+  GODOT_CLASS(SNetSocket_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SNetListenSocket_t_const_pointer_box
+    : public SteamBase<SNetListenSocket_t const *,
+                       SNetListenSocket_t_const_pointer_box> {
+  GODOT_CLASS(SNetListenSocket_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ScreenshotHandle_const_pointer_box
+    : public SteamBase<ScreenshotHandle const *,
+                       ScreenshotHandle_const_pointer_box> {
+  GODOT_CLASS(ScreenshotHandle_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HTTPRequestHandle_const_pointer_box
+    : public SteamBase<HTTPRequestHandle const *,
+                       HTTPRequestHandle_const_pointer_box> {
+  GODOT_CLASS(HTTPRequestHandle_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HTTPCookieContainerHandle_const_pointer_box
+    : public SteamBase<HTTPCookieContainerHandle const *,
+                       HTTPCookieContainerHandle_const_pointer_box> {
+  GODOT_CLASS(HTTPCookieContainerHandle_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class InputHandle_t_const_pointer_box
+    : public SteamBase<InputHandle_t const *, InputHandle_t_const_pointer_box> {
+  GODOT_CLASS(InputHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class InputActionSetHandle_t_const_pointer_box
+    : public SteamBase<InputActionSetHandle_t const *,
+                       InputActionSetHandle_t_const_pointer_box> {
+  GODOT_CLASS(InputActionSetHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class InputDigitalActionHandle_t_const_pointer_box
+    : public SteamBase<InputDigitalActionHandle_t const *,
+                       InputDigitalActionHandle_t_const_pointer_box> {
+  GODOT_CLASS(InputDigitalActionHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class InputAnalogActionHandle_t_const_pointer_box
+    : public SteamBase<InputAnalogActionHandle_t const *,
+                       InputAnalogActionHandle_t_const_pointer_box> {
+  GODOT_CLASS(InputAnalogActionHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamInputActionEventCallbackPointer_const_pointer_box
+    : public SteamBase<SteamInputActionEventCallbackPointer const *,
+                       SteamInputActionEventCallbackPointer_const_pointer_box> {
+  GODOT_CLASS(SteamInputActionEventCallbackPointer_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ControllerHandle_t_const_pointer_box
+    : public SteamBase<ControllerHandle_t const *,
+                       ControllerHandle_t_const_pointer_box> {
+  GODOT_CLASS(ControllerHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ControllerActionSetHandle_t_const_pointer_box
+    : public SteamBase<ControllerActionSetHandle_t const *,
+                       ControllerActionSetHandle_t_const_pointer_box> {
+  GODOT_CLASS(ControllerActionSetHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ControllerDigitalActionHandle_t_const_pointer_box
+    : public SteamBase<ControllerDigitalActionHandle_t const *,
+                       ControllerDigitalActionHandle_t_const_pointer_box> {
+  GODOT_CLASS(ControllerDigitalActionHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ControllerAnalogActionHandle_t_const_pointer_box
+    : public SteamBase<ControllerAnalogActionHandle_t const *,
+                       ControllerAnalogActionHandle_t_const_pointer_box> {
+  GODOT_CLASS(ControllerAnalogActionHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class UGCQueryHandle_t_const_pointer_box
+    : public SteamBase<UGCQueryHandle_t const *,
+                       UGCQueryHandle_t_const_pointer_box> {
+  GODOT_CLASS(UGCQueryHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class UGCUpdateHandle_t_const_pointer_box
+    : public SteamBase<UGCUpdateHandle_t const *,
+                       UGCUpdateHandle_t_const_pointer_box> {
+  GODOT_CLASS(UGCUpdateHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HHTMLBrowser_const_pointer_box
+    : public SteamBase<HHTMLBrowser const *, HHTMLBrowser_const_pointer_box> {
+  GODOT_CLASS(HHTMLBrowser_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamItemInstanceID_t_const_pointer_box
+    : public SteamBase<SteamItemInstanceID_t const *,
+                       SteamItemInstanceID_t_const_pointer_box> {
+  GODOT_CLASS(SteamItemInstanceID_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamItemDef_t_const_pointer_box
+    : public SteamBase<SteamItemDef_t const *,
+                       SteamItemDef_t_const_pointer_box> {
+  GODOT_CLASS(SteamItemDef_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamInventoryResult_t_const_pointer_box
+    : public SteamBase<SteamInventoryResult_t const *,
+                       SteamInventoryResult_t_const_pointer_box> {
+  GODOT_CLASS(SteamInventoryResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamInventoryUpdateHandle_t_const_pointer_box
+    : public SteamBase<SteamInventoryUpdateHandle_t const *,
+                       SteamInventoryUpdateHandle_t_const_pointer_box> {
+  GODOT_CLASS(SteamInventoryUpdateHandle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class RemotePlaySessionID_t_const_pointer_box
+    : public SteamBase<RemotePlaySessionID_t const *,
+                       RemotePlaySessionID_t_const_pointer_box> {
+  GODOT_CLASS(RemotePlaySessionID_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FnSteamNetConnectionStatusChanged_const_pointer_box
+    : public SteamBase<FnSteamNetConnectionStatusChanged const *,
+                       FnSteamNetConnectionStatusChanged_const_pointer_box> {
+  GODOT_CLASS(FnSteamNetConnectionStatusChanged_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FnSteamNetAuthenticationStatusChanged_const_pointer_box
+    : public SteamBase<
+          FnSteamNetAuthenticationStatusChanged const *,
+          FnSteamNetAuthenticationStatusChanged_const_pointer_box> {
+  GODOT_CLASS(FnSteamNetAuthenticationStatusChanged_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FnSteamRelayNetworkStatusChanged_const_pointer_box
+    : public SteamBase<FnSteamRelayNetworkStatusChanged const *,
+                       FnSteamRelayNetworkStatusChanged_const_pointer_box> {
+  GODOT_CLASS(FnSteamRelayNetworkStatusChanged_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FnSteamNetworkingMessagesSessionRequest_const_pointer_box
+    : public SteamBase<
+          FnSteamNetworkingMessagesSessionRequest const *,
+          FnSteamNetworkingMessagesSessionRequest_const_pointer_box> {
+  GODOT_CLASS(FnSteamNetworkingMessagesSessionRequest_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FnSteamNetworkingMessagesSessionFailed_const_pointer_box
+    : public SteamBase<
+          FnSteamNetworkingMessagesSessionFailed const *,
+          FnSteamNetworkingMessagesSessionFailed_const_pointer_box> {
+  GODOT_CLASS(FnSteamNetworkingMessagesSessionFailed_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HSteamNetConnection_const_pointer_box
+    : public SteamBase<HSteamNetConnection const *,
+                       HSteamNetConnection_const_pointer_box> {
+  GODOT_CLASS(HSteamNetConnection_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HSteamListenSocket_const_pointer_box
+    : public SteamBase<HSteamListenSocket const *,
+                       HSteamListenSocket_const_pointer_box> {
+  GODOT_CLASS(HSteamListenSocket_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class HSteamNetPollGroup_const_pointer_box
+    : public SteamBase<HSteamNetPollGroup const *,
+                       HSteamNetPollGroup_const_pointer_box> {
+  GODOT_CLASS(HSteamNetPollGroup_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamNetworkingErrMsg_const_pointer_box
+    : public SteamBase<SteamNetworkingErrMsg const *,
+                       SteamNetworkingErrMsg_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingErrMsg_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamNetworkingPOPID_const_pointer_box
+    : public SteamBase<SteamNetworkingPOPID const *,
+                       SteamNetworkingPOPID_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingPOPID_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamNetworkingMicroseconds_const_pointer_box
+    : public SteamBase<SteamNetworkingMicroseconds const *,
+                       SteamNetworkingMicroseconds_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingMicroseconds_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FSteamNetworkingSocketsDebugOutput_const_pointer_box
+    : public SteamBase<FSteamNetworkingSocketsDebugOutput const *,
+                       FSteamNetworkingSocketsDebugOutput_const_pointer_box> {
+  GODOT_CLASS(FSteamNetworkingSocketsDebugOutput_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamIPAddress_t_const_pointer_box
+    : public SteamBase<SteamIPAddress_t const *,
+                       SteamIPAddress_t_const_pointer_box> {
+  GODOT_CLASS(SteamIPAddress_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_rgubIPv6();
+  auto get_m_eType();
+
+  template <typename C = SteamIPAddress_t_const_pointer_box>
+  auto IsSet() -> typename std::enable_if<true>::type;
+};
+
+class FriendGameInfo_t_const_pointer_box
+    : public SteamBase<FriendGameInfo_t const *,
+                       FriendGameInfo_t_const_pointer_box> {
+  GODOT_CLASS(FriendGameInfo_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_gameID();
+  auto get_m_unGameIP();
+  auto get_m_usGamePort();
+  auto get_m_usQueryPort();
+  auto get_m_steamIDLobby();
+};
+
+class MatchMakingKeyValuePair_t_const_pointer_box
+    : public SteamBase<MatchMakingKeyValuePair_t const *,
+                       MatchMakingKeyValuePair_t_const_pointer_box> {
+  GODOT_CLASS(MatchMakingKeyValuePair_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_szKey();
+  auto get_m_szValue();
+};
+
+class servernetadr_t_const_pointer_box
+    : public SteamBase<servernetadr_t const *,
+                       servernetadr_t_const_pointer_box> {
+  GODOT_CLASS(servernetadr_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  template <typename C = servernetadr_t_const_pointer_box>
+  auto Init(Ref<unsigned_int_box> ip, Ref<uint16_box> usQueryPort,
+            Ref<uint16_box> usConnectionPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_const_pointer_box>
+  auto GetQueryPort() -> typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_const_pointer_box>
+  auto SetQueryPort(Ref<uint16_box> usPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_const_pointer_box>
+  auto GetConnectionPort() -> typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_const_pointer_box>
+  auto SetConnectionPort(Ref<uint16_box> usPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_const_pointer_box>
+  auto GetIP() -> typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_const_pointer_box>
+  auto SetIP(Ref<uint32_box> unIP) -> typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_const_pointer_box>
+  auto GetConnectionAddressString() -> typename std::enable_if<true>::type;
+
+  template <typename C = servernetadr_t_const_pointer_box>
+  auto GetQueryAddressString() -> typename std::enable_if<true>::type;
+};
+
+class gameserveritem_t_const_pointer_box
+    : public SteamBase<gameserveritem_t const *,
+                       gameserveritem_t_const_pointer_box> {
+  GODOT_CLASS(gameserveritem_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_NetAdr();
+  auto get_m_nPing();
+  auto get_m_bHadSuccessfulResponse();
+  auto get_m_bDoNotRefresh();
+  auto get_m_szGameDir();
+  auto get_m_szMap();
+  auto get_m_szGameDescription();
+  auto get_m_nAppID();
+  auto get_m_nPlayers();
+  auto get_m_nMaxPlayers();
+  auto get_m_nBotPlayers();
+  auto get_m_bPassword();
+  auto get_m_bSecure();
+  auto get_m_ulTimeLastPlayed();
+  auto get_m_nServerVersion();
+  auto get_m_szGameTags();
+  auto get_m_steamID();
+
+  template <typename C = gameserveritem_t_const_pointer_box>
+  auto GetName() -> typename std::enable_if<true>::type;
+
+  template <typename C = gameserveritem_t_const_pointer_box>
+  auto SetName(Ref<char_const_pointer_box> pName) ->
+      typename std::enable_if<true>::type;
+};
+
+class SteamPartyBeaconLocation_t_const_pointer_box
+    : public SteamBase<SteamPartyBeaconLocation_t const *,
+                       SteamPartyBeaconLocation_t_const_pointer_box> {
+  GODOT_CLASS(SteamPartyBeaconLocation_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eType();
+  auto get_m_ulLocationID();
+};
+
+class SteamParamStringArray_t_const_pointer_box
+    : public SteamBase<SteamParamStringArray_t const *,
+                       SteamParamStringArray_t_const_pointer_box> {
+  GODOT_CLASS(SteamParamStringArray_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nNumStrings();
+};
+
+class LeaderboardEntry_t_const_pointer_box
+    : public SteamBase<LeaderboardEntry_t const *,
+                       LeaderboardEntry_t_const_pointer_box> {
+  GODOT_CLASS(LeaderboardEntry_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDUser();
+  auto get_m_nGlobalRank();
+  auto get_m_nScore();
+  auto get_m_cDetails();
+  auto get_m_hUGC();
+};
+
+class P2PSessionState_t_const_pointer_box
+    : public SteamBase<P2PSessionState_t const *,
+                       P2PSessionState_t_const_pointer_box> {
+  GODOT_CLASS(P2PSessionState_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bConnectionActive();
+  auto get_m_bConnecting();
+  auto get_m_eP2PSessionError();
+  auto get_m_bUsingRelay();
+  auto get_m_nBytesQueuedForSend();
+  auto get_m_nPacketsQueuedForSend();
+  auto get_m_nRemoteIP();
+  auto get_m_nRemotePort();
+};
+
+class InputAnalogActionData_t_const_pointer_box
+    : public SteamBase<InputAnalogActionData_t const *,
+                       InputAnalogActionData_t_const_pointer_box> {
+  GODOT_CLASS(InputAnalogActionData_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_eMode();
+  auto get_x();
+  auto get_y();
+  auto get_bActive();
+};
+
+class InputDigitalActionData_t_const_pointer_box
+    : public SteamBase<InputDigitalActionData_t const *,
+                       InputDigitalActionData_t_const_pointer_box> {
+  GODOT_CLASS(InputDigitalActionData_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_bState();
+  auto get_bActive();
+};
+
+class InputMotionData_t_const_pointer_box
+    : public SteamBase<InputMotionData_t const *,
+                       InputMotionData_t_const_pointer_box> {
+  GODOT_CLASS(InputMotionData_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_rotQuatX();
+  auto get_rotQuatY();
+  auto get_rotQuatZ();
+  auto get_rotQuatW();
+  auto get_posAccelX();
+  auto get_posAccelY();
+  auto get_posAccelZ();
+  auto get_rotVelX();
+  auto get_rotVelY();
+  auto get_rotVelZ();
+};
+
+class SteamInputActionEvent_t_const_pointer_box
+    : public SteamBase<SteamInputActionEvent_t const *,
+                       SteamInputActionEvent_t_const_pointer_box> {
+  GODOT_CLASS(SteamInputActionEvent_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_controllerHandle();
+  auto get_eEventType();
+};
+
+class SteamUGCDetails_t_const_pointer_box
+    : public SteamBase<SteamUGCDetails_t const *,
+                       SteamUGCDetails_t_const_pointer_box> {
+  GODOT_CLASS(SteamUGCDetails_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_eResult();
+  auto get_m_eFileType();
+  auto get_m_nCreatorAppID();
+  auto get_m_nConsumerAppID();
+  auto get_m_rgchTitle();
+  auto get_m_rgchDescription();
+  auto get_m_ulSteamIDOwner();
+  auto get_m_rtimeCreated();
+  auto get_m_rtimeUpdated();
+  auto get_m_rtimeAddedToUserList();
+  auto get_m_eVisibility();
+  auto get_m_bBanned();
+  auto get_m_bAcceptedForUse();
+  auto get_m_bTagsTruncated();
+  auto get_m_rgchTags();
+  auto get_m_hFile();
+  auto get_m_hPreviewFile();
+  auto get_m_pchFileName();
+  auto get_m_nFileSize();
+  auto get_m_nPreviewFileSize();
+  auto get_m_rgchURL();
+  auto get_m_unVotesUp();
+  auto get_m_unVotesDown();
+  auto get_m_flScore();
+  auto get_m_unNumChildren();
+};
+
+class SteamItemDetails_t_const_pointer_box
+    : public SteamBase<SteamItemDetails_t const *,
+                       SteamItemDetails_t_const_pointer_box> {
+  GODOT_CLASS(SteamItemDetails_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_itemId();
+  auto get_m_iDefinition();
+  auto get_m_unQuantity();
+  auto get_m_unFlags();
+};
+
+class SteamNetworkingIPAddr_const_pointer_box
+    : public SteamBase<SteamNetworkingIPAddr const *,
+                       SteamNetworkingIPAddr_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingIPAddr_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ipv6();
+  auto get_m_port();
+
+  template <typename C = SteamNetworkingIPAddr_const_pointer_box>
+  auto Clear() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_const_pointer_box>
+  auto IsIPv6AllZeros() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_const_pointer_box>
+  auto SetIPv6(Ref<uint8_const_pointer_box> ipv6, Ref<uint16_box> nPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_const_pointer_box>
+  auto SetIPv4(Ref<uint32_box> nIP, Ref<uint16_box> nPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_const_pointer_box>
+  auto IsIPv4() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_const_pointer_box>
+  auto GetIPv4() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_const_pointer_box>
+  auto SetIPv6LocalHost(Ref<uint16_box> nPort) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_const_pointer_box>
+  auto IsLocalHost() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_const_pointer_box>
+  auto ToString(Ref<char_box> buf, Ref<uint32_box> cbBuf,
+                Ref<bool_box> bWithPort) -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIPAddr_const_pointer_box>
+  auto ParseString(Ref<char_const_pointer_box> pszStr) ->
+      typename std::enable_if<true>::type;
+};
+
+class SteamNetworkingIdentity_const_pointer_box
+    : public SteamBase<SteamNetworkingIdentity const *,
+                       SteamNetworkingIdentity_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingIdentity_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eType();
+  auto get_m_cbSize();
+  auto get_m_szUnknownRawString();
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto Clear() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto IsInvalid() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto SetSteamID(Ref<CSteamID_box> steamID) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto GetSteamID() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto SetSteamID64(Ref<uint64_box> steamID) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto GetSteamID64() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto SetIPAddr(Ref<SteamNetworkingIPAddr_box> addr) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto GetIPAddr() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto SetLocalHost() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto IsLocalHost() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto SetGenericString(Ref<char_const_pointer_box> pszString) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto GetGenericString() -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto SetGenericBytes(Ref<void_const_pointer_box> data, Ref<uint32_box> cbLen)
+      -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto GetGenericBytes(Ref<int_box> cbLen) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto ToString(Ref<char_box> buf, Ref<uint32_box> cbBuf) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingIdentity_const_pointer_box>
+  auto ParseString(Ref<char_const_pointer_box> pszStr) ->
+      typename std::enable_if<true>::type;
+};
+
+class SteamNetConnectionInfo_t_const_pointer_box
+    : public SteamBase<SteamNetConnectionInfo_t const *,
+                       SteamNetConnectionInfo_t_const_pointer_box> {
+  GODOT_CLASS(SteamNetConnectionInfo_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_identityRemote();
+  auto get_m_nUserData();
+  auto get_m_hListenSocket();
+  auto get_m_addrRemote();
+  auto get_m__pad1();
+  auto get_m_idPOPRemote();
+  auto get_m_idPOPRelay();
+  auto get_m_eState();
+  auto get_m_eEndReason();
+  auto get_m_szEndDebug();
+  auto get_m_szConnectionDescription();
+  auto get_reserved();
+};
+
+class SteamNetworkingQuickConnectionStatus_const_pointer_box
+    : public SteamBase<SteamNetworkingQuickConnectionStatus const *,
+                       SteamNetworkingQuickConnectionStatus_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingQuickConnectionStatus_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eState();
+  auto get_m_nPing();
+  auto get_m_flConnectionQualityLocal();
+  auto get_m_flConnectionQualityRemote();
+  auto get_m_flOutPacketsPerSec();
+  auto get_m_flOutBytesPerSec();
+  auto get_m_flInPacketsPerSec();
+  auto get_m_flInBytesPerSec();
+  auto get_m_nSendRateBytesPerSecond();
+  auto get_m_cbPendingUnreliable();
+  auto get_m_cbPendingReliable();
+  auto get_m_cbSentUnackedReliable();
+  auto get_m_usecQueueTime();
+  auto get_reserved();
+};
+
+class SteamNetworkingMessage_t_const_pointer_box
+    : public SteamBase<SteamNetworkingMessage_t const *,
+                       SteamNetworkingMessage_t_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingMessage_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_pData();
+  auto get_m_cbSize();
+  auto get_m_conn();
+  auto get_m_identityPeer();
+  auto get_m_nConnUserData();
+  auto get_m_usecTimeReceived();
+  auto get_m_nMessageNumber();
+  auto get_m_nChannel();
+  auto get_m_nFlags();
+  auto get_m_nUserData();
+
+  template <typename C = SteamNetworkingMessage_t_const_pointer_box>
+  auto Release() -> typename std::enable_if<true>::type;
+};
+
+class SteamNetworkPingLocation_t_const_pointer_box
+    : public SteamBase<SteamNetworkPingLocation_t const *,
+                       SteamNetworkPingLocation_t_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkPingLocation_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_data();
+};
+
+class SteamNetworkingConfigValue_t_const_pointer_box
+    : public SteamBase<SteamNetworkingConfigValue_t const *,
+                       SteamNetworkingConfigValue_t_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingConfigValue_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eValue();
+  auto get_m_eDataType();
+
+  template <typename C = SteamNetworkingConfigValue_t_const_pointer_box>
+  auto SetInt32(Ref<ESteamNetworkingConfigValue_box> eVal,
+                Ref<int32_t_box> data) -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingConfigValue_t_const_pointer_box>
+  auto SetInt64(Ref<ESteamNetworkingConfigValue_box> eVal,
+                Ref<int64_t_box> data) -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingConfigValue_t_const_pointer_box>
+  auto SetFloat(Ref<ESteamNetworkingConfigValue_box> eVal, Ref<float_box> data)
+      -> typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingConfigValue_t_const_pointer_box>
+  auto SetPtr(Ref<ESteamNetworkingConfigValue_box> eVal, Ref<void_box> data) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = SteamNetworkingConfigValue_t_const_pointer_box>
+  auto SetString(Ref<ESteamNetworkingConfigValue_box> eVal,
+                 Ref<char_const_pointer_box> data) ->
+      typename std::enable_if<true>::type;
+};
+
+class SteamNetworkingPOPIDRender_const_pointer_box
+    : public SteamBase<SteamNetworkingPOPIDRender const *,
+                       SteamNetworkingPOPIDRender_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingPOPIDRender_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  template <typename C = SteamNetworkingPOPIDRender_const_pointer_box>
+  auto c_str() -> typename std::enable_if<true>::type;
+};
+
+class SteamNetworkingIdentityRender_const_pointer_box
+    : public SteamBase<SteamNetworkingIdentityRender const *,
+                       SteamNetworkingIdentityRender_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingIdentityRender_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  template <typename C = SteamNetworkingIdentityRender_const_pointer_box>
+  auto c_str() -> typename std::enable_if<true>::type;
+};
+
+class SteamNetworkingIPAddrRender_const_pointer_box
+    : public SteamBase<SteamNetworkingIPAddrRender const *,
+                       SteamNetworkingIPAddrRender_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingIPAddrRender_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  template <typename C = SteamNetworkingIPAddrRender_const_pointer_box>
+  auto c_str() -> typename std::enable_if<true>::type;
+};
+
+class SteamDatagramHostedAddress_const_pointer_box
+    : public SteamBase<SteamDatagramHostedAddress const *,
+                       SteamDatagramHostedAddress_const_pointer_box> {
+  GODOT_CLASS(SteamDatagramHostedAddress_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamDatagramGameCoordinatorServerLogin_const_pointer_box
+    : public SteamBase<
+          SteamDatagramGameCoordinatorServerLogin const *,
+          SteamDatagramGameCoordinatorServerLogin_const_pointer_box> {
+  GODOT_CLASS(SteamDatagramGameCoordinatorServerLogin_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamServersConnected_t_const_pointer_box
+    : public SteamBase<SteamServersConnected_t const *,
+                       SteamServersConnected_t_const_pointer_box> {
+  GODOT_CLASS(SteamServersConnected_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamServerConnectFailure_t_const_pointer_box
+    : public SteamBase<SteamServerConnectFailure_t const *,
+                       SteamServerConnectFailure_t_const_pointer_box> {
+  GODOT_CLASS(SteamServerConnectFailure_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_bStillRetrying();
+};
+
+class SteamServersDisconnected_t_const_pointer_box
+    : public SteamBase<SteamServersDisconnected_t const *,
+                       SteamServersDisconnected_t_const_pointer_box> {
+  GODOT_CLASS(SteamServersDisconnected_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class ClientGameServerDeny_t_const_pointer_box
+    : public SteamBase<ClientGameServerDeny_t const *,
+                       ClientGameServerDeny_t_const_pointer_box> {
+  GODOT_CLASS(ClientGameServerDeny_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_uAppID();
+  auto get_m_unGameServerIP();
+  auto get_m_usGameServerPort();
+  auto get_m_bSecure();
+  auto get_m_uReason();
+};
+
+class IPCFailure_t_const_pointer_box
+    : public SteamBase<IPCFailure_t const *, IPCFailure_t_const_pointer_box> {
+  GODOT_CLASS(IPCFailure_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eFailureType();
+};
+
+class LicensesUpdated_t_const_pointer_box
+    : public SteamBase<LicensesUpdated_t const *,
+                       LicensesUpdated_t_const_pointer_box> {
+  GODOT_CLASS(LicensesUpdated_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ValidateAuthTicketResponse_t_const_pointer_box
+    : public SteamBase<ValidateAuthTicketResponse_t const *,
+                       ValidateAuthTicketResponse_t_const_pointer_box> {
+  GODOT_CLASS(ValidateAuthTicketResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamID();
+  auto get_m_eAuthSessionResponse();
+  auto get_m_OwnerSteamID();
+};
+
+class MicroTxnAuthorizationResponse_t_const_pointer_box
+    : public SteamBase<MicroTxnAuthorizationResponse_t const *,
+                       MicroTxnAuthorizationResponse_t_const_pointer_box> {
+  GODOT_CLASS(MicroTxnAuthorizationResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unAppID();
+  auto get_m_ulOrderID();
+  auto get_m_bAuthorized();
+};
+
+class EncryptedAppTicketResponse_t_const_pointer_box
+    : public SteamBase<EncryptedAppTicketResponse_t const *,
+                       EncryptedAppTicketResponse_t_const_pointer_box> {
+  GODOT_CLASS(EncryptedAppTicketResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class GetAuthSessionTicketResponse_t_const_pointer_box
+    : public SteamBase<GetAuthSessionTicketResponse_t const *,
+                       GetAuthSessionTicketResponse_t_const_pointer_box> {
+  GODOT_CLASS(GetAuthSessionTicketResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hAuthTicket();
+  auto get_m_eResult();
+};
+
+class GameWebCallback_t_const_pointer_box
+    : public SteamBase<GameWebCallback_t const *,
+                       GameWebCallback_t_const_pointer_box> {
+  GODOT_CLASS(GameWebCallback_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_szURL();
+};
+
+class StoreAuthURLResponse_t_const_pointer_box
+    : public SteamBase<StoreAuthURLResponse_t const *,
+                       StoreAuthURLResponse_t_const_pointer_box> {
+  GODOT_CLASS(StoreAuthURLResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_szURL();
+};
+
+class MarketEligibilityResponse_t_const_pointer_box
+    : public SteamBase<MarketEligibilityResponse_t const *,
+                       MarketEligibilityResponse_t_const_pointer_box> {
+  GODOT_CLASS(MarketEligibilityResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bAllowed();
+  auto get_m_eNotAllowedReason();
+  auto get_m_rtAllowedAtTime();
+  auto get_m_cdaySteamGuardRequiredDays();
+  auto get_m_cdayNewDeviceCooldown();
+};
+
+class DurationControl_t_const_pointer_box
+    : public SteamBase<DurationControl_t const *,
+                       DurationControl_t_const_pointer_box> {
+  GODOT_CLASS(DurationControl_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_appid();
+  auto get_m_bApplicable();
+  auto get_m_csecsLast5h();
+  auto get_m_progress();
+  auto get_m_notification();
+  auto get_m_csecsToday();
+  auto get_m_csecsRemaining();
+};
+
+class PersonaStateChange_t_const_pointer_box
+    : public SteamBase<PersonaStateChange_t const *,
+                       PersonaStateChange_t_const_pointer_box> {
+  GODOT_CLASS(PersonaStateChange_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamID();
+  auto get_m_nChangeFlags();
+};
+
+class GameOverlayActivated_t_const_pointer_box
+    : public SteamBase<GameOverlayActivated_t const *,
+                       GameOverlayActivated_t_const_pointer_box> {
+  GODOT_CLASS(GameOverlayActivated_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bActive();
+};
+
+class GameServerChangeRequested_t_const_pointer_box
+    : public SteamBase<GameServerChangeRequested_t const *,
+                       GameServerChangeRequested_t_const_pointer_box> {
+  GODOT_CLASS(GameServerChangeRequested_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_rgchServer();
+  auto get_m_rgchPassword();
+};
+
+class GameLobbyJoinRequested_t_const_pointer_box
+    : public SteamBase<GameLobbyJoinRequested_t const *,
+                       GameLobbyJoinRequested_t_const_pointer_box> {
+  GODOT_CLASS(GameLobbyJoinRequested_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDLobby();
+  auto get_m_steamIDFriend();
+};
+
+class AvatarImageLoaded_t_const_pointer_box
+    : public SteamBase<AvatarImageLoaded_t const *,
+                       AvatarImageLoaded_t_const_pointer_box> {
+  GODOT_CLASS(AvatarImageLoaded_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamID();
+  auto get_m_iImage();
+  auto get_m_iWide();
+  auto get_m_iTall();
+};
+
+class ClanOfficerListResponse_t_const_pointer_box
+    : public SteamBase<ClanOfficerListResponse_t const *,
+                       ClanOfficerListResponse_t_const_pointer_box> {
+  GODOT_CLASS(ClanOfficerListResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDClan();
+  auto get_m_cOfficers();
+  auto get_m_bSuccess();
+};
+
+class FriendRichPresenceUpdate_t_const_pointer_box
+    : public SteamBase<FriendRichPresenceUpdate_t const *,
+                       FriendRichPresenceUpdate_t_const_pointer_box> {
+  GODOT_CLASS(FriendRichPresenceUpdate_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDFriend();
+  auto get_m_nAppID();
+};
+
+class GameRichPresenceJoinRequested_t_const_pointer_box
+    : public SteamBase<GameRichPresenceJoinRequested_t const *,
+                       GameRichPresenceJoinRequested_t_const_pointer_box> {
+  GODOT_CLASS(GameRichPresenceJoinRequested_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDFriend();
+  auto get_m_rgchConnect();
+};
+
+class GameConnectedClanChatMsg_t_const_pointer_box
+    : public SteamBase<GameConnectedClanChatMsg_t const *,
+                       GameConnectedClanChatMsg_t_const_pointer_box> {
+  GODOT_CLASS(GameConnectedClanChatMsg_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDClanChat();
+  auto get_m_steamIDUser();
+  auto get_m_iMessageID();
+};
+
+class GameConnectedChatJoin_t_const_pointer_box
+    : public SteamBase<GameConnectedChatJoin_t const *,
+                       GameConnectedChatJoin_t_const_pointer_box> {
+  GODOT_CLASS(GameConnectedChatJoin_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDClanChat();
+  auto get_m_steamIDUser();
+};
+
+class GameConnectedChatLeave_t_const_pointer_box
+    : public SteamBase<GameConnectedChatLeave_t const *,
+                       GameConnectedChatLeave_t_const_pointer_box> {
+  GODOT_CLASS(GameConnectedChatLeave_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDClanChat();
+  auto get_m_steamIDUser();
+  auto get_m_bKicked();
+  auto get_m_bDropped();
+};
+
+class DownloadClanActivityCountsResult_t_const_pointer_box
+    : public SteamBase<DownloadClanActivityCountsResult_t const *,
+                       DownloadClanActivityCountsResult_t_const_pointer_box> {
+  GODOT_CLASS(DownloadClanActivityCountsResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSuccess();
+};
+
+class JoinClanChatRoomCompletionResult_t_const_pointer_box
+    : public SteamBase<JoinClanChatRoomCompletionResult_t const *,
+                       JoinClanChatRoomCompletionResult_t_const_pointer_box> {
+  GODOT_CLASS(JoinClanChatRoomCompletionResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDClanChat();
+  auto get_m_eChatRoomEnterResponse();
+};
+
+class GameConnectedFriendChatMsg_t_const_pointer_box
+    : public SteamBase<GameConnectedFriendChatMsg_t const *,
+                       GameConnectedFriendChatMsg_t_const_pointer_box> {
+  GODOT_CLASS(GameConnectedFriendChatMsg_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDUser();
+  auto get_m_iMessageID();
+};
+
+class FriendsGetFollowerCount_t_const_pointer_box
+    : public SteamBase<FriendsGetFollowerCount_t const *,
+                       FriendsGetFollowerCount_t_const_pointer_box> {
+  GODOT_CLASS(FriendsGetFollowerCount_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_steamID();
+  auto get_m_nCount();
+};
+
+class FriendsIsFollowing_t_const_pointer_box
+    : public SteamBase<FriendsIsFollowing_t const *,
+                       FriendsIsFollowing_t_const_pointer_box> {
+  GODOT_CLASS(FriendsIsFollowing_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_steamID();
+  auto get_m_bIsFollowing();
+};
+
+class FriendsEnumerateFollowingList_t_const_pointer_box
+    : public SteamBase<FriendsEnumerateFollowingList_t const *,
+                       FriendsEnumerateFollowingList_t_const_pointer_box> {
+  GODOT_CLASS(FriendsEnumerateFollowingList_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_rgSteamID();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+};
+
+class SetPersonaNameResponse_t_const_pointer_box
+    : public SteamBase<SetPersonaNameResponse_t const *,
+                       SetPersonaNameResponse_t_const_pointer_box> {
+  GODOT_CLASS(SetPersonaNameResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSuccess();
+  auto get_m_bLocalSuccess();
+  auto get_m_result();
+};
+
+class UnreadChatMessagesChanged_t_const_pointer_box
+    : public SteamBase<UnreadChatMessagesChanged_t const *,
+                       UnreadChatMessagesChanged_t_const_pointer_box> {
+  GODOT_CLASS(UnreadChatMessagesChanged_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class OverlayBrowserProtocolNavigation_t_const_pointer_box
+    : public SteamBase<OverlayBrowserProtocolNavigation_t const *,
+                       OverlayBrowserProtocolNavigation_t_const_pointer_box> {
+  GODOT_CLASS(OverlayBrowserProtocolNavigation_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_rgchURI();
+};
+
+class IPCountry_t_const_pointer_box
+    : public SteamBase<IPCountry_t const *, IPCountry_t_const_pointer_box> {
+  GODOT_CLASS(IPCountry_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class LowBatteryPower_t_const_pointer_box
+    : public SteamBase<LowBatteryPower_t const *,
+                       LowBatteryPower_t_const_pointer_box> {
+  GODOT_CLASS(LowBatteryPower_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nMinutesBatteryLeft();
+};
+
+class SteamAPICallCompleted_t_const_pointer_box
+    : public SteamBase<SteamAPICallCompleted_t const *,
+                       SteamAPICallCompleted_t_const_pointer_box> {
+  GODOT_CLASS(SteamAPICallCompleted_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hAsyncCall();
+  auto get_m_iCallback();
+  auto get_m_cubParam();
+};
+
+class SteamShutdown_t_const_pointer_box
+    : public SteamBase<SteamShutdown_t const *,
+                       SteamShutdown_t_const_pointer_box> {
+  GODOT_CLASS(SteamShutdown_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class CheckFileSignature_t_const_pointer_box
+    : public SteamBase<CheckFileSignature_t const *,
+                       CheckFileSignature_t_const_pointer_box> {
+  GODOT_CLASS(CheckFileSignature_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eCheckFileSignature();
+};
+
+class GamepadTextInputDismissed_t_const_pointer_box
+    : public SteamBase<GamepadTextInputDismissed_t const *,
+                       GamepadTextInputDismissed_t_const_pointer_box> {
+  GODOT_CLASS(GamepadTextInputDismissed_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSubmitted();
+  auto get_m_unSubmittedText();
+};
+
+class AppResumingFromSuspend_t_const_pointer_box
+    : public SteamBase<AppResumingFromSuspend_t const *,
+                       AppResumingFromSuspend_t_const_pointer_box> {
+  GODOT_CLASS(AppResumingFromSuspend_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ModalGamepadTextInputDismissed_t_const_pointer_box
+    : public SteamBase<ModalGamepadTextInputDismissed_t const *,
+                       ModalGamepadTextInputDismissed_t_const_pointer_box> {
+  GODOT_CLASS(ModalGamepadTextInputDismissed_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class FavoritesListChanged_t_const_pointer_box
+    : public SteamBase<FavoritesListChanged_t const *,
+                       FavoritesListChanged_t_const_pointer_box> {
+  GODOT_CLASS(FavoritesListChanged_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nIP();
+  auto get_m_nQueryPort();
+  auto get_m_nConnPort();
+  auto get_m_nAppID();
+  auto get_m_nFlags();
+  auto get_m_bAdd();
+  auto get_m_unAccountId();
+};
+
+class LobbyInvite_t_const_pointer_box
+    : public SteamBase<LobbyInvite_t const *, LobbyInvite_t_const_pointer_box> {
+  GODOT_CLASS(LobbyInvite_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDUser();
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulGameID();
+};
+
+class LobbyEnter_t_const_pointer_box
+    : public SteamBase<LobbyEnter_t const *, LobbyEnter_t_const_pointer_box> {
+  GODOT_CLASS(LobbyEnter_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_rgfChatPermissions();
+  auto get_m_bLocked();
+  auto get_m_EChatRoomEnterResponse();
+};
+
+class LobbyDataUpdate_t_const_pointer_box
+    : public SteamBase<LobbyDataUpdate_t const *,
+                       LobbyDataUpdate_t_const_pointer_box> {
+  GODOT_CLASS(LobbyDataUpdate_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulSteamIDMember();
+  auto get_m_bSuccess();
+};
+
+class LobbyChatUpdate_t_const_pointer_box
+    : public SteamBase<LobbyChatUpdate_t const *,
+                       LobbyChatUpdate_t_const_pointer_box> {
+  GODOT_CLASS(LobbyChatUpdate_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulSteamIDUserChanged();
+  auto get_m_ulSteamIDMakingChange();
+  auto get_m_rgfChatMemberStateChange();
+};
+
+class LobbyChatMsg_t_const_pointer_box
+    : public SteamBase<LobbyChatMsg_t const *,
+                       LobbyChatMsg_t_const_pointer_box> {
+  GODOT_CLASS(LobbyChatMsg_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulSteamIDUser();
+  auto get_m_eChatEntryType();
+  auto get_m_iChatID();
+};
+
+class LobbyGameCreated_t_const_pointer_box
+    : public SteamBase<LobbyGameCreated_t const *,
+                       LobbyGameCreated_t_const_pointer_box> {
+  GODOT_CLASS(LobbyGameCreated_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulSteamIDGameServer();
+  auto get_m_unIP();
+  auto get_m_usPort();
+};
+
+class LobbyMatchList_t_const_pointer_box
+    : public SteamBase<LobbyMatchList_t const *,
+                       LobbyMatchList_t_const_pointer_box> {
+  GODOT_CLASS(LobbyMatchList_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nLobbiesMatching();
+};
+
+class LobbyKicked_t_const_pointer_box
+    : public SteamBase<LobbyKicked_t const *, LobbyKicked_t_const_pointer_box> {
+  GODOT_CLASS(LobbyKicked_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulSteamIDLobby();
+  auto get_m_ulSteamIDAdmin();
+  auto get_m_bKickedDueToDisconnect();
+};
+
+class LobbyCreated_t_const_pointer_box
+    : public SteamBase<LobbyCreated_t const *,
+                       LobbyCreated_t_const_pointer_box> {
+  GODOT_CLASS(LobbyCreated_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ulSteamIDLobby();
+};
+
+class PSNGameBootInviteResult_t_const_pointer_box
+    : public SteamBase<PSNGameBootInviteResult_t const *,
+                       PSNGameBootInviteResult_t_const_pointer_box> {
+  GODOT_CLASS(PSNGameBootInviteResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bGameBootInviteExists();
+  auto get_m_steamIDLobby();
+};
+
+class FavoritesListAccountsUpdated_t_const_pointer_box
+    : public SteamBase<FavoritesListAccountsUpdated_t const *,
+                       FavoritesListAccountsUpdated_t_const_pointer_box> {
+  GODOT_CLASS(FavoritesListAccountsUpdated_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class SearchForGameProgressCallback_t_const_pointer_box
+    : public SteamBase<SearchForGameProgressCallback_t const *,
+                       SearchForGameProgressCallback_t_const_pointer_box> {
+  GODOT_CLASS(SearchForGameProgressCallback_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ullSearchID();
+  auto get_m_eResult();
+  auto get_m_lobbyID();
+  auto get_m_steamIDEndedSearch();
+  auto get_m_nSecondsRemainingEstimate();
+  auto get_m_cPlayersSearching();
+};
+
+class SearchForGameResultCallback_t_const_pointer_box
+    : public SteamBase<SearchForGameResultCallback_t const *,
+                       SearchForGameResultCallback_t_const_pointer_box> {
+  GODOT_CLASS(SearchForGameResultCallback_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ullSearchID();
+  auto get_m_eResult();
+  auto get_m_nCountPlayersInGame();
+  auto get_m_nCountAcceptedGame();
+  auto get_m_steamIDHost();
+  auto get_m_bFinalCallback();
+};
+
+class RequestPlayersForGameProgressCallback_t_const_pointer_box
+    : public SteamBase<
+          RequestPlayersForGameProgressCallback_t const *,
+          RequestPlayersForGameProgressCallback_t_const_pointer_box> {
+  GODOT_CLASS(RequestPlayersForGameProgressCallback_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ullSearchID();
+};
+
+class RequestPlayersForGameResultCallback_t_const_pointer_box
+    : public SteamBase<
+          RequestPlayersForGameResultCallback_t const *,
+          RequestPlayersForGameResultCallback_t_const_pointer_box> {
+  GODOT_CLASS(RequestPlayersForGameResultCallback_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ullSearchID();
+  auto get_m_SteamIDPlayerFound();
+  auto get_m_SteamIDLobby();
+  auto get_m_nPlayerIndex();
+  auto get_m_nTotalPlayersFound();
+  auto get_m_nTotalPlayersAcceptedGame();
+  auto get_m_nSuggestedTeamIndex();
+  auto get_m_ullUniqueGameID();
+};
+
+class RequestPlayersForGameFinalResultCallback_t_const_pointer_box
+    : public SteamBase<
+          RequestPlayersForGameFinalResultCallback_t const *,
+          RequestPlayersForGameFinalResultCallback_t_const_pointer_box> {
+  GODOT_CLASS(RequestPlayersForGameFinalResultCallback_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ullSearchID();
+  auto get_m_ullUniqueGameID();
+};
+
+class SubmitPlayerResultResultCallback_t_const_pointer_box
+    : public SteamBase<SubmitPlayerResultResultCallback_t const *,
+                       SubmitPlayerResultResultCallback_t_const_pointer_box> {
+  GODOT_CLASS(SubmitPlayerResultResultCallback_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_ullUniqueGameID();
+  auto get_steamIDPlayer();
+};
+
+class EndGameResultCallback_t_const_pointer_box
+    : public SteamBase<EndGameResultCallback_t const *,
+                       EndGameResultCallback_t_const_pointer_box> {
+  GODOT_CLASS(EndGameResultCallback_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_ullUniqueGameID();
+};
+
+class JoinPartyCallback_t_const_pointer_box
+    : public SteamBase<JoinPartyCallback_t const *,
+                       JoinPartyCallback_t_const_pointer_box> {
+  GODOT_CLASS(JoinPartyCallback_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ulBeaconID();
+  auto get_m_SteamIDBeaconOwner();
+  auto get_m_rgchConnectString();
+};
+
+class CreateBeaconCallback_t_const_pointer_box
+    : public SteamBase<CreateBeaconCallback_t const *,
+                       CreateBeaconCallback_t_const_pointer_box> {
+  GODOT_CLASS(CreateBeaconCallback_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ulBeaconID();
+};
+
+class ReservationNotificationCallback_t_const_pointer_box
+    : public SteamBase<ReservationNotificationCallback_t const *,
+                       ReservationNotificationCallback_t_const_pointer_box> {
+  GODOT_CLASS(ReservationNotificationCallback_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulBeaconID();
+  auto get_m_steamIDJoiner();
+};
+
+class ChangeNumOpenSlotsCallback_t_const_pointer_box
+    : public SteamBase<ChangeNumOpenSlotsCallback_t const *,
+                       ChangeNumOpenSlotsCallback_t_const_pointer_box> {
+  GODOT_CLASS(ChangeNumOpenSlotsCallback_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class AvailableBeaconLocationsUpdated_t_const_pointer_box
+    : public SteamBase<AvailableBeaconLocationsUpdated_t const *,
+                       AvailableBeaconLocationsUpdated_t_const_pointer_box> {
+  GODOT_CLASS(AvailableBeaconLocationsUpdated_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class ActiveBeaconsUpdated_t_const_pointer_box
+    : public SteamBase<ActiveBeaconsUpdated_t const *,
+                       ActiveBeaconsUpdated_t_const_pointer_box> {
+  GODOT_CLASS(ActiveBeaconsUpdated_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class RemoteStorageFileShareResult_t_const_pointer_box
+    : public SteamBase<RemoteStorageFileShareResult_t const *,
+                       RemoteStorageFileShareResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageFileShareResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_hFile();
+  auto get_m_rgchFilename();
+};
+
+class RemoteStoragePublishFileResult_t_const_pointer_box
+    : public SteamBase<RemoteStoragePublishFileResult_t const *,
+                       RemoteStoragePublishFileResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStoragePublishFileResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_bUserNeedsToAcceptWorkshopLegalAgreement();
+};
+
+class RemoteStorageDeletePublishedFileResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageDeletePublishedFileResult_t const *,
+          RemoteStorageDeletePublishedFileResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageDeletePublishedFileResult_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+};
+
+class RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageEnumerateUserPublishedFilesResult_t const *,
+          RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box> {
+  GODOT_CLASS(
+      RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box,
+      Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+  auto get_m_rgPublishedFileId();
+};
+
+class RemoteStorageSubscribePublishedFileResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageSubscribePublishedFileResult_t const *,
+          RemoteStorageSubscribePublishedFileResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageSubscribePublishedFileResult_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+};
+
+class RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageEnumerateUserSubscribedFilesResult_t const *,
+          RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box> {
+  GODOT_CLASS(
+      RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box,
+      Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+  auto get_m_rgPublishedFileId();
+  auto get_m_rgRTimeSubscribed();
+};
+
+class RemoteStorageUnsubscribePublishedFileResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageUnsubscribePublishedFileResult_t const *,
+          RemoteStorageUnsubscribePublishedFileResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageUnsubscribePublishedFileResult_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+};
+
+class RemoteStorageUpdatePublishedFileResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageUpdatePublishedFileResult_t const *,
+          RemoteStorageUpdatePublishedFileResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageUpdatePublishedFileResult_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_bUserNeedsToAcceptWorkshopLegalAgreement();
+};
+
+class RemoteStorageDownloadUGCResult_t_const_pointer_box
+    : public SteamBase<RemoteStorageDownloadUGCResult_t const *,
+                       RemoteStorageDownloadUGCResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageDownloadUGCResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_hFile();
+  auto get_m_nAppID();
+  auto get_m_nSizeInBytes();
+  auto get_m_pchFileName();
+  auto get_m_ulSteamIDOwner();
+};
+
+class RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageGetPublishedFileDetailsResult_t const *,
+          RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_nCreatorAppID();
+  auto get_m_nConsumerAppID();
+  auto get_m_rgchTitle();
+  auto get_m_rgchDescription();
+  auto get_m_hFile();
+  auto get_m_hPreviewFile();
+  auto get_m_ulSteamIDOwner();
+  auto get_m_rtimeCreated();
+  auto get_m_rtimeUpdated();
+  auto get_m_eVisibility();
+  auto get_m_bBanned();
+  auto get_m_rgchTags();
+  auto get_m_bTagsTruncated();
+  auto get_m_pchFileName();
+  auto get_m_nFileSize();
+  auto get_m_nPreviewFileSize();
+  auto get_m_rgchURL();
+  auto get_m_eFileType();
+  auto get_m_bAcceptedForUse();
+};
+
+class RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageEnumerateWorkshopFilesResult_t const *,
+          RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+  auto get_m_rgPublishedFileId();
+  auto get_m_rgScore();
+  auto get_m_nAppId();
+  auto get_m_unStartIndex();
+};
+
+class RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageGetPublishedItemVoteDetailsResult_t const *,
+          RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box> {
+  GODOT_CLASS(
+      RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box,
+      Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_unPublishedFileId();
+  auto get_m_nVotesFor();
+  auto get_m_nVotesAgainst();
+  auto get_m_nReports();
+  auto get_m_fScore();
+};
+
+class RemoteStoragePublishedFileSubscribed_t_const_pointer_box
+    : public SteamBase<
+          RemoteStoragePublishedFileSubscribed_t const *,
+          RemoteStoragePublishedFileSubscribed_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStoragePublishedFileSubscribed_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+};
+
+class RemoteStoragePublishedFileUnsubscribed_t_const_pointer_box
+    : public SteamBase<
+          RemoteStoragePublishedFileUnsubscribed_t const *,
+          RemoteStoragePublishedFileUnsubscribed_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStoragePublishedFileUnsubscribed_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+};
+
+class RemoteStoragePublishedFileDeleted_t_const_pointer_box
+    : public SteamBase<RemoteStoragePublishedFileDeleted_t const *,
+                       RemoteStoragePublishedFileDeleted_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStoragePublishedFileDeleted_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+};
+
+class RemoteStorageUpdateUserPublishedItemVoteResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageUpdateUserPublishedItemVoteResult_t const *,
+          RemoteStorageUpdateUserPublishedItemVoteResult_t_const_pointer_box> {
+  GODOT_CLASS(
+      RemoteStorageUpdateUserPublishedItemVoteResult_t_const_pointer_box,
+      Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+};
+
+class RemoteStorageUserVoteDetails_t_const_pointer_box
+    : public SteamBase<RemoteStorageUserVoteDetails_t const *,
+                       RemoteStorageUserVoteDetails_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageUserVoteDetails_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_eVote();
+};
+
+class RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageEnumerateUserSharedWorkshopFilesResult_t const *,
+          RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box> {
+  GODOT_CLASS(
+      RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box,
+      Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+  auto get_m_rgPublishedFileId();
+};
+
+class RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageSetUserPublishedFileActionResult_t const *,
+          RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_eAction();
+};
+
+class RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageEnumeratePublishedFilesByUserActionResult_t const *,
+          RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box> {
+  GODOT_CLASS(
+      RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box,
+      Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_eAction();
+  auto get_m_nResultsReturned();
+  auto get_m_nTotalResultCount();
+  auto get_m_rgPublishedFileId();
+  auto get_m_rgRTimeUpdated();
+};
+
+class RemoteStoragePublishFileProgress_t_const_pointer_box
+    : public SteamBase<RemoteStoragePublishFileProgress_t const *,
+                       RemoteStoragePublishFileProgress_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStoragePublishFileProgress_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_dPercentFile();
+  auto get_m_bPreview();
+};
+
+class RemoteStoragePublishedFileUpdated_t_const_pointer_box
+    : public SteamBase<RemoteStoragePublishedFileUpdated_t const *,
+                       RemoteStoragePublishedFileUpdated_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStoragePublishedFileUpdated_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+  auto get_m_ulUnused();
+};
+
+class RemoteStorageFileWriteAsyncComplete_t_const_pointer_box
+    : public SteamBase<
+          RemoteStorageFileWriteAsyncComplete_t const *,
+          RemoteStorageFileWriteAsyncComplete_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageFileWriteAsyncComplete_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class RemoteStorageFileReadAsyncComplete_t_const_pointer_box
+    : public SteamBase<RemoteStorageFileReadAsyncComplete_t const *,
+                       RemoteStorageFileReadAsyncComplete_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageFileReadAsyncComplete_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hFileReadAsync();
+  auto get_m_eResult();
+  auto get_m_nOffset();
+  auto get_m_cubRead();
+};
+
+class RemoteStorageLocalFileChange_t_const_pointer_box
+    : public SteamBase<RemoteStorageLocalFileChange_t const *,
+                       RemoteStorageLocalFileChange_t_const_pointer_box> {
+  GODOT_CLASS(RemoteStorageLocalFileChange_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class UserStatsReceived_t_const_pointer_box
+    : public SteamBase<UserStatsReceived_t const *,
+                       UserStatsReceived_t_const_pointer_box> {
+  GODOT_CLASS(UserStatsReceived_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_eResult();
+  auto get_m_steamIDUser();
+};
+
+class UserStatsStored_t_const_pointer_box
+    : public SteamBase<UserStatsStored_t const *,
+                       UserStatsStored_t_const_pointer_box> {
+  GODOT_CLASS(UserStatsStored_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_eResult();
+};
+
+class UserAchievementStored_t_const_pointer_box
+    : public SteamBase<UserAchievementStored_t const *,
+                       UserAchievementStored_t_const_pointer_box> {
+  GODOT_CLASS(UserAchievementStored_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_bGroupAchievement();
+  auto get_m_rgchAchievementName();
+  auto get_m_nCurProgress();
+  auto get_m_nMaxProgress();
+};
+
+class LeaderboardFindResult_t_const_pointer_box
+    : public SteamBase<LeaderboardFindResult_t const *,
+                       LeaderboardFindResult_t_const_pointer_box> {
+  GODOT_CLASS(LeaderboardFindResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hSteamLeaderboard();
+  auto get_m_bLeaderboardFound();
+};
+
+class LeaderboardScoresDownloaded_t_const_pointer_box
+    : public SteamBase<LeaderboardScoresDownloaded_t const *,
+                       LeaderboardScoresDownloaded_t_const_pointer_box> {
+  GODOT_CLASS(LeaderboardScoresDownloaded_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hSteamLeaderboard();
+  auto get_m_hSteamLeaderboardEntries();
+  auto get_m_cEntryCount();
+};
+
+class LeaderboardScoreUploaded_t_const_pointer_box
+    : public SteamBase<LeaderboardScoreUploaded_t const *,
+                       LeaderboardScoreUploaded_t_const_pointer_box> {
+  GODOT_CLASS(LeaderboardScoreUploaded_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSuccess();
+  auto get_m_hSteamLeaderboard();
+  auto get_m_nScore();
+  auto get_m_bScoreChanged();
+  auto get_m_nGlobalRankNew();
+  auto get_m_nGlobalRankPrevious();
+};
+
+class NumberOfCurrentPlayers_t_const_pointer_box
+    : public SteamBase<NumberOfCurrentPlayers_t const *,
+                       NumberOfCurrentPlayers_t_const_pointer_box> {
+  GODOT_CLASS(NumberOfCurrentPlayers_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSuccess();
+  auto get_m_cPlayers();
+};
+
+class UserStatsUnloaded_t_const_pointer_box
+    : public SteamBase<UserStatsUnloaded_t const *,
+                       UserStatsUnloaded_t_const_pointer_box> {
+  GODOT_CLASS(UserStatsUnloaded_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDUser();
+};
+
+class UserAchievementIconFetched_t_const_pointer_box
+    : public SteamBase<UserAchievementIconFetched_t const *,
+                       UserAchievementIconFetched_t_const_pointer_box> {
+  GODOT_CLASS(UserAchievementIconFetched_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_rgchAchievementName();
+  auto get_m_bAchieved();
+  auto get_m_nIconHandle();
+};
+
+class GlobalAchievementPercentagesReady_t_const_pointer_box
+    : public SteamBase<GlobalAchievementPercentagesReady_t const *,
+                       GlobalAchievementPercentagesReady_t_const_pointer_box> {
+  GODOT_CLASS(GlobalAchievementPercentagesReady_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_eResult();
+};
+
+class LeaderboardUGCSet_t_const_pointer_box
+    : public SteamBase<LeaderboardUGCSet_t const *,
+                       LeaderboardUGCSet_t_const_pointer_box> {
+  GODOT_CLASS(LeaderboardUGCSet_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_hSteamLeaderboard();
+};
+
+class PS3TrophiesInstalled_t_const_pointer_box
+    : public SteamBase<PS3TrophiesInstalled_t const *,
+                       PS3TrophiesInstalled_t_const_pointer_box> {
+  GODOT_CLASS(PS3TrophiesInstalled_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_eResult();
+  auto get_m_ulRequiredDiskSpace();
+};
+
+class GlobalStatsReceived_t_const_pointer_box
+    : public SteamBase<GlobalStatsReceived_t const *,
+                       GlobalStatsReceived_t_const_pointer_box> {
+  GODOT_CLASS(GlobalStatsReceived_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nGameID();
+  auto get_m_eResult();
+};
+
+class DlcInstalled_t_const_pointer_box
+    : public SteamBase<DlcInstalled_t const *,
+                       DlcInstalled_t_const_pointer_box> {
+  GODOT_CLASS(DlcInstalled_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nAppID();
+};
+
+class RegisterActivationCodeResponse_t_const_pointer_box
+    : public SteamBase<RegisterActivationCodeResponse_t const *,
+                       RegisterActivationCodeResponse_t_const_pointer_box> {
+  GODOT_CLASS(RegisterActivationCodeResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_unPackageRegistered();
+};
+
+class NewUrlLaunchParameters_t_const_pointer_box
+    : public SteamBase<NewUrlLaunchParameters_t const *,
+                       NewUrlLaunchParameters_t_const_pointer_box> {
+  GODOT_CLASS(NewUrlLaunchParameters_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class AppProofOfPurchaseKeyResponse_t_const_pointer_box
+    : public SteamBase<AppProofOfPurchaseKeyResponse_t const *,
+                       AppProofOfPurchaseKeyResponse_t_const_pointer_box> {
+  GODOT_CLASS(AppProofOfPurchaseKeyResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nAppID();
+  auto get_m_cchKeyLength();
+  auto get_m_rgchKey();
+};
+
+class FileDetailsResult_t_const_pointer_box
+    : public SteamBase<FileDetailsResult_t const *,
+                       FileDetailsResult_t_const_pointer_box> {
+  GODOT_CLASS(FileDetailsResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_ulFileSize();
+  auto get_m_FileSHA();
+  auto get_m_unFlags();
+};
+
+class TimedTrialStatus_t_const_pointer_box
+    : public SteamBase<TimedTrialStatus_t const *,
+                       TimedTrialStatus_t_const_pointer_box> {
+  GODOT_CLASS(TimedTrialStatus_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unAppID();
+  auto get_m_bIsOffline();
+  auto get_m_unSecondsAllowed();
+  auto get_m_unSecondsPlayed();
+};
+
+class P2PSessionRequest_t_const_pointer_box
+    : public SteamBase<P2PSessionRequest_t const *,
+                       P2PSessionRequest_t_const_pointer_box> {
+  GODOT_CLASS(P2PSessionRequest_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDRemote();
+};
+
+class P2PSessionConnectFail_t_const_pointer_box
+    : public SteamBase<P2PSessionConnectFail_t const *,
+                       P2PSessionConnectFail_t_const_pointer_box> {
+  GODOT_CLASS(P2PSessionConnectFail_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDRemote();
+  auto get_m_eP2PSessionError();
+};
+
+class SocketStatusCallback_t_const_pointer_box
+    : public SteamBase<SocketStatusCallback_t const *,
+                       SocketStatusCallback_t_const_pointer_box> {
+  GODOT_CLASS(SocketStatusCallback_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hSocket();
+  auto get_m_hListenSocket();
+  auto get_m_steamIDRemote();
+  auto get_m_eSNetSocketState();
+};
+
+class ScreenshotReady_t_const_pointer_box
+    : public SteamBase<ScreenshotReady_t const *,
+                       ScreenshotReady_t_const_pointer_box> {
+  GODOT_CLASS(ScreenshotReady_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hLocal();
+  auto get_m_eResult();
+};
+
+class ScreenshotRequested_t_const_pointer_box
+    : public SteamBase<ScreenshotRequested_t const *,
+                       ScreenshotRequested_t_const_pointer_box> {
+  GODOT_CLASS(ScreenshotRequested_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class PlaybackStatusHasChanged_t_const_pointer_box
+    : public SteamBase<PlaybackStatusHasChanged_t const *,
+                       PlaybackStatusHasChanged_t_const_pointer_box> {
+  GODOT_CLASS(PlaybackStatusHasChanged_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class VolumeHasChanged_t_const_pointer_box
+    : public SteamBase<VolumeHasChanged_t const *,
+                       VolumeHasChanged_t_const_pointer_box> {
+  GODOT_CLASS(VolumeHasChanged_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_flNewVolume();
+};
+
+class MusicPlayerRemoteWillActivate_t_const_pointer_box
+    : public SteamBase<MusicPlayerRemoteWillActivate_t const *,
+                       MusicPlayerRemoteWillActivate_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerRemoteWillActivate_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerRemoteWillDeactivate_t_const_pointer_box
+    : public SteamBase<MusicPlayerRemoteWillDeactivate_t const *,
+                       MusicPlayerRemoteWillDeactivate_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerRemoteWillDeactivate_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerRemoteToFront_t_const_pointer_box
+    : public SteamBase<MusicPlayerRemoteToFront_t const *,
+                       MusicPlayerRemoteToFront_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerRemoteToFront_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWillQuit_t_const_pointer_box
+    : public SteamBase<MusicPlayerWillQuit_t const *,
+                       MusicPlayerWillQuit_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerWillQuit_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWantsPlay_t_const_pointer_box
+    : public SteamBase<MusicPlayerWantsPlay_t const *,
+                       MusicPlayerWantsPlay_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerWantsPlay_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWantsPause_t_const_pointer_box
+    : public SteamBase<MusicPlayerWantsPause_t const *,
+                       MusicPlayerWantsPause_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerWantsPause_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWantsPlayPrevious_t_const_pointer_box
+    : public SteamBase<MusicPlayerWantsPlayPrevious_t const *,
+                       MusicPlayerWantsPlayPrevious_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerWantsPlayPrevious_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWantsPlayNext_t_const_pointer_box
+    : public SteamBase<MusicPlayerWantsPlayNext_t const *,
+                       MusicPlayerWantsPlayNext_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerWantsPlayNext_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class MusicPlayerWantsShuffled_t_const_pointer_box
+    : public SteamBase<MusicPlayerWantsShuffled_t const *,
+                       MusicPlayerWantsShuffled_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerWantsShuffled_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bShuffled();
+};
+
+class MusicPlayerWantsLooped_t_const_pointer_box
+    : public SteamBase<MusicPlayerWantsLooped_t const *,
+                       MusicPlayerWantsLooped_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerWantsLooped_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bLooped();
+};
+
+class MusicPlayerWantsVolume_t_const_pointer_box
+    : public SteamBase<MusicPlayerWantsVolume_t const *,
+                       MusicPlayerWantsVolume_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerWantsVolume_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_flNewVolume();
+};
+
+class MusicPlayerSelectsQueueEntry_t_const_pointer_box
+    : public SteamBase<MusicPlayerSelectsQueueEntry_t const *,
+                       MusicPlayerSelectsQueueEntry_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerSelectsQueueEntry_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_nID();
+};
+
+class MusicPlayerSelectsPlaylistEntry_t_const_pointer_box
+    : public SteamBase<MusicPlayerSelectsPlaylistEntry_t const *,
+                       MusicPlayerSelectsPlaylistEntry_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerSelectsPlaylistEntry_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_nID();
+};
+
+class MusicPlayerWantsPlayingRepeatStatus_t_const_pointer_box
+    : public SteamBase<
+          MusicPlayerWantsPlayingRepeatStatus_t const *,
+          MusicPlayerWantsPlayingRepeatStatus_t_const_pointer_box> {
+  GODOT_CLASS(MusicPlayerWantsPlayingRepeatStatus_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPlayingRepeatStatus();
+};
+
+class HTTPRequestCompleted_t_const_pointer_box
+    : public SteamBase<HTTPRequestCompleted_t const *,
+                       HTTPRequestCompleted_t_const_pointer_box> {
+  GODOT_CLASS(HTTPRequestCompleted_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hRequest();
+  auto get_m_ulContextValue();
+  auto get_m_bRequestSuccessful();
+  auto get_m_eStatusCode();
+  auto get_m_unBodySize();
+};
+
+class HTTPRequestHeadersReceived_t_const_pointer_box
+    : public SteamBase<HTTPRequestHeadersReceived_t const *,
+                       HTTPRequestHeadersReceived_t_const_pointer_box> {
+  GODOT_CLASS(HTTPRequestHeadersReceived_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hRequest();
+  auto get_m_ulContextValue();
+};
+
+class HTTPRequestDataReceived_t_const_pointer_box
+    : public SteamBase<HTTPRequestDataReceived_t const *,
+                       HTTPRequestDataReceived_t_const_pointer_box> {
+  GODOT_CLASS(HTTPRequestDataReceived_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hRequest();
+  auto get_m_ulContextValue();
+  auto get_m_cOffset();
+  auto get_m_cBytesReceived();
+};
+
+class SteamInputDeviceConnected_t_const_pointer_box
+    : public SteamBase<SteamInputDeviceConnected_t const *,
+                       SteamInputDeviceConnected_t_const_pointer_box> {
+  GODOT_CLASS(SteamInputDeviceConnected_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulConnectedDeviceHandle();
+};
+
+class SteamInputDeviceDisconnected_t_const_pointer_box
+    : public SteamBase<SteamInputDeviceDisconnected_t const *,
+                       SteamInputDeviceDisconnected_t_const_pointer_box> {
+  GODOT_CLASS(SteamInputDeviceDisconnected_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_ulDisconnectedDeviceHandle();
+};
+
+class SteamInputConfigurationLoaded_t_const_pointer_box
+    : public SteamBase<SteamInputConfigurationLoaded_t const *,
+                       SteamInputConfigurationLoaded_t_const_pointer_box> {
+  GODOT_CLASS(SteamInputConfigurationLoaded_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unAppID();
+  auto get_m_ulDeviceHandle();
+  auto get_m_ulMappingCreator();
+  auto get_m_unMajorRevision();
+  auto get_m_unMinorRevision();
+  auto get_m_bUsesSteamInputAPI();
+  auto get_m_bUsesGamepadAPI();
+};
+
+class SteamUGCQueryCompleted_t_const_pointer_box
+    : public SteamBase<SteamUGCQueryCompleted_t const *,
+                       SteamUGCQueryCompleted_t_const_pointer_box> {
+  GODOT_CLASS(SteamUGCQueryCompleted_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_handle();
+  auto get_m_eResult();
+  auto get_m_unNumResultsReturned();
+  auto get_m_unTotalMatchingResults();
+  auto get_m_bCachedData();
+  auto get_m_rgchNextCursor();
+};
+
+class SteamUGCRequestUGCDetailsResult_t_const_pointer_box
+    : public SteamBase<SteamUGCRequestUGCDetailsResult_t const *,
+                       SteamUGCRequestUGCDetailsResult_t_const_pointer_box> {
+  GODOT_CLASS(SteamUGCRequestUGCDetailsResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_details();
+  auto get_m_bCachedData();
+};
+
+class CreateItemResult_t_const_pointer_box
+    : public SteamBase<CreateItemResult_t const *,
+                       CreateItemResult_t_const_pointer_box> {
+  GODOT_CLASS(CreateItemResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_bUserNeedsToAcceptWorkshopLegalAgreement();
+};
+
+class SubmitItemUpdateResult_t_const_pointer_box
+    : public SteamBase<SubmitItemUpdateResult_t const *,
+                       SubmitItemUpdateResult_t_const_pointer_box> {
+  GODOT_CLASS(SubmitItemUpdateResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_bUserNeedsToAcceptWorkshopLegalAgreement();
+  auto get_m_nPublishedFileId();
+};
+
+class ItemInstalled_t_const_pointer_box
+    : public SteamBase<ItemInstalled_t const *,
+                       ItemInstalled_t_const_pointer_box> {
+  GODOT_CLASS(ItemInstalled_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unAppID();
+  auto get_m_nPublishedFileId();
+};
+
+class DownloadItemResult_t_const_pointer_box
+    : public SteamBase<DownloadItemResult_t const *,
+                       DownloadItemResult_t_const_pointer_box> {
+  GODOT_CLASS(DownloadItemResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unAppID();
+  auto get_m_nPublishedFileId();
+  auto get_m_eResult();
+};
+
+class UserFavoriteItemsListChanged_t_const_pointer_box
+    : public SteamBase<UserFavoriteItemsListChanged_t const *,
+                       UserFavoriteItemsListChanged_t_const_pointer_box> {
+  GODOT_CLASS(UserFavoriteItemsListChanged_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_eResult();
+  auto get_m_bWasAddRequest();
+};
+
+class SetUserItemVoteResult_t_const_pointer_box
+    : public SteamBase<SetUserItemVoteResult_t const *,
+                       SetUserItemVoteResult_t_const_pointer_box> {
+  GODOT_CLASS(SetUserItemVoteResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_eResult();
+  auto get_m_bVoteUp();
+};
+
+class GetUserItemVoteResult_t_const_pointer_box
+    : public SteamBase<GetUserItemVoteResult_t const *,
+                       GetUserItemVoteResult_t_const_pointer_box> {
+  GODOT_CLASS(GetUserItemVoteResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nPublishedFileId();
+  auto get_m_eResult();
+  auto get_m_bVotedUp();
+  auto get_m_bVotedDown();
+  auto get_m_bVoteSkipped();
+};
+
+class StartPlaytimeTrackingResult_t_const_pointer_box
+    : public SteamBase<StartPlaytimeTrackingResult_t const *,
+                       StartPlaytimeTrackingResult_t_const_pointer_box> {
+  GODOT_CLASS(StartPlaytimeTrackingResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class StopPlaytimeTrackingResult_t_const_pointer_box
+    : public SteamBase<StopPlaytimeTrackingResult_t const *,
+                       StopPlaytimeTrackingResult_t_const_pointer_box> {
+  GODOT_CLASS(StopPlaytimeTrackingResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class AddUGCDependencyResult_t_const_pointer_box
+    : public SteamBase<AddUGCDependencyResult_t const *,
+                       AddUGCDependencyResult_t_const_pointer_box> {
+  GODOT_CLASS(AddUGCDependencyResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_nChildPublishedFileId();
+};
+
+class RemoveUGCDependencyResult_t_const_pointer_box
+    : public SteamBase<RemoveUGCDependencyResult_t const *,
+                       RemoveUGCDependencyResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoveUGCDependencyResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_nChildPublishedFileId();
+};
+
+class AddAppDependencyResult_t_const_pointer_box
+    : public SteamBase<AddAppDependencyResult_t const *,
+                       AddAppDependencyResult_t_const_pointer_box> {
+  GODOT_CLASS(AddAppDependencyResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+};
+
+class RemoveAppDependencyResult_t_const_pointer_box
+    : public SteamBase<RemoveAppDependencyResult_t const *,
+                       RemoveAppDependencyResult_t_const_pointer_box> {
+  GODOT_CLASS(RemoveAppDependencyResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_nAppID();
+};
+
+class GetAppDependenciesResult_t_const_pointer_box
+    : public SteamBase<GetAppDependenciesResult_t const *,
+                       GetAppDependenciesResult_t_const_pointer_box> {
+  GODOT_CLASS(GetAppDependenciesResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+  auto get_m_rgAppIDs();
+  auto get_m_nNumAppDependencies();
+  auto get_m_nTotalNumAppDependencies();
+};
+
+class DeleteItemResult_t_const_pointer_box
+    : public SteamBase<DeleteItemResult_t const *,
+                       DeleteItemResult_t_const_pointer_box> {
+  GODOT_CLASS(DeleteItemResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nPublishedFileId();
+};
+
+class UserSubscribedItemsListChanged_t_const_pointer_box
+    : public SteamBase<UserSubscribedItemsListChanged_t const *,
+                       UserSubscribedItemsListChanged_t_const_pointer_box> {
+  GODOT_CLASS(UserSubscribedItemsListChanged_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nAppID();
+};
+
+class WorkshopEULAStatus_t_const_pointer_box
+    : public SteamBase<WorkshopEULAStatus_t const *,
+                       WorkshopEULAStatus_t_const_pointer_box> {
+  GODOT_CLASS(WorkshopEULAStatus_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nAppID();
+  auto get_m_unVersion();
+  auto get_m_rtAction();
+  auto get_m_bAccepted();
+  auto get_m_bNeedsAction();
+};
+
+class SteamAppInstalled_t_const_pointer_box
+    : public SteamBase<SteamAppInstalled_t const *,
+                       SteamAppInstalled_t_const_pointer_box> {
+  GODOT_CLASS(SteamAppInstalled_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nAppID();
+  auto get_m_iInstallFolderIndex();
+};
+
+class SteamAppUninstalled_t_const_pointer_box
+    : public SteamBase<SteamAppUninstalled_t const *,
+                       SteamAppUninstalled_t_const_pointer_box> {
+  GODOT_CLASS(SteamAppUninstalled_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_nAppID();
+  auto get_m_iInstallFolderIndex();
+};
+
+class HTML_BrowserReady_t_const_pointer_box
+    : public SteamBase<HTML_BrowserReady_t const *,
+                       HTML_BrowserReady_t_const_pointer_box> {
+  GODOT_CLASS(HTML_BrowserReady_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+};
+
+class HTML_NeedsPaint_t_const_pointer_box
+    : public SteamBase<HTML_NeedsPaint_t const *,
+                       HTML_NeedsPaint_t_const_pointer_box> {
+  GODOT_CLASS(HTML_NeedsPaint_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pBGRA();
+  auto get_unWide();
+  auto get_unTall();
+  auto get_unUpdateX();
+  auto get_unUpdateY();
+  auto get_unUpdateWide();
+  auto get_unUpdateTall();
+  auto get_unScrollX();
+  auto get_unScrollY();
+  auto get_flPageScale();
+  auto get_unPageSerial();
+};
+
+class HTML_StartRequest_t_const_pointer_box
+    : public SteamBase<HTML_StartRequest_t const *,
+                       HTML_StartRequest_t_const_pointer_box> {
+  GODOT_CLASS(HTML_StartRequest_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchURL();
+  auto get_pchTarget();
+  auto get_pchPostData();
+  auto get_bIsRedirect();
+};
+
+class HTML_CloseBrowser_t_const_pointer_box
+    : public SteamBase<HTML_CloseBrowser_t const *,
+                       HTML_CloseBrowser_t_const_pointer_box> {
+  GODOT_CLASS(HTML_CloseBrowser_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+};
+
+class HTML_URLChanged_t_const_pointer_box
+    : public SteamBase<HTML_URLChanged_t const *,
+                       HTML_URLChanged_t_const_pointer_box> {
+  GODOT_CLASS(HTML_URLChanged_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchURL();
+  auto get_pchPostData();
+  auto get_bIsRedirect();
+  auto get_pchPageTitle();
+  auto get_bNewNavigation();
+};
+
+class HTML_FinishedRequest_t_const_pointer_box
+    : public SteamBase<HTML_FinishedRequest_t const *,
+                       HTML_FinishedRequest_t_const_pointer_box> {
+  GODOT_CLASS(HTML_FinishedRequest_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchURL();
+  auto get_pchPageTitle();
+};
+
+class HTML_OpenLinkInNewTab_t_const_pointer_box
+    : public SteamBase<HTML_OpenLinkInNewTab_t const *,
+                       HTML_OpenLinkInNewTab_t_const_pointer_box> {
+  GODOT_CLASS(HTML_OpenLinkInNewTab_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchURL();
+};
+
+class HTML_ChangedTitle_t_const_pointer_box
+    : public SteamBase<HTML_ChangedTitle_t const *,
+                       HTML_ChangedTitle_t_const_pointer_box> {
+  GODOT_CLASS(HTML_ChangedTitle_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchTitle();
+};
+
+class HTML_SearchResults_t_const_pointer_box
+    : public SteamBase<HTML_SearchResults_t const *,
+                       HTML_SearchResults_t_const_pointer_box> {
+  GODOT_CLASS(HTML_SearchResults_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_unResults();
+  auto get_unCurrentMatch();
+};
+
+class HTML_CanGoBackAndForward_t_const_pointer_box
+    : public SteamBase<HTML_CanGoBackAndForward_t const *,
+                       HTML_CanGoBackAndForward_t_const_pointer_box> {
+  GODOT_CLASS(HTML_CanGoBackAndForward_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_bCanGoBack();
+  auto get_bCanGoForward();
+};
+
+class HTML_HorizontalScroll_t_const_pointer_box
+    : public SteamBase<HTML_HorizontalScroll_t const *,
+                       HTML_HorizontalScroll_t_const_pointer_box> {
+  GODOT_CLASS(HTML_HorizontalScroll_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_unScrollMax();
+  auto get_unScrollCurrent();
+  auto get_flPageScale();
+  auto get_bVisible();
+  auto get_unPageSize();
+};
+
+class HTML_VerticalScroll_t_const_pointer_box
+    : public SteamBase<HTML_VerticalScroll_t const *,
+                       HTML_VerticalScroll_t_const_pointer_box> {
+  GODOT_CLASS(HTML_VerticalScroll_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_unScrollMax();
+  auto get_unScrollCurrent();
+  auto get_flPageScale();
+  auto get_bVisible();
+  auto get_unPageSize();
+};
+
+class HTML_LinkAtPosition_t_const_pointer_box
+    : public SteamBase<HTML_LinkAtPosition_t const *,
+                       HTML_LinkAtPosition_t_const_pointer_box> {
+  GODOT_CLASS(HTML_LinkAtPosition_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_x();
+  auto get_y();
+  auto get_pchURL();
+  auto get_bInput();
+  auto get_bLiveLink();
+};
+
+class HTML_JSAlert_t_const_pointer_box
+    : public SteamBase<HTML_JSAlert_t const *,
+                       HTML_JSAlert_t_const_pointer_box> {
+  GODOT_CLASS(HTML_JSAlert_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchMessage();
+};
+
+class HTML_JSConfirm_t_const_pointer_box
+    : public SteamBase<HTML_JSConfirm_t const *,
+                       HTML_JSConfirm_t_const_pointer_box> {
+  GODOT_CLASS(HTML_JSConfirm_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchMessage();
+};
+
+class HTML_FileOpenDialog_t_const_pointer_box
+    : public SteamBase<HTML_FileOpenDialog_t const *,
+                       HTML_FileOpenDialog_t_const_pointer_box> {
+  GODOT_CLASS(HTML_FileOpenDialog_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchTitle();
+  auto get_pchInitialFile();
+};
+
+class HTML_NewWindow_t_const_pointer_box
+    : public SteamBase<HTML_NewWindow_t const *,
+                       HTML_NewWindow_t_const_pointer_box> {
+  GODOT_CLASS(HTML_NewWindow_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchURL();
+  auto get_unX();
+  auto get_unY();
+  auto get_unWide();
+  auto get_unTall();
+  auto get_unNewWindow_BrowserHandle_IGNORE();
+};
+
+class HTML_SetCursor_t_const_pointer_box
+    : public SteamBase<HTML_SetCursor_t const *,
+                       HTML_SetCursor_t_const_pointer_box> {
+  GODOT_CLASS(HTML_SetCursor_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_eMouseCursor();
+};
+
+class HTML_StatusText_t_const_pointer_box
+    : public SteamBase<HTML_StatusText_t const *,
+                       HTML_StatusText_t_const_pointer_box> {
+  GODOT_CLASS(HTML_StatusText_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchMsg();
+};
+
+class HTML_ShowToolTip_t_const_pointer_box
+    : public SteamBase<HTML_ShowToolTip_t const *,
+                       HTML_ShowToolTip_t_const_pointer_box> {
+  GODOT_CLASS(HTML_ShowToolTip_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchMsg();
+};
+
+class HTML_UpdateToolTip_t_const_pointer_box
+    : public SteamBase<HTML_UpdateToolTip_t const *,
+                       HTML_UpdateToolTip_t_const_pointer_box> {
+  GODOT_CLASS(HTML_UpdateToolTip_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_pchMsg();
+};
+
+class HTML_HideToolTip_t_const_pointer_box
+    : public SteamBase<HTML_HideToolTip_t const *,
+                       HTML_HideToolTip_t_const_pointer_box> {
+  GODOT_CLASS(HTML_HideToolTip_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+};
+
+class HTML_BrowserRestarted_t_const_pointer_box
+    : public SteamBase<HTML_BrowserRestarted_t const *,
+                       HTML_BrowserRestarted_t_const_pointer_box> {
+  GODOT_CLASS(HTML_BrowserRestarted_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_unBrowserHandle();
+  auto get_unOldBrowserHandle();
+};
+
+class SteamInventoryResultReady_t_const_pointer_box
+    : public SteamBase<SteamInventoryResultReady_t const *,
+                       SteamInventoryResultReady_t_const_pointer_box> {
+  GODOT_CLASS(SteamInventoryResultReady_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_handle();
+  auto get_m_result();
+};
+
+class SteamInventoryFullUpdate_t_const_pointer_box
+    : public SteamBase<SteamInventoryFullUpdate_t const *,
+                       SteamInventoryFullUpdate_t_const_pointer_box> {
+  GODOT_CLASS(SteamInventoryFullUpdate_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_handle();
+};
+
+class SteamInventoryDefinitionUpdate_t_const_pointer_box
+    : public SteamBase<SteamInventoryDefinitionUpdate_t const *,
+                       SteamInventoryDefinitionUpdate_t_const_pointer_box> {
+  GODOT_CLASS(SteamInventoryDefinitionUpdate_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box
+    : public SteamBase<
+          SteamInventoryEligiblePromoItemDefIDs_t const *,
+          SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box> {
+  GODOT_CLASS(SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_result();
+  auto get_m_steamID();
+  auto get_m_numEligiblePromoItemDefs();
+  auto get_m_bCachedData();
+};
+
+class SteamInventoryStartPurchaseResult_t_const_pointer_box
+    : public SteamBase<SteamInventoryStartPurchaseResult_t const *,
+                       SteamInventoryStartPurchaseResult_t_const_pointer_box> {
+  GODOT_CLASS(SteamInventoryStartPurchaseResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_result();
+  auto get_m_ulOrderID();
+  auto get_m_ulTransID();
+};
+
+class SteamInventoryRequestPricesResult_t_const_pointer_box
+    : public SteamBase<SteamInventoryRequestPricesResult_t const *,
+                       SteamInventoryRequestPricesResult_t_const_pointer_box> {
+  GODOT_CLASS(SteamInventoryRequestPricesResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_result();
+  auto get_m_rgchCurrency();
+};
+
+class GetVideoURLResult_t_const_pointer_box
+    : public SteamBase<GetVideoURLResult_t const *,
+                       GetVideoURLResult_t_const_pointer_box> {
+  GODOT_CLASS(GetVideoURLResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_unVideoAppID();
+  auto get_m_rgchURL();
+};
+
+class GetOPFSettingsResult_t_const_pointer_box
+    : public SteamBase<GetOPFSettingsResult_t const *,
+                       GetOPFSettingsResult_t_const_pointer_box> {
+  GODOT_CLASS(GetOPFSettingsResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_unVideoAppID();
+};
+
+class SteamParentalSettingsChanged_t_const_pointer_box
+    : public SteamBase<SteamParentalSettingsChanged_t const *,
+                       SteamParentalSettingsChanged_t_const_pointer_box> {
+  GODOT_CLASS(SteamParentalSettingsChanged_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+};
+
+class SteamRemotePlaySessionConnected_t_const_pointer_box
+    : public SteamBase<SteamRemotePlaySessionConnected_t const *,
+                       SteamRemotePlaySessionConnected_t_const_pointer_box> {
+  GODOT_CLASS(SteamRemotePlaySessionConnected_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unSessionID();
+};
+
+class SteamRemotePlaySessionDisconnected_t_const_pointer_box
+    : public SteamBase<SteamRemotePlaySessionDisconnected_t const *,
+                       SteamRemotePlaySessionDisconnected_t_const_pointer_box> {
+  GODOT_CLASS(SteamRemotePlaySessionDisconnected_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_unSessionID();
+};
+
+class SteamNetworkingMessagesSessionRequest_t_const_pointer_box
+    : public SteamBase<
+          SteamNetworkingMessagesSessionRequest_t const *,
+          SteamNetworkingMessagesSessionRequest_t_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingMessagesSessionRequest_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_identityRemote();
+};
+
+class SteamNetworkingMessagesSessionFailed_t_const_pointer_box
+    : public SteamBase<
+          SteamNetworkingMessagesSessionFailed_t const *,
+          SteamNetworkingMessagesSessionFailed_t_const_pointer_box> {
+  GODOT_CLASS(SteamNetworkingMessagesSessionFailed_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_info();
+};
+
+class SteamNetConnectionStatusChangedCallback_t_const_pointer_box
+    : public SteamBase<
+          SteamNetConnectionStatusChangedCallback_t const *,
+          SteamNetConnectionStatusChangedCallback_t_const_pointer_box> {
+  GODOT_CLASS(SteamNetConnectionStatusChangedCallback_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_hConn();
+  auto get_m_info();
+  auto get_m_eOldState();
+};
+
+class SteamNetAuthenticationStatus_t_const_pointer_box
+    : public SteamBase<SteamNetAuthenticationStatus_t const *,
+                       SteamNetAuthenticationStatus_t_const_pointer_box> {
+  GODOT_CLASS(SteamNetAuthenticationStatus_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eAvail();
+  auto get_m_debugMsg();
+};
+
+class SteamRelayNetworkStatus_t_const_pointer_box
+    : public SteamBase<SteamRelayNetworkStatus_t const *,
+                       SteamRelayNetworkStatus_t_const_pointer_box> {
+  GODOT_CLASS(SteamRelayNetworkStatus_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eAvail();
+  auto get_m_bPingMeasurementInProgress();
+  auto get_m_eAvailNetworkConfig();
+  auto get_m_eAvailAnyRelay();
+  auto get_m_debugMsg();
+};
+
+class GSClientApprove_t_const_pointer_box
+    : public SteamBase<GSClientApprove_t const *,
+                       GSClientApprove_t_const_pointer_box> {
+  GODOT_CLASS(GSClientApprove_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamID();
+  auto get_m_OwnerSteamID();
+};
+
+class GSClientDeny_t_const_pointer_box
+    : public SteamBase<GSClientDeny_t const *,
+                       GSClientDeny_t_const_pointer_box> {
+  GODOT_CLASS(GSClientDeny_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamID();
+  auto get_m_eDenyReason();
+  auto get_m_rgchOptionalText();
+};
+
+class GSClientKick_t_const_pointer_box
+    : public SteamBase<GSClientKick_t const *,
+                       GSClientKick_t_const_pointer_box> {
+  GODOT_CLASS(GSClientKick_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamID();
+  auto get_m_eDenyReason();
+};
+
+class GSClientAchievementStatus_t_const_pointer_box
+    : public SteamBase<GSClientAchievementStatus_t const *,
+                       GSClientAchievementStatus_t_const_pointer_box> {
+  GODOT_CLASS(GSClientAchievementStatus_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamID();
+  auto get_m_pchAchievement();
+  auto get_m_bUnlocked();
+};
+
+class GSPolicyResponse_t_const_pointer_box
+    : public SteamBase<GSPolicyResponse_t const *,
+                       GSPolicyResponse_t_const_pointer_box> {
+  GODOT_CLASS(GSPolicyResponse_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_bSecure();
+};
+
+class GSGameplayStats_t_const_pointer_box
+    : public SteamBase<GSGameplayStats_t const *,
+                       GSGameplayStats_t_const_pointer_box> {
+  GODOT_CLASS(GSGameplayStats_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_nRank();
+  auto get_m_unTotalConnects();
+  auto get_m_unTotalMinutesPlayed();
+};
+
+class GSClientGroupStatus_t_const_pointer_box
+    : public SteamBase<GSClientGroupStatus_t const *,
+                       GSClientGroupStatus_t_const_pointer_box> {
+  GODOT_CLASS(GSClientGroupStatus_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_SteamIDUser();
+  auto get_m_SteamIDGroup();
+  auto get_m_bMember();
+  auto get_m_bOfficer();
+};
+
+class GSReputation_t_const_pointer_box
+    : public SteamBase<GSReputation_t const *,
+                       GSReputation_t_const_pointer_box> {
+  GODOT_CLASS(GSReputation_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_unReputationScore();
+  auto get_m_bBanned();
+  auto get_m_unBannedIP();
+  auto get_m_usBannedPort();
+  auto get_m_ulBannedGameID();
+  auto get_m_unBanExpires();
+};
+
+class AssociateWithClanResult_t_const_pointer_box
+    : public SteamBase<AssociateWithClanResult_t const *,
+                       AssociateWithClanResult_t_const_pointer_box> {
+  GODOT_CLASS(AssociateWithClanResult_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+};
+
+class ComputeNewPlayerCompatibilityResult_t_const_pointer_box
+    : public SteamBase<
+          ComputeNewPlayerCompatibilityResult_t const *,
+          ComputeNewPlayerCompatibilityResult_t_const_pointer_box> {
+  GODOT_CLASS(ComputeNewPlayerCompatibilityResult_t_const_pointer_box,
+              Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_cPlayersThatDontLikeCandidate();
+  auto get_m_cPlayersThatCandidateDoesntLike();
+  auto get_m_cClanPlayersThatDontLikeCandidate();
+  auto get_m_SteamIDCandidate();
+};
+
+class GSStatsReceived_t_const_pointer_box
+    : public SteamBase<GSStatsReceived_t const *,
+                       GSStatsReceived_t_const_pointer_box> {
+  GODOT_CLASS(GSStatsReceived_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_steamIDUser();
+};
+
+class GSStatsStored_t_const_pointer_box
+    : public SteamBase<GSStatsStored_t const *,
+                       GSStatsStored_t_const_pointer_box> {
+  GODOT_CLASS(GSStatsStored_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_eResult();
+  auto get_m_steamIDUser();
+};
+
+class GSStatsUnloaded_t_const_pointer_box
+    : public SteamBase<GSStatsUnloaded_t const *,
+                       GSStatsUnloaded_t_const_pointer_box> {
+  GODOT_CLASS(GSStatsUnloaded_t_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  auto get_m_steamIDUser();
+};
+
+class ISteamClient_const_pointer_box
+    : public SteamBase<ISteamClient const *, ISteamClient_const_pointer_box> {
+  GODOT_CLASS(ISteamClient_const_pointer_box, Reference)
+public:
+  static void _register_methods();
+  void _init() {}
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto CreateSteamPipe() -> typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto BReleaseSteamPipe(Ref<HSteamPipe_box> hSteamPipe) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto ConnectToGlobalUser(Ref<HSteamPipe_box> hSteamPipe) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto CreateLocalUser(Ref<HSteamPipe_box> phSteamPipe,
+                       Ref<EAccountType_box> eAccountType) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto ReleaseUser(Ref<HSteamPipe_box> hSteamPipe, Ref<HSteamUser_box> hUser) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamUser(Ref<HSteamUser_box> hSteamUser,
+                     Ref<HSteamPipe_box> hSteamPipe,
+                     Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamGameServer(Ref<HSteamUser_box> hSteamUser,
+                           Ref<HSteamPipe_box> hSteamPipe,
+                           Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto SetLocalIPBinding(Ref<SteamIPAddress_t_box> unIP, Ref<uint16_box> usPort)
+      -> typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamFriends(Ref<HSteamUser_box> hSteamUser,
+                        Ref<HSteamPipe_box> hSteamPipe,
+                        Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamUtils(Ref<HSteamPipe_box> hSteamPipe,
+                      Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamMatchmaking(Ref<HSteamUser_box> hSteamUser,
+                            Ref<HSteamPipe_box> hSteamPipe,
+                            Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamMatchmakingServers(Ref<HSteamUser_box> hSteamUser,
+                                   Ref<HSteamPipe_box> hSteamPipe,
+                                   Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamGenericInterface(Ref<HSteamUser_box> hSteamUser,
+                                 Ref<HSteamPipe_box> hSteamPipe,
+                                 Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamUserStats(Ref<HSteamUser_box> hSteamUser,
+                          Ref<HSteamPipe_box> hSteamPipe,
+                          Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamGameServerStats(Ref<HSteamUser_box> hSteamuser,
+                                Ref<HSteamPipe_box> hSteamPipe,
+                                Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamApps(Ref<HSteamUser_box> hSteamUser,
+                     Ref<HSteamPipe_box> hSteamPipe,
+                     Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamNetworking(Ref<HSteamUser_box> hSteamUser,
+                           Ref<HSteamPipe_box> hSteamPipe,
+                           Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamRemoteStorage(Ref<HSteamUser_box> hSteamuser,
+                              Ref<HSteamPipe_box> hSteamPipe,
+                              Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamScreenshots(Ref<HSteamUser_box> hSteamuser,
+                            Ref<HSteamPipe_box> hSteamPipe,
+                            Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamGameSearch(Ref<HSteamUser_box> hSteamuser,
+                           Ref<HSteamPipe_box> hSteamPipe,
+                           Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetIPCCallCount() -> typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto SetWarningMessageHook(Ref<SteamAPIWarningMessageHook_t_box> pFunction) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto BShutdownIfAllPipesClosed() -> typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamHTTP(Ref<HSteamUser_box> hSteamuser,
+                     Ref<HSteamPipe_box> hSteamPipe,
+                     Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamController(Ref<HSteamUser_box> hSteamUser,
+                           Ref<HSteamPipe_box> hSteamPipe,
+                           Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamUGC(Ref<HSteamUser_box> hSteamUser,
+                    Ref<HSteamPipe_box> hSteamPipe,
+                    Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamAppList(Ref<HSteamUser_box> hSteamUser,
+                        Ref<HSteamPipe_box> hSteamPipe,
+                        Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamMusic(Ref<HSteamUser_box> hSteamuser,
+                      Ref<HSteamPipe_box> hSteamPipe,
+                      Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamMusicRemote(Ref<HSteamUser_box> hSteamuser,
+                            Ref<HSteamPipe_box> hSteamPipe,
+                            Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamHTMLSurface(Ref<HSteamUser_box> hSteamuser,
+                            Ref<HSteamPipe_box> hSteamPipe,
+                            Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamInventory(Ref<HSteamUser_box> hSteamuser,
+                          Ref<HSteamPipe_box> hSteamPipe,
+                          Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamVideo(Ref<HSteamUser_box> hSteamuser,
+                      Ref<HSteamPipe_box> hSteamPipe,
+                      Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamParentalSettings(Ref<HSteamUser_box> hSteamuser,
+                                 Ref<HSteamPipe_box> hSteamPipe,
+                                 Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamInput(Ref<HSteamUser_box> hSteamUser,
+                      Ref<HSteamPipe_box> hSteamPipe,
+                      Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamParties(Ref<HSteamUser_box> hSteamUser,
+                        Ref<HSteamPipe_box> hSteamPipe,
+                        Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+
+  template <typename C = ISteamClient_const_pointer_box>
+  auto GetISteamRemotePlay(Ref<HSteamUser_box> hSteamUser,
+                           Ref<HSteamPipe_box> hSteamPipe,
+                           Ref<char_const_pointer_box> pchVersion) ->
+      typename std::enable_if<true>::type;
+};
+
+void int64_t_box::_register_methods() {}
+
+void SteamAPIWarningMessageHook_t_box::_register_methods() {}
+
+void intptr_t_box::_register_methods() {}
+
+void int32_t_box::_register_methods() {}
+
+void bool_box::_register_methods() {}
+
+void SteamDatagramRelayAuthTicket_box::_register_methods() {}
+
+void unsigned_short_box::_register_methods() {}
+
+void char_box::_register_methods() {}
+
+void float_box::_register_methods() {}
+
+void double_box::_register_methods() {}
+
+void ISteamNetworkingConnectionSignaling_box::_register_methods() {}
+
+void ISteamNetworkingSignalingRecvContext_box::_register_methods() {}
+
+void CGameID_box::_register_methods() {}
+
+void int_box::_register_methods() {}
+
+void ISteamHTMLSurface_EHTMLKeyModifiers_box::_register_methods() {}
+
+void size_t_box::_register_methods() {}
+
+void unsigned_int_box::_register_methods() {}
+
+void CSteamID_box::_register_methods() {}
+
+void ISteamHTMLSurface_EHTMLMouseButton_box::_register_methods() {}
+
+void ESteamIPType_box::_register_methods() {}
+
+void EUniverse_box::_register_methods() {}
+
+void EResult_box::_register_methods() {}
+
+void EVoiceResult_box::_register_methods() {}
+
+void EDenyReason_box::_register_methods() {}
+
+void EBeginAuthSessionResult_box::_register_methods() {}
+
+void EAuthSessionResponse_box::_register_methods() {}
+
+void EUserHasLicenseForAppResult_box::_register_methods() {}
+
+void EAccountType_box::_register_methods() {}
+
+void EChatEntryType_box::_register_methods() {}
+
+void EChatRoomEnterResponse_box::_register_methods() {}
+
+void EChatSteamIDInstanceFlags_box::_register_methods() {}
+
+void ENotificationPosition_box::_register_methods() {}
+
+void EBroadcastUploadResult_box::_register_methods() {}
+
+void EMarketNotAllowedReasonFlags_box::_register_methods() {}
+
+void EDurationControlProgress_box::_register_methods() {}
+
+void EDurationControlNotification_box::_register_methods() {}
+
+void EDurationControlOnlineState_box::_register_methods() {}
+
+void EGameSearchErrorCode_t_box::_register_methods() {}
+
+void EPlayerResult_t_box::_register_methods() {}
+
+void ESteamIPv6ConnectivityProtocol_box::_register_methods() {}
+
+void ESteamIPv6ConnectivityState_box::_register_methods() {}
+
+void EFriendRelationship_box::_register_methods() {}
+
+void EPersonaState_box::_register_methods() {}
+
+void EFriendFlags_box::_register_methods() {}
+
+void EUserRestriction_box::_register_methods() {}
+
+void EOverlayToStoreFlag_box::_register_methods() {}
+
+void EActivateGameOverlayToWebPageMode_box::_register_methods() {}
+
+void EPersonaChange_box::_register_methods() {}
+
+void ESteamAPICallFailure_box::_register_methods() {}
+
+void EGamepadTextInputMode_box::_register_methods() {}
+
+void EGamepadTextInputLineMode_box::_register_methods() {}
+
+void ETextFilteringContext_box::_register_methods() {}
+
+void ECheckFileSignature_box::_register_methods() {}
+
+void EMatchMakingServerResponse_box::_register_methods() {}
+
+void ELobbyType_box::_register_methods() {}
+
+void ELobbyComparison_box::_register_methods() {}
+
+void ELobbyDistanceFilter_box::_register_methods() {}
+
+void EChatMemberStateChange_box::_register_methods() {}
+
+void ESteamPartyBeaconLocationType_box::_register_methods() {}
+
+void ESteamPartyBeaconLocationData_box::_register_methods() {}
+
+void ERemoteStoragePlatform_box::_register_methods() {}
+
+void ERemoteStoragePublishedFileVisibility_box::_register_methods() {}
+
+void EWorkshopFileType_box::_register_methods() {}
+
+void EWorkshopVote_box::_register_methods() {}
+
+void EWorkshopFileAction_box::_register_methods() {}
+
+void EWorkshopEnumerationType_box::_register_methods() {}
+
+void EWorkshopVideoProvider_box::_register_methods() {}
+
+void EUGCReadAction_box::_register_methods() {}
+
+void ERemoteStorageLocalFileChange_box::_register_methods() {}
+
+void ERemoteStorageFilePathType_box::_register_methods() {}
+
+void ELeaderboardDataRequest_box::_register_methods() {}
+
+void ELeaderboardSortMethod_box::_register_methods() {}
+
+void ELeaderboardDisplayType_box::_register_methods() {}
+
+void ELeaderboardUploadScoreMethod_box::_register_methods() {}
+
+void ERegisterActivationCodeResult_box::_register_methods() {}
+
+void EP2PSessionError_box::_register_methods() {}
+
+void EP2PSend_box::_register_methods() {}
+
+void ESNetSocketState_box::_register_methods() {}
+
+void ESNetSocketConnectionType_box::_register_methods() {}
+
+void EVRScreenshotType_box::_register_methods() {}
+
+void AudioPlayback_Status_box::_register_methods() {}
+
+void EHTTPMethod_box::_register_methods() {}
+
+void EHTTPStatusCode_box::_register_methods() {}
+
+void EInputSourceMode_box::_register_methods() {}
+
+void EInputActionOrigin_box::_register_methods() {}
+
+void EXboxOrigin_box::_register_methods() {}
+
+void ESteamControllerPad_box::_register_methods() {}
+
+void EControllerHapticLocation_box::_register_methods() {}
+
+void EControllerHapticType_box::_register_methods() {}
+
+void ESteamInputType_box::_register_methods() {}
+
+void ESteamInputConfigurationEnableType_box::_register_methods() {}
+
+void ESteamInputLEDFlag_box::_register_methods() {}
+
+void ESteamInputGlyphSize_box::_register_methods() {}
+
+void ESteamInputActionEventType_box::_register_methods() {}
+
+void EControllerActionOrigin_box::_register_methods() {}
+
+void ESteamControllerLEDFlag_box::_register_methods() {}
+
+void EUGCMatchingUGCType_box::_register_methods() {}
+
+void EUserUGCList_box::_register_methods() {}
+
+void EUserUGCListSortOrder_box::_register_methods() {}
+
+void EUGCQuery_box::_register_methods() {}
+
+void EItemUpdateStatus_box::_register_methods() {}
+
+void EItemState_box::_register_methods() {}
+
+void EItemStatistic_box::_register_methods() {}
+
+void EItemPreviewType_box::_register_methods() {}
+
+void ESteamItemFlags_box::_register_methods() {}
+
+void EParentalFeature_box::_register_methods() {}
+
+void ESteamDeviceFormFactor_box::_register_methods() {}
+
+void ESteamNetworkingAvailability_box::_register_methods() {}
+
+void ESteamNetworkingIdentityType_box::_register_methods() {}
+
+void ESteamNetworkingConnectionState_box::_register_methods() {}
+
+void ESteamNetConnectionEnd_box::_register_methods() {}
+
+void ESteamNetworkingConfigScope_box::_register_methods() {}
+
+void ESteamNetworkingConfigDataType_box::_register_methods() {}
+
+void ESteamNetworkingConfigValue_box::_register_methods() {}
+
+void ESteamNetworkingGetConfigValueResult_box::_register_methods() {}
+
+void ESteamNetworkingSocketsDebugOutputType_box::_register_methods() {}
+
+void EServerMode_box::_register_methods() {}
+
+void uint8_box::_register_methods() {}
+
+void int8_box::_register_methods() {}
+
+void int16_box::_register_methods() {}
+
+void uint16_box::_register_methods() {}
+
+void int32_box::_register_methods() {}
+
+void uint32_box::_register_methods() {}
+
+void int64_box::_register_methods() {}
+
+void uint64_box::_register_methods() {}
+
+void lint64_box::_register_methods() {}
+
+void ulint64_box::_register_methods() {}
+
+void intp_box::_register_methods() {}
+
+void uintp_box::_register_methods() {}
+
+void AppId_t_box::_register_methods() {}
+
+void DepotId_t_box::_register_methods() {}
+
+void RTime32_box::_register_methods() {}
+
+void SteamAPICall_t_box::_register_methods() {}
+
+void AccountID_t_box::_register_methods() {}
+
+void PartyBeaconID_t_box::_register_methods() {}
+
+void HAuthTicket_box::_register_methods() {}
+
+void PFNPreMinidumpCallback_box::_register_methods() {}
+
+void HSteamPipe_box::_register_methods() {}
+
+void HSteamUser_box::_register_methods() {}
+
+void FriendsGroupID_t_box::_register_methods() {}
+
+void HServerListRequest_box::_register_methods() {}
+
+void HServerQuery_box::_register_methods() {}
+
+void UGCHandle_t_box::_register_methods() {}
+
+void PublishedFileUpdateHandle_t_box::_register_methods() {}
+
+void PublishedFileId_t_box::_register_methods() {}
+
+void UGCFileWriteStreamHandle_t_box::_register_methods() {}
+
+void SteamLeaderboard_t_box::_register_methods() {}
+
+void SteamLeaderboardEntries_t_box::_register_methods() {}
+
+void SNetSocket_t_box::_register_methods() {}
+
+void SNetListenSocket_t_box::_register_methods() {}
+
+void ScreenshotHandle_box::_register_methods() {}
+
+void HTTPRequestHandle_box::_register_methods() {}
+
+void HTTPCookieContainerHandle_box::_register_methods() {}
+
+void InputHandle_t_box::_register_methods() {}
+
+void InputActionSetHandle_t_box::_register_methods() {}
+
+void InputDigitalActionHandle_t_box::_register_methods() {}
+
+void InputAnalogActionHandle_t_box::_register_methods() {}
+
+void SteamInputActionEventCallbackPointer_box::_register_methods() {}
+
+void ControllerHandle_t_box::_register_methods() {}
+
+void ControllerActionSetHandle_t_box::_register_methods() {}
+
+void ControllerDigitalActionHandle_t_box::_register_methods() {}
+
+void ControllerAnalogActionHandle_t_box::_register_methods() {}
+
+void UGCQueryHandle_t_box::_register_methods() {}
+
+void UGCUpdateHandle_t_box::_register_methods() {}
+
+void HHTMLBrowser_box::_register_methods() {}
+
+void SteamItemInstanceID_t_box::_register_methods() {}
+
+void SteamItemDef_t_box::_register_methods() {}
+
+void SteamInventoryResult_t_box::_register_methods() {}
+
+void SteamInventoryUpdateHandle_t_box::_register_methods() {}
+
+void RemotePlaySessionID_t_box::_register_methods() {}
+
+void FnSteamNetConnectionStatusChanged_box::_register_methods() {}
+
+void FnSteamNetAuthenticationStatusChanged_box::_register_methods() {}
+
+void FnSteamRelayNetworkStatusChanged_box::_register_methods() {}
+
+void FnSteamNetworkingMessagesSessionRequest_box::_register_methods() {}
+
+void FnSteamNetworkingMessagesSessionFailed_box::_register_methods() {}
+
+void HSteamNetConnection_box::_register_methods() {}
+
+void HSteamListenSocket_box::_register_methods() {}
+
+void HSteamNetPollGroup_box::_register_methods() {}
+
+void SteamNetworkingErrMsg_box::_register_methods() {}
+
+void SteamNetworkingPOPID_box::_register_methods() {}
+
+void SteamNetworkingMicroseconds_box::_register_methods() {}
+
+void FSteamNetworkingSocketsDebugOutput_box::_register_methods() {}
+
+auto SteamIPAddress_t_box::get_m_rgubIPv6() {
+  return cast<uint8[16]>(get_ptr()->m_rgubIPv6);
+}
+
+auto SteamIPAddress_t_box::get_m_eType() {
+  return cast<ESteamIPType_box>(get_ptr()->m_eType);
+}
+
+template <typename C>
+auto SteamIPAddress_t_box::IsSet() -> typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsSet(args...); });
+}
+
+void SteamIPAddress_t_box::_register_methods() {
+  register_method("get_m_rgubIPv6", &SteamIPAddress_t_box::get_m_rgubIPv6);
+  register_method("get_m_eType", &SteamIPAddress_t_box::get_m_eType);
+  register_method("IsSet", &SteamIPAddress_t_box::IsSet);
+}
+
+auto FriendGameInfo_t_box::get_m_gameID() {
+  return cast<CGameID_box>(get_ptr()->m_gameID);
+}
+
+auto FriendGameInfo_t_box::get_m_unGameIP() {
+  return cast<uint32_box>(get_ptr()->m_unGameIP);
+}
+
+auto FriendGameInfo_t_box::get_m_usGamePort() {
+  return cast<uint16_box>(get_ptr()->m_usGamePort);
+}
+
+auto FriendGameInfo_t_box::get_m_usQueryPort() {
+  return cast<uint16_box>(get_ptr()->m_usQueryPort);
+}
+
+auto FriendGameInfo_t_box::get_m_steamIDLobby() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDLobby);
+}
+
+void FriendGameInfo_t_box::_register_methods() {
+  register_method("get_m_gameID", &FriendGameInfo_t_box::get_m_gameID);
+  register_method("get_m_unGameIP", &FriendGameInfo_t_box::get_m_unGameIP);
+  register_method("get_m_usGamePort", &FriendGameInfo_t_box::get_m_usGamePort);
+  register_method("get_m_usQueryPort",
+                  &FriendGameInfo_t_box::get_m_usQueryPort);
+  register_method("get_m_steamIDLobby",
+                  &FriendGameInfo_t_box::get_m_steamIDLobby);
+}
+
+auto MatchMakingKeyValuePair_t_box::get_m_szKey() {
+  return cast<char[256]>(get_ptr()->m_szKey);
+}
+
+auto MatchMakingKeyValuePair_t_box::get_m_szValue() {
+  return cast<char[256]>(get_ptr()->m_szValue);
+}
+
+void MatchMakingKeyValuePair_t_box::_register_methods() {
+  register_method("get_m_szKey", &MatchMakingKeyValuePair_t_box::get_m_szKey);
+  register_method("get_m_szValue",
+                  &MatchMakingKeyValuePair_t_box::get_m_szValue);
+}
+
+template <typename C>
+auto servernetadr_t_box::Init(Ref<unsigned_int_box> ip,
+                              Ref<uint16_box> usQueryPort,
+                              Ref<uint16_box> usConnectionPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>([](auto *data, auto &&...args) { return data->Init(args...); },
+                 ip->get(), usQueryPort->get(), usConnectionPort->get());
+}
+
+template <typename C>
+auto servernetadr_t_box::GetQueryPort() -> typename std::enable_if<true>::type {
+
+  call<uint16_box>(
+      [](auto *data, auto &&...args) { return data->GetQueryPort(args...); });
+}
+
+template <typename C>
+auto servernetadr_t_box::SetQueryPort(Ref<uint16_box> usPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetQueryPort(args...); },
+      usPort->get());
+}
+
+template <typename C>
+auto servernetadr_t_box::GetConnectionPort() ->
+    typename std::enable_if<true>::type {
+
+  call<uint16_box>([](auto *data, auto &&...args) {
+    return data->GetConnectionPort(args...);
+  });
+}
+
+template <typename C>
+auto servernetadr_t_box::SetConnectionPort(Ref<uint16_box> usPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) {
+        return data->SetConnectionPort(args...);
+      },
+      usPort->get());
+}
+
+template <typename C>
+auto servernetadr_t_box::GetIP() -> typename std::enable_if<true>::type {
+
+  call<uint32_box>(
+      [](auto *data, auto &&...args) { return data->GetIP(args...); });
+}
+
+template <typename C>
+auto servernetadr_t_box::SetIP(Ref<uint32_box> unIP) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetIP(args...); },
+      unIP->get());
+}
+
+template <typename C>
+auto servernetadr_t_box::GetConnectionAddressString() ->
+    typename std::enable_if<true>::type {
+
+  call<char_const_pointer_box>([](auto *data, auto &&...args) {
+    return data->GetConnectionAddressString(args...);
+  });
+}
+
+template <typename C>
+auto servernetadr_t_box::GetQueryAddressString() ->
+    typename std::enable_if<true>::type {
+
+  call<char_const_pointer_box>([](auto *data, auto &&...args) {
+    return data->GetQueryAddressString(args...);
+  });
+}
+
+void servernetadr_t_box::_register_methods() {
+  register_method("Init", &servernetadr_t_box::Init);
+  register_method("GetQueryPort", &servernetadr_t_box::GetQueryPort);
+  register_method("SetQueryPort", &servernetadr_t_box::SetQueryPort);
+  register_method("GetConnectionPort", &servernetadr_t_box::GetConnectionPort);
+  register_method("SetConnectionPort", &servernetadr_t_box::SetConnectionPort);
+  register_method("GetIP", &servernetadr_t_box::GetIP);
+  register_method("SetIP", &servernetadr_t_box::SetIP);
+  register_method("GetConnectionAddressString",
+                  &servernetadr_t_box::GetConnectionAddressString);
+  register_method("GetQueryAddressString",
+                  &servernetadr_t_box::GetQueryAddressString);
+}
+
+auto gameserveritem_t_box::get_m_NetAdr() {
+  return cast<servernetadr_t_box>(get_ptr()->m_NetAdr);
+}
+
+auto gameserveritem_t_box::get_m_nPing() {
+  return cast<int_box>(get_ptr()->m_nPing);
+}
+
+auto gameserveritem_t_box::get_m_bHadSuccessfulResponse() {
+  return cast<bool_box>(get_ptr()->m_bHadSuccessfulResponse);
+}
+
+auto gameserveritem_t_box::get_m_bDoNotRefresh() {
+  return cast<bool_box>(get_ptr()->m_bDoNotRefresh);
+}
+
+auto gameserveritem_t_box::get_m_szGameDir() {
+  return cast<char[32]>(get_ptr()->m_szGameDir);
+}
+
+auto gameserveritem_t_box::get_m_szMap() {
+  return cast<char[32]>(get_ptr()->m_szMap);
+}
+
+auto gameserveritem_t_box::get_m_szGameDescription() {
+  return cast<char[64]>(get_ptr()->m_szGameDescription);
+}
+
+auto gameserveritem_t_box::get_m_nAppID() {
+  return cast<uint32_box>(get_ptr()->m_nAppID);
+}
+
+auto gameserveritem_t_box::get_m_nPlayers() {
+  return cast<int_box>(get_ptr()->m_nPlayers);
+}
+
+auto gameserveritem_t_box::get_m_nMaxPlayers() {
+  return cast<int_box>(get_ptr()->m_nMaxPlayers);
+}
+
+auto gameserveritem_t_box::get_m_nBotPlayers() {
+  return cast<int_box>(get_ptr()->m_nBotPlayers);
+}
+
+auto gameserveritem_t_box::get_m_bPassword() {
+  return cast<bool_box>(get_ptr()->m_bPassword);
+}
+
+auto gameserveritem_t_box::get_m_bSecure() {
+  return cast<bool_box>(get_ptr()->m_bSecure);
+}
+
+auto gameserveritem_t_box::get_m_ulTimeLastPlayed() {
+  return cast<uint32_box>(get_ptr()->m_ulTimeLastPlayed);
+}
+
+auto gameserveritem_t_box::get_m_nServerVersion() {
+  return cast<int_box>(get_ptr()->m_nServerVersion);
+}
+
+auto gameserveritem_t_box::get_m_szGameTags() {
+  return cast<char[128]>(get_ptr()->m_szGameTags);
+}
+
+auto gameserveritem_t_box::get_m_steamID() {
+  return cast<CSteamID_box>(get_ptr()->m_steamID);
+}
+
+template <typename C>
+auto gameserveritem_t_box::GetName() -> typename std::enable_if<true>::type {
+
+  call<char_const_pointer_box>(
+      [](auto *data, auto &&...args) { return data->GetName(args...); });
+}
+
+template <typename C>
+auto gameserveritem_t_box::SetName(Ref<char_const_pointer_box> pName) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetName(args...); },
+      pName->get_ptr());
+}
+
+void gameserveritem_t_box::_register_methods() {
+  register_method("get_m_NetAdr", &gameserveritem_t_box::get_m_NetAdr);
+  register_method("get_m_nPing", &gameserveritem_t_box::get_m_nPing);
+  register_method("get_m_bHadSuccessfulResponse",
+                  &gameserveritem_t_box::get_m_bHadSuccessfulResponse);
+  register_method("get_m_bDoNotRefresh",
+                  &gameserveritem_t_box::get_m_bDoNotRefresh);
+  register_method("get_m_szGameDir", &gameserveritem_t_box::get_m_szGameDir);
+  register_method("get_m_szMap", &gameserveritem_t_box::get_m_szMap);
+  register_method("get_m_szGameDescription",
+                  &gameserveritem_t_box::get_m_szGameDescription);
+  register_method("get_m_nAppID", &gameserveritem_t_box::get_m_nAppID);
+  register_method("get_m_nPlayers", &gameserveritem_t_box::get_m_nPlayers);
+  register_method("get_m_nMaxPlayers",
+                  &gameserveritem_t_box::get_m_nMaxPlayers);
+  register_method("get_m_nBotPlayers",
+                  &gameserveritem_t_box::get_m_nBotPlayers);
+  register_method("get_m_bPassword", &gameserveritem_t_box::get_m_bPassword);
+  register_method("get_m_bSecure", &gameserveritem_t_box::get_m_bSecure);
+  register_method("get_m_ulTimeLastPlayed",
+                  &gameserveritem_t_box::get_m_ulTimeLastPlayed);
+  register_method("get_m_nServerVersion",
+                  &gameserveritem_t_box::get_m_nServerVersion);
+  register_method("get_m_szGameTags", &gameserveritem_t_box::get_m_szGameTags);
+  register_method("get_m_steamID", &gameserveritem_t_box::get_m_steamID);
+  register_method("GetName", &gameserveritem_t_box::GetName);
+  register_method("SetName", &gameserveritem_t_box::SetName);
+}
+
+auto SteamPartyBeaconLocation_t_box::get_m_eType() {
+  return cast<ESteamPartyBeaconLocationType_box>(get_ptr()->m_eType);
+}
+
+auto SteamPartyBeaconLocation_t_box::get_m_ulLocationID() {
+  return cast<uint64_box>(get_ptr()->m_ulLocationID);
+}
+
+void SteamPartyBeaconLocation_t_box::_register_methods() {
+  register_method("get_m_eType", &SteamPartyBeaconLocation_t_box::get_m_eType);
+  register_method("get_m_ulLocationID",
+                  &SteamPartyBeaconLocation_t_box::get_m_ulLocationID);
+}
+
+auto SteamParamStringArray_t_box::get_m_nNumStrings() {
+  return cast<int32_box>(get_ptr()->m_nNumStrings);
+}
+
+void SteamParamStringArray_t_box::_register_methods() {
+  register_method("get_m_nNumStrings",
+                  &SteamParamStringArray_t_box::get_m_nNumStrings);
+}
+
+auto LeaderboardEntry_t_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+auto LeaderboardEntry_t_box::get_m_nGlobalRank() {
+  return cast<int32_box>(get_ptr()->m_nGlobalRank);
+}
+
+auto LeaderboardEntry_t_box::get_m_nScore() {
+  return cast<int32_box>(get_ptr()->m_nScore);
+}
+
+auto LeaderboardEntry_t_box::get_m_cDetails() {
+  return cast<int32_box>(get_ptr()->m_cDetails);
+}
+
+auto LeaderboardEntry_t_box::get_m_hUGC() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hUGC);
+}
+
+void LeaderboardEntry_t_box::_register_methods() {
+  register_method("get_m_steamIDUser",
+                  &LeaderboardEntry_t_box::get_m_steamIDUser);
+  register_method("get_m_nGlobalRank",
+                  &LeaderboardEntry_t_box::get_m_nGlobalRank);
+  register_method("get_m_nScore", &LeaderboardEntry_t_box::get_m_nScore);
+  register_method("get_m_cDetails", &LeaderboardEntry_t_box::get_m_cDetails);
+  register_method("get_m_hUGC", &LeaderboardEntry_t_box::get_m_hUGC);
+}
+
+auto P2PSessionState_t_box::get_m_bConnectionActive() {
+  return cast<uint8_box>(get_ptr()->m_bConnectionActive);
+}
+
+auto P2PSessionState_t_box::get_m_bConnecting() {
+  return cast<uint8_box>(get_ptr()->m_bConnecting);
+}
+
+auto P2PSessionState_t_box::get_m_eP2PSessionError() {
+  return cast<uint8_box>(get_ptr()->m_eP2PSessionError);
+}
+
+auto P2PSessionState_t_box::get_m_bUsingRelay() {
+  return cast<uint8_box>(get_ptr()->m_bUsingRelay);
+}
+
+auto P2PSessionState_t_box::get_m_nBytesQueuedForSend() {
+  return cast<int32_box>(get_ptr()->m_nBytesQueuedForSend);
+}
+
+auto P2PSessionState_t_box::get_m_nPacketsQueuedForSend() {
+  return cast<int32_box>(get_ptr()->m_nPacketsQueuedForSend);
+}
+
+auto P2PSessionState_t_box::get_m_nRemoteIP() {
+  return cast<uint32_box>(get_ptr()->m_nRemoteIP);
+}
+
+auto P2PSessionState_t_box::get_m_nRemotePort() {
+  return cast<uint16_box>(get_ptr()->m_nRemotePort);
+}
+
+void P2PSessionState_t_box::_register_methods() {
+  register_method("get_m_bConnectionActive",
+                  &P2PSessionState_t_box::get_m_bConnectionActive);
+  register_method("get_m_bConnecting",
+                  &P2PSessionState_t_box::get_m_bConnecting);
+  register_method("get_m_eP2PSessionError",
+                  &P2PSessionState_t_box::get_m_eP2PSessionError);
+  register_method("get_m_bUsingRelay",
+                  &P2PSessionState_t_box::get_m_bUsingRelay);
+  register_method("get_m_nBytesQueuedForSend",
+                  &P2PSessionState_t_box::get_m_nBytesQueuedForSend);
+  register_method("get_m_nPacketsQueuedForSend",
+                  &P2PSessionState_t_box::get_m_nPacketsQueuedForSend);
+  register_method("get_m_nRemoteIP", &P2PSessionState_t_box::get_m_nRemoteIP);
+  register_method("get_m_nRemotePort",
+                  &P2PSessionState_t_box::get_m_nRemotePort);
+}
+
+auto InputAnalogActionData_t_box::get_eMode() {
+  return cast<EInputSourceMode_box>(get_ptr()->eMode);
+}
+
+auto InputAnalogActionData_t_box::get_x() {
+  return cast<float_box>(get_ptr()->x);
+}
+
+auto InputAnalogActionData_t_box::get_y() {
+  return cast<float_box>(get_ptr()->y);
+}
+
+auto InputAnalogActionData_t_box::get_bActive() {
+  return cast<bool_box>(get_ptr()->bActive);
+}
+
+void InputAnalogActionData_t_box::_register_methods() {
+  register_method("get_eMode", &InputAnalogActionData_t_box::get_eMode);
+  register_method("get_x", &InputAnalogActionData_t_box::get_x);
+  register_method("get_y", &InputAnalogActionData_t_box::get_y);
+  register_method("get_bActive", &InputAnalogActionData_t_box::get_bActive);
+}
+
+auto InputDigitalActionData_t_box::get_bState() {
+  return cast<bool_box>(get_ptr()->bState);
+}
+
+auto InputDigitalActionData_t_box::get_bActive() {
+  return cast<bool_box>(get_ptr()->bActive);
+}
+
+void InputDigitalActionData_t_box::_register_methods() {
+  register_method("get_bState", &InputDigitalActionData_t_box::get_bState);
+  register_method("get_bActive", &InputDigitalActionData_t_box::get_bActive);
+}
+
+auto InputMotionData_t_box::get_rotQuatX() {
+  return cast<float_box>(get_ptr()->rotQuatX);
+}
+
+auto InputMotionData_t_box::get_rotQuatY() {
+  return cast<float_box>(get_ptr()->rotQuatY);
+}
+
+auto InputMotionData_t_box::get_rotQuatZ() {
+  return cast<float_box>(get_ptr()->rotQuatZ);
+}
+
+auto InputMotionData_t_box::get_rotQuatW() {
+  return cast<float_box>(get_ptr()->rotQuatW);
+}
+
+auto InputMotionData_t_box::get_posAccelX() {
+  return cast<float_box>(get_ptr()->posAccelX);
+}
+
+auto InputMotionData_t_box::get_posAccelY() {
+  return cast<float_box>(get_ptr()->posAccelY);
+}
+
+auto InputMotionData_t_box::get_posAccelZ() {
+  return cast<float_box>(get_ptr()->posAccelZ);
+}
+
+auto InputMotionData_t_box::get_rotVelX() {
+  return cast<float_box>(get_ptr()->rotVelX);
+}
+
+auto InputMotionData_t_box::get_rotVelY() {
+  return cast<float_box>(get_ptr()->rotVelY);
+}
+
+auto InputMotionData_t_box::get_rotVelZ() {
+  return cast<float_box>(get_ptr()->rotVelZ);
+}
+
+void InputMotionData_t_box::_register_methods() {
+  register_method("get_rotQuatX", &InputMotionData_t_box::get_rotQuatX);
+  register_method("get_rotQuatY", &InputMotionData_t_box::get_rotQuatY);
+  register_method("get_rotQuatZ", &InputMotionData_t_box::get_rotQuatZ);
+  register_method("get_rotQuatW", &InputMotionData_t_box::get_rotQuatW);
+  register_method("get_posAccelX", &InputMotionData_t_box::get_posAccelX);
+  register_method("get_posAccelY", &InputMotionData_t_box::get_posAccelY);
+  register_method("get_posAccelZ", &InputMotionData_t_box::get_posAccelZ);
+  register_method("get_rotVelX", &InputMotionData_t_box::get_rotVelX);
+  register_method("get_rotVelY", &InputMotionData_t_box::get_rotVelY);
+  register_method("get_rotVelZ", &InputMotionData_t_box::get_rotVelZ);
+}
+
+auto SteamInputActionEvent_t_box::get_controllerHandle() {
+  return cast<InputHandle_t_box>(get_ptr()->controllerHandle);
+}
+
+auto SteamInputActionEvent_t_box::get_eEventType() {
+  return cast<ESteamInputActionEventType_box>(get_ptr()->eEventType);
+}
+
+void SteamInputActionEvent_t_box::_register_methods() {
+  register_method("get_controllerHandle",
+                  &SteamInputActionEvent_t_box::get_controllerHandle);
+  register_method("get_eEventType",
+                  &SteamInputActionEvent_t_box::get_eEventType);
+}
+
+auto SteamUGCDetails_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto SteamUGCDetails_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SteamUGCDetails_t_box::get_m_eFileType() {
+  return cast<EWorkshopFileType_box>(get_ptr()->m_eFileType);
+}
+
+auto SteamUGCDetails_t_box::get_m_nCreatorAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nCreatorAppID);
+}
+
+auto SteamUGCDetails_t_box::get_m_nConsumerAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nConsumerAppID);
+}
+
+auto SteamUGCDetails_t_box::get_m_rgchTitle() {
+  return cast<char[129]>(get_ptr()->m_rgchTitle);
+}
+
+auto SteamUGCDetails_t_box::get_m_rgchDescription() {
+  return cast<char[8000]>(get_ptr()->m_rgchDescription);
+}
+
+auto SteamUGCDetails_t_box::get_m_ulSteamIDOwner() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDOwner);
+}
+
+auto SteamUGCDetails_t_box::get_m_rtimeCreated() {
+  return cast<uint32_box>(get_ptr()->m_rtimeCreated);
+}
+
+auto SteamUGCDetails_t_box::get_m_rtimeUpdated() {
+  return cast<uint32_box>(get_ptr()->m_rtimeUpdated);
+}
+
+auto SteamUGCDetails_t_box::get_m_rtimeAddedToUserList() {
+  return cast<uint32_box>(get_ptr()->m_rtimeAddedToUserList);
+}
+
+auto SteamUGCDetails_t_box::get_m_eVisibility() {
+  return cast<ERemoteStoragePublishedFileVisibility_box>(
+      get_ptr()->m_eVisibility);
+}
+
+auto SteamUGCDetails_t_box::get_m_bBanned() {
+  return cast<bool_box>(get_ptr()->m_bBanned);
+}
+
+auto SteamUGCDetails_t_box::get_m_bAcceptedForUse() {
+  return cast<bool_box>(get_ptr()->m_bAcceptedForUse);
+}
+
+auto SteamUGCDetails_t_box::get_m_bTagsTruncated() {
+  return cast<bool_box>(get_ptr()->m_bTagsTruncated);
+}
+
+auto SteamUGCDetails_t_box::get_m_rgchTags() {
+  return cast<char[1025]>(get_ptr()->m_rgchTags);
+}
+
+auto SteamUGCDetails_t_box::get_m_hFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hFile);
+}
+
+auto SteamUGCDetails_t_box::get_m_hPreviewFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hPreviewFile);
+}
+
+auto SteamUGCDetails_t_box::get_m_pchFileName() {
+  return cast<char[260]>(get_ptr()->m_pchFileName);
+}
+
+auto SteamUGCDetails_t_box::get_m_nFileSize() {
+  return cast<int32_box>(get_ptr()->m_nFileSize);
+}
+
+auto SteamUGCDetails_t_box::get_m_nPreviewFileSize() {
+  return cast<int32_box>(get_ptr()->m_nPreviewFileSize);
+}
+
+auto SteamUGCDetails_t_box::get_m_rgchURL() {
+  return cast<char[256]>(get_ptr()->m_rgchURL);
+}
+
+auto SteamUGCDetails_t_box::get_m_unVotesUp() {
+  return cast<uint32_box>(get_ptr()->m_unVotesUp);
+}
+
+auto SteamUGCDetails_t_box::get_m_unVotesDown() {
+  return cast<uint32_box>(get_ptr()->m_unVotesDown);
+}
+
+auto SteamUGCDetails_t_box::get_m_flScore() {
+  return cast<float_box>(get_ptr()->m_flScore);
+}
+
+auto SteamUGCDetails_t_box::get_m_unNumChildren() {
+  return cast<uint32_box>(get_ptr()->m_unNumChildren);
+}
+
+void SteamUGCDetails_t_box::_register_methods() {
+  register_method("get_m_nPublishedFileId",
+                  &SteamUGCDetails_t_box::get_m_nPublishedFileId);
+  register_method("get_m_eResult", &SteamUGCDetails_t_box::get_m_eResult);
+  register_method("get_m_eFileType", &SteamUGCDetails_t_box::get_m_eFileType);
+  register_method("get_m_nCreatorAppID",
+                  &SteamUGCDetails_t_box::get_m_nCreatorAppID);
+  register_method("get_m_nConsumerAppID",
+                  &SteamUGCDetails_t_box::get_m_nConsumerAppID);
+  register_method("get_m_rgchTitle", &SteamUGCDetails_t_box::get_m_rgchTitle);
+  register_method("get_m_rgchDescription",
+                  &SteamUGCDetails_t_box::get_m_rgchDescription);
+  register_method("get_m_ulSteamIDOwner",
+                  &SteamUGCDetails_t_box::get_m_ulSteamIDOwner);
+  register_method("get_m_rtimeCreated",
+                  &SteamUGCDetails_t_box::get_m_rtimeCreated);
+  register_method("get_m_rtimeUpdated",
+                  &SteamUGCDetails_t_box::get_m_rtimeUpdated);
+  register_method("get_m_rtimeAddedToUserList",
+                  &SteamUGCDetails_t_box::get_m_rtimeAddedToUserList);
+  register_method("get_m_eVisibility",
+                  &SteamUGCDetails_t_box::get_m_eVisibility);
+  register_method("get_m_bBanned", &SteamUGCDetails_t_box::get_m_bBanned);
+  register_method("get_m_bAcceptedForUse",
+                  &SteamUGCDetails_t_box::get_m_bAcceptedForUse);
+  register_method("get_m_bTagsTruncated",
+                  &SteamUGCDetails_t_box::get_m_bTagsTruncated);
+  register_method("get_m_rgchTags", &SteamUGCDetails_t_box::get_m_rgchTags);
+  register_method("get_m_hFile", &SteamUGCDetails_t_box::get_m_hFile);
+  register_method("get_m_hPreviewFile",
+                  &SteamUGCDetails_t_box::get_m_hPreviewFile);
+  register_method("get_m_pchFileName",
+                  &SteamUGCDetails_t_box::get_m_pchFileName);
+  register_method("get_m_nFileSize", &SteamUGCDetails_t_box::get_m_nFileSize);
+  register_method("get_m_nPreviewFileSize",
+                  &SteamUGCDetails_t_box::get_m_nPreviewFileSize);
+  register_method("get_m_rgchURL", &SteamUGCDetails_t_box::get_m_rgchURL);
+  register_method("get_m_unVotesUp", &SteamUGCDetails_t_box::get_m_unVotesUp);
+  register_method("get_m_unVotesDown",
+                  &SteamUGCDetails_t_box::get_m_unVotesDown);
+  register_method("get_m_flScore", &SteamUGCDetails_t_box::get_m_flScore);
+  register_method("get_m_unNumChildren",
+                  &SteamUGCDetails_t_box::get_m_unNumChildren);
+}
+
+auto SteamItemDetails_t_box::get_m_itemId() {
+  return cast<SteamItemInstanceID_t_box>(get_ptr()->m_itemId);
+}
+
+auto SteamItemDetails_t_box::get_m_iDefinition() {
+  return cast<SteamItemDef_t_box>(get_ptr()->m_iDefinition);
+}
+
+auto SteamItemDetails_t_box::get_m_unQuantity() {
+  return cast<uint16_box>(get_ptr()->m_unQuantity);
+}
+
+auto SteamItemDetails_t_box::get_m_unFlags() {
+  return cast<uint16_box>(get_ptr()->m_unFlags);
+}
+
+void SteamItemDetails_t_box::_register_methods() {
+  register_method("get_m_itemId", &SteamItemDetails_t_box::get_m_itemId);
+  register_method("get_m_iDefinition",
+                  &SteamItemDetails_t_box::get_m_iDefinition);
+  register_method("get_m_unQuantity",
+                  &SteamItemDetails_t_box::get_m_unQuantity);
+  register_method("get_m_unFlags", &SteamItemDetails_t_box::get_m_unFlags);
+}
+
+auto SteamNetworkingIPAddr_box::get_m_ipv6() {
+  return cast<uint8[16]>(get_ptr()->m_ipv6);
+}
+
+auto SteamNetworkingIPAddr_box::get_m_port() {
+  return cast<uint16_box>(get_ptr()->m_port);
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_box::Clear() -> typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->Clear(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_box::IsIPv6AllZeros() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsIPv6AllZeros(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_box::SetIPv6(Ref<uint8_const_pointer_box> ipv6,
+                                        Ref<uint16_box> nPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetIPv6(args...); },
+      ipv6->get_ptr(), nPort->get());
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_box::SetIPv4(Ref<uint32_box> nIP,
+                                        Ref<uint16_box> nPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetIPv4(args...); },
+      nIP->get(), nPort->get());
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_box::IsIPv4() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsIPv4(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_box::GetIPv4() ->
+    typename std::enable_if<true>::type {
+
+  call<uint32_box>(
+      [](auto *data, auto &&...args) { return data->GetIPv4(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_box::SetIPv6LocalHost(Ref<uint16_box> nPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>([](auto *data,
+                    auto &&...args) { return data->SetIPv6LocalHost(args...); },
+                 nPort->get());
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_box::IsLocalHost() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsLocalHost(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_box::ToString(Ref<char_box> buf,
+                                         Ref<uint32_box> cbBuf,
+                                         Ref<bool_box> bWithPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->ToString(args...); },
+      buf->get_ptr(), cbBuf->get(), bWithPort->get());
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_box::ParseString(Ref<char_const_pointer_box> pszStr)
+    -> typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->ParseString(args...); },
+      pszStr->get_ptr());
+}
+
+void SteamNetworkingIPAddr_box::_register_methods() {
+  register_method("get_m_ipv6", &SteamNetworkingIPAddr_box::get_m_ipv6);
+  register_method("get_m_port", &SteamNetworkingIPAddr_box::get_m_port);
+  register_method("Clear", &SteamNetworkingIPAddr_box::Clear);
+  register_method("IsIPv6AllZeros", &SteamNetworkingIPAddr_box::IsIPv6AllZeros);
+  register_method("SetIPv6", &SteamNetworkingIPAddr_box::SetIPv6);
+  register_method("SetIPv4", &SteamNetworkingIPAddr_box::SetIPv4);
+  register_method("IsIPv4", &SteamNetworkingIPAddr_box::IsIPv4);
+  register_method("GetIPv4", &SteamNetworkingIPAddr_box::GetIPv4);
+  register_method("SetIPv6LocalHost",
+                  &SteamNetworkingIPAddr_box::SetIPv6LocalHost);
+  register_method("IsLocalHost", &SteamNetworkingIPAddr_box::IsLocalHost);
+  register_method("ToString", &SteamNetworkingIPAddr_box::ToString);
+  register_method("ParseString", &SteamNetworkingIPAddr_box::ParseString);
+}
+
+auto SteamNetworkingIdentity_box::get_m_eType() {
+  return cast<ESteamNetworkingIdentityType_box>(get_ptr()->m_eType);
+}
+
+auto SteamNetworkingIdentity_box::get_m_cbSize() {
+  return cast<int_box>(get_ptr()->m_cbSize);
+}
+
+auto SteamNetworkingIdentity_box::get_m_szUnknownRawString() {
+  return cast<char[128]>(get_ptr()->m_szUnknownRawString);
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::Clear() ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->Clear(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::IsInvalid() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsInvalid(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::SetSteamID(Ref<CSteamID_box> steamID) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetSteamID(args...); },
+      steamID->get());
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::GetSteamID() ->
+    typename std::enable_if<true>::type {
+
+  call<CSteamID_box>(
+      [](auto *data, auto &&...args) { return data->GetSteamID(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::SetSteamID64(Ref<uint64_box> steamID) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetSteamID64(args...); },
+      steamID->get());
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::GetSteamID64() ->
+    typename std::enable_if<true>::type {
+
+  call<uint64_box>(
+      [](auto *data, auto &&...args) { return data->GetSteamID64(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::SetIPAddr(Ref<SteamNetworkingIPAddr_box> addr)
+    -> typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetIPAddr(args...); },
+      addr->get());
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::GetIPAddr() ->
+    typename std::enable_if<true>::type {
+
+  call<SteamNetworkingIPAddr_const_pointer_box>(
+      [](auto *data, auto &&...args) { return data->GetIPAddr(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::SetLocalHost() ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetLocalHost(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::IsLocalHost() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsLocalHost(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::SetGenericString(
+    Ref<char_const_pointer_box> pszString) ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>([](auto *data,
+                    auto &&...args) { return data->SetGenericString(args...); },
+                 pszString->get_ptr());
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::GetGenericString() ->
+    typename std::enable_if<true>::type {
+
+  call<char_const_pointer_box>([](auto *data, auto &&...args) {
+    return data->GetGenericString(args...);
+  });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::SetGenericBytes(
+    Ref<void_const_pointer_box> data, Ref<uint32_box> cbLen) ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->SetGenericBytes(args...); },
+      data->get_ptr(), cbLen->get());
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::GetGenericBytes(Ref<int_box> cbLen) ->
+    typename std::enable_if<true>::type {
+
+  call<uint8_const_pointer_box>(
+      [](auto *data, auto &&...args) { return data->GetGenericBytes(args...); },
+      cbLen->get());
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::ToString(Ref<char_box> buf,
+                                           Ref<uint32_box> cbBuf) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->ToString(args...); },
+      buf->get_ptr(), cbBuf->get());
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_box::ParseString(
+    Ref<char_const_pointer_box> pszStr) -> typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->ParseString(args...); },
+      pszStr->get_ptr());
+}
+
+void SteamNetworkingIdentity_box::_register_methods() {
+  register_method("get_m_eType", &SteamNetworkingIdentity_box::get_m_eType);
+  register_method("get_m_cbSize", &SteamNetworkingIdentity_box::get_m_cbSize);
+  register_method("get_m_szUnknownRawString",
+                  &SteamNetworkingIdentity_box::get_m_szUnknownRawString);
+  register_method("Clear", &SteamNetworkingIdentity_box::Clear);
+  register_method("IsInvalid", &SteamNetworkingIdentity_box::IsInvalid);
+  register_method("SetSteamID", &SteamNetworkingIdentity_box::SetSteamID);
+  register_method("GetSteamID", &SteamNetworkingIdentity_box::GetSteamID);
+  register_method("SetSteamID64", &SteamNetworkingIdentity_box::SetSteamID64);
+  register_method("GetSteamID64", &SteamNetworkingIdentity_box::GetSteamID64);
+  register_method("SetIPAddr", &SteamNetworkingIdentity_box::SetIPAddr);
+  register_method("GetIPAddr", &SteamNetworkingIdentity_box::GetIPAddr);
+  register_method("SetLocalHost", &SteamNetworkingIdentity_box::SetLocalHost);
+  register_method("IsLocalHost", &SteamNetworkingIdentity_box::IsLocalHost);
+  register_method("SetGenericString",
+                  &SteamNetworkingIdentity_box::SetGenericString);
+  register_method("GetGenericString",
+                  &SteamNetworkingIdentity_box::GetGenericString);
+  register_method("SetGenericBytes",
+                  &SteamNetworkingIdentity_box::SetGenericBytes);
+  register_method("GetGenericBytes",
+                  &SteamNetworkingIdentity_box::GetGenericBytes);
+  register_method("ToString", &SteamNetworkingIdentity_box::ToString);
+  register_method("ParseString", &SteamNetworkingIdentity_box::ParseString);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m_identityRemote() {
+  return cast<SteamNetworkingIdentity_box>(get_ptr()->m_identityRemote);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m_nUserData() {
+  return cast<int64_box>(get_ptr()->m_nUserData);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m_hListenSocket() {
+  return cast<HSteamListenSocket_box>(get_ptr()->m_hListenSocket);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m_addrRemote() {
+  return cast<SteamNetworkingIPAddr_box>(get_ptr()->m_addrRemote);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m__pad1() {
+  return cast<uint16_box>(get_ptr()->m__pad1);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m_idPOPRemote() {
+  return cast<SteamNetworkingPOPID_box>(get_ptr()->m_idPOPRemote);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m_idPOPRelay() {
+  return cast<SteamNetworkingPOPID_box>(get_ptr()->m_idPOPRelay);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m_eState() {
+  return cast<ESteamNetworkingConnectionState_box>(get_ptr()->m_eState);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m_eEndReason() {
+  return cast<int_box>(get_ptr()->m_eEndReason);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m_szEndDebug() {
+  return cast<char[128]>(get_ptr()->m_szEndDebug);
+}
+
+auto SteamNetConnectionInfo_t_box::get_m_szConnectionDescription() {
+  return cast<char[128]>(get_ptr()->m_szConnectionDescription);
+}
+
+auto SteamNetConnectionInfo_t_box::get_reserved() {
+  return cast<uint32[63]>(get_ptr()->reserved);
+}
+
+void SteamNetConnectionInfo_t_box::_register_methods() {
+  register_method("get_m_identityRemote",
+                  &SteamNetConnectionInfo_t_box::get_m_identityRemote);
+  register_method("get_m_nUserData",
+                  &SteamNetConnectionInfo_t_box::get_m_nUserData);
+  register_method("get_m_hListenSocket",
+                  &SteamNetConnectionInfo_t_box::get_m_hListenSocket);
+  register_method("get_m_addrRemote",
+                  &SteamNetConnectionInfo_t_box::get_m_addrRemote);
+  register_method("get_m__pad1", &SteamNetConnectionInfo_t_box::get_m__pad1);
+  register_method("get_m_idPOPRemote",
+                  &SteamNetConnectionInfo_t_box::get_m_idPOPRemote);
+  register_method("get_m_idPOPRelay",
+                  &SteamNetConnectionInfo_t_box::get_m_idPOPRelay);
+  register_method("get_m_eState", &SteamNetConnectionInfo_t_box::get_m_eState);
+  register_method("get_m_eEndReason",
+                  &SteamNetConnectionInfo_t_box::get_m_eEndReason);
+  register_method("get_m_szEndDebug",
+                  &SteamNetConnectionInfo_t_box::get_m_szEndDebug);
+  register_method("get_m_szConnectionDescription",
+                  &SteamNetConnectionInfo_t_box::get_m_szConnectionDescription);
+  register_method("get_reserved", &SteamNetConnectionInfo_t_box::get_reserved);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_eState() {
+  return cast<ESteamNetworkingConnectionState_box>(get_ptr()->m_eState);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_nPing() {
+  return cast<int_box>(get_ptr()->m_nPing);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::
+    get_m_flConnectionQualityLocal() {
+  return cast<float_box>(get_ptr()->m_flConnectionQualityLocal);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::
+    get_m_flConnectionQualityRemote() {
+  return cast<float_box>(get_ptr()->m_flConnectionQualityRemote);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_flOutPacketsPerSec() {
+  return cast<float_box>(get_ptr()->m_flOutPacketsPerSec);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_flOutBytesPerSec() {
+  return cast<float_box>(get_ptr()->m_flOutBytesPerSec);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_flInPacketsPerSec() {
+  return cast<float_box>(get_ptr()->m_flInPacketsPerSec);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_flInBytesPerSec() {
+  return cast<float_box>(get_ptr()->m_flInBytesPerSec);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_nSendRateBytesPerSecond() {
+  return cast<int_box>(get_ptr()->m_nSendRateBytesPerSecond);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_cbPendingUnreliable() {
+  return cast<int_box>(get_ptr()->m_cbPendingUnreliable);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_cbPendingReliable() {
+  return cast<int_box>(get_ptr()->m_cbPendingReliable);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_cbSentUnackedReliable() {
+  return cast<int_box>(get_ptr()->m_cbSentUnackedReliable);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_m_usecQueueTime() {
+  return cast<SteamNetworkingMicroseconds_box>(get_ptr()->m_usecQueueTime);
+}
+
+auto SteamNetworkingQuickConnectionStatus_box::get_reserved() {
+  return cast<uint32[16]>(get_ptr()->reserved);
+}
+
+void SteamNetworkingQuickConnectionStatus_box::_register_methods() {
+  register_method("get_m_eState",
+                  &SteamNetworkingQuickConnectionStatus_box::get_m_eState);
+  register_method("get_m_nPing",
+                  &SteamNetworkingQuickConnectionStatus_box::get_m_nPing);
+  register_method("get_m_flConnectionQualityLocal",
+                  &SteamNetworkingQuickConnectionStatus_box::
+                      get_m_flConnectionQualityLocal);
+  register_method("get_m_flConnectionQualityRemote",
+                  &SteamNetworkingQuickConnectionStatus_box::
+                      get_m_flConnectionQualityRemote);
+  register_method(
+      "get_m_flOutPacketsPerSec",
+      &SteamNetworkingQuickConnectionStatus_box::get_m_flOutPacketsPerSec);
+  register_method(
+      "get_m_flOutBytesPerSec",
+      &SteamNetworkingQuickConnectionStatus_box::get_m_flOutBytesPerSec);
+  register_method(
+      "get_m_flInPacketsPerSec",
+      &SteamNetworkingQuickConnectionStatus_box::get_m_flInPacketsPerSec);
+  register_method(
+      "get_m_flInBytesPerSec",
+      &SteamNetworkingQuickConnectionStatus_box::get_m_flInBytesPerSec);
+  register_method(
+      "get_m_nSendRateBytesPerSecond",
+      &SteamNetworkingQuickConnectionStatus_box::get_m_nSendRateBytesPerSecond);
+  register_method(
+      "get_m_cbPendingUnreliable",
+      &SteamNetworkingQuickConnectionStatus_box::get_m_cbPendingUnreliable);
+  register_method(
+      "get_m_cbPendingReliable",
+      &SteamNetworkingQuickConnectionStatus_box::get_m_cbPendingReliable);
+  register_method(
+      "get_m_cbSentUnackedReliable",
+      &SteamNetworkingQuickConnectionStatus_box::get_m_cbSentUnackedReliable);
+  register_method(
+      "get_m_usecQueueTime",
+      &SteamNetworkingQuickConnectionStatus_box::get_m_usecQueueTime);
+  register_method("get_reserved",
+                  &SteamNetworkingQuickConnectionStatus_box::get_reserved);
+}
+
+auto SteamNetworkingMessage_t_box::get_m_pData() {
+  return cast<void_box>(get_ptr()->m_pData);
+}
+
+auto SteamNetworkingMessage_t_box::get_m_cbSize() {
+  return cast<int_box>(get_ptr()->m_cbSize);
+}
+
+auto SteamNetworkingMessage_t_box::get_m_conn() {
+  return cast<HSteamNetConnection_box>(get_ptr()->m_conn);
+}
+
+auto SteamNetworkingMessage_t_box::get_m_identityPeer() {
+  return cast<SteamNetworkingIdentity_box>(get_ptr()->m_identityPeer);
+}
+
+auto SteamNetworkingMessage_t_box::get_m_nConnUserData() {
+  return cast<int64_box>(get_ptr()->m_nConnUserData);
+}
+
+auto SteamNetworkingMessage_t_box::get_m_usecTimeReceived() {
+  return cast<SteamNetworkingMicroseconds_box>(get_ptr()->m_usecTimeReceived);
+}
+
+auto SteamNetworkingMessage_t_box::get_m_nMessageNumber() {
+  return cast<int64_box>(get_ptr()->m_nMessageNumber);
+}
+
+auto SteamNetworkingMessage_t_box::get_m_nChannel() {
+  return cast<int_box>(get_ptr()->m_nChannel);
+}
+
+auto SteamNetworkingMessage_t_box::get_m_nFlags() {
+  return cast<int_box>(get_ptr()->m_nFlags);
+}
+
+auto SteamNetworkingMessage_t_box::get_m_nUserData() {
+  return cast<int64_box>(get_ptr()->m_nUserData);
+}
+
+template <typename C>
+auto SteamNetworkingMessage_t_box::Release() ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->Release(args...); });
+}
+
+void SteamNetworkingMessage_t_box::_register_methods() {
+  register_method("get_m_pData", &SteamNetworkingMessage_t_box::get_m_pData);
+  register_method("get_m_cbSize", &SteamNetworkingMessage_t_box::get_m_cbSize);
+  register_method("get_m_conn", &SteamNetworkingMessage_t_box::get_m_conn);
+  register_method("get_m_identityPeer",
+                  &SteamNetworkingMessage_t_box::get_m_identityPeer);
+  register_method("get_m_nConnUserData",
+                  &SteamNetworkingMessage_t_box::get_m_nConnUserData);
+  register_method("get_m_usecTimeReceived",
+                  &SteamNetworkingMessage_t_box::get_m_usecTimeReceived);
+  register_method("get_m_nMessageNumber",
+                  &SteamNetworkingMessage_t_box::get_m_nMessageNumber);
+  register_method("get_m_nChannel",
+                  &SteamNetworkingMessage_t_box::get_m_nChannel);
+  register_method("get_m_nFlags", &SteamNetworkingMessage_t_box::get_m_nFlags);
+  register_method("get_m_nUserData",
+                  &SteamNetworkingMessage_t_box::get_m_nUserData);
+  register_method("Release", &SteamNetworkingMessage_t_box::Release);
+}
+
+auto SteamNetworkPingLocation_t_box::get_m_data() {
+  return cast<uint8[512]>(get_ptr()->m_data);
+}
+
+void SteamNetworkPingLocation_t_box::_register_methods() {
+  register_method("get_m_data", &SteamNetworkPingLocation_t_box::get_m_data);
+}
+
+auto SteamNetworkingConfigValue_t_box::get_m_eValue() {
+  return cast<ESteamNetworkingConfigValue_box>(get_ptr()->m_eValue);
+}
+
+auto SteamNetworkingConfigValue_t_box::get_m_eDataType() {
+  return cast<ESteamNetworkingConfigDataType_box>(get_ptr()->m_eDataType);
+}
+
+template <typename C>
+auto SteamNetworkingConfigValue_t_box::SetInt32(
+    Ref<ESteamNetworkingConfigValue_box> eVal, Ref<int32_t_box> data) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetInt32(args...); },
+      eVal->get(), data->get());
+}
+
+template <typename C>
+auto SteamNetworkingConfigValue_t_box::SetInt64(
+    Ref<ESteamNetworkingConfigValue_box> eVal, Ref<int64_t_box> data) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetInt64(args...); },
+      eVal->get(), data->get());
+}
+
+template <typename C>
+auto SteamNetworkingConfigValue_t_box::SetFloat(
+    Ref<ESteamNetworkingConfigValue_box> eVal, Ref<float_box> data) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetFloat(args...); },
+      eVal->get(), data->get());
+}
+
+template <typename C>
+auto SteamNetworkingConfigValue_t_box::SetPtr(
+    Ref<ESteamNetworkingConfigValue_box> eVal, Ref<void_box> data) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetPtr(args...); },
+      eVal->get(), data->get_ptr());
+}
+
+template <typename C>
+auto SteamNetworkingConfigValue_t_box::SetString(
+    Ref<ESteamNetworkingConfigValue_box> eVal, Ref<char_const_pointer_box> data)
+    -> typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetString(args...); },
+      eVal->get(), data->get_ptr());
+}
+
+void SteamNetworkingConfigValue_t_box::_register_methods() {
+  register_method("get_m_eValue",
+                  &SteamNetworkingConfigValue_t_box::get_m_eValue);
+  register_method("get_m_eDataType",
+                  &SteamNetworkingConfigValue_t_box::get_m_eDataType);
+  register_method("SetInt32", &SteamNetworkingConfigValue_t_box::SetInt32);
+  register_method("SetInt64", &SteamNetworkingConfigValue_t_box::SetInt64);
+  register_method("SetFloat", &SteamNetworkingConfigValue_t_box::SetFloat);
+  register_method("SetPtr", &SteamNetworkingConfigValue_t_box::SetPtr);
+  register_method("SetString", &SteamNetworkingConfigValue_t_box::SetString);
+}
+
+template <typename C>
+auto SteamNetworkingPOPIDRender_box::c_str() ->
+    typename std::enable_if<true>::type {
+
+  call<char_const_pointer_box>(
+      [](auto *data, auto &&...args) { return data->c_str(args...); });
+}
+
+void SteamNetworkingPOPIDRender_box::_register_methods() {
+  register_method("c_str", &SteamNetworkingPOPIDRender_box::c_str);
+}
+
+template <typename C>
+auto SteamNetworkingIdentityRender_box::c_str() ->
+    typename std::enable_if<true>::type {
+
+  call<char_const_pointer_box>(
+      [](auto *data, auto &&...args) { return data->c_str(args...); });
+}
+
+void SteamNetworkingIdentityRender_box::_register_methods() {
+  register_method("c_str", &SteamNetworkingIdentityRender_box::c_str);
+}
+
+template <typename C>
+auto SteamNetworkingIPAddrRender_box::c_str() ->
+    typename std::enable_if<true>::type {
+
+  call<char_const_pointer_box>(
+      [](auto *data, auto &&...args) { return data->c_str(args...); });
+}
+
+void SteamNetworkingIPAddrRender_box::_register_methods() {
+  register_method("c_str", &SteamNetworkingIPAddrRender_box::c_str);
+}
+
+void SteamDatagramHostedAddress_box::_register_methods() {}
+
+void SteamDatagramGameCoordinatorServerLogin_box::_register_methods() {}
+
+void SteamServersConnected_t_box::_register_methods() {}
+
+auto SteamServerConnectFailure_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SteamServerConnectFailure_t_box::get_m_bStillRetrying() {
+  return cast<bool_box>(get_ptr()->m_bStillRetrying);
+}
+
+void SteamServerConnectFailure_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &SteamServerConnectFailure_t_box::get_m_eResult);
+  register_method("get_m_bStillRetrying",
+                  &SteamServerConnectFailure_t_box::get_m_bStillRetrying);
+}
+
+auto SteamServersDisconnected_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void SteamServersDisconnected_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &SteamServersDisconnected_t_box::get_m_eResult);
+}
+
+auto ClientGameServerDeny_t_box::get_m_uAppID() {
+  return cast<uint32_box>(get_ptr()->m_uAppID);
+}
+
+auto ClientGameServerDeny_t_box::get_m_unGameServerIP() {
+  return cast<uint32_box>(get_ptr()->m_unGameServerIP);
+}
+
+auto ClientGameServerDeny_t_box::get_m_usGameServerPort() {
+  return cast<uint16_box>(get_ptr()->m_usGameServerPort);
+}
+
+auto ClientGameServerDeny_t_box::get_m_bSecure() {
+  return cast<uint16_box>(get_ptr()->m_bSecure);
+}
+
+auto ClientGameServerDeny_t_box::get_m_uReason() {
+  return cast<uint32_box>(get_ptr()->m_uReason);
+}
+
+void ClientGameServerDeny_t_box::_register_methods() {
+  register_method("get_m_uAppID", &ClientGameServerDeny_t_box::get_m_uAppID);
+  register_method("get_m_unGameServerIP",
+                  &ClientGameServerDeny_t_box::get_m_unGameServerIP);
+  register_method("get_m_usGameServerPort",
+                  &ClientGameServerDeny_t_box::get_m_usGameServerPort);
+  register_method("get_m_bSecure", &ClientGameServerDeny_t_box::get_m_bSecure);
+  register_method("get_m_uReason", &ClientGameServerDeny_t_box::get_m_uReason);
+}
+
+auto IPCFailure_t_box::get_m_eFailureType() {
+  return cast<uint8_box>(get_ptr()->m_eFailureType);
+}
+
+void IPCFailure_t_box::_register_methods() {
+  register_method("get_m_eFailureType", &IPCFailure_t_box::get_m_eFailureType);
+}
+
+void LicensesUpdated_t_box::_register_methods() {}
+
+auto ValidateAuthTicketResponse_t_box::get_m_SteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamID);
+}
+
+auto ValidateAuthTicketResponse_t_box::get_m_eAuthSessionResponse() {
+  return cast<EAuthSessionResponse_box>(get_ptr()->m_eAuthSessionResponse);
+}
+
+auto ValidateAuthTicketResponse_t_box::get_m_OwnerSteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_OwnerSteamID);
+}
+
+void ValidateAuthTicketResponse_t_box::_register_methods() {
+  register_method("get_m_SteamID",
+                  &ValidateAuthTicketResponse_t_box::get_m_SteamID);
+  register_method(
+      "get_m_eAuthSessionResponse",
+      &ValidateAuthTicketResponse_t_box::get_m_eAuthSessionResponse);
+  register_method("get_m_OwnerSteamID",
+                  &ValidateAuthTicketResponse_t_box::get_m_OwnerSteamID);
+}
+
+auto MicroTxnAuthorizationResponse_t_box::get_m_unAppID() {
+  return cast<uint32_box>(get_ptr()->m_unAppID);
+}
+
+auto MicroTxnAuthorizationResponse_t_box::get_m_ulOrderID() {
+  return cast<uint64_box>(get_ptr()->m_ulOrderID);
+}
+
+auto MicroTxnAuthorizationResponse_t_box::get_m_bAuthorized() {
+  return cast<uint8_box>(get_ptr()->m_bAuthorized);
+}
+
+void MicroTxnAuthorizationResponse_t_box::_register_methods() {
+  register_method("get_m_unAppID",
+                  &MicroTxnAuthorizationResponse_t_box::get_m_unAppID);
+  register_method("get_m_ulOrderID",
+                  &MicroTxnAuthorizationResponse_t_box::get_m_ulOrderID);
+  register_method("get_m_bAuthorized",
+                  &MicroTxnAuthorizationResponse_t_box::get_m_bAuthorized);
+}
+
+auto EncryptedAppTicketResponse_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void EncryptedAppTicketResponse_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &EncryptedAppTicketResponse_t_box::get_m_eResult);
+}
+
+auto GetAuthSessionTicketResponse_t_box::get_m_hAuthTicket() {
+  return cast<HAuthTicket_box>(get_ptr()->m_hAuthTicket);
+}
+
+auto GetAuthSessionTicketResponse_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void GetAuthSessionTicketResponse_t_box::_register_methods() {
+  register_method("get_m_hAuthTicket",
+                  &GetAuthSessionTicketResponse_t_box::get_m_hAuthTicket);
+  register_method("get_m_eResult",
+                  &GetAuthSessionTicketResponse_t_box::get_m_eResult);
+}
+
+auto GameWebCallback_t_box::get_m_szURL() {
+  return cast<char[256]>(get_ptr()->m_szURL);
+}
+
+void GameWebCallback_t_box::_register_methods() {
+  register_method("get_m_szURL", &GameWebCallback_t_box::get_m_szURL);
+}
+
+auto StoreAuthURLResponse_t_box::get_m_szURL() {
+  return cast<char[512]>(get_ptr()->m_szURL);
+}
+
+void StoreAuthURLResponse_t_box::_register_methods() {
+  register_method("get_m_szURL", &StoreAuthURLResponse_t_box::get_m_szURL);
+}
+
+auto MarketEligibilityResponse_t_box::get_m_bAllowed() {
+  return cast<bool_box>(get_ptr()->m_bAllowed);
+}
+
+auto MarketEligibilityResponse_t_box::get_m_eNotAllowedReason() {
+  return cast<EMarketNotAllowedReasonFlags_box>(get_ptr()->m_eNotAllowedReason);
+}
+
+auto MarketEligibilityResponse_t_box::get_m_rtAllowedAtTime() {
+  return cast<RTime32_box>(get_ptr()->m_rtAllowedAtTime);
+}
+
+auto MarketEligibilityResponse_t_box::get_m_cdaySteamGuardRequiredDays() {
+  return cast<int_box>(get_ptr()->m_cdaySteamGuardRequiredDays);
+}
+
+auto MarketEligibilityResponse_t_box::get_m_cdayNewDeviceCooldown() {
+  return cast<int_box>(get_ptr()->m_cdayNewDeviceCooldown);
+}
+
+void MarketEligibilityResponse_t_box::_register_methods() {
+  register_method("get_m_bAllowed",
+                  &MarketEligibilityResponse_t_box::get_m_bAllowed);
+  register_method("get_m_eNotAllowedReason",
+                  &MarketEligibilityResponse_t_box::get_m_eNotAllowedReason);
+  register_method("get_m_rtAllowedAtTime",
+                  &MarketEligibilityResponse_t_box::get_m_rtAllowedAtTime);
+  register_method(
+      "get_m_cdaySteamGuardRequiredDays",
+      &MarketEligibilityResponse_t_box::get_m_cdaySteamGuardRequiredDays);
+  register_method(
+      "get_m_cdayNewDeviceCooldown",
+      &MarketEligibilityResponse_t_box::get_m_cdayNewDeviceCooldown);
+}
+
+auto DurationControl_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto DurationControl_t_box::get_m_appid() {
+  return cast<AppId_t_box>(get_ptr()->m_appid);
+}
+
+auto DurationControl_t_box::get_m_bApplicable() {
+  return cast<bool_box>(get_ptr()->m_bApplicable);
+}
+
+auto DurationControl_t_box::get_m_csecsLast5h() {
+  return cast<int32_box>(get_ptr()->m_csecsLast5h);
+}
+
+auto DurationControl_t_box::get_m_progress() {
+  return cast<EDurationControlProgress_box>(get_ptr()->m_progress);
+}
+
+auto DurationControl_t_box::get_m_notification() {
+  return cast<EDurationControlNotification_box>(get_ptr()->m_notification);
+}
+
+auto DurationControl_t_box::get_m_csecsToday() {
+  return cast<int32_box>(get_ptr()->m_csecsToday);
+}
+
+auto DurationControl_t_box::get_m_csecsRemaining() {
+  return cast<int32_box>(get_ptr()->m_csecsRemaining);
+}
+
+void DurationControl_t_box::_register_methods() {
+  register_method("get_m_eResult", &DurationControl_t_box::get_m_eResult);
+  register_method("get_m_appid", &DurationControl_t_box::get_m_appid);
+  register_method("get_m_bApplicable",
+                  &DurationControl_t_box::get_m_bApplicable);
+  register_method("get_m_csecsLast5h",
+                  &DurationControl_t_box::get_m_csecsLast5h);
+  register_method("get_m_progress", &DurationControl_t_box::get_m_progress);
+  register_method("get_m_notification",
+                  &DurationControl_t_box::get_m_notification);
+  register_method("get_m_csecsToday", &DurationControl_t_box::get_m_csecsToday);
+  register_method("get_m_csecsRemaining",
+                  &DurationControl_t_box::get_m_csecsRemaining);
+}
+
+auto PersonaStateChange_t_box::get_m_ulSteamID() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamID);
+}
+
+auto PersonaStateChange_t_box::get_m_nChangeFlags() {
+  return cast<int_box>(get_ptr()->m_nChangeFlags);
+}
+
+void PersonaStateChange_t_box::_register_methods() {
+  register_method("get_m_ulSteamID",
+                  &PersonaStateChange_t_box::get_m_ulSteamID);
+  register_method("get_m_nChangeFlags",
+                  &PersonaStateChange_t_box::get_m_nChangeFlags);
+}
+
+auto GameOverlayActivated_t_box::get_m_bActive() {
+  return cast<uint8_box>(get_ptr()->m_bActive);
+}
+
+void GameOverlayActivated_t_box::_register_methods() {
+  register_method("get_m_bActive", &GameOverlayActivated_t_box::get_m_bActive);
+}
+
+auto GameServerChangeRequested_t_box::get_m_rgchServer() {
+  return cast<char[64]>(get_ptr()->m_rgchServer);
+}
+
+auto GameServerChangeRequested_t_box::get_m_rgchPassword() {
+  return cast<char[64]>(get_ptr()->m_rgchPassword);
+}
+
+void GameServerChangeRequested_t_box::_register_methods() {
+  register_method("get_m_rgchServer",
+                  &GameServerChangeRequested_t_box::get_m_rgchServer);
+  register_method("get_m_rgchPassword",
+                  &GameServerChangeRequested_t_box::get_m_rgchPassword);
+}
+
+auto GameLobbyJoinRequested_t_box::get_m_steamIDLobby() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDLobby);
+}
+
+auto GameLobbyJoinRequested_t_box::get_m_steamIDFriend() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDFriend);
+}
+
+void GameLobbyJoinRequested_t_box::_register_methods() {
+  register_method("get_m_steamIDLobby",
+                  &GameLobbyJoinRequested_t_box::get_m_steamIDLobby);
+  register_method("get_m_steamIDFriend",
+                  &GameLobbyJoinRequested_t_box::get_m_steamIDFriend);
+}
+
+auto AvatarImageLoaded_t_box::get_m_steamID() {
+  return cast<CSteamID_box>(get_ptr()->m_steamID);
+}
+
+auto AvatarImageLoaded_t_box::get_m_iImage() {
+  return cast<int_box>(get_ptr()->m_iImage);
+}
+
+auto AvatarImageLoaded_t_box::get_m_iWide() {
+  return cast<int_box>(get_ptr()->m_iWide);
+}
+
+auto AvatarImageLoaded_t_box::get_m_iTall() {
+  return cast<int_box>(get_ptr()->m_iTall);
+}
+
+void AvatarImageLoaded_t_box::_register_methods() {
+  register_method("get_m_steamID", &AvatarImageLoaded_t_box::get_m_steamID);
+  register_method("get_m_iImage", &AvatarImageLoaded_t_box::get_m_iImage);
+  register_method("get_m_iWide", &AvatarImageLoaded_t_box::get_m_iWide);
+  register_method("get_m_iTall", &AvatarImageLoaded_t_box::get_m_iTall);
+}
+
+auto ClanOfficerListResponse_t_box::get_m_steamIDClan() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDClan);
+}
+
+auto ClanOfficerListResponse_t_box::get_m_cOfficers() {
+  return cast<int_box>(get_ptr()->m_cOfficers);
+}
+
+auto ClanOfficerListResponse_t_box::get_m_bSuccess() {
+  return cast<uint8_box>(get_ptr()->m_bSuccess);
+}
+
+void ClanOfficerListResponse_t_box::_register_methods() {
+  register_method("get_m_steamIDClan",
+                  &ClanOfficerListResponse_t_box::get_m_steamIDClan);
+  register_method("get_m_cOfficers",
+                  &ClanOfficerListResponse_t_box::get_m_cOfficers);
+  register_method("get_m_bSuccess",
+                  &ClanOfficerListResponse_t_box::get_m_bSuccess);
+}
+
+auto FriendRichPresenceUpdate_t_box::get_m_steamIDFriend() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDFriend);
+}
+
+auto FriendRichPresenceUpdate_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void FriendRichPresenceUpdate_t_box::_register_methods() {
+  register_method("get_m_steamIDFriend",
+                  &FriendRichPresenceUpdate_t_box::get_m_steamIDFriend);
+  register_method("get_m_nAppID",
+                  &FriendRichPresenceUpdate_t_box::get_m_nAppID);
+}
+
+auto GameRichPresenceJoinRequested_t_box::get_m_steamIDFriend() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDFriend);
+}
+
+auto GameRichPresenceJoinRequested_t_box::get_m_rgchConnect() {
+  return cast<char[256]>(get_ptr()->m_rgchConnect);
+}
+
+void GameRichPresenceJoinRequested_t_box::_register_methods() {
+  register_method("get_m_steamIDFriend",
+                  &GameRichPresenceJoinRequested_t_box::get_m_steamIDFriend);
+  register_method("get_m_rgchConnect",
+                  &GameRichPresenceJoinRequested_t_box::get_m_rgchConnect);
+}
+
+auto GameConnectedClanChatMsg_t_box::get_m_steamIDClanChat() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDClanChat);
+}
+
+auto GameConnectedClanChatMsg_t_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+auto GameConnectedClanChatMsg_t_box::get_m_iMessageID() {
+  return cast<int_box>(get_ptr()->m_iMessageID);
+}
+
+void GameConnectedClanChatMsg_t_box::_register_methods() {
+  register_method("get_m_steamIDClanChat",
+                  &GameConnectedClanChatMsg_t_box::get_m_steamIDClanChat);
+  register_method("get_m_steamIDUser",
+                  &GameConnectedClanChatMsg_t_box::get_m_steamIDUser);
+  register_method("get_m_iMessageID",
+                  &GameConnectedClanChatMsg_t_box::get_m_iMessageID);
+}
+
+auto GameConnectedChatJoin_t_box::get_m_steamIDClanChat() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDClanChat);
+}
+
+auto GameConnectedChatJoin_t_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void GameConnectedChatJoin_t_box::_register_methods() {
+  register_method("get_m_steamIDClanChat",
+                  &GameConnectedChatJoin_t_box::get_m_steamIDClanChat);
+  register_method("get_m_steamIDUser",
+                  &GameConnectedChatJoin_t_box::get_m_steamIDUser);
+}
+
+auto GameConnectedChatLeave_t_box::get_m_steamIDClanChat() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDClanChat);
+}
+
+auto GameConnectedChatLeave_t_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+auto GameConnectedChatLeave_t_box::get_m_bKicked() {
+  return cast<bool_box>(get_ptr()->m_bKicked);
+}
+
+auto GameConnectedChatLeave_t_box::get_m_bDropped() {
+  return cast<bool_box>(get_ptr()->m_bDropped);
+}
+
+void GameConnectedChatLeave_t_box::_register_methods() {
+  register_method("get_m_steamIDClanChat",
+                  &GameConnectedChatLeave_t_box::get_m_steamIDClanChat);
+  register_method("get_m_steamIDUser",
+                  &GameConnectedChatLeave_t_box::get_m_steamIDUser);
+  register_method("get_m_bKicked",
+                  &GameConnectedChatLeave_t_box::get_m_bKicked);
+  register_method("get_m_bDropped",
+                  &GameConnectedChatLeave_t_box::get_m_bDropped);
+}
+
+auto DownloadClanActivityCountsResult_t_box::get_m_bSuccess() {
+  return cast<bool_box>(get_ptr()->m_bSuccess);
+}
+
+void DownloadClanActivityCountsResult_t_box::_register_methods() {
+  register_method("get_m_bSuccess",
+                  &DownloadClanActivityCountsResult_t_box::get_m_bSuccess);
+}
+
+auto JoinClanChatRoomCompletionResult_t_box::get_m_steamIDClanChat() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDClanChat);
+}
+
+auto JoinClanChatRoomCompletionResult_t_box::get_m_eChatRoomEnterResponse() {
+  return cast<EChatRoomEnterResponse_box>(get_ptr()->m_eChatRoomEnterResponse);
+}
+
+void JoinClanChatRoomCompletionResult_t_box::_register_methods() {
+  register_method(
+      "get_m_steamIDClanChat",
+      &JoinClanChatRoomCompletionResult_t_box::get_m_steamIDClanChat);
+  register_method(
+      "get_m_eChatRoomEnterResponse",
+      &JoinClanChatRoomCompletionResult_t_box::get_m_eChatRoomEnterResponse);
+}
+
+auto GameConnectedFriendChatMsg_t_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+auto GameConnectedFriendChatMsg_t_box::get_m_iMessageID() {
+  return cast<int_box>(get_ptr()->m_iMessageID);
+}
+
+void GameConnectedFriendChatMsg_t_box::_register_methods() {
+  register_method("get_m_steamIDUser",
+                  &GameConnectedFriendChatMsg_t_box::get_m_steamIDUser);
+  register_method("get_m_iMessageID",
+                  &GameConnectedFriendChatMsg_t_box::get_m_iMessageID);
+}
+
+auto FriendsGetFollowerCount_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto FriendsGetFollowerCount_t_box::get_m_steamID() {
+  return cast<CSteamID_box>(get_ptr()->m_steamID);
+}
+
+auto FriendsGetFollowerCount_t_box::get_m_nCount() {
+  return cast<int_box>(get_ptr()->m_nCount);
+}
+
+void FriendsGetFollowerCount_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &FriendsGetFollowerCount_t_box::get_m_eResult);
+  register_method("get_m_steamID",
+                  &FriendsGetFollowerCount_t_box::get_m_steamID);
+  register_method("get_m_nCount", &FriendsGetFollowerCount_t_box::get_m_nCount);
+}
+
+auto FriendsIsFollowing_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto FriendsIsFollowing_t_box::get_m_steamID() {
+  return cast<CSteamID_box>(get_ptr()->m_steamID);
+}
+
+auto FriendsIsFollowing_t_box::get_m_bIsFollowing() {
+  return cast<bool_box>(get_ptr()->m_bIsFollowing);
+}
+
+void FriendsIsFollowing_t_box::_register_methods() {
+  register_method("get_m_eResult", &FriendsIsFollowing_t_box::get_m_eResult);
+  register_method("get_m_steamID", &FriendsIsFollowing_t_box::get_m_steamID);
+  register_method("get_m_bIsFollowing",
+                  &FriendsIsFollowing_t_box::get_m_bIsFollowing);
+}
+
+auto FriendsEnumerateFollowingList_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto FriendsEnumerateFollowingList_t_box::get_m_rgSteamID() {
+  return cast<CSteamID[50]>(get_ptr()->m_rgSteamID);
+}
+
+auto FriendsEnumerateFollowingList_t_box::get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto FriendsEnumerateFollowingList_t_box::get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+void FriendsEnumerateFollowingList_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &FriendsEnumerateFollowingList_t_box::get_m_eResult);
+  register_method("get_m_rgSteamID",
+                  &FriendsEnumerateFollowingList_t_box::get_m_rgSteamID);
+  register_method("get_m_nResultsReturned",
+                  &FriendsEnumerateFollowingList_t_box::get_m_nResultsReturned);
+  register_method(
+      "get_m_nTotalResultCount",
+      &FriendsEnumerateFollowingList_t_box::get_m_nTotalResultCount);
+}
+
+auto SetPersonaNameResponse_t_box::get_m_bSuccess() {
+  return cast<bool_box>(get_ptr()->m_bSuccess);
+}
+
+auto SetPersonaNameResponse_t_box::get_m_bLocalSuccess() {
+  return cast<bool_box>(get_ptr()->m_bLocalSuccess);
+}
+
+auto SetPersonaNameResponse_t_box::get_m_result() {
+  return cast<EResult_box>(get_ptr()->m_result);
+}
+
+void SetPersonaNameResponse_t_box::_register_methods() {
+  register_method("get_m_bSuccess",
+                  &SetPersonaNameResponse_t_box::get_m_bSuccess);
+  register_method("get_m_bLocalSuccess",
+                  &SetPersonaNameResponse_t_box::get_m_bLocalSuccess);
+  register_method("get_m_result", &SetPersonaNameResponse_t_box::get_m_result);
+}
+
+void UnreadChatMessagesChanged_t_box::_register_methods() {}
+
+auto OverlayBrowserProtocolNavigation_t_box::get_rgchURI() {
+  return cast<char[1024]>(get_ptr()->rgchURI);
+}
+
+void OverlayBrowserProtocolNavigation_t_box::_register_methods() {
+  register_method("get_rgchURI",
+                  &OverlayBrowserProtocolNavigation_t_box::get_rgchURI);
+}
+
+void IPCountry_t_box::_register_methods() {}
+
+auto LowBatteryPower_t_box::get_m_nMinutesBatteryLeft() {
+  return cast<uint8_box>(get_ptr()->m_nMinutesBatteryLeft);
+}
+
+void LowBatteryPower_t_box::_register_methods() {
+  register_method("get_m_nMinutesBatteryLeft",
+                  &LowBatteryPower_t_box::get_m_nMinutesBatteryLeft);
+}
+
+auto SteamAPICallCompleted_t_box::get_m_hAsyncCall() {
+  return cast<SteamAPICall_t_box>(get_ptr()->m_hAsyncCall);
+}
+
+auto SteamAPICallCompleted_t_box::get_m_iCallback() {
+  return cast<int_box>(get_ptr()->m_iCallback);
+}
+
+auto SteamAPICallCompleted_t_box::get_m_cubParam() {
+  return cast<uint32_box>(get_ptr()->m_cubParam);
+}
+
+void SteamAPICallCompleted_t_box::_register_methods() {
+  register_method("get_m_hAsyncCall",
+                  &SteamAPICallCompleted_t_box::get_m_hAsyncCall);
+  register_method("get_m_iCallback",
+                  &SteamAPICallCompleted_t_box::get_m_iCallback);
+  register_method("get_m_cubParam",
+                  &SteamAPICallCompleted_t_box::get_m_cubParam);
+}
+
+void SteamShutdown_t_box::_register_methods() {}
+
+auto CheckFileSignature_t_box::get_m_eCheckFileSignature() {
+  return cast<ECheckFileSignature_box>(get_ptr()->m_eCheckFileSignature);
+}
+
+void CheckFileSignature_t_box::_register_methods() {
+  register_method("get_m_eCheckFileSignature",
+                  &CheckFileSignature_t_box::get_m_eCheckFileSignature);
+}
+
+auto GamepadTextInputDismissed_t_box::get_m_bSubmitted() {
+  return cast<bool_box>(get_ptr()->m_bSubmitted);
+}
+
+auto GamepadTextInputDismissed_t_box::get_m_unSubmittedText() {
+  return cast<uint32_box>(get_ptr()->m_unSubmittedText);
+}
+
+void GamepadTextInputDismissed_t_box::_register_methods() {
+  register_method("get_m_bSubmitted",
+                  &GamepadTextInputDismissed_t_box::get_m_bSubmitted);
+  register_method("get_m_unSubmittedText",
+                  &GamepadTextInputDismissed_t_box::get_m_unSubmittedText);
+}
+
+void AppResumingFromSuspend_t_box::_register_methods() {}
+
+void ModalGamepadTextInputDismissed_t_box::_register_methods() {}
+
+auto FavoritesListChanged_t_box::get_m_nIP() {
+  return cast<uint32_box>(get_ptr()->m_nIP);
+}
+
+auto FavoritesListChanged_t_box::get_m_nQueryPort() {
+  return cast<uint32_box>(get_ptr()->m_nQueryPort);
+}
+
+auto FavoritesListChanged_t_box::get_m_nConnPort() {
+  return cast<uint32_box>(get_ptr()->m_nConnPort);
+}
+
+auto FavoritesListChanged_t_box::get_m_nAppID() {
+  return cast<uint32_box>(get_ptr()->m_nAppID);
+}
+
+auto FavoritesListChanged_t_box::get_m_nFlags() {
+  return cast<uint32_box>(get_ptr()->m_nFlags);
+}
+
+auto FavoritesListChanged_t_box::get_m_bAdd() {
+  return cast<bool_box>(get_ptr()->m_bAdd);
+}
+
+auto FavoritesListChanged_t_box::get_m_unAccountId() {
+  return cast<AccountID_t_box>(get_ptr()->m_unAccountId);
+}
+
+void FavoritesListChanged_t_box::_register_methods() {
+  register_method("get_m_nIP", &FavoritesListChanged_t_box::get_m_nIP);
+  register_method("get_m_nQueryPort",
+                  &FavoritesListChanged_t_box::get_m_nQueryPort);
+  register_method("get_m_nConnPort",
+                  &FavoritesListChanged_t_box::get_m_nConnPort);
+  register_method("get_m_nAppID", &FavoritesListChanged_t_box::get_m_nAppID);
+  register_method("get_m_nFlags", &FavoritesListChanged_t_box::get_m_nFlags);
+  register_method("get_m_bAdd", &FavoritesListChanged_t_box::get_m_bAdd);
+  register_method("get_m_unAccountId",
+                  &FavoritesListChanged_t_box::get_m_unAccountId);
+}
+
+auto LobbyInvite_t_box::get_m_ulSteamIDUser() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDUser);
+}
+
+auto LobbyInvite_t_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyInvite_t_box::get_m_ulGameID() {
+  return cast<uint64_box>(get_ptr()->m_ulGameID);
+}
+
+void LobbyInvite_t_box::_register_methods() {
+  register_method("get_m_ulSteamIDUser",
+                  &LobbyInvite_t_box::get_m_ulSteamIDUser);
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyInvite_t_box::get_m_ulSteamIDLobby);
+  register_method("get_m_ulGameID", &LobbyInvite_t_box::get_m_ulGameID);
+}
+
+auto LobbyEnter_t_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyEnter_t_box::get_m_rgfChatPermissions() {
+  return cast<uint32_box>(get_ptr()->m_rgfChatPermissions);
+}
+
+auto LobbyEnter_t_box::get_m_bLocked() {
+  return cast<bool_box>(get_ptr()->m_bLocked);
+}
+
+auto LobbyEnter_t_box::get_m_EChatRoomEnterResponse() {
+  return cast<uint32_box>(get_ptr()->m_EChatRoomEnterResponse);
+}
+
+void LobbyEnter_t_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyEnter_t_box::get_m_ulSteamIDLobby);
+  register_method("get_m_rgfChatPermissions",
+                  &LobbyEnter_t_box::get_m_rgfChatPermissions);
+  register_method("get_m_bLocked", &LobbyEnter_t_box::get_m_bLocked);
+  register_method("get_m_EChatRoomEnterResponse",
+                  &LobbyEnter_t_box::get_m_EChatRoomEnterResponse);
+}
+
+auto LobbyDataUpdate_t_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyDataUpdate_t_box::get_m_ulSteamIDMember() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDMember);
+}
+
+auto LobbyDataUpdate_t_box::get_m_bSuccess() {
+  return cast<uint8_box>(get_ptr()->m_bSuccess);
+}
+
+void LobbyDataUpdate_t_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyDataUpdate_t_box::get_m_ulSteamIDLobby);
+  register_method("get_m_ulSteamIDMember",
+                  &LobbyDataUpdate_t_box::get_m_ulSteamIDMember);
+  register_method("get_m_bSuccess", &LobbyDataUpdate_t_box::get_m_bSuccess);
+}
+
+auto LobbyChatUpdate_t_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyChatUpdate_t_box::get_m_ulSteamIDUserChanged() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDUserChanged);
+}
+
+auto LobbyChatUpdate_t_box::get_m_ulSteamIDMakingChange() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDMakingChange);
+}
+
+auto LobbyChatUpdate_t_box::get_m_rgfChatMemberStateChange() {
+  return cast<uint32_box>(get_ptr()->m_rgfChatMemberStateChange);
+}
+
+void LobbyChatUpdate_t_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyChatUpdate_t_box::get_m_ulSteamIDLobby);
+  register_method("get_m_ulSteamIDUserChanged",
+                  &LobbyChatUpdate_t_box::get_m_ulSteamIDUserChanged);
+  register_method("get_m_ulSteamIDMakingChange",
+                  &LobbyChatUpdate_t_box::get_m_ulSteamIDMakingChange);
+  register_method("get_m_rgfChatMemberStateChange",
+                  &LobbyChatUpdate_t_box::get_m_rgfChatMemberStateChange);
+}
+
+auto LobbyChatMsg_t_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyChatMsg_t_box::get_m_ulSteamIDUser() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDUser);
+}
+
+auto LobbyChatMsg_t_box::get_m_eChatEntryType() {
+  return cast<uint8_box>(get_ptr()->m_eChatEntryType);
+}
+
+auto LobbyChatMsg_t_box::get_m_iChatID() {
+  return cast<uint32_box>(get_ptr()->m_iChatID);
+}
+
+void LobbyChatMsg_t_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyChatMsg_t_box::get_m_ulSteamIDLobby);
+  register_method("get_m_ulSteamIDUser",
+                  &LobbyChatMsg_t_box::get_m_ulSteamIDUser);
+  register_method("get_m_eChatEntryType",
+                  &LobbyChatMsg_t_box::get_m_eChatEntryType);
+  register_method("get_m_iChatID", &LobbyChatMsg_t_box::get_m_iChatID);
+}
+
+auto LobbyGameCreated_t_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyGameCreated_t_box::get_m_ulSteamIDGameServer() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDGameServer);
+}
+
+auto LobbyGameCreated_t_box::get_m_unIP() {
+  return cast<uint32_box>(get_ptr()->m_unIP);
+}
+
+auto LobbyGameCreated_t_box::get_m_usPort() {
+  return cast<uint16_box>(get_ptr()->m_usPort);
+}
+
+void LobbyGameCreated_t_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyGameCreated_t_box::get_m_ulSteamIDLobby);
+  register_method("get_m_ulSteamIDGameServer",
+                  &LobbyGameCreated_t_box::get_m_ulSteamIDGameServer);
+  register_method("get_m_unIP", &LobbyGameCreated_t_box::get_m_unIP);
+  register_method("get_m_usPort", &LobbyGameCreated_t_box::get_m_usPort);
+}
+
+auto LobbyMatchList_t_box::get_m_nLobbiesMatching() {
+  return cast<uint32_box>(get_ptr()->m_nLobbiesMatching);
+}
+
+void LobbyMatchList_t_box::_register_methods() {
+  register_method("get_m_nLobbiesMatching",
+                  &LobbyMatchList_t_box::get_m_nLobbiesMatching);
+}
+
+auto LobbyKicked_t_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyKicked_t_box::get_m_ulSteamIDAdmin() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDAdmin);
+}
+
+auto LobbyKicked_t_box::get_m_bKickedDueToDisconnect() {
+  return cast<uint8_box>(get_ptr()->m_bKickedDueToDisconnect);
+}
+
+void LobbyKicked_t_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyKicked_t_box::get_m_ulSteamIDLobby);
+  register_method("get_m_ulSteamIDAdmin",
+                  &LobbyKicked_t_box::get_m_ulSteamIDAdmin);
+  register_method("get_m_bKickedDueToDisconnect",
+                  &LobbyKicked_t_box::get_m_bKickedDueToDisconnect);
+}
+
+auto LobbyCreated_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto LobbyCreated_t_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+void LobbyCreated_t_box::_register_methods() {
+  register_method("get_m_eResult", &LobbyCreated_t_box::get_m_eResult);
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyCreated_t_box::get_m_ulSteamIDLobby);
+}
+
+auto PSNGameBootInviteResult_t_box::get_m_bGameBootInviteExists() {
+  return cast<bool_box>(get_ptr()->m_bGameBootInviteExists);
+}
+
+auto PSNGameBootInviteResult_t_box::get_m_steamIDLobby() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDLobby);
+}
+
+void PSNGameBootInviteResult_t_box::_register_methods() {
+  register_method("get_m_bGameBootInviteExists",
+                  &PSNGameBootInviteResult_t_box::get_m_bGameBootInviteExists);
+  register_method("get_m_steamIDLobby",
+                  &PSNGameBootInviteResult_t_box::get_m_steamIDLobby);
+}
+
+auto FavoritesListAccountsUpdated_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void FavoritesListAccountsUpdated_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &FavoritesListAccountsUpdated_t_box::get_m_eResult);
+}
+
+auto SearchForGameProgressCallback_t_box::get_m_ullSearchID() {
+  return cast<uint64_box>(get_ptr()->m_ullSearchID);
+}
+
+auto SearchForGameProgressCallback_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SearchForGameProgressCallback_t_box::get_m_lobbyID() {
+  return cast<CSteamID_box>(get_ptr()->m_lobbyID);
+}
+
+auto SearchForGameProgressCallback_t_box::get_m_steamIDEndedSearch() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDEndedSearch);
+}
+
+auto SearchForGameProgressCallback_t_box::get_m_nSecondsRemainingEstimate() {
+  return cast<int32_box>(get_ptr()->m_nSecondsRemainingEstimate);
+}
+
+auto SearchForGameProgressCallback_t_box::get_m_cPlayersSearching() {
+  return cast<int32_box>(get_ptr()->m_cPlayersSearching);
+}
+
+void SearchForGameProgressCallback_t_box::_register_methods() {
+  register_method("get_m_ullSearchID",
+                  &SearchForGameProgressCallback_t_box::get_m_ullSearchID);
+  register_method("get_m_eResult",
+                  &SearchForGameProgressCallback_t_box::get_m_eResult);
+  register_method("get_m_lobbyID",
+                  &SearchForGameProgressCallback_t_box::get_m_lobbyID);
+  register_method(
+      "get_m_steamIDEndedSearch",
+      &SearchForGameProgressCallback_t_box::get_m_steamIDEndedSearch);
+  register_method(
+      "get_m_nSecondsRemainingEstimate",
+      &SearchForGameProgressCallback_t_box::get_m_nSecondsRemainingEstimate);
+  register_method(
+      "get_m_cPlayersSearching",
+      &SearchForGameProgressCallback_t_box::get_m_cPlayersSearching);
+}
+
+auto SearchForGameResultCallback_t_box::get_m_ullSearchID() {
+  return cast<uint64_box>(get_ptr()->m_ullSearchID);
+}
+
+auto SearchForGameResultCallback_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SearchForGameResultCallback_t_box::get_m_nCountPlayersInGame() {
+  return cast<int32_box>(get_ptr()->m_nCountPlayersInGame);
+}
+
+auto SearchForGameResultCallback_t_box::get_m_nCountAcceptedGame() {
+  return cast<int32_box>(get_ptr()->m_nCountAcceptedGame);
+}
+
+auto SearchForGameResultCallback_t_box::get_m_steamIDHost() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDHost);
+}
+
+auto SearchForGameResultCallback_t_box::get_m_bFinalCallback() {
+  return cast<bool_box>(get_ptr()->m_bFinalCallback);
+}
+
+void SearchForGameResultCallback_t_box::_register_methods() {
+  register_method("get_m_ullSearchID",
+                  &SearchForGameResultCallback_t_box::get_m_ullSearchID);
+  register_method("get_m_eResult",
+                  &SearchForGameResultCallback_t_box::get_m_eResult);
+  register_method(
+      "get_m_nCountPlayersInGame",
+      &SearchForGameResultCallback_t_box::get_m_nCountPlayersInGame);
+  register_method("get_m_nCountAcceptedGame",
+                  &SearchForGameResultCallback_t_box::get_m_nCountAcceptedGame);
+  register_method("get_m_steamIDHost",
+                  &SearchForGameResultCallback_t_box::get_m_steamIDHost);
+  register_method("get_m_bFinalCallback",
+                  &SearchForGameResultCallback_t_box::get_m_bFinalCallback);
+}
+
+auto RequestPlayersForGameProgressCallback_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RequestPlayersForGameProgressCallback_t_box::get_m_ullSearchID() {
+  return cast<uint64_box>(get_ptr()->m_ullSearchID);
+}
+
+void RequestPlayersForGameProgressCallback_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RequestPlayersForGameProgressCallback_t_box::get_m_eResult);
+  register_method(
+      "get_m_ullSearchID",
+      &RequestPlayersForGameProgressCallback_t_box::get_m_ullSearchID);
+}
+
+auto RequestPlayersForGameResultCallback_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RequestPlayersForGameResultCallback_t_box::get_m_ullSearchID() {
+  return cast<uint64_box>(get_ptr()->m_ullSearchID);
+}
+
+auto RequestPlayersForGameResultCallback_t_box::get_m_SteamIDPlayerFound() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDPlayerFound);
+}
+
+auto RequestPlayersForGameResultCallback_t_box::get_m_SteamIDLobby() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDLobby);
+}
+
+auto RequestPlayersForGameResultCallback_t_box::get_m_nPlayerIndex() {
+  return cast<int32_box>(get_ptr()->m_nPlayerIndex);
+}
+
+auto RequestPlayersForGameResultCallback_t_box::get_m_nTotalPlayersFound() {
+  return cast<int32_box>(get_ptr()->m_nTotalPlayersFound);
+}
+
+auto RequestPlayersForGameResultCallback_t_box::
+    get_m_nTotalPlayersAcceptedGame() {
+  return cast<int32_box>(get_ptr()->m_nTotalPlayersAcceptedGame);
+}
+
+auto RequestPlayersForGameResultCallback_t_box::get_m_nSuggestedTeamIndex() {
+  return cast<int32_box>(get_ptr()->m_nSuggestedTeamIndex);
+}
+
+auto RequestPlayersForGameResultCallback_t_box::get_m_ullUniqueGameID() {
+  return cast<uint64_box>(get_ptr()->m_ullUniqueGameID);
+}
+
+void RequestPlayersForGameResultCallback_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RequestPlayersForGameResultCallback_t_box::get_m_eResult);
+  register_method(
+      "get_m_ullSearchID",
+      &RequestPlayersForGameResultCallback_t_box::get_m_ullSearchID);
+  register_method(
+      "get_m_SteamIDPlayerFound",
+      &RequestPlayersForGameResultCallback_t_box::get_m_SteamIDPlayerFound);
+  register_method(
+      "get_m_SteamIDLobby",
+      &RequestPlayersForGameResultCallback_t_box::get_m_SteamIDLobby);
+  register_method(
+      "get_m_nPlayerIndex",
+      &RequestPlayersForGameResultCallback_t_box::get_m_nPlayerIndex);
+  register_method(
+      "get_m_nTotalPlayersFound",
+      &RequestPlayersForGameResultCallback_t_box::get_m_nTotalPlayersFound);
+  register_method("get_m_nTotalPlayersAcceptedGame",
+                  &RequestPlayersForGameResultCallback_t_box::
+                      get_m_nTotalPlayersAcceptedGame);
+  register_method(
+      "get_m_nSuggestedTeamIndex",
+      &RequestPlayersForGameResultCallback_t_box::get_m_nSuggestedTeamIndex);
+  register_method(
+      "get_m_ullUniqueGameID",
+      &RequestPlayersForGameResultCallback_t_box::get_m_ullUniqueGameID);
+}
+
+auto RequestPlayersForGameFinalResultCallback_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RequestPlayersForGameFinalResultCallback_t_box::get_m_ullSearchID() {
+  return cast<uint64_box>(get_ptr()->m_ullSearchID);
+}
+
+auto RequestPlayersForGameFinalResultCallback_t_box::get_m_ullUniqueGameID() {
+  return cast<uint64_box>(get_ptr()->m_ullUniqueGameID);
+}
+
+void RequestPlayersForGameFinalResultCallback_t_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RequestPlayersForGameFinalResultCallback_t_box::get_m_eResult);
+  register_method(
+      "get_m_ullSearchID",
+      &RequestPlayersForGameFinalResultCallback_t_box::get_m_ullSearchID);
+  register_method(
+      "get_m_ullUniqueGameID",
+      &RequestPlayersForGameFinalResultCallback_t_box::get_m_ullUniqueGameID);
+}
+
+auto SubmitPlayerResultResultCallback_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SubmitPlayerResultResultCallback_t_box::get_ullUniqueGameID() {
+  return cast<uint64_box>(get_ptr()->ullUniqueGameID);
+}
+
+auto SubmitPlayerResultResultCallback_t_box::get_steamIDPlayer() {
+  return cast<CSteamID_box>(get_ptr()->steamIDPlayer);
+}
+
+void SubmitPlayerResultResultCallback_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &SubmitPlayerResultResultCallback_t_box::get_m_eResult);
+  register_method("get_ullUniqueGameID",
+                  &SubmitPlayerResultResultCallback_t_box::get_ullUniqueGameID);
+  register_method("get_steamIDPlayer",
+                  &SubmitPlayerResultResultCallback_t_box::get_steamIDPlayer);
+}
+
+auto EndGameResultCallback_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto EndGameResultCallback_t_box::get_ullUniqueGameID() {
+  return cast<uint64_box>(get_ptr()->ullUniqueGameID);
+}
+
+void EndGameResultCallback_t_box::_register_methods() {
+  register_method("get_m_eResult", &EndGameResultCallback_t_box::get_m_eResult);
+  register_method("get_ullUniqueGameID",
+                  &EndGameResultCallback_t_box::get_ullUniqueGameID);
+}
+
+auto JoinPartyCallback_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto JoinPartyCallback_t_box::get_m_ulBeaconID() {
+  return cast<PartyBeaconID_t_box>(get_ptr()->m_ulBeaconID);
+}
+
+auto JoinPartyCallback_t_box::get_m_SteamIDBeaconOwner() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDBeaconOwner);
+}
+
+auto JoinPartyCallback_t_box::get_m_rgchConnectString() {
+  return cast<char[256]>(get_ptr()->m_rgchConnectString);
+}
+
+void JoinPartyCallback_t_box::_register_methods() {
+  register_method("get_m_eResult", &JoinPartyCallback_t_box::get_m_eResult);
+  register_method("get_m_ulBeaconID",
+                  &JoinPartyCallback_t_box::get_m_ulBeaconID);
+  register_method("get_m_SteamIDBeaconOwner",
+                  &JoinPartyCallback_t_box::get_m_SteamIDBeaconOwner);
+  register_method("get_m_rgchConnectString",
+                  &JoinPartyCallback_t_box::get_m_rgchConnectString);
+}
+
+auto CreateBeaconCallback_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto CreateBeaconCallback_t_box::get_m_ulBeaconID() {
+  return cast<PartyBeaconID_t_box>(get_ptr()->m_ulBeaconID);
+}
+
+void CreateBeaconCallback_t_box::_register_methods() {
+  register_method("get_m_eResult", &CreateBeaconCallback_t_box::get_m_eResult);
+  register_method("get_m_ulBeaconID",
+                  &CreateBeaconCallback_t_box::get_m_ulBeaconID);
+}
+
+auto ReservationNotificationCallback_t_box::get_m_ulBeaconID() {
+  return cast<PartyBeaconID_t_box>(get_ptr()->m_ulBeaconID);
+}
+
+auto ReservationNotificationCallback_t_box::get_m_steamIDJoiner() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDJoiner);
+}
+
+void ReservationNotificationCallback_t_box::_register_methods() {
+  register_method("get_m_ulBeaconID",
+                  &ReservationNotificationCallback_t_box::get_m_ulBeaconID);
+  register_method("get_m_steamIDJoiner",
+                  &ReservationNotificationCallback_t_box::get_m_steamIDJoiner);
+}
+
+auto ChangeNumOpenSlotsCallback_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void ChangeNumOpenSlotsCallback_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &ChangeNumOpenSlotsCallback_t_box::get_m_eResult);
+}
+
+void AvailableBeaconLocationsUpdated_t_box::_register_methods() {}
+
+void ActiveBeaconsUpdated_t_box::_register_methods() {}
+
+auto RemoteStorageFileShareResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageFileShareResult_t_box::get_m_hFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hFile);
+}
+
+auto RemoteStorageFileShareResult_t_box::get_m_rgchFilename() {
+  return cast<char[260]>(get_ptr()->m_rgchFilename);
+}
+
+void RemoteStorageFileShareResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RemoteStorageFileShareResult_t_box::get_m_eResult);
+  register_method("get_m_hFile",
+                  &RemoteStorageFileShareResult_t_box::get_m_hFile);
+  register_method("get_m_rgchFilename",
+                  &RemoteStorageFileShareResult_t_box::get_m_rgchFilename);
+}
+
+auto RemoteStoragePublishFileResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStoragePublishFileResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStoragePublishFileResult_t_box::
+    get_m_bUserNeedsToAcceptWorkshopLegalAgreement() {
+  return cast<bool_box>(get_ptr()->m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+void RemoteStoragePublishFileResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RemoteStoragePublishFileResult_t_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStoragePublishFileResult_t_box::get_m_nPublishedFileId);
+  register_method("get_m_bUserNeedsToAcceptWorkshopLegalAgreement",
+                  &RemoteStoragePublishFileResult_t_box::
+                      get_m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+auto RemoteStorageDeletePublishedFileResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageDeletePublishedFileResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void RemoteStorageDeletePublishedFileResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RemoteStorageDeletePublishedFileResult_t_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStorageDeletePublishedFileResult_t_box::get_m_nPublishedFileId);
+}
+
+auto RemoteStorageEnumerateUserPublishedFilesResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageEnumerateUserPublishedFilesResult_t_box::
+    get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto RemoteStorageEnumerateUserPublishedFilesResult_t_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+auto RemoteStorageEnumerateUserPublishedFilesResult_t_box::
+    get_m_rgPublishedFileId() {
+  return cast<PublishedFileId_t[50]>(get_ptr()->m_rgPublishedFileId);
+}
+
+void RemoteStorageEnumerateUserPublishedFilesResult_t_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageEnumerateUserPublishedFilesResult_t_box::get_m_eResult);
+  register_method("get_m_nResultsReturned",
+                  &RemoteStorageEnumerateUserPublishedFilesResult_t_box::
+                      get_m_nResultsReturned);
+  register_method("get_m_nTotalResultCount",
+                  &RemoteStorageEnumerateUserPublishedFilesResult_t_box::
+                      get_m_nTotalResultCount);
+  register_method("get_m_rgPublishedFileId",
+                  &RemoteStorageEnumerateUserPublishedFilesResult_t_box::
+                      get_m_rgPublishedFileId);
+}
+
+auto RemoteStorageSubscribePublishedFileResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageSubscribePublishedFileResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void RemoteStorageSubscribePublishedFileResult_t_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageSubscribePublishedFileResult_t_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStorageSubscribePublishedFileResult_t_box::get_m_nPublishedFileId);
+}
+
+auto RemoteStorageEnumerateUserSubscribedFilesResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageEnumerateUserSubscribedFilesResult_t_box::
+    get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto RemoteStorageEnumerateUserSubscribedFilesResult_t_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+auto RemoteStorageEnumerateUserSubscribedFilesResult_t_box::
+    get_m_rgPublishedFileId() {
+  return cast<PublishedFileId_t[50]>(get_ptr()->m_rgPublishedFileId);
+}
+
+auto RemoteStorageEnumerateUserSubscribedFilesResult_t_box::
+    get_m_rgRTimeSubscribed() {
+  return cast<uint32[50]>(get_ptr()->m_rgRTimeSubscribed);
+}
+
+void RemoteStorageEnumerateUserSubscribedFilesResult_t_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageEnumerateUserSubscribedFilesResult_t_box::get_m_eResult);
+  register_method("get_m_nResultsReturned",
+                  &RemoteStorageEnumerateUserSubscribedFilesResult_t_box::
+                      get_m_nResultsReturned);
+  register_method("get_m_nTotalResultCount",
+                  &RemoteStorageEnumerateUserSubscribedFilesResult_t_box::
+                      get_m_nTotalResultCount);
+  register_method("get_m_rgPublishedFileId",
+                  &RemoteStorageEnumerateUserSubscribedFilesResult_t_box::
+                      get_m_rgPublishedFileId);
+  register_method("get_m_rgRTimeSubscribed",
+                  &RemoteStorageEnumerateUserSubscribedFilesResult_t_box::
+                      get_m_rgRTimeSubscribed);
+}
+
+auto RemoteStorageUnsubscribePublishedFileResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageUnsubscribePublishedFileResult_t_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void RemoteStorageUnsubscribePublishedFileResult_t_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageUnsubscribePublishedFileResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStorageUnsubscribePublishedFileResult_t_box::
+                      get_m_nPublishedFileId);
+}
+
+auto RemoteStorageUpdatePublishedFileResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageUpdatePublishedFileResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStorageUpdatePublishedFileResult_t_box::
+    get_m_bUserNeedsToAcceptWorkshopLegalAgreement() {
+  return cast<bool_box>(get_ptr()->m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+void RemoteStorageUpdatePublishedFileResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RemoteStorageUpdatePublishedFileResult_t_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStorageUpdatePublishedFileResult_t_box::get_m_nPublishedFileId);
+  register_method("get_m_bUserNeedsToAcceptWorkshopLegalAgreement",
+                  &RemoteStorageUpdatePublishedFileResult_t_box::
+                      get_m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+auto RemoteStorageDownloadUGCResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageDownloadUGCResult_t_box::get_m_hFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hFile);
+}
+
+auto RemoteStorageDownloadUGCResult_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+auto RemoteStorageDownloadUGCResult_t_box::get_m_nSizeInBytes() {
+  return cast<int32_box>(get_ptr()->m_nSizeInBytes);
+}
+
+auto RemoteStorageDownloadUGCResult_t_box::get_m_pchFileName() {
+  return cast<char[260]>(get_ptr()->m_pchFileName);
+}
+
+auto RemoteStorageDownloadUGCResult_t_box::get_m_ulSteamIDOwner() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDOwner);
+}
+
+void RemoteStorageDownloadUGCResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RemoteStorageDownloadUGCResult_t_box::get_m_eResult);
+  register_method("get_m_hFile",
+                  &RemoteStorageDownloadUGCResult_t_box::get_m_hFile);
+  register_method("get_m_nAppID",
+                  &RemoteStorageDownloadUGCResult_t_box::get_m_nAppID);
+  register_method("get_m_nSizeInBytes",
+                  &RemoteStorageDownloadUGCResult_t_box::get_m_nSizeInBytes);
+  register_method("get_m_pchFileName",
+                  &RemoteStorageDownloadUGCResult_t_box::get_m_pchFileName);
+  register_method("get_m_ulSteamIDOwner",
+                  &RemoteStorageDownloadUGCResult_t_box::get_m_ulSteamIDOwner);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_nCreatorAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nCreatorAppID);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_nConsumerAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nConsumerAppID);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rgchTitle() {
+  return cast<char[129]>(get_ptr()->m_rgchTitle);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rgchDescription() {
+  return cast<char[8000]>(get_ptr()->m_rgchDescription);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_hFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hFile);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_hPreviewFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hPreviewFile);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_ulSteamIDOwner() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDOwner);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rtimeCreated() {
+  return cast<uint32_box>(get_ptr()->m_rtimeCreated);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rtimeUpdated() {
+  return cast<uint32_box>(get_ptr()->m_rtimeUpdated);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_eVisibility() {
+  return cast<ERemoteStoragePublishedFileVisibility_box>(
+      get_ptr()->m_eVisibility);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_bBanned() {
+  return cast<bool_box>(get_ptr()->m_bBanned);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rgchTags() {
+  return cast<char[1025]>(get_ptr()->m_rgchTags);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_bTagsTruncated() {
+  return cast<bool_box>(get_ptr()->m_bTagsTruncated);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_pchFileName() {
+  return cast<char[260]>(get_ptr()->m_pchFileName);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_nFileSize() {
+  return cast<int32_box>(get_ptr()->m_nFileSize);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::
+    get_m_nPreviewFileSize() {
+  return cast<int32_box>(get_ptr()->m_nPreviewFileSize);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rgchURL() {
+  return cast<char[256]>(get_ptr()->m_rgchURL);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_eFileType() {
+  return cast<EWorkshopFileType_box>(get_ptr()->m_eFileType);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_bAcceptedForUse() {
+  return cast<bool_box>(get_ptr()->m_bAcceptedForUse);
+}
+
+void RemoteStorageGetPublishedFileDetailsResult_t_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStorageGetPublishedFileDetailsResult_t_box::
+                      get_m_nPublishedFileId);
+  register_method(
+      "get_m_nCreatorAppID",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_nCreatorAppID);
+  register_method(
+      "get_m_nConsumerAppID",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_nConsumerAppID);
+  register_method(
+      "get_m_rgchTitle",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rgchTitle);
+  register_method(
+      "get_m_rgchDescription",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rgchDescription);
+  register_method(
+      "get_m_hFile",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_hFile);
+  register_method(
+      "get_m_hPreviewFile",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_hPreviewFile);
+  register_method(
+      "get_m_ulSteamIDOwner",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_ulSteamIDOwner);
+  register_method(
+      "get_m_rtimeCreated",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rtimeCreated);
+  register_method(
+      "get_m_rtimeUpdated",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rtimeUpdated);
+  register_method(
+      "get_m_eVisibility",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_eVisibility);
+  register_method(
+      "get_m_bBanned",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_bBanned);
+  register_method(
+      "get_m_rgchTags",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rgchTags);
+  register_method(
+      "get_m_bTagsTruncated",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_bTagsTruncated);
+  register_method(
+      "get_m_pchFileName",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_pchFileName);
+  register_method(
+      "get_m_nFileSize",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_nFileSize);
+  register_method("get_m_nPreviewFileSize",
+                  &RemoteStorageGetPublishedFileDetailsResult_t_box::
+                      get_m_nPreviewFileSize);
+  register_method(
+      "get_m_rgchURL",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_rgchURL);
+  register_method(
+      "get_m_eFileType",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_eFileType);
+  register_method(
+      "get_m_bAcceptedForUse",
+      &RemoteStorageGetPublishedFileDetailsResult_t_box::get_m_bAcceptedForUse);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_box::get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_box::
+    get_m_rgPublishedFileId() {
+  return cast<PublishedFileId_t[50]>(get_ptr()->m_rgPublishedFileId);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_box::get_m_rgScore() {
+  return cast<float[50]>(get_ptr()->m_rgScore);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_box::get_m_nAppId() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppId);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_box::get_m_unStartIndex() {
+  return cast<uint32_box>(get_ptr()->m_unStartIndex);
+}
+
+void RemoteStorageEnumerateWorkshopFilesResult_t_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_box::get_m_eResult);
+  register_method(
+      "get_m_nResultsReturned",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_box::get_m_nResultsReturned);
+  register_method("get_m_nTotalResultCount",
+                  &RemoteStorageEnumerateWorkshopFilesResult_t_box::
+                      get_m_nTotalResultCount);
+  register_method("get_m_rgPublishedFileId",
+                  &RemoteStorageEnumerateWorkshopFilesResult_t_box::
+                      get_m_rgPublishedFileId);
+  register_method(
+      "get_m_rgScore",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_box::get_m_rgScore);
+  register_method(
+      "get_m_nAppId",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_box::get_m_nAppId);
+  register_method(
+      "get_m_unStartIndex",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_box::get_m_unStartIndex);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_box::
+    get_m_unPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_unPublishedFileId);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_box::get_m_nVotesFor() {
+  return cast<int32_box>(get_ptr()->m_nVotesFor);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_box::
+    get_m_nVotesAgainst() {
+  return cast<int32_box>(get_ptr()->m_nVotesAgainst);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_box::get_m_nReports() {
+  return cast<int32_box>(get_ptr()->m_nReports);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_box::get_m_fScore() {
+  return cast<float_box>(get_ptr()->m_fScore);
+}
+
+void RemoteStorageGetPublishedItemVoteDetailsResult_t_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageGetPublishedItemVoteDetailsResult_t_box::get_m_eResult);
+  register_method("get_m_unPublishedFileId",
+                  &RemoteStorageGetPublishedItemVoteDetailsResult_t_box::
+                      get_m_unPublishedFileId);
+  register_method(
+      "get_m_nVotesFor",
+      &RemoteStorageGetPublishedItemVoteDetailsResult_t_box::get_m_nVotesFor);
+  register_method("get_m_nVotesAgainst",
+                  &RemoteStorageGetPublishedItemVoteDetailsResult_t_box::
+                      get_m_nVotesAgainst);
+  register_method(
+      "get_m_nReports",
+      &RemoteStorageGetPublishedItemVoteDetailsResult_t_box::get_m_nReports);
+  register_method(
+      "get_m_fScore",
+      &RemoteStorageGetPublishedItemVoteDetailsResult_t_box::get_m_fScore);
+}
+
+auto RemoteStoragePublishedFileSubscribed_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStoragePublishedFileSubscribed_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void RemoteStoragePublishedFileSubscribed_t_box::_register_methods() {
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStoragePublishedFileSubscribed_t_box::get_m_nPublishedFileId);
+  register_method("get_m_nAppID",
+                  &RemoteStoragePublishedFileSubscribed_t_box::get_m_nAppID);
+}
+
+auto RemoteStoragePublishedFileUnsubscribed_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStoragePublishedFileUnsubscribed_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void RemoteStoragePublishedFileUnsubscribed_t_box::_register_methods() {
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStoragePublishedFileUnsubscribed_t_box::get_m_nPublishedFileId);
+  register_method("get_m_nAppID",
+                  &RemoteStoragePublishedFileUnsubscribed_t_box::get_m_nAppID);
+}
+
+auto RemoteStoragePublishedFileDeleted_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStoragePublishedFileDeleted_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void RemoteStoragePublishedFileDeleted_t_box::_register_methods() {
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStoragePublishedFileDeleted_t_box::get_m_nPublishedFileId);
+  register_method("get_m_nAppID",
+                  &RemoteStoragePublishedFileDeleted_t_box::get_m_nAppID);
+}
+
+auto RemoteStorageUpdateUserPublishedItemVoteResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageUpdateUserPublishedItemVoteResult_t_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void RemoteStorageUpdateUserPublishedItemVoteResult_t_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageUpdateUserPublishedItemVoteResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStorageUpdateUserPublishedItemVoteResult_t_box::
+                      get_m_nPublishedFileId);
+}
+
+auto RemoteStorageUserVoteDetails_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageUserVoteDetails_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStorageUserVoteDetails_t_box::get_m_eVote() {
+  return cast<EWorkshopVote_box>(get_ptr()->m_eVote);
+}
+
+void RemoteStorageUserVoteDetails_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RemoteStorageUserVoteDetails_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStorageUserVoteDetails_t_box::get_m_nPublishedFileId);
+  register_method("get_m_eVote",
+                  &RemoteStorageUserVoteDetails_t_box::get_m_eVote);
+}
+
+auto RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box::
+    get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+auto RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box::
+    get_m_rgPublishedFileId() {
+  return cast<PublishedFileId_t[50]>(get_ptr()->m_rgPublishedFileId);
+}
+
+void RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box::
+    _register_methods() {
+  register_method("get_m_eResult",
+                  &RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box::
+                      get_m_eResult);
+  register_method("get_m_nResultsReturned",
+                  &RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box::
+                      get_m_nResultsReturned);
+  register_method("get_m_nTotalResultCount",
+                  &RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box::
+                      get_m_nTotalResultCount);
+  register_method("get_m_rgPublishedFileId",
+                  &RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_box::
+                      get_m_rgPublishedFileId);
+}
+
+auto RemoteStorageSetUserPublishedFileActionResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageSetUserPublishedFileActionResult_t_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStorageSetUserPublishedFileActionResult_t_box::get_m_eAction() {
+  return cast<EWorkshopFileAction_box>(get_ptr()->m_eAction);
+}
+
+void RemoteStorageSetUserPublishedFileActionResult_t_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageSetUserPublishedFileActionResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStorageSetUserPublishedFileActionResult_t_box::
+                      get_m_nPublishedFileId);
+  register_method(
+      "get_m_eAction",
+      &RemoteStorageSetUserPublishedFileActionResult_t_box::get_m_eAction);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+    get_m_eAction() {
+  return cast<EWorkshopFileAction_box>(get_ptr()->m_eAction);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+    get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+    get_m_rgPublishedFileId() {
+  return cast<PublishedFileId_t[50]>(get_ptr()->m_rgPublishedFileId);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+    get_m_rgRTimeUpdated() {
+  return cast<uint32[50]>(get_ptr()->m_rgRTimeUpdated);
+}
+
+void RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+          get_m_eResult);
+  register_method(
+      "get_m_eAction",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+          get_m_eAction);
+  register_method(
+      "get_m_nResultsReturned",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+          get_m_nResultsReturned);
+  register_method(
+      "get_m_nTotalResultCount",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+          get_m_nTotalResultCount);
+  register_method(
+      "get_m_rgPublishedFileId",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+          get_m_rgPublishedFileId);
+  register_method(
+      "get_m_rgRTimeUpdated",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_box::
+          get_m_rgRTimeUpdated);
+}
+
+auto RemoteStoragePublishFileProgress_t_box::get_m_dPercentFile() {
+  return cast<double_box>(get_ptr()->m_dPercentFile);
+}
+
+auto RemoteStoragePublishFileProgress_t_box::get_m_bPreview() {
+  return cast<bool_box>(get_ptr()->m_bPreview);
+}
+
+void RemoteStoragePublishFileProgress_t_box::_register_methods() {
+  register_method("get_m_dPercentFile",
+                  &RemoteStoragePublishFileProgress_t_box::get_m_dPercentFile);
+  register_method("get_m_bPreview",
+                  &RemoteStoragePublishFileProgress_t_box::get_m_bPreview);
+}
+
+auto RemoteStoragePublishedFileUpdated_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStoragePublishedFileUpdated_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+auto RemoteStoragePublishedFileUpdated_t_box::get_m_ulUnused() {
+  return cast<uint64_box>(get_ptr()->m_ulUnused);
+}
+
+void RemoteStoragePublishedFileUpdated_t_box::_register_methods() {
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStoragePublishedFileUpdated_t_box::get_m_nPublishedFileId);
+  register_method("get_m_nAppID",
+                  &RemoteStoragePublishedFileUpdated_t_box::get_m_nAppID);
+  register_method("get_m_ulUnused",
+                  &RemoteStoragePublishedFileUpdated_t_box::get_m_ulUnused);
+}
+
+auto RemoteStorageFileWriteAsyncComplete_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void RemoteStorageFileWriteAsyncComplete_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RemoteStorageFileWriteAsyncComplete_t_box::get_m_eResult);
+}
+
+auto RemoteStorageFileReadAsyncComplete_t_box::get_m_hFileReadAsync() {
+  return cast<SteamAPICall_t_box>(get_ptr()->m_hFileReadAsync);
+}
+
+auto RemoteStorageFileReadAsyncComplete_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageFileReadAsyncComplete_t_box::get_m_nOffset() {
+  return cast<uint32_box>(get_ptr()->m_nOffset);
+}
+
+auto RemoteStorageFileReadAsyncComplete_t_box::get_m_cubRead() {
+  return cast<uint32_box>(get_ptr()->m_cubRead);
+}
+
+void RemoteStorageFileReadAsyncComplete_t_box::_register_methods() {
+  register_method(
+      "get_m_hFileReadAsync",
+      &RemoteStorageFileReadAsyncComplete_t_box::get_m_hFileReadAsync);
+  register_method("get_m_eResult",
+                  &RemoteStorageFileReadAsyncComplete_t_box::get_m_eResult);
+  register_method("get_m_nOffset",
+                  &RemoteStorageFileReadAsyncComplete_t_box::get_m_nOffset);
+  register_method("get_m_cubRead",
+                  &RemoteStorageFileReadAsyncComplete_t_box::get_m_cubRead);
+}
+
+void RemoteStorageLocalFileChange_t_box::_register_methods() {}
+
+auto UserStatsReceived_t_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto UserStatsReceived_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto UserStatsReceived_t_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void UserStatsReceived_t_box::_register_methods() {
+  register_method("get_m_nGameID", &UserStatsReceived_t_box::get_m_nGameID);
+  register_method("get_m_eResult", &UserStatsReceived_t_box::get_m_eResult);
+  register_method("get_m_steamIDUser",
+                  &UserStatsReceived_t_box::get_m_steamIDUser);
+}
+
+auto UserStatsStored_t_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto UserStatsStored_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void UserStatsStored_t_box::_register_methods() {
+  register_method("get_m_nGameID", &UserStatsStored_t_box::get_m_nGameID);
+  register_method("get_m_eResult", &UserStatsStored_t_box::get_m_eResult);
+}
+
+auto UserAchievementStored_t_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto UserAchievementStored_t_box::get_m_bGroupAchievement() {
+  return cast<bool_box>(get_ptr()->m_bGroupAchievement);
+}
+
+auto UserAchievementStored_t_box::get_m_rgchAchievementName() {
+  return cast<char[128]>(get_ptr()->m_rgchAchievementName);
+}
+
+auto UserAchievementStored_t_box::get_m_nCurProgress() {
+  return cast<uint32_box>(get_ptr()->m_nCurProgress);
+}
+
+auto UserAchievementStored_t_box::get_m_nMaxProgress() {
+  return cast<uint32_box>(get_ptr()->m_nMaxProgress);
+}
+
+void UserAchievementStored_t_box::_register_methods() {
+  register_method("get_m_nGameID", &UserAchievementStored_t_box::get_m_nGameID);
+  register_method("get_m_bGroupAchievement",
+                  &UserAchievementStored_t_box::get_m_bGroupAchievement);
+  register_method("get_m_rgchAchievementName",
+                  &UserAchievementStored_t_box::get_m_rgchAchievementName);
+  register_method("get_m_nCurProgress",
+                  &UserAchievementStored_t_box::get_m_nCurProgress);
+  register_method("get_m_nMaxProgress",
+                  &UserAchievementStored_t_box::get_m_nMaxProgress);
+}
+
+auto LeaderboardFindResult_t_box::get_m_hSteamLeaderboard() {
+  return cast<SteamLeaderboard_t_box>(get_ptr()->m_hSteamLeaderboard);
+}
+
+auto LeaderboardFindResult_t_box::get_m_bLeaderboardFound() {
+  return cast<uint8_box>(get_ptr()->m_bLeaderboardFound);
+}
+
+void LeaderboardFindResult_t_box::_register_methods() {
+  register_method("get_m_hSteamLeaderboard",
+                  &LeaderboardFindResult_t_box::get_m_hSteamLeaderboard);
+  register_method("get_m_bLeaderboardFound",
+                  &LeaderboardFindResult_t_box::get_m_bLeaderboardFound);
+}
+
+auto LeaderboardScoresDownloaded_t_box::get_m_hSteamLeaderboard() {
+  return cast<SteamLeaderboard_t_box>(get_ptr()->m_hSteamLeaderboard);
+}
+
+auto LeaderboardScoresDownloaded_t_box::get_m_hSteamLeaderboardEntries() {
+  return cast<SteamLeaderboardEntries_t_box>(
+      get_ptr()->m_hSteamLeaderboardEntries);
+}
+
+auto LeaderboardScoresDownloaded_t_box::get_m_cEntryCount() {
+  return cast<int_box>(get_ptr()->m_cEntryCount);
+}
+
+void LeaderboardScoresDownloaded_t_box::_register_methods() {
+  register_method("get_m_hSteamLeaderboard",
+                  &LeaderboardScoresDownloaded_t_box::get_m_hSteamLeaderboard);
+  register_method(
+      "get_m_hSteamLeaderboardEntries",
+      &LeaderboardScoresDownloaded_t_box::get_m_hSteamLeaderboardEntries);
+  register_method("get_m_cEntryCount",
+                  &LeaderboardScoresDownloaded_t_box::get_m_cEntryCount);
+}
+
+auto LeaderboardScoreUploaded_t_box::get_m_bSuccess() {
+  return cast<uint8_box>(get_ptr()->m_bSuccess);
+}
+
+auto LeaderboardScoreUploaded_t_box::get_m_hSteamLeaderboard() {
+  return cast<SteamLeaderboard_t_box>(get_ptr()->m_hSteamLeaderboard);
+}
+
+auto LeaderboardScoreUploaded_t_box::get_m_nScore() {
+  return cast<int32_box>(get_ptr()->m_nScore);
+}
+
+auto LeaderboardScoreUploaded_t_box::get_m_bScoreChanged() {
+  return cast<uint8_box>(get_ptr()->m_bScoreChanged);
+}
+
+auto LeaderboardScoreUploaded_t_box::get_m_nGlobalRankNew() {
+  return cast<int_box>(get_ptr()->m_nGlobalRankNew);
+}
+
+auto LeaderboardScoreUploaded_t_box::get_m_nGlobalRankPrevious() {
+  return cast<int_box>(get_ptr()->m_nGlobalRankPrevious);
+}
+
+void LeaderboardScoreUploaded_t_box::_register_methods() {
+  register_method("get_m_bSuccess",
+                  &LeaderboardScoreUploaded_t_box::get_m_bSuccess);
+  register_method("get_m_hSteamLeaderboard",
+                  &LeaderboardScoreUploaded_t_box::get_m_hSteamLeaderboard);
+  register_method("get_m_nScore",
+                  &LeaderboardScoreUploaded_t_box::get_m_nScore);
+  register_method("get_m_bScoreChanged",
+                  &LeaderboardScoreUploaded_t_box::get_m_bScoreChanged);
+  register_method("get_m_nGlobalRankNew",
+                  &LeaderboardScoreUploaded_t_box::get_m_nGlobalRankNew);
+  register_method("get_m_nGlobalRankPrevious",
+                  &LeaderboardScoreUploaded_t_box::get_m_nGlobalRankPrevious);
+}
+
+auto NumberOfCurrentPlayers_t_box::get_m_bSuccess() {
+  return cast<uint8_box>(get_ptr()->m_bSuccess);
+}
+
+auto NumberOfCurrentPlayers_t_box::get_m_cPlayers() {
+  return cast<int32_box>(get_ptr()->m_cPlayers);
+}
+
+void NumberOfCurrentPlayers_t_box::_register_methods() {
+  register_method("get_m_bSuccess",
+                  &NumberOfCurrentPlayers_t_box::get_m_bSuccess);
+  register_method("get_m_cPlayers",
+                  &NumberOfCurrentPlayers_t_box::get_m_cPlayers);
+}
+
+auto UserStatsUnloaded_t_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void UserStatsUnloaded_t_box::_register_methods() {
+  register_method("get_m_steamIDUser",
+                  &UserStatsUnloaded_t_box::get_m_steamIDUser);
+}
+
+auto UserAchievementIconFetched_t_box::get_m_nGameID() {
+  return cast<CGameID_box>(get_ptr()->m_nGameID);
+}
+
+auto UserAchievementIconFetched_t_box::get_m_rgchAchievementName() {
+  return cast<char[128]>(get_ptr()->m_rgchAchievementName);
+}
+
+auto UserAchievementIconFetched_t_box::get_m_bAchieved() {
+  return cast<bool_box>(get_ptr()->m_bAchieved);
+}
+
+auto UserAchievementIconFetched_t_box::get_m_nIconHandle() {
+  return cast<int_box>(get_ptr()->m_nIconHandle);
+}
+
+void UserAchievementIconFetched_t_box::_register_methods() {
+  register_method("get_m_nGameID",
+                  &UserAchievementIconFetched_t_box::get_m_nGameID);
+  register_method("get_m_rgchAchievementName",
+                  &UserAchievementIconFetched_t_box::get_m_rgchAchievementName);
+  register_method("get_m_bAchieved",
+                  &UserAchievementIconFetched_t_box::get_m_bAchieved);
+  register_method("get_m_nIconHandle",
+                  &UserAchievementIconFetched_t_box::get_m_nIconHandle);
+}
+
+auto GlobalAchievementPercentagesReady_t_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto GlobalAchievementPercentagesReady_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void GlobalAchievementPercentagesReady_t_box::_register_methods() {
+  register_method("get_m_nGameID",
+                  &GlobalAchievementPercentagesReady_t_box::get_m_nGameID);
+  register_method("get_m_eResult",
+                  &GlobalAchievementPercentagesReady_t_box::get_m_eResult);
+}
+
+auto LeaderboardUGCSet_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto LeaderboardUGCSet_t_box::get_m_hSteamLeaderboard() {
+  return cast<SteamLeaderboard_t_box>(get_ptr()->m_hSteamLeaderboard);
+}
+
+void LeaderboardUGCSet_t_box::_register_methods() {
+  register_method("get_m_eResult", &LeaderboardUGCSet_t_box::get_m_eResult);
+  register_method("get_m_hSteamLeaderboard",
+                  &LeaderboardUGCSet_t_box::get_m_hSteamLeaderboard);
+}
+
+auto PS3TrophiesInstalled_t_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto PS3TrophiesInstalled_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto PS3TrophiesInstalled_t_box::get_m_ulRequiredDiskSpace() {
+  return cast<uint64_box>(get_ptr()->m_ulRequiredDiskSpace);
+}
+
+void PS3TrophiesInstalled_t_box::_register_methods() {
+  register_method("get_m_nGameID", &PS3TrophiesInstalled_t_box::get_m_nGameID);
+  register_method("get_m_eResult", &PS3TrophiesInstalled_t_box::get_m_eResult);
+  register_method("get_m_ulRequiredDiskSpace",
+                  &PS3TrophiesInstalled_t_box::get_m_ulRequiredDiskSpace);
+}
+
+auto GlobalStatsReceived_t_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto GlobalStatsReceived_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void GlobalStatsReceived_t_box::_register_methods() {
+  register_method("get_m_nGameID", &GlobalStatsReceived_t_box::get_m_nGameID);
+  register_method("get_m_eResult", &GlobalStatsReceived_t_box::get_m_eResult);
+}
+
+auto DlcInstalled_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void DlcInstalled_t_box::_register_methods() {
+  register_method("get_m_nAppID", &DlcInstalled_t_box::get_m_nAppID);
+}
+
+auto RegisterActivationCodeResponse_t_box::get_m_eResult() {
+  return cast<ERegisterActivationCodeResult_box>(get_ptr()->m_eResult);
+}
+
+auto RegisterActivationCodeResponse_t_box::get_m_unPackageRegistered() {
+  return cast<uint32_box>(get_ptr()->m_unPackageRegistered);
+}
+
+void RegisterActivationCodeResponse_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RegisterActivationCodeResponse_t_box::get_m_eResult);
+  register_method(
+      "get_m_unPackageRegistered",
+      &RegisterActivationCodeResponse_t_box::get_m_unPackageRegistered);
+}
+
+void NewUrlLaunchParameters_t_box::_register_methods() {}
+
+auto AppProofOfPurchaseKeyResponse_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto AppProofOfPurchaseKeyResponse_t_box::get_m_nAppID() {
+  return cast<uint32_box>(get_ptr()->m_nAppID);
+}
+
+auto AppProofOfPurchaseKeyResponse_t_box::get_m_cchKeyLength() {
+  return cast<uint32_box>(get_ptr()->m_cchKeyLength);
+}
+
+auto AppProofOfPurchaseKeyResponse_t_box::get_m_rgchKey() {
+  return cast<char[240]>(get_ptr()->m_rgchKey);
+}
+
+void AppProofOfPurchaseKeyResponse_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &AppProofOfPurchaseKeyResponse_t_box::get_m_eResult);
+  register_method("get_m_nAppID",
+                  &AppProofOfPurchaseKeyResponse_t_box::get_m_nAppID);
+  register_method("get_m_cchKeyLength",
+                  &AppProofOfPurchaseKeyResponse_t_box::get_m_cchKeyLength);
+  register_method("get_m_rgchKey",
+                  &AppProofOfPurchaseKeyResponse_t_box::get_m_rgchKey);
+}
+
+auto FileDetailsResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto FileDetailsResult_t_box::get_m_ulFileSize() {
+  return cast<uint64_box>(get_ptr()->m_ulFileSize);
+}
+
+auto FileDetailsResult_t_box::get_m_FileSHA() {
+  return cast<uint8[20]>(get_ptr()->m_FileSHA);
+}
+
+auto FileDetailsResult_t_box::get_m_unFlags() {
+  return cast<uint32_box>(get_ptr()->m_unFlags);
+}
+
+void FileDetailsResult_t_box::_register_methods() {
+  register_method("get_m_eResult", &FileDetailsResult_t_box::get_m_eResult);
+  register_method("get_m_ulFileSize",
+                  &FileDetailsResult_t_box::get_m_ulFileSize);
+  register_method("get_m_FileSHA", &FileDetailsResult_t_box::get_m_FileSHA);
+  register_method("get_m_unFlags", &FileDetailsResult_t_box::get_m_unFlags);
+}
+
+auto TimedTrialStatus_t_box::get_m_unAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unAppID);
+}
+
+auto TimedTrialStatus_t_box::get_m_bIsOffline() {
+  return cast<bool_box>(get_ptr()->m_bIsOffline);
+}
+
+auto TimedTrialStatus_t_box::get_m_unSecondsAllowed() {
+  return cast<uint32_box>(get_ptr()->m_unSecondsAllowed);
+}
+
+auto TimedTrialStatus_t_box::get_m_unSecondsPlayed() {
+  return cast<uint32_box>(get_ptr()->m_unSecondsPlayed);
+}
+
+void TimedTrialStatus_t_box::_register_methods() {
+  register_method("get_m_unAppID", &TimedTrialStatus_t_box::get_m_unAppID);
+  register_method("get_m_bIsOffline",
+                  &TimedTrialStatus_t_box::get_m_bIsOffline);
+  register_method("get_m_unSecondsAllowed",
+                  &TimedTrialStatus_t_box::get_m_unSecondsAllowed);
+  register_method("get_m_unSecondsPlayed",
+                  &TimedTrialStatus_t_box::get_m_unSecondsPlayed);
+}
+
+auto P2PSessionRequest_t_box::get_m_steamIDRemote() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDRemote);
+}
+
+void P2PSessionRequest_t_box::_register_methods() {
+  register_method("get_m_steamIDRemote",
+                  &P2PSessionRequest_t_box::get_m_steamIDRemote);
+}
+
+auto P2PSessionConnectFail_t_box::get_m_steamIDRemote() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDRemote);
+}
+
+auto P2PSessionConnectFail_t_box::get_m_eP2PSessionError() {
+  return cast<uint8_box>(get_ptr()->m_eP2PSessionError);
+}
+
+void P2PSessionConnectFail_t_box::_register_methods() {
+  register_method("get_m_steamIDRemote",
+                  &P2PSessionConnectFail_t_box::get_m_steamIDRemote);
+  register_method("get_m_eP2PSessionError",
+                  &P2PSessionConnectFail_t_box::get_m_eP2PSessionError);
+}
+
+auto SocketStatusCallback_t_box::get_m_hSocket() {
+  return cast<SNetSocket_t_box>(get_ptr()->m_hSocket);
+}
+
+auto SocketStatusCallback_t_box::get_m_hListenSocket() {
+  return cast<SNetListenSocket_t_box>(get_ptr()->m_hListenSocket);
+}
+
+auto SocketStatusCallback_t_box::get_m_steamIDRemote() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDRemote);
+}
+
+auto SocketStatusCallback_t_box::get_m_eSNetSocketState() {
+  return cast<int_box>(get_ptr()->m_eSNetSocketState);
+}
+
+void SocketStatusCallback_t_box::_register_methods() {
+  register_method("get_m_hSocket", &SocketStatusCallback_t_box::get_m_hSocket);
+  register_method("get_m_hListenSocket",
+                  &SocketStatusCallback_t_box::get_m_hListenSocket);
+  register_method("get_m_steamIDRemote",
+                  &SocketStatusCallback_t_box::get_m_steamIDRemote);
+  register_method("get_m_eSNetSocketState",
+                  &SocketStatusCallback_t_box::get_m_eSNetSocketState);
+}
+
+auto ScreenshotReady_t_box::get_m_hLocal() {
+  return cast<ScreenshotHandle_box>(get_ptr()->m_hLocal);
+}
+
+auto ScreenshotReady_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void ScreenshotReady_t_box::_register_methods() {
+  register_method("get_m_hLocal", &ScreenshotReady_t_box::get_m_hLocal);
+  register_method("get_m_eResult", &ScreenshotReady_t_box::get_m_eResult);
+}
+
+void ScreenshotRequested_t_box::_register_methods() {}
+
+void PlaybackStatusHasChanged_t_box::_register_methods() {}
+
+auto VolumeHasChanged_t_box::get_m_flNewVolume() {
+  return cast<float_box>(get_ptr()->m_flNewVolume);
+}
+
+void VolumeHasChanged_t_box::_register_methods() {
+  register_method("get_m_flNewVolume",
+                  &VolumeHasChanged_t_box::get_m_flNewVolume);
+}
+
+void MusicPlayerRemoteWillActivate_t_box::_register_methods() {}
+
+void MusicPlayerRemoteWillDeactivate_t_box::_register_methods() {}
+
+void MusicPlayerRemoteToFront_t_box::_register_methods() {}
+
+void MusicPlayerWillQuit_t_box::_register_methods() {}
+
+void MusicPlayerWantsPlay_t_box::_register_methods() {}
+
+void MusicPlayerWantsPause_t_box::_register_methods() {}
+
+void MusicPlayerWantsPlayPrevious_t_box::_register_methods() {}
+
+void MusicPlayerWantsPlayNext_t_box::_register_methods() {}
+
+auto MusicPlayerWantsShuffled_t_box::get_m_bShuffled() {
+  return cast<bool_box>(get_ptr()->m_bShuffled);
+}
+
+void MusicPlayerWantsShuffled_t_box::_register_methods() {
+  register_method("get_m_bShuffled",
+                  &MusicPlayerWantsShuffled_t_box::get_m_bShuffled);
+}
+
+auto MusicPlayerWantsLooped_t_box::get_m_bLooped() {
+  return cast<bool_box>(get_ptr()->m_bLooped);
+}
+
+void MusicPlayerWantsLooped_t_box::_register_methods() {
+  register_method("get_m_bLooped",
+                  &MusicPlayerWantsLooped_t_box::get_m_bLooped);
+}
+
+auto MusicPlayerWantsVolume_t_box::get_m_flNewVolume() {
+  return cast<float_box>(get_ptr()->m_flNewVolume);
+}
+
+void MusicPlayerWantsVolume_t_box::_register_methods() {
+  register_method("get_m_flNewVolume",
+                  &MusicPlayerWantsVolume_t_box::get_m_flNewVolume);
+}
+
+auto MusicPlayerSelectsQueueEntry_t_box::get_nID() {
+  return cast<int_box>(get_ptr()->nID);
+}
+
+void MusicPlayerSelectsQueueEntry_t_box::_register_methods() {
+  register_method("get_nID", &MusicPlayerSelectsQueueEntry_t_box::get_nID);
+}
+
+auto MusicPlayerSelectsPlaylistEntry_t_box::get_nID() {
+  return cast<int_box>(get_ptr()->nID);
+}
+
+void MusicPlayerSelectsPlaylistEntry_t_box::_register_methods() {
+  register_method("get_nID", &MusicPlayerSelectsPlaylistEntry_t_box::get_nID);
+}
+
+auto MusicPlayerWantsPlayingRepeatStatus_t_box::get_m_nPlayingRepeatStatus() {
+  return cast<int_box>(get_ptr()->m_nPlayingRepeatStatus);
+}
+
+void MusicPlayerWantsPlayingRepeatStatus_t_box::_register_methods() {
+  register_method(
+      "get_m_nPlayingRepeatStatus",
+      &MusicPlayerWantsPlayingRepeatStatus_t_box::get_m_nPlayingRepeatStatus);
+}
+
+auto HTTPRequestCompleted_t_box::get_m_hRequest() {
+  return cast<HTTPRequestHandle_box>(get_ptr()->m_hRequest);
+}
+
+auto HTTPRequestCompleted_t_box::get_m_ulContextValue() {
+  return cast<uint64_box>(get_ptr()->m_ulContextValue);
+}
+
+auto HTTPRequestCompleted_t_box::get_m_bRequestSuccessful() {
+  return cast<bool_box>(get_ptr()->m_bRequestSuccessful);
+}
+
+auto HTTPRequestCompleted_t_box::get_m_eStatusCode() {
+  return cast<EHTTPStatusCode_box>(get_ptr()->m_eStatusCode);
+}
+
+auto HTTPRequestCompleted_t_box::get_m_unBodySize() {
+  return cast<uint32_box>(get_ptr()->m_unBodySize);
+}
+
+void HTTPRequestCompleted_t_box::_register_methods() {
+  register_method("get_m_hRequest",
+                  &HTTPRequestCompleted_t_box::get_m_hRequest);
+  register_method("get_m_ulContextValue",
+                  &HTTPRequestCompleted_t_box::get_m_ulContextValue);
+  register_method("get_m_bRequestSuccessful",
+                  &HTTPRequestCompleted_t_box::get_m_bRequestSuccessful);
+  register_method("get_m_eStatusCode",
+                  &HTTPRequestCompleted_t_box::get_m_eStatusCode);
+  register_method("get_m_unBodySize",
+                  &HTTPRequestCompleted_t_box::get_m_unBodySize);
+}
+
+auto HTTPRequestHeadersReceived_t_box::get_m_hRequest() {
+  return cast<HTTPRequestHandle_box>(get_ptr()->m_hRequest);
+}
+
+auto HTTPRequestHeadersReceived_t_box::get_m_ulContextValue() {
+  return cast<uint64_box>(get_ptr()->m_ulContextValue);
+}
+
+void HTTPRequestHeadersReceived_t_box::_register_methods() {
+  register_method("get_m_hRequest",
+                  &HTTPRequestHeadersReceived_t_box::get_m_hRequest);
+  register_method("get_m_ulContextValue",
+                  &HTTPRequestHeadersReceived_t_box::get_m_ulContextValue);
+}
+
+auto HTTPRequestDataReceived_t_box::get_m_hRequest() {
+  return cast<HTTPRequestHandle_box>(get_ptr()->m_hRequest);
+}
+
+auto HTTPRequestDataReceived_t_box::get_m_ulContextValue() {
+  return cast<uint64_box>(get_ptr()->m_ulContextValue);
+}
+
+auto HTTPRequestDataReceived_t_box::get_m_cOffset() {
+  return cast<uint32_box>(get_ptr()->m_cOffset);
+}
+
+auto HTTPRequestDataReceived_t_box::get_m_cBytesReceived() {
+  return cast<uint32_box>(get_ptr()->m_cBytesReceived);
+}
+
+void HTTPRequestDataReceived_t_box::_register_methods() {
+  register_method("get_m_hRequest",
+                  &HTTPRequestDataReceived_t_box::get_m_hRequest);
+  register_method("get_m_ulContextValue",
+                  &HTTPRequestDataReceived_t_box::get_m_ulContextValue);
+  register_method("get_m_cOffset",
+                  &HTTPRequestDataReceived_t_box::get_m_cOffset);
+  register_method("get_m_cBytesReceived",
+                  &HTTPRequestDataReceived_t_box::get_m_cBytesReceived);
+}
+
+auto SteamInputDeviceConnected_t_box::get_m_ulConnectedDeviceHandle() {
+  return cast<InputHandle_t_box>(get_ptr()->m_ulConnectedDeviceHandle);
+}
+
+void SteamInputDeviceConnected_t_box::_register_methods() {
+  register_method(
+      "get_m_ulConnectedDeviceHandle",
+      &SteamInputDeviceConnected_t_box::get_m_ulConnectedDeviceHandle);
+}
+
+auto SteamInputDeviceDisconnected_t_box::get_m_ulDisconnectedDeviceHandle() {
+  return cast<InputHandle_t_box>(get_ptr()->m_ulDisconnectedDeviceHandle);
+}
+
+void SteamInputDeviceDisconnected_t_box::_register_methods() {
+  register_method(
+      "get_m_ulDisconnectedDeviceHandle",
+      &SteamInputDeviceDisconnected_t_box::get_m_ulDisconnectedDeviceHandle);
+}
+
+auto SteamInputConfigurationLoaded_t_box::get_m_unAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unAppID);
+}
+
+auto SteamInputConfigurationLoaded_t_box::get_m_ulDeviceHandle() {
+  return cast<InputHandle_t_box>(get_ptr()->m_ulDeviceHandle);
+}
+
+auto SteamInputConfigurationLoaded_t_box::get_m_ulMappingCreator() {
+  return cast<CSteamID_box>(get_ptr()->m_ulMappingCreator);
+}
+
+auto SteamInputConfigurationLoaded_t_box::get_m_unMajorRevision() {
+  return cast<uint32_box>(get_ptr()->m_unMajorRevision);
+}
+
+auto SteamInputConfigurationLoaded_t_box::get_m_unMinorRevision() {
+  return cast<uint32_box>(get_ptr()->m_unMinorRevision);
+}
+
+auto SteamInputConfigurationLoaded_t_box::get_m_bUsesSteamInputAPI() {
+  return cast<bool_box>(get_ptr()->m_bUsesSteamInputAPI);
+}
+
+auto SteamInputConfigurationLoaded_t_box::get_m_bUsesGamepadAPI() {
+  return cast<bool_box>(get_ptr()->m_bUsesGamepadAPI);
+}
+
+void SteamInputConfigurationLoaded_t_box::_register_methods() {
+  register_method("get_m_unAppID",
+                  &SteamInputConfigurationLoaded_t_box::get_m_unAppID);
+  register_method("get_m_ulDeviceHandle",
+                  &SteamInputConfigurationLoaded_t_box::get_m_ulDeviceHandle);
+  register_method("get_m_ulMappingCreator",
+                  &SteamInputConfigurationLoaded_t_box::get_m_ulMappingCreator);
+  register_method("get_m_unMajorRevision",
+                  &SteamInputConfigurationLoaded_t_box::get_m_unMajorRevision);
+  register_method("get_m_unMinorRevision",
+                  &SteamInputConfigurationLoaded_t_box::get_m_unMinorRevision);
+  register_method(
+      "get_m_bUsesSteamInputAPI",
+      &SteamInputConfigurationLoaded_t_box::get_m_bUsesSteamInputAPI);
+  register_method("get_m_bUsesGamepadAPI",
+                  &SteamInputConfigurationLoaded_t_box::get_m_bUsesGamepadAPI);
+}
+
+auto SteamUGCQueryCompleted_t_box::get_m_handle() {
+  return cast<UGCQueryHandle_t_box>(get_ptr()->m_handle);
+}
+
+auto SteamUGCQueryCompleted_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SteamUGCQueryCompleted_t_box::get_m_unNumResultsReturned() {
+  return cast<uint32_box>(get_ptr()->m_unNumResultsReturned);
+}
+
+auto SteamUGCQueryCompleted_t_box::get_m_unTotalMatchingResults() {
+  return cast<uint32_box>(get_ptr()->m_unTotalMatchingResults);
+}
+
+auto SteamUGCQueryCompleted_t_box::get_m_bCachedData() {
+  return cast<bool_box>(get_ptr()->m_bCachedData);
+}
+
+auto SteamUGCQueryCompleted_t_box::get_m_rgchNextCursor() {
+  return cast<char[256]>(get_ptr()->m_rgchNextCursor);
+}
+
+void SteamUGCQueryCompleted_t_box::_register_methods() {
+  register_method("get_m_handle", &SteamUGCQueryCompleted_t_box::get_m_handle);
+  register_method("get_m_eResult",
+                  &SteamUGCQueryCompleted_t_box::get_m_eResult);
+  register_method("get_m_unNumResultsReturned",
+                  &SteamUGCQueryCompleted_t_box::get_m_unNumResultsReturned);
+  register_method("get_m_unTotalMatchingResults",
+                  &SteamUGCQueryCompleted_t_box::get_m_unTotalMatchingResults);
+  register_method("get_m_bCachedData",
+                  &SteamUGCQueryCompleted_t_box::get_m_bCachedData);
+  register_method("get_m_rgchNextCursor",
+                  &SteamUGCQueryCompleted_t_box::get_m_rgchNextCursor);
+}
+
+auto SteamUGCRequestUGCDetailsResult_t_box::get_m_details() {
+  return cast<SteamUGCDetails_t_box>(get_ptr()->m_details);
+}
+
+auto SteamUGCRequestUGCDetailsResult_t_box::get_m_bCachedData() {
+  return cast<bool_box>(get_ptr()->m_bCachedData);
+}
+
+void SteamUGCRequestUGCDetailsResult_t_box::_register_methods() {
+  register_method("get_m_details",
+                  &SteamUGCRequestUGCDetailsResult_t_box::get_m_details);
+  register_method("get_m_bCachedData",
+                  &SteamUGCRequestUGCDetailsResult_t_box::get_m_bCachedData);
+}
+
+auto CreateItemResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto CreateItemResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto CreateItemResult_t_box::get_m_bUserNeedsToAcceptWorkshopLegalAgreement() {
+  return cast<bool_box>(get_ptr()->m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+void CreateItemResult_t_box::_register_methods() {
+  register_method("get_m_eResult", &CreateItemResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &CreateItemResult_t_box::get_m_nPublishedFileId);
+  register_method(
+      "get_m_bUserNeedsToAcceptWorkshopLegalAgreement",
+      &CreateItemResult_t_box::get_m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+auto SubmitItemUpdateResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SubmitItemUpdateResult_t_box::
+    get_m_bUserNeedsToAcceptWorkshopLegalAgreement() {
+  return cast<bool_box>(get_ptr()->m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+auto SubmitItemUpdateResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void SubmitItemUpdateResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &SubmitItemUpdateResult_t_box::get_m_eResult);
+  register_method("get_m_bUserNeedsToAcceptWorkshopLegalAgreement",
+                  &SubmitItemUpdateResult_t_box::
+                      get_m_bUserNeedsToAcceptWorkshopLegalAgreement);
+  register_method("get_m_nPublishedFileId",
+                  &SubmitItemUpdateResult_t_box::get_m_nPublishedFileId);
+}
+
+auto ItemInstalled_t_box::get_m_unAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unAppID);
+}
+
+auto ItemInstalled_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void ItemInstalled_t_box::_register_methods() {
+  register_method("get_m_unAppID", &ItemInstalled_t_box::get_m_unAppID);
+  register_method("get_m_nPublishedFileId",
+                  &ItemInstalled_t_box::get_m_nPublishedFileId);
+}
+
+auto DownloadItemResult_t_box::get_m_unAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unAppID);
+}
+
+auto DownloadItemResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto DownloadItemResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void DownloadItemResult_t_box::_register_methods() {
+  register_method("get_m_unAppID", &DownloadItemResult_t_box::get_m_unAppID);
+  register_method("get_m_nPublishedFileId",
+                  &DownloadItemResult_t_box::get_m_nPublishedFileId);
+  register_method("get_m_eResult", &DownloadItemResult_t_box::get_m_eResult);
+}
+
+auto UserFavoriteItemsListChanged_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto UserFavoriteItemsListChanged_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto UserFavoriteItemsListChanged_t_box::get_m_bWasAddRequest() {
+  return cast<bool_box>(get_ptr()->m_bWasAddRequest);
+}
+
+void UserFavoriteItemsListChanged_t_box::_register_methods() {
+  register_method("get_m_nPublishedFileId",
+                  &UserFavoriteItemsListChanged_t_box::get_m_nPublishedFileId);
+  register_method("get_m_eResult",
+                  &UserFavoriteItemsListChanged_t_box::get_m_eResult);
+  register_method("get_m_bWasAddRequest",
+                  &UserFavoriteItemsListChanged_t_box::get_m_bWasAddRequest);
+}
+
+auto SetUserItemVoteResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto SetUserItemVoteResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SetUserItemVoteResult_t_box::get_m_bVoteUp() {
+  return cast<bool_box>(get_ptr()->m_bVoteUp);
+}
+
+void SetUserItemVoteResult_t_box::_register_methods() {
+  register_method("get_m_nPublishedFileId",
+                  &SetUserItemVoteResult_t_box::get_m_nPublishedFileId);
+  register_method("get_m_eResult", &SetUserItemVoteResult_t_box::get_m_eResult);
+  register_method("get_m_bVoteUp", &SetUserItemVoteResult_t_box::get_m_bVoteUp);
+}
+
+auto GetUserItemVoteResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto GetUserItemVoteResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GetUserItemVoteResult_t_box::get_m_bVotedUp() {
+  return cast<bool_box>(get_ptr()->m_bVotedUp);
+}
+
+auto GetUserItemVoteResult_t_box::get_m_bVotedDown() {
+  return cast<bool_box>(get_ptr()->m_bVotedDown);
+}
+
+auto GetUserItemVoteResult_t_box::get_m_bVoteSkipped() {
+  return cast<bool_box>(get_ptr()->m_bVoteSkipped);
+}
+
+void GetUserItemVoteResult_t_box::_register_methods() {
+  register_method("get_m_nPublishedFileId",
+                  &GetUserItemVoteResult_t_box::get_m_nPublishedFileId);
+  register_method("get_m_eResult", &GetUserItemVoteResult_t_box::get_m_eResult);
+  register_method("get_m_bVotedUp",
+                  &GetUserItemVoteResult_t_box::get_m_bVotedUp);
+  register_method("get_m_bVotedDown",
+                  &GetUserItemVoteResult_t_box::get_m_bVotedDown);
+  register_method("get_m_bVoteSkipped",
+                  &GetUserItemVoteResult_t_box::get_m_bVoteSkipped);
+}
+
+auto StartPlaytimeTrackingResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void StartPlaytimeTrackingResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &StartPlaytimeTrackingResult_t_box::get_m_eResult);
+}
+
+auto StopPlaytimeTrackingResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void StopPlaytimeTrackingResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &StopPlaytimeTrackingResult_t_box::get_m_eResult);
+}
+
+auto AddUGCDependencyResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto AddUGCDependencyResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto AddUGCDependencyResult_t_box::get_m_nChildPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nChildPublishedFileId);
+}
+
+void AddUGCDependencyResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &AddUGCDependencyResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &AddUGCDependencyResult_t_box::get_m_nPublishedFileId);
+  register_method("get_m_nChildPublishedFileId",
+                  &AddUGCDependencyResult_t_box::get_m_nChildPublishedFileId);
+}
+
+auto RemoveUGCDependencyResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoveUGCDependencyResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoveUGCDependencyResult_t_box::get_m_nChildPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nChildPublishedFileId);
+}
+
+void RemoveUGCDependencyResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RemoveUGCDependencyResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoveUGCDependencyResult_t_box::get_m_nPublishedFileId);
+  register_method(
+      "get_m_nChildPublishedFileId",
+      &RemoveUGCDependencyResult_t_box::get_m_nChildPublishedFileId);
+}
+
+auto AddAppDependencyResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto AddAppDependencyResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto AddAppDependencyResult_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void AddAppDependencyResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &AddAppDependencyResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &AddAppDependencyResult_t_box::get_m_nPublishedFileId);
+  register_method("get_m_nAppID", &AddAppDependencyResult_t_box::get_m_nAppID);
+}
+
+auto RemoveAppDependencyResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoveAppDependencyResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoveAppDependencyResult_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void RemoveAppDependencyResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &RemoveAppDependencyResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoveAppDependencyResult_t_box::get_m_nPublishedFileId);
+  register_method("get_m_nAppID",
+                  &RemoveAppDependencyResult_t_box::get_m_nAppID);
+}
+
+auto GetAppDependenciesResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GetAppDependenciesResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto GetAppDependenciesResult_t_box::get_m_rgAppIDs() {
+  return cast<AppId_t[32]>(get_ptr()->m_rgAppIDs);
+}
+
+auto GetAppDependenciesResult_t_box::get_m_nNumAppDependencies() {
+  return cast<uint32_box>(get_ptr()->m_nNumAppDependencies);
+}
+
+auto GetAppDependenciesResult_t_box::get_m_nTotalNumAppDependencies() {
+  return cast<uint32_box>(get_ptr()->m_nTotalNumAppDependencies);
+}
+
+void GetAppDependenciesResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &GetAppDependenciesResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &GetAppDependenciesResult_t_box::get_m_nPublishedFileId);
+  register_method("get_m_rgAppIDs",
+                  &GetAppDependenciesResult_t_box::get_m_rgAppIDs);
+  register_method("get_m_nNumAppDependencies",
+                  &GetAppDependenciesResult_t_box::get_m_nNumAppDependencies);
+  register_method(
+      "get_m_nTotalNumAppDependencies",
+      &GetAppDependenciesResult_t_box::get_m_nTotalNumAppDependencies);
+}
+
+auto DeleteItemResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto DeleteItemResult_t_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void DeleteItemResult_t_box::_register_methods() {
+  register_method("get_m_eResult", &DeleteItemResult_t_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &DeleteItemResult_t_box::get_m_nPublishedFileId);
+}
+
+auto UserSubscribedItemsListChanged_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void UserSubscribedItemsListChanged_t_box::_register_methods() {
+  register_method("get_m_nAppID",
+                  &UserSubscribedItemsListChanged_t_box::get_m_nAppID);
+}
+
+auto WorkshopEULAStatus_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto WorkshopEULAStatus_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+auto WorkshopEULAStatus_t_box::get_m_unVersion() {
+  return cast<uint32_box>(get_ptr()->m_unVersion);
+}
+
+auto WorkshopEULAStatus_t_box::get_m_rtAction() {
+  return cast<RTime32_box>(get_ptr()->m_rtAction);
+}
+
+auto WorkshopEULAStatus_t_box::get_m_bAccepted() {
+  return cast<bool_box>(get_ptr()->m_bAccepted);
+}
+
+auto WorkshopEULAStatus_t_box::get_m_bNeedsAction() {
+  return cast<bool_box>(get_ptr()->m_bNeedsAction);
+}
+
+void WorkshopEULAStatus_t_box::_register_methods() {
+  register_method("get_m_eResult", &WorkshopEULAStatus_t_box::get_m_eResult);
+  register_method("get_m_nAppID", &WorkshopEULAStatus_t_box::get_m_nAppID);
+  register_method("get_m_unVersion",
+                  &WorkshopEULAStatus_t_box::get_m_unVersion);
+  register_method("get_m_rtAction", &WorkshopEULAStatus_t_box::get_m_rtAction);
+  register_method("get_m_bAccepted",
+                  &WorkshopEULAStatus_t_box::get_m_bAccepted);
+  register_method("get_m_bNeedsAction",
+                  &WorkshopEULAStatus_t_box::get_m_bNeedsAction);
+}
+
+auto SteamAppInstalled_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+auto SteamAppInstalled_t_box::get_m_iInstallFolderIndex() {
+  return cast<int_box>(get_ptr()->m_iInstallFolderIndex);
+}
+
+void SteamAppInstalled_t_box::_register_methods() {
+  register_method("get_m_nAppID", &SteamAppInstalled_t_box::get_m_nAppID);
+  register_method("get_m_iInstallFolderIndex",
+                  &SteamAppInstalled_t_box::get_m_iInstallFolderIndex);
+}
+
+auto SteamAppUninstalled_t_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+auto SteamAppUninstalled_t_box::get_m_iInstallFolderIndex() {
+  return cast<int_box>(get_ptr()->m_iInstallFolderIndex);
+}
+
+void SteamAppUninstalled_t_box::_register_methods() {
+  register_method("get_m_nAppID", &SteamAppUninstalled_t_box::get_m_nAppID);
+  register_method("get_m_iInstallFolderIndex",
+                  &SteamAppUninstalled_t_box::get_m_iInstallFolderIndex);
+}
+
+auto HTML_BrowserReady_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+void HTML_BrowserReady_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_BrowserReady_t_box::get_unBrowserHandle);
+}
+
+auto HTML_NeedsPaint_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_NeedsPaint_t_box::get_pBGRA() {
+  return cast<char_const_pointer_box>(get_ptr()->pBGRA);
+}
+
+auto HTML_NeedsPaint_t_box::get_unWide() {
+  return cast<uint32_box>(get_ptr()->unWide);
+}
+
+auto HTML_NeedsPaint_t_box::get_unTall() {
+  return cast<uint32_box>(get_ptr()->unTall);
+}
+
+auto HTML_NeedsPaint_t_box::get_unUpdateX() {
+  return cast<uint32_box>(get_ptr()->unUpdateX);
+}
+
+auto HTML_NeedsPaint_t_box::get_unUpdateY() {
+  return cast<uint32_box>(get_ptr()->unUpdateY);
+}
+
+auto HTML_NeedsPaint_t_box::get_unUpdateWide() {
+  return cast<uint32_box>(get_ptr()->unUpdateWide);
+}
+
+auto HTML_NeedsPaint_t_box::get_unUpdateTall() {
+  return cast<uint32_box>(get_ptr()->unUpdateTall);
+}
+
+auto HTML_NeedsPaint_t_box::get_unScrollX() {
+  return cast<uint32_box>(get_ptr()->unScrollX);
+}
+
+auto HTML_NeedsPaint_t_box::get_unScrollY() {
+  return cast<uint32_box>(get_ptr()->unScrollY);
+}
+
+auto HTML_NeedsPaint_t_box::get_flPageScale() {
+  return cast<float_box>(get_ptr()->flPageScale);
+}
+
+auto HTML_NeedsPaint_t_box::get_unPageSerial() {
+  return cast<uint32_box>(get_ptr()->unPageSerial);
+}
+
+void HTML_NeedsPaint_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_NeedsPaint_t_box::get_unBrowserHandle);
+  register_method("get_pBGRA", &HTML_NeedsPaint_t_box::get_pBGRA);
+  register_method("get_unWide", &HTML_NeedsPaint_t_box::get_unWide);
+  register_method("get_unTall", &HTML_NeedsPaint_t_box::get_unTall);
+  register_method("get_unUpdateX", &HTML_NeedsPaint_t_box::get_unUpdateX);
+  register_method("get_unUpdateY", &HTML_NeedsPaint_t_box::get_unUpdateY);
+  register_method("get_unUpdateWide", &HTML_NeedsPaint_t_box::get_unUpdateWide);
+  register_method("get_unUpdateTall", &HTML_NeedsPaint_t_box::get_unUpdateTall);
+  register_method("get_unScrollX", &HTML_NeedsPaint_t_box::get_unScrollX);
+  register_method("get_unScrollY", &HTML_NeedsPaint_t_box::get_unScrollY);
+  register_method("get_flPageScale", &HTML_NeedsPaint_t_box::get_flPageScale);
+  register_method("get_unPageSerial", &HTML_NeedsPaint_t_box::get_unPageSerial);
+}
+
+auto HTML_StartRequest_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_StartRequest_t_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+auto HTML_StartRequest_t_box::get_pchTarget() {
+  return cast<char_const_pointer_box>(get_ptr()->pchTarget);
+}
+
+auto HTML_StartRequest_t_box::get_pchPostData() {
+  return cast<char_const_pointer_box>(get_ptr()->pchPostData);
+}
+
+auto HTML_StartRequest_t_box::get_bIsRedirect() {
+  return cast<bool_box>(get_ptr()->bIsRedirect);
+}
+
+void HTML_StartRequest_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_StartRequest_t_box::get_unBrowserHandle);
+  register_method("get_pchURL", &HTML_StartRequest_t_box::get_pchURL);
+  register_method("get_pchTarget", &HTML_StartRequest_t_box::get_pchTarget);
+  register_method("get_pchPostData", &HTML_StartRequest_t_box::get_pchPostData);
+  register_method("get_bIsRedirect", &HTML_StartRequest_t_box::get_bIsRedirect);
+}
+
+auto HTML_CloseBrowser_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+void HTML_CloseBrowser_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_CloseBrowser_t_box::get_unBrowserHandle);
+}
+
+auto HTML_URLChanged_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_URLChanged_t_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+auto HTML_URLChanged_t_box::get_pchPostData() {
+  return cast<char_const_pointer_box>(get_ptr()->pchPostData);
+}
+
+auto HTML_URLChanged_t_box::get_bIsRedirect() {
+  return cast<bool_box>(get_ptr()->bIsRedirect);
+}
+
+auto HTML_URLChanged_t_box::get_pchPageTitle() {
+  return cast<char_const_pointer_box>(get_ptr()->pchPageTitle);
+}
+
+auto HTML_URLChanged_t_box::get_bNewNavigation() {
+  return cast<bool_box>(get_ptr()->bNewNavigation);
+}
+
+void HTML_URLChanged_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_URLChanged_t_box::get_unBrowserHandle);
+  register_method("get_pchURL", &HTML_URLChanged_t_box::get_pchURL);
+  register_method("get_pchPostData", &HTML_URLChanged_t_box::get_pchPostData);
+  register_method("get_bIsRedirect", &HTML_URLChanged_t_box::get_bIsRedirect);
+  register_method("get_pchPageTitle", &HTML_URLChanged_t_box::get_pchPageTitle);
+  register_method("get_bNewNavigation",
+                  &HTML_URLChanged_t_box::get_bNewNavigation);
+}
+
+auto HTML_FinishedRequest_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_FinishedRequest_t_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+auto HTML_FinishedRequest_t_box::get_pchPageTitle() {
+  return cast<char_const_pointer_box>(get_ptr()->pchPageTitle);
+}
+
+void HTML_FinishedRequest_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_FinishedRequest_t_box::get_unBrowserHandle);
+  register_method("get_pchURL", &HTML_FinishedRequest_t_box::get_pchURL);
+  register_method("get_pchPageTitle",
+                  &HTML_FinishedRequest_t_box::get_pchPageTitle);
+}
+
+auto HTML_OpenLinkInNewTab_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_OpenLinkInNewTab_t_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+void HTML_OpenLinkInNewTab_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_OpenLinkInNewTab_t_box::get_unBrowserHandle);
+  register_method("get_pchURL", &HTML_OpenLinkInNewTab_t_box::get_pchURL);
+}
+
+auto HTML_ChangedTitle_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_ChangedTitle_t_box::get_pchTitle() {
+  return cast<char_const_pointer_box>(get_ptr()->pchTitle);
+}
+
+void HTML_ChangedTitle_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_ChangedTitle_t_box::get_unBrowserHandle);
+  register_method("get_pchTitle", &HTML_ChangedTitle_t_box::get_pchTitle);
+}
+
+auto HTML_SearchResults_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_SearchResults_t_box::get_unResults() {
+  return cast<uint32_box>(get_ptr()->unResults);
+}
+
+auto HTML_SearchResults_t_box::get_unCurrentMatch() {
+  return cast<uint32_box>(get_ptr()->unCurrentMatch);
+}
+
+void HTML_SearchResults_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_SearchResults_t_box::get_unBrowserHandle);
+  register_method("get_unResults", &HTML_SearchResults_t_box::get_unResults);
+  register_method("get_unCurrentMatch",
+                  &HTML_SearchResults_t_box::get_unCurrentMatch);
+}
+
+auto HTML_CanGoBackAndForward_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_CanGoBackAndForward_t_box::get_bCanGoBack() {
+  return cast<bool_box>(get_ptr()->bCanGoBack);
+}
+
+auto HTML_CanGoBackAndForward_t_box::get_bCanGoForward() {
+  return cast<bool_box>(get_ptr()->bCanGoForward);
+}
+
+void HTML_CanGoBackAndForward_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_CanGoBackAndForward_t_box::get_unBrowserHandle);
+  register_method("get_bCanGoBack",
+                  &HTML_CanGoBackAndForward_t_box::get_bCanGoBack);
+  register_method("get_bCanGoForward",
+                  &HTML_CanGoBackAndForward_t_box::get_bCanGoForward);
+}
+
+auto HTML_HorizontalScroll_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_HorizontalScroll_t_box::get_unScrollMax() {
+  return cast<uint32_box>(get_ptr()->unScrollMax);
+}
+
+auto HTML_HorizontalScroll_t_box::get_unScrollCurrent() {
+  return cast<uint32_box>(get_ptr()->unScrollCurrent);
+}
+
+auto HTML_HorizontalScroll_t_box::get_flPageScale() {
+  return cast<float_box>(get_ptr()->flPageScale);
+}
+
+auto HTML_HorizontalScroll_t_box::get_bVisible() {
+  return cast<bool_box>(get_ptr()->bVisible);
+}
+
+auto HTML_HorizontalScroll_t_box::get_unPageSize() {
+  return cast<uint32_box>(get_ptr()->unPageSize);
+}
+
+void HTML_HorizontalScroll_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_HorizontalScroll_t_box::get_unBrowserHandle);
+  register_method("get_unScrollMax",
+                  &HTML_HorizontalScroll_t_box::get_unScrollMax);
+  register_method("get_unScrollCurrent",
+                  &HTML_HorizontalScroll_t_box::get_unScrollCurrent);
+  register_method("get_flPageScale",
+                  &HTML_HorizontalScroll_t_box::get_flPageScale);
+  register_method("get_bVisible", &HTML_HorizontalScroll_t_box::get_bVisible);
+  register_method("get_unPageSize",
+                  &HTML_HorizontalScroll_t_box::get_unPageSize);
+}
+
+auto HTML_VerticalScroll_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_VerticalScroll_t_box::get_unScrollMax() {
+  return cast<uint32_box>(get_ptr()->unScrollMax);
+}
+
+auto HTML_VerticalScroll_t_box::get_unScrollCurrent() {
+  return cast<uint32_box>(get_ptr()->unScrollCurrent);
+}
+
+auto HTML_VerticalScroll_t_box::get_flPageScale() {
+  return cast<float_box>(get_ptr()->flPageScale);
+}
+
+auto HTML_VerticalScroll_t_box::get_bVisible() {
+  return cast<bool_box>(get_ptr()->bVisible);
+}
+
+auto HTML_VerticalScroll_t_box::get_unPageSize() {
+  return cast<uint32_box>(get_ptr()->unPageSize);
+}
+
+void HTML_VerticalScroll_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_VerticalScroll_t_box::get_unBrowserHandle);
+  register_method("get_unScrollMax",
+                  &HTML_VerticalScroll_t_box::get_unScrollMax);
+  register_method("get_unScrollCurrent",
+                  &HTML_VerticalScroll_t_box::get_unScrollCurrent);
+  register_method("get_flPageScale",
+                  &HTML_VerticalScroll_t_box::get_flPageScale);
+  register_method("get_bVisible", &HTML_VerticalScroll_t_box::get_bVisible);
+  register_method("get_unPageSize", &HTML_VerticalScroll_t_box::get_unPageSize);
+}
+
+auto HTML_LinkAtPosition_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_LinkAtPosition_t_box::get_x() {
+  return cast<uint32_box>(get_ptr()->x);
+}
+
+auto HTML_LinkAtPosition_t_box::get_y() {
+  return cast<uint32_box>(get_ptr()->y);
+}
+
+auto HTML_LinkAtPosition_t_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+auto HTML_LinkAtPosition_t_box::get_bInput() {
+  return cast<bool_box>(get_ptr()->bInput);
+}
+
+auto HTML_LinkAtPosition_t_box::get_bLiveLink() {
+  return cast<bool_box>(get_ptr()->bLiveLink);
+}
+
+void HTML_LinkAtPosition_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_LinkAtPosition_t_box::get_unBrowserHandle);
+  register_method("get_x", &HTML_LinkAtPosition_t_box::get_x);
+  register_method("get_y", &HTML_LinkAtPosition_t_box::get_y);
+  register_method("get_pchURL", &HTML_LinkAtPosition_t_box::get_pchURL);
+  register_method("get_bInput", &HTML_LinkAtPosition_t_box::get_bInput);
+  register_method("get_bLiveLink", &HTML_LinkAtPosition_t_box::get_bLiveLink);
+}
+
+auto HTML_JSAlert_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_JSAlert_t_box::get_pchMessage() {
+  return cast<char_const_pointer_box>(get_ptr()->pchMessage);
+}
+
+void HTML_JSAlert_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_JSAlert_t_box::get_unBrowserHandle);
+  register_method("get_pchMessage", &HTML_JSAlert_t_box::get_pchMessage);
+}
+
+auto HTML_JSConfirm_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_JSConfirm_t_box::get_pchMessage() {
+  return cast<char_const_pointer_box>(get_ptr()->pchMessage);
+}
+
+void HTML_JSConfirm_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_JSConfirm_t_box::get_unBrowserHandle);
+  register_method("get_pchMessage", &HTML_JSConfirm_t_box::get_pchMessage);
+}
+
+auto HTML_FileOpenDialog_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_FileOpenDialog_t_box::get_pchTitle() {
+  return cast<char_const_pointer_box>(get_ptr()->pchTitle);
+}
+
+auto HTML_FileOpenDialog_t_box::get_pchInitialFile() {
+  return cast<char_const_pointer_box>(get_ptr()->pchInitialFile);
+}
+
+void HTML_FileOpenDialog_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_FileOpenDialog_t_box::get_unBrowserHandle);
+  register_method("get_pchTitle", &HTML_FileOpenDialog_t_box::get_pchTitle);
+  register_method("get_pchInitialFile",
+                  &HTML_FileOpenDialog_t_box::get_pchInitialFile);
+}
+
+auto HTML_NewWindow_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_NewWindow_t_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+auto HTML_NewWindow_t_box::get_unX() {
+  return cast<uint32_box>(get_ptr()->unX);
+}
+
+auto HTML_NewWindow_t_box::get_unY() {
+  return cast<uint32_box>(get_ptr()->unY);
+}
+
+auto HTML_NewWindow_t_box::get_unWide() {
+  return cast<uint32_box>(get_ptr()->unWide);
+}
+
+auto HTML_NewWindow_t_box::get_unTall() {
+  return cast<uint32_box>(get_ptr()->unTall);
+}
+
+auto HTML_NewWindow_t_box::get_unNewWindow_BrowserHandle_IGNORE() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unNewWindow_BrowserHandle_IGNORE);
+}
+
+void HTML_NewWindow_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_NewWindow_t_box::get_unBrowserHandle);
+  register_method("get_pchURL", &HTML_NewWindow_t_box::get_pchURL);
+  register_method("get_unX", &HTML_NewWindow_t_box::get_unX);
+  register_method("get_unY", &HTML_NewWindow_t_box::get_unY);
+  register_method("get_unWide", &HTML_NewWindow_t_box::get_unWide);
+  register_method("get_unTall", &HTML_NewWindow_t_box::get_unTall);
+  register_method("get_unNewWindow_BrowserHandle_IGNORE",
+                  &HTML_NewWindow_t_box::get_unNewWindow_BrowserHandle_IGNORE);
+}
+
+auto HTML_SetCursor_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_SetCursor_t_box::get_eMouseCursor() {
+  return cast<uint32_box>(get_ptr()->eMouseCursor);
+}
+
+void HTML_SetCursor_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_SetCursor_t_box::get_unBrowserHandle);
+  register_method("get_eMouseCursor", &HTML_SetCursor_t_box::get_eMouseCursor);
+}
+
+auto HTML_StatusText_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_StatusText_t_box::get_pchMsg() {
+  return cast<char_const_pointer_box>(get_ptr()->pchMsg);
+}
+
+void HTML_StatusText_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_StatusText_t_box::get_unBrowserHandle);
+  register_method("get_pchMsg", &HTML_StatusText_t_box::get_pchMsg);
+}
+
+auto HTML_ShowToolTip_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_ShowToolTip_t_box::get_pchMsg() {
+  return cast<char_const_pointer_box>(get_ptr()->pchMsg);
+}
+
+void HTML_ShowToolTip_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_ShowToolTip_t_box::get_unBrowserHandle);
+  register_method("get_pchMsg", &HTML_ShowToolTip_t_box::get_pchMsg);
+}
+
+auto HTML_UpdateToolTip_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_UpdateToolTip_t_box::get_pchMsg() {
+  return cast<char_const_pointer_box>(get_ptr()->pchMsg);
+}
+
+void HTML_UpdateToolTip_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_UpdateToolTip_t_box::get_unBrowserHandle);
+  register_method("get_pchMsg", &HTML_UpdateToolTip_t_box::get_pchMsg);
+}
+
+auto HTML_HideToolTip_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+void HTML_HideToolTip_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_HideToolTip_t_box::get_unBrowserHandle);
+}
+
+auto HTML_BrowserRestarted_t_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_BrowserRestarted_t_box::get_unOldBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unOldBrowserHandle);
+}
+
+void HTML_BrowserRestarted_t_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_BrowserRestarted_t_box::get_unBrowserHandle);
+  register_method("get_unOldBrowserHandle",
+                  &HTML_BrowserRestarted_t_box::get_unOldBrowserHandle);
+}
+
+auto SteamInventoryResultReady_t_box::get_m_handle() {
+  return cast<SteamInventoryResult_t_box>(get_ptr()->m_handle);
+}
+
+auto SteamInventoryResultReady_t_box::get_m_result() {
+  return cast<EResult_box>(get_ptr()->m_result);
+}
+
+void SteamInventoryResultReady_t_box::_register_methods() {
+  register_method("get_m_handle",
+                  &SteamInventoryResultReady_t_box::get_m_handle);
+  register_method("get_m_result",
+                  &SteamInventoryResultReady_t_box::get_m_result);
+}
+
+auto SteamInventoryFullUpdate_t_box::get_m_handle() {
+  return cast<SteamInventoryResult_t_box>(get_ptr()->m_handle);
+}
+
+void SteamInventoryFullUpdate_t_box::_register_methods() {
+  register_method("get_m_handle",
+                  &SteamInventoryFullUpdate_t_box::get_m_handle);
+}
+
+void SteamInventoryDefinitionUpdate_t_box::_register_methods() {}
+
+auto SteamInventoryEligiblePromoItemDefIDs_t_box::get_m_result() {
+  return cast<EResult_box>(get_ptr()->m_result);
+}
+
+auto SteamInventoryEligiblePromoItemDefIDs_t_box::get_m_steamID() {
+  return cast<CSteamID_box>(get_ptr()->m_steamID);
+}
+
+auto SteamInventoryEligiblePromoItemDefIDs_t_box::
+    get_m_numEligiblePromoItemDefs() {
+  return cast<int_box>(get_ptr()->m_numEligiblePromoItemDefs);
+}
+
+auto SteamInventoryEligiblePromoItemDefIDs_t_box::get_m_bCachedData() {
+  return cast<bool_box>(get_ptr()->m_bCachedData);
+}
+
+void SteamInventoryEligiblePromoItemDefIDs_t_box::_register_methods() {
+  register_method("get_m_result",
+                  &SteamInventoryEligiblePromoItemDefIDs_t_box::get_m_result);
+  register_method("get_m_steamID",
+                  &SteamInventoryEligiblePromoItemDefIDs_t_box::get_m_steamID);
+  register_method("get_m_numEligiblePromoItemDefs",
+                  &SteamInventoryEligiblePromoItemDefIDs_t_box::
+                      get_m_numEligiblePromoItemDefs);
+  register_method(
+      "get_m_bCachedData",
+      &SteamInventoryEligiblePromoItemDefIDs_t_box::get_m_bCachedData);
+}
+
+auto SteamInventoryStartPurchaseResult_t_box::get_m_result() {
+  return cast<EResult_box>(get_ptr()->m_result);
+}
+
+auto SteamInventoryStartPurchaseResult_t_box::get_m_ulOrderID() {
+  return cast<uint64_box>(get_ptr()->m_ulOrderID);
+}
+
+auto SteamInventoryStartPurchaseResult_t_box::get_m_ulTransID() {
+  return cast<uint64_box>(get_ptr()->m_ulTransID);
+}
+
+void SteamInventoryStartPurchaseResult_t_box::_register_methods() {
+  register_method("get_m_result",
+                  &SteamInventoryStartPurchaseResult_t_box::get_m_result);
+  register_method("get_m_ulOrderID",
+                  &SteamInventoryStartPurchaseResult_t_box::get_m_ulOrderID);
+  register_method("get_m_ulTransID",
+                  &SteamInventoryStartPurchaseResult_t_box::get_m_ulTransID);
+}
+
+auto SteamInventoryRequestPricesResult_t_box::get_m_result() {
+  return cast<EResult_box>(get_ptr()->m_result);
+}
+
+auto SteamInventoryRequestPricesResult_t_box::get_m_rgchCurrency() {
+  return cast<char[4]>(get_ptr()->m_rgchCurrency);
+}
+
+void SteamInventoryRequestPricesResult_t_box::_register_methods() {
+  register_method("get_m_result",
+                  &SteamInventoryRequestPricesResult_t_box::get_m_result);
+  register_method("get_m_rgchCurrency",
+                  &SteamInventoryRequestPricesResult_t_box::get_m_rgchCurrency);
+}
+
+auto GetVideoURLResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GetVideoURLResult_t_box::get_m_unVideoAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unVideoAppID);
+}
+
+auto GetVideoURLResult_t_box::get_m_rgchURL() {
+  return cast<char[256]>(get_ptr()->m_rgchURL);
+}
+
+void GetVideoURLResult_t_box::_register_methods() {
+  register_method("get_m_eResult", &GetVideoURLResult_t_box::get_m_eResult);
+  register_method("get_m_unVideoAppID",
+                  &GetVideoURLResult_t_box::get_m_unVideoAppID);
+  register_method("get_m_rgchURL", &GetVideoURLResult_t_box::get_m_rgchURL);
+}
+
+auto GetOPFSettingsResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GetOPFSettingsResult_t_box::get_m_unVideoAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unVideoAppID);
+}
+
+void GetOPFSettingsResult_t_box::_register_methods() {
+  register_method("get_m_eResult", &GetOPFSettingsResult_t_box::get_m_eResult);
+  register_method("get_m_unVideoAppID",
+                  &GetOPFSettingsResult_t_box::get_m_unVideoAppID);
+}
+
+void SteamParentalSettingsChanged_t_box::_register_methods() {}
+
+auto SteamRemotePlaySessionConnected_t_box::get_m_unSessionID() {
+  return cast<RemotePlaySessionID_t_box>(get_ptr()->m_unSessionID);
+}
+
+void SteamRemotePlaySessionConnected_t_box::_register_methods() {
+  register_method("get_m_unSessionID",
+                  &SteamRemotePlaySessionConnected_t_box::get_m_unSessionID);
+}
+
+auto SteamRemotePlaySessionDisconnected_t_box::get_m_unSessionID() {
+  return cast<RemotePlaySessionID_t_box>(get_ptr()->m_unSessionID);
+}
+
+void SteamRemotePlaySessionDisconnected_t_box::_register_methods() {
+  register_method("get_m_unSessionID",
+                  &SteamRemotePlaySessionDisconnected_t_box::get_m_unSessionID);
+}
+
+auto SteamNetworkingMessagesSessionRequest_t_box::get_m_identityRemote() {
+  return cast<SteamNetworkingIdentity_box>(get_ptr()->m_identityRemote);
+}
+
+void SteamNetworkingMessagesSessionRequest_t_box::_register_methods() {
+  register_method(
+      "get_m_identityRemote",
+      &SteamNetworkingMessagesSessionRequest_t_box::get_m_identityRemote);
+}
+
+auto SteamNetworkingMessagesSessionFailed_t_box::get_m_info() {
+  return cast<SteamNetConnectionInfo_t_box>(get_ptr()->m_info);
+}
+
+void SteamNetworkingMessagesSessionFailed_t_box::_register_methods() {
+  register_method("get_m_info",
+                  &SteamNetworkingMessagesSessionFailed_t_box::get_m_info);
+}
+
+auto SteamNetConnectionStatusChangedCallback_t_box::get_m_hConn() {
+  return cast<HSteamNetConnection_box>(get_ptr()->m_hConn);
+}
+
+auto SteamNetConnectionStatusChangedCallback_t_box::get_m_info() {
+  return cast<SteamNetConnectionInfo_t_box>(get_ptr()->m_info);
+}
+
+auto SteamNetConnectionStatusChangedCallback_t_box::get_m_eOldState() {
+  return cast<ESteamNetworkingConnectionState_box>(get_ptr()->m_eOldState);
+}
+
+void SteamNetConnectionStatusChangedCallback_t_box::_register_methods() {
+  register_method("get_m_hConn",
+                  &SteamNetConnectionStatusChangedCallback_t_box::get_m_hConn);
+  register_method("get_m_info",
+                  &SteamNetConnectionStatusChangedCallback_t_box::get_m_info);
+  register_method(
+      "get_m_eOldState",
+      &SteamNetConnectionStatusChangedCallback_t_box::get_m_eOldState);
+}
+
+auto SteamNetAuthenticationStatus_t_box::get_m_eAvail() {
+  return cast<ESteamNetworkingAvailability_box>(get_ptr()->m_eAvail);
+}
+
+auto SteamNetAuthenticationStatus_t_box::get_m_debugMsg() {
+  return cast<char[256]>(get_ptr()->m_debugMsg);
+}
+
+void SteamNetAuthenticationStatus_t_box::_register_methods() {
+  register_method("get_m_eAvail",
+                  &SteamNetAuthenticationStatus_t_box::get_m_eAvail);
+  register_method("get_m_debugMsg",
+                  &SteamNetAuthenticationStatus_t_box::get_m_debugMsg);
+}
+
+auto SteamRelayNetworkStatus_t_box::get_m_eAvail() {
+  return cast<ESteamNetworkingAvailability_box>(get_ptr()->m_eAvail);
+}
+
+auto SteamRelayNetworkStatus_t_box::get_m_bPingMeasurementInProgress() {
+  return cast<int_box>(get_ptr()->m_bPingMeasurementInProgress);
+}
+
+auto SteamRelayNetworkStatus_t_box::get_m_eAvailNetworkConfig() {
+  return cast<ESteamNetworkingAvailability_box>(
+      get_ptr()->m_eAvailNetworkConfig);
+}
+
+auto SteamRelayNetworkStatus_t_box::get_m_eAvailAnyRelay() {
+  return cast<ESteamNetworkingAvailability_box>(get_ptr()->m_eAvailAnyRelay);
+}
+
+auto SteamRelayNetworkStatus_t_box::get_m_debugMsg() {
+  return cast<char[256]>(get_ptr()->m_debugMsg);
+}
+
+void SteamRelayNetworkStatus_t_box::_register_methods() {
+  register_method("get_m_eAvail", &SteamRelayNetworkStatus_t_box::get_m_eAvail);
+  register_method(
+      "get_m_bPingMeasurementInProgress",
+      &SteamRelayNetworkStatus_t_box::get_m_bPingMeasurementInProgress);
+  register_method("get_m_eAvailNetworkConfig",
+                  &SteamRelayNetworkStatus_t_box::get_m_eAvailNetworkConfig);
+  register_method("get_m_eAvailAnyRelay",
+                  &SteamRelayNetworkStatus_t_box::get_m_eAvailAnyRelay);
+  register_method("get_m_debugMsg",
+                  &SteamRelayNetworkStatus_t_box::get_m_debugMsg);
+}
+
+auto GSClientApprove_t_box::get_m_SteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamID);
+}
+
+auto GSClientApprove_t_box::get_m_OwnerSteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_OwnerSteamID);
+}
+
+void GSClientApprove_t_box::_register_methods() {
+  register_method("get_m_SteamID", &GSClientApprove_t_box::get_m_SteamID);
+  register_method("get_m_OwnerSteamID",
+                  &GSClientApprove_t_box::get_m_OwnerSteamID);
+}
+
+auto GSClientDeny_t_box::get_m_SteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamID);
+}
+
+auto GSClientDeny_t_box::get_m_eDenyReason() {
+  return cast<EDenyReason_box>(get_ptr()->m_eDenyReason);
+}
+
+auto GSClientDeny_t_box::get_m_rgchOptionalText() {
+  return cast<char[128]>(get_ptr()->m_rgchOptionalText);
+}
+
+void GSClientDeny_t_box::_register_methods() {
+  register_method("get_m_SteamID", &GSClientDeny_t_box::get_m_SteamID);
+  register_method("get_m_eDenyReason", &GSClientDeny_t_box::get_m_eDenyReason);
+  register_method("get_m_rgchOptionalText",
+                  &GSClientDeny_t_box::get_m_rgchOptionalText);
+}
+
+auto GSClientKick_t_box::get_m_SteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamID);
+}
+
+auto GSClientKick_t_box::get_m_eDenyReason() {
+  return cast<EDenyReason_box>(get_ptr()->m_eDenyReason);
+}
+
+void GSClientKick_t_box::_register_methods() {
+  register_method("get_m_SteamID", &GSClientKick_t_box::get_m_SteamID);
+  register_method("get_m_eDenyReason", &GSClientKick_t_box::get_m_eDenyReason);
+}
+
+auto GSClientAchievementStatus_t_box::get_m_SteamID() {
+  return cast<uint64_box>(get_ptr()->m_SteamID);
+}
+
+auto GSClientAchievementStatus_t_box::get_m_pchAchievement() {
+  return cast<char[128]>(get_ptr()->m_pchAchievement);
+}
+
+auto GSClientAchievementStatus_t_box::get_m_bUnlocked() {
+  return cast<bool_box>(get_ptr()->m_bUnlocked);
+}
+
+void GSClientAchievementStatus_t_box::_register_methods() {
+  register_method("get_m_SteamID",
+                  &GSClientAchievementStatus_t_box::get_m_SteamID);
+  register_method("get_m_pchAchievement",
+                  &GSClientAchievementStatus_t_box::get_m_pchAchievement);
+  register_method("get_m_bUnlocked",
+                  &GSClientAchievementStatus_t_box::get_m_bUnlocked);
+}
+
+auto GSPolicyResponse_t_box::get_m_bSecure() {
+  return cast<uint8_box>(get_ptr()->m_bSecure);
+}
+
+void GSPolicyResponse_t_box::_register_methods() {
+  register_method("get_m_bSecure", &GSPolicyResponse_t_box::get_m_bSecure);
+}
+
+auto GSGameplayStats_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GSGameplayStats_t_box::get_m_nRank() {
+  return cast<int32_box>(get_ptr()->m_nRank);
+}
+
+auto GSGameplayStats_t_box::get_m_unTotalConnects() {
+  return cast<uint32_box>(get_ptr()->m_unTotalConnects);
+}
+
+auto GSGameplayStats_t_box::get_m_unTotalMinutesPlayed() {
+  return cast<uint32_box>(get_ptr()->m_unTotalMinutesPlayed);
+}
+
+void GSGameplayStats_t_box::_register_methods() {
+  register_method("get_m_eResult", &GSGameplayStats_t_box::get_m_eResult);
+  register_method("get_m_nRank", &GSGameplayStats_t_box::get_m_nRank);
+  register_method("get_m_unTotalConnects",
+                  &GSGameplayStats_t_box::get_m_unTotalConnects);
+  register_method("get_m_unTotalMinutesPlayed",
+                  &GSGameplayStats_t_box::get_m_unTotalMinutesPlayed);
+}
+
+auto GSClientGroupStatus_t_box::get_m_SteamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDUser);
+}
+
+auto GSClientGroupStatus_t_box::get_m_SteamIDGroup() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDGroup);
+}
+
+auto GSClientGroupStatus_t_box::get_m_bMember() {
+  return cast<bool_box>(get_ptr()->m_bMember);
+}
+
+auto GSClientGroupStatus_t_box::get_m_bOfficer() {
+  return cast<bool_box>(get_ptr()->m_bOfficer);
+}
+
+void GSClientGroupStatus_t_box::_register_methods() {
+  register_method("get_m_SteamIDUser",
+                  &GSClientGroupStatus_t_box::get_m_SteamIDUser);
+  register_method("get_m_SteamIDGroup",
+                  &GSClientGroupStatus_t_box::get_m_SteamIDGroup);
+  register_method("get_m_bMember", &GSClientGroupStatus_t_box::get_m_bMember);
+  register_method("get_m_bOfficer", &GSClientGroupStatus_t_box::get_m_bOfficer);
+}
+
+auto GSReputation_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GSReputation_t_box::get_m_unReputationScore() {
+  return cast<uint32_box>(get_ptr()->m_unReputationScore);
+}
+
+auto GSReputation_t_box::get_m_bBanned() {
+  return cast<bool_box>(get_ptr()->m_bBanned);
+}
+
+auto GSReputation_t_box::get_m_unBannedIP() {
+  return cast<uint32_box>(get_ptr()->m_unBannedIP);
+}
+
+auto GSReputation_t_box::get_m_usBannedPort() {
+  return cast<uint16_box>(get_ptr()->m_usBannedPort);
+}
+
+auto GSReputation_t_box::get_m_ulBannedGameID() {
+  return cast<uint64_box>(get_ptr()->m_ulBannedGameID);
+}
+
+auto GSReputation_t_box::get_m_unBanExpires() {
+  return cast<uint32_box>(get_ptr()->m_unBanExpires);
+}
+
+void GSReputation_t_box::_register_methods() {
+  register_method("get_m_eResult", &GSReputation_t_box::get_m_eResult);
+  register_method("get_m_unReputationScore",
+                  &GSReputation_t_box::get_m_unReputationScore);
+  register_method("get_m_bBanned", &GSReputation_t_box::get_m_bBanned);
+  register_method("get_m_unBannedIP", &GSReputation_t_box::get_m_unBannedIP);
+  register_method("get_m_usBannedPort",
+                  &GSReputation_t_box::get_m_usBannedPort);
+  register_method("get_m_ulBannedGameID",
+                  &GSReputation_t_box::get_m_ulBannedGameID);
+  register_method("get_m_unBanExpires",
+                  &GSReputation_t_box::get_m_unBanExpires);
+}
+
+auto AssociateWithClanResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void AssociateWithClanResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &AssociateWithClanResult_t_box::get_m_eResult);
+}
+
+auto ComputeNewPlayerCompatibilityResult_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto ComputeNewPlayerCompatibilityResult_t_box::
+    get_m_cPlayersThatDontLikeCandidate() {
+  return cast<int_box>(get_ptr()->m_cPlayersThatDontLikeCandidate);
+}
+
+auto ComputeNewPlayerCompatibilityResult_t_box::
+    get_m_cPlayersThatCandidateDoesntLike() {
+  return cast<int_box>(get_ptr()->m_cPlayersThatCandidateDoesntLike);
+}
+
+auto ComputeNewPlayerCompatibilityResult_t_box::
+    get_m_cClanPlayersThatDontLikeCandidate() {
+  return cast<int_box>(get_ptr()->m_cClanPlayersThatDontLikeCandidate);
+}
+
+auto ComputeNewPlayerCompatibilityResult_t_box::get_m_SteamIDCandidate() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDCandidate);
+}
+
+void ComputeNewPlayerCompatibilityResult_t_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &ComputeNewPlayerCompatibilityResult_t_box::get_m_eResult);
+  register_method("get_m_cPlayersThatDontLikeCandidate",
+                  &ComputeNewPlayerCompatibilityResult_t_box::
+                      get_m_cPlayersThatDontLikeCandidate);
+  register_method("get_m_cPlayersThatCandidateDoesntLike",
+                  &ComputeNewPlayerCompatibilityResult_t_box::
+                      get_m_cPlayersThatCandidateDoesntLike);
+  register_method("get_m_cClanPlayersThatDontLikeCandidate",
+                  &ComputeNewPlayerCompatibilityResult_t_box::
+                      get_m_cClanPlayersThatDontLikeCandidate);
+  register_method(
+      "get_m_SteamIDCandidate",
+      &ComputeNewPlayerCompatibilityResult_t_box::get_m_SteamIDCandidate);
+}
+
+auto GSStatsReceived_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GSStatsReceived_t_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void GSStatsReceived_t_box::_register_methods() {
+  register_method("get_m_eResult", &GSStatsReceived_t_box::get_m_eResult);
+  register_method("get_m_steamIDUser",
+                  &GSStatsReceived_t_box::get_m_steamIDUser);
+}
+
+auto GSStatsStored_t_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GSStatsStored_t_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void GSStatsStored_t_box::_register_methods() {
+  register_method("get_m_eResult", &GSStatsStored_t_box::get_m_eResult);
+  register_method("get_m_steamIDUser", &GSStatsStored_t_box::get_m_steamIDUser);
+}
+
+auto GSStatsUnloaded_t_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void GSStatsUnloaded_t_box::_register_methods() {
+  register_method("get_m_steamIDUser",
+                  &GSStatsUnloaded_t_box::get_m_steamIDUser);
+}
+
+template <typename C>
+auto ISteamClient_box::CreateSteamPipe() ->
+    typename std::enable_if<true>::type {
+
+  call<HSteamPipe_box>([](auto *data, auto &&...args) {
+    return data->CreateSteamPipe(args...);
+  });
+}
+
+template <typename C>
+auto ISteamClient_box::BReleaseSteamPipe(Ref<HSteamPipe_box> hSteamPipe) ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) {
+        return data->BReleaseSteamPipe(args...);
+      },
+      hSteamPipe->get());
+}
+
+template <typename C>
+auto ISteamClient_box::ConnectToGlobalUser(Ref<HSteamPipe_box> hSteamPipe) ->
+    typename std::enable_if<true>::type {
+
+  call<HSteamUser_box>(
+      [](auto *data, auto &&...args) {
+        return data->ConnectToGlobalUser(args...);
+      },
+      hSteamPipe->get());
+}
+
+template <typename C>
+auto ISteamClient_box::CreateLocalUser(Ref<HSteamPipe_box> phSteamPipe,
+                                       Ref<EAccountType_box> eAccountType) ->
+    typename std::enable_if<true>::type {
+
+  call<HSteamUser_box>(
+      [](auto *data, auto &&...args) { return data->CreateLocalUser(args...); },
+      phSteamPipe->get_ptr(), eAccountType->get());
+}
+
+template <typename C>
+auto ISteamClient_box::ReleaseUser(Ref<HSteamPipe_box> hSteamPipe,
+                                   Ref<HSteamUser_box> hUser) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->ReleaseUser(args...); },
+      hSteamPipe->get(), hUser->get());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamUser(Ref<HSteamUser_box> hSteamUser,
+                                     Ref<HSteamPipe_box> hSteamPipe,
+                                     Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamUser_box>(
+      [](auto *data, auto &&...args) { return data->GetISteamUser(args...); },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamGameServer(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamGameServer_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamGameServer(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::SetLocalIPBinding(Ref<SteamIPAddress_t_box> unIP,
+                                         Ref<uint16_box> usPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) {
+        return data->SetLocalIPBinding(args...);
+      },
+      unIP->get(), usPort->get());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamFriends(Ref<HSteamUser_box> hSteamUser,
+                                        Ref<HSteamPipe_box> hSteamPipe,
+                                        Ref<char_const_pointer_box> pchVersion)
+    -> typename std::enable_if<true>::type {
+
+  call<ISteamFriends_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamFriends(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamUtils(Ref<HSteamPipe_box> hSteamPipe,
+                                      Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamUtils_box>(
+      [](auto *data, auto &&...args) { return data->GetISteamUtils(args...); },
+      hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamMatchmaking(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamMatchmaking_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamMatchmaking(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamMatchmakingServers(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamMatchmakingServers_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamMatchmakingServers(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamGenericInterface(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamGenericInterface(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamUserStats(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamUserStats_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamUserStats(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamGameServerStats(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamGameServerStats_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamGameServerStats(args...);
+      },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamApps(Ref<HSteamUser_box> hSteamUser,
+                                     Ref<HSteamPipe_box> hSteamPipe,
+                                     Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamApps_box>(
+      [](auto *data, auto &&...args) { return data->GetISteamApps(args...); },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamNetworking(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamNetworking_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamNetworking(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamRemoteStorage(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamRemoteStorage_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamRemoteStorage(args...);
+      },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamScreenshots(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamScreenshots_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamScreenshots(args...);
+      },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamGameSearch(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamGameSearch_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamGameSearch(args...);
+      },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetIPCCallCount() ->
+    typename std::enable_if<true>::type {
+
+  call<uint32_box>([](auto *data, auto &&...args) {
+    return data->GetIPCCallCount(args...);
+  });
+}
+
+template <typename C>
+auto ISteamClient_box::SetWarningMessageHook(
+    Ref<SteamAPIWarningMessageHook_t_box> pFunction) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) {
+        return data->SetWarningMessageHook(args...);
+      },
+      pFunction->get());
+}
+
+template <typename C>
+auto ISteamClient_box::BShutdownIfAllPipesClosed() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>([](auto *data, auto &&...args) {
+    return data->BShutdownIfAllPipesClosed(args...);
+  });
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamHTTP(Ref<HSteamUser_box> hSteamuser,
+                                     Ref<HSteamPipe_box> hSteamPipe,
+                                     Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamHTTP_box>(
+      [](auto *data, auto &&...args) { return data->GetISteamHTTP(args...); },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamController(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamController_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamController(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamUGC(Ref<HSteamUser_box> hSteamUser,
+                                    Ref<HSteamPipe_box> hSteamPipe,
+                                    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamUGC_box>(
+      [](auto *data, auto &&...args) { return data->GetISteamUGC(args...); },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamAppList(Ref<HSteamUser_box> hSteamUser,
+                                        Ref<HSteamPipe_box> hSteamPipe,
+                                        Ref<char_const_pointer_box> pchVersion)
+    -> typename std::enable_if<true>::type {
+
+  call<ISteamAppList_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamAppList(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamMusic(Ref<HSteamUser_box> hSteamuser,
+                                      Ref<HSteamPipe_box> hSteamPipe,
+                                      Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamMusic_box>(
+      [](auto *data, auto &&...args) { return data->GetISteamMusic(args...); },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamMusicRemote(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamMusicRemote_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamMusicRemote(args...);
+      },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamHTMLSurface(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamHTMLSurface_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamHTMLSurface(args...);
+      },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamInventory(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamInventory_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamInventory(args...);
+      },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamVideo(Ref<HSteamUser_box> hSteamuser,
+                                      Ref<HSteamPipe_box> hSteamPipe,
+                                      Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamVideo_box>(
+      [](auto *data, auto &&...args) { return data->GetISteamVideo(args...); },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamParentalSettings(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamParentalSettings_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamParentalSettings(args...);
+      },
+      hSteamuser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamInput(Ref<HSteamUser_box> hSteamUser,
+                                      Ref<HSteamPipe_box> hSteamPipe,
+                                      Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamInput_box>(
+      [](auto *data, auto &&...args) { return data->GetISteamInput(args...); },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamParties(Ref<HSteamUser_box> hSteamUser,
+                                        Ref<HSteamPipe_box> hSteamPipe,
+                                        Ref<char_const_pointer_box> pchVersion)
+    -> typename std::enable_if<true>::type {
+
+  call<ISteamParties_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamParties(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+template <typename C>
+auto ISteamClient_box::GetISteamRemotePlay(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {
+
+  call<ISteamRemotePlay_box>(
+      [](auto *data, auto &&...args) {
+        return data->GetISteamRemotePlay(args...);
+      },
+      hSteamUser->get(), hSteamPipe->get(), pchVersion->get_ptr());
+}
+
+void ISteamClient_box::_register_methods() {
+  register_method("CreateSteamPipe", &ISteamClient_box::CreateSteamPipe);
+  register_method("BReleaseSteamPipe", &ISteamClient_box::BReleaseSteamPipe);
+  register_method("ConnectToGlobalUser",
+                  &ISteamClient_box::ConnectToGlobalUser);
+  register_method("CreateLocalUser", &ISteamClient_box::CreateLocalUser);
+  register_method("ReleaseUser", &ISteamClient_box::ReleaseUser);
+  register_method("GetISteamUser", &ISteamClient_box::GetISteamUser);
+  register_method("GetISteamGameServer",
+                  &ISteamClient_box::GetISteamGameServer);
+  register_method("SetLocalIPBinding", &ISteamClient_box::SetLocalIPBinding);
+  register_method("GetISteamFriends", &ISteamClient_box::GetISteamFriends);
+  register_method("GetISteamUtils", &ISteamClient_box::GetISteamUtils);
+  register_method("GetISteamMatchmaking",
+                  &ISteamClient_box::GetISteamMatchmaking);
+  register_method("GetISteamMatchmakingServers",
+                  &ISteamClient_box::GetISteamMatchmakingServers);
+  register_method("GetISteamGenericInterface",
+                  &ISteamClient_box::GetISteamGenericInterface);
+  register_method("GetISteamUserStats", &ISteamClient_box::GetISteamUserStats);
+  register_method("GetISteamGameServerStats",
+                  &ISteamClient_box::GetISteamGameServerStats);
+  register_method("GetISteamApps", &ISteamClient_box::GetISteamApps);
+  register_method("GetISteamNetworking",
+                  &ISteamClient_box::GetISteamNetworking);
+  register_method("GetISteamRemoteStorage",
+                  &ISteamClient_box::GetISteamRemoteStorage);
+  register_method("GetISteamScreenshots",
+                  &ISteamClient_box::GetISteamScreenshots);
+  register_method("GetISteamGameSearch",
+                  &ISteamClient_box::GetISteamGameSearch);
+  register_method("GetIPCCallCount", &ISteamClient_box::GetIPCCallCount);
+  register_method("SetWarningMessageHook",
+                  &ISteamClient_box::SetWarningMessageHook);
+  register_method("BShutdownIfAllPipesClosed",
+                  &ISteamClient_box::BShutdownIfAllPipesClosed);
+  register_method("GetISteamHTTP", &ISteamClient_box::GetISteamHTTP);
+  register_method("GetISteamController",
+                  &ISteamClient_box::GetISteamController);
+  register_method("GetISteamUGC", &ISteamClient_box::GetISteamUGC);
+  register_method("GetISteamAppList", &ISteamClient_box::GetISteamAppList);
+  register_method("GetISteamMusic", &ISteamClient_box::GetISteamMusic);
+  register_method("GetISteamMusicRemote",
+                  &ISteamClient_box::GetISteamMusicRemote);
+  register_method("GetISteamHTMLSurface",
+                  &ISteamClient_box::GetISteamHTMLSurface);
+  register_method("GetISteamInventory", &ISteamClient_box::GetISteamInventory);
+  register_method("GetISteamVideo", &ISteamClient_box::GetISteamVideo);
+  register_method("GetISteamParentalSettings",
+                  &ISteamClient_box::GetISteamParentalSettings);
+  register_method("GetISteamInput", &ISteamClient_box::GetISteamInput);
+  register_method("GetISteamParties", &ISteamClient_box::GetISteamParties);
+  register_method("GetISteamRemotePlay",
+                  &ISteamClient_box::GetISteamRemotePlay);
+}
+
+void int64_t_const_pointer_box::_register_methods() {}
+
+void SteamAPIWarningMessageHook_t_const_pointer_box::_register_methods() {}
+
+void intptr_t_const_pointer_box::_register_methods() {}
+
+void int32_t_const_pointer_box::_register_methods() {}
+
+void bool_const_pointer_box::_register_methods() {}
+
+void SteamDatagramRelayAuthTicket_const_pointer_box::_register_methods() {}
+
+void unsigned_short_const_pointer_box::_register_methods() {}
+
+void char_const_pointer_box::_register_methods() {}
+
+void void_const_pointer_box::_register_methods() {}
+
+void float_const_pointer_box::_register_methods() {}
+
+void double_const_pointer_box::_register_methods() {}
+
+void ISteamNetworkingConnectionSignaling_const_pointer_box::
+    _register_methods() {}
+
+void ISteamNetworkingSignalingRecvContext_const_pointer_box::
+    _register_methods() {}
+
+void CGameID_const_pointer_box::_register_methods() {}
+
+void int_const_pointer_box::_register_methods() {}
+
+void ISteamHTMLSurface_EHTMLKeyModifiers_const_pointer_box::
+    _register_methods() {}
+
+void size_t_const_pointer_box::_register_methods() {}
+
+void unsigned_int_const_pointer_box::_register_methods() {}
+
+void CSteamID_const_pointer_box::_register_methods() {}
+
+void ISteamHTMLSurface_EHTMLMouseButton_const_pointer_box::_register_methods() {
+}
+
+void ESteamIPType_const_pointer_box::_register_methods() {}
+
+void EUniverse_const_pointer_box::_register_methods() {}
+
+void EResult_const_pointer_box::_register_methods() {}
+
+void EVoiceResult_const_pointer_box::_register_methods() {}
+
+void EDenyReason_const_pointer_box::_register_methods() {}
+
+void EBeginAuthSessionResult_const_pointer_box::_register_methods() {}
+
+void EAuthSessionResponse_const_pointer_box::_register_methods() {}
+
+void EUserHasLicenseForAppResult_const_pointer_box::_register_methods() {}
+
+void EAccountType_const_pointer_box::_register_methods() {}
+
+void EChatEntryType_const_pointer_box::_register_methods() {}
+
+void EChatRoomEnterResponse_const_pointer_box::_register_methods() {}
+
+void EChatSteamIDInstanceFlags_const_pointer_box::_register_methods() {}
+
+void ENotificationPosition_const_pointer_box::_register_methods() {}
+
+void EBroadcastUploadResult_const_pointer_box::_register_methods() {}
+
+void EMarketNotAllowedReasonFlags_const_pointer_box::_register_methods() {}
+
+void EDurationControlProgress_const_pointer_box::_register_methods() {}
+
+void EDurationControlNotification_const_pointer_box::_register_methods() {}
+
+void EDurationControlOnlineState_const_pointer_box::_register_methods() {}
+
+void EGameSearchErrorCode_t_const_pointer_box::_register_methods() {}
+
+void EPlayerResult_t_const_pointer_box::_register_methods() {}
+
+void ESteamIPv6ConnectivityProtocol_const_pointer_box::_register_methods() {}
+
+void ESteamIPv6ConnectivityState_const_pointer_box::_register_methods() {}
+
+void EFriendRelationship_const_pointer_box::_register_methods() {}
+
+void EPersonaState_const_pointer_box::_register_methods() {}
+
+void EFriendFlags_const_pointer_box::_register_methods() {}
+
+void EUserRestriction_const_pointer_box::_register_methods() {}
+
+void EOverlayToStoreFlag_const_pointer_box::_register_methods() {}
+
+void EActivateGameOverlayToWebPageMode_const_pointer_box::_register_methods() {}
+
+void EPersonaChange_const_pointer_box::_register_methods() {}
+
+void ESteamAPICallFailure_const_pointer_box::_register_methods() {}
+
+void EGamepadTextInputMode_const_pointer_box::_register_methods() {}
+
+void EGamepadTextInputLineMode_const_pointer_box::_register_methods() {}
+
+void ETextFilteringContext_const_pointer_box::_register_methods() {}
+
+void ECheckFileSignature_const_pointer_box::_register_methods() {}
+
+void EMatchMakingServerResponse_const_pointer_box::_register_methods() {}
+
+void ELobbyType_const_pointer_box::_register_methods() {}
+
+void ELobbyComparison_const_pointer_box::_register_methods() {}
+
+void ELobbyDistanceFilter_const_pointer_box::_register_methods() {}
+
+void EChatMemberStateChange_const_pointer_box::_register_methods() {}
+
+void ESteamPartyBeaconLocationType_const_pointer_box::_register_methods() {}
+
+void ESteamPartyBeaconLocationData_const_pointer_box::_register_methods() {}
+
+void ERemoteStoragePlatform_const_pointer_box::_register_methods() {}
+
+void ERemoteStoragePublishedFileVisibility_const_pointer_box::
+    _register_methods() {}
+
+void EWorkshopFileType_const_pointer_box::_register_methods() {}
+
+void EWorkshopVote_const_pointer_box::_register_methods() {}
+
+void EWorkshopFileAction_const_pointer_box::_register_methods() {}
+
+void EWorkshopEnumerationType_const_pointer_box::_register_methods() {}
+
+void EWorkshopVideoProvider_const_pointer_box::_register_methods() {}
+
+void EUGCReadAction_const_pointer_box::_register_methods() {}
+
+void ERemoteStorageLocalFileChange_const_pointer_box::_register_methods() {}
+
+void ERemoteStorageFilePathType_const_pointer_box::_register_methods() {}
+
+void ELeaderboardDataRequest_const_pointer_box::_register_methods() {}
+
+void ELeaderboardSortMethod_const_pointer_box::_register_methods() {}
+
+void ELeaderboardDisplayType_const_pointer_box::_register_methods() {}
+
+void ELeaderboardUploadScoreMethod_const_pointer_box::_register_methods() {}
+
+void ERegisterActivationCodeResult_const_pointer_box::_register_methods() {}
+
+void EP2PSessionError_const_pointer_box::_register_methods() {}
+
+void EP2PSend_const_pointer_box::_register_methods() {}
+
+void ESNetSocketState_const_pointer_box::_register_methods() {}
+
+void ESNetSocketConnectionType_const_pointer_box::_register_methods() {}
+
+void EVRScreenshotType_const_pointer_box::_register_methods() {}
+
+void AudioPlayback_Status_const_pointer_box::_register_methods() {}
+
+void EHTTPMethod_const_pointer_box::_register_methods() {}
+
+void EHTTPStatusCode_const_pointer_box::_register_methods() {}
+
+void EInputSourceMode_const_pointer_box::_register_methods() {}
+
+void EInputActionOrigin_const_pointer_box::_register_methods() {}
+
+void EXboxOrigin_const_pointer_box::_register_methods() {}
+
+void ESteamControllerPad_const_pointer_box::_register_methods() {}
+
+void EControllerHapticLocation_const_pointer_box::_register_methods() {}
+
+void EControllerHapticType_const_pointer_box::_register_methods() {}
+
+void ESteamInputType_const_pointer_box::_register_methods() {}
+
+void ESteamInputConfigurationEnableType_const_pointer_box::_register_methods() {
+}
+
+void ESteamInputLEDFlag_const_pointer_box::_register_methods() {}
+
+void ESteamInputGlyphSize_const_pointer_box::_register_methods() {}
+
+void ESteamInputActionEventType_const_pointer_box::_register_methods() {}
+
+void EControllerActionOrigin_const_pointer_box::_register_methods() {}
+
+void ESteamControllerLEDFlag_const_pointer_box::_register_methods() {}
+
+void EUGCMatchingUGCType_const_pointer_box::_register_methods() {}
+
+void EUserUGCList_const_pointer_box::_register_methods() {}
+
+void EUserUGCListSortOrder_const_pointer_box::_register_methods() {}
+
+void EUGCQuery_const_pointer_box::_register_methods() {}
+
+void EItemUpdateStatus_const_pointer_box::_register_methods() {}
+
+void EItemState_const_pointer_box::_register_methods() {}
+
+void EItemStatistic_const_pointer_box::_register_methods() {}
+
+void EItemPreviewType_const_pointer_box::_register_methods() {}
+
+void ESteamItemFlags_const_pointer_box::_register_methods() {}
+
+void EParentalFeature_const_pointer_box::_register_methods() {}
+
+void ESteamDeviceFormFactor_const_pointer_box::_register_methods() {}
+
+void ESteamNetworkingAvailability_const_pointer_box::_register_methods() {}
+
+void ESteamNetworkingIdentityType_const_pointer_box::_register_methods() {}
+
+void ESteamNetworkingConnectionState_const_pointer_box::_register_methods() {}
+
+void ESteamNetConnectionEnd_const_pointer_box::_register_methods() {}
+
+void ESteamNetworkingConfigScope_const_pointer_box::_register_methods() {}
+
+void ESteamNetworkingConfigDataType_const_pointer_box::_register_methods() {}
+
+void ESteamNetworkingConfigValue_const_pointer_box::_register_methods() {}
+
+void ESteamNetworkingGetConfigValueResult_const_pointer_box::
+    _register_methods() {}
+
+void ESteamNetworkingSocketsDebugOutputType_const_pointer_box::
+    _register_methods() {}
+
+void EServerMode_const_pointer_box::_register_methods() {}
+
+void uint8_const_pointer_box::_register_methods() {}
+
+void int8_const_pointer_box::_register_methods() {}
+
+void int16_const_pointer_box::_register_methods() {}
+
+void uint16_const_pointer_box::_register_methods() {}
+
+void int32_const_pointer_box::_register_methods() {}
+
+void uint32_const_pointer_box::_register_methods() {}
+
+void int64_const_pointer_box::_register_methods() {}
+
+void uint64_const_pointer_box::_register_methods() {}
+
+void lint64_const_pointer_box::_register_methods() {}
+
+void ulint64_const_pointer_box::_register_methods() {}
+
+void intp_const_pointer_box::_register_methods() {}
+
+void uintp_const_pointer_box::_register_methods() {}
+
+void AppId_t_const_pointer_box::_register_methods() {}
+
+void DepotId_t_const_pointer_box::_register_methods() {}
+
+void RTime32_const_pointer_box::_register_methods() {}
+
+void SteamAPICall_t_const_pointer_box::_register_methods() {}
+
+void AccountID_t_const_pointer_box::_register_methods() {}
+
+void PartyBeaconID_t_const_pointer_box::_register_methods() {}
+
+void HAuthTicket_const_pointer_box::_register_methods() {}
+
+void PFNPreMinidumpCallback_const_pointer_box::_register_methods() {}
+
+void HSteamPipe_const_pointer_box::_register_methods() {}
+
+void HSteamUser_const_pointer_box::_register_methods() {}
+
+void FriendsGroupID_t_const_pointer_box::_register_methods() {}
+
+void HServerListRequest_const_pointer_box::_register_methods() {}
+
+void HServerQuery_const_pointer_box::_register_methods() {}
+
+void UGCHandle_t_const_pointer_box::_register_methods() {}
+
+void PublishedFileUpdateHandle_t_const_pointer_box::_register_methods() {}
+
+void PublishedFileId_t_const_pointer_box::_register_methods() {}
+
+void UGCFileWriteStreamHandle_t_const_pointer_box::_register_methods() {}
+
+void SteamLeaderboard_t_const_pointer_box::_register_methods() {}
+
+void SteamLeaderboardEntries_t_const_pointer_box::_register_methods() {}
+
+void SNetSocket_t_const_pointer_box::_register_methods() {}
+
+void SNetListenSocket_t_const_pointer_box::_register_methods() {}
+
+void ScreenshotHandle_const_pointer_box::_register_methods() {}
+
+void HTTPRequestHandle_const_pointer_box::_register_methods() {}
+
+void HTTPCookieContainerHandle_const_pointer_box::_register_methods() {}
+
+void InputHandle_t_const_pointer_box::_register_methods() {}
+
+void InputActionSetHandle_t_const_pointer_box::_register_methods() {}
+
+void InputDigitalActionHandle_t_const_pointer_box::_register_methods() {}
+
+void InputAnalogActionHandle_t_const_pointer_box::_register_methods() {}
+
+void SteamInputActionEventCallbackPointer_const_pointer_box::
+    _register_methods() {}
+
+void ControllerHandle_t_const_pointer_box::_register_methods() {}
+
+void ControllerActionSetHandle_t_const_pointer_box::_register_methods() {}
+
+void ControllerDigitalActionHandle_t_const_pointer_box::_register_methods() {}
+
+void ControllerAnalogActionHandle_t_const_pointer_box::_register_methods() {}
+
+void UGCQueryHandle_t_const_pointer_box::_register_methods() {}
+
+void UGCUpdateHandle_t_const_pointer_box::_register_methods() {}
+
+void HHTMLBrowser_const_pointer_box::_register_methods() {}
+
+void SteamItemInstanceID_t_const_pointer_box::_register_methods() {}
+
+void SteamItemDef_t_const_pointer_box::_register_methods() {}
+
+void SteamInventoryResult_t_const_pointer_box::_register_methods() {}
+
+void SteamInventoryUpdateHandle_t_const_pointer_box::_register_methods() {}
+
+void RemotePlaySessionID_t_const_pointer_box::_register_methods() {}
+
+void FnSteamNetConnectionStatusChanged_const_pointer_box::_register_methods() {}
+
+void FnSteamNetAuthenticationStatusChanged_const_pointer_box::
+    _register_methods() {}
+
+void FnSteamRelayNetworkStatusChanged_const_pointer_box::_register_methods() {}
+
+void FnSteamNetworkingMessagesSessionRequest_const_pointer_box::
+    _register_methods() {}
+
+void FnSteamNetworkingMessagesSessionFailed_const_pointer_box::
+    _register_methods() {}
+
+void HSteamNetConnection_const_pointer_box::_register_methods() {}
+
+void HSteamListenSocket_const_pointer_box::_register_methods() {}
+
+void HSteamNetPollGroup_const_pointer_box::_register_methods() {}
+
+void SteamNetworkingErrMsg_const_pointer_box::_register_methods() {}
+
+void SteamNetworkingPOPID_const_pointer_box::_register_methods() {}
+
+void SteamNetworkingMicroseconds_const_pointer_box::_register_methods() {}
+
+void FSteamNetworkingSocketsDebugOutput_const_pointer_box::_register_methods() {
+}
+
+auto SteamIPAddress_t_const_pointer_box::get_m_rgubIPv6() {
+  return cast<uint8[16]>(get_ptr()->m_rgubIPv6);
+}
+
+auto SteamIPAddress_t_const_pointer_box::get_m_eType() {
+  return cast<ESteamIPType_box>(get_ptr()->m_eType);
+}
+
+template <typename C>
+auto SteamIPAddress_t_const_pointer_box::IsSet() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsSet(args...); });
+}
+
+void SteamIPAddress_t_const_pointer_box::_register_methods() {
+  register_method("get_m_rgubIPv6",
+                  &SteamIPAddress_t_const_pointer_box::get_m_rgubIPv6);
+  register_method("get_m_eType",
+                  &SteamIPAddress_t_const_pointer_box::get_m_eType);
+  register_method("IsSet", &SteamIPAddress_t_const_pointer_box::IsSet);
+}
+
+auto FriendGameInfo_t_const_pointer_box::get_m_gameID() {
+  return cast<CGameID_box>(get_ptr()->m_gameID);
+}
+
+auto FriendGameInfo_t_const_pointer_box::get_m_unGameIP() {
+  return cast<uint32_box>(get_ptr()->m_unGameIP);
+}
+
+auto FriendGameInfo_t_const_pointer_box::get_m_usGamePort() {
+  return cast<uint16_box>(get_ptr()->m_usGamePort);
+}
+
+auto FriendGameInfo_t_const_pointer_box::get_m_usQueryPort() {
+  return cast<uint16_box>(get_ptr()->m_usQueryPort);
+}
+
+auto FriendGameInfo_t_const_pointer_box::get_m_steamIDLobby() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDLobby);
+}
+
+void FriendGameInfo_t_const_pointer_box::_register_methods() {
+  register_method("get_m_gameID",
+                  &FriendGameInfo_t_const_pointer_box::get_m_gameID);
+  register_method("get_m_unGameIP",
+                  &FriendGameInfo_t_const_pointer_box::get_m_unGameIP);
+  register_method("get_m_usGamePort",
+                  &FriendGameInfo_t_const_pointer_box::get_m_usGamePort);
+  register_method("get_m_usQueryPort",
+                  &FriendGameInfo_t_const_pointer_box::get_m_usQueryPort);
+  register_method("get_m_steamIDLobby",
+                  &FriendGameInfo_t_const_pointer_box::get_m_steamIDLobby);
+}
+
+auto MatchMakingKeyValuePair_t_const_pointer_box::get_m_szKey() {
+  return cast<char[256]>(get_ptr()->m_szKey);
+}
+
+auto MatchMakingKeyValuePair_t_const_pointer_box::get_m_szValue() {
+  return cast<char[256]>(get_ptr()->m_szValue);
+}
+
+void MatchMakingKeyValuePair_t_const_pointer_box::_register_methods() {
+  register_method("get_m_szKey",
+                  &MatchMakingKeyValuePair_t_const_pointer_box::get_m_szKey);
+  register_method("get_m_szValue",
+                  &MatchMakingKeyValuePair_t_const_pointer_box::get_m_szValue);
+}
+
+template <typename C>
+auto servernetadr_t_const_pointer_box::Init(Ref<unsigned_int_box> ip,
+                                            Ref<uint16_box> usQueryPort,
+                                            Ref<uint16_box> usConnectionPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>([](auto *data, auto &&...args) { return data->Init(args...); },
+                 ip->get(), usQueryPort->get(), usConnectionPort->get());
+}
+
+template <typename C>
+auto servernetadr_t_const_pointer_box::GetQueryPort() ->
+    typename std::enable_if<true>::type {
+
+  call<uint16_box>(
+      [](auto *data, auto &&...args) { return data->GetQueryPort(args...); });
+}
+
+template <typename C>
+auto servernetadr_t_const_pointer_box::SetQueryPort(Ref<uint16_box> usPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetQueryPort(args...); },
+      usPort->get());
+}
+
+template <typename C>
+auto servernetadr_t_const_pointer_box::GetConnectionPort() ->
+    typename std::enable_if<true>::type {
+
+  call<uint16_box>([](auto *data, auto &&...args) {
+    return data->GetConnectionPort(args...);
+  });
+}
+
+template <typename C>
+auto servernetadr_t_const_pointer_box::SetConnectionPort(Ref<uint16_box> usPort)
+    -> typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) {
+        return data->SetConnectionPort(args...);
+      },
+      usPort->get());
+}
+
+template <typename C>
+auto servernetadr_t_const_pointer_box::GetIP() ->
+    typename std::enable_if<true>::type {
+
+  call<uint32_box>(
+      [](auto *data, auto &&...args) { return data->GetIP(args...); });
+}
+
+template <typename C>
+auto servernetadr_t_const_pointer_box::SetIP(Ref<uint32_box> unIP) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetIP(args...); },
+      unIP->get());
+}
+
+template <typename C>
+auto servernetadr_t_const_pointer_box::GetConnectionAddressString() ->
+    typename std::enable_if<true>::type {
+
+  call<char_const_pointer_box>([](auto *data, auto &&...args) {
+    return data->GetConnectionAddressString(args...);
+  });
+}
+
+template <typename C>
+auto servernetadr_t_const_pointer_box::GetQueryAddressString() ->
+    typename std::enable_if<true>::type {
+
+  call<char_const_pointer_box>([](auto *data, auto &&...args) {
+    return data->GetQueryAddressString(args...);
+  });
+}
+
+void servernetadr_t_const_pointer_box::_register_methods() {
+  register_method("Init", &servernetadr_t_const_pointer_box::Init);
+  register_method("GetQueryPort",
+                  &servernetadr_t_const_pointer_box::GetQueryPort);
+  register_method("SetQueryPort",
+                  &servernetadr_t_const_pointer_box::SetQueryPort);
+  register_method("GetConnectionPort",
+                  &servernetadr_t_const_pointer_box::GetConnectionPort);
+  register_method("SetConnectionPort",
+                  &servernetadr_t_const_pointer_box::SetConnectionPort);
+  register_method("GetIP", &servernetadr_t_const_pointer_box::GetIP);
+  register_method("SetIP", &servernetadr_t_const_pointer_box::SetIP);
+  register_method(
+      "GetConnectionAddressString",
+      &servernetadr_t_const_pointer_box::GetConnectionAddressString);
+  register_method("GetQueryAddressString",
+                  &servernetadr_t_const_pointer_box::GetQueryAddressString);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_NetAdr() {
+  return cast<servernetadr_t_box>(get_ptr()->m_NetAdr);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_nPing() {
+  return cast<int_box>(get_ptr()->m_nPing);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_bHadSuccessfulResponse() {
+  return cast<bool_box>(get_ptr()->m_bHadSuccessfulResponse);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_bDoNotRefresh() {
+  return cast<bool_box>(get_ptr()->m_bDoNotRefresh);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_szGameDir() {
+  return cast<char[32]>(get_ptr()->m_szGameDir);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_szMap() {
+  return cast<char[32]>(get_ptr()->m_szMap);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_szGameDescription() {
+  return cast<char[64]>(get_ptr()->m_szGameDescription);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_nAppID() {
+  return cast<uint32_box>(get_ptr()->m_nAppID);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_nPlayers() {
+  return cast<int_box>(get_ptr()->m_nPlayers);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_nMaxPlayers() {
+  return cast<int_box>(get_ptr()->m_nMaxPlayers);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_nBotPlayers() {
+  return cast<int_box>(get_ptr()->m_nBotPlayers);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_bPassword() {
+  return cast<bool_box>(get_ptr()->m_bPassword);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_bSecure() {
+  return cast<bool_box>(get_ptr()->m_bSecure);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_ulTimeLastPlayed() {
+  return cast<uint32_box>(get_ptr()->m_ulTimeLastPlayed);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_nServerVersion() {
+  return cast<int_box>(get_ptr()->m_nServerVersion);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_szGameTags() {
+  return cast<char[128]>(get_ptr()->m_szGameTags);
+}
+
+auto gameserveritem_t_const_pointer_box::get_m_steamID() {
+  return cast<CSteamID_box>(get_ptr()->m_steamID);
+}
+
+template <typename C>
+auto gameserveritem_t_const_pointer_box::GetName() ->
+    typename std::enable_if<true>::type {
+
+  call<char_const_pointer_box>(
+      [](auto *data, auto &&...args) { return data->GetName(args...); });
+}
+
+template <typename C>
+auto gameserveritem_t_const_pointer_box::SetName(
+    Ref<char_const_pointer_box> pName) -> typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetName(args...); },
+      pName->get_ptr());
+}
+
+void gameserveritem_t_const_pointer_box::_register_methods() {
+  register_method("get_m_NetAdr",
+                  &gameserveritem_t_const_pointer_box::get_m_NetAdr);
+  register_method("get_m_nPing",
+                  &gameserveritem_t_const_pointer_box::get_m_nPing);
+  register_method(
+      "get_m_bHadSuccessfulResponse",
+      &gameserveritem_t_const_pointer_box::get_m_bHadSuccessfulResponse);
+  register_method("get_m_bDoNotRefresh",
+                  &gameserveritem_t_const_pointer_box::get_m_bDoNotRefresh);
+  register_method("get_m_szGameDir",
+                  &gameserveritem_t_const_pointer_box::get_m_szGameDir);
+  register_method("get_m_szMap",
+                  &gameserveritem_t_const_pointer_box::get_m_szMap);
+  register_method("get_m_szGameDescription",
+                  &gameserveritem_t_const_pointer_box::get_m_szGameDescription);
+  register_method("get_m_nAppID",
+                  &gameserveritem_t_const_pointer_box::get_m_nAppID);
+  register_method("get_m_nPlayers",
+                  &gameserveritem_t_const_pointer_box::get_m_nPlayers);
+  register_method("get_m_nMaxPlayers",
+                  &gameserveritem_t_const_pointer_box::get_m_nMaxPlayers);
+  register_method("get_m_nBotPlayers",
+                  &gameserveritem_t_const_pointer_box::get_m_nBotPlayers);
+  register_method("get_m_bPassword",
+                  &gameserveritem_t_const_pointer_box::get_m_bPassword);
+  register_method("get_m_bSecure",
+                  &gameserveritem_t_const_pointer_box::get_m_bSecure);
+  register_method("get_m_ulTimeLastPlayed",
+                  &gameserveritem_t_const_pointer_box::get_m_ulTimeLastPlayed);
+  register_method("get_m_nServerVersion",
+                  &gameserveritem_t_const_pointer_box::get_m_nServerVersion);
+  register_method("get_m_szGameTags",
+                  &gameserveritem_t_const_pointer_box::get_m_szGameTags);
+  register_method("get_m_steamID",
+                  &gameserveritem_t_const_pointer_box::get_m_steamID);
+  register_method("GetName", &gameserveritem_t_const_pointer_box::GetName);
+  register_method("SetName", &gameserveritem_t_const_pointer_box::SetName);
+}
+
+auto SteamPartyBeaconLocation_t_const_pointer_box::get_m_eType() {
+  return cast<ESteamPartyBeaconLocationType_box>(get_ptr()->m_eType);
+}
+
+auto SteamPartyBeaconLocation_t_const_pointer_box::get_m_ulLocationID() {
+  return cast<uint64_box>(get_ptr()->m_ulLocationID);
+}
+
+void SteamPartyBeaconLocation_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eType",
+                  &SteamPartyBeaconLocation_t_const_pointer_box::get_m_eType);
+  register_method(
+      "get_m_ulLocationID",
+      &SteamPartyBeaconLocation_t_const_pointer_box::get_m_ulLocationID);
+}
+
+auto SteamParamStringArray_t_const_pointer_box::get_m_nNumStrings() {
+  return cast<int32_box>(get_ptr()->m_nNumStrings);
+}
+
+void SteamParamStringArray_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_nNumStrings",
+      &SteamParamStringArray_t_const_pointer_box::get_m_nNumStrings);
+}
+
+auto LeaderboardEntry_t_const_pointer_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+auto LeaderboardEntry_t_const_pointer_box::get_m_nGlobalRank() {
+  return cast<int32_box>(get_ptr()->m_nGlobalRank);
+}
+
+auto LeaderboardEntry_t_const_pointer_box::get_m_nScore() {
+  return cast<int32_box>(get_ptr()->m_nScore);
+}
+
+auto LeaderboardEntry_t_const_pointer_box::get_m_cDetails() {
+  return cast<int32_box>(get_ptr()->m_cDetails);
+}
+
+auto LeaderboardEntry_t_const_pointer_box::get_m_hUGC() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hUGC);
+}
+
+void LeaderboardEntry_t_const_pointer_box::_register_methods() {
+  register_method("get_m_steamIDUser",
+                  &LeaderboardEntry_t_const_pointer_box::get_m_steamIDUser);
+  register_method("get_m_nGlobalRank",
+                  &LeaderboardEntry_t_const_pointer_box::get_m_nGlobalRank);
+  register_method("get_m_nScore",
+                  &LeaderboardEntry_t_const_pointer_box::get_m_nScore);
+  register_method("get_m_cDetails",
+                  &LeaderboardEntry_t_const_pointer_box::get_m_cDetails);
+  register_method("get_m_hUGC",
+                  &LeaderboardEntry_t_const_pointer_box::get_m_hUGC);
+}
+
+auto P2PSessionState_t_const_pointer_box::get_m_bConnectionActive() {
+  return cast<uint8_box>(get_ptr()->m_bConnectionActive);
+}
+
+auto P2PSessionState_t_const_pointer_box::get_m_bConnecting() {
+  return cast<uint8_box>(get_ptr()->m_bConnecting);
+}
+
+auto P2PSessionState_t_const_pointer_box::get_m_eP2PSessionError() {
+  return cast<uint8_box>(get_ptr()->m_eP2PSessionError);
+}
+
+auto P2PSessionState_t_const_pointer_box::get_m_bUsingRelay() {
+  return cast<uint8_box>(get_ptr()->m_bUsingRelay);
+}
+
+auto P2PSessionState_t_const_pointer_box::get_m_nBytesQueuedForSend() {
+  return cast<int32_box>(get_ptr()->m_nBytesQueuedForSend);
+}
+
+auto P2PSessionState_t_const_pointer_box::get_m_nPacketsQueuedForSend() {
+  return cast<int32_box>(get_ptr()->m_nPacketsQueuedForSend);
+}
+
+auto P2PSessionState_t_const_pointer_box::get_m_nRemoteIP() {
+  return cast<uint32_box>(get_ptr()->m_nRemoteIP);
+}
+
+auto P2PSessionState_t_const_pointer_box::get_m_nRemotePort() {
+  return cast<uint16_box>(get_ptr()->m_nRemotePort);
+}
+
+void P2PSessionState_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_bConnectionActive",
+      &P2PSessionState_t_const_pointer_box::get_m_bConnectionActive);
+  register_method("get_m_bConnecting",
+                  &P2PSessionState_t_const_pointer_box::get_m_bConnecting);
+  register_method("get_m_eP2PSessionError",
+                  &P2PSessionState_t_const_pointer_box::get_m_eP2PSessionError);
+  register_method("get_m_bUsingRelay",
+                  &P2PSessionState_t_const_pointer_box::get_m_bUsingRelay);
+  register_method(
+      "get_m_nBytesQueuedForSend",
+      &P2PSessionState_t_const_pointer_box::get_m_nBytesQueuedForSend);
+  register_method(
+      "get_m_nPacketsQueuedForSend",
+      &P2PSessionState_t_const_pointer_box::get_m_nPacketsQueuedForSend);
+  register_method("get_m_nRemoteIP",
+                  &P2PSessionState_t_const_pointer_box::get_m_nRemoteIP);
+  register_method("get_m_nRemotePort",
+                  &P2PSessionState_t_const_pointer_box::get_m_nRemotePort);
+}
+
+auto InputAnalogActionData_t_const_pointer_box::get_eMode() {
+  return cast<EInputSourceMode_box>(get_ptr()->eMode);
+}
+
+auto InputAnalogActionData_t_const_pointer_box::get_x() {
+  return cast<float_box>(get_ptr()->x);
+}
+
+auto InputAnalogActionData_t_const_pointer_box::get_y() {
+  return cast<float_box>(get_ptr()->y);
+}
+
+auto InputAnalogActionData_t_const_pointer_box::get_bActive() {
+  return cast<bool_box>(get_ptr()->bActive);
+}
+
+void InputAnalogActionData_t_const_pointer_box::_register_methods() {
+  register_method("get_eMode",
+                  &InputAnalogActionData_t_const_pointer_box::get_eMode);
+  register_method("get_x", &InputAnalogActionData_t_const_pointer_box::get_x);
+  register_method("get_y", &InputAnalogActionData_t_const_pointer_box::get_y);
+  register_method("get_bActive",
+                  &InputAnalogActionData_t_const_pointer_box::get_bActive);
+}
+
+auto InputDigitalActionData_t_const_pointer_box::get_bState() {
+  return cast<bool_box>(get_ptr()->bState);
+}
+
+auto InputDigitalActionData_t_const_pointer_box::get_bActive() {
+  return cast<bool_box>(get_ptr()->bActive);
+}
+
+void InputDigitalActionData_t_const_pointer_box::_register_methods() {
+  register_method("get_bState",
+                  &InputDigitalActionData_t_const_pointer_box::get_bState);
+  register_method("get_bActive",
+                  &InputDigitalActionData_t_const_pointer_box::get_bActive);
+}
+
+auto InputMotionData_t_const_pointer_box::get_rotQuatX() {
+  return cast<float_box>(get_ptr()->rotQuatX);
+}
+
+auto InputMotionData_t_const_pointer_box::get_rotQuatY() {
+  return cast<float_box>(get_ptr()->rotQuatY);
+}
+
+auto InputMotionData_t_const_pointer_box::get_rotQuatZ() {
+  return cast<float_box>(get_ptr()->rotQuatZ);
+}
+
+auto InputMotionData_t_const_pointer_box::get_rotQuatW() {
+  return cast<float_box>(get_ptr()->rotQuatW);
+}
+
+auto InputMotionData_t_const_pointer_box::get_posAccelX() {
+  return cast<float_box>(get_ptr()->posAccelX);
+}
+
+auto InputMotionData_t_const_pointer_box::get_posAccelY() {
+  return cast<float_box>(get_ptr()->posAccelY);
+}
+
+auto InputMotionData_t_const_pointer_box::get_posAccelZ() {
+  return cast<float_box>(get_ptr()->posAccelZ);
+}
+
+auto InputMotionData_t_const_pointer_box::get_rotVelX() {
+  return cast<float_box>(get_ptr()->rotVelX);
+}
+
+auto InputMotionData_t_const_pointer_box::get_rotVelY() {
+  return cast<float_box>(get_ptr()->rotVelY);
+}
+
+auto InputMotionData_t_const_pointer_box::get_rotVelZ() {
+  return cast<float_box>(get_ptr()->rotVelZ);
+}
+
+void InputMotionData_t_const_pointer_box::_register_methods() {
+  register_method("get_rotQuatX",
+                  &InputMotionData_t_const_pointer_box::get_rotQuatX);
+  register_method("get_rotQuatY",
+                  &InputMotionData_t_const_pointer_box::get_rotQuatY);
+  register_method("get_rotQuatZ",
+                  &InputMotionData_t_const_pointer_box::get_rotQuatZ);
+  register_method("get_rotQuatW",
+                  &InputMotionData_t_const_pointer_box::get_rotQuatW);
+  register_method("get_posAccelX",
+                  &InputMotionData_t_const_pointer_box::get_posAccelX);
+  register_method("get_posAccelY",
+                  &InputMotionData_t_const_pointer_box::get_posAccelY);
+  register_method("get_posAccelZ",
+                  &InputMotionData_t_const_pointer_box::get_posAccelZ);
+  register_method("get_rotVelX",
+                  &InputMotionData_t_const_pointer_box::get_rotVelX);
+  register_method("get_rotVelY",
+                  &InputMotionData_t_const_pointer_box::get_rotVelY);
+  register_method("get_rotVelZ",
+                  &InputMotionData_t_const_pointer_box::get_rotVelZ);
+}
+
+auto SteamInputActionEvent_t_const_pointer_box::get_controllerHandle() {
+  return cast<InputHandle_t_box>(get_ptr()->controllerHandle);
+}
+
+auto SteamInputActionEvent_t_const_pointer_box::get_eEventType() {
+  return cast<ESteamInputActionEventType_box>(get_ptr()->eEventType);
+}
+
+void SteamInputActionEvent_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_controllerHandle",
+      &SteamInputActionEvent_t_const_pointer_box::get_controllerHandle);
+  register_method("get_eEventType",
+                  &SteamInputActionEvent_t_const_pointer_box::get_eEventType);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_eFileType() {
+  return cast<EWorkshopFileType_box>(get_ptr()->m_eFileType);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_nCreatorAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nCreatorAppID);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_nConsumerAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nConsumerAppID);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_rgchTitle() {
+  return cast<char[129]>(get_ptr()->m_rgchTitle);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_rgchDescription() {
+  return cast<char[8000]>(get_ptr()->m_rgchDescription);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_ulSteamIDOwner() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDOwner);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_rtimeCreated() {
+  return cast<uint32_box>(get_ptr()->m_rtimeCreated);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_rtimeUpdated() {
+  return cast<uint32_box>(get_ptr()->m_rtimeUpdated);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_rtimeAddedToUserList() {
+  return cast<uint32_box>(get_ptr()->m_rtimeAddedToUserList);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_eVisibility() {
+  return cast<ERemoteStoragePublishedFileVisibility_box>(
+      get_ptr()->m_eVisibility);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_bBanned() {
+  return cast<bool_box>(get_ptr()->m_bBanned);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_bAcceptedForUse() {
+  return cast<bool_box>(get_ptr()->m_bAcceptedForUse);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_bTagsTruncated() {
+  return cast<bool_box>(get_ptr()->m_bTagsTruncated);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_rgchTags() {
+  return cast<char[1025]>(get_ptr()->m_rgchTags);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_hFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hFile);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_hPreviewFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hPreviewFile);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_pchFileName() {
+  return cast<char[260]>(get_ptr()->m_pchFileName);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_nFileSize() {
+  return cast<int32_box>(get_ptr()->m_nFileSize);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_nPreviewFileSize() {
+  return cast<int32_box>(get_ptr()->m_nPreviewFileSize);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_rgchURL() {
+  return cast<char[256]>(get_ptr()->m_rgchURL);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_unVotesUp() {
+  return cast<uint32_box>(get_ptr()->m_unVotesUp);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_unVotesDown() {
+  return cast<uint32_box>(get_ptr()->m_unVotesDown);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_flScore() {
+  return cast<float_box>(get_ptr()->m_flScore);
+}
+
+auto SteamUGCDetails_t_const_pointer_box::get_m_unNumChildren() {
+  return cast<uint32_box>(get_ptr()->m_unNumChildren);
+}
+
+void SteamUGCDetails_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nPublishedFileId",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_nPublishedFileId);
+  register_method("get_m_eResult",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_eFileType",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_eFileType);
+  register_method("get_m_nCreatorAppID",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_nCreatorAppID);
+  register_method("get_m_nConsumerAppID",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_nConsumerAppID);
+  register_method("get_m_rgchTitle",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_rgchTitle);
+  register_method("get_m_rgchDescription",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_rgchDescription);
+  register_method("get_m_ulSteamIDOwner",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_ulSteamIDOwner);
+  register_method("get_m_rtimeCreated",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_rtimeCreated);
+  register_method("get_m_rtimeUpdated",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_rtimeUpdated);
+  register_method(
+      "get_m_rtimeAddedToUserList",
+      &SteamUGCDetails_t_const_pointer_box::get_m_rtimeAddedToUserList);
+  register_method("get_m_eVisibility",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_eVisibility);
+  register_method("get_m_bBanned",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_bBanned);
+  register_method("get_m_bAcceptedForUse",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_bAcceptedForUse);
+  register_method("get_m_bTagsTruncated",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_bTagsTruncated);
+  register_method("get_m_rgchTags",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_rgchTags);
+  register_method("get_m_hFile",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_hFile);
+  register_method("get_m_hPreviewFile",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_hPreviewFile);
+  register_method("get_m_pchFileName",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_pchFileName);
+  register_method("get_m_nFileSize",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_nFileSize);
+  register_method("get_m_nPreviewFileSize",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_nPreviewFileSize);
+  register_method("get_m_rgchURL",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_rgchURL);
+  register_method("get_m_unVotesUp",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_unVotesUp);
+  register_method("get_m_unVotesDown",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_unVotesDown);
+  register_method("get_m_flScore",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_flScore);
+  register_method("get_m_unNumChildren",
+                  &SteamUGCDetails_t_const_pointer_box::get_m_unNumChildren);
+}
+
+auto SteamItemDetails_t_const_pointer_box::get_m_itemId() {
+  return cast<SteamItemInstanceID_t_box>(get_ptr()->m_itemId);
+}
+
+auto SteamItemDetails_t_const_pointer_box::get_m_iDefinition() {
+  return cast<SteamItemDef_t_box>(get_ptr()->m_iDefinition);
+}
+
+auto SteamItemDetails_t_const_pointer_box::get_m_unQuantity() {
+  return cast<uint16_box>(get_ptr()->m_unQuantity);
+}
+
+auto SteamItemDetails_t_const_pointer_box::get_m_unFlags() {
+  return cast<uint16_box>(get_ptr()->m_unFlags);
+}
+
+void SteamItemDetails_t_const_pointer_box::_register_methods() {
+  register_method("get_m_itemId",
+                  &SteamItemDetails_t_const_pointer_box::get_m_itemId);
+  register_method("get_m_iDefinition",
+                  &SteamItemDetails_t_const_pointer_box::get_m_iDefinition);
+  register_method("get_m_unQuantity",
+                  &SteamItemDetails_t_const_pointer_box::get_m_unQuantity);
+  register_method("get_m_unFlags",
+                  &SteamItemDetails_t_const_pointer_box::get_m_unFlags);
+}
+
+auto SteamNetworkingIPAddr_const_pointer_box::get_m_ipv6() {
+  return cast<uint8[16]>(get_ptr()->m_ipv6);
+}
+
+auto SteamNetworkingIPAddr_const_pointer_box::get_m_port() {
+  return cast<uint16_box>(get_ptr()->m_port);
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_const_pointer_box::Clear() ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->Clear(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_const_pointer_box::IsIPv6AllZeros() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsIPv6AllZeros(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_const_pointer_box::SetIPv6(
+    Ref<uint8_const_pointer_box> ipv6, Ref<uint16_box> nPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetIPv6(args...); },
+      ipv6->get_ptr(), nPort->get());
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_const_pointer_box::SetIPv4(Ref<uint32_box> nIP,
+                                                      Ref<uint16_box> nPort) ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetIPv4(args...); },
+      nIP->get(), nPort->get());
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_const_pointer_box::IsIPv4() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsIPv4(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_const_pointer_box::GetIPv4() ->
+    typename std::enable_if<true>::type {
+
+  call<uint32_box>(
+      [](auto *data, auto &&...args) { return data->GetIPv4(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_const_pointer_box::SetIPv6LocalHost(
+    Ref<uint16_box> nPort) -> typename std::enable_if<true>::type {
+
+  call<void_box>([](auto *data,
+                    auto &&...args) { return data->SetIPv6LocalHost(args...); },
+                 nPort->get());
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_const_pointer_box::IsLocalHost() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsLocalHost(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_const_pointer_box::ToString(Ref<char_box> buf,
+                                                       Ref<uint32_box> cbBuf,
+                                                       Ref<bool_box> bWithPort)
+    -> typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->ToString(args...); },
+      buf->get_ptr(), cbBuf->get(), bWithPort->get());
+}
+
+template <typename C>
+auto SteamNetworkingIPAddr_const_pointer_box::ParseString(
+    Ref<char_const_pointer_box> pszStr) -> typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->ParseString(args...); },
+      pszStr->get_ptr());
+}
+
+void SteamNetworkingIPAddr_const_pointer_box::_register_methods() {
+  register_method("get_m_ipv6",
+                  &SteamNetworkingIPAddr_const_pointer_box::get_m_ipv6);
+  register_method("get_m_port",
+                  &SteamNetworkingIPAddr_const_pointer_box::get_m_port);
+  register_method("Clear", &SteamNetworkingIPAddr_const_pointer_box::Clear);
+  register_method("IsIPv6AllZeros",
+                  &SteamNetworkingIPAddr_const_pointer_box::IsIPv6AllZeros);
+  register_method("SetIPv6", &SteamNetworkingIPAddr_const_pointer_box::SetIPv6);
+  register_method("SetIPv4", &SteamNetworkingIPAddr_const_pointer_box::SetIPv4);
+  register_method("IsIPv4", &SteamNetworkingIPAddr_const_pointer_box::IsIPv4);
+  register_method("GetIPv4", &SteamNetworkingIPAddr_const_pointer_box::GetIPv4);
+  register_method("SetIPv6LocalHost",
+                  &SteamNetworkingIPAddr_const_pointer_box::SetIPv6LocalHost);
+  register_method("IsLocalHost",
+                  &SteamNetworkingIPAddr_const_pointer_box::IsLocalHost);
+  register_method("ToString",
+                  &SteamNetworkingIPAddr_const_pointer_box::ToString);
+  register_method("ParseString",
+                  &SteamNetworkingIPAddr_const_pointer_box::ParseString);
+}
+
+auto SteamNetworkingIdentity_const_pointer_box::get_m_eType() {
+  return cast<ESteamNetworkingIdentityType_box>(get_ptr()->m_eType);
+}
+
+auto SteamNetworkingIdentity_const_pointer_box::get_m_cbSize() {
+  return cast<int_box>(get_ptr()->m_cbSize);
+}
+
+auto SteamNetworkingIdentity_const_pointer_box::get_m_szUnknownRawString() {
+  return cast<char[128]>(get_ptr()->m_szUnknownRawString);
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::Clear() ->
+    typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->Clear(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::IsInvalid() ->
+    typename std::enable_if<true>::type {
+
+  call<bool_box>(
+      [](auto *data, auto &&...args) { return data->IsInvalid(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::SetSteamID(
+    Ref<CSteamID_box> steamID) -> typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetSteamID(args...); },
+      steamID->get());
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::GetSteamID() ->
+    typename std::enable_if<true>::type {
+
+  call<CSteamID_box>(
+      [](auto *data, auto &&...args) { return data->GetSteamID(args...); });
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::SetSteamID64(
+    Ref<uint64_box> steamID) -> typename std::enable_if<true>::type {
+
+  call<void_box>(
+      [](auto *data, auto &&...args) { return data->SetSteamID64(args...); },
+      steamID->get());
+}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::GetSteamID64() ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::SetIPAddr(
+    Ref<SteamNetworkingIPAddr_box> addr) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::GetIPAddr() ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::SetLocalHost() ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::IsLocalHost() ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::SetGenericString(
+    Ref<char_const_pointer_box> pszString) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::GetGenericString() ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::SetGenericBytes(
+    Ref<void_const_pointer_box> data, Ref<uint32_box> cbLen) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::GetGenericBytes(
+    Ref<int_box> cbLen) -> typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::ToString(Ref<char_box> buf,
+                                                         Ref<uint32_box> cbBuf)
+    -> typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingIdentity_const_pointer_box::ParseString(
+    Ref<char_const_pointer_box> pszStr) -> typename std::enable_if<true>::type {
+}
+
+void SteamNetworkingIdentity_const_pointer_box::_register_methods() {
+  register_method("get_m_eType",
+                  &SteamNetworkingIdentity_const_pointer_box::get_m_eType);
+  register_method("get_m_cbSize",
+                  &SteamNetworkingIdentity_const_pointer_box::get_m_cbSize);
+  register_method(
+      "get_m_szUnknownRawString",
+      &SteamNetworkingIdentity_const_pointer_box::get_m_szUnknownRawString);
+  register_method("Clear", &SteamNetworkingIdentity_const_pointer_box::Clear);
+  register_method("IsInvalid",
+                  &SteamNetworkingIdentity_const_pointer_box::IsInvalid);
+  register_method("SetSteamID",
+                  &SteamNetworkingIdentity_const_pointer_box::SetSteamID);
+  register_method("GetSteamID",
+                  &SteamNetworkingIdentity_const_pointer_box::GetSteamID);
+  register_method("SetSteamID64",
+                  &SteamNetworkingIdentity_const_pointer_box::SetSteamID64);
+  register_method("GetSteamID64",
+                  &SteamNetworkingIdentity_const_pointer_box::GetSteamID64);
+  register_method("SetIPAddr",
+                  &SteamNetworkingIdentity_const_pointer_box::SetIPAddr);
+  register_method("GetIPAddr",
+                  &SteamNetworkingIdentity_const_pointer_box::GetIPAddr);
+  register_method("SetLocalHost",
+                  &SteamNetworkingIdentity_const_pointer_box::SetLocalHost);
+  register_method("IsLocalHost",
+                  &SteamNetworkingIdentity_const_pointer_box::IsLocalHost);
+  register_method("SetGenericString",
+                  &SteamNetworkingIdentity_const_pointer_box::SetGenericString);
+  register_method("GetGenericString",
+                  &SteamNetworkingIdentity_const_pointer_box::GetGenericString);
+  register_method("SetGenericBytes",
+                  &SteamNetworkingIdentity_const_pointer_box::SetGenericBytes);
+  register_method("GetGenericBytes",
+                  &SteamNetworkingIdentity_const_pointer_box::GetGenericBytes);
+  register_method("ToString",
+                  &SteamNetworkingIdentity_const_pointer_box::ToString);
+  register_method("ParseString",
+                  &SteamNetworkingIdentity_const_pointer_box::ParseString);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_m_identityRemote() {
+  return cast<SteamNetworkingIdentity_box>(get_ptr()->m_identityRemote);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_m_nUserData() {
+  return cast<int64_box>(get_ptr()->m_nUserData);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_m_hListenSocket() {
+  return cast<HSteamListenSocket_box>(get_ptr()->m_hListenSocket);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_m_addrRemote() {
+  return cast<SteamNetworkingIPAddr_box>(get_ptr()->m_addrRemote);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_m__pad1() {
+  return cast<uint16_box>(get_ptr()->m__pad1);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_m_idPOPRemote() {
+  return cast<SteamNetworkingPOPID_box>(get_ptr()->m_idPOPRemote);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_m_idPOPRelay() {
+  return cast<SteamNetworkingPOPID_box>(get_ptr()->m_idPOPRelay);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_m_eState() {
+  return cast<ESteamNetworkingConnectionState_box>(get_ptr()->m_eState);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_m_eEndReason() {
+  return cast<int_box>(get_ptr()->m_eEndReason);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_m_szEndDebug() {
+  return cast<char[128]>(get_ptr()->m_szEndDebug);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::
+    get_m_szConnectionDescription() {
+  return cast<char[128]>(get_ptr()->m_szConnectionDescription);
+}
+
+auto SteamNetConnectionInfo_t_const_pointer_box::get_reserved() {
+  return cast<uint32[63]>(get_ptr()->reserved);
+}
+
+void SteamNetConnectionInfo_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_identityRemote",
+      &SteamNetConnectionInfo_t_const_pointer_box::get_m_identityRemote);
+  register_method("get_m_nUserData",
+                  &SteamNetConnectionInfo_t_const_pointer_box::get_m_nUserData);
+  register_method(
+      "get_m_hListenSocket",
+      &SteamNetConnectionInfo_t_const_pointer_box::get_m_hListenSocket);
+  register_method(
+      "get_m_addrRemote",
+      &SteamNetConnectionInfo_t_const_pointer_box::get_m_addrRemote);
+  register_method("get_m__pad1",
+                  &SteamNetConnectionInfo_t_const_pointer_box::get_m__pad1);
+  register_method(
+      "get_m_idPOPRemote",
+      &SteamNetConnectionInfo_t_const_pointer_box::get_m_idPOPRemote);
+  register_method(
+      "get_m_idPOPRelay",
+      &SteamNetConnectionInfo_t_const_pointer_box::get_m_idPOPRelay);
+  register_method("get_m_eState",
+                  &SteamNetConnectionInfo_t_const_pointer_box::get_m_eState);
+  register_method(
+      "get_m_eEndReason",
+      &SteamNetConnectionInfo_t_const_pointer_box::get_m_eEndReason);
+  register_method(
+      "get_m_szEndDebug",
+      &SteamNetConnectionInfo_t_const_pointer_box::get_m_szEndDebug);
+  register_method("get_m_szConnectionDescription",
+                  &SteamNetConnectionInfo_t_const_pointer_box::
+                      get_m_szConnectionDescription);
+  register_method("get_reserved",
+                  &SteamNetConnectionInfo_t_const_pointer_box::get_reserved);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::get_m_eState() {
+  return cast<ESteamNetworkingConnectionState_box>(get_ptr()->m_eState);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::get_m_nPing() {
+  return cast<int_box>(get_ptr()->m_nPing);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_flConnectionQualityLocal() {
+  return cast<float_box>(get_ptr()->m_flConnectionQualityLocal);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_flConnectionQualityRemote() {
+  return cast<float_box>(get_ptr()->m_flConnectionQualityRemote);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_flOutPacketsPerSec() {
+  return cast<float_box>(get_ptr()->m_flOutPacketsPerSec);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_flOutBytesPerSec() {
+  return cast<float_box>(get_ptr()->m_flOutBytesPerSec);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_flInPacketsPerSec() {
+  return cast<float_box>(get_ptr()->m_flInPacketsPerSec);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_flInBytesPerSec() {
+  return cast<float_box>(get_ptr()->m_flInBytesPerSec);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_nSendRateBytesPerSecond() {
+  return cast<int_box>(get_ptr()->m_nSendRateBytesPerSecond);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_cbPendingUnreliable() {
+  return cast<int_box>(get_ptr()->m_cbPendingUnreliable);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_cbPendingReliable() {
+  return cast<int_box>(get_ptr()->m_cbPendingReliable);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_cbSentUnackedReliable() {
+  return cast<int_box>(get_ptr()->m_cbSentUnackedReliable);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    get_m_usecQueueTime() {
+  return cast<SteamNetworkingMicroseconds_box>(get_ptr()->m_usecQueueTime);
+}
+
+auto SteamNetworkingQuickConnectionStatus_const_pointer_box::get_reserved() {
+  return cast<uint32[16]>(get_ptr()->reserved);
+}
+
+void SteamNetworkingQuickConnectionStatus_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eState",
+      &SteamNetworkingQuickConnectionStatus_const_pointer_box::get_m_eState);
+  register_method(
+      "get_m_nPing",
+      &SteamNetworkingQuickConnectionStatus_const_pointer_box::get_m_nPing);
+  register_method("get_m_flConnectionQualityLocal",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_flConnectionQualityLocal);
+  register_method("get_m_flConnectionQualityRemote",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_flConnectionQualityRemote);
+  register_method("get_m_flOutPacketsPerSec",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_flOutPacketsPerSec);
+  register_method("get_m_flOutBytesPerSec",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_flOutBytesPerSec);
+  register_method("get_m_flInPacketsPerSec",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_flInPacketsPerSec);
+  register_method("get_m_flInBytesPerSec",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_flInBytesPerSec);
+  register_method("get_m_nSendRateBytesPerSecond",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_nSendRateBytesPerSecond);
+  register_method("get_m_cbPendingUnreliable",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_cbPendingUnreliable);
+  register_method("get_m_cbPendingReliable",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_cbPendingReliable);
+  register_method("get_m_cbSentUnackedReliable",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_cbSentUnackedReliable);
+  register_method("get_m_usecQueueTime",
+                  &SteamNetworkingQuickConnectionStatus_const_pointer_box::
+                      get_m_usecQueueTime);
+  register_method(
+      "get_reserved",
+      &SteamNetworkingQuickConnectionStatus_const_pointer_box::get_reserved);
+}
+
+auto SteamNetworkingMessage_t_const_pointer_box::get_m_pData() {
+  return cast<void_box>(get_ptr()->m_pData);
+}
+
+auto SteamNetworkingMessage_t_const_pointer_box::get_m_cbSize() {
+  return cast<int_box>(get_ptr()->m_cbSize);
+}
+
+auto SteamNetworkingMessage_t_const_pointer_box::get_m_conn() {
+  return cast<HSteamNetConnection_box>(get_ptr()->m_conn);
+}
+
+auto SteamNetworkingMessage_t_const_pointer_box::get_m_identityPeer() {
+  return cast<SteamNetworkingIdentity_box>(get_ptr()->m_identityPeer);
+}
+
+auto SteamNetworkingMessage_t_const_pointer_box::get_m_nConnUserData() {
+  return cast<int64_box>(get_ptr()->m_nConnUserData);
+}
+
+auto SteamNetworkingMessage_t_const_pointer_box::get_m_usecTimeReceived() {
+  return cast<SteamNetworkingMicroseconds_box>(get_ptr()->m_usecTimeReceived);
+}
+
+auto SteamNetworkingMessage_t_const_pointer_box::get_m_nMessageNumber() {
+  return cast<int64_box>(get_ptr()->m_nMessageNumber);
+}
+
+auto SteamNetworkingMessage_t_const_pointer_box::get_m_nChannel() {
+  return cast<int_box>(get_ptr()->m_nChannel);
+}
+
+auto SteamNetworkingMessage_t_const_pointer_box::get_m_nFlags() {
+  return cast<int_box>(get_ptr()->m_nFlags);
+}
+
+auto SteamNetworkingMessage_t_const_pointer_box::get_m_nUserData() {
+  return cast<int64_box>(get_ptr()->m_nUserData);
+}
+
+template <typename C>
+auto SteamNetworkingMessage_t_const_pointer_box::Release() ->
+    typename std::enable_if<true>::type {}
+
+void SteamNetworkingMessage_t_const_pointer_box::_register_methods() {
+  register_method("get_m_pData",
+                  &SteamNetworkingMessage_t_const_pointer_box::get_m_pData);
+  register_method("get_m_cbSize",
+                  &SteamNetworkingMessage_t_const_pointer_box::get_m_cbSize);
+  register_method("get_m_conn",
+                  &SteamNetworkingMessage_t_const_pointer_box::get_m_conn);
+  register_method(
+      "get_m_identityPeer",
+      &SteamNetworkingMessage_t_const_pointer_box::get_m_identityPeer);
+  register_method(
+      "get_m_nConnUserData",
+      &SteamNetworkingMessage_t_const_pointer_box::get_m_nConnUserData);
+  register_method(
+      "get_m_usecTimeReceived",
+      &SteamNetworkingMessage_t_const_pointer_box::get_m_usecTimeReceived);
+  register_method(
+      "get_m_nMessageNumber",
+      &SteamNetworkingMessage_t_const_pointer_box::get_m_nMessageNumber);
+  register_method("get_m_nChannel",
+                  &SteamNetworkingMessage_t_const_pointer_box::get_m_nChannel);
+  register_method("get_m_nFlags",
+                  &SteamNetworkingMessage_t_const_pointer_box::get_m_nFlags);
+  register_method("get_m_nUserData",
+                  &SteamNetworkingMessage_t_const_pointer_box::get_m_nUserData);
+  register_method("Release",
+                  &SteamNetworkingMessage_t_const_pointer_box::Release);
+}
+
+auto SteamNetworkPingLocation_t_const_pointer_box::get_m_data() {
+  return cast<uint8[512]>(get_ptr()->m_data);
+}
+
+void SteamNetworkPingLocation_t_const_pointer_box::_register_methods() {
+  register_method("get_m_data",
+                  &SteamNetworkPingLocation_t_const_pointer_box::get_m_data);
+}
+
+auto SteamNetworkingConfigValue_t_const_pointer_box::get_m_eValue() {
+  return cast<ESteamNetworkingConfigValue_box>(get_ptr()->m_eValue);
+}
+
+auto SteamNetworkingConfigValue_t_const_pointer_box::get_m_eDataType() {
+  return cast<ESteamNetworkingConfigDataType_box>(get_ptr()->m_eDataType);
+}
+
+template <typename C>
+auto SteamNetworkingConfigValue_t_const_pointer_box::SetInt32(
+    Ref<ESteamNetworkingConfigValue_box> eVal, Ref<int32_t_box> data) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingConfigValue_t_const_pointer_box::SetInt64(
+    Ref<ESteamNetworkingConfigValue_box> eVal, Ref<int64_t_box> data) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingConfigValue_t_const_pointer_box::SetFloat(
+    Ref<ESteamNetworkingConfigValue_box> eVal, Ref<float_box> data) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingConfigValue_t_const_pointer_box::SetPtr(
+    Ref<ESteamNetworkingConfigValue_box> eVal, Ref<void_box> data) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto SteamNetworkingConfigValue_t_const_pointer_box::SetString(
+    Ref<ESteamNetworkingConfigValue_box> eVal, Ref<char_const_pointer_box> data)
+    -> typename std::enable_if<true>::type {}
+
+void SteamNetworkingConfigValue_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eValue",
+      &SteamNetworkingConfigValue_t_const_pointer_box::get_m_eValue);
+  register_method(
+      "get_m_eDataType",
+      &SteamNetworkingConfigValue_t_const_pointer_box::get_m_eDataType);
+  register_method("SetInt32",
+                  &SteamNetworkingConfigValue_t_const_pointer_box::SetInt32);
+  register_method("SetInt64",
+                  &SteamNetworkingConfigValue_t_const_pointer_box::SetInt64);
+  register_method("SetFloat",
+                  &SteamNetworkingConfigValue_t_const_pointer_box::SetFloat);
+  register_method("SetPtr",
+                  &SteamNetworkingConfigValue_t_const_pointer_box::SetPtr);
+  register_method("SetString",
+                  &SteamNetworkingConfigValue_t_const_pointer_box::SetString);
+}
+
+template <typename C>
+auto SteamNetworkingPOPIDRender_const_pointer_box::c_str() ->
+    typename std::enable_if<true>::type {}
+
+void SteamNetworkingPOPIDRender_const_pointer_box::_register_methods() {
+  register_method("c_str",
+                  &SteamNetworkingPOPIDRender_const_pointer_box::c_str);
+}
+
+template <typename C>
+auto SteamNetworkingIdentityRender_const_pointer_box::c_str() ->
+    typename std::enable_if<true>::type {}
+
+void SteamNetworkingIdentityRender_const_pointer_box::_register_methods() {
+  register_method("c_str",
+                  &SteamNetworkingIdentityRender_const_pointer_box::c_str);
+}
+
+template <typename C>
+auto SteamNetworkingIPAddrRender_const_pointer_box::c_str() ->
+    typename std::enable_if<true>::type {}
+
+void SteamNetworkingIPAddrRender_const_pointer_box::_register_methods() {
+  register_method("c_str",
+                  &SteamNetworkingIPAddrRender_const_pointer_box::c_str);
+}
+
+void SteamDatagramHostedAddress_const_pointer_box::_register_methods() {}
+
+void SteamDatagramGameCoordinatorServerLogin_const_pointer_box::
+    _register_methods() {}
+
+void SteamServersConnected_t_const_pointer_box::_register_methods() {}
+
+auto SteamServerConnectFailure_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SteamServerConnectFailure_t_const_pointer_box::get_m_bStillRetrying() {
+  return cast<bool_box>(get_ptr()->m_bStillRetrying);
+}
+
+void SteamServerConnectFailure_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &SteamServerConnectFailure_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_bStillRetrying",
+      &SteamServerConnectFailure_t_const_pointer_box::get_m_bStillRetrying);
+}
+
+auto SteamServersDisconnected_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void SteamServersDisconnected_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &SteamServersDisconnected_t_const_pointer_box::get_m_eResult);
+}
+
+auto ClientGameServerDeny_t_const_pointer_box::get_m_uAppID() {
+  return cast<uint32_box>(get_ptr()->m_uAppID);
+}
+
+auto ClientGameServerDeny_t_const_pointer_box::get_m_unGameServerIP() {
+  return cast<uint32_box>(get_ptr()->m_unGameServerIP);
+}
+
+auto ClientGameServerDeny_t_const_pointer_box::get_m_usGameServerPort() {
+  return cast<uint16_box>(get_ptr()->m_usGameServerPort);
+}
+
+auto ClientGameServerDeny_t_const_pointer_box::get_m_bSecure() {
+  return cast<uint16_box>(get_ptr()->m_bSecure);
+}
+
+auto ClientGameServerDeny_t_const_pointer_box::get_m_uReason() {
+  return cast<uint32_box>(get_ptr()->m_uReason);
+}
+
+void ClientGameServerDeny_t_const_pointer_box::_register_methods() {
+  register_method("get_m_uAppID",
+                  &ClientGameServerDeny_t_const_pointer_box::get_m_uAppID);
+  register_method(
+      "get_m_unGameServerIP",
+      &ClientGameServerDeny_t_const_pointer_box::get_m_unGameServerIP);
+  register_method(
+      "get_m_usGameServerPort",
+      &ClientGameServerDeny_t_const_pointer_box::get_m_usGameServerPort);
+  register_method("get_m_bSecure",
+                  &ClientGameServerDeny_t_const_pointer_box::get_m_bSecure);
+  register_method("get_m_uReason",
+                  &ClientGameServerDeny_t_const_pointer_box::get_m_uReason);
+}
+
+auto IPCFailure_t_const_pointer_box::get_m_eFailureType() {
+  return cast<uint8_box>(get_ptr()->m_eFailureType);
+}
+
+void IPCFailure_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eFailureType",
+                  &IPCFailure_t_const_pointer_box::get_m_eFailureType);
+}
+
+void LicensesUpdated_t_const_pointer_box::_register_methods() {}
+
+auto ValidateAuthTicketResponse_t_const_pointer_box::get_m_SteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamID);
+}
+
+auto ValidateAuthTicketResponse_t_const_pointer_box::
+    get_m_eAuthSessionResponse() {
+  return cast<EAuthSessionResponse_box>(get_ptr()->m_eAuthSessionResponse);
+}
+
+auto ValidateAuthTicketResponse_t_const_pointer_box::get_m_OwnerSteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_OwnerSteamID);
+}
+
+void ValidateAuthTicketResponse_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_SteamID",
+      &ValidateAuthTicketResponse_t_const_pointer_box::get_m_SteamID);
+  register_method("get_m_eAuthSessionResponse",
+                  &ValidateAuthTicketResponse_t_const_pointer_box::
+                      get_m_eAuthSessionResponse);
+  register_method(
+      "get_m_OwnerSteamID",
+      &ValidateAuthTicketResponse_t_const_pointer_box::get_m_OwnerSteamID);
+}
+
+auto MicroTxnAuthorizationResponse_t_const_pointer_box::get_m_unAppID() {
+  return cast<uint32_box>(get_ptr()->m_unAppID);
+}
+
+auto MicroTxnAuthorizationResponse_t_const_pointer_box::get_m_ulOrderID() {
+  return cast<uint64_box>(get_ptr()->m_ulOrderID);
+}
+
+auto MicroTxnAuthorizationResponse_t_const_pointer_box::get_m_bAuthorized() {
+  return cast<uint8_box>(get_ptr()->m_bAuthorized);
+}
+
+void MicroTxnAuthorizationResponse_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_unAppID",
+      &MicroTxnAuthorizationResponse_t_const_pointer_box::get_m_unAppID);
+  register_method(
+      "get_m_ulOrderID",
+      &MicroTxnAuthorizationResponse_t_const_pointer_box::get_m_ulOrderID);
+  register_method(
+      "get_m_bAuthorized",
+      &MicroTxnAuthorizationResponse_t_const_pointer_box::get_m_bAuthorized);
+}
+
+auto EncryptedAppTicketResponse_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void EncryptedAppTicketResponse_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &EncryptedAppTicketResponse_t_const_pointer_box::get_m_eResult);
+}
+
+auto GetAuthSessionTicketResponse_t_const_pointer_box::get_m_hAuthTicket() {
+  return cast<HAuthTicket_box>(get_ptr()->m_hAuthTicket);
+}
+
+auto GetAuthSessionTicketResponse_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void GetAuthSessionTicketResponse_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_hAuthTicket",
+      &GetAuthSessionTicketResponse_t_const_pointer_box::get_m_hAuthTicket);
+  register_method(
+      "get_m_eResult",
+      &GetAuthSessionTicketResponse_t_const_pointer_box::get_m_eResult);
+}
+
+auto GameWebCallback_t_const_pointer_box::get_m_szURL() {
+  return cast<char[256]>(get_ptr()->m_szURL);
+}
+
+void GameWebCallback_t_const_pointer_box::_register_methods() {
+  register_method("get_m_szURL",
+                  &GameWebCallback_t_const_pointer_box::get_m_szURL);
+}
+
+auto StoreAuthURLResponse_t_const_pointer_box::get_m_szURL() {
+  return cast<char[512]>(get_ptr()->m_szURL);
+}
+
+void StoreAuthURLResponse_t_const_pointer_box::_register_methods() {
+  register_method("get_m_szURL",
+                  &StoreAuthURLResponse_t_const_pointer_box::get_m_szURL);
+}
+
+auto MarketEligibilityResponse_t_const_pointer_box::get_m_bAllowed() {
+  return cast<bool_box>(get_ptr()->m_bAllowed);
+}
+
+auto MarketEligibilityResponse_t_const_pointer_box::get_m_eNotAllowedReason() {
+  return cast<EMarketNotAllowedReasonFlags_box>(get_ptr()->m_eNotAllowedReason);
+}
+
+auto MarketEligibilityResponse_t_const_pointer_box::get_m_rtAllowedAtTime() {
+  return cast<RTime32_box>(get_ptr()->m_rtAllowedAtTime);
+}
+
+auto MarketEligibilityResponse_t_const_pointer_box::
+    get_m_cdaySteamGuardRequiredDays() {
+  return cast<int_box>(get_ptr()->m_cdaySteamGuardRequiredDays);
+}
+
+auto MarketEligibilityResponse_t_const_pointer_box::
+    get_m_cdayNewDeviceCooldown() {
+  return cast<int_box>(get_ptr()->m_cdayNewDeviceCooldown);
+}
+
+void MarketEligibilityResponse_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_bAllowed",
+      &MarketEligibilityResponse_t_const_pointer_box::get_m_bAllowed);
+  register_method(
+      "get_m_eNotAllowedReason",
+      &MarketEligibilityResponse_t_const_pointer_box::get_m_eNotAllowedReason);
+  register_method(
+      "get_m_rtAllowedAtTime",
+      &MarketEligibilityResponse_t_const_pointer_box::get_m_rtAllowedAtTime);
+  register_method("get_m_cdaySteamGuardRequiredDays",
+                  &MarketEligibilityResponse_t_const_pointer_box::
+                      get_m_cdaySteamGuardRequiredDays);
+  register_method("get_m_cdayNewDeviceCooldown",
+                  &MarketEligibilityResponse_t_const_pointer_box::
+                      get_m_cdayNewDeviceCooldown);
+}
+
+auto DurationControl_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto DurationControl_t_const_pointer_box::get_m_appid() {
+  return cast<AppId_t_box>(get_ptr()->m_appid);
+}
+
+auto DurationControl_t_const_pointer_box::get_m_bApplicable() {
+  return cast<bool_box>(get_ptr()->m_bApplicable);
+}
+
+auto DurationControl_t_const_pointer_box::get_m_csecsLast5h() {
+  return cast<int32_box>(get_ptr()->m_csecsLast5h);
+}
+
+auto DurationControl_t_const_pointer_box::get_m_progress() {
+  return cast<EDurationControlProgress_box>(get_ptr()->m_progress);
+}
+
+auto DurationControl_t_const_pointer_box::get_m_notification() {
+  return cast<EDurationControlNotification_box>(get_ptr()->m_notification);
+}
+
+auto DurationControl_t_const_pointer_box::get_m_csecsToday() {
+  return cast<int32_box>(get_ptr()->m_csecsToday);
+}
+
+auto DurationControl_t_const_pointer_box::get_m_csecsRemaining() {
+  return cast<int32_box>(get_ptr()->m_csecsRemaining);
+}
+
+void DurationControl_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &DurationControl_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_appid",
+                  &DurationControl_t_const_pointer_box::get_m_appid);
+  register_method("get_m_bApplicable",
+                  &DurationControl_t_const_pointer_box::get_m_bApplicable);
+  register_method("get_m_csecsLast5h",
+                  &DurationControl_t_const_pointer_box::get_m_csecsLast5h);
+  register_method("get_m_progress",
+                  &DurationControl_t_const_pointer_box::get_m_progress);
+  register_method("get_m_notification",
+                  &DurationControl_t_const_pointer_box::get_m_notification);
+  register_method("get_m_csecsToday",
+                  &DurationControl_t_const_pointer_box::get_m_csecsToday);
+  register_method("get_m_csecsRemaining",
+                  &DurationControl_t_const_pointer_box::get_m_csecsRemaining);
+}
+
+auto PersonaStateChange_t_const_pointer_box::get_m_ulSteamID() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamID);
+}
+
+auto PersonaStateChange_t_const_pointer_box::get_m_nChangeFlags() {
+  return cast<int_box>(get_ptr()->m_nChangeFlags);
+}
+
+void PersonaStateChange_t_const_pointer_box::_register_methods() {
+  register_method("get_m_ulSteamID",
+                  &PersonaStateChange_t_const_pointer_box::get_m_ulSteamID);
+  register_method("get_m_nChangeFlags",
+                  &PersonaStateChange_t_const_pointer_box::get_m_nChangeFlags);
+}
+
+auto GameOverlayActivated_t_const_pointer_box::get_m_bActive() {
+  return cast<uint8_box>(get_ptr()->m_bActive);
+}
+
+void GameOverlayActivated_t_const_pointer_box::_register_methods() {
+  register_method("get_m_bActive",
+                  &GameOverlayActivated_t_const_pointer_box::get_m_bActive);
+}
+
+auto GameServerChangeRequested_t_const_pointer_box::get_m_rgchServer() {
+  return cast<char[64]>(get_ptr()->m_rgchServer);
+}
+
+auto GameServerChangeRequested_t_const_pointer_box::get_m_rgchPassword() {
+  return cast<char[64]>(get_ptr()->m_rgchPassword);
+}
+
+void GameServerChangeRequested_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_rgchServer",
+      &GameServerChangeRequested_t_const_pointer_box::get_m_rgchServer);
+  register_method(
+      "get_m_rgchPassword",
+      &GameServerChangeRequested_t_const_pointer_box::get_m_rgchPassword);
+}
+
+auto GameLobbyJoinRequested_t_const_pointer_box::get_m_steamIDLobby() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDLobby);
+}
+
+auto GameLobbyJoinRequested_t_const_pointer_box::get_m_steamIDFriend() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDFriend);
+}
+
+void GameLobbyJoinRequested_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_steamIDLobby",
+      &GameLobbyJoinRequested_t_const_pointer_box::get_m_steamIDLobby);
+  register_method(
+      "get_m_steamIDFriend",
+      &GameLobbyJoinRequested_t_const_pointer_box::get_m_steamIDFriend);
+}
+
+auto AvatarImageLoaded_t_const_pointer_box::get_m_steamID() {
+  return cast<CSteamID_box>(get_ptr()->m_steamID);
+}
+
+auto AvatarImageLoaded_t_const_pointer_box::get_m_iImage() {
+  return cast<int_box>(get_ptr()->m_iImage);
+}
+
+auto AvatarImageLoaded_t_const_pointer_box::get_m_iWide() {
+  return cast<int_box>(get_ptr()->m_iWide);
+}
+
+auto AvatarImageLoaded_t_const_pointer_box::get_m_iTall() {
+  return cast<int_box>(get_ptr()->m_iTall);
+}
+
+void AvatarImageLoaded_t_const_pointer_box::_register_methods() {
+  register_method("get_m_steamID",
+                  &AvatarImageLoaded_t_const_pointer_box::get_m_steamID);
+  register_method("get_m_iImage",
+                  &AvatarImageLoaded_t_const_pointer_box::get_m_iImage);
+  register_method("get_m_iWide",
+                  &AvatarImageLoaded_t_const_pointer_box::get_m_iWide);
+  register_method("get_m_iTall",
+                  &AvatarImageLoaded_t_const_pointer_box::get_m_iTall);
+}
+
+auto ClanOfficerListResponse_t_const_pointer_box::get_m_steamIDClan() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDClan);
+}
+
+auto ClanOfficerListResponse_t_const_pointer_box::get_m_cOfficers() {
+  return cast<int_box>(get_ptr()->m_cOfficers);
+}
+
+auto ClanOfficerListResponse_t_const_pointer_box::get_m_bSuccess() {
+  return cast<uint8_box>(get_ptr()->m_bSuccess);
+}
+
+void ClanOfficerListResponse_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_steamIDClan",
+      &ClanOfficerListResponse_t_const_pointer_box::get_m_steamIDClan);
+  register_method(
+      "get_m_cOfficers",
+      &ClanOfficerListResponse_t_const_pointer_box::get_m_cOfficers);
+  register_method("get_m_bSuccess",
+                  &ClanOfficerListResponse_t_const_pointer_box::get_m_bSuccess);
+}
+
+auto FriendRichPresenceUpdate_t_const_pointer_box::get_m_steamIDFriend() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDFriend);
+}
+
+auto FriendRichPresenceUpdate_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void FriendRichPresenceUpdate_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_steamIDFriend",
+      &FriendRichPresenceUpdate_t_const_pointer_box::get_m_steamIDFriend);
+  register_method("get_m_nAppID",
+                  &FriendRichPresenceUpdate_t_const_pointer_box::get_m_nAppID);
+}
+
+auto GameRichPresenceJoinRequested_t_const_pointer_box::get_m_steamIDFriend() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDFriend);
+}
+
+auto GameRichPresenceJoinRequested_t_const_pointer_box::get_m_rgchConnect() {
+  return cast<char[256]>(get_ptr()->m_rgchConnect);
+}
+
+void GameRichPresenceJoinRequested_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_steamIDFriend",
+      &GameRichPresenceJoinRequested_t_const_pointer_box::get_m_steamIDFriend);
+  register_method(
+      "get_m_rgchConnect",
+      &GameRichPresenceJoinRequested_t_const_pointer_box::get_m_rgchConnect);
+}
+
+auto GameConnectedClanChatMsg_t_const_pointer_box::get_m_steamIDClanChat() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDClanChat);
+}
+
+auto GameConnectedClanChatMsg_t_const_pointer_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+auto GameConnectedClanChatMsg_t_const_pointer_box::get_m_iMessageID() {
+  return cast<int_box>(get_ptr()->m_iMessageID);
+}
+
+void GameConnectedClanChatMsg_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_steamIDClanChat",
+      &GameConnectedClanChatMsg_t_const_pointer_box::get_m_steamIDClanChat);
+  register_method(
+      "get_m_steamIDUser",
+      &GameConnectedClanChatMsg_t_const_pointer_box::get_m_steamIDUser);
+  register_method(
+      "get_m_iMessageID",
+      &GameConnectedClanChatMsg_t_const_pointer_box::get_m_iMessageID);
+}
+
+auto GameConnectedChatJoin_t_const_pointer_box::get_m_steamIDClanChat() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDClanChat);
+}
+
+auto GameConnectedChatJoin_t_const_pointer_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void GameConnectedChatJoin_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_steamIDClanChat",
+      &GameConnectedChatJoin_t_const_pointer_box::get_m_steamIDClanChat);
+  register_method(
+      "get_m_steamIDUser",
+      &GameConnectedChatJoin_t_const_pointer_box::get_m_steamIDUser);
+}
+
+auto GameConnectedChatLeave_t_const_pointer_box::get_m_steamIDClanChat() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDClanChat);
+}
+
+auto GameConnectedChatLeave_t_const_pointer_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+auto GameConnectedChatLeave_t_const_pointer_box::get_m_bKicked() {
+  return cast<bool_box>(get_ptr()->m_bKicked);
+}
+
+auto GameConnectedChatLeave_t_const_pointer_box::get_m_bDropped() {
+  return cast<bool_box>(get_ptr()->m_bDropped);
+}
+
+void GameConnectedChatLeave_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_steamIDClanChat",
+      &GameConnectedChatLeave_t_const_pointer_box::get_m_steamIDClanChat);
+  register_method(
+      "get_m_steamIDUser",
+      &GameConnectedChatLeave_t_const_pointer_box::get_m_steamIDUser);
+  register_method("get_m_bKicked",
+                  &GameConnectedChatLeave_t_const_pointer_box::get_m_bKicked);
+  register_method("get_m_bDropped",
+                  &GameConnectedChatLeave_t_const_pointer_box::get_m_bDropped);
+}
+
+auto DownloadClanActivityCountsResult_t_const_pointer_box::get_m_bSuccess() {
+  return cast<bool_box>(get_ptr()->m_bSuccess);
+}
+
+void DownloadClanActivityCountsResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_bSuccess",
+      &DownloadClanActivityCountsResult_t_const_pointer_box::get_m_bSuccess);
+}
+
+auto JoinClanChatRoomCompletionResult_t_const_pointer_box::
+    get_m_steamIDClanChat() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDClanChat);
+}
+
+auto JoinClanChatRoomCompletionResult_t_const_pointer_box::
+    get_m_eChatRoomEnterResponse() {
+  return cast<EChatRoomEnterResponse_box>(get_ptr()->m_eChatRoomEnterResponse);
+}
+
+void JoinClanChatRoomCompletionResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_steamIDClanChat",
+                  &JoinClanChatRoomCompletionResult_t_const_pointer_box::
+                      get_m_steamIDClanChat);
+  register_method("get_m_eChatRoomEnterResponse",
+                  &JoinClanChatRoomCompletionResult_t_const_pointer_box::
+                      get_m_eChatRoomEnterResponse);
+}
+
+auto GameConnectedFriendChatMsg_t_const_pointer_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+auto GameConnectedFriendChatMsg_t_const_pointer_box::get_m_iMessageID() {
+  return cast<int_box>(get_ptr()->m_iMessageID);
+}
+
+void GameConnectedFriendChatMsg_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_steamIDUser",
+      &GameConnectedFriendChatMsg_t_const_pointer_box::get_m_steamIDUser);
+  register_method(
+      "get_m_iMessageID",
+      &GameConnectedFriendChatMsg_t_const_pointer_box::get_m_iMessageID);
+}
+
+auto FriendsGetFollowerCount_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto FriendsGetFollowerCount_t_const_pointer_box::get_m_steamID() {
+  return cast<CSteamID_box>(get_ptr()->m_steamID);
+}
+
+auto FriendsGetFollowerCount_t_const_pointer_box::get_m_nCount() {
+  return cast<int_box>(get_ptr()->m_nCount);
+}
+
+void FriendsGetFollowerCount_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &FriendsGetFollowerCount_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_steamID",
+                  &FriendsGetFollowerCount_t_const_pointer_box::get_m_steamID);
+  register_method("get_m_nCount",
+                  &FriendsGetFollowerCount_t_const_pointer_box::get_m_nCount);
+}
+
+auto FriendsIsFollowing_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto FriendsIsFollowing_t_const_pointer_box::get_m_steamID() {
+  return cast<CSteamID_box>(get_ptr()->m_steamID);
+}
+
+auto FriendsIsFollowing_t_const_pointer_box::get_m_bIsFollowing() {
+  return cast<bool_box>(get_ptr()->m_bIsFollowing);
+}
+
+void FriendsIsFollowing_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &FriendsIsFollowing_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_steamID",
+                  &FriendsIsFollowing_t_const_pointer_box::get_m_steamID);
+  register_method("get_m_bIsFollowing",
+                  &FriendsIsFollowing_t_const_pointer_box::get_m_bIsFollowing);
+}
+
+auto FriendsEnumerateFollowingList_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto FriendsEnumerateFollowingList_t_const_pointer_box::get_m_rgSteamID() {
+  return cast<CSteamID[50]>(get_ptr()->m_rgSteamID);
+}
+
+auto FriendsEnumerateFollowingList_t_const_pointer_box::
+    get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto FriendsEnumerateFollowingList_t_const_pointer_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+void FriendsEnumerateFollowingList_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &FriendsEnumerateFollowingList_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_rgSteamID",
+      &FriendsEnumerateFollowingList_t_const_pointer_box::get_m_rgSteamID);
+  register_method("get_m_nResultsReturned",
+                  &FriendsEnumerateFollowingList_t_const_pointer_box::
+                      get_m_nResultsReturned);
+  register_method("get_m_nTotalResultCount",
+                  &FriendsEnumerateFollowingList_t_const_pointer_box::
+                      get_m_nTotalResultCount);
+}
+
+auto SetPersonaNameResponse_t_const_pointer_box::get_m_bSuccess() {
+  return cast<bool_box>(get_ptr()->m_bSuccess);
+}
+
+auto SetPersonaNameResponse_t_const_pointer_box::get_m_bLocalSuccess() {
+  return cast<bool_box>(get_ptr()->m_bLocalSuccess);
+}
+
+auto SetPersonaNameResponse_t_const_pointer_box::get_m_result() {
+  return cast<EResult_box>(get_ptr()->m_result);
+}
+
+void SetPersonaNameResponse_t_const_pointer_box::_register_methods() {
+  register_method("get_m_bSuccess",
+                  &SetPersonaNameResponse_t_const_pointer_box::get_m_bSuccess);
+  register_method(
+      "get_m_bLocalSuccess",
+      &SetPersonaNameResponse_t_const_pointer_box::get_m_bLocalSuccess);
+  register_method("get_m_result",
+                  &SetPersonaNameResponse_t_const_pointer_box::get_m_result);
+}
+
+void UnreadChatMessagesChanged_t_const_pointer_box::_register_methods() {}
+
+auto OverlayBrowserProtocolNavigation_t_const_pointer_box::get_rgchURI() {
+  return cast<char[1024]>(get_ptr()->rgchURI);
+}
+
+void OverlayBrowserProtocolNavigation_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_rgchURI",
+      &OverlayBrowserProtocolNavigation_t_const_pointer_box::get_rgchURI);
+}
+
+void IPCountry_t_const_pointer_box::_register_methods() {}
+
+auto LowBatteryPower_t_const_pointer_box::get_m_nMinutesBatteryLeft() {
+  return cast<uint8_box>(get_ptr()->m_nMinutesBatteryLeft);
+}
+
+void LowBatteryPower_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_nMinutesBatteryLeft",
+      &LowBatteryPower_t_const_pointer_box::get_m_nMinutesBatteryLeft);
+}
+
+auto SteamAPICallCompleted_t_const_pointer_box::get_m_hAsyncCall() {
+  return cast<SteamAPICall_t_box>(get_ptr()->m_hAsyncCall);
+}
+
+auto SteamAPICallCompleted_t_const_pointer_box::get_m_iCallback() {
+  return cast<int_box>(get_ptr()->m_iCallback);
+}
+
+auto SteamAPICallCompleted_t_const_pointer_box::get_m_cubParam() {
+  return cast<uint32_box>(get_ptr()->m_cubParam);
+}
+
+void SteamAPICallCompleted_t_const_pointer_box::_register_methods() {
+  register_method("get_m_hAsyncCall",
+                  &SteamAPICallCompleted_t_const_pointer_box::get_m_hAsyncCall);
+  register_method("get_m_iCallback",
+                  &SteamAPICallCompleted_t_const_pointer_box::get_m_iCallback);
+  register_method("get_m_cubParam",
+                  &SteamAPICallCompleted_t_const_pointer_box::get_m_cubParam);
+}
+
+void SteamShutdown_t_const_pointer_box::_register_methods() {}
+
+auto CheckFileSignature_t_const_pointer_box::get_m_eCheckFileSignature() {
+  return cast<ECheckFileSignature_box>(get_ptr()->m_eCheckFileSignature);
+}
+
+void CheckFileSignature_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eCheckFileSignature",
+      &CheckFileSignature_t_const_pointer_box::get_m_eCheckFileSignature);
+}
+
+auto GamepadTextInputDismissed_t_const_pointer_box::get_m_bSubmitted() {
+  return cast<bool_box>(get_ptr()->m_bSubmitted);
+}
+
+auto GamepadTextInputDismissed_t_const_pointer_box::get_m_unSubmittedText() {
+  return cast<uint32_box>(get_ptr()->m_unSubmittedText);
+}
+
+void GamepadTextInputDismissed_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_bSubmitted",
+      &GamepadTextInputDismissed_t_const_pointer_box::get_m_bSubmitted);
+  register_method(
+      "get_m_unSubmittedText",
+      &GamepadTextInputDismissed_t_const_pointer_box::get_m_unSubmittedText);
+}
+
+void AppResumingFromSuspend_t_const_pointer_box::_register_methods() {}
+
+void ModalGamepadTextInputDismissed_t_const_pointer_box::_register_methods() {}
+
+auto FavoritesListChanged_t_const_pointer_box::get_m_nIP() {
+  return cast<uint32_box>(get_ptr()->m_nIP);
+}
+
+auto FavoritesListChanged_t_const_pointer_box::get_m_nQueryPort() {
+  return cast<uint32_box>(get_ptr()->m_nQueryPort);
+}
+
+auto FavoritesListChanged_t_const_pointer_box::get_m_nConnPort() {
+  return cast<uint32_box>(get_ptr()->m_nConnPort);
+}
+
+auto FavoritesListChanged_t_const_pointer_box::get_m_nAppID() {
+  return cast<uint32_box>(get_ptr()->m_nAppID);
+}
+
+auto FavoritesListChanged_t_const_pointer_box::get_m_nFlags() {
+  return cast<uint32_box>(get_ptr()->m_nFlags);
+}
+
+auto FavoritesListChanged_t_const_pointer_box::get_m_bAdd() {
+  return cast<bool_box>(get_ptr()->m_bAdd);
+}
+
+auto FavoritesListChanged_t_const_pointer_box::get_m_unAccountId() {
+  return cast<AccountID_t_box>(get_ptr()->m_unAccountId);
+}
+
+void FavoritesListChanged_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nIP",
+                  &FavoritesListChanged_t_const_pointer_box::get_m_nIP);
+  register_method("get_m_nQueryPort",
+                  &FavoritesListChanged_t_const_pointer_box::get_m_nQueryPort);
+  register_method("get_m_nConnPort",
+                  &FavoritesListChanged_t_const_pointer_box::get_m_nConnPort);
+  register_method("get_m_nAppID",
+                  &FavoritesListChanged_t_const_pointer_box::get_m_nAppID);
+  register_method("get_m_nFlags",
+                  &FavoritesListChanged_t_const_pointer_box::get_m_nFlags);
+  register_method("get_m_bAdd",
+                  &FavoritesListChanged_t_const_pointer_box::get_m_bAdd);
+  register_method("get_m_unAccountId",
+                  &FavoritesListChanged_t_const_pointer_box::get_m_unAccountId);
+}
+
+auto LobbyInvite_t_const_pointer_box::get_m_ulSteamIDUser() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDUser);
+}
+
+auto LobbyInvite_t_const_pointer_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyInvite_t_const_pointer_box::get_m_ulGameID() {
+  return cast<uint64_box>(get_ptr()->m_ulGameID);
+}
+
+void LobbyInvite_t_const_pointer_box::_register_methods() {
+  register_method("get_m_ulSteamIDUser",
+                  &LobbyInvite_t_const_pointer_box::get_m_ulSteamIDUser);
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyInvite_t_const_pointer_box::get_m_ulSteamIDLobby);
+  register_method("get_m_ulGameID",
+                  &LobbyInvite_t_const_pointer_box::get_m_ulGameID);
+}
+
+auto LobbyEnter_t_const_pointer_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyEnter_t_const_pointer_box::get_m_rgfChatPermissions() {
+  return cast<uint32_box>(get_ptr()->m_rgfChatPermissions);
+}
+
+auto LobbyEnter_t_const_pointer_box::get_m_bLocked() {
+  return cast<bool_box>(get_ptr()->m_bLocked);
+}
+
+auto LobbyEnter_t_const_pointer_box::get_m_EChatRoomEnterResponse() {
+  return cast<uint32_box>(get_ptr()->m_EChatRoomEnterResponse);
+}
+
+void LobbyEnter_t_const_pointer_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyEnter_t_const_pointer_box::get_m_ulSteamIDLobby);
+  register_method("get_m_rgfChatPermissions",
+                  &LobbyEnter_t_const_pointer_box::get_m_rgfChatPermissions);
+  register_method("get_m_bLocked",
+                  &LobbyEnter_t_const_pointer_box::get_m_bLocked);
+  register_method(
+      "get_m_EChatRoomEnterResponse",
+      &LobbyEnter_t_const_pointer_box::get_m_EChatRoomEnterResponse);
+}
+
+auto LobbyDataUpdate_t_const_pointer_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyDataUpdate_t_const_pointer_box::get_m_ulSteamIDMember() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDMember);
+}
+
+auto LobbyDataUpdate_t_const_pointer_box::get_m_bSuccess() {
+  return cast<uint8_box>(get_ptr()->m_bSuccess);
+}
+
+void LobbyDataUpdate_t_const_pointer_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyDataUpdate_t_const_pointer_box::get_m_ulSteamIDLobby);
+  register_method("get_m_ulSteamIDMember",
+                  &LobbyDataUpdate_t_const_pointer_box::get_m_ulSteamIDMember);
+  register_method("get_m_bSuccess",
+                  &LobbyDataUpdate_t_const_pointer_box::get_m_bSuccess);
+}
+
+auto LobbyChatUpdate_t_const_pointer_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyChatUpdate_t_const_pointer_box::get_m_ulSteamIDUserChanged() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDUserChanged);
+}
+
+auto LobbyChatUpdate_t_const_pointer_box::get_m_ulSteamIDMakingChange() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDMakingChange);
+}
+
+auto LobbyChatUpdate_t_const_pointer_box::get_m_rgfChatMemberStateChange() {
+  return cast<uint32_box>(get_ptr()->m_rgfChatMemberStateChange);
+}
+
+void LobbyChatUpdate_t_const_pointer_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyChatUpdate_t_const_pointer_box::get_m_ulSteamIDLobby);
+  register_method(
+      "get_m_ulSteamIDUserChanged",
+      &LobbyChatUpdate_t_const_pointer_box::get_m_ulSteamIDUserChanged);
+  register_method(
+      "get_m_ulSteamIDMakingChange",
+      &LobbyChatUpdate_t_const_pointer_box::get_m_ulSteamIDMakingChange);
+  register_method(
+      "get_m_rgfChatMemberStateChange",
+      &LobbyChatUpdate_t_const_pointer_box::get_m_rgfChatMemberStateChange);
+}
+
+auto LobbyChatMsg_t_const_pointer_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyChatMsg_t_const_pointer_box::get_m_ulSteamIDUser() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDUser);
+}
+
+auto LobbyChatMsg_t_const_pointer_box::get_m_eChatEntryType() {
+  return cast<uint8_box>(get_ptr()->m_eChatEntryType);
+}
+
+auto LobbyChatMsg_t_const_pointer_box::get_m_iChatID() {
+  return cast<uint32_box>(get_ptr()->m_iChatID);
+}
+
+void LobbyChatMsg_t_const_pointer_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyChatMsg_t_const_pointer_box::get_m_ulSteamIDLobby);
+  register_method("get_m_ulSteamIDUser",
+                  &LobbyChatMsg_t_const_pointer_box::get_m_ulSteamIDUser);
+  register_method("get_m_eChatEntryType",
+                  &LobbyChatMsg_t_const_pointer_box::get_m_eChatEntryType);
+  register_method("get_m_iChatID",
+                  &LobbyChatMsg_t_const_pointer_box::get_m_iChatID);
+}
+
+auto LobbyGameCreated_t_const_pointer_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyGameCreated_t_const_pointer_box::get_m_ulSteamIDGameServer() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDGameServer);
+}
+
+auto LobbyGameCreated_t_const_pointer_box::get_m_unIP() {
+  return cast<uint32_box>(get_ptr()->m_unIP);
+}
+
+auto LobbyGameCreated_t_const_pointer_box::get_m_usPort() {
+  return cast<uint16_box>(get_ptr()->m_usPort);
+}
+
+void LobbyGameCreated_t_const_pointer_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyGameCreated_t_const_pointer_box::get_m_ulSteamIDLobby);
+  register_method(
+      "get_m_ulSteamIDGameServer",
+      &LobbyGameCreated_t_const_pointer_box::get_m_ulSteamIDGameServer);
+  register_method("get_m_unIP",
+                  &LobbyGameCreated_t_const_pointer_box::get_m_unIP);
+  register_method("get_m_usPort",
+                  &LobbyGameCreated_t_const_pointer_box::get_m_usPort);
+}
+
+auto LobbyMatchList_t_const_pointer_box::get_m_nLobbiesMatching() {
+  return cast<uint32_box>(get_ptr()->m_nLobbiesMatching);
+}
+
+void LobbyMatchList_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nLobbiesMatching",
+                  &LobbyMatchList_t_const_pointer_box::get_m_nLobbiesMatching);
+}
+
+auto LobbyKicked_t_const_pointer_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+auto LobbyKicked_t_const_pointer_box::get_m_ulSteamIDAdmin() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDAdmin);
+}
+
+auto LobbyKicked_t_const_pointer_box::get_m_bKickedDueToDisconnect() {
+  return cast<uint8_box>(get_ptr()->m_bKickedDueToDisconnect);
+}
+
+void LobbyKicked_t_const_pointer_box::_register_methods() {
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyKicked_t_const_pointer_box::get_m_ulSteamIDLobby);
+  register_method("get_m_ulSteamIDAdmin",
+                  &LobbyKicked_t_const_pointer_box::get_m_ulSteamIDAdmin);
+  register_method(
+      "get_m_bKickedDueToDisconnect",
+      &LobbyKicked_t_const_pointer_box::get_m_bKickedDueToDisconnect);
+}
+
+auto LobbyCreated_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto LobbyCreated_t_const_pointer_box::get_m_ulSteamIDLobby() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDLobby);
+}
+
+void LobbyCreated_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &LobbyCreated_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_ulSteamIDLobby",
+                  &LobbyCreated_t_const_pointer_box::get_m_ulSteamIDLobby);
+}
+
+auto PSNGameBootInviteResult_t_const_pointer_box::
+    get_m_bGameBootInviteExists() {
+  return cast<bool_box>(get_ptr()->m_bGameBootInviteExists);
+}
+
+auto PSNGameBootInviteResult_t_const_pointer_box::get_m_steamIDLobby() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDLobby);
+}
+
+void PSNGameBootInviteResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_bGameBootInviteExists",
+                  &PSNGameBootInviteResult_t_const_pointer_box::
+                      get_m_bGameBootInviteExists);
+  register_method(
+      "get_m_steamIDLobby",
+      &PSNGameBootInviteResult_t_const_pointer_box::get_m_steamIDLobby);
+}
+
+auto FavoritesListAccountsUpdated_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void FavoritesListAccountsUpdated_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &FavoritesListAccountsUpdated_t_const_pointer_box::get_m_eResult);
+}
+
+auto SearchForGameProgressCallback_t_const_pointer_box::get_m_ullSearchID() {
+  return cast<uint64_box>(get_ptr()->m_ullSearchID);
+}
+
+auto SearchForGameProgressCallback_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SearchForGameProgressCallback_t_const_pointer_box::get_m_lobbyID() {
+  return cast<CSteamID_box>(get_ptr()->m_lobbyID);
+}
+
+auto SearchForGameProgressCallback_t_const_pointer_box::
+    get_m_steamIDEndedSearch() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDEndedSearch);
+}
+
+auto SearchForGameProgressCallback_t_const_pointer_box::
+    get_m_nSecondsRemainingEstimate() {
+  return cast<int32_box>(get_ptr()->m_nSecondsRemainingEstimate);
+}
+
+auto SearchForGameProgressCallback_t_const_pointer_box::
+    get_m_cPlayersSearching() {
+  return cast<int32_box>(get_ptr()->m_cPlayersSearching);
+}
+
+void SearchForGameProgressCallback_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_ullSearchID",
+      &SearchForGameProgressCallback_t_const_pointer_box::get_m_ullSearchID);
+  register_method(
+      "get_m_eResult",
+      &SearchForGameProgressCallback_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_lobbyID",
+      &SearchForGameProgressCallback_t_const_pointer_box::get_m_lobbyID);
+  register_method("get_m_steamIDEndedSearch",
+                  &SearchForGameProgressCallback_t_const_pointer_box::
+                      get_m_steamIDEndedSearch);
+  register_method("get_m_nSecondsRemainingEstimate",
+                  &SearchForGameProgressCallback_t_const_pointer_box::
+                      get_m_nSecondsRemainingEstimate);
+  register_method("get_m_cPlayersSearching",
+                  &SearchForGameProgressCallback_t_const_pointer_box::
+                      get_m_cPlayersSearching);
+}
+
+auto SearchForGameResultCallback_t_const_pointer_box::get_m_ullSearchID() {
+  return cast<uint64_box>(get_ptr()->m_ullSearchID);
+}
+
+auto SearchForGameResultCallback_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SearchForGameResultCallback_t_const_pointer_box::
+    get_m_nCountPlayersInGame() {
+  return cast<int32_box>(get_ptr()->m_nCountPlayersInGame);
+}
+
+auto SearchForGameResultCallback_t_const_pointer_box::
+    get_m_nCountAcceptedGame() {
+  return cast<int32_box>(get_ptr()->m_nCountAcceptedGame);
+}
+
+auto SearchForGameResultCallback_t_const_pointer_box::get_m_steamIDHost() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDHost);
+}
+
+auto SearchForGameResultCallback_t_const_pointer_box::get_m_bFinalCallback() {
+  return cast<bool_box>(get_ptr()->m_bFinalCallback);
+}
+
+void SearchForGameResultCallback_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_ullSearchID",
+      &SearchForGameResultCallback_t_const_pointer_box::get_m_ullSearchID);
+  register_method(
+      "get_m_eResult",
+      &SearchForGameResultCallback_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_nCountPlayersInGame",
+                  &SearchForGameResultCallback_t_const_pointer_box::
+                      get_m_nCountPlayersInGame);
+  register_method("get_m_nCountAcceptedGame",
+                  &SearchForGameResultCallback_t_const_pointer_box::
+                      get_m_nCountAcceptedGame);
+  register_method(
+      "get_m_steamIDHost",
+      &SearchForGameResultCallback_t_const_pointer_box::get_m_steamIDHost);
+  register_method(
+      "get_m_bFinalCallback",
+      &SearchForGameResultCallback_t_const_pointer_box::get_m_bFinalCallback);
+}
+
+auto RequestPlayersForGameProgressCallback_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RequestPlayersForGameProgressCallback_t_const_pointer_box::
+    get_m_ullSearchID() {
+  return cast<uint64_box>(get_ptr()->m_ullSearchID);
+}
+
+void RequestPlayersForGameProgressCallback_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_eResult",
+                  &RequestPlayersForGameProgressCallback_t_const_pointer_box::
+                      get_m_eResult);
+  register_method("get_m_ullSearchID",
+                  &RequestPlayersForGameProgressCallback_t_const_pointer_box::
+                      get_m_ullSearchID);
+}
+
+auto RequestPlayersForGameResultCallback_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RequestPlayersForGameResultCallback_t_const_pointer_box::
+    get_m_ullSearchID() {
+  return cast<uint64_box>(get_ptr()->m_ullSearchID);
+}
+
+auto RequestPlayersForGameResultCallback_t_const_pointer_box::
+    get_m_SteamIDPlayerFound() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDPlayerFound);
+}
+
+auto RequestPlayersForGameResultCallback_t_const_pointer_box::
+    get_m_SteamIDLobby() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDLobby);
+}
+
+auto RequestPlayersForGameResultCallback_t_const_pointer_box::
+    get_m_nPlayerIndex() {
+  return cast<int32_box>(get_ptr()->m_nPlayerIndex);
+}
+
+auto RequestPlayersForGameResultCallback_t_const_pointer_box::
+    get_m_nTotalPlayersFound() {
+  return cast<int32_box>(get_ptr()->m_nTotalPlayersFound);
+}
+
+auto RequestPlayersForGameResultCallback_t_const_pointer_box::
+    get_m_nTotalPlayersAcceptedGame() {
+  return cast<int32_box>(get_ptr()->m_nTotalPlayersAcceptedGame);
+}
+
+auto RequestPlayersForGameResultCallback_t_const_pointer_box::
+    get_m_nSuggestedTeamIndex() {
+  return cast<int32_box>(get_ptr()->m_nSuggestedTeamIndex);
+}
+
+auto RequestPlayersForGameResultCallback_t_const_pointer_box::
+    get_m_ullUniqueGameID() {
+  return cast<uint64_box>(get_ptr()->m_ullUniqueGameID);
+}
+
+void RequestPlayersForGameResultCallback_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RequestPlayersForGameResultCallback_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_ullSearchID",
+                  &RequestPlayersForGameResultCallback_t_const_pointer_box::
+                      get_m_ullSearchID);
+  register_method("get_m_SteamIDPlayerFound",
+                  &RequestPlayersForGameResultCallback_t_const_pointer_box::
+                      get_m_SteamIDPlayerFound);
+  register_method("get_m_SteamIDLobby",
+                  &RequestPlayersForGameResultCallback_t_const_pointer_box::
+                      get_m_SteamIDLobby);
+  register_method("get_m_nPlayerIndex",
+                  &RequestPlayersForGameResultCallback_t_const_pointer_box::
+                      get_m_nPlayerIndex);
+  register_method("get_m_nTotalPlayersFound",
+                  &RequestPlayersForGameResultCallback_t_const_pointer_box::
+                      get_m_nTotalPlayersFound);
+  register_method("get_m_nTotalPlayersAcceptedGame",
+                  &RequestPlayersForGameResultCallback_t_const_pointer_box::
+                      get_m_nTotalPlayersAcceptedGame);
+  register_method("get_m_nSuggestedTeamIndex",
+                  &RequestPlayersForGameResultCallback_t_const_pointer_box::
+                      get_m_nSuggestedTeamIndex);
+  register_method("get_m_ullUniqueGameID",
+                  &RequestPlayersForGameResultCallback_t_const_pointer_box::
+                      get_m_ullUniqueGameID);
+}
+
+auto RequestPlayersForGameFinalResultCallback_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RequestPlayersForGameFinalResultCallback_t_const_pointer_box::
+    get_m_ullSearchID() {
+  return cast<uint64_box>(get_ptr()->m_ullSearchID);
+}
+
+auto RequestPlayersForGameFinalResultCallback_t_const_pointer_box::
+    get_m_ullUniqueGameID() {
+  return cast<uint64_box>(get_ptr()->m_ullUniqueGameID);
+}
+
+void RequestPlayersForGameFinalResultCallback_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RequestPlayersForGameFinalResultCallback_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_ullSearchID",
+      &RequestPlayersForGameFinalResultCallback_t_const_pointer_box::
+          get_m_ullSearchID);
+  register_method(
+      "get_m_ullUniqueGameID",
+      &RequestPlayersForGameFinalResultCallback_t_const_pointer_box::
+          get_m_ullUniqueGameID);
+}
+
+auto SubmitPlayerResultResultCallback_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SubmitPlayerResultResultCallback_t_const_pointer_box::
+    get_ullUniqueGameID() {
+  return cast<uint64_box>(get_ptr()->ullUniqueGameID);
+}
+
+auto SubmitPlayerResultResultCallback_t_const_pointer_box::get_steamIDPlayer() {
+  return cast<CSteamID_box>(get_ptr()->steamIDPlayer);
+}
+
+void SubmitPlayerResultResultCallback_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &SubmitPlayerResultResultCallback_t_const_pointer_box::get_m_eResult);
+  register_method("get_ullUniqueGameID",
+                  &SubmitPlayerResultResultCallback_t_const_pointer_box::
+                      get_ullUniqueGameID);
+  register_method(
+      "get_steamIDPlayer",
+      &SubmitPlayerResultResultCallback_t_const_pointer_box::get_steamIDPlayer);
+}
+
+auto EndGameResultCallback_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto EndGameResultCallback_t_const_pointer_box::get_ullUniqueGameID() {
+  return cast<uint64_box>(get_ptr()->ullUniqueGameID);
+}
+
+void EndGameResultCallback_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &EndGameResultCallback_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_ullUniqueGameID",
+      &EndGameResultCallback_t_const_pointer_box::get_ullUniqueGameID);
+}
+
+auto JoinPartyCallback_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto JoinPartyCallback_t_const_pointer_box::get_m_ulBeaconID() {
+  return cast<PartyBeaconID_t_box>(get_ptr()->m_ulBeaconID);
+}
+
+auto JoinPartyCallback_t_const_pointer_box::get_m_SteamIDBeaconOwner() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDBeaconOwner);
+}
+
+auto JoinPartyCallback_t_const_pointer_box::get_m_rgchConnectString() {
+  return cast<char[256]>(get_ptr()->m_rgchConnectString);
+}
+
+void JoinPartyCallback_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &JoinPartyCallback_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_ulBeaconID",
+                  &JoinPartyCallback_t_const_pointer_box::get_m_ulBeaconID);
+  register_method(
+      "get_m_SteamIDBeaconOwner",
+      &JoinPartyCallback_t_const_pointer_box::get_m_SteamIDBeaconOwner);
+  register_method(
+      "get_m_rgchConnectString",
+      &JoinPartyCallback_t_const_pointer_box::get_m_rgchConnectString);
+}
+
+auto CreateBeaconCallback_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto CreateBeaconCallback_t_const_pointer_box::get_m_ulBeaconID() {
+  return cast<PartyBeaconID_t_box>(get_ptr()->m_ulBeaconID);
+}
+
+void CreateBeaconCallback_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &CreateBeaconCallback_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_ulBeaconID",
+                  &CreateBeaconCallback_t_const_pointer_box::get_m_ulBeaconID);
+}
+
+auto ReservationNotificationCallback_t_const_pointer_box::get_m_ulBeaconID() {
+  return cast<PartyBeaconID_t_box>(get_ptr()->m_ulBeaconID);
+}
+
+auto ReservationNotificationCallback_t_const_pointer_box::
+    get_m_steamIDJoiner() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDJoiner);
+}
+
+void ReservationNotificationCallback_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_ulBeaconID",
+      &ReservationNotificationCallback_t_const_pointer_box::get_m_ulBeaconID);
+  register_method("get_m_steamIDJoiner",
+                  &ReservationNotificationCallback_t_const_pointer_box::
+                      get_m_steamIDJoiner);
+}
+
+auto ChangeNumOpenSlotsCallback_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void ChangeNumOpenSlotsCallback_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &ChangeNumOpenSlotsCallback_t_const_pointer_box::get_m_eResult);
+}
+
+void AvailableBeaconLocationsUpdated_t_const_pointer_box::_register_methods() {}
+
+void ActiveBeaconsUpdated_t_const_pointer_box::_register_methods() {}
+
+auto RemoteStorageFileShareResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageFileShareResult_t_const_pointer_box::get_m_hFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hFile);
+}
+
+auto RemoteStorageFileShareResult_t_const_pointer_box::get_m_rgchFilename() {
+  return cast<char[260]>(get_ptr()->m_rgchFilename);
+}
+
+void RemoteStorageFileShareResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageFileShareResult_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_hFile",
+      &RemoteStorageFileShareResult_t_const_pointer_box::get_m_hFile);
+  register_method(
+      "get_m_rgchFilename",
+      &RemoteStorageFileShareResult_t_const_pointer_box::get_m_rgchFilename);
+}
+
+auto RemoteStoragePublishFileResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStoragePublishFileResult_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStoragePublishFileResult_t_const_pointer_box::
+    get_m_bUserNeedsToAcceptWorkshopLegalAgreement() {
+  return cast<bool_box>(get_ptr()->m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+void RemoteStoragePublishFileResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStoragePublishFileResult_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStoragePublishFileResult_t_const_pointer_box::
+                      get_m_nPublishedFileId);
+  register_method("get_m_bUserNeedsToAcceptWorkshopLegalAgreement",
+                  &RemoteStoragePublishFileResult_t_const_pointer_box::
+                      get_m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+auto RemoteStorageDeletePublishedFileResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageDeletePublishedFileResult_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void RemoteStorageDeletePublishedFileResult_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_eResult",
+                  &RemoteStorageDeletePublishedFileResult_t_const_pointer_box::
+                      get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStorageDeletePublishedFileResult_t_const_pointer_box::
+                      get_m_nPublishedFileId);
+}
+
+auto RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box::
+    get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+auto RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box::
+    get_m_rgPublishedFileId() {
+  return cast<PublishedFileId_t[50]>(get_ptr()->m_rgPublishedFileId);
+}
+
+void RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_nResultsReturned",
+      &RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box::
+          get_m_nResultsReturned);
+  register_method(
+      "get_m_nTotalResultCount",
+      &RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box::
+          get_m_nTotalResultCount);
+  register_method(
+      "get_m_rgPublishedFileId",
+      &RemoteStorageEnumerateUserPublishedFilesResult_t_const_pointer_box::
+          get_m_rgPublishedFileId);
+}
+
+auto RemoteStorageSubscribePublishedFileResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageSubscribePublishedFileResult_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void RemoteStorageSubscribePublishedFileResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageSubscribePublishedFileResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStorageSubscribePublishedFileResult_t_const_pointer_box::
+          get_m_nPublishedFileId);
+}
+
+auto RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+    get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+auto RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+    get_m_rgPublishedFileId() {
+  return cast<PublishedFileId_t[50]>(get_ptr()->m_rgPublishedFileId);
+}
+
+auto RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+    get_m_rgRTimeSubscribed() {
+  return cast<uint32[50]>(get_ptr()->m_rgRTimeSubscribed);
+}
+
+void RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_nResultsReturned",
+      &RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+          get_m_nResultsReturned);
+  register_method(
+      "get_m_nTotalResultCount",
+      &RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+          get_m_nTotalResultCount);
+  register_method(
+      "get_m_rgPublishedFileId",
+      &RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+          get_m_rgPublishedFileId);
+  register_method(
+      "get_m_rgRTimeSubscribed",
+      &RemoteStorageEnumerateUserSubscribedFilesResult_t_const_pointer_box::
+          get_m_rgRTimeSubscribed);
+}
+
+auto RemoteStorageUnsubscribePublishedFileResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageUnsubscribePublishedFileResult_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void RemoteStorageUnsubscribePublishedFileResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageUnsubscribePublishedFileResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStorageUnsubscribePublishedFileResult_t_const_pointer_box::
+          get_m_nPublishedFileId);
+}
+
+auto RemoteStorageUpdatePublishedFileResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageUpdatePublishedFileResult_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStorageUpdatePublishedFileResult_t_const_pointer_box::
+    get_m_bUserNeedsToAcceptWorkshopLegalAgreement() {
+  return cast<bool_box>(get_ptr()->m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+void RemoteStorageUpdatePublishedFileResult_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_eResult",
+                  &RemoteStorageUpdatePublishedFileResult_t_const_pointer_box::
+                      get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStorageUpdatePublishedFileResult_t_const_pointer_box::
+                      get_m_nPublishedFileId);
+  register_method("get_m_bUserNeedsToAcceptWorkshopLegalAgreement",
+                  &RemoteStorageUpdatePublishedFileResult_t_const_pointer_box::
+                      get_m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+auto RemoteStorageDownloadUGCResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageDownloadUGCResult_t_const_pointer_box::get_m_hFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hFile);
+}
+
+auto RemoteStorageDownloadUGCResult_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+auto RemoteStorageDownloadUGCResult_t_const_pointer_box::get_m_nSizeInBytes() {
+  return cast<int32_box>(get_ptr()->m_nSizeInBytes);
+}
+
+auto RemoteStorageDownloadUGCResult_t_const_pointer_box::get_m_pchFileName() {
+  return cast<char[260]>(get_ptr()->m_pchFileName);
+}
+
+auto RemoteStorageDownloadUGCResult_t_const_pointer_box::
+    get_m_ulSteamIDOwner() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDOwner);
+}
+
+void RemoteStorageDownloadUGCResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageDownloadUGCResult_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_hFile",
+      &RemoteStorageDownloadUGCResult_t_const_pointer_box::get_m_hFile);
+  register_method(
+      "get_m_nAppID",
+      &RemoteStorageDownloadUGCResult_t_const_pointer_box::get_m_nAppID);
+  register_method(
+      "get_m_nSizeInBytes",
+      &RemoteStorageDownloadUGCResult_t_const_pointer_box::get_m_nSizeInBytes);
+  register_method(
+      "get_m_pchFileName",
+      &RemoteStorageDownloadUGCResult_t_const_pointer_box::get_m_pchFileName);
+  register_method("get_m_ulSteamIDOwner",
+                  &RemoteStorageDownloadUGCResult_t_const_pointer_box::
+                      get_m_ulSteamIDOwner);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_nCreatorAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nCreatorAppID);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_nConsumerAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nConsumerAppID);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_rgchTitle() {
+  return cast<char[129]>(get_ptr()->m_rgchTitle);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_rgchDescription() {
+  return cast<char[8000]>(get_ptr()->m_rgchDescription);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_hFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hFile);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_hPreviewFile() {
+  return cast<UGCHandle_t_box>(get_ptr()->m_hPreviewFile);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_ulSteamIDOwner() {
+  return cast<uint64_box>(get_ptr()->m_ulSteamIDOwner);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_rtimeCreated() {
+  return cast<uint32_box>(get_ptr()->m_rtimeCreated);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_rtimeUpdated() {
+  return cast<uint32_box>(get_ptr()->m_rtimeUpdated);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_eVisibility() {
+  return cast<ERemoteStoragePublishedFileVisibility_box>(
+      get_ptr()->m_eVisibility);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_bBanned() {
+  return cast<bool_box>(get_ptr()->m_bBanned);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_rgchTags() {
+  return cast<char[1025]>(get_ptr()->m_rgchTags);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_bTagsTruncated() {
+  return cast<bool_box>(get_ptr()->m_bTagsTruncated);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_pchFileName() {
+  return cast<char[260]>(get_ptr()->m_pchFileName);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_nFileSize() {
+  return cast<int32_box>(get_ptr()->m_nFileSize);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_nPreviewFileSize() {
+  return cast<int32_box>(get_ptr()->m_nPreviewFileSize);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_rgchURL() {
+  return cast<char[256]>(get_ptr()->m_rgchURL);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_eFileType() {
+  return cast<EWorkshopFileType_box>(get_ptr()->m_eFileType);
+}
+
+auto RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    get_m_bAcceptedForUse() {
+  return cast<bool_box>(get_ptr()->m_bAcceptedForUse);
+}
+
+void RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_nPublishedFileId);
+  register_method(
+      "get_m_nCreatorAppID",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_nCreatorAppID);
+  register_method(
+      "get_m_nConsumerAppID",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_nConsumerAppID);
+  register_method(
+      "get_m_rgchTitle",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_rgchTitle);
+  register_method(
+      "get_m_rgchDescription",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_rgchDescription);
+  register_method(
+      "get_m_hFile",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_hFile);
+  register_method(
+      "get_m_hPreviewFile",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_hPreviewFile);
+  register_method(
+      "get_m_ulSteamIDOwner",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_ulSteamIDOwner);
+  register_method(
+      "get_m_rtimeCreated",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_rtimeCreated);
+  register_method(
+      "get_m_rtimeUpdated",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_rtimeUpdated);
+  register_method(
+      "get_m_eVisibility",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_eVisibility);
+  register_method(
+      "get_m_bBanned",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_bBanned);
+  register_method(
+      "get_m_rgchTags",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_rgchTags);
+  register_method(
+      "get_m_bTagsTruncated",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_bTagsTruncated);
+  register_method(
+      "get_m_pchFileName",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_pchFileName);
+  register_method(
+      "get_m_nFileSize",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_nFileSize);
+  register_method(
+      "get_m_nPreviewFileSize",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_nPreviewFileSize);
+  register_method(
+      "get_m_rgchURL",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_rgchURL);
+  register_method(
+      "get_m_eFileType",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_eFileType);
+  register_method(
+      "get_m_bAcceptedForUse",
+      &RemoteStorageGetPublishedFileDetailsResult_t_const_pointer_box::
+          get_m_bAcceptedForUse);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+    get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+    get_m_rgPublishedFileId() {
+  return cast<PublishedFileId_t[50]>(get_ptr()->m_rgPublishedFileId);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+    get_m_rgScore() {
+  return cast<float[50]>(get_ptr()->m_rgScore);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+    get_m_nAppId() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppId);
+}
+
+auto RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+    get_m_unStartIndex() {
+  return cast<uint32_box>(get_ptr()->m_unStartIndex);
+}
+
+void RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_nResultsReturned",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+          get_m_nResultsReturned);
+  register_method(
+      "get_m_nTotalResultCount",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+          get_m_nTotalResultCount);
+  register_method(
+      "get_m_rgPublishedFileId",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+          get_m_rgPublishedFileId);
+  register_method(
+      "get_m_rgScore",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+          get_m_rgScore);
+  register_method(
+      "get_m_nAppId",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+          get_m_nAppId);
+  register_method(
+      "get_m_unStartIndex",
+      &RemoteStorageEnumerateWorkshopFilesResult_t_const_pointer_box::
+          get_m_unStartIndex);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+    get_m_unPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_unPublishedFileId);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+    get_m_nVotesFor() {
+  return cast<int32_box>(get_ptr()->m_nVotesFor);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+    get_m_nVotesAgainst() {
+  return cast<int32_box>(get_ptr()->m_nVotesAgainst);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+    get_m_nReports() {
+  return cast<int32_box>(get_ptr()->m_nReports);
+}
+
+auto RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+    get_m_fScore() {
+  return cast<float_box>(get_ptr()->m_fScore);
+}
+
+void RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_unPublishedFileId",
+      &RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+          get_m_unPublishedFileId);
+  register_method(
+      "get_m_nVotesFor",
+      &RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+          get_m_nVotesFor);
+  register_method(
+      "get_m_nVotesAgainst",
+      &RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+          get_m_nVotesAgainst);
+  register_method(
+      "get_m_nReports",
+      &RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+          get_m_nReports);
+  register_method(
+      "get_m_fScore",
+      &RemoteStorageGetPublishedItemVoteDetailsResult_t_const_pointer_box::
+          get_m_fScore);
+}
+
+auto RemoteStoragePublishedFileSubscribed_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStoragePublishedFileSubscribed_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void RemoteStoragePublishedFileSubscribed_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStoragePublishedFileSubscribed_t_const_pointer_box::
+                      get_m_nPublishedFileId);
+  register_method(
+      "get_m_nAppID",
+      &RemoteStoragePublishedFileSubscribed_t_const_pointer_box::get_m_nAppID);
+}
+
+auto RemoteStoragePublishedFileUnsubscribed_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStoragePublishedFileUnsubscribed_t_const_pointer_box::
+    get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void RemoteStoragePublishedFileUnsubscribed_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStoragePublishedFileUnsubscribed_t_const_pointer_box::
+                      get_m_nPublishedFileId);
+  register_method("get_m_nAppID",
+                  &RemoteStoragePublishedFileUnsubscribed_t_const_pointer_box::
+                      get_m_nAppID);
+}
+
+auto RemoteStoragePublishedFileDeleted_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStoragePublishedFileDeleted_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void RemoteStoragePublishedFileDeleted_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStoragePublishedFileDeleted_t_const_pointer_box::
+                      get_m_nPublishedFileId);
+  register_method(
+      "get_m_nAppID",
+      &RemoteStoragePublishedFileDeleted_t_const_pointer_box::get_m_nAppID);
+}
+
+auto RemoteStorageUpdateUserPublishedItemVoteResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageUpdateUserPublishedItemVoteResult_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void RemoteStorageUpdateUserPublishedItemVoteResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageUpdateUserPublishedItemVoteResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStorageUpdateUserPublishedItemVoteResult_t_const_pointer_box::
+          get_m_nPublishedFileId);
+}
+
+auto RemoteStorageUserVoteDetails_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageUserVoteDetails_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStorageUserVoteDetails_t_const_pointer_box::get_m_eVote() {
+  return cast<EWorkshopVote_box>(get_ptr()->m_eVote);
+}
+
+void RemoteStorageUserVoteDetails_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageUserVoteDetails_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStorageUserVoteDetails_t_const_pointer_box::
+                      get_m_nPublishedFileId);
+  register_method(
+      "get_m_eVote",
+      &RemoteStorageUserVoteDetails_t_const_pointer_box::get_m_eVote);
+}
+
+auto RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box::
+    get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+auto RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box::
+    get_m_rgPublishedFileId() {
+  return cast<PublishedFileId_t[50]>(get_ptr()->m_rgPublishedFileId);
+}
+
+void RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_nResultsReturned",
+      &RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box::
+          get_m_nResultsReturned);
+  register_method(
+      "get_m_nTotalResultCount",
+      &RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box::
+          get_m_nTotalResultCount);
+  register_method(
+      "get_m_rgPublishedFileId",
+      &RemoteStorageEnumerateUserSharedWorkshopFilesResult_t_const_pointer_box::
+          get_m_rgPublishedFileId);
+}
+
+auto RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box::
+    get_m_eAction() {
+  return cast<EWorkshopFileAction_box>(get_ptr()->m_eAction);
+}
+
+void RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box::
+          get_m_nPublishedFileId);
+  register_method(
+      "get_m_eAction",
+      &RemoteStorageSetUserPublishedFileActionResult_t_const_pointer_box::
+          get_m_eAction);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+    get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+    get_m_eAction() {
+  return cast<EWorkshopFileAction_box>(get_ptr()->m_eAction);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+    get_m_nResultsReturned() {
+  return cast<int32_box>(get_ptr()->m_nResultsReturned);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+    get_m_nTotalResultCount() {
+  return cast<int32_box>(get_ptr()->m_nTotalResultCount);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+    get_m_rgPublishedFileId() {
+  return cast<PublishedFileId_t[50]>(get_ptr()->m_rgPublishedFileId);
+}
+
+auto RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+    get_m_rgRTimeUpdated() {
+  return cast<uint32[50]>(get_ptr()->m_rgRTimeUpdated);
+}
+
+void RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+          get_m_eResult);
+  register_method(
+      "get_m_eAction",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+          get_m_eAction);
+  register_method(
+      "get_m_nResultsReturned",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+          get_m_nResultsReturned);
+  register_method(
+      "get_m_nTotalResultCount",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+          get_m_nTotalResultCount);
+  register_method(
+      "get_m_rgPublishedFileId",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+          get_m_rgPublishedFileId);
+  register_method(
+      "get_m_rgRTimeUpdated",
+      &RemoteStorageEnumeratePublishedFilesByUserActionResult_t_const_pointer_box::
+          get_m_rgRTimeUpdated);
+}
+
+auto RemoteStoragePublishFileProgress_t_const_pointer_box::
+    get_m_dPercentFile() {
+  return cast<double_box>(get_ptr()->m_dPercentFile);
+}
+
+auto RemoteStoragePublishFileProgress_t_const_pointer_box::get_m_bPreview() {
+  return cast<bool_box>(get_ptr()->m_bPreview);
+}
+
+void RemoteStoragePublishFileProgress_t_const_pointer_box::_register_methods() {
+  register_method("get_m_dPercentFile",
+                  &RemoteStoragePublishFileProgress_t_const_pointer_box::
+                      get_m_dPercentFile);
+  register_method(
+      "get_m_bPreview",
+      &RemoteStoragePublishFileProgress_t_const_pointer_box::get_m_bPreview);
+}
+
+auto RemoteStoragePublishedFileUpdated_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoteStoragePublishedFileUpdated_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+auto RemoteStoragePublishedFileUpdated_t_const_pointer_box::get_m_ulUnused() {
+  return cast<uint64_box>(get_ptr()->m_ulUnused);
+}
+
+void RemoteStoragePublishedFileUpdated_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_nPublishedFileId",
+                  &RemoteStoragePublishedFileUpdated_t_const_pointer_box::
+                      get_m_nPublishedFileId);
+  register_method(
+      "get_m_nAppID",
+      &RemoteStoragePublishedFileUpdated_t_const_pointer_box::get_m_nAppID);
+  register_method(
+      "get_m_ulUnused",
+      &RemoteStoragePublishedFileUpdated_t_const_pointer_box::get_m_ulUnused);
+}
+
+auto RemoteStorageFileWriteAsyncComplete_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void RemoteStorageFileWriteAsyncComplete_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageFileWriteAsyncComplete_t_const_pointer_box::get_m_eResult);
+}
+
+auto RemoteStorageFileReadAsyncComplete_t_const_pointer_box::
+    get_m_hFileReadAsync() {
+  return cast<SteamAPICall_t_box>(get_ptr()->m_hFileReadAsync);
+}
+
+auto RemoteStorageFileReadAsyncComplete_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoteStorageFileReadAsyncComplete_t_const_pointer_box::get_m_nOffset() {
+  return cast<uint32_box>(get_ptr()->m_nOffset);
+}
+
+auto RemoteStorageFileReadAsyncComplete_t_const_pointer_box::get_m_cubRead() {
+  return cast<uint32_box>(get_ptr()->m_cubRead);
+}
+
+void RemoteStorageFileReadAsyncComplete_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_hFileReadAsync",
+                  &RemoteStorageFileReadAsyncComplete_t_const_pointer_box::
+                      get_m_hFileReadAsync);
+  register_method(
+      "get_m_eResult",
+      &RemoteStorageFileReadAsyncComplete_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_nOffset",
+      &RemoteStorageFileReadAsyncComplete_t_const_pointer_box::get_m_nOffset);
+  register_method(
+      "get_m_cubRead",
+      &RemoteStorageFileReadAsyncComplete_t_const_pointer_box::get_m_cubRead);
+}
+
+void RemoteStorageLocalFileChange_t_const_pointer_box::_register_methods() {}
+
+auto UserStatsReceived_t_const_pointer_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto UserStatsReceived_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto UserStatsReceived_t_const_pointer_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void UserStatsReceived_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nGameID",
+                  &UserStatsReceived_t_const_pointer_box::get_m_nGameID);
+  register_method("get_m_eResult",
+                  &UserStatsReceived_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_steamIDUser",
+                  &UserStatsReceived_t_const_pointer_box::get_m_steamIDUser);
+}
+
+auto UserStatsStored_t_const_pointer_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto UserStatsStored_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void UserStatsStored_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nGameID",
+                  &UserStatsStored_t_const_pointer_box::get_m_nGameID);
+  register_method("get_m_eResult",
+                  &UserStatsStored_t_const_pointer_box::get_m_eResult);
+}
+
+auto UserAchievementStored_t_const_pointer_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto UserAchievementStored_t_const_pointer_box::get_m_bGroupAchievement() {
+  return cast<bool_box>(get_ptr()->m_bGroupAchievement);
+}
+
+auto UserAchievementStored_t_const_pointer_box::get_m_rgchAchievementName() {
+  return cast<char[128]>(get_ptr()->m_rgchAchievementName);
+}
+
+auto UserAchievementStored_t_const_pointer_box::get_m_nCurProgress() {
+  return cast<uint32_box>(get_ptr()->m_nCurProgress);
+}
+
+auto UserAchievementStored_t_const_pointer_box::get_m_nMaxProgress() {
+  return cast<uint32_box>(get_ptr()->m_nMaxProgress);
+}
+
+void UserAchievementStored_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nGameID",
+                  &UserAchievementStored_t_const_pointer_box::get_m_nGameID);
+  register_method(
+      "get_m_bGroupAchievement",
+      &UserAchievementStored_t_const_pointer_box::get_m_bGroupAchievement);
+  register_method(
+      "get_m_rgchAchievementName",
+      &UserAchievementStored_t_const_pointer_box::get_m_rgchAchievementName);
+  register_method(
+      "get_m_nCurProgress",
+      &UserAchievementStored_t_const_pointer_box::get_m_nCurProgress);
+  register_method(
+      "get_m_nMaxProgress",
+      &UserAchievementStored_t_const_pointer_box::get_m_nMaxProgress);
+}
+
+auto LeaderboardFindResult_t_const_pointer_box::get_m_hSteamLeaderboard() {
+  return cast<SteamLeaderboard_t_box>(get_ptr()->m_hSteamLeaderboard);
+}
+
+auto LeaderboardFindResult_t_const_pointer_box::get_m_bLeaderboardFound() {
+  return cast<uint8_box>(get_ptr()->m_bLeaderboardFound);
+}
+
+void LeaderboardFindResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_hSteamLeaderboard",
+      &LeaderboardFindResult_t_const_pointer_box::get_m_hSteamLeaderboard);
+  register_method(
+      "get_m_bLeaderboardFound",
+      &LeaderboardFindResult_t_const_pointer_box::get_m_bLeaderboardFound);
+}
+
+auto LeaderboardScoresDownloaded_t_const_pointer_box::
+    get_m_hSteamLeaderboard() {
+  return cast<SteamLeaderboard_t_box>(get_ptr()->m_hSteamLeaderboard);
+}
+
+auto LeaderboardScoresDownloaded_t_const_pointer_box::
+    get_m_hSteamLeaderboardEntries() {
+  return cast<SteamLeaderboardEntries_t_box>(
+      get_ptr()->m_hSteamLeaderboardEntries);
+}
+
+auto LeaderboardScoresDownloaded_t_const_pointer_box::get_m_cEntryCount() {
+  return cast<int_box>(get_ptr()->m_cEntryCount);
+}
+
+void LeaderboardScoresDownloaded_t_const_pointer_box::_register_methods() {
+  register_method("get_m_hSteamLeaderboard",
+                  &LeaderboardScoresDownloaded_t_const_pointer_box::
+                      get_m_hSteamLeaderboard);
+  register_method("get_m_hSteamLeaderboardEntries",
+                  &LeaderboardScoresDownloaded_t_const_pointer_box::
+                      get_m_hSteamLeaderboardEntries);
+  register_method(
+      "get_m_cEntryCount",
+      &LeaderboardScoresDownloaded_t_const_pointer_box::get_m_cEntryCount);
+}
+
+auto LeaderboardScoreUploaded_t_const_pointer_box::get_m_bSuccess() {
+  return cast<uint8_box>(get_ptr()->m_bSuccess);
+}
+
+auto LeaderboardScoreUploaded_t_const_pointer_box::get_m_hSteamLeaderboard() {
+  return cast<SteamLeaderboard_t_box>(get_ptr()->m_hSteamLeaderboard);
+}
+
+auto LeaderboardScoreUploaded_t_const_pointer_box::get_m_nScore() {
+  return cast<int32_box>(get_ptr()->m_nScore);
+}
+
+auto LeaderboardScoreUploaded_t_const_pointer_box::get_m_bScoreChanged() {
+  return cast<uint8_box>(get_ptr()->m_bScoreChanged);
+}
+
+auto LeaderboardScoreUploaded_t_const_pointer_box::get_m_nGlobalRankNew() {
+  return cast<int_box>(get_ptr()->m_nGlobalRankNew);
+}
+
+auto LeaderboardScoreUploaded_t_const_pointer_box::get_m_nGlobalRankPrevious() {
+  return cast<int_box>(get_ptr()->m_nGlobalRankPrevious);
+}
+
+void LeaderboardScoreUploaded_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_bSuccess",
+      &LeaderboardScoreUploaded_t_const_pointer_box::get_m_bSuccess);
+  register_method(
+      "get_m_hSteamLeaderboard",
+      &LeaderboardScoreUploaded_t_const_pointer_box::get_m_hSteamLeaderboard);
+  register_method("get_m_nScore",
+                  &LeaderboardScoreUploaded_t_const_pointer_box::get_m_nScore);
+  register_method(
+      "get_m_bScoreChanged",
+      &LeaderboardScoreUploaded_t_const_pointer_box::get_m_bScoreChanged);
+  register_method(
+      "get_m_nGlobalRankNew",
+      &LeaderboardScoreUploaded_t_const_pointer_box::get_m_nGlobalRankNew);
+  register_method(
+      "get_m_nGlobalRankPrevious",
+      &LeaderboardScoreUploaded_t_const_pointer_box::get_m_nGlobalRankPrevious);
+}
+
+auto NumberOfCurrentPlayers_t_const_pointer_box::get_m_bSuccess() {
+  return cast<uint8_box>(get_ptr()->m_bSuccess);
+}
+
+auto NumberOfCurrentPlayers_t_const_pointer_box::get_m_cPlayers() {
+  return cast<int32_box>(get_ptr()->m_cPlayers);
+}
+
+void NumberOfCurrentPlayers_t_const_pointer_box::_register_methods() {
+  register_method("get_m_bSuccess",
+                  &NumberOfCurrentPlayers_t_const_pointer_box::get_m_bSuccess);
+  register_method("get_m_cPlayers",
+                  &NumberOfCurrentPlayers_t_const_pointer_box::get_m_cPlayers);
+}
+
+auto UserStatsUnloaded_t_const_pointer_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void UserStatsUnloaded_t_const_pointer_box::_register_methods() {
+  register_method("get_m_steamIDUser",
+                  &UserStatsUnloaded_t_const_pointer_box::get_m_steamIDUser);
+}
+
+auto UserAchievementIconFetched_t_const_pointer_box::get_m_nGameID() {
+  return cast<CGameID_box>(get_ptr()->m_nGameID);
+}
+
+auto UserAchievementIconFetched_t_const_pointer_box::
+    get_m_rgchAchievementName() {
+  return cast<char[128]>(get_ptr()->m_rgchAchievementName);
+}
+
+auto UserAchievementIconFetched_t_const_pointer_box::get_m_bAchieved() {
+  return cast<bool_box>(get_ptr()->m_bAchieved);
+}
+
+auto UserAchievementIconFetched_t_const_pointer_box::get_m_nIconHandle() {
+  return cast<int_box>(get_ptr()->m_nIconHandle);
+}
+
+void UserAchievementIconFetched_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_nGameID",
+      &UserAchievementIconFetched_t_const_pointer_box::get_m_nGameID);
+  register_method("get_m_rgchAchievementName",
+                  &UserAchievementIconFetched_t_const_pointer_box::
+                      get_m_rgchAchievementName);
+  register_method(
+      "get_m_bAchieved",
+      &UserAchievementIconFetched_t_const_pointer_box::get_m_bAchieved);
+  register_method(
+      "get_m_nIconHandle",
+      &UserAchievementIconFetched_t_const_pointer_box::get_m_nIconHandle);
+}
+
+auto GlobalAchievementPercentagesReady_t_const_pointer_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto GlobalAchievementPercentagesReady_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void GlobalAchievementPercentagesReady_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_nGameID",
+      &GlobalAchievementPercentagesReady_t_const_pointer_box::get_m_nGameID);
+  register_method(
+      "get_m_eResult",
+      &GlobalAchievementPercentagesReady_t_const_pointer_box::get_m_eResult);
+}
+
+auto LeaderboardUGCSet_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto LeaderboardUGCSet_t_const_pointer_box::get_m_hSteamLeaderboard() {
+  return cast<SteamLeaderboard_t_box>(get_ptr()->m_hSteamLeaderboard);
+}
+
+void LeaderboardUGCSet_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &LeaderboardUGCSet_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_hSteamLeaderboard",
+      &LeaderboardUGCSet_t_const_pointer_box::get_m_hSteamLeaderboard);
+}
+
+auto PS3TrophiesInstalled_t_const_pointer_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto PS3TrophiesInstalled_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto PS3TrophiesInstalled_t_const_pointer_box::get_m_ulRequiredDiskSpace() {
+  return cast<uint64_box>(get_ptr()->m_ulRequiredDiskSpace);
+}
+
+void PS3TrophiesInstalled_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nGameID",
+                  &PS3TrophiesInstalled_t_const_pointer_box::get_m_nGameID);
+  register_method("get_m_eResult",
+                  &PS3TrophiesInstalled_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_ulRequiredDiskSpace",
+      &PS3TrophiesInstalled_t_const_pointer_box::get_m_ulRequiredDiskSpace);
+}
+
+auto GlobalStatsReceived_t_const_pointer_box::get_m_nGameID() {
+  return cast<uint64_box>(get_ptr()->m_nGameID);
+}
+
+auto GlobalStatsReceived_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void GlobalStatsReceived_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nGameID",
+                  &GlobalStatsReceived_t_const_pointer_box::get_m_nGameID);
+  register_method("get_m_eResult",
+                  &GlobalStatsReceived_t_const_pointer_box::get_m_eResult);
+}
+
+auto DlcInstalled_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void DlcInstalled_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nAppID",
+                  &DlcInstalled_t_const_pointer_box::get_m_nAppID);
+}
+
+auto RegisterActivationCodeResponse_t_const_pointer_box::get_m_eResult() {
+  return cast<ERegisterActivationCodeResult_box>(get_ptr()->m_eResult);
+}
+
+auto RegisterActivationCodeResponse_t_const_pointer_box::
+    get_m_unPackageRegistered() {
+  return cast<uint32_box>(get_ptr()->m_unPackageRegistered);
+}
+
+void RegisterActivationCodeResponse_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RegisterActivationCodeResponse_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_unPackageRegistered",
+                  &RegisterActivationCodeResponse_t_const_pointer_box::
+                      get_m_unPackageRegistered);
+}
+
+void NewUrlLaunchParameters_t_const_pointer_box::_register_methods() {}
+
+auto AppProofOfPurchaseKeyResponse_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto AppProofOfPurchaseKeyResponse_t_const_pointer_box::get_m_nAppID() {
+  return cast<uint32_box>(get_ptr()->m_nAppID);
+}
+
+auto AppProofOfPurchaseKeyResponse_t_const_pointer_box::get_m_cchKeyLength() {
+  return cast<uint32_box>(get_ptr()->m_cchKeyLength);
+}
+
+auto AppProofOfPurchaseKeyResponse_t_const_pointer_box::get_m_rgchKey() {
+  return cast<char[240]>(get_ptr()->m_rgchKey);
+}
+
+void AppProofOfPurchaseKeyResponse_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &AppProofOfPurchaseKeyResponse_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_nAppID",
+      &AppProofOfPurchaseKeyResponse_t_const_pointer_box::get_m_nAppID);
+  register_method(
+      "get_m_cchKeyLength",
+      &AppProofOfPurchaseKeyResponse_t_const_pointer_box::get_m_cchKeyLength);
+  register_method(
+      "get_m_rgchKey",
+      &AppProofOfPurchaseKeyResponse_t_const_pointer_box::get_m_rgchKey);
+}
+
+auto FileDetailsResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto FileDetailsResult_t_const_pointer_box::get_m_ulFileSize() {
+  return cast<uint64_box>(get_ptr()->m_ulFileSize);
+}
+
+auto FileDetailsResult_t_const_pointer_box::get_m_FileSHA() {
+  return cast<uint8[20]>(get_ptr()->m_FileSHA);
+}
+
+auto FileDetailsResult_t_const_pointer_box::get_m_unFlags() {
+  return cast<uint32_box>(get_ptr()->m_unFlags);
+}
+
+void FileDetailsResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &FileDetailsResult_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_ulFileSize",
+                  &FileDetailsResult_t_const_pointer_box::get_m_ulFileSize);
+  register_method("get_m_FileSHA",
+                  &FileDetailsResult_t_const_pointer_box::get_m_FileSHA);
+  register_method("get_m_unFlags",
+                  &FileDetailsResult_t_const_pointer_box::get_m_unFlags);
+}
+
+auto TimedTrialStatus_t_const_pointer_box::get_m_unAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unAppID);
+}
+
+auto TimedTrialStatus_t_const_pointer_box::get_m_bIsOffline() {
+  return cast<bool_box>(get_ptr()->m_bIsOffline);
+}
+
+auto TimedTrialStatus_t_const_pointer_box::get_m_unSecondsAllowed() {
+  return cast<uint32_box>(get_ptr()->m_unSecondsAllowed);
+}
+
+auto TimedTrialStatus_t_const_pointer_box::get_m_unSecondsPlayed() {
+  return cast<uint32_box>(get_ptr()->m_unSecondsPlayed);
+}
+
+void TimedTrialStatus_t_const_pointer_box::_register_methods() {
+  register_method("get_m_unAppID",
+                  &TimedTrialStatus_t_const_pointer_box::get_m_unAppID);
+  register_method("get_m_bIsOffline",
+                  &TimedTrialStatus_t_const_pointer_box::get_m_bIsOffline);
+  register_method(
+      "get_m_unSecondsAllowed",
+      &TimedTrialStatus_t_const_pointer_box::get_m_unSecondsAllowed);
+  register_method("get_m_unSecondsPlayed",
+                  &TimedTrialStatus_t_const_pointer_box::get_m_unSecondsPlayed);
+}
+
+auto P2PSessionRequest_t_const_pointer_box::get_m_steamIDRemote() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDRemote);
+}
+
+void P2PSessionRequest_t_const_pointer_box::_register_methods() {
+  register_method("get_m_steamIDRemote",
+                  &P2PSessionRequest_t_const_pointer_box::get_m_steamIDRemote);
+}
+
+auto P2PSessionConnectFail_t_const_pointer_box::get_m_steamIDRemote() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDRemote);
+}
+
+auto P2PSessionConnectFail_t_const_pointer_box::get_m_eP2PSessionError() {
+  return cast<uint8_box>(get_ptr()->m_eP2PSessionError);
+}
+
+void P2PSessionConnectFail_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_steamIDRemote",
+      &P2PSessionConnectFail_t_const_pointer_box::get_m_steamIDRemote);
+  register_method(
+      "get_m_eP2PSessionError",
+      &P2PSessionConnectFail_t_const_pointer_box::get_m_eP2PSessionError);
+}
+
+auto SocketStatusCallback_t_const_pointer_box::get_m_hSocket() {
+  return cast<SNetSocket_t_box>(get_ptr()->m_hSocket);
+}
+
+auto SocketStatusCallback_t_const_pointer_box::get_m_hListenSocket() {
+  return cast<SNetListenSocket_t_box>(get_ptr()->m_hListenSocket);
+}
+
+auto SocketStatusCallback_t_const_pointer_box::get_m_steamIDRemote() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDRemote);
+}
+
+auto SocketStatusCallback_t_const_pointer_box::get_m_eSNetSocketState() {
+  return cast<int_box>(get_ptr()->m_eSNetSocketState);
+}
+
+void SocketStatusCallback_t_const_pointer_box::_register_methods() {
+  register_method("get_m_hSocket",
+                  &SocketStatusCallback_t_const_pointer_box::get_m_hSocket);
+  register_method(
+      "get_m_hListenSocket",
+      &SocketStatusCallback_t_const_pointer_box::get_m_hListenSocket);
+  register_method(
+      "get_m_steamIDRemote",
+      &SocketStatusCallback_t_const_pointer_box::get_m_steamIDRemote);
+  register_method(
+      "get_m_eSNetSocketState",
+      &SocketStatusCallback_t_const_pointer_box::get_m_eSNetSocketState);
+}
+
+auto ScreenshotReady_t_const_pointer_box::get_m_hLocal() {
+  return cast<ScreenshotHandle_box>(get_ptr()->m_hLocal);
+}
+
+auto ScreenshotReady_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void ScreenshotReady_t_const_pointer_box::_register_methods() {
+  register_method("get_m_hLocal",
+                  &ScreenshotReady_t_const_pointer_box::get_m_hLocal);
+  register_method("get_m_eResult",
+                  &ScreenshotReady_t_const_pointer_box::get_m_eResult);
+}
+
+void ScreenshotRequested_t_const_pointer_box::_register_methods() {}
+
+void PlaybackStatusHasChanged_t_const_pointer_box::_register_methods() {}
+
+auto VolumeHasChanged_t_const_pointer_box::get_m_flNewVolume() {
+  return cast<float_box>(get_ptr()->m_flNewVolume);
+}
+
+void VolumeHasChanged_t_const_pointer_box::_register_methods() {
+  register_method("get_m_flNewVolume",
+                  &VolumeHasChanged_t_const_pointer_box::get_m_flNewVolume);
+}
+
+void MusicPlayerRemoteWillActivate_t_const_pointer_box::_register_methods() {}
+
+void MusicPlayerRemoteWillDeactivate_t_const_pointer_box::_register_methods() {}
+
+void MusicPlayerRemoteToFront_t_const_pointer_box::_register_methods() {}
+
+void MusicPlayerWillQuit_t_const_pointer_box::_register_methods() {}
+
+void MusicPlayerWantsPlay_t_const_pointer_box::_register_methods() {}
+
+void MusicPlayerWantsPause_t_const_pointer_box::_register_methods() {}
+
+void MusicPlayerWantsPlayPrevious_t_const_pointer_box::_register_methods() {}
+
+void MusicPlayerWantsPlayNext_t_const_pointer_box::_register_methods() {}
+
+auto MusicPlayerWantsShuffled_t_const_pointer_box::get_m_bShuffled() {
+  return cast<bool_box>(get_ptr()->m_bShuffled);
+}
+
+void MusicPlayerWantsShuffled_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_bShuffled",
+      &MusicPlayerWantsShuffled_t_const_pointer_box::get_m_bShuffled);
+}
+
+auto MusicPlayerWantsLooped_t_const_pointer_box::get_m_bLooped() {
+  return cast<bool_box>(get_ptr()->m_bLooped);
+}
+
+void MusicPlayerWantsLooped_t_const_pointer_box::_register_methods() {
+  register_method("get_m_bLooped",
+                  &MusicPlayerWantsLooped_t_const_pointer_box::get_m_bLooped);
+}
+
+auto MusicPlayerWantsVolume_t_const_pointer_box::get_m_flNewVolume() {
+  return cast<float_box>(get_ptr()->m_flNewVolume);
+}
+
+void MusicPlayerWantsVolume_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_flNewVolume",
+      &MusicPlayerWantsVolume_t_const_pointer_box::get_m_flNewVolume);
+}
+
+auto MusicPlayerSelectsQueueEntry_t_const_pointer_box::get_nID() {
+  return cast<int_box>(get_ptr()->nID);
+}
+
+void MusicPlayerSelectsQueueEntry_t_const_pointer_box::_register_methods() {
+  register_method("get_nID",
+                  &MusicPlayerSelectsQueueEntry_t_const_pointer_box::get_nID);
+}
+
+auto MusicPlayerSelectsPlaylistEntry_t_const_pointer_box::get_nID() {
+  return cast<int_box>(get_ptr()->nID);
+}
+
+void MusicPlayerSelectsPlaylistEntry_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_nID", &MusicPlayerSelectsPlaylistEntry_t_const_pointer_box::get_nID);
+}
+
+auto MusicPlayerWantsPlayingRepeatStatus_t_const_pointer_box::
+    get_m_nPlayingRepeatStatus() {
+  return cast<int_box>(get_ptr()->m_nPlayingRepeatStatus);
+}
+
+void MusicPlayerWantsPlayingRepeatStatus_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_nPlayingRepeatStatus",
+                  &MusicPlayerWantsPlayingRepeatStatus_t_const_pointer_box::
+                      get_m_nPlayingRepeatStatus);
+}
+
+auto HTTPRequestCompleted_t_const_pointer_box::get_m_hRequest() {
+  return cast<HTTPRequestHandle_box>(get_ptr()->m_hRequest);
+}
+
+auto HTTPRequestCompleted_t_const_pointer_box::get_m_ulContextValue() {
+  return cast<uint64_box>(get_ptr()->m_ulContextValue);
+}
+
+auto HTTPRequestCompleted_t_const_pointer_box::get_m_bRequestSuccessful() {
+  return cast<bool_box>(get_ptr()->m_bRequestSuccessful);
+}
+
+auto HTTPRequestCompleted_t_const_pointer_box::get_m_eStatusCode() {
+  return cast<EHTTPStatusCode_box>(get_ptr()->m_eStatusCode);
+}
+
+auto HTTPRequestCompleted_t_const_pointer_box::get_m_unBodySize() {
+  return cast<uint32_box>(get_ptr()->m_unBodySize);
+}
+
+void HTTPRequestCompleted_t_const_pointer_box::_register_methods() {
+  register_method("get_m_hRequest",
+                  &HTTPRequestCompleted_t_const_pointer_box::get_m_hRequest);
+  register_method(
+      "get_m_ulContextValue",
+      &HTTPRequestCompleted_t_const_pointer_box::get_m_ulContextValue);
+  register_method(
+      "get_m_bRequestSuccessful",
+      &HTTPRequestCompleted_t_const_pointer_box::get_m_bRequestSuccessful);
+  register_method("get_m_eStatusCode",
+                  &HTTPRequestCompleted_t_const_pointer_box::get_m_eStatusCode);
+  register_method("get_m_unBodySize",
+                  &HTTPRequestCompleted_t_const_pointer_box::get_m_unBodySize);
+}
+
+auto HTTPRequestHeadersReceived_t_const_pointer_box::get_m_hRequest() {
+  return cast<HTTPRequestHandle_box>(get_ptr()->m_hRequest);
+}
+
+auto HTTPRequestHeadersReceived_t_const_pointer_box::get_m_ulContextValue() {
+  return cast<uint64_box>(get_ptr()->m_ulContextValue);
+}
+
+void HTTPRequestHeadersReceived_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_hRequest",
+      &HTTPRequestHeadersReceived_t_const_pointer_box::get_m_hRequest);
+  register_method(
+      "get_m_ulContextValue",
+      &HTTPRequestHeadersReceived_t_const_pointer_box::get_m_ulContextValue);
+}
+
+auto HTTPRequestDataReceived_t_const_pointer_box::get_m_hRequest() {
+  return cast<HTTPRequestHandle_box>(get_ptr()->m_hRequest);
+}
+
+auto HTTPRequestDataReceived_t_const_pointer_box::get_m_ulContextValue() {
+  return cast<uint64_box>(get_ptr()->m_ulContextValue);
+}
+
+auto HTTPRequestDataReceived_t_const_pointer_box::get_m_cOffset() {
+  return cast<uint32_box>(get_ptr()->m_cOffset);
+}
+
+auto HTTPRequestDataReceived_t_const_pointer_box::get_m_cBytesReceived() {
+  return cast<uint32_box>(get_ptr()->m_cBytesReceived);
+}
+
+void HTTPRequestDataReceived_t_const_pointer_box::_register_methods() {
+  register_method("get_m_hRequest",
+                  &HTTPRequestDataReceived_t_const_pointer_box::get_m_hRequest);
+  register_method(
+      "get_m_ulContextValue",
+      &HTTPRequestDataReceived_t_const_pointer_box::get_m_ulContextValue);
+  register_method("get_m_cOffset",
+                  &HTTPRequestDataReceived_t_const_pointer_box::get_m_cOffset);
+  register_method(
+      "get_m_cBytesReceived",
+      &HTTPRequestDataReceived_t_const_pointer_box::get_m_cBytesReceived);
+}
+
+auto SteamInputDeviceConnected_t_const_pointer_box::
+    get_m_ulConnectedDeviceHandle() {
+  return cast<InputHandle_t_box>(get_ptr()->m_ulConnectedDeviceHandle);
+}
+
+void SteamInputDeviceConnected_t_const_pointer_box::_register_methods() {
+  register_method("get_m_ulConnectedDeviceHandle",
+                  &SteamInputDeviceConnected_t_const_pointer_box::
+                      get_m_ulConnectedDeviceHandle);
+}
+
+auto SteamInputDeviceDisconnected_t_const_pointer_box::
+    get_m_ulDisconnectedDeviceHandle() {
+  return cast<InputHandle_t_box>(get_ptr()->m_ulDisconnectedDeviceHandle);
+}
+
+void SteamInputDeviceDisconnected_t_const_pointer_box::_register_methods() {
+  register_method("get_m_ulDisconnectedDeviceHandle",
+                  &SteamInputDeviceDisconnected_t_const_pointer_box::
+                      get_m_ulDisconnectedDeviceHandle);
+}
+
+auto SteamInputConfigurationLoaded_t_const_pointer_box::get_m_unAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unAppID);
+}
+
+auto SteamInputConfigurationLoaded_t_const_pointer_box::get_m_ulDeviceHandle() {
+  return cast<InputHandle_t_box>(get_ptr()->m_ulDeviceHandle);
+}
+
+auto SteamInputConfigurationLoaded_t_const_pointer_box::
+    get_m_ulMappingCreator() {
+  return cast<CSteamID_box>(get_ptr()->m_ulMappingCreator);
+}
+
+auto SteamInputConfigurationLoaded_t_const_pointer_box::
+    get_m_unMajorRevision() {
+  return cast<uint32_box>(get_ptr()->m_unMajorRevision);
+}
+
+auto SteamInputConfigurationLoaded_t_const_pointer_box::
+    get_m_unMinorRevision() {
+  return cast<uint32_box>(get_ptr()->m_unMinorRevision);
+}
+
+auto SteamInputConfigurationLoaded_t_const_pointer_box::
+    get_m_bUsesSteamInputAPI() {
+  return cast<bool_box>(get_ptr()->m_bUsesSteamInputAPI);
+}
+
+auto SteamInputConfigurationLoaded_t_const_pointer_box::
+    get_m_bUsesGamepadAPI() {
+  return cast<bool_box>(get_ptr()->m_bUsesGamepadAPI);
+}
+
+void SteamInputConfigurationLoaded_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_unAppID",
+      &SteamInputConfigurationLoaded_t_const_pointer_box::get_m_unAppID);
+  register_method(
+      "get_m_ulDeviceHandle",
+      &SteamInputConfigurationLoaded_t_const_pointer_box::get_m_ulDeviceHandle);
+  register_method("get_m_ulMappingCreator",
+                  &SteamInputConfigurationLoaded_t_const_pointer_box::
+                      get_m_ulMappingCreator);
+  register_method("get_m_unMajorRevision",
+                  &SteamInputConfigurationLoaded_t_const_pointer_box::
+                      get_m_unMajorRevision);
+  register_method("get_m_unMinorRevision",
+                  &SteamInputConfigurationLoaded_t_const_pointer_box::
+                      get_m_unMinorRevision);
+  register_method("get_m_bUsesSteamInputAPI",
+                  &SteamInputConfigurationLoaded_t_const_pointer_box::
+                      get_m_bUsesSteamInputAPI);
+  register_method("get_m_bUsesGamepadAPI",
+                  &SteamInputConfigurationLoaded_t_const_pointer_box::
+                      get_m_bUsesGamepadAPI);
+}
+
+auto SteamUGCQueryCompleted_t_const_pointer_box::get_m_handle() {
+  return cast<UGCQueryHandle_t_box>(get_ptr()->m_handle);
+}
+
+auto SteamUGCQueryCompleted_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SteamUGCQueryCompleted_t_const_pointer_box::get_m_unNumResultsReturned() {
+  return cast<uint32_box>(get_ptr()->m_unNumResultsReturned);
+}
+
+auto SteamUGCQueryCompleted_t_const_pointer_box::
+    get_m_unTotalMatchingResults() {
+  return cast<uint32_box>(get_ptr()->m_unTotalMatchingResults);
+}
+
+auto SteamUGCQueryCompleted_t_const_pointer_box::get_m_bCachedData() {
+  return cast<bool_box>(get_ptr()->m_bCachedData);
+}
+
+auto SteamUGCQueryCompleted_t_const_pointer_box::get_m_rgchNextCursor() {
+  return cast<char[256]>(get_ptr()->m_rgchNextCursor);
+}
+
+void SteamUGCQueryCompleted_t_const_pointer_box::_register_methods() {
+  register_method("get_m_handle",
+                  &SteamUGCQueryCompleted_t_const_pointer_box::get_m_handle);
+  register_method("get_m_eResult",
+                  &SteamUGCQueryCompleted_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_unNumResultsReturned",
+      &SteamUGCQueryCompleted_t_const_pointer_box::get_m_unNumResultsReturned);
+  register_method("get_m_unTotalMatchingResults",
+                  &SteamUGCQueryCompleted_t_const_pointer_box::
+                      get_m_unTotalMatchingResults);
+  register_method(
+      "get_m_bCachedData",
+      &SteamUGCQueryCompleted_t_const_pointer_box::get_m_bCachedData);
+  register_method(
+      "get_m_rgchNextCursor",
+      &SteamUGCQueryCompleted_t_const_pointer_box::get_m_rgchNextCursor);
+}
+
+auto SteamUGCRequestUGCDetailsResult_t_const_pointer_box::get_m_details() {
+  return cast<SteamUGCDetails_t_box>(get_ptr()->m_details);
+}
+
+auto SteamUGCRequestUGCDetailsResult_t_const_pointer_box::get_m_bCachedData() {
+  return cast<bool_box>(get_ptr()->m_bCachedData);
+}
+
+void SteamUGCRequestUGCDetailsResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_details",
+      &SteamUGCRequestUGCDetailsResult_t_const_pointer_box::get_m_details);
+  register_method(
+      "get_m_bCachedData",
+      &SteamUGCRequestUGCDetailsResult_t_const_pointer_box::get_m_bCachedData);
+}
+
+auto CreateItemResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto CreateItemResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto CreateItemResult_t_const_pointer_box::
+    get_m_bUserNeedsToAcceptWorkshopLegalAgreement() {
+  return cast<bool_box>(get_ptr()->m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+void CreateItemResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &CreateItemResult_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &CreateItemResult_t_const_pointer_box::get_m_nPublishedFileId);
+  register_method("get_m_bUserNeedsToAcceptWorkshopLegalAgreement",
+                  &CreateItemResult_t_const_pointer_box::
+                      get_m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+auto SubmitItemUpdateResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SubmitItemUpdateResult_t_const_pointer_box::
+    get_m_bUserNeedsToAcceptWorkshopLegalAgreement() {
+  return cast<bool_box>(get_ptr()->m_bUserNeedsToAcceptWorkshopLegalAgreement);
+}
+
+auto SubmitItemUpdateResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void SubmitItemUpdateResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &SubmitItemUpdateResult_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_bUserNeedsToAcceptWorkshopLegalAgreement",
+                  &SubmitItemUpdateResult_t_const_pointer_box::
+                      get_m_bUserNeedsToAcceptWorkshopLegalAgreement);
+  register_method(
+      "get_m_nPublishedFileId",
+      &SubmitItemUpdateResult_t_const_pointer_box::get_m_nPublishedFileId);
+}
+
+auto ItemInstalled_t_const_pointer_box::get_m_unAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unAppID);
+}
+
+auto ItemInstalled_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void ItemInstalled_t_const_pointer_box::_register_methods() {
+  register_method("get_m_unAppID",
+                  &ItemInstalled_t_const_pointer_box::get_m_unAppID);
+  register_method("get_m_nPublishedFileId",
+                  &ItemInstalled_t_const_pointer_box::get_m_nPublishedFileId);
+}
+
+auto DownloadItemResult_t_const_pointer_box::get_m_unAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unAppID);
+}
+
+auto DownloadItemResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto DownloadItemResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void DownloadItemResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_unAppID",
+                  &DownloadItemResult_t_const_pointer_box::get_m_unAppID);
+  register_method(
+      "get_m_nPublishedFileId",
+      &DownloadItemResult_t_const_pointer_box::get_m_nPublishedFileId);
+  register_method("get_m_eResult",
+                  &DownloadItemResult_t_const_pointer_box::get_m_eResult);
+}
+
+auto UserFavoriteItemsListChanged_t_const_pointer_box::
+    get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto UserFavoriteItemsListChanged_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto UserFavoriteItemsListChanged_t_const_pointer_box::get_m_bWasAddRequest() {
+  return cast<bool_box>(get_ptr()->m_bWasAddRequest);
+}
+
+void UserFavoriteItemsListChanged_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nPublishedFileId",
+                  &UserFavoriteItemsListChanged_t_const_pointer_box::
+                      get_m_nPublishedFileId);
+  register_method(
+      "get_m_eResult",
+      &UserFavoriteItemsListChanged_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_bWasAddRequest",
+      &UserFavoriteItemsListChanged_t_const_pointer_box::get_m_bWasAddRequest);
+}
+
+auto SetUserItemVoteResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto SetUserItemVoteResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto SetUserItemVoteResult_t_const_pointer_box::get_m_bVoteUp() {
+  return cast<bool_box>(get_ptr()->m_bVoteUp);
+}
+
+void SetUserItemVoteResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_nPublishedFileId",
+      &SetUserItemVoteResult_t_const_pointer_box::get_m_nPublishedFileId);
+  register_method("get_m_eResult",
+                  &SetUserItemVoteResult_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_bVoteUp",
+                  &SetUserItemVoteResult_t_const_pointer_box::get_m_bVoteUp);
+}
+
+auto GetUserItemVoteResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto GetUserItemVoteResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GetUserItemVoteResult_t_const_pointer_box::get_m_bVotedUp() {
+  return cast<bool_box>(get_ptr()->m_bVotedUp);
+}
+
+auto GetUserItemVoteResult_t_const_pointer_box::get_m_bVotedDown() {
+  return cast<bool_box>(get_ptr()->m_bVotedDown);
+}
+
+auto GetUserItemVoteResult_t_const_pointer_box::get_m_bVoteSkipped() {
+  return cast<bool_box>(get_ptr()->m_bVoteSkipped);
+}
+
+void GetUserItemVoteResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_nPublishedFileId",
+      &GetUserItemVoteResult_t_const_pointer_box::get_m_nPublishedFileId);
+  register_method("get_m_eResult",
+                  &GetUserItemVoteResult_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_bVotedUp",
+                  &GetUserItemVoteResult_t_const_pointer_box::get_m_bVotedUp);
+  register_method("get_m_bVotedDown",
+                  &GetUserItemVoteResult_t_const_pointer_box::get_m_bVotedDown);
+  register_method(
+      "get_m_bVoteSkipped",
+      &GetUserItemVoteResult_t_const_pointer_box::get_m_bVoteSkipped);
+}
+
+auto StartPlaytimeTrackingResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void StartPlaytimeTrackingResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &StartPlaytimeTrackingResult_t_const_pointer_box::get_m_eResult);
+}
+
+auto StopPlaytimeTrackingResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void StopPlaytimeTrackingResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &StopPlaytimeTrackingResult_t_const_pointer_box::get_m_eResult);
+}
+
+auto AddUGCDependencyResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto AddUGCDependencyResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto AddUGCDependencyResult_t_const_pointer_box::get_m_nChildPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nChildPublishedFileId);
+}
+
+void AddUGCDependencyResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &AddUGCDependencyResult_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &AddUGCDependencyResult_t_const_pointer_box::get_m_nPublishedFileId);
+  register_method(
+      "get_m_nChildPublishedFileId",
+      &AddUGCDependencyResult_t_const_pointer_box::get_m_nChildPublishedFileId);
+}
+
+auto RemoveUGCDependencyResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoveUGCDependencyResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoveUGCDependencyResult_t_const_pointer_box::
+    get_m_nChildPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nChildPublishedFileId);
+}
+
+void RemoveUGCDependencyResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoveUGCDependencyResult_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoveUGCDependencyResult_t_const_pointer_box::get_m_nPublishedFileId);
+  register_method("get_m_nChildPublishedFileId",
+                  &RemoveUGCDependencyResult_t_const_pointer_box::
+                      get_m_nChildPublishedFileId);
+}
+
+auto AddAppDependencyResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto AddAppDependencyResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto AddAppDependencyResult_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void AddAppDependencyResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &AddAppDependencyResult_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &AddAppDependencyResult_t_const_pointer_box::get_m_nPublishedFileId);
+  register_method("get_m_nAppID",
+                  &AddAppDependencyResult_t_const_pointer_box::get_m_nAppID);
+}
+
+auto RemoveAppDependencyResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto RemoveAppDependencyResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto RemoveAppDependencyResult_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void RemoveAppDependencyResult_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eResult",
+      &RemoveAppDependencyResult_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &RemoveAppDependencyResult_t_const_pointer_box::get_m_nPublishedFileId);
+  register_method("get_m_nAppID",
+                  &RemoveAppDependencyResult_t_const_pointer_box::get_m_nAppID);
+}
+
+auto GetAppDependenciesResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GetAppDependenciesResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+auto GetAppDependenciesResult_t_const_pointer_box::get_m_rgAppIDs() {
+  return cast<AppId_t[32]>(get_ptr()->m_rgAppIDs);
+}
+
+auto GetAppDependenciesResult_t_const_pointer_box::get_m_nNumAppDependencies() {
+  return cast<uint32_box>(get_ptr()->m_nNumAppDependencies);
+}
+
+auto GetAppDependenciesResult_t_const_pointer_box::
+    get_m_nTotalNumAppDependencies() {
+  return cast<uint32_box>(get_ptr()->m_nTotalNumAppDependencies);
+}
+
+void GetAppDependenciesResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &GetAppDependenciesResult_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &GetAppDependenciesResult_t_const_pointer_box::get_m_nPublishedFileId);
+  register_method(
+      "get_m_rgAppIDs",
+      &GetAppDependenciesResult_t_const_pointer_box::get_m_rgAppIDs);
+  register_method(
+      "get_m_nNumAppDependencies",
+      &GetAppDependenciesResult_t_const_pointer_box::get_m_nNumAppDependencies);
+  register_method("get_m_nTotalNumAppDependencies",
+                  &GetAppDependenciesResult_t_const_pointer_box::
+                      get_m_nTotalNumAppDependencies);
+}
+
+auto DeleteItemResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto DeleteItemResult_t_const_pointer_box::get_m_nPublishedFileId() {
+  return cast<PublishedFileId_t_box>(get_ptr()->m_nPublishedFileId);
+}
+
+void DeleteItemResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &DeleteItemResult_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_nPublishedFileId",
+      &DeleteItemResult_t_const_pointer_box::get_m_nPublishedFileId);
+}
+
+auto UserSubscribedItemsListChanged_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+void UserSubscribedItemsListChanged_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_nAppID",
+      &UserSubscribedItemsListChanged_t_const_pointer_box::get_m_nAppID);
+}
+
+auto WorkshopEULAStatus_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto WorkshopEULAStatus_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+auto WorkshopEULAStatus_t_const_pointer_box::get_m_unVersion() {
+  return cast<uint32_box>(get_ptr()->m_unVersion);
+}
+
+auto WorkshopEULAStatus_t_const_pointer_box::get_m_rtAction() {
+  return cast<RTime32_box>(get_ptr()->m_rtAction);
+}
+
+auto WorkshopEULAStatus_t_const_pointer_box::get_m_bAccepted() {
+  return cast<bool_box>(get_ptr()->m_bAccepted);
+}
+
+auto WorkshopEULAStatus_t_const_pointer_box::get_m_bNeedsAction() {
+  return cast<bool_box>(get_ptr()->m_bNeedsAction);
+}
+
+void WorkshopEULAStatus_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &WorkshopEULAStatus_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_nAppID",
+                  &WorkshopEULAStatus_t_const_pointer_box::get_m_nAppID);
+  register_method("get_m_unVersion",
+                  &WorkshopEULAStatus_t_const_pointer_box::get_m_unVersion);
+  register_method("get_m_rtAction",
+                  &WorkshopEULAStatus_t_const_pointer_box::get_m_rtAction);
+  register_method("get_m_bAccepted",
+                  &WorkshopEULAStatus_t_const_pointer_box::get_m_bAccepted);
+  register_method("get_m_bNeedsAction",
+                  &WorkshopEULAStatus_t_const_pointer_box::get_m_bNeedsAction);
+}
+
+auto SteamAppInstalled_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+auto SteamAppInstalled_t_const_pointer_box::get_m_iInstallFolderIndex() {
+  return cast<int_box>(get_ptr()->m_iInstallFolderIndex);
+}
+
+void SteamAppInstalled_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nAppID",
+                  &SteamAppInstalled_t_const_pointer_box::get_m_nAppID);
+  register_method(
+      "get_m_iInstallFolderIndex",
+      &SteamAppInstalled_t_const_pointer_box::get_m_iInstallFolderIndex);
+}
+
+auto SteamAppUninstalled_t_const_pointer_box::get_m_nAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_nAppID);
+}
+
+auto SteamAppUninstalled_t_const_pointer_box::get_m_iInstallFolderIndex() {
+  return cast<int_box>(get_ptr()->m_iInstallFolderIndex);
+}
+
+void SteamAppUninstalled_t_const_pointer_box::_register_methods() {
+  register_method("get_m_nAppID",
+                  &SteamAppUninstalled_t_const_pointer_box::get_m_nAppID);
+  register_method(
+      "get_m_iInstallFolderIndex",
+      &SteamAppUninstalled_t_const_pointer_box::get_m_iInstallFolderIndex);
+}
+
+auto HTML_BrowserReady_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+void HTML_BrowserReady_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_BrowserReady_t_const_pointer_box::get_unBrowserHandle);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_pBGRA() {
+  return cast<char_const_pointer_box>(get_ptr()->pBGRA);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_unWide() {
+  return cast<uint32_box>(get_ptr()->unWide);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_unTall() {
+  return cast<uint32_box>(get_ptr()->unTall);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_unUpdateX() {
+  return cast<uint32_box>(get_ptr()->unUpdateX);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_unUpdateY() {
+  return cast<uint32_box>(get_ptr()->unUpdateY);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_unUpdateWide() {
+  return cast<uint32_box>(get_ptr()->unUpdateWide);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_unUpdateTall() {
+  return cast<uint32_box>(get_ptr()->unUpdateTall);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_unScrollX() {
+  return cast<uint32_box>(get_ptr()->unScrollX);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_unScrollY() {
+  return cast<uint32_box>(get_ptr()->unScrollY);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_flPageScale() {
+  return cast<float_box>(get_ptr()->flPageScale);
+}
+
+auto HTML_NeedsPaint_t_const_pointer_box::get_unPageSerial() {
+  return cast<uint32_box>(get_ptr()->unPageSerial);
+}
+
+void HTML_NeedsPaint_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pBGRA", &HTML_NeedsPaint_t_const_pointer_box::get_pBGRA);
+  register_method("get_unWide",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_unWide);
+  register_method("get_unTall",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_unTall);
+  register_method("get_unUpdateX",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_unUpdateX);
+  register_method("get_unUpdateY",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_unUpdateY);
+  register_method("get_unUpdateWide",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_unUpdateWide);
+  register_method("get_unUpdateTall",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_unUpdateTall);
+  register_method("get_unScrollX",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_unScrollX);
+  register_method("get_unScrollY",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_unScrollY);
+  register_method("get_flPageScale",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_flPageScale);
+  register_method("get_unPageSerial",
+                  &HTML_NeedsPaint_t_const_pointer_box::get_unPageSerial);
+}
+
+auto HTML_StartRequest_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_StartRequest_t_const_pointer_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+auto HTML_StartRequest_t_const_pointer_box::get_pchTarget() {
+  return cast<char_const_pointer_box>(get_ptr()->pchTarget);
+}
+
+auto HTML_StartRequest_t_const_pointer_box::get_pchPostData() {
+  return cast<char_const_pointer_box>(get_ptr()->pchPostData);
+}
+
+auto HTML_StartRequest_t_const_pointer_box::get_bIsRedirect() {
+  return cast<bool_box>(get_ptr()->bIsRedirect);
+}
+
+void HTML_StartRequest_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_StartRequest_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchURL",
+                  &HTML_StartRequest_t_const_pointer_box::get_pchURL);
+  register_method("get_pchTarget",
+                  &HTML_StartRequest_t_const_pointer_box::get_pchTarget);
+  register_method("get_pchPostData",
+                  &HTML_StartRequest_t_const_pointer_box::get_pchPostData);
+  register_method("get_bIsRedirect",
+                  &HTML_StartRequest_t_const_pointer_box::get_bIsRedirect);
+}
+
+auto HTML_CloseBrowser_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+void HTML_CloseBrowser_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_CloseBrowser_t_const_pointer_box::get_unBrowserHandle);
+}
+
+auto HTML_URLChanged_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_URLChanged_t_const_pointer_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+auto HTML_URLChanged_t_const_pointer_box::get_pchPostData() {
+  return cast<char_const_pointer_box>(get_ptr()->pchPostData);
+}
+
+auto HTML_URLChanged_t_const_pointer_box::get_bIsRedirect() {
+  return cast<bool_box>(get_ptr()->bIsRedirect);
+}
+
+auto HTML_URLChanged_t_const_pointer_box::get_pchPageTitle() {
+  return cast<char_const_pointer_box>(get_ptr()->pchPageTitle);
+}
+
+auto HTML_URLChanged_t_const_pointer_box::get_bNewNavigation() {
+  return cast<bool_box>(get_ptr()->bNewNavigation);
+}
+
+void HTML_URLChanged_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_URLChanged_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchURL",
+                  &HTML_URLChanged_t_const_pointer_box::get_pchURL);
+  register_method("get_pchPostData",
+                  &HTML_URLChanged_t_const_pointer_box::get_pchPostData);
+  register_method("get_bIsRedirect",
+                  &HTML_URLChanged_t_const_pointer_box::get_bIsRedirect);
+  register_method("get_pchPageTitle",
+                  &HTML_URLChanged_t_const_pointer_box::get_pchPageTitle);
+  register_method("get_bNewNavigation",
+                  &HTML_URLChanged_t_const_pointer_box::get_bNewNavigation);
+}
+
+auto HTML_FinishedRequest_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_FinishedRequest_t_const_pointer_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+auto HTML_FinishedRequest_t_const_pointer_box::get_pchPageTitle() {
+  return cast<char_const_pointer_box>(get_ptr()->pchPageTitle);
+}
+
+void HTML_FinishedRequest_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_unBrowserHandle",
+      &HTML_FinishedRequest_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchURL",
+                  &HTML_FinishedRequest_t_const_pointer_box::get_pchURL);
+  register_method("get_pchPageTitle",
+                  &HTML_FinishedRequest_t_const_pointer_box::get_pchPageTitle);
+}
+
+auto HTML_OpenLinkInNewTab_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_OpenLinkInNewTab_t_const_pointer_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+void HTML_OpenLinkInNewTab_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_unBrowserHandle",
+      &HTML_OpenLinkInNewTab_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchURL",
+                  &HTML_OpenLinkInNewTab_t_const_pointer_box::get_pchURL);
+}
+
+auto HTML_ChangedTitle_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_ChangedTitle_t_const_pointer_box::get_pchTitle() {
+  return cast<char_const_pointer_box>(get_ptr()->pchTitle);
+}
+
+void HTML_ChangedTitle_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_ChangedTitle_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchTitle",
+                  &HTML_ChangedTitle_t_const_pointer_box::get_pchTitle);
+}
+
+auto HTML_SearchResults_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_SearchResults_t_const_pointer_box::get_unResults() {
+  return cast<uint32_box>(get_ptr()->unResults);
+}
+
+auto HTML_SearchResults_t_const_pointer_box::get_unCurrentMatch() {
+  return cast<uint32_box>(get_ptr()->unCurrentMatch);
+}
+
+void HTML_SearchResults_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_SearchResults_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_unResults",
+                  &HTML_SearchResults_t_const_pointer_box::get_unResults);
+  register_method("get_unCurrentMatch",
+                  &HTML_SearchResults_t_const_pointer_box::get_unCurrentMatch);
+}
+
+auto HTML_CanGoBackAndForward_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_CanGoBackAndForward_t_const_pointer_box::get_bCanGoBack() {
+  return cast<bool_box>(get_ptr()->bCanGoBack);
+}
+
+auto HTML_CanGoBackAndForward_t_const_pointer_box::get_bCanGoForward() {
+  return cast<bool_box>(get_ptr()->bCanGoForward);
+}
+
+void HTML_CanGoBackAndForward_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_unBrowserHandle",
+      &HTML_CanGoBackAndForward_t_const_pointer_box::get_unBrowserHandle);
+  register_method(
+      "get_bCanGoBack",
+      &HTML_CanGoBackAndForward_t_const_pointer_box::get_bCanGoBack);
+  register_method(
+      "get_bCanGoForward",
+      &HTML_CanGoBackAndForward_t_const_pointer_box::get_bCanGoForward);
+}
+
+auto HTML_HorizontalScroll_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_HorizontalScroll_t_const_pointer_box::get_unScrollMax() {
+  return cast<uint32_box>(get_ptr()->unScrollMax);
+}
+
+auto HTML_HorizontalScroll_t_const_pointer_box::get_unScrollCurrent() {
+  return cast<uint32_box>(get_ptr()->unScrollCurrent);
+}
+
+auto HTML_HorizontalScroll_t_const_pointer_box::get_flPageScale() {
+  return cast<float_box>(get_ptr()->flPageScale);
+}
+
+auto HTML_HorizontalScroll_t_const_pointer_box::get_bVisible() {
+  return cast<bool_box>(get_ptr()->bVisible);
+}
+
+auto HTML_HorizontalScroll_t_const_pointer_box::get_unPageSize() {
+  return cast<uint32_box>(get_ptr()->unPageSize);
+}
+
+void HTML_HorizontalScroll_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_unBrowserHandle",
+      &HTML_HorizontalScroll_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_unScrollMax",
+                  &HTML_HorizontalScroll_t_const_pointer_box::get_unScrollMax);
+  register_method(
+      "get_unScrollCurrent",
+      &HTML_HorizontalScroll_t_const_pointer_box::get_unScrollCurrent);
+  register_method("get_flPageScale",
+                  &HTML_HorizontalScroll_t_const_pointer_box::get_flPageScale);
+  register_method("get_bVisible",
+                  &HTML_HorizontalScroll_t_const_pointer_box::get_bVisible);
+  register_method("get_unPageSize",
+                  &HTML_HorizontalScroll_t_const_pointer_box::get_unPageSize);
+}
+
+auto HTML_VerticalScroll_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_VerticalScroll_t_const_pointer_box::get_unScrollMax() {
+  return cast<uint32_box>(get_ptr()->unScrollMax);
+}
+
+auto HTML_VerticalScroll_t_const_pointer_box::get_unScrollCurrent() {
+  return cast<uint32_box>(get_ptr()->unScrollCurrent);
+}
+
+auto HTML_VerticalScroll_t_const_pointer_box::get_flPageScale() {
+  return cast<float_box>(get_ptr()->flPageScale);
+}
+
+auto HTML_VerticalScroll_t_const_pointer_box::get_bVisible() {
+  return cast<bool_box>(get_ptr()->bVisible);
+}
+
+auto HTML_VerticalScroll_t_const_pointer_box::get_unPageSize() {
+  return cast<uint32_box>(get_ptr()->unPageSize);
+}
+
+void HTML_VerticalScroll_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_unBrowserHandle",
+      &HTML_VerticalScroll_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_unScrollMax",
+                  &HTML_VerticalScroll_t_const_pointer_box::get_unScrollMax);
+  register_method(
+      "get_unScrollCurrent",
+      &HTML_VerticalScroll_t_const_pointer_box::get_unScrollCurrent);
+  register_method("get_flPageScale",
+                  &HTML_VerticalScroll_t_const_pointer_box::get_flPageScale);
+  register_method("get_bVisible",
+                  &HTML_VerticalScroll_t_const_pointer_box::get_bVisible);
+  register_method("get_unPageSize",
+                  &HTML_VerticalScroll_t_const_pointer_box::get_unPageSize);
+}
+
+auto HTML_LinkAtPosition_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_LinkAtPosition_t_const_pointer_box::get_x() {
+  return cast<uint32_box>(get_ptr()->x);
+}
+
+auto HTML_LinkAtPosition_t_const_pointer_box::get_y() {
+  return cast<uint32_box>(get_ptr()->y);
+}
+
+auto HTML_LinkAtPosition_t_const_pointer_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+auto HTML_LinkAtPosition_t_const_pointer_box::get_bInput() {
+  return cast<bool_box>(get_ptr()->bInput);
+}
+
+auto HTML_LinkAtPosition_t_const_pointer_box::get_bLiveLink() {
+  return cast<bool_box>(get_ptr()->bLiveLink);
+}
+
+void HTML_LinkAtPosition_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_unBrowserHandle",
+      &HTML_LinkAtPosition_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_x", &HTML_LinkAtPosition_t_const_pointer_box::get_x);
+  register_method("get_y", &HTML_LinkAtPosition_t_const_pointer_box::get_y);
+  register_method("get_pchURL",
+                  &HTML_LinkAtPosition_t_const_pointer_box::get_pchURL);
+  register_method("get_bInput",
+                  &HTML_LinkAtPosition_t_const_pointer_box::get_bInput);
+  register_method("get_bLiveLink",
+                  &HTML_LinkAtPosition_t_const_pointer_box::get_bLiveLink);
+}
+
+auto HTML_JSAlert_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_JSAlert_t_const_pointer_box::get_pchMessage() {
+  return cast<char_const_pointer_box>(get_ptr()->pchMessage);
+}
+
+void HTML_JSAlert_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_JSAlert_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchMessage",
+                  &HTML_JSAlert_t_const_pointer_box::get_pchMessage);
+}
+
+auto HTML_JSConfirm_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_JSConfirm_t_const_pointer_box::get_pchMessage() {
+  return cast<char_const_pointer_box>(get_ptr()->pchMessage);
+}
+
+void HTML_JSConfirm_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_JSConfirm_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchMessage",
+                  &HTML_JSConfirm_t_const_pointer_box::get_pchMessage);
+}
+
+auto HTML_FileOpenDialog_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_FileOpenDialog_t_const_pointer_box::get_pchTitle() {
+  return cast<char_const_pointer_box>(get_ptr()->pchTitle);
+}
+
+auto HTML_FileOpenDialog_t_const_pointer_box::get_pchInitialFile() {
+  return cast<char_const_pointer_box>(get_ptr()->pchInitialFile);
+}
+
+void HTML_FileOpenDialog_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_unBrowserHandle",
+      &HTML_FileOpenDialog_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchTitle",
+                  &HTML_FileOpenDialog_t_const_pointer_box::get_pchTitle);
+  register_method("get_pchInitialFile",
+                  &HTML_FileOpenDialog_t_const_pointer_box::get_pchInitialFile);
+}
+
+auto HTML_NewWindow_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_NewWindow_t_const_pointer_box::get_pchURL() {
+  return cast<char_const_pointer_box>(get_ptr()->pchURL);
+}
+
+auto HTML_NewWindow_t_const_pointer_box::get_unX() {
+  return cast<uint32_box>(get_ptr()->unX);
+}
+
+auto HTML_NewWindow_t_const_pointer_box::get_unY() {
+  return cast<uint32_box>(get_ptr()->unY);
+}
+
+auto HTML_NewWindow_t_const_pointer_box::get_unWide() {
+  return cast<uint32_box>(get_ptr()->unWide);
+}
+
+auto HTML_NewWindow_t_const_pointer_box::get_unTall() {
+  return cast<uint32_box>(get_ptr()->unTall);
+}
+
+auto HTML_NewWindow_t_const_pointer_box::
+    get_unNewWindow_BrowserHandle_IGNORE() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unNewWindow_BrowserHandle_IGNORE);
+}
+
+void HTML_NewWindow_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_NewWindow_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchURL",
+                  &HTML_NewWindow_t_const_pointer_box::get_pchURL);
+  register_method("get_unX", &HTML_NewWindow_t_const_pointer_box::get_unX);
+  register_method("get_unY", &HTML_NewWindow_t_const_pointer_box::get_unY);
+  register_method("get_unWide",
+                  &HTML_NewWindow_t_const_pointer_box::get_unWide);
+  register_method("get_unTall",
+                  &HTML_NewWindow_t_const_pointer_box::get_unTall);
+  register_method("get_unNewWindow_BrowserHandle_IGNORE",
+                  &HTML_NewWindow_t_const_pointer_box::
+                      get_unNewWindow_BrowserHandle_IGNORE);
+}
+
+auto HTML_SetCursor_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_SetCursor_t_const_pointer_box::get_eMouseCursor() {
+  return cast<uint32_box>(get_ptr()->eMouseCursor);
+}
+
+void HTML_SetCursor_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_SetCursor_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_eMouseCursor",
+                  &HTML_SetCursor_t_const_pointer_box::get_eMouseCursor);
+}
+
+auto HTML_StatusText_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_StatusText_t_const_pointer_box::get_pchMsg() {
+  return cast<char_const_pointer_box>(get_ptr()->pchMsg);
+}
+
+void HTML_StatusText_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_StatusText_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchMsg",
+                  &HTML_StatusText_t_const_pointer_box::get_pchMsg);
+}
+
+auto HTML_ShowToolTip_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_ShowToolTip_t_const_pointer_box::get_pchMsg() {
+  return cast<char_const_pointer_box>(get_ptr()->pchMsg);
+}
+
+void HTML_ShowToolTip_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_ShowToolTip_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchMsg",
+                  &HTML_ShowToolTip_t_const_pointer_box::get_pchMsg);
+}
+
+auto HTML_UpdateToolTip_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_UpdateToolTip_t_const_pointer_box::get_pchMsg() {
+  return cast<char_const_pointer_box>(get_ptr()->pchMsg);
+}
+
+void HTML_UpdateToolTip_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_UpdateToolTip_t_const_pointer_box::get_unBrowserHandle);
+  register_method("get_pchMsg",
+                  &HTML_UpdateToolTip_t_const_pointer_box::get_pchMsg);
+}
+
+auto HTML_HideToolTip_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+void HTML_HideToolTip_t_const_pointer_box::_register_methods() {
+  register_method("get_unBrowserHandle",
+                  &HTML_HideToolTip_t_const_pointer_box::get_unBrowserHandle);
+}
+
+auto HTML_BrowserRestarted_t_const_pointer_box::get_unBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unBrowserHandle);
+}
+
+auto HTML_BrowserRestarted_t_const_pointer_box::get_unOldBrowserHandle() {
+  return cast<HHTMLBrowser_box>(get_ptr()->unOldBrowserHandle);
+}
+
+void HTML_BrowserRestarted_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_unBrowserHandle",
+      &HTML_BrowserRestarted_t_const_pointer_box::get_unBrowserHandle);
+  register_method(
+      "get_unOldBrowserHandle",
+      &HTML_BrowserRestarted_t_const_pointer_box::get_unOldBrowserHandle);
+}
+
+auto SteamInventoryResultReady_t_const_pointer_box::get_m_handle() {
+  return cast<SteamInventoryResult_t_box>(get_ptr()->m_handle);
+}
+
+auto SteamInventoryResultReady_t_const_pointer_box::get_m_result() {
+  return cast<EResult_box>(get_ptr()->m_result);
+}
+
+void SteamInventoryResultReady_t_const_pointer_box::_register_methods() {
+  register_method("get_m_handle",
+                  &SteamInventoryResultReady_t_const_pointer_box::get_m_handle);
+  register_method("get_m_result",
+                  &SteamInventoryResultReady_t_const_pointer_box::get_m_result);
+}
+
+auto SteamInventoryFullUpdate_t_const_pointer_box::get_m_handle() {
+  return cast<SteamInventoryResult_t_box>(get_ptr()->m_handle);
+}
+
+void SteamInventoryFullUpdate_t_const_pointer_box::_register_methods() {
+  register_method("get_m_handle",
+                  &SteamInventoryFullUpdate_t_const_pointer_box::get_m_handle);
+}
+
+void SteamInventoryDefinitionUpdate_t_const_pointer_box::_register_methods() {}
+
+auto SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box::get_m_result() {
+  return cast<EResult_box>(get_ptr()->m_result);
+}
+
+auto SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box::
+    get_m_steamID() {
+  return cast<CSteamID_box>(get_ptr()->m_steamID);
+}
+
+auto SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box::
+    get_m_numEligiblePromoItemDefs() {
+  return cast<int_box>(get_ptr()->m_numEligiblePromoItemDefs);
+}
+
+auto SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box::
+    get_m_bCachedData() {
+  return cast<bool_box>(get_ptr()->m_bCachedData);
+}
+
+void SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_result",
+      &SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box::get_m_result);
+  register_method("get_m_steamID",
+                  &SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box::
+                      get_m_steamID);
+  register_method("get_m_numEligiblePromoItemDefs",
+                  &SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box::
+                      get_m_numEligiblePromoItemDefs);
+  register_method("get_m_bCachedData",
+                  &SteamInventoryEligiblePromoItemDefIDs_t_const_pointer_box::
+                      get_m_bCachedData);
+}
+
+auto SteamInventoryStartPurchaseResult_t_const_pointer_box::get_m_result() {
+  return cast<EResult_box>(get_ptr()->m_result);
+}
+
+auto SteamInventoryStartPurchaseResult_t_const_pointer_box::get_m_ulOrderID() {
+  return cast<uint64_box>(get_ptr()->m_ulOrderID);
+}
+
+auto SteamInventoryStartPurchaseResult_t_const_pointer_box::get_m_ulTransID() {
+  return cast<uint64_box>(get_ptr()->m_ulTransID);
+}
+
+void SteamInventoryStartPurchaseResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_result",
+      &SteamInventoryStartPurchaseResult_t_const_pointer_box::get_m_result);
+  register_method(
+      "get_m_ulOrderID",
+      &SteamInventoryStartPurchaseResult_t_const_pointer_box::get_m_ulOrderID);
+  register_method(
+      "get_m_ulTransID",
+      &SteamInventoryStartPurchaseResult_t_const_pointer_box::get_m_ulTransID);
+}
+
+auto SteamInventoryRequestPricesResult_t_const_pointer_box::get_m_result() {
+  return cast<EResult_box>(get_ptr()->m_result);
+}
+
+auto SteamInventoryRequestPricesResult_t_const_pointer_box::
+    get_m_rgchCurrency() {
+  return cast<char[4]>(get_ptr()->m_rgchCurrency);
+}
+
+void SteamInventoryRequestPricesResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_result",
+      &SteamInventoryRequestPricesResult_t_const_pointer_box::get_m_result);
+  register_method("get_m_rgchCurrency",
+                  &SteamInventoryRequestPricesResult_t_const_pointer_box::
+                      get_m_rgchCurrency);
+}
+
+auto GetVideoURLResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GetVideoURLResult_t_const_pointer_box::get_m_unVideoAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unVideoAppID);
+}
+
+auto GetVideoURLResult_t_const_pointer_box::get_m_rgchURL() {
+  return cast<char[256]>(get_ptr()->m_rgchURL);
+}
+
+void GetVideoURLResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &GetVideoURLResult_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_unVideoAppID",
+                  &GetVideoURLResult_t_const_pointer_box::get_m_unVideoAppID);
+  register_method("get_m_rgchURL",
+                  &GetVideoURLResult_t_const_pointer_box::get_m_rgchURL);
+}
+
+auto GetOPFSettingsResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GetOPFSettingsResult_t_const_pointer_box::get_m_unVideoAppID() {
+  return cast<AppId_t_box>(get_ptr()->m_unVideoAppID);
+}
+
+void GetOPFSettingsResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &GetOPFSettingsResult_t_const_pointer_box::get_m_eResult);
+  register_method(
+      "get_m_unVideoAppID",
+      &GetOPFSettingsResult_t_const_pointer_box::get_m_unVideoAppID);
+}
+
+void SteamParentalSettingsChanged_t_const_pointer_box::_register_methods() {}
+
+auto SteamRemotePlaySessionConnected_t_const_pointer_box::get_m_unSessionID() {
+  return cast<RemotePlaySessionID_t_box>(get_ptr()->m_unSessionID);
+}
+
+void SteamRemotePlaySessionConnected_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_unSessionID",
+      &SteamRemotePlaySessionConnected_t_const_pointer_box::get_m_unSessionID);
+}
+
+auto SteamRemotePlaySessionDisconnected_t_const_pointer_box::
+    get_m_unSessionID() {
+  return cast<RemotePlaySessionID_t_box>(get_ptr()->m_unSessionID);
+}
+
+void SteamRemotePlaySessionDisconnected_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_unSessionID",
+                  &SteamRemotePlaySessionDisconnected_t_const_pointer_box::
+                      get_m_unSessionID);
+}
+
+auto SteamNetworkingMessagesSessionRequest_t_const_pointer_box::
+    get_m_identityRemote() {
+  return cast<SteamNetworkingIdentity_box>(get_ptr()->m_identityRemote);
+}
+
+void SteamNetworkingMessagesSessionRequest_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_identityRemote",
+                  &SteamNetworkingMessagesSessionRequest_t_const_pointer_box::
+                      get_m_identityRemote);
+}
+
+auto SteamNetworkingMessagesSessionFailed_t_const_pointer_box::get_m_info() {
+  return cast<SteamNetConnectionInfo_t_box>(get_ptr()->m_info);
+}
+
+void SteamNetworkingMessagesSessionFailed_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_info",
+      &SteamNetworkingMessagesSessionFailed_t_const_pointer_box::get_m_info);
+}
+
+auto SteamNetConnectionStatusChangedCallback_t_const_pointer_box::
+    get_m_hConn() {
+  return cast<HSteamNetConnection_box>(get_ptr()->m_hConn);
+}
+
+auto SteamNetConnectionStatusChangedCallback_t_const_pointer_box::get_m_info() {
+  return cast<SteamNetConnectionInfo_t_box>(get_ptr()->m_info);
+}
+
+auto SteamNetConnectionStatusChangedCallback_t_const_pointer_box::
+    get_m_eOldState() {
+  return cast<ESteamNetworkingConnectionState_box>(get_ptr()->m_eOldState);
+}
+
+void SteamNetConnectionStatusChangedCallback_t_const_pointer_box::
+    _register_methods() {
+  register_method("get_m_hConn",
+                  &SteamNetConnectionStatusChangedCallback_t_const_pointer_box::
+                      get_m_hConn);
+  register_method(
+      "get_m_info",
+      &SteamNetConnectionStatusChangedCallback_t_const_pointer_box::get_m_info);
+  register_method("get_m_eOldState",
+                  &SteamNetConnectionStatusChangedCallback_t_const_pointer_box::
+                      get_m_eOldState);
+}
+
+auto SteamNetAuthenticationStatus_t_const_pointer_box::get_m_eAvail() {
+  return cast<ESteamNetworkingAvailability_box>(get_ptr()->m_eAvail);
+}
+
+auto SteamNetAuthenticationStatus_t_const_pointer_box::get_m_debugMsg() {
+  return cast<char[256]>(get_ptr()->m_debugMsg);
+}
+
+void SteamNetAuthenticationStatus_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_eAvail",
+      &SteamNetAuthenticationStatus_t_const_pointer_box::get_m_eAvail);
+  register_method(
+      "get_m_debugMsg",
+      &SteamNetAuthenticationStatus_t_const_pointer_box::get_m_debugMsg);
+}
+
+auto SteamRelayNetworkStatus_t_const_pointer_box::get_m_eAvail() {
+  return cast<ESteamNetworkingAvailability_box>(get_ptr()->m_eAvail);
+}
+
+auto SteamRelayNetworkStatus_t_const_pointer_box::
+    get_m_bPingMeasurementInProgress() {
+  return cast<int_box>(get_ptr()->m_bPingMeasurementInProgress);
+}
+
+auto SteamRelayNetworkStatus_t_const_pointer_box::get_m_eAvailNetworkConfig() {
+  return cast<ESteamNetworkingAvailability_box>(
+      get_ptr()->m_eAvailNetworkConfig);
+}
+
+auto SteamRelayNetworkStatus_t_const_pointer_box::get_m_eAvailAnyRelay() {
+  return cast<ESteamNetworkingAvailability_box>(get_ptr()->m_eAvailAnyRelay);
+}
+
+auto SteamRelayNetworkStatus_t_const_pointer_box::get_m_debugMsg() {
+  return cast<char[256]>(get_ptr()->m_debugMsg);
+}
+
+void SteamRelayNetworkStatus_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eAvail",
+                  &SteamRelayNetworkStatus_t_const_pointer_box::get_m_eAvail);
+  register_method("get_m_bPingMeasurementInProgress",
+                  &SteamRelayNetworkStatus_t_const_pointer_box::
+                      get_m_bPingMeasurementInProgress);
+  register_method(
+      "get_m_eAvailNetworkConfig",
+      &SteamRelayNetworkStatus_t_const_pointer_box::get_m_eAvailNetworkConfig);
+  register_method(
+      "get_m_eAvailAnyRelay",
+      &SteamRelayNetworkStatus_t_const_pointer_box::get_m_eAvailAnyRelay);
+  register_method("get_m_debugMsg",
+                  &SteamRelayNetworkStatus_t_const_pointer_box::get_m_debugMsg);
+}
+
+auto GSClientApprove_t_const_pointer_box::get_m_SteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamID);
+}
+
+auto GSClientApprove_t_const_pointer_box::get_m_OwnerSteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_OwnerSteamID);
+}
+
+void GSClientApprove_t_const_pointer_box::_register_methods() {
+  register_method("get_m_SteamID",
+                  &GSClientApprove_t_const_pointer_box::get_m_SteamID);
+  register_method("get_m_OwnerSteamID",
+                  &GSClientApprove_t_const_pointer_box::get_m_OwnerSteamID);
+}
+
+auto GSClientDeny_t_const_pointer_box::get_m_SteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamID);
+}
+
+auto GSClientDeny_t_const_pointer_box::get_m_eDenyReason() {
+  return cast<EDenyReason_box>(get_ptr()->m_eDenyReason);
+}
+
+auto GSClientDeny_t_const_pointer_box::get_m_rgchOptionalText() {
+  return cast<char[128]>(get_ptr()->m_rgchOptionalText);
+}
+
+void GSClientDeny_t_const_pointer_box::_register_methods() {
+  register_method("get_m_SteamID",
+                  &GSClientDeny_t_const_pointer_box::get_m_SteamID);
+  register_method("get_m_eDenyReason",
+                  &GSClientDeny_t_const_pointer_box::get_m_eDenyReason);
+  register_method("get_m_rgchOptionalText",
+                  &GSClientDeny_t_const_pointer_box::get_m_rgchOptionalText);
+}
+
+auto GSClientKick_t_const_pointer_box::get_m_SteamID() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamID);
+}
+
+auto GSClientKick_t_const_pointer_box::get_m_eDenyReason() {
+  return cast<EDenyReason_box>(get_ptr()->m_eDenyReason);
+}
+
+void GSClientKick_t_const_pointer_box::_register_methods() {
+  register_method("get_m_SteamID",
+                  &GSClientKick_t_const_pointer_box::get_m_SteamID);
+  register_method("get_m_eDenyReason",
+                  &GSClientKick_t_const_pointer_box::get_m_eDenyReason);
+}
+
+auto GSClientAchievementStatus_t_const_pointer_box::get_m_SteamID() {
+  return cast<uint64_box>(get_ptr()->m_SteamID);
+}
+
+auto GSClientAchievementStatus_t_const_pointer_box::get_m_pchAchievement() {
+  return cast<char[128]>(get_ptr()->m_pchAchievement);
+}
+
+auto GSClientAchievementStatus_t_const_pointer_box::get_m_bUnlocked() {
+  return cast<bool_box>(get_ptr()->m_bUnlocked);
+}
+
+void GSClientAchievementStatus_t_const_pointer_box::_register_methods() {
+  register_method(
+      "get_m_SteamID",
+      &GSClientAchievementStatus_t_const_pointer_box::get_m_SteamID);
+  register_method(
+      "get_m_pchAchievement",
+      &GSClientAchievementStatus_t_const_pointer_box::get_m_pchAchievement);
+  register_method(
+      "get_m_bUnlocked",
+      &GSClientAchievementStatus_t_const_pointer_box::get_m_bUnlocked);
+}
+
+auto GSPolicyResponse_t_const_pointer_box::get_m_bSecure() {
+  return cast<uint8_box>(get_ptr()->m_bSecure);
+}
+
+void GSPolicyResponse_t_const_pointer_box::_register_methods() {
+  register_method("get_m_bSecure",
+                  &GSPolicyResponse_t_const_pointer_box::get_m_bSecure);
+}
+
+auto GSGameplayStats_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GSGameplayStats_t_const_pointer_box::get_m_nRank() {
+  return cast<int32_box>(get_ptr()->m_nRank);
+}
+
+auto GSGameplayStats_t_const_pointer_box::get_m_unTotalConnects() {
+  return cast<uint32_box>(get_ptr()->m_unTotalConnects);
+}
+
+auto GSGameplayStats_t_const_pointer_box::get_m_unTotalMinutesPlayed() {
+  return cast<uint32_box>(get_ptr()->m_unTotalMinutesPlayed);
+}
+
+void GSGameplayStats_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &GSGameplayStats_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_nRank",
+                  &GSGameplayStats_t_const_pointer_box::get_m_nRank);
+  register_method("get_m_unTotalConnects",
+                  &GSGameplayStats_t_const_pointer_box::get_m_unTotalConnects);
+  register_method(
+      "get_m_unTotalMinutesPlayed",
+      &GSGameplayStats_t_const_pointer_box::get_m_unTotalMinutesPlayed);
+}
+
+auto GSClientGroupStatus_t_const_pointer_box::get_m_SteamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDUser);
+}
+
+auto GSClientGroupStatus_t_const_pointer_box::get_m_SteamIDGroup() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDGroup);
+}
+
+auto GSClientGroupStatus_t_const_pointer_box::get_m_bMember() {
+  return cast<bool_box>(get_ptr()->m_bMember);
+}
+
+auto GSClientGroupStatus_t_const_pointer_box::get_m_bOfficer() {
+  return cast<bool_box>(get_ptr()->m_bOfficer);
+}
+
+void GSClientGroupStatus_t_const_pointer_box::_register_methods() {
+  register_method("get_m_SteamIDUser",
+                  &GSClientGroupStatus_t_const_pointer_box::get_m_SteamIDUser);
+  register_method("get_m_SteamIDGroup",
+                  &GSClientGroupStatus_t_const_pointer_box::get_m_SteamIDGroup);
+  register_method("get_m_bMember",
+                  &GSClientGroupStatus_t_const_pointer_box::get_m_bMember);
+  register_method("get_m_bOfficer",
+                  &GSClientGroupStatus_t_const_pointer_box::get_m_bOfficer);
+}
+
+auto GSReputation_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GSReputation_t_const_pointer_box::get_m_unReputationScore() {
+  return cast<uint32_box>(get_ptr()->m_unReputationScore);
+}
+
+auto GSReputation_t_const_pointer_box::get_m_bBanned() {
+  return cast<bool_box>(get_ptr()->m_bBanned);
+}
+
+auto GSReputation_t_const_pointer_box::get_m_unBannedIP() {
+  return cast<uint32_box>(get_ptr()->m_unBannedIP);
+}
+
+auto GSReputation_t_const_pointer_box::get_m_usBannedPort() {
+  return cast<uint16_box>(get_ptr()->m_usBannedPort);
+}
+
+auto GSReputation_t_const_pointer_box::get_m_ulBannedGameID() {
+  return cast<uint64_box>(get_ptr()->m_ulBannedGameID);
+}
+
+auto GSReputation_t_const_pointer_box::get_m_unBanExpires() {
+  return cast<uint32_box>(get_ptr()->m_unBanExpires);
+}
+
+void GSReputation_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &GSReputation_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_unReputationScore",
+                  &GSReputation_t_const_pointer_box::get_m_unReputationScore);
+  register_method("get_m_bBanned",
+                  &GSReputation_t_const_pointer_box::get_m_bBanned);
+  register_method("get_m_unBannedIP",
+                  &GSReputation_t_const_pointer_box::get_m_unBannedIP);
+  register_method("get_m_usBannedPort",
+                  &GSReputation_t_const_pointer_box::get_m_usBannedPort);
+  register_method("get_m_ulBannedGameID",
+                  &GSReputation_t_const_pointer_box::get_m_ulBannedGameID);
+  register_method("get_m_unBanExpires",
+                  &GSReputation_t_const_pointer_box::get_m_unBanExpires);
+}
+
+auto AssociateWithClanResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+void AssociateWithClanResult_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &AssociateWithClanResult_t_const_pointer_box::get_m_eResult);
+}
+
+auto ComputeNewPlayerCompatibilityResult_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto ComputeNewPlayerCompatibilityResult_t_const_pointer_box::
+    get_m_cPlayersThatDontLikeCandidate() {
+  return cast<int_box>(get_ptr()->m_cPlayersThatDontLikeCandidate);
+}
+
+auto ComputeNewPlayerCompatibilityResult_t_const_pointer_box::
+    get_m_cPlayersThatCandidateDoesntLike() {
+  return cast<int_box>(get_ptr()->m_cPlayersThatCandidateDoesntLike);
+}
+
+auto ComputeNewPlayerCompatibilityResult_t_const_pointer_box::
+    get_m_cClanPlayersThatDontLikeCandidate() {
+  return cast<int_box>(get_ptr()->m_cClanPlayersThatDontLikeCandidate);
+}
+
+auto ComputeNewPlayerCompatibilityResult_t_const_pointer_box::
+    get_m_SteamIDCandidate() {
+  return cast<CSteamID_box>(get_ptr()->m_SteamIDCandidate);
+}
+
+void ComputeNewPlayerCompatibilityResult_t_const_pointer_box::
+    _register_methods() {
+  register_method(
+      "get_m_eResult",
+      &ComputeNewPlayerCompatibilityResult_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_cPlayersThatDontLikeCandidate",
+                  &ComputeNewPlayerCompatibilityResult_t_const_pointer_box::
+                      get_m_cPlayersThatDontLikeCandidate);
+  register_method("get_m_cPlayersThatCandidateDoesntLike",
+                  &ComputeNewPlayerCompatibilityResult_t_const_pointer_box::
+                      get_m_cPlayersThatCandidateDoesntLike);
+  register_method("get_m_cClanPlayersThatDontLikeCandidate",
+                  &ComputeNewPlayerCompatibilityResult_t_const_pointer_box::
+                      get_m_cClanPlayersThatDontLikeCandidate);
+  register_method("get_m_SteamIDCandidate",
+                  &ComputeNewPlayerCompatibilityResult_t_const_pointer_box::
+                      get_m_SteamIDCandidate);
+}
+
+auto GSStatsReceived_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GSStatsReceived_t_const_pointer_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void GSStatsReceived_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &GSStatsReceived_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_steamIDUser",
+                  &GSStatsReceived_t_const_pointer_box::get_m_steamIDUser);
+}
+
+auto GSStatsStored_t_const_pointer_box::get_m_eResult() {
+  return cast<EResult_box>(get_ptr()->m_eResult);
+}
+
+auto GSStatsStored_t_const_pointer_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void GSStatsStored_t_const_pointer_box::_register_methods() {
+  register_method("get_m_eResult",
+                  &GSStatsStored_t_const_pointer_box::get_m_eResult);
+  register_method("get_m_steamIDUser",
+                  &GSStatsStored_t_const_pointer_box::get_m_steamIDUser);
+}
+
+auto GSStatsUnloaded_t_const_pointer_box::get_m_steamIDUser() {
+  return cast<CSteamID_box>(get_ptr()->m_steamIDUser);
+}
+
+void GSStatsUnloaded_t_const_pointer_box::_register_methods() {
+  register_method("get_m_steamIDUser",
+                  &GSStatsUnloaded_t_const_pointer_box::get_m_steamIDUser);
+}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::CreateSteamPipe() ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::BReleaseSteamPipe(
+    Ref<HSteamPipe_box> hSteamPipe) -> typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::ConnectToGlobalUser(
+    Ref<HSteamPipe_box> hSteamPipe) -> typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::CreateLocalUser(
+    Ref<HSteamPipe_box> phSteamPipe, Ref<EAccountType_box> eAccountType) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::ReleaseUser(Ref<HSteamPipe_box> hSteamPipe,
+                                                 Ref<HSteamUser_box> hUser) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamUser(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamGameServer(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::SetLocalIPBinding(
+    Ref<SteamIPAddress_t_box> unIP, Ref<uint16_box> usPort) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamFriends(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamUtils(
+    Ref<HSteamPipe_box> hSteamPipe, Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamMatchmaking(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamMatchmakingServers(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamGenericInterface(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamUserStats(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamGameServerStats(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamApps(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamNetworking(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamRemoteStorage(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamScreenshots(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamGameSearch(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetIPCCallCount() ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::SetWarningMessageHook(
+    Ref<SteamAPIWarningMessageHook_t_box> pFunction) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::BShutdownIfAllPipesClosed() ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamHTTP(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamController(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamUGC(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamAppList(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamMusic(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamMusicRemote(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamHTMLSurface(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamInventory(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamVideo(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamParentalSettings(
+    Ref<HSteamUser_box> hSteamuser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamInput(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamParties(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+template <typename C>
+auto ISteamClient_const_pointer_box::GetISteamRemotePlay(
+    Ref<HSteamUser_box> hSteamUser, Ref<HSteamPipe_box> hSteamPipe,
+    Ref<char_const_pointer_box> pchVersion) ->
+    typename std::enable_if<true>::type {}
+
+void ISteamClient_const_pointer_box::_register_methods() {
+  register_method("CreateSteamPipe",
+                  &ISteamClient_const_pointer_box::CreateSteamPipe);
+  register_method("BReleaseSteamPipe",
+                  &ISteamClient_const_pointer_box::BReleaseSteamPipe);
+  register_method("ConnectToGlobalUser",
+                  &ISteamClient_const_pointer_box::ConnectToGlobalUser);
+  register_method("CreateLocalUser",
+                  &ISteamClient_const_pointer_box::CreateLocalUser);
+  register_method("ReleaseUser", &ISteamClient_const_pointer_box::ReleaseUser);
+  register_method("GetISteamUser",
+                  &ISteamClient_const_pointer_box::GetISteamUser);
+  register_method("GetISteamGameServer",
+                  &ISteamClient_const_pointer_box::GetISteamGameServer);
+  register_method("SetLocalIPBinding",
+                  &ISteamClient_const_pointer_box::SetLocalIPBinding);
+  register_method("GetISteamFriends",
+                  &ISteamClient_const_pointer_box::GetISteamFriends);
+  register_method("GetISteamUtils",
+                  &ISteamClient_const_pointer_box::GetISteamUtils);
+  register_method("GetISteamMatchmaking",
+                  &ISteamClient_const_pointer_box::GetISteamMatchmaking);
+  register_method("GetISteamMatchmakingServers",
+                  &ISteamClient_const_pointer_box::GetISteamMatchmakingServers);
+  register_method("GetISteamGenericInterface",
+                  &ISteamClient_const_pointer_box::GetISteamGenericInterface);
+  register_method("GetISteamUserStats",
+                  &ISteamClient_const_pointer_box::GetISteamUserStats);
+  register_method("GetISteamGameServerStats",
+                  &ISteamClient_const_pointer_box::GetISteamGameServerStats);
+  register_method("GetISteamApps",
+                  &ISteamClient_const_pointer_box::GetISteamApps);
+  register_method("GetISteamNetworking",
+                  &ISteamClient_const_pointer_box::GetISteamNetworking);
+  register_method("GetISteamRemoteStorage",
+                  &ISteamClient_const_pointer_box::GetISteamRemoteStorage);
+  register_method("GetISteamScreenshots",
+                  &ISteamClient_const_pointer_box::GetISteamScreenshots);
+  register_method("GetISteamGameSearch",
+                  &ISteamClient_const_pointer_box::GetISteamGameSearch);
+  register_method("GetIPCCallCount",
+                  &ISteamClient_const_pointer_box::GetIPCCallCount);
+  register_method("SetWarningMessageHook",
+                  &ISteamClient_const_pointer_box::SetWarningMessageHook);
+  register_method("BShutdownIfAllPipesClosed",
+                  &ISteamClient_const_pointer_box::BShutdownIfAllPipesClosed);
+  register_method("GetISteamHTTP",
+                  &ISteamClient_const_pointer_box::GetISteamHTTP);
+  register_method("GetISteamController",
+                  &ISteamClient_const_pointer_box::GetISteamController);
+  register_method("GetISteamUGC",
+                  &ISteamClient_const_pointer_box::GetISteamUGC);
+  register_method("GetISteamAppList",
+                  &ISteamClient_const_pointer_box::GetISteamAppList);
+  register_method("GetISteamMusic",
+                  &ISteamClient_const_pointer_box::GetISteamMusic);
+  register_method("GetISteamMusicRemote",
+                  &ISteamClient_const_pointer_box::GetISteamMusicRemote);
+  register_method("GetISteamHTMLSurface",
+                  &ISteamClient_const_pointer_box::GetISteamHTMLSurface);
+  register_method("GetISteamInventory",
+                  &ISteamClient_const_pointer_box::GetISteamInventory);
+  register_method("GetISteamVideo",
+                  &ISteamClient_const_pointer_box::GetISteamVideo);
+  register_method("GetISteamParentalSettings",
+                  &ISteamClient_const_pointer_box::GetISteamParentalSettings);
+  register_method("GetISteamInput",
+                  &ISteamClient_const_pointer_box::GetISteamInput);
+  register_method("GetISteamParties",
+                  &ISteamClient_const_pointer_box::GetISteamParties);
+  register_method("GetISteamRemotePlay",
+                  &ISteamClient_const_pointer_box::GetISteamRemotePlay);
+}
+
+} // namespace godot

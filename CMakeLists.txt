@@ -46,7 +46,8 @@ endif()
 # let's us link relative to process on linux
 set(CMAKE_INSTALL_RPATH "$ORIGIN")
 
-add_library(steamsdk-godot src/Godot.cpp)
+add_library(steamsdk-godot src/SteamGodot.cpp src/file.cpp)
+#add_library(steamsdk-godot src/Godot.cpp)
 
 set_target_properties(
   steamsdk-godot
