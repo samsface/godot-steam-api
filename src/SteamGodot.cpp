@@ -141,7 +141,11 @@ template<typename T, typename TT>
 class SteamBase : public Reference
 {
 public:
-    using value_type = typename  std::conditional_t<std::is_arithmetic_v<T>, T, /**/std::conditional_t<std::is_abstract_v<T>, T*, T>/**/>;
+    using value_type = typename 
+        std::conditional_t<std::is_reference_v<T>, std::remove_reference_t<T>,
+            std::conditional_t<std::is_arithmetic_v<T>, T,
+                std::conditional_t<std::is_abstract_v<T>, std::remove_reference_t<T>*, 
+                    T>>>;
 
     value_type value;
 
