@@ -2,11 +2,11 @@
 
 git submodule update --init --recursive
 
-mkdir -p work
-cd work
+python3 generation/test.py
+clang-format -i src/generated.cpp
 
-python3 ../test.py &> ../src/file.cpp
-clang-format -i ../src/file.cpp
+#mkdir -p work
+#cd work
 
-cmake .. -DCMAKE_BUILD_TYPE=Debug
-cmake --build . --target install ../app/addons/steam_api/
+
+#cmake .. -DCMAKE_BUILD_TYPE=Debug && cmake --build . --target install ../app/addons/steam_api/

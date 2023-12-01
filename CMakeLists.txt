@@ -46,8 +46,18 @@ endif()
 # let's us link relative to process on linux
 set(CMAKE_INSTALL_RPATH "$ORIGIN")
 
-add_library(steamsdk-godot src/SteamGodot.cpp src/file.cpp)
-#add_library(steamsdk-godot src/Godot.cpp)
+# Generated bindings
+find_package(Python COMPONENTS Interpreter REQUIRED)
+execute_process(
+    COMMAND ${Python_EXECUTABLE} generation/test.py
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+    RESULT_VARIABLE CMD_RESULT
+)
+if(NOT CMD_RESULT EQUAL 0)
+    message(FATAL_ERROR "Failed to generated bindings")
+endif()
+
+add_library(steamsdk-godot src/pre.cpp src/generated.cpp)
 
 set_target_properties(
   steamsdk-godot
@@ -86,3 +96,5 @@ target_link_libraries(
     ${STEAM_API})
 
 install(TARGETS steamsdk-godot DESTINATION .)
+install(DIRECTORY src/gdns DESTINATION . MESSAGE_NEVER)
+install(FILES src/steam_i.gd DESTINATION .)
