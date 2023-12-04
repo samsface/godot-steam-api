@@ -1,0 +1,213 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/steam_api/setup.gd" type="Script" id=1]
+
+[node name="SteamAPI" type="ScrollContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="panel" type="MarginContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="panel"]
+margin_top = 293.0
+margin_right = 1024.0
+margin_bottom = 307.0
+
+[node name="container" type="VBoxContainer" parent="panel"]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="SDK instructions" type="RichTextLabel" parent="panel/container"]
+margin_right = 1024.0
+margin_bottom = 135.0
+rect_clip_content = false
+bbcode_enabled = true
+bbcode_text = "[color=red]This plugin requires the Steam SDK, you must already be a Steam partner to obtain the SDK (Valve's rules, not mine sorry).[/color]
+
+[b]Setup:[/b]
+1. Enter your Steam App ID [color=gray](the number next to your Steam title on the Steamworks page or the number in the store page url)[/color].
+2. Download the Steam SDK at [url=open_sdk_page]https://partner.steamgames.com/downloads/steamworks_sdk.zip[/url].
+3. Unzip the Steam SDK into any directory on your computer [color=gray](you will not need the SDK once setup is complete)[/color].
+4. Enter the directory path where you unzipped the Steam SDK [color=gray](e.g. \"C:\\Users\\gaben\\Downloads\\sdk\")[/color].
+5. Click \"Import from SDK Directory\".
+"
+text = "This plugin requires the Steam SDK, you must already be a Steam partner to obtain the SDK (Valve's rules, not mine sorry).
+
+Setup:
+1. Enter your Steam App ID (the number next to your Steam title on the Steamworks page or the number in the store page url).
+2. Download the Steam SDK at https://partner.steamgames.com/downloads/steamworks_sdk.zip.
+3. Unzip the Steam SDK into any directory on your computer (you will not need the SDK once setup is complete).
+4. Enter the directory path where you unzipped the Steam SDK (e.g. \"C:\\Users\\gaben\\Downloads\\sdk\").
+5. Click \"Import from SDK Directory\".
+"
+fit_content_height = true
+scroll_active = false
+
+[node name="disable" type="HBoxContainer" parent="panel/container"]
+margin_top = 139.0
+margin_right = 1024.0
+margin_bottom = 163.0
+size_flags_horizontal = 3
+
+[node name="title" type="Label" parent="panel/container/disable"]
+margin_right = 510.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_horizontal = 3
+text = "Disable Steam Integration (all Steam calls will return or yield null)"
+valign = 1
+
+[node name="input" type="CheckBox" parent="panel/container/disable"]
+margin_left = 514.0
+margin_right = 1024.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+
+[node name="app_id" type="HBoxContainer" parent="panel/container"]
+margin_top = 167.0
+margin_right = 1024.0
+margin_bottom = 191.0
+size_flags_horizontal = 3
+
+[node name="title" type="Label" parent="panel/container/app_id"]
+margin_right = 510.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_horizontal = 3
+text = "Steam App ID (must be a valid id in your steam library)"
+valign = 1
+
+[node name="input" type="LineEdit" parent="panel/container/app_id"]
+margin_left = 514.0
+margin_right = 1024.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+text = "1435470"
+placeholder_text = "1435470"
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="sdk_dir" type="HBoxContainer" parent="panel/container"]
+margin_top = 195.0
+margin_right = 1024.0
+margin_bottom = 219.0
+size_flags_horizontal = 3
+
+[node name="title" type="Label" parent="panel/container/sdk_dir"]
+margin_right = 510.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_horizontal = 3
+text = "SDK Directory"
+valign = 1
+
+[node name="input" type="LineEdit" parent="panel/container/sdk_dir"]
+margin_left = 514.0
+margin_right = 1024.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+text = "/home/sam/work/godot-steam-api/lib/steam-sdk"
+placeholder_text = "C:\\Users\\gaben\\Downloads\\sdk"
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="HSeparator" type="HSeparator" parent="panel/container"]
+margin_top = 223.0
+margin_right = 1024.0
+margin_bottom = 227.0
+
+[node name="sdk_status" type="HBoxContainer" parent="panel/container"]
+margin_top = 231.0
+margin_right = 1024.0
+margin_bottom = 255.0
+
+[node name="FindSDK" type="Button" parent="panel/container/sdk_status"]
+margin_right = 482.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+text = "Import from SDK Directory"
+
+[node name="VSeparator" type="VSeparator" parent="panel/container/sdk_status"]
+margin_left = 486.0
+margin_right = 490.0
+margin_bottom = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Label" parent="panel/container/sdk_status"]
+margin_left = 494.0
+margin_right = 537.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+text = "Status:"
+valign = 1
+
+[node name="status" type="RichTextLabel" parent="panel/container/sdk_status"]
+margin_left = 541.0
+margin_right = 1024.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_horizontal = 3
+bbcode_enabled = true
+bbcode_text = "[center][color=red]No files imported[/color][/center]"
+text = "No files imported"
+fit_content_height = true
+scroll_active = false
+
+[node name="warning" type="PopupDialog" parent="panel"]
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="container" type="VBoxContainer" parent="panel/warning"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="RichTextLabel" parent="panel/warning/container"]
+margin_right = 1024.0
+margin_bottom = 15.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+bbcode_enabled = true
+bbcode_text = "[center][b]Error[/b][/center]"
+text = "Error"
+fit_content_height = true
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="error_text" type="Label" parent="panel/warning/container"]
+margin_top = 19.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="visibility_changed" from="." to="." method="_on_SteamAPI_visibility_changed"]
+[connection signal="meta_clicked" from="panel/container/SDK instructions" to="." method="_on_SDK_instructions_meta_clicked"]
+[connection signal="pressed" from="panel/container/disable/input" to="." method="_on_disable_pressed"]
+[connection signal="focus_exited" from="panel/container/app_id/input" to="." method="_on_app_id_focus_exited"]
+[connection signal="focus_exited" from="panel/container/sdk_dir/input" to="." method="_on_sdk_dir_focus_exited"]
+[connection signal="pressed" from="panel/container/sdk_status/FindSDK" to="." method="_on_FindSDK_pressed"]

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/steam_api/settings.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+disable = false
+app_id = "1652590"
+sdk_dir = "/home/sam/work/godot-steam-api/lib/steam-sdk"

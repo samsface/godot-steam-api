@@ -12,24 +12,6 @@ def out_proxy():
     out("""extends Node
 class_name SteamI
 
-class OutBool:
-	var value:bool
-
-class OutInt:
-	var value:int
-	
-class OutFloat:
-	var value:float
-
-class OutString:
-	var value:String
-
-class OutPoolByteArray:
-	var value:PoolByteArray
-
-class OutPoolIntArray:
-	var value:PoolIntArray
-
 class Callback:
     signal done
 
@@ -70,6 +52,19 @@ def out_enum_type(object:model.Object) -> None:
 
     out("}\n\n")
 
+def out_return_class(method:model.Method):
+    out(f'    class {method.godot_return_type}:\n')
+
+    dupe_protector = model.DupeProtector()
+
+    if method.return_type:
+        out(f'        {dupe_protector.get("error")}{method.return_type.godot_type_hint}\n')
+
+    for param in method.output_params:
+        out(f'        {dupe_protector.get(param.godot_name)}{param.godot_type_hint}\n')
+
+    out('\n')
+
 def out_class(clazz:model.Object):
     out(f"""class {clazz.godot_type_name} extends Proxy_:
     func _init(o).(o) -> void:
@@ -78,17 +73,26 @@ def out_class(clazz:model.Object):
 """)
 
     for method in clazz.methods:
+        
+        # Check if we have output params and print a result class if so
+        if bool(method.output_params):
+            out_return_class(method)
+
         out(f'    func {method.godot_name}(')
         
+        # Print the function's params
         comma = model.Comma()
         dupe_protector = model.DupeProtector()
         for param in method.params:
             if param.size_for:
                 continue
 
+            if param.is_output_param:
+                continue
+
             out(f'{comma.comma()}{dupe_protector.get(param.godot_name)}{param.godot_type_hint}')
 
-        out(f') -> {method.return_type.godot_type}:\n')
+        out(f') -> {method.godot_return_type}:\n')
     
         out(f'        {"" if method.return_type.is_void else "return "}call_("{method.name}", [')
 
@@ -98,8 +102,14 @@ def out_class(clazz:model.Object):
             if param.size_for:
                 continue
 
+            if param.is_output_param:
+                continue
+
             out(f'{comma.comma()}{dupe_protector.get(param.godot_name)}')
     
+        if bool(method.output_params):
+            out(f'{comma.comma()}{method.godot_return_type}.new()')
+
         out('])\n\n')
 
 def print_db(db:dict):

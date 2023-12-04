@@ -117,20 +117,20 @@ def wrap_with_out(string ,property) -> str:
 def godot_type(property):
     if property.is_buffer:
         if property.kind == Type.VOID:
-            return wrap_with_out('PoolByteArray', property)
+            return 'PoolByteArray'
         if property.kind == Type.INTEGER:
-            return wrap_with_out('PoolIntArray', property)
+            return 'PoolIntArray'
 
     if property.kind == Type.VOID:
         return 'void'
     if property.kind == Type.STRING:
         return 'String'
     if property.kind == Type.INTEGER:
-        return wrap_with_out('int', property)
+        return 'int'
     if property.kind == Type.BOOL:
-        return wrap_with_out('bool', property)
+        return 'bool'
     if property.kind == Type.REAL:
-        return wrap_with_out('float', property)
+        return 'float'
     if property.kind == Type.ENUM:
         return 'int'
     
@@ -183,7 +183,6 @@ class Object:
             return ""
         else:
             return ":" + self.godot_type
-            
 
     @property
     def godot_name(self) -> str:
@@ -220,6 +219,22 @@ class Method:
     @property
     def godot_name(self) -> str:
         return snake_case(self.name)
+     
+    @property
+    def godot_return_type(self) -> str:
+        if bool(self.output_params):
+            return self.name + "Result"
+        else:
+            return self.return_type.godot_type
+
+    @property
+    def output_params(self) -> list:
+        res = []
+        for param in self.params:
+            if param.is_output_param:
+                res.append(param)
+
+        return res
 
 def correct_overloads(method:Method, methods:list):
     for existing_method in methods:

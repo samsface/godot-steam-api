@@ -1,0 +1,20 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="godot_"
+reloadable=true
+
+[entry]
+
+OSX.64="res://addons/steam_api/libsteamsdk-godot.dylib"
+Windows.64="res://addons/steam_api/steamsdk-godot.dll"
+X11.64="res://addons/steam_api/libsteamsdk-godot.so"
+Server="res://addons/steam_api/libsteamsdk-godot.so"
+
+[dependencies]
+
+OSX.64=[ "res://addons/steam_api/libsteam_api.dylib" ]
+Windows.64=[ "res://addons/steam_api/steam_api64.dll" ]
+X11.64=[ "res://addons/steam_api/libsteam_api.so" ]
+Server=[ "res://addons/steam_api/libsteam_api.so" ]
