@@ -20,6 +20,8 @@ jobs:
           ssh-key: ${{ secrets.STEAM_SDK_KEY }}
       - name: get python
         uses: actions/setup-python@v2
+        with:
+          python-version: '3.12' 
       - name: get conan
         uses: turtlebrowser/get-conan@main
         with:
