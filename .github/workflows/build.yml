@@ -23,7 +23,7 @@ jobs:
       - name: get conan
         uses: turtlebrowser/get-conan@main
         with:
-          version: 1.59.0
+          version: 1.60.2
       - name: cache conan
         uses: actions/cache@v2
         with:
