@@ -62,7 +62,7 @@ margin_right = 510.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 0, 24 )
 size_flags_horizontal = 3
-text = "Disable Steam Integration (all Steam calls will return or yield null)"
+text = "Disable Steam Integration (all Steam calls will return or yield null, and dependency libraries won't be compiled)"
 valign = 1
 
 [node name="input" type="CheckBox" parent="panel/container/disable"]
