@@ -30,6 +30,9 @@ func _ready():
 	var scores = yield(Steam.get_leaderboard_scores("High Score", 0, 10, Steam.LeaderboardDataRequest.Global, 3), "done")
 	print(scores)
 	
+	var entry_count = yield(Steam.get_leaderboard_entry_count("High Score"), "done")
+	print(entry_count)
+	
 	print(Steam.apps.get_current_game_language())
 	print(Steam.apps.get_available_game_languages())
 

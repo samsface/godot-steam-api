@@ -392,6 +392,7 @@ public:
         register_method("upload_leaderboard_score",         &SteamUserStats::upload_leaderboard_score);
         register_method("download_leaderboard_entries",     &SteamUserStats::download_leaderboard_entries);
         register_method("get_downloaded_leaderboard_entry", &SteamUserStats::get_downloaded_leaderboard_entry);
+        register_method("get_leaderboard_entry_count",      &SteamUserStats::get_leaderboard_entry_count);
     }
 
     void _init()
@@ -580,6 +581,27 @@ public:
         return SteamCallback::make<LeaderboardScoreUploaded_t, SteamLeaderboardScoreUploaded>(call);
     }
     
+    int get_leaderboard_entry_count(Ref<SteamLeaderboard> leaderboard) {
+        if (!steam_user_stats_) 
+        {
+            return -1;
+        }
+
+        if (leaderboard.is_null()) 
+        {
+            return -1;
+        }
+
+        SteamLeaderboard_t hLeaderboard = leaderboard->get();
+        if (!hLeaderboard) 
+        {
+            return -1;
+        }
+
+        int entry_count = steam_user_stats_->GetLeaderboardEntryCount(hLeaderboard);
+        return entry_count; 
+    }
+
     Ref<SteamCallback> download_leaderboard_entries(Ref<SteamLeaderboard> leaderboard, int data_request, int begin, int end)
     {
         if(!steam_user_stats_)

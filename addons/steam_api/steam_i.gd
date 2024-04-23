@@ -156,6 +156,9 @@ class SteamUserStatsProxy_ extends Proxy_:
 	func get_downloaded_leaderboard_entry(leaderboard, index:int, max_details:int):
 		return callback_("get_downloaded_leaderboard_entry", [leaderboard, index, max_details])
 
+	func get_leaderboard_entry_count(leaderboard):
+		return call_("get_leaderboard_entry_count", [leaderboard])		
+
 class SteamFriendsProxy_ extends Proxy_:
 	signal game_overlay_activated
 
@@ -263,6 +266,27 @@ func set_leaderboard_score_(leaderboard_name:String, score:int, method:int, deta
 	yield(user_stats.upload_leaderboard_score(leaderboard, method, score, details), "done")
 
 	return callback.emit_signal("done", null)
+
+func get_leaderboard_entry_count(leaderboard_name:String):
+	var callback := Callback.new()
+	get_leaderboard_entry_count_(leaderboard_name, callback)
+	return callback
+
+func get_leaderboard_entry_count_(leaderboard_name:String, callback:Callback) -> Callback:
+	var res = 0
+	var find_leaderboard_result = yield(user_stats.find_leaderboard(leaderboard_name), "done")
+	if not find_leaderboard_result:
+		return callback.emit_signal("done", res)
+
+	if not find_leaderboard_result.get_leaderboard_found():
+		return callback.emit_signal("done", res)
+
+	var leaderboard = find_leaderboard_result.get_leaderboard()
+	if not leaderboard:
+		return callback.emit_signal("done", res)
+
+	res = user_stats.get_leaderboard_entry_count(leaderboard)
+	return callback.emit_signal("done", res)
 
 func get_leaderboard_scores(leaderboard_name:String, begin:int, end:int, method:int = LeaderboardDataRequest.Global, max_details:int = 0):
 	var callback := Callback.new()
