@@ -18,6 +18,11 @@ jobs:
           repository: samsface/steam-sdk
           path: lib/steam-sdk
           ssh-key: ${{ secrets.STEAM_SDK_KEY }}
+      - name: clone submodule
+        uses: actions/checkout@v2
+        with:
+          repository: godotengine/godot-cpp
+          path: lib/steam-sdk
       - name: get python
         uses: actions/setup-python@v2
         with:
