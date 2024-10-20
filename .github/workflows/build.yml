@@ -35,7 +35,7 @@ jobs:
         run: ./ci/ci.bash
         shell: bash
       - name: upload-artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: godot-steam-api-${{ matrix.os }}
           path: work/install
@@ -54,7 +54,7 @@ jobs:
         run: sh ci/package.bash work/artifacts
         shell: bash
       - name: upload-artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: project
           path: addons
