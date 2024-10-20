@@ -1,7 +1,0 @@
-sources:
-  "3.5":
-    url: "https://github.com/godotengine/godot-cpp/archive/5b340cb4834c5cc23afb50c8fec0db992affcff9.zip"
-    sha256: "af46b563426d9616e4cb1c116ed8693471f9def4336171a8fcff5217b71a13c6"
-  "headers":
-    url: "https://github.com/godotengine/godot-headers/archive/86afe2307b03578eb495ff668d2b7d6dc4649559.zip"
-    sha256: "86457845835c5d2f60266ffbdae5130b18ca8cd21da916a33a5e274d08e8c62d"
