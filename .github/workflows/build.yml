@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: godotengine/godot-cpp
-          path: lib/steam-sdk
+          path: lib/godot-cpp
       - name: get python
         uses: actions/setup-python@v2
         with:
