@@ -23,7 +23,7 @@ jobs:
         with:
           repository: samsface/godot-cpp
           path: lib/godot-cpp
-          ref: 'aca3c9c'
+          ref: 'aca3c9ce67771b5fce4f100b98162374ce43ea77'
           submodules: 'recursive'
       - name: get python
         uses: actions/setup-python@v2
