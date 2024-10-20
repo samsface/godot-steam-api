@@ -21,9 +21,9 @@ jobs:
       - name: clone submodule
         uses: actions/checkout@v2
         with:
-          repository: godotengine/godot-cpp
+          repository: samsface/godot-cpp
           path: lib/godot-cpp
-          ref: '5b340cb4834c5cc23afb50c8fec0db992affcff9'
+          ref: 'aca3c9c'
           submodules: 'recursive'
       - name: get python
         uses: actions/setup-python@v2
