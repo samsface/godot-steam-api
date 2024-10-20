@@ -5,7 +5,7 @@ from conans import ConanFile, tools, CMake
 from conans.errors import ConanInvalidConfiguration
 
 class GodotCppConan(ConanFile):
-    version = "3.3"
+    version = "3.5"
     name = "godot-cpp"
     description = "C++ bindings for the Godot script API"
     license = "MIT"

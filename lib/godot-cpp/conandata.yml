@@ -1,7 +1,7 @@
 sources:
-  "3.3":
-    url: "https://github.com/godotengine/godot-cpp/archive/99e9dd1d9396ed3af40678263b509078e5265ffc.zip"
-    sha256: "ce578e72c7997ecf15e5196f08e40743d70218b76d029b047961a05acc8a7d28"
+  "3.5":
+    url: "https://github.com/godotengine/godot-cpp/archive/5b340cb4834c5cc23afb50c8fec0db992affcff9.zip"
+    sha256: "5b340cb4834c5cc23afb50c8fec0db992affcff9"
   "headers":
-    url: "https://github.com/godotengine/godot-headers/archive/bd863357de5b1fa8e04ebffbbb30d28425de9723.zip"
-    sha256: "c324b9eda5e9da6c7c2ce2bd51ede71bd582800a794e7883c1d382a45a02db09"
+    url: "https://github.com/godotengine/godot-headers/archive/86afe2307b03578eb495ff668d2b7d6dc4649559.zip"
+    sha256: "86afe2307b03578eb495ff668d2b7d6dc4649559"
