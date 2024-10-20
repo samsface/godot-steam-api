@@ -5,36 +5,6 @@ option(BUILD_SHARED_LIBS "Build shared libs" ON)
 
 set(STEAM_SDK_PATH "lib/steam-sdk" CACHE STRING "Steam SDK path")
 
-###############################################################################
-# conan stuff
-###############################################################################
-
-# export godot-cpp into local conan cache
-execute_process(COMMAND conan export ${CMAKE_CURRENT_SOURCE_DIR}/lib/godot-cpp local/stable)
-
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR})
-list(APPEND CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR})
-
-if(NOT EXISTS "${CMAKE_BINARY_DIR}/conan.cmake")
-  message(STATUS "Downloading conan.cmake from https://github.com/conan-io/cmake-conan")
-  file(DOWNLOAD "https://raw.githubusercontent.com/conan-io/cmake-conan/0.18.1/conan.cmake"
-                "${CMAKE_BINARY_DIR}/conan.cmake"
-                EXPECTED_HASH SHA256=5cdb3042632da3efff558924eecefd580a0e786863a857ca097c3d1d43df5dcd
-                TLS_VERIFY ON)
-endif()
-
-include(${CMAKE_BINARY_DIR}/conan.cmake)
-
-conan_cmake_configure(REQUIRES godot-cpp/3.5@local/stable GENERATORS cmake_find_package)
-
-conan_cmake_autodetect(settings)
-
-conan_cmake_install(PATH_OR_REFERENCE . BUILD missing SETTINGS ${settings})
-
-find_package(godot-cpp)
-
-###############################################################################
-
 # install build into example project by default
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
   set(
@@ -42,6 +12,8 @@ if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
     CACHE PATH "..." 
     FORCE)
 endif()
+
+add_subdirectory(lib/godot-cpp)
 
 # let's us link relative to process on linux
 set(CMAKE_INSTALL_RPATH "$ORIGIN")
@@ -81,7 +53,7 @@ endif()
 target_link_libraries(
   steamsdk-godot
   PRIVATE
-    godot-cpp::godot-cpp
+    godot-cpp
     ${STEAM_API})
 
 install(TARGETS steamsdk-godot DESTINATION .)
