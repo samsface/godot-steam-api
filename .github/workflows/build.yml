@@ -23,6 +23,8 @@ jobs:
         with:
           repository: godotengine/godot-cpp
           path: lib/godot-cpp
+          ref: '5b340cb4834c5cc23afb50c8fec0db992affcff9'
+          submodules: 'recursive'
       - name: get python
         uses: actions/setup-python@v2
         with:
