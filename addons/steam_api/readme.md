@@ -1,4 +1,4 @@
-# 🚂 Godot-Steam-API
+# 🚂 Godot-Steam-API (3.X only) 
 
 > **Godot Steam integration without rebuilding Godot.** Supports 💰Windows(x86_x64), 🐧Linux(x86_x64) & 🍏MacOS (x86_x64/arm64).
 
